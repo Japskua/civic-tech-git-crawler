@@ -128,6 +128,27 @@ class ChaossMetrics:
     defect_resolution_durations_days: list[dict]  # [{issue_number, days}]
     median_defect_resolution_days: float | None
     osi_approved_license: bool
+    # Elephant Factor (org-level bus factor)
+    elephant_factor: int | None = None
+    # Contributor Retention Cohorts
+    contributor_new_count: int = 0  # 1 active week
+    contributor_casual_count: int = 0  # 2-12 active weeks
+    contributor_regular_count: int = 0  # 13+ active weeks
+    # Time to First Response
+    median_time_to_first_response_issues_hours: float | None = None
+    median_time_to_first_response_prs_hours: float | None = None
+    time_to_first_response_issues_sample_size: int = 0
+    time_to_first_response_prs_sample_size: int = 0
+    # Documentation Freshness
+    readme_last_updated: datetime | None = None
+    contributing_last_updated: datetime | None = None
+    # Stale Issue Ratio
+    stale_issue_ratio: float | None = None
+    stale_issue_count: int = 0
+    open_issue_count: int = 0
+    # PR Review Depth & Turnaround
+    median_pr_review_turnaround_hours: float | None = None
+    avg_review_comments_per_pr: float | None = None
 
 
 @dataclass

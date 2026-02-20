@@ -158,6 +158,22 @@ def _dict_to_chaoss_metrics(d: dict | None) -> ChaossMetrics | None:
         defect_resolution_durations_days=d["defect_resolution_durations_days"],
         median_defect_resolution_days=d.get("median_defect_resolution_days"),
         osi_approved_license=d["osi_approved_license"],
+        # New fields (with defaults for backward compatibility with old cache)
+        elephant_factor=d.get("elephant_factor"),
+        contributor_new_count=d.get("contributor_new_count", 0),
+        contributor_casual_count=d.get("contributor_casual_count", 0),
+        contributor_regular_count=d.get("contributor_regular_count", 0),
+        median_time_to_first_response_issues_hours=d.get("median_time_to_first_response_issues_hours"),
+        median_time_to_first_response_prs_hours=d.get("median_time_to_first_response_prs_hours"),
+        time_to_first_response_issues_sample_size=d.get("time_to_first_response_issues_sample_size", 0),
+        time_to_first_response_prs_sample_size=d.get("time_to_first_response_prs_sample_size", 0),
+        readme_last_updated=_parse_datetime(d.get("readme_last_updated")),
+        contributing_last_updated=_parse_datetime(d.get("contributing_last_updated")),
+        stale_issue_ratio=d.get("stale_issue_ratio"),
+        stale_issue_count=d.get("stale_issue_count", 0),
+        open_issue_count=d.get("open_issue_count", 0),
+        median_pr_review_turnaround_hours=d.get("median_pr_review_turnaround_hours"),
+        avg_review_comments_per_pr=d.get("avg_review_comments_per_pr"),
     )
 
 
