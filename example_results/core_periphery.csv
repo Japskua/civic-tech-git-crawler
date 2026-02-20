@@ -1,0 +1,14 @@
+repo_full_name,login,degree_centrality,betweenness_centrality,classification,num_collaborators
+DemocracyClub/UK-Polling-Stations,polling-bot-4000,0.5,0.0,periphery,2
+DemocracyClub/UK-Polling-Stations,awdem,1.0,0.1667,core,4
+DemocracyClub/UK-Polling-Stations,chris48s,1.0,0.1667,core,4
+DemocracyClub/UK-Polling-Stations,GeoWill,0.75,0.0,periphery,3
+DemocracyClub/UK-Polling-Stations,symroe,0.75,0.0,periphery,3
+DemocracyClub/WhoCanIVoteFor,awdem,0.6,0.0333,periphery,3
+DemocracyClub/WhoCanIVoteFor,chris48s,1.0,0.4667,core,5
+DemocracyClub/WhoCanIVoteFor,symroe,0.6,0.0333,periphery,3
+DemocracyClub/WhoCanIVoteFor,GeoWill,0.6,0.0333,periphery,3
+DemocracyClub/WhoCanIVoteFor,pmk01,0.6,0.0333,periphery,3
+DemocracyClub/WhoCanIVoteFor,dependabot[bot],0.2,0.0,periphery,1
+fvialibre/edia,Aplietexe,1.0,0.0,periphery,1
+fvialibre/edia,guidoivetta,1.0,0.0,periphery,1

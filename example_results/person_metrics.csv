@@ -1,0 +1,67 @@
+repo_full_name,login,name,num_commits,additions,deletions,avg_additions_per_commit,avg_deletions_per_commit
+DemocracyClub/UK-Polling-Stations,mvl22,Martin,1,6,1,6.0,1.0
+DemocracyClub/UK-Polling-Stations,malcolmmoyes,,1,125,13,125.0,13.0
+DemocracyClub/UK-Polling-Stations,greenkeeper[bot],,1,1,1,1.0,1.0
+DemocracyClub/UK-Polling-Stations,EdwardBetts,Edward Betts,1,8,8,8.0,8.0
+DemocracyClub/UK-Polling-Stations,maxbachmann,Max Bachmann,1,6,5,6.0,5.0
+DemocracyClub/UK-Polling-Stations,BobHarper1,Bob Harper,1,29,5,29.0,5.0
+DemocracyClub/UK-Polling-Stations,KateSeary,,1,16,0,16.0,0.0
+DemocracyClub/UK-Polling-Stations,zuzak,Douglas Gardner,1,1,1,1.0,1.0
+DemocracyClub/UK-Polling-Stations,michaeljcollinsuk,Michael Collins,1,123,59,123.0,59.0
+DemocracyClub/UK-Polling-Stations,waffle-iron,Making GitHub Delicious.,1,1,0,1.0,0.0
+DemocracyClub/UK-Polling-Stations,dracos,M Somerville,1,1,1,1.0,1.0
+DemocracyClub/UK-Polling-Stations,transifex-integration[bot],,3,204,343,68.0,114.33
+DemocracyClub/UK-Polling-Stations,hishivshah,Hishiv Shah,4,235,0,58.75,0.0
+DemocracyClub/UK-Polling-Stations,dependabot-preview[bot],,5,264,176,52.8,35.2
+DemocracyClub/UK-Polling-Stations,ashb,Ash Berlin-Taylor,6,47,23021,7.83,3836.83
+DemocracyClub/UK-Polling-Stations,dependabot-support,,6,361,24,60.17,4.0
+DemocracyClub/UK-Polling-Stations,mtravis,Matt Travis,7,196,42,28.0,6.0
+DemocracyClub/UK-Polling-Stations,andylolz,Andy Lulham,7,59,69,8.43,9.86
+DemocracyClub/UK-Polling-Stations,tfgg,Tim Green,7,201,49,28.71,7.0
+DemocracyClub/UK-Polling-Stations,pmk01,Peter Keeling,10,69,54,6.9,5.4
+DemocracyClub/UK-Polling-Stations,Bekabyx,Rebeka Lewis Smith,20,1881,1559,94.05,77.95
+DemocracyClub/UK-Polling-Stations,blacktyger,`blacktyger,47,1394,452,29.66,9.62
+DemocracyClub/UK-Polling-Stations,JoeMitchell,Joe Mitchell,86,3011665,14,35019.36,0.16
+DemocracyClub/UK-Polling-Stations,VirginiaDooley,Virginia Dooley,132,7075,4895,53.6,37.08
+DemocracyClub/UK-Polling-Stations,alexdutton,Alex Dutton,137,7014,4143,51.2,30.24
+DemocracyClub/UK-Polling-Stations,pyup-bot,pyup.io bot,142,144,142,1.01,1.0
+DemocracyClub/UK-Polling-Stations,davidmiller,David Miller,175,208252,92320,1190.01,527.54
+DemocracyClub/UK-Polling-Stations,awdem,Will de Montmollin,207,3264,756,15.77,3.65
+DemocracyClub/UK-Polling-Stations,smsmith97,,219,7025,6376,32.08,29.11
+DemocracyClub/UK-Polling-Stations,dependabot[bot],,311,1269,2507,4.08,8.06
+DemocracyClub/UK-Polling-Stations,symroe,Sym Roe,468,627199,1092770,1340.17,2334.98
+DemocracyClub/UK-Polling-Stations,GeoWill,Will Roper,1271,171586,65787,135.0,51.76
+DemocracyClub/UK-Polling-Stations,polling-bot-4000,,1437,23641,27995,16.45,19.48
+DemocracyClub/UK-Polling-Stations,chris48s,,2038,57925,73262,28.42,35.95
+DemocracyClub/WhoCanIVoteFor,waffle-iron,Making GitHub Delicious.,1,1,0,1.0,0.0
+DemocracyClub/WhoCanIVoteFor,edjw,Ed Johnson-Williams,1,4,0,4.0,0.0
+DemocracyClub/WhoCanIVoteFor,issyl0,Issy Long,1,1,1,1.0,1.0
+DemocracyClub/WhoCanIVoteFor,KateSeary,,1,9,9,9.0,9.0
+DemocracyClub/WhoCanIVoteFor,h2g2bob,h2g2bob,1,1,1,1.0,1.0
+DemocracyClub/WhoCanIVoteFor,danjordan,Dan Jordan,1,1,1,1.0,1.0
+DemocracyClub/WhoCanIVoteFor,transifex-integration[bot],,1,517,371,517.0,371.0
+DemocracyClub/WhoCanIVoteFor,jussiheinonen,Jussi Heinonen,1,1,1,1.0,1.0
+DemocracyClub/WhoCanIVoteFor,malcomio,Malcolm Young,1,2,2,2.0,2.0
+DemocracyClub/WhoCanIVoteFor,davidwyld,David Wyld (né Wilby),1,5,5,5.0,5.0
+DemocracyClub/WhoCanIVoteFor,hugovk,Hugo van Kemenade,2,1,8,0.5,4.0
+DemocracyClub/WhoCanIVoteFor,JoeMitchell,Joe Mitchell,7,9,11,1.29,1.57
+DemocracyClub/WhoCanIVoteFor,BobHarper1,Bob Harper,9,49,30,5.44,3.33
+DemocracyClub/WhoCanIVoteFor,andylolz,Andy Lulham,13,48,22,3.69,1.69
+DemocracyClub/WhoCanIVoteFor,pmk01,Peter Keeling,15,50,27,3.33,1.8
+DemocracyClub/WhoCanIVoteFor,davidmiller,David Miller,20,744,86,37.2,4.3
+DemocracyClub/WhoCanIVoteFor,tfgg,Tim Green,22,837,8216,38.05,373.45
+DemocracyClub/WhoCanIVoteFor,dependabot-preview[bot],,24,34,34,1.42,1.42
+DemocracyClub/WhoCanIVoteFor,GeoWill,Will Roper,25,1049,484,41.96,19.36
+DemocracyClub/WhoCanIVoteFor,dependabot-support,,32,32,32,1.0,1.0
+DemocracyClub/WhoCanIVoteFor,mrwilson,Alex Wilson,39,443,162,11.36,4.15
+DemocracyClub/WhoCanIVoteFor,Bekabyx,Rebeka Lewis Smith,66,2967,1439,44.95,21.8
+DemocracyClub/WhoCanIVoteFor,annapowellsmith,Anna Powell-Smith,70,2366,386,33.8,5.51
+DemocracyClub/WhoCanIVoteFor,awdem,Will de Montmollin,80,1396,575,17.45,7.19
+DemocracyClub/WhoCanIVoteFor,dependabot[bot],,93,93,93,1.0,1.0
+DemocracyClub/WhoCanIVoteFor,chris48s,,220,17020,11547,77.36,52.49
+DemocracyClub/WhoCanIVoteFor,michaeljcollinsuk,Michael Collins,348,12524,2844,35.99,8.17
+DemocracyClub/WhoCanIVoteFor,VirginiaDooley,Virginia Dooley,530,26067,23909,49.18,45.11
+DemocracyClub/WhoCanIVoteFor,symroe,Sym Roe,907,94890,63222,104.62,69.7
+fvialibre/edia,fvialibre,Fundación Vía Libre,1,2,2,2.0,2.0
+fvialibre/edia,nanom,Hernán J. Maina,22,1197,1128,54.41,51.27
+fvialibre/edia,LMartinezEXEX,Lautaro Martinez,55,29999,16759,545.44,304.71

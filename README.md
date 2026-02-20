@@ -276,6 +276,8 @@ uv run python -m civic_tech_crawler --config config.yaml
 
 All output files are written to the output directory (default: `./output/`). Both CSV and JSON formats are produced automatically.
 
+> **Want to see what the output looks like?** Browse the [`example_results/`](example_results/) directory for real output from a pilot run against 3 civic tech repositories.
+
 ### CSV files
 
 | File | Rows | Description |
