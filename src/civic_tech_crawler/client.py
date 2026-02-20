@@ -119,6 +119,22 @@ class GitHubClient:
         self._user_cache[login] = info
         return info
 
+    def get_last_commit_date_for_path(self, slug: str, path: str) -> str | None:
+        """Get ISO date string of the most recent commit touching a file path.
+
+        Uses: GET /repos/{owner}/{repo}/commits?path={path}&per_page=1
+        """
+        self._rate_limiter.wait_if_needed()
+        resp = self._httpx.get(
+            f"/repos/{slug}/commits",
+            params={"path": path, "per_page": 1},
+        )
+        if resp.status_code == 200:
+            data = resp.json()
+            if data and len(data) > 0:
+                return data[0].get("commit", {}).get("author", {}).get("date")
+        return None
+
     @property
     def rate_limit_remaining(self) -> int:
         return self._rate_limiter.remaining

@@ -479,6 +479,21 @@ These are exported to `chaoss_summary.csv` (one row per repository) and in full 
 | Defect Resolution | `median_defect_resolution_days` | [Defect Resolution Duration](https://chaoss.community/kb/defect-resolution-duration/) | Median number of days from issue creation to closure for issues labeled `bug`. Fetches up to 500 closed bug issues. |
 | OSI License | `osi_approved_license` | [OSI Approved Licenses](https://chaoss.community/kb/metric-osi-approved-licenses/) | Checks the repository's SPDX license identifier against a set of 98 OSI-approved licenses |
 
+#### Extended Community Health Metrics
+
+These metrics extend the core CHAOSS framework with additional indicators recommended by academic literature on open-source sustainability.
+
+| Metric | Column | Description | Calculation |
+|--------|--------|-------------|-------------|
+| Elephant Factor | `elephant_factor` | Organizational-level bus factor (Goggins et al., 2021) | Minimum number of organizations whose contributors account for 50% of commits. Same algorithm as bus factor, applied at org level. |
+| Contributor Retention | `contributor_new_count`, `contributor_casual_count`, `contributor_regular_count` | Contributor cohort analysis (Zhou & Mockus, 2012) | Classifies contributors by active weeks: **new** (1 week), **casual** (2-12 weeks), **regular** (13+ weeks). |
+| Time to First Response (Issues) | `median_time_to_first_response_issues_hours` | CHAOSS: Time to First Response | Median hours from issue creation to first non-author comment. Sampled from last 100 issues. |
+| Time to First Response (PRs) | `median_time_to_first_response_prs_hours` | CHAOSS: Time to First Response | Median hours from PR creation to first non-author comment. Sampled from last 100 PRs. |
+| Documentation Freshness | `readme_last_updated`, `contributing_last_updated` | Documentation quality signal (Prana et al., 2019) | Date of the most recent commit touching README.md and CONTRIBUTING.md. |
+| Stale Issue Ratio | `stale_issue_ratio`, `stale_issue_count`, `open_issue_count` | Issue responsiveness indicator | Percentage of open issues with no activity for 90+ days. |
+| PR Review Turnaround | `median_pr_review_turnaround_hours` | Code review quality (Rigby & Bird, 2013) | Median hours from PR creation to first formal review. Sampled from last 100 merged PRs. |
+| PR Review Depth | `avg_review_comments_per_pr` | Code review quality (Bosu et al., 2017) | Average number of review comments per PR. Sampled from last 100 merged PRs. |
+
 ---
 
 ### Technology Detection

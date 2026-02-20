@@ -103,6 +103,15 @@ def _export_chaoss_summary(data: list[RepositoryData], out: Path) -> None:
         "release_frequency_per_month", "fork_count",
         "burstiness_cv", "burstiness_mean", "burstiness_std",
         "median_defect_resolution_days", "osi_approved_license",
+        "elephant_factor",
+        "contributor_new_count", "contributor_casual_count", "contributor_regular_count",
+        "median_time_to_first_response_issues_hours",
+        "median_time_to_first_response_prs_hours",
+        "time_to_first_response_issues_sample_size",
+        "time_to_first_response_prs_sample_size",
+        "readme_last_updated", "contributing_last_updated",
+        "stale_issue_ratio", "stale_issue_count", "open_issue_count",
+        "median_pr_review_turnaround_hours", "avg_review_comments_per_pr",
     ]
     filepath = out / "chaoss_summary.csv"
     with open(filepath, "w", newline="") as f:
