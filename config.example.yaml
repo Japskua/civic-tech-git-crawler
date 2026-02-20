@@ -1,0 +1,70 @@
+github:
+  max_retries: 5
+  retry_delay: 3
+  rate_limit_buffer: 100
+
+repositories:
+  - "DemocracyClub/UK-Polling-Stations"
+  - "DemocracyClub/WhoCanIVoteFor"
+  - "fvialibre/edia"
+
+output:
+  directory: "./output"
+
+detection:
+  cloud_keywords:
+    topics:
+      - aws
+      - gcp
+      - azure
+      - cloud
+      - serverless
+      - kubernetes
+      - docker
+    languages:
+      - HCL
+      - Dockerfile
+    files:
+      - Dockerfile
+      - docker-compose.yml
+      - docker-compose.yaml
+      - cdk.json
+      - serverless.yml
+      - terraform.tf
+      - cloudbuild.yaml
+      - appspec.yml
+      - Procfile
+      - .buildpacks
+    dependencies:
+      - boto3
+      - google-cloud
+      - azure
+      - aws-cdk
+      - pulumi
+
+  ai_ml_keywords:
+    topics:
+      - machine-learning
+      - deep-learning
+      - ai
+      - nlp
+      - computer-vision
+      - artificial-intelligence
+    languages:
+      - Jupyter Notebook
+    files:
+      - "*.ipynb"
+    dependencies:
+      - tensorflow
+      - pytorch
+      - torch
+      - scikit-learn
+      - transformers
+      - keras
+      - xgboost
+      - lightgbm
+      - openai
+      - langchain
+      - huggingface
+      - spacy
+      - nltk
