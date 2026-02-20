@@ -22,7 +22,7 @@ from civic_tech_crawler.collectors.temporal_metrics import collect_temporal_metr
 from civic_tech_crawler.config import load_config
 from civic_tech_crawler.exporters.csv_exporter import export_csv
 from civic_tech_crawler.exporters.json_exporter import export_json
-from civic_tech_crawler.models import RepositoryData
+from civic_tech_crawler.models import CrossProjectOverlap, RepositoryData
 
 console = Console(stderr=True)
 logger = logging.getLogger("civic_tech_crawler")
@@ -83,6 +83,41 @@ def setup_logging(verbose: bool) -> None:
     )
 
 
+def compute_cross_project_overlap(all_data: list[RepositoryData]) -> CrossProjectOverlap:
+    """Compute cross-project contributor overlap across all repositories."""
+    # Build login → list of repos
+    login_repos: dict[str, list[str]] = {}
+    for rd in all_data:
+        for p in rd.person_metrics:
+            if p.login:
+                login_repos.setdefault(p.login, []).append(rd.repo_metrics.full_name)
+
+    total_unique = len(login_repos)
+    contributor_repo_counts = {
+        login: len(repos) for login, repos in login_repos.items()
+    }
+    multi_repo = {
+        login: count for login, count in contributor_repo_counts.items() if count >= 2
+    }
+
+    # Per-repo: how many of its contributors also contribute to other repos
+    per_repo_overlap: dict[str, int] = {}
+    for rd in all_data:
+        shared = 0
+        for p in rd.person_metrics:
+            if p.login and contributor_repo_counts.get(p.login, 0) >= 2:
+                shared += 1
+        per_repo_overlap[rd.repo_metrics.full_name] = shared
+
+    return CrossProjectOverlap(
+        total_unique_contributors=total_unique,
+        multi_repo_contributors=len(multi_repo),
+        multi_repo_ratio=round(len(multi_repo) / total_unique, 4) if total_unique > 0 else 0.0,
+        contributor_repo_counts=contributor_repo_counts,
+        per_repo_overlap=per_repo_overlap,
+    )
+
+
 def crawl_repository(
     client: GitHubClient,
     slug: str,
@@ -127,6 +162,7 @@ def crawl_repository(
             repo,
             person_metrics,
             temporal_metrics,
+            repo_metrics=repo_metrics,
         )
 
     return RepositoryData(
@@ -167,7 +203,8 @@ def main() -> None:
             console.print("[red]No cached data found in[/red] " + output_dir)
             sys.exit(1)
         console.print(f"  Loaded {len(all_data)} repositories from cache")
-        export_csv(all_data, output_dir)
+        overlap = compute_cross_project_overlap(all_data)
+        export_csv(all_data, output_dir, cross_project_overlap=overlap)
         export_json(all_data, output_dir)
         console.print(
             f"\n[bold green]Done![/bold green] Exported {len(all_data)} repositories "
@@ -231,9 +268,12 @@ def main() -> None:
                     logger.exception("Full traceback:")
             progress.advance(overall)
 
+    # Cross-project contributor overlap (post-crawl, cross-repo analysis)
+    overlap = compute_cross_project_overlap(all_data)
+
     # Export results (from all data: cached + freshly crawled)
     console.print("\n[bold]Exporting results...[/bold]")
-    export_csv(all_data, output_dir)
+    export_csv(all_data, output_dir, cross_project_overlap=overlap)
     export_json(all_data, output_dir)
 
     # Summary
@@ -247,6 +287,11 @@ def main() -> None:
         console.print(f"  [red]Failed: {failed}[/red]")
     total_contributors = sum(len(rd.person_metrics) for rd in all_data)
     console.print(f"  Total contributors: {total_contributors}")
+    console.print(
+        f"  Cross-project overlap: {overlap.multi_repo_contributors}/"
+        f"{overlap.total_unique_contributors} contributors in 2+ repos "
+        f"({overlap.multi_repo_ratio:.1%})"
+    )
     console.print(f"  Rate limit remaining: {client.rate_limit_remaining}")
 
     client.close()

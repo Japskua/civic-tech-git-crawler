@@ -3,7 +3,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-from civic_tech_crawler.models import RepositoryData
+from civic_tech_crawler.models import CrossProjectOverlap, RepositoryData
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +23,11 @@ def _fmt(value) -> str:
     return str(value)
 
 
-def export_csv(data: list[RepositoryData], output_dir: str) -> None:
+def export_csv(
+    data: list[RepositoryData],
+    output_dir: str,
+    cross_project_overlap: CrossProjectOverlap | None = None,
+) -> None:
     """Export all metrics to CSV files."""
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
@@ -34,6 +38,8 @@ def export_csv(data: list[RepositoryData], output_dir: str) -> None:
     _export_chaoss_summary(data, out)
     _export_prs(data, out)
     _export_tags(data, out)
+    if cross_project_overlap:
+        _export_cross_project_overlap(cross_project_overlap, out)
 
     logger.info("CSV files written to %s", out)
 
@@ -112,6 +118,11 @@ def _export_chaoss_summary(data: list[RepositoryData], out: Path) -> None:
         "readme_last_updated", "contributing_last_updated",
         "stale_issue_ratio", "stale_issue_count", "open_issue_count",
         "median_pr_review_turnaround_hours", "avg_review_comments_per_pr",
+        "herfindahl_hirschman_index",
+        "contributor_org_types",
+        "dora_deployment_frequency_per_month",
+        "dora_median_lead_time_days",
+        "dora_change_failure_rate",
     ]
     filepath = out / "chaoss_summary.csv"
     with open(filepath, "w", newline="") as f:
@@ -169,3 +180,30 @@ def _export_tags(data: list[RepositoryData], out: Path) -> None:
                     }
                     writer.writerow(row)
     logger.info("Wrote %s", filepath.name)
+
+
+def _export_cross_project_overlap(
+    overlap: CrossProjectOverlap, out: Path
+) -> None:
+    """Export cross-project contributor overlap as a CSV file."""
+    # Summary row
+    filepath = out / "cross_project_overlap.csv"
+    headers = [
+        "login", "repos_contributed_to",
+    ]
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        # Sort by repo count descending, then by login
+        sorted_contributors = sorted(
+            overlap.contributor_repo_counts.items(),
+            key=lambda x: (-x[1], x[0]),
+        )
+        for login, count in sorted_contributors:
+            writer.writerow({"login": login, "repos_contributed_to": count})
+    logger.info(
+        "Wrote %s (%d contributors, %d in 2+ repos)",
+        filepath.name,
+        overlap.total_unique_contributors,
+        overlap.multi_repo_contributors,
+    )

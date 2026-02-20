@@ -149,6 +149,30 @@ class ChaossMetrics:
     # PR Review Depth & Turnaround
     median_pr_review_turnaround_hours: float | None = None
     avg_review_comments_per_pr: float | None = None
+    # Herfindahl-Hirschman Index (org concentration)
+    herfindahl_hirschman_index: float | None = None
+    # Institutional Type Classification
+    contributor_org_types: dict[str, int] = field(
+        default_factory=lambda: {}
+    )  # {government: N, nonprofit: N, academic: N, company: N, unknown: N}
+    # DORA Metrics
+    dora_deployment_frequency_per_month: float | None = None
+    dora_median_lead_time_days: float | None = None
+    dora_change_failure_rate: float | None = None
+
+
+@dataclass
+class CrossProjectOverlap:
+    """Cross-project contributor overlap metrics (computed post-crawl)."""
+    total_unique_contributors: int
+    multi_repo_contributors: int  # contributors appearing in 2+ repos
+    multi_repo_ratio: float  # multi_repo_contributors / total_unique
+    contributor_repo_counts: dict[str, int] = field(
+        default_factory=dict
+    )  # {login: number_of_repos}
+    per_repo_overlap: dict[str, int] = field(
+        default_factory=dict
+    )  # {repo_full_name: count_of_shared_contributors}
 
 
 @dataclass
