@@ -169,15 +169,17 @@ The **Civic Tech Index** project catalogs open-source civic tech projects global
 
 ## Summary: Recommended Additions by Priority
 
-| Priority | Metric | Maps to RQ | Implementation Effort |
-|----------|--------|-----------|----------------------|
-| HIGH | Time to First Response (issues/PRs) | RQ2, RQ3 | Low |
-| HIGH | Contributor Retention Cohorts (new/casual/regular) | RQ1, RQ2 | Medium |
-| HIGH | Elephant Factor (org-level bus factor) | RQ1, RQ3 | Low |
-| MEDIUM | PR Review Depth & Turnaround Time | RQ2 | Medium |
-| MEDIUM | Core-Periphery Network Analysis | RQ1 | High |
-| MEDIUM | Institutional Type Classification | RQ3 | Medium |
-| MEDIUM | Cross-Project Contributor Overlap | RQ5 | Medium |
-| LOW | Documentation Freshness | RQ3 | Low |
-| LOW | Stale Issue Ratio | RQ2 | Low |
-| LOW | DORA Lead Time / Deploy Frequency | RQ4 | High |
+> **All 10 recommended metrics are now implemented and merged to `master`.**
+
+| Priority | Metric | Maps to RQ | Effort | Status | PR |
+|----------|--------|-----------|--------|--------|-----|
+| HIGH | Time to First Response (issues/PRs) | RQ2, RQ3 | Low | ✅ Done | #1 |
+| HIGH | Contributor Retention Cohorts (new/casual/regular) | RQ1, RQ2 | Medium | ✅ Done | #1 |
+| HIGH | Elephant Factor (org-level bus factor) | RQ1, RQ3 | Low | ✅ Done | #1 |
+| MEDIUM | PR Review Depth & Turnaround Time | RQ2 | Medium | ✅ Done | #1 |
+| MEDIUM | Core-Periphery Network Analysis | RQ1 | High | ✅ Done | #3 |
+| MEDIUM | Institutional Type Classification | RQ3 | Medium | ✅ Done | #2 |
+| MEDIUM | Cross-Project Contributor Overlap | RQ5 | Medium | ✅ Done | #2 |
+| LOW | Documentation Freshness | RQ3 | Low | ✅ Done | #1 |
+| LOW | Stale Issue Ratio | RQ2 | Low | ✅ Done | #1 |
+| LOW | DORA Lead Time / Deploy Frequency | RQ4 | High | ✅ Done | #2 |

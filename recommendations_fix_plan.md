@@ -1,8 +1,14 @@
 # Implementation Plan: Recommended Metrics
 
-> **Status: COMPLETE** -- All 6 metrics (15 fields) implemented, tested, and verified on branch `improve_by_recommendations`.
+> **Status: ALL COMPLETE** — All 10 recommended metrics (29+ fields) implemented, tested, and merged to `master` across three PRs.
+>
+> - **PR #1** (`improve_by_recommendations`): 7 metrics, 15 fields — ✅ Merged
+> - **PR #2** (`add_future_metrics`): 4 metrics, 8 fields — ✅ Merged
+> - **PR #3** (`add_core_periphery`): 1 metric, 6 fields + new dataclass + new CSV — ✅ Merged
 
-Technical plan for adding 6 new metrics (15 new fields) to the Civic Tech Git Crawler.
+## Phase 1: Core Metrics (PR #1)
+
+Technical plan for adding 7 metrics (15 new fields) to the Civic Tech Git Crawler.
 
 ---
 
@@ -159,7 +165,7 @@ For 3 repos: ~930 additional calls. For 10 repos: ~3100 additional calls. Both f
 
 ---
 
-## Files Modified
+## Phase 1 Files Modified
 
 1. `src/civic_tech_crawler/models.py` -- 15 new fields on ChaossMetrics
 2. `src/civic_tech_crawler/collectors/chaoss_metrics.py` -- 4 new helpers + 6 new sections
@@ -167,3 +173,93 @@ For 3 repos: ~930 additional calls. For 10 repos: ~3100 additional calls. Both f
 4. `src/civic_tech_crawler/cache.py` -- 15 new `.get()` calls
 5. `src/civic_tech_crawler/exporters/csv_exporter.py` -- 15 new CSV headers
 6. `README.md` -- New metrics documentation
+
+---
+
+## Phase 2: Future Metrics (PR #2)
+
+Added 4 additional metrics originally listed as "Future Work":
+
+### 1. Herfindahl-Hirschman Index (HHI)
+
+**API cost:** 0 additional calls (piggybacks on existing org diversity data)
+
+Computes organizational commit concentration using the standard HHI formula: sum of squared market shares (commit percentages). Scale 0–10,000, where 10,000 = single-org monopoly.
+
+### 2. Institutional Type Classification
+
+**API cost:** 0 additional calls (reuses existing org diversity company field)
+
+Pattern-matching on GitHub profile `company` field to classify contributors into: government, academic, nonprofit, company, or unknown. Uses keyword matching (e.g., ".gov", "university", "foundation").
+
+### 3. Cross-Project Contributor Overlap
+
+**API cost:** 0 additional calls (post-crawl analysis of person_metrics)
+
+Identifies contributors active in multiple crawled repositories. Outputs to `cross_project_overlap.csv`. New `CrossProjectOverlap` dataclass in `models.py`.
+
+### 4. DORA Metrics
+
+**API cost:** 0 additional calls (computed from existing temporal metrics)
+
+- **Deployment Frequency**: releases per month over repo lifetime
+- **Median Lead Time**: median days between consecutive releases
+- **Change Failure Rate**: ratio of revert/hotfix/bugfix PRs (detected by title pattern matching) to total merged PRs
+
+### Phase 2 Files Modified
+
+1. `src/civic_tech_crawler/models.py` -- 8 new fields on ChaossMetrics + `CrossProjectOverlap` dataclass
+2. `src/civic_tech_crawler/collectors/chaoss_metrics.py` -- 4 new computation sections
+3. `src/civic_tech_crawler/cli.py` -- Cross-project overlap computation + console summary
+4. `src/civic_tech_crawler/cache.py` -- 8 new `.get()` calls
+5. `src/civic_tech_crawler/exporters/csv_exporter.py` -- 8 new CSV headers + `cross_project_overlap.csv`
+6. `README.md` -- New metrics documentation
+
+---
+
+## Phase 3: Core-Periphery Network Analysis (PR #3)
+
+Added the final high-effort metric: Core-Periphery Network Analysis using NetworkX.
+
+### Implementation
+
+**API cost:** 0 additional calls (edges captured from existing `_compute_pr_review_metrics()` loop)
+
+Builds an undirected collaboration graph where nodes = contributors and edges = PR author↔reviewer pairs (weighted by interaction count). Uses NetworkX for:
+- `degree_centrality()` — normalized count of unique collaborators
+- `betweenness_centrality()` — bridge position in the network
+- `density()` — graph connectedness
+
+**Classification:** Contributors with degree centrality above the median = "core", rest = "periphery". Strict `>` threshold means uniform graphs correctly classify all as periphery.
+
+### New Data Structures
+
+- `CorePeripheryContributor` dataclass (per-contributor network metrics)
+- 6 new fields on `ChaossMetrics` (summary stats + cached edges)
+- `core_periphery_contributors` field on `RepositoryData`
+- New `core_periphery.csv` output file
+
+### Phase 3 Files Modified
+
+1. `pyproject.toml` -- Added `networkx>=3.0` dependency
+2. `src/civic_tech_crawler/models.py` -- `CorePeripheryContributor` dataclass + 6 new ChaossMetrics fields + RepositoryData field
+3. `src/civic_tech_crawler/collectors/chaoss_metrics.py` -- Modified `_compute_pr_review_metrics()` return + new `_compute_core_periphery()` + changed `collect_chaoss_metrics()` return type
+4. `src/civic_tech_crawler/cli.py` -- Unpack tuple return + console summary
+5. `src/civic_tech_crawler/cache.py` -- 6 new `.get()` calls + `CorePeripheryContributor` deserialization
+6. `src/civic_tech_crawler/exporters/csv_exporter.py` -- 5 new chaoss_summary columns + `core_periphery.csv` export
+7. `README.md` -- New metrics documentation
+
+---
+
+## All Files Modified (Cumulative)
+
+| File | PR #1 | PR #2 | PR #3 |
+|------|-------|-------|-------|
+| `pyproject.toml` | | | ✅ networkx |
+| `models.py` | 15 fields | 8 fields + CrossProjectOverlap | 6 fields + CorePeripheryContributor |
+| `chaoss_metrics.py` | 4 helpers + 6 sections | 4 sections | Modified return types + core-periphery |
+| `client.py` | 1 new method | | |
+| `cache.py` | 15 `.get()` calls | 8 `.get()` calls | 6 `.get()` calls + CorePeripheryContributor |
+| `csv_exporter.py` | 15 headers | 8 headers + overlap CSV | 5 headers + core_periphery CSV |
+| `cli.py` | | Overlap computation | Tuple unpack + summary |
+| `README.md` | ✅ | ✅ | ✅ |

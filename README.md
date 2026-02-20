@@ -72,6 +72,7 @@ This installs the following dependencies:
 |---------|---------|
 | [PyGithub](https://github.com/PyGithub/PyGithub) | GitHub API v3 client with typed objects and automatic pagination |
 | [httpx](https://www.python-httpx.org/) | HTTP client for API endpoints not covered by PyGithub |
+| [NetworkX](https://networkx.org/) | Graph analysis library for core-periphery network metrics |
 | [PyYAML](https://pyyaml.org/) | YAML configuration file parsing |
 | [Rich](https://rich.readthedocs.io/) | Terminal progress bars and formatted output |
 
@@ -682,7 +683,7 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                                        |
                           +------------v-------------+
                           |    EXPORT RESULTS        |
-                          |    - 6 CSV files         |
+                          |    - 8 CSV files         |
                           |    - Full JSON           |
                           |    (from all cached data)|
                           +--------------------------+
@@ -920,7 +921,7 @@ civic_tech_git_crawler/
 │       │   ├── chaoss_metrics.py   # CHAOSS framework metrics
 │       │   └── detection.py        # Cloud/AI-ML detection
 │       ├── exporters/
-│       │   ├── csv_exporter.py     # CSV output (6 files)
+│       │   ├── csv_exporter.py     # CSV output (8 files)
 │       │   └── json_exporter.py    # JSON output (full + per-repo)
 │       └── utils/
 │           ├── rate_limiter.py     # API rate limit monitoring
