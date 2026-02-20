@@ -6,7 +6,7 @@
 
 ## Abstract
 
-Civic technology — software developed to enhance civic engagement, government transparency, and public participation — depends heavily on open-source communities. Yet the sustainability, contributor dynamics, and community health of these projects remain poorly understood at scale. This paper presents a methodological framework and automated toolchain for analysing civic tech repositories using the GitHub API, implementing metrics from the CHAOSS (Community Health Analytics in Open Source Software) framework alongside standard software engineering indicators. We apply the framework to a pilot dataset of three civic tech repositories spanning electoral information systems (DemocracyClub/UK-Polling-Stations, DemocracyClub/WhoCanIVoteFor) and AI fairness research (fvialibre/edia). Our pilot analysis reveals significant variation in contributor concentration (bus factor 1–2), development burstiness (CV 0.00–1.27), and community infrastructure maturity across projects of different ages and institutional backing. **[MOCKUP: The full study will expand to N=50–200 repositories across multiple civic tech categories and geographic regions.]** We discuss implications for civic tech sustainability, contributor onboarding, and the application of CHAOSS metrics to domain-specific open-source ecosystems.
+Civic technology — software developed to enhance civic engagement, government transparency, and public participation — depends heavily on open-source communities. Yet the sustainability, contributor dynamics, and community health of these projects remain poorly understood at scale. This paper presents a methodological framework and automated toolchain for analysing civic tech repositories using the GitHub API, implementing 25+ metrics from the CHAOSS (Community Health Analytics in Open Source Software) framework and academic literature on open-source sustainability — including social network analysis of PR review collaboration patterns, contributor retention cohorts, community responsiveness indicators, organisational concentration indices, and DORA software delivery metrics. We apply the framework to a pilot dataset of three civic tech repositories spanning electoral information systems (DemocracyClub/UK-Polling-Stations, DemocracyClub/WhoCanIVoteFor) and AI fairness research (fvialibre/edia). Our pilot analysis reveals significant variation in contributor concentration (bus factor 1–2), development burstiness (CV 0.00–1.27), community responsiveness (median time to first response 0.1–155.8 hours), organisational concentration (HHI 5,071–7,655), and collaboration network structure (core-periphery ratios 0.0–0.4) across projects of different ages and institutional backing. **[MOCKUP: The full study will expand to N=50–200 repositories across multiple civic tech categories and geographic regions.]** We discuss implications for civic tech sustainability, contributor onboarding, and the application of CHAOSS metrics to domain-specific open-source ecosystems.
 
 **Keywords:** civic technology, open source, CHAOSS metrics, contributor networks, community health, GitHub mining, software sustainability
 
@@ -34,14 +34,13 @@ This study addresses the following research questions:
 - **RQ2:** How do development activity patterns (burstiness, release frequency, commit cadence) vary across civic tech projects of different maturity levels and institutional contexts?
 - **RQ3:** To what extent do civic tech projects adopt community health practices (contributing guidelines, governance documentation, newcomer-friendly labelling, codes of conduct)?
 - **RQ4:** What is the relationship between technology choices (cloud infrastructure, AI/ML, CI/CD) and project maturity in the civic tech domain?
-
-**[MOCKUP: RQ5 on contributor network analysis (cross-project contributors, organisational bridges) to be added when the full dataset supports network modelling.]**
+- **RQ5:** What do cross-project contributor networks and collaboration structures reveal about civic tech ecosystem connectivity and sustainability?
 
 ### 1.4 Contributions
 
 This paper makes three contributions:
 
-1. **Methodological:** An open-source, reproducible toolchain for collecting multi-dimensional repository metrics from GitHub, implementing 12 CHAOSS metrics alongside standard software engineering indicators.
+1. **Methodological:** An open-source, reproducible toolchain for collecting multi-dimensional repository metrics from GitHub, implementing 25+ CHAOSS and extended community health metrics — including social network analysis, contributor retention cohorts, DORA metrics, and organisational concentration indices — alongside standard software engineering indicators.
 2. **Empirical:** A quantitative analysis of civic tech repository health across contributor dynamics, development patterns, community infrastructure, and technology adoption. **[MOCKUP: Pilot data only; full empirical contribution requires expanded dataset.]**
 3. **Practical:** Actionable insights for civic tech project maintainers, funders, and contributors regarding sustainability risks and community health improvement opportunities.
 
@@ -92,9 +91,11 @@ We developed an open-source Python tool, *Civic Tech Git Crawler*, that collects
 
 4. **Temporal Metrics:** Complete records of all pull requests (with creation, merge, and closure timestamps), git tags, and GitHub releases.
 
-5. **CHAOSS Metrics:** Twelve metrics from the CHAOSS framework (Table 1), computed from data collected in stages 1–4.
+5. **CHAOSS and Extended Metrics:** Twenty-five metrics from the CHAOSS framework and academic literature on open-source sustainability (Tables 1a and 1b), computed from data collected in stages 1–4. This includes core CHAOSS metrics, extended community health indicators (contributor retention, responsiveness, documentation freshness), organisational concentration analysis (elephant factor, HHI, institutional classification), DORA software delivery metrics, and social network analysis of PR review collaboration patterns using NetworkX.
 
-**Table 1.** CHAOSS metrics implemented in this study.
+6. **Post-Crawl Cross-Project Analysis:** After all repositories are crawled, the tool computes cross-project contributor overlap (contributors active in multiple repositories) and exports per-contributor core-periphery network classifications.
+
+**Table 1a.** Core CHAOSS metrics implemented in this study.
 
 | # | Metric | CHAOSS Working Group | Data Source | Calculation |
 |---|--------|---------------------|-------------|-------------|
@@ -110,6 +111,25 @@ We developed an open-source Python tool, *Civic Tech Git Crawler*, that collects
 | 10 | Defect Resolution Duration | Risk | Issues API | Median days to close issues labelled "bug" |
 | 11 | OSI Approved License | Risk | Repository API | SPDX identifier checked against OSI list |
 | 12 | Community Health Score | Common | Community profile API | GitHub's community health percentage (0–100) |
+
+**Table 1b.** Extended community health and network metrics implemented in this study.
+
+| # | Metric | Category | Data Source | Calculation |
+|---|--------|----------|-------------|-------------|
+| 13 | Elephant Factor | Org Concentration | User profiles | Min. organisations for 50% of commits (Goggins et al., 2021) |
+| 14 | HHI (Org Concentration) | Org Concentration | User profiles | Herfindahl-Hirschman Index on org commit shares (0–10,000) |
+| 15 | Institutional Classification | Org Diversity | User profiles | Pattern matching on company field: government, academic, nonprofit, company, unknown |
+| 16 | Contributor Retention Cohorts | Sustainability | Contributor stats | New (1 week), casual (2–12 weeks), regular (13+ weeks) (Zhou & Mockus, 2012) |
+| 17 | Time to First Response (Issues) | Responsiveness | Issues API | Median hours to first non-author comment (last 100 issues) |
+| 18 | Time to First Response (PRs) | Responsiveness | PRs API | Median hours to first non-author comment (last 100 PRs) |
+| 19 | Documentation Freshness | Community Health | Commits API | Last commit date on README.md and CONTRIBUTING.md |
+| 20 | Stale Issue Ratio | Responsiveness | Issues API | % of open issues with no activity for 90+ days |
+| 21 | PR Review Turnaround | Code Review | PR Reviews API | Median hours from PR creation to first formal review (last 100 merged PRs) |
+| 22 | PR Review Depth | Code Review | PR Reviews API | Average review comments per PR (last 100 merged PRs) |
+| 23 | Core-Periphery Classification | Network Analysis | PR Reviews API | Degree centrality above median = "core" (Crowston & Howison, 2006) |
+| 24 | Network Density | Network Analysis | PR Reviews API | Edge density of PR review collaboration graph |
+| 25 | DORA Metrics | Software Delivery | Releases + PRs | Deployment frequency, lead time, change failure rate (Forsgren et al., 2018) |
+| 26 | Cross-Project Overlap | Ecosystem Health | Person metrics | Contributors active in 2+ crawled repositories |
 
 ### 3.2 Repository Selection
 
@@ -138,12 +158,14 @@ For the pilot analysis, we selected three civic tech repositories representing d
 
 ### 3.3 Data Collection Process
 
-Data was collected on 20 February 2026 using the Civic Tech Git Crawler tool (v0.1.0) with the following configuration:
+Data was collected on 20 February 2026 using the Civic Tech Git Crawler tool (v0.2.0) with the following configuration:
 
 - GitHub REST API with Personal Access Token authentication
-- Rate limit: 5,000 requests/hour; approximately 200 API calls consumed for 3 repositories
+- Rate limit: 5,000 requests/hour; approximately 1,300 API calls consumed for 3 repositories (starting at 4,955 remaining, ending at 3,701)
 - Statistics endpoints (contributor stats, commit activity) used automatic retry with linear backoff (max 5 attempts) to handle GitHub's asynchronous 202 responses
+- Time to first response sampled from last 100 issues and 100 PRs per repository; PR review metrics sampled from last 100 merged PRs
 - All pull requests, tags, and releases were fetched exhaustively (no pagination limits)
+- Total crawl time: approximately 17 minutes for 3 repositories
 
 ### 3.4 Analysis Approach
 
@@ -325,6 +347,97 @@ EDIA's technology profile is characteristically different: Jupyter Notebook as t
 
 Of the three pilot repositories, only WhoCanIVoteFor had closed issues labelled "bug" (n = 2). The resolution times were 14.1 days and 145.2 days (median = 79.6 days). **[MOCKUP: The full study with 50–200 repositories will provide sufficient data for meaningful defect resolution analysis, including comparisons across project types and institutional contexts.]**
 
+### 4.9 Contributor Retention Cohorts (RQ1)
+
+**Table 10.** Contributor retention cohorts.
+
+| Cohort | UK-Polling-Stations | WhoCanIVoteFor | EDIA |
+|--------|:-------------------:|:--------------:|:----:|
+| New (1 active week) | 12 | 10 | 1 |
+| Casual (2–12 active weeks) | 11 | 8 | 1 |
+| Regular (13+ active weeks) | 11 | 11 | 1 |
+
+The DemocracyClub projects show roughly even distribution across cohorts, with approximately one-third of contributors in each category. UK-Polling-Stations retains 11 of 34 contributors (32.4%) as regulars — a notable retention rate that may reflect the project's electoral cycle creating recurring engagement opportunities. WhoCanIVoteFor shows a similar pattern with 11 of 29 contributors (37.9%) classified as regular.
+
+EDIA's cohort distribution (1/1/1) reflects its very small contributor base and is not meaningfully interpretable, though the single regular contributor (LMartinezEXEX) confirms the project's single-maintainer character identified by the bus factor analysis.
+
+### 4.10 Community Responsiveness (RQ2)
+
+**Table 11.** Time to first response and issue staleness.
+
+| Metric | UK-Polling-Stations | WhoCanIVoteFor | EDIA |
+|--------|:-------------------:|:--------------:|:----:|
+| Median time to first response (issues), hours | 91.8 | 155.8 | — |
+| Median time to first response (PRs), hours | 20.4 | 14.6 | 0.1 |
+| Issues sample size | 100 | 100 | 0 |
+| PRs sample size | 100 | 100 | 4 |
+| Stale issue ratio | 67.7% | 98.0% | 0.0% |
+| Stale issues / open issues | 63 / 93 | 96 / 98 | 0 / 0 |
+
+Community responsiveness shows significant variation. For PR reviews, both DemocracyClub projects respond within approximately one day (14.6–20.4 hours median), suggesting active code review practices. EDIA's near-instant PR response time (0.1 hours) reflects the self-merging pattern typical of single-maintainer projects.
+
+Issue responsiveness is considerably slower: UK-Polling-Stations takes a median of 91.8 hours (3.8 days) and WhoCanIVoteFor takes 155.8 hours (6.5 days) for first response on issues. This disparity between PR and issue response times may indicate that the maintainer focus is on code integration rather than community support.
+
+The stale issue ratios are striking: 67.7% of UK-Polling-Stations' open issues and 98.0% of WhoCanIVoteFor's open issues have had no activity for 90+ days. This suggests significant issue triage debt, particularly in WhoCanIVoteFor where nearly all 98 open issues are stale.
+
+### 4.11 PR Review Quality (RQ2)
+
+**Table 12.** PR review turnaround and depth.
+
+| Metric | UK-Polling-Stations | WhoCanIVoteFor | EDIA |
+|--------|:-------------------:|:--------------:|:----:|
+| Median PR review turnaround (hours) | 23.4 | 4.0 | 46.7 |
+| Avg review comments per PR | 0.11 | 0.11 | 0.0 |
+
+PR review turnaround varies considerably: WhoCanIVoteFor has notably fast formal reviews (median 4.0 hours), while UK-Polling-Stations takes 23.4 hours and EDIA takes 46.7 hours. However, review depth is uniformly shallow across all projects, with an average of only 0.11 review comments per PR in the DemocracyClub projects and 0.0 in EDIA. This indicates that while PRs receive prompt attention, the formal review process is largely perfunctory — PRs are approved without substantive commentary. This pattern is consistent with small-team dynamics where informal communication channels (Slack, face-to-face) substitute for in-PR discussion.
+
+### 4.12 Organisational Concentration (RQ1, RQ3)
+
+**Table 13.** Organisational concentration and institutional type classification.
+
+| Metric | UK-Polling-Stations | WhoCanIVoteFor | EDIA |
+|--------|:-------------------:|:--------------:|:----:|
+| Elephant factor | 1 | 1 | 1 |
+| Herfindahl-Hirschman Index | 5,071 | 7,655 | 5,950 |
+| Government contributors | 0 | 0 | 0 |
+| Academic contributors | 1 | 0 | 0 |
+| Nonprofit contributors | 0 | 0 | 0 |
+| Company contributors | 9 | 7 | 1 |
+| Unknown contributors | 24 | 22 | 2 |
+
+All three projects have an elephant factor of 1, meaning a single organisation's contributors account for more than 50% of commits. This is more severe than the individual-level bus factor (2 for the DemocracyClub projects) and indicates extreme organisational dependency.
+
+The Herfindahl-Hirschman Index (HHI) values are highly concentrated: UK-Polling-Stations (5,071), EDIA (5,950), and WhoCanIVoteFor (7,655) all exceed the 2,500 threshold commonly considered "highly concentrated" in market analysis (US DoJ guidelines). WhoCanIVoteFor's HHI of 7,655 — approaching the 10,000 maximum — indicates near-monopolistic organisational concentration.
+
+Institutional type classification reveals a significant gap: despite the civic-tech domain's association with government and nonprofit sectors, zero contributors across all three projects are classified as government or nonprofit based on their GitHub profiles. The majority (67–73%) have no organisational affiliation listed ("unknown"), severely limiting the reliability of this metric. The 9 company-affiliated contributors in UK-Polling-Stations include organisations such as mySociety, BT Labs, and Cognizant/NHS England, suggesting cross-sector engagement that the current classification may undercount.
+
+### 4.13 Core-Periphery Network Structure (RQ1, RQ5)
+
+**Table 14.** Core-periphery network analysis of PR review collaboration.
+
+| Metric | UK-Polling-Stations | WhoCanIVoteFor | EDIA |
+|--------|:-------------------:|:--------------:|:----:|
+| Core contributors | 2 | 1 | 0 |
+| Periphery contributors | 3 | 5 | 2 |
+| Core-periphery ratio | 0.40 | 0.17 | 0.00 |
+| Network density | 0.80 | 0.60 | 1.00 |
+| Avg degree centrality | 0.80 | 0.60 | 1.00 |
+| Contributors in review network | 5 | 6 | 2 |
+
+The PR review collaboration network reveals distinct structural patterns across projects. UK-Polling-Stations has the most balanced core-periphery structure: 2 core contributors (`awdem` and `chris48s`, both with degree centrality 1.0) and 3 periphery contributors, with high network density (0.80) indicating that most reviewers interact with most authors. WhoCanIVoteFor is more centralised: a single core contributor (`chris48s`, degree centrality 1.0, betweenness centrality 0.47) serves as the primary review hub, while 5 periphery contributors interact primarily through this central node.
+
+EDIA's review network consists of only 2 contributors with equal centrality (1.0 each), both classified as periphery — correctly, since uniform centrality indicates no differentiated core. The density of 1.0 simply reflects the fully-connected nature of a 2-node graph.
+
+Notably, the core contributors identified by network analysis (`awdem`, `chris48s`) differ from the top committers identified by bus factor analysis. `chris48s` appears as core in both DemocracyClub projects' review networks, but `awdem` — who is not among the top 5 committers in UK-Polling-Stations — emerges as a core review contributor. This illustrates how network analysis reveals "hidden" influential contributors whose institutional knowledge comes from code review rather than direct code authorship.
+
+### 4.14 Cross-Project Contributor Overlap (RQ5)
+
+The tool identified 47 unique contributors across the three pilot repositories, of which 19 (40.4%) contribute to 2 or more repositories. All 19 multi-repo contributors are shared between the two DemocracyClub projects, with no overlap with EDIA — reflecting the organisational boundary between DemocracyClub (UK) and fvialibre (Argentina).
+
+Among the 19 shared contributors, several are significant in both repositories: `chris48s` (2,038 and 220 commits respectively), `symroe` (468 and 907), `GeoWill` (1,271 and an unspecified number), and `VirginiaDooley` (in both projects). The high overlap rate (40.4%) within the DemocracyClub ecosystem suggests a shared contributor pool that may mitigate individual project risk but concentrates ecosystem-level risk in a single organisation.
+
+Bot accounts also appear as cross-project contributors: `dependabot[bot]`, `dependabot-preview[bot]`, and `transifex-integration[bot]` are active in both DemocracyClub repositories, further inflating the overlap metric and reinforcing the need for bot filtering in future analyses.
+
 ---
 
 ## 5. Discussion
@@ -362,27 +475,48 @@ The significant presence of bot accounts among top contributors (polling-bot-400
 
 Future iterations of the methodology should implement bot detection (based on the `[bot]` suffix in GitHub usernames and known bot accounts) and report metrics both including and excluding automated contributions.
 
-### 5.5 Cross-Project Contributor Networks
+### 5.5 Cross-Project Contributor Networks and Collaboration Structure
 
-Even in this small pilot, we observe cross-project contributors: `chris48s` and `symroe` are significant contributors to both DemocracyClub repositories, and `awdem` contributes to both as well. This suggests that organisational-level contributor networks may be more important than individual project-level metrics for understanding civic tech sustainability.
+The pilot data now includes both cross-project contributor overlap and within-project PR review network analysis, enabling a multi-level view of civic tech collaboration.
 
-**[MOCKUP: The full study will construct bipartite contributor-repository networks and analyse:**
-- **Bridge contributors** who connect otherwise disconnected projects
-- **Organisational clusters** of contributors working across institutional boundaries
-- **Knowledge transfer patterns** inferred from shared contributor activity
-- **Network centrality** metrics (degree, betweenness) as predictors of project sustainability**]**
+**Cross-project overlap.** The 40.4% contributor overlap between the two DemocracyClub repositories is remarkably high, confirming that these projects share a common development community. However, the zero overlap with EDIA highlights the geographic and organisational boundaries that segment the civic tech ecosystem. In the full study, this metric will help identify whether civic tech operates as a connected ecosystem or as isolated organisational silos.
 
-### 5.6 Implications for Civic Tech Sustainability
+**Core-periphery structure.** The PR review network analysis reveals that core contributors identified through collaboration patterns differ from those identified through commit volume alone. `awdem`, classified as "core" in UK-Polling-Stations' review network, is not among the top 5 committers — suggesting a code review role that carries institutional knowledge invisible to commit-based metrics. This validates the "onion model" of OSS communities (Crowston & Howison, 2006; Jergensen et al., 2011), where contributor influence operates through multiple mechanisms beyond code authorship.
+
+**Network density as a health indicator.** The decline in network density from UK-Polling-Stations (0.80) to WhoCanIVoteFor (0.60) may reflect the difference between a collaborative review culture (where most contributors review each other's work) and a hub-and-spoke model (where a single gatekeeper reviews all contributions). The implications for project resilience are significant: hub-and-spoke review patterns create the same single-point-of-failure risk that bus factor captures for code authorship.
+
+**[MOCKUP: The full study will extend this analysis with:**
+- **Bridge contributors** who connect otherwise disconnected projects across organisations
+- **Temporal evolution** of core-periphery structure as projects mature
+- **Correlation** between network density and project sustainability indicators**]**
+
+### 5.6 Community Responsiveness and Issue Triage Debt
+
+The stale issue ratios — 67.7% for UK-Polling-Stations and 98.0% for WhoCanIVoteFor — represent a significant finding. High stale issue ratios in civic tech projects are particularly concerning because issues may represent citizen-reported usability problems, accessibility barriers, or data accuracy requests that directly affect public service delivery. The near-total staleness of WhoCanIVoteFor's issue tracker (96 of 98 open issues with no activity for 90+ days) suggests a structural inability to process community feedback, despite the project's relatively fast PR review times (4.0 hours median).
+
+This disconnect between PR responsiveness and issue responsiveness suggests that maintainer bandwidth is primarily consumed by code integration rather than community management. The finding reinforces Steinmacher et al.'s (2015) observation that newcomer barriers extend beyond code contribution to include the responsiveness of the community to questions and bug reports.
+
+### 5.7 Organisational Concentration Beyond the Bus Factor
+
+The elephant factor of 1 across all projects — combined with HHI values of 5,071–7,655 — reveals a dimension of concentration risk invisible to the individual-level bus factor. While UK-Polling-Stations has a bus factor of 2 (suggesting some contributor diversity), the elephant factor of 1 indicates that all significant contributions come from a single organisational context. This means that while the project might survive the departure of one individual, the departure of the single contributing organisation (DemocracyClub itself) would likely be fatal.
+
+For civic tech projects serving democratic infrastructure, organisational-level concentration risk may be more important than individual-level risk, as organisations are subject to systemic shocks (funding cuts, strategic pivots, political changes) that affect all their contributors simultaneously.
+
+### 5.8 Implications for Civic Tech Sustainability
 
 Based on the pilot findings, we identify several implications:
 
-1. **Funding for contributor diversification.** Bus factors of 1–2 in production civic tech tools represent a fragility that funders should address through supported onboarding programmes and contributor stipends.
+1. **Funding for contributor diversification.** Bus factors of 1–2 and elephant factors of 1 in production civic tech tools represent both individual and organisational fragility that funders should address through supported onboarding programmes, contributor stipends, and multi-organisation governance structures.
 
 2. **Community infrastructure investment.** The inconsistent adoption of contributing guidelines, governance documents, and newcomer labelling — even within the same organisation (DemocracyClub) — suggests that community health practices are not systematically prioritised.
 
-3. **License compliance.** WhoCanIVoteFor, a 10-year-old project with 43 stars and 35 forks, lacks a formal license. This creates legal ambiguity for contributors and reusers, and should be resolved.
+3. **Issue triage as a sustainability indicator.** Stale issue ratios above 90% signal a project that has effectively ceased community engagement, even if code contributions continue. Funders and maintainers should monitor this metric alongside commit activity.
 
-4. **Release management.** The complete absence of semantic versioning, tags, and releases across all pilot projects limits auditability and reproducibility. For civic infrastructure serving democratic processes, this is a governance concern.
+4. **License compliance.** WhoCanIVoteFor, a 10-year-old project with 43 stars and 35 forks, lacks a formal license. This creates legal ambiguity for contributors and reusers, and should be resolved.
+
+5. **Release management.** The complete absence of semantic versioning, tags, and releases across all pilot projects limits auditability and reproducibility. For civic infrastructure serving democratic processes, this is a governance concern.
+
+6. **Review network health.** Hub-and-spoke review patterns (as seen in WhoCanIVoteFor's single core reviewer) create knowledge concentration risks similar to low bus factors. Projects should aim for distributed review practices to build shared understanding across the contributor base.
 
 ---
 
@@ -412,13 +546,15 @@ Based on the pilot findings, we identify several implications:
 
 ### 7.1 Conclusions
 
-This paper has presented a methodological framework and open-source toolchain for analysing civic technology repositories using CHAOSS metrics and standard software engineering indicators. The pilot analysis of three civic tech projects reveals:
+This paper has presented a methodological framework and open-source toolchain for analysing civic technology repositories using 25+ CHAOSS and extended community health metrics, including social network analysis, contributor retention cohorts, organisational concentration indices, and DORA software delivery metrics. The pilot analysis of three civic tech projects reveals:
 
-1. **Extreme contributor concentration** (bus factor 1–2) exists even in mature, organisationally-backed projects, representing a sustainability risk for civic infrastructure.
+1. **Extreme contributor and organisational concentration** (bus factor 1–2, elephant factor 1, HHI 5,071–7,655) exists even in mature, organisationally-backed projects, representing both individual and institutional sustainability risk for civic infrastructure.
 2. **Election-driven burstiness** (CV > 1.0) distinguishes civic tech development patterns from both commercial and research software, reflecting the domain's political-calendar dependencies.
-3. **Community health infrastructure is inconsistently adopted**, even within a single organisation, and newcomer-friendliness metrics based on label presence alone may be misleading.
-4. **Technology choices clearly differentiate project archetypes**: cloud infrastructure for production civic services vs. ML/AI stacks for civic research tools.
-5. **Cross-project contributor networks** suggest that civic tech sustainability may be better understood at the organisational or ecosystem level than at the individual project level.
+3. **Community responsiveness is bifurcated**: PR review times are fast (4–23 hours) but issue response times are slow (92–156 hours) with extreme stale issue ratios (68–98%), suggesting maintainer bandwidth is consumed by code integration rather than community engagement.
+4. **Community health infrastructure is inconsistently adopted**, even within a single organisation, and newcomer-friendliness metrics based on label presence alone may be misleading.
+5. **Technology choices clearly differentiate project archetypes**: cloud infrastructure for production civic services vs. ML/AI stacks for civic research tools.
+6. **PR review network analysis** reveals "hidden" influential contributors whose institutional knowledge comes from code review rather than commit volume, and shows distinct structural patterns (collaborative vs. hub-and-spoke) with implications for project resilience.
+7. **Cross-project contributor overlap** (40.4% across the DemocracyClub ecosystem) suggests shared contributor pools that may mitigate individual project risk but concentrate ecosystem-level risk in a single organisation.
 
 ### 7.2 Future Work
 
@@ -426,12 +562,12 @@ This paper has presented a methodological framework and open-source toolchain fo
 
 1. **Scale:** Expand the dataset from 3 to 50–200 repositories across multiple civic tech categories and geographic regions.
 2. **GitLab support:** Extend the toolchain to support GitLab-hosted projects.
-3. **Bot filtering:** Implement automated detection and filtering of bot accounts in contributor metrics.
-4. **Longitudinal analysis:** Track repository metrics over time (monthly snapshots) to analyse sustainability trajectories.
-5. **Network analysis:** Construct and analyse cross-project contributor networks to identify bridge developers, organisational clusters, and knowledge transfer patterns.
-6. **Qualitative validation:** Conduct interviews with civic tech maintainers to validate quantitative findings and contextualise the metrics.
+3. **Bot filtering:** Implement automated detection and filtering of bot accounts in contributor metrics. Bot accounts (dependabot, polling-bot-4000) inflate commit counts, contributor overlap, and may distort network centrality metrics.
+4. **Longitudinal analysis:** Track repository metrics over time (monthly snapshots) to analyse sustainability trajectories and core-periphery structure evolution.
+5. **Extended network analysis:** Scale the PR review network analysis to the full dataset to study cross-organisational review patterns, temporal evolution of core-periphery structure, and whether network density predicts project sustainability.
+6. **Qualitative validation:** Conduct interviews with civic tech maintainers to validate quantitative findings — particularly the disconnect between PR responsiveness and issue staleness, and the role of "hidden" core reviewers identified by network analysis.
 7. **Election-cycle analysis:** Correlate development burstiness with known electoral calendars to test the election-driven development hypothesis.
-8. **Predictive modelling:** Develop models to predict project abandonment or sustainability based on early-stage metric profiles.
+8. **Predictive modelling:** Develop models to predict project abandonment or sustainability based on early-stage metric profiles, incorporating the new metrics (retention cohorts, HHI, stale issue ratio, network density) as predictors.
 
 ---
 
@@ -477,7 +613,7 @@ Steinberg, T. (2019). The rise of civic technology. In European Commission Joint
 
 The Civic Tech Git Crawler tool is available as open-source software at: **[MOCKUP: Insert repository URL upon publication.]**
 
-The tool is implemented in Python 3.13, managed with `uv`, and requires a GitHub Personal Access Token. It collects data through the GitHub REST API and exports results in both CSV (6 files) and JSON (per-repository + aggregated) formats.
+The tool is implemented in Python 3.13, managed with `uv`, and requires a GitHub Personal Access Token. Dependencies include PyGithub (GitHub API client), httpx (HTTP client), NetworkX (graph analysis for core-periphery metrics), PyYAML (configuration), and Rich (terminal output). It collects data through the GitHub REST API and exports results in both CSV (8 files: `repo_metrics.csv`, `person_metrics.csv`, `temporal_summary.csv`, `chaoss_summary.csv`, `pull_requests.csv`, `tags.csv`, `core_periphery.csv`, `cross_project_overlap.csv`) and JSON (per-repository + aggregated) formats.
 
 ### Reproduction instructions
 
@@ -493,7 +629,7 @@ Results will be written to `./output/`.
 
 ## Appendix B: Complete Metric Definitions
 
-For the complete technical specification of all 33 repository-level metrics, 8 contributor-level metrics, and 12 CHAOSS metrics, including calculation formulas, API endpoints, and data type definitions, see the tool's README documentation.
+For the complete technical specification of all 33 repository-level metrics, 8 contributor-level metrics, 25+ CHAOSS and extended community health metrics (including 39 CSV columns in `chaoss_summary.csv`), and per-contributor core-periphery network classifications, including calculation formulas, API endpoints, and data type definitions, see the tool's README documentation.
 
 ---
 
@@ -504,9 +640,16 @@ For the complete technical specification of all 33 repository-level metrics, 8 c
 - Repository sampling strategy (Section 3.2): needs systematic approach for 50–200 repos
 - Statistical analysis methods (Section 3.4): correlation, clustering, network analysis, regression
 - Expanded results (Section 4): all tables show pilot data only (n=3)
-- Network analysis (Section 5.5): requires multi-project contributor data
+- ~~Network analysis (Section 5.5): requires multi-project contributor data~~ **RESOLVED** — cross-project overlap and core-periphery analysis now implemented and reported in Sections 4.13–4.14 and 5.5
 - Longitudinal analysis: requires time-series data collection
 - Election-cycle correlation: requires electoral calendar data
 - Bot filtering: not yet implemented in tool
 - GitLab support: not yet implemented
 - Qualitative validation: not conducted
+
+**New since initial draft:**
+- Added 14 extended metrics (Tables 1b, 10–14): retention cohorts, responsiveness, HHI, elephant factor, core-periphery network, DORA, cross-project overlap
+- RQ5 (contributor networks) promoted from mockup to implemented
+- Section 4 expanded from 8 to 14 subsections with real pilot data
+- Section 5 expanded from 6 to 8 discussion subsections
+- Tool version updated from v0.1.0 to v0.2.0
