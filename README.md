@@ -18,6 +18,7 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
   - [Temporal Metrics](#temporal-metrics)
   - [CHAOSS Metrics](#chaoss-metrics)
   - [Technology Detection](#technology-detection)
+- [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery)
 - [Analysis Pipeline](#analysis-pipeline)
 - [API Rate Limits](#api-rate-limits)
 - [Examples](#examples)
@@ -229,6 +230,7 @@ uv run civic-tech-crawler --config config.yaml
 usage: civic-tech-crawler [-h] [--config CONFIG] [--token TOKEN] [--repos REPOS]
                           [--output-dir OUTPUT_DIR] [--skip-chaoss]
                           [--skip-temporal] [--skip-detection] [--verbose]
+                          [--force] [--export-only]
 
 GitHub repository metrics crawler for civic tech research
 
@@ -242,6 +244,8 @@ options:
   --skip-temporal          Skip temporal metrics (PRs, tags, releases)
   --skip-detection         Skip cloud/AI-ML technology detection
   --verbose                Enable debug logging
+  --force                  Re-crawl all repos even if cached data exists
+  --export-only            Skip crawling; regenerate CSV/JSON from cached per-repo data
 ```
 
 ### Flag details
@@ -256,6 +260,8 @@ options:
 | `--skip-temporal` | Skips pulling all PRs, tags, and releases. Useful when only repository-level metrics are needed. Also disables CHAOSS metrics that depend on PR data (acceptance ratio, release frequency). |
 | `--skip-detection` | Skips cloud and AI/ML technology detection. Saves a few API calls per repository. |
 | `--verbose` | Shows detailed debug output including every HTTP request and response. |
+| `--force` | Re-crawl all repositories even if cached results exist in the output directory. Overwrites existing cache files. |
+| `--export-only` | Skip crawling entirely. Regenerates all CSV and JSON output files from the existing cached per-repo JSON files in the output directory. Useful for rebuilding exports after manual edits or for merging results from multiple runs. |
 
 ### Running with `python -m`
 
@@ -285,7 +291,7 @@ All output files are written to the output directory (default: `./output/`). Bot
 | File | Description |
 |------|-------------|
 | `full_results.json` | Complete nested data for all repositories in a single file |
-| `{Owner}_{Repo}_data.json` | Individual deep-dive file per repository |
+| `{Owner}_{Repo}_data.json` | Per-repository cache file with all collected metrics. These files serve as the **persistent cache** for incremental runs and crash recovery (see [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery)). |
 
 ### CSV formatting conventions
 
@@ -490,6 +496,62 @@ Detection is positive (`cloud_detected: True` or `ai_ml_detected: True`) if **at
 
 ---
 
+## Incremental Runs & Crash Recovery
+
+The tool supports **incremental crawling**, meaning you can run it in parts across multiple sessions and the results accumulate automatically. This is essential when crawling large numbers of repositories.
+
+### How it works
+
+After each repository is successfully crawled, its data is immediately saved as a per-repo JSON file (`{Owner}_{Repo}_data.json`) in the output directory. On subsequent runs, the tool checks for these files and skips already-crawled repositories.
+
+At export time, all per-repo cache files in the output directory are loaded and merged into the aggregated CSV and JSON output files — even repos crawled in previous sessions.
+
+### Scenarios
+
+| Scenario | What happens |
+|----------|-------------|
+| First run with 10 repos | Crawls all 10, saves 10 JSON cache files, exports CSV/JSON |
+| Second run with same 10 repos | Loads all 10 from cache (zero API calls), re-exports CSV/JSON |
+| Second run with 5 *new* repos | Crawls only the 5 new repos. Export merges all 15 repos into CSV/JSON. |
+| Crash at repo #6 of 10 | Repos 1–5 are already saved to disk. Re-run loads 1–5 from cache, crawls 6–10. |
+| `--force` with 10 repos | Re-crawls all 10 regardless of cache, overwrites cache files |
+| `--export-only` | No crawling. Rebuilds CSV/JSON from all cached per-repo files in the output directory |
+
+### Example: Multi-session workflow
+
+```bash
+# Session 1: Crawl first batch of repos
+uv run civic-tech-crawler --repos "org/repo1,org/repo2,org/repo3"
+
+# Session 2 (next day): Crawl more repos — previous results are preserved
+uv run civic-tech-crawler --repos "org/repo4,org/repo5,org/repo6"
+
+# Session 3: Rebuild all exports from cached data (no API calls)
+uv run civic-tech-crawler --export-only
+
+# The output CSV/JSON now contains all 6 repositories
+```
+
+### Refreshing stale data
+
+To re-crawl a specific repository (e.g., to get updated metrics), delete its cache file and re-run:
+
+```bash
+# Delete cache for one repo
+rm output/DemocracyClub_UK-Polling-Stations_data.json
+
+# Re-run — only the deleted repo will be re-crawled
+uv run civic-tech-crawler --config config.yaml
+```
+
+To re-crawl everything:
+
+```bash
+uv run civic-tech-crawler --config config.yaml --force
+```
+
+---
+
 ## Analysis Pipeline
 
 The tool follows a sequential pipeline for each repository. Understanding this pipeline helps in interpreting the results and estimating API usage.
@@ -509,6 +571,12 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                     |       FOR EACH REPOSITORY          |
                     |                                    |
                     |  +-----------------------------+   |
+                    |  | 0. CHECK CACHE              |   |
+                    |  |    - If cached → load & skip|   |
+                    |  |    - If --force → re-crawl  |   |
+                    |  +-------------+---------------+   |
+                    |                |                    |
+                    |  +-------------v---------------+   |
                     |  | 1. REPO METRICS             |   |
                     |  |    - Basic info & languages  |   |
                     |  |    - Commit history (first/  |   |
@@ -549,6 +617,12 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                     |  |    - Label inclusivity       |   |
                     |  |    - Burstiness stats        |   |
                     |  |    - Defect resolution       |   |
+                    |  +-------------+---------------+   |
+                    |                |                    |
+                    |  +-------------v---------------+   |
+                    |  | 6. SAVE TO CACHE             |   |
+                    |  |    - Immediate persistence   |   |
+                    |  |    - Crash-safe (per-repo)   |   |
                     |  +-----------------------------+   |
                     |                                    |
                     +------------------+-----------------+
@@ -556,12 +630,14 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                           +------------v-------------+
                           |    EXPORT RESULTS        |
                           |    - 6 CSV files         |
-                          |    - Full JSON + per-repo|
+                          |    - Full JSON           |
+                          |    (from all cached data)|
                           +--------------------------+
 ```
 
 ### Pipeline characteristics
 
+- **Incremental & crash-safe:** Each repository is saved to disk immediately after crawling. If the process is interrupted, already-crawled repos are preserved and loaded from cache on the next run.
 - **Error isolation:** If one repository fails, the tool continues with the remaining repositories. Failed repositories are logged and excluded from the output.
 - **Progress reporting:** A Rich progress bar shows current repository and collection step in the terminal.
 - **Collector dependencies:** CHAOSS metrics depend on data from person metrics and temporal metrics. If temporal metrics are skipped (`--skip-temporal`), dependent CHAOSS metrics (acceptance ratio, release frequency) will be `null`.
@@ -600,9 +676,9 @@ GitHub's statistics endpoints (`/stats/contributors`, `/stats/commit_activity`) 
 | 3 | 75-450 | 1-5 minutes |
 | 10 | 250-1,500 | 5-15 minutes |
 | 50 | 1,250-7,500 | 20-60 minutes |
-| 100+ | 2,500+ | Consider multiple runs |
+| 100+ | 2,500+ | Use incremental runs across sessions |
 
-The tool monitors remaining API calls and automatically sleeps when the rate limit is nearly exhausted, resuming when the limit resets (every hour).
+The tool monitors remaining API calls and automatically sleeps when the rate limit is nearly exhausted, resuming when the limit resets (every hour). For large-scale crawling, the [incremental caching](#incremental-runs--crash-recovery) feature means you can split runs across multiple sessions without losing progress.
 
 ### Reducing API usage
 
@@ -645,13 +721,32 @@ uv run civic-tech-crawler \
   --output-dir ./quick_scan
 ```
 
-### Example 4: Debug mode
+### Example 4: Incremental crawling across sessions
+
+```bash
+# Day 1: Crawl first batch
+uv run civic-tech-crawler --repos "org/repo1,org/repo2,org/repo3"
+
+# Day 2: Add more repos (previous 3 loaded from cache, only new ones crawled)
+uv run civic-tech-crawler --repos "org/repo1,org/repo2,org/repo3,org/repo4,org/repo5"
+
+# Day 3: Just regenerate exports from all cached data
+uv run civic-tech-crawler --export-only
+```
+
+### Example 5: Force re-crawl all repos
+
+```bash
+uv run civic-tech-crawler --config config.yaml --force
+```
+
+### Example 6: Debug mode
 
 ```bash
 uv run civic-tech-crawler --config config.yaml --verbose 2>&1 | tee crawl.log
 ```
 
-### Example 5: Loading results in Python for analysis
+### Example 7: Loading results in Python for analysis
 
 ```python
 import pandas as pd
@@ -670,7 +765,7 @@ chaoss = pd.read_csv("output/chaoss_summary.csv")
 print(chaoss[["repo_full_name", "bus_factor", "burstiness_cv", "change_request_acceptance_ratio"]])
 ```
 
-### Example 6: Loading results in R
+### Example 8: Loading results in R
 
 ```r
 library(readr)
@@ -692,7 +787,7 @@ contributors %>%
   arrange(desc(total_commits))
 ```
 
-### Example 7: Full nested JSON analysis
+### Example 9: Full nested JSON analysis
 
 ```python
 import json
@@ -761,6 +856,7 @@ civic_tech_git_crawler/
 │       ├── __init__.py             # Package version
 │       ├── __main__.py             # python -m entry point
 │       ├── cli.py                  # CLI argument parsing + orchestration
+│       ├── cache.py                # Per-repo JSON cache (incremental runs)
 │       ├── config.py               # YAML config loading + validation
 │       ├── client.py               # GitHub API client (PyGithub + httpx)
 │       ├── models.py               # All dataclass definitions

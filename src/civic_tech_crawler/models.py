@@ -136,3 +136,4 @@ class RepositoryData:
     person_metrics: list[PersonMetrics]
     temporal_metrics: TemporalMetrics | None
     chaoss_metrics: ChaossMetrics | None
+    crawled_at: datetime | None = None
