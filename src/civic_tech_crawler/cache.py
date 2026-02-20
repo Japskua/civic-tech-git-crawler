@@ -13,6 +13,7 @@ from pathlib import Path
 
 from civic_tech_crawler.models import (
     ChaossMetrics,
+    CorePeripheryContributor,
     PersonMetrics,
     PRRecord,
     ReleaseRecord,
@@ -180,6 +181,13 @@ def _dict_to_chaoss_metrics(d: dict | None) -> ChaossMetrics | None:
         dora_deployment_frequency_per_month=d.get("dora_deployment_frequency_per_month"),
         dora_median_lead_time_days=d.get("dora_median_lead_time_days"),
         dora_change_failure_rate=d.get("dora_change_failure_rate"),
+        # Core-Periphery Network Analysis
+        core_contributor_count=d.get("core_contributor_count", 0),
+        periphery_contributor_count=d.get("periphery_contributor_count", 0),
+        core_periphery_ratio=d.get("core_periphery_ratio"),
+        network_density=d.get("network_density"),
+        avg_degree_centrality=d.get("avg_degree_centrality"),
+        pr_review_edges=d.get("pr_review_edges", []),
     )
 
 
@@ -191,6 +199,17 @@ def _dict_to_repository_data(d: dict) -> RepositoryData:
         temporal_metrics=_dict_to_temporal_metrics(d.get("temporal_metrics")),
         chaoss_metrics=_dict_to_chaoss_metrics(d.get("chaoss_metrics")),
         crawled_at=_parse_datetime(d.get("crawled_at")),
+        core_periphery_contributors=[
+            CorePeripheryContributor(
+                repo_full_name=c["repo_full_name"],
+                login=c["login"],
+                degree_centrality=c["degree_centrality"],
+                betweenness_centrality=c["betweenness_centrality"],
+                classification=c["classification"],
+                num_collaborators=c["num_collaborators"],
+            )
+            for c in d.get("core_periphery_contributors", [])
+        ],
     )
 
 

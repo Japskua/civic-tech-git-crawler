@@ -38,7 +38,7 @@ Based on the analysis in `recommended_actions_20_02_2026.md`.
 
 ## Future Work
 
-- [ ] Core-Periphery Network Analysis (centrality metrics) -- HIGH effort, requires NetworkX
+- [x] Core-Periphery Network Analysis (centrality metrics) -- *Implemented in `add_core_periphery` branch*
 - [x] Institutional Type Classification (government/nonprofit/academic/company) -- *Implemented in `add_future_metrics` branch*
 - [x] Cross-Project Contributor Overlap -- *Implemented in `add_future_metrics` branch*
 - [x] DORA Metrics (deployment frequency, lead time, change failure rate) -- *Implemented in `add_future_metrics` branch*

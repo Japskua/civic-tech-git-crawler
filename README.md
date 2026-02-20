@@ -285,6 +285,7 @@ All output files are written to the output directory (default: `./output/`). Bot
 | `chaoss_summary.csv` | 1 per repository | CHAOSS framework metrics (bus factor, burstiness, acceptance ratio, etc.) |
 | `pull_requests.csv` | 1 per pull request | Individual PR records with timestamps and authors |
 | `tags.csv` | 1 per tag | Git tags with commit SHAs and dates |
+| `core_periphery.csv` | 1 per contributor in review network | Core-periphery network analysis (centrality, classification) per contributor |
 | `cross_project_overlap.csv` | 1 per unique contributor | Cross-project contributor overlap (login, number of repos contributed to) |
 
 ### JSON files
@@ -499,6 +500,26 @@ These metrics extend the core CHAOSS framework with additional indicators recomm
 | DORA Deployment Frequency | `dora_deployment_frequency_per_month` | DORA / Accelerate (Forsgren et al., 2018) | Number of releases per month over the repository's lifetime. |
 | DORA Lead Time | `dora_median_lead_time_days` | DORA / Accelerate (Forsgren et al., 2018) | Median days between consecutive releases (proxy for time from code change to production). |
 | DORA Change Failure Rate | `dora_change_failure_rate` | DORA / Accelerate (Forsgren et al., 2018) | Ratio of revert/hotfix/bugfix PRs to total merged PRs (heuristic from PR title patterns). |
+| Core Contributors | `core_contributor_count` | Core-periphery structure (Crowston & Howison, 2006) | Number of contributors classified as "core" in the PR review collaboration network. Uses degree centrality above the median threshold. |
+| Periphery Contributors | `periphery_contributor_count` | Core-periphery structure (Crowston & Howison, 2006) | Number of contributors classified as "periphery" in the PR review collaboration network. |
+| Core-Periphery Ratio | `core_periphery_ratio` | Core-periphery structure (Crowston & Howison, 2006) | Proportion of core contributors: `core / (core + periphery)`. |
+| Network Density | `network_density` | Social network analysis | Ratio of actual edges to possible edges in the PR review collaboration graph. Higher density = more interconnected reviews. |
+| Avg Degree Centrality | `avg_degree_centrality` | Social network analysis | Average number of unique collaborators per person (normalized). Higher values indicate broader collaboration patterns. |
+
+#### Core-Periphery Network Analysis
+
+A separate CSV file (`core_periphery.csv`) provides per-contributor network analysis:
+
+| Column | Description |
+|--------|-------------|
+| `repo_full_name` | Repository identifier |
+| `login` | GitHub username |
+| `degree_centrality` | Normalized count of unique collaborators (0-1) |
+| `betweenness_centrality` | How often this person bridges between other collaborators (0-1) |
+| `classification` | `core` or `periphery` based on degree centrality above/below median |
+| `num_collaborators` | Raw number of unique people this contributor has reviewed or been reviewed by |
+
+The collaboration graph is built from PR author↔reviewer pairs extracted during the PR review metrics pass (last 100 merged PRs). Zero additional API calls required.
 
 #### Cross-Project Contributor Overlap
 
