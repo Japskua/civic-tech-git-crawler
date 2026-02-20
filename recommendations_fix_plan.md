@@ -1,5 +1,7 @@
 # Implementation Plan: Recommended Metrics
 
+> **Status: COMPLETE** -- All 6 metrics (15 fields) implemented, tested, and verified on branch `improve_by_recommendations`.
+
 Technical plan for adding 6 new metrics (15 new fields) to the Civic Tech Git Crawler.
 
 ---
