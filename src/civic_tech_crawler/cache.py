@@ -174,6 +174,12 @@ def _dict_to_chaoss_metrics(d: dict | None) -> ChaossMetrics | None:
         open_issue_count=d.get("open_issue_count", 0),
         median_pr_review_turnaround_hours=d.get("median_pr_review_turnaround_hours"),
         avg_review_comments_per_pr=d.get("avg_review_comments_per_pr"),
+        # HHI, Institutional Types, DORA (added in add_future_metrics branch)
+        herfindahl_hirschman_index=d.get("herfindahl_hirschman_index"),
+        contributor_org_types=d.get("contributor_org_types", {}),
+        dora_deployment_frequency_per_month=d.get("dora_deployment_frequency_per_month"),
+        dora_median_lead_time_days=d.get("dora_median_lead_time_days"),
+        dora_change_failure_rate=d.get("dora_change_failure_rate"),
     )
 
 

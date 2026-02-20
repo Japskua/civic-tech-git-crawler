@@ -285,6 +285,7 @@ All output files are written to the output directory (default: `./output/`). Bot
 | `chaoss_summary.csv` | 1 per repository | CHAOSS framework metrics (bus factor, burstiness, acceptance ratio, etc.) |
 | `pull_requests.csv` | 1 per pull request | Individual PR records with timestamps and authors |
 | `tags.csv` | 1 per tag | Git tags with commit SHAs and dates |
+| `cross_project_overlap.csv` | 1 per unique contributor | Cross-project contributor overlap (login, number of repos contributed to) |
 
 ### JSON files
 
@@ -493,6 +494,22 @@ These metrics extend the core CHAOSS framework with additional indicators recomm
 | Stale Issue Ratio | `stale_issue_ratio`, `stale_issue_count`, `open_issue_count` | Issue responsiveness indicator | Percentage of open issues with no activity for 90+ days. |
 | PR Review Turnaround | `median_pr_review_turnaround_hours` | Code review quality (Rigby & Bird, 2013) | Median hours from PR creation to first formal review. Sampled from last 100 merged PRs. |
 | PR Review Depth | `avg_review_comments_per_pr` | Code review quality (Bosu et al., 2017) | Average number of review comments per PR. Sampled from last 100 merged PRs. |
+| HHI (Org Concentration) | `herfindahl_hirschman_index` | Market concentration index (Rhoades, 1993) | Herfindahl-Hirschman Index computed on organizational commit shares. Ranges from 0 (perfectly diverse) to 10,000 (single-org monopoly). |
+| Institutional Classification | `contributor_org_types` | Institutional diversity (Schweik & English, 2012) | Classifies contributors into government, academic, nonprofit, company, or unknown based on GitHub profile company field pattern matching. |
+| DORA Deployment Frequency | `dora_deployment_frequency_per_month` | DORA / Accelerate (Forsgren et al., 2018) | Number of releases per month over the repository's lifetime. |
+| DORA Lead Time | `dora_median_lead_time_days` | DORA / Accelerate (Forsgren et al., 2018) | Median days between consecutive releases (proxy for time from code change to production). |
+| DORA Change Failure Rate | `dora_change_failure_rate` | DORA / Accelerate (Forsgren et al., 2018) | Ratio of revert/hotfix/bugfix PRs to total merged PRs (heuristic from PR title patterns). |
+
+#### Cross-Project Contributor Overlap
+
+A separate CSV file (`cross_project_overlap.csv`) is exported with contributor-level overlap data:
+
+| Column | Description |
+|--------|-------------|
+| `login` | GitHub username |
+| `repos_contributed_to` | Number of crawled repositories this contributor appears in |
+
+Summary statistics (total unique contributors, multi-repo count, multi-repo ratio) are printed to the console after each run.
 
 ---
 

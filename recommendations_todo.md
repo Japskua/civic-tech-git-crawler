@@ -36,10 +36,10 @@ Based on the analysis in `recommended_actions_20_02_2026.md`.
 - [x] Verify `--export-only` works with new cache format
 - [x] Verify backward compatibility with old cache files
 
-## Future Work (Not in This Branch)
+## Future Work
 
-- [ ] Core-Periphery Network Analysis (centrality metrics)
-- [ ] Institutional Type Classification (government/nonprofit/academic/company)
-- [ ] Cross-Project Contributor Overlap
-- [ ] DORA Metrics (deployment frequency, lead time)
-- [ ] Herfindahl-Hirschman Index for org concentration
+- [ ] Core-Periphery Network Analysis (centrality metrics) -- HIGH effort, requires NetworkX
+- [x] Institutional Type Classification (government/nonprofit/academic/company) -- *Implemented in `add_future_metrics` branch*
+- [x] Cross-Project Contributor Overlap -- *Implemented in `add_future_metrics` branch*
+- [x] DORA Metrics (deployment frequency, lead time, change failure rate) -- *Implemented in `add_future_metrics` branch*
+- [x] Herfindahl-Hirschman Index for org concentration -- *Implemented in `add_future_metrics` branch*

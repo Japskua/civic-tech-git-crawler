@@ -1,11 +1,12 @@
 import logging
 import math
+import re
 from datetime import datetime, timedelta, timezone
 
 from github import GithubException, Repository
 
 from civic_tech_crawler.client import GitHubClient
-from civic_tech_crawler.models import ChaossMetrics, PersonMetrics, TemporalMetrics
+from civic_tech_crawler.models import ChaossMetrics, PersonMetrics, RepoMetrics, TemporalMetrics
 from civic_tech_crawler.utils.osi_licenses import is_osi_approved
 
 logger = logging.getLogger(__name__)
@@ -14,6 +15,27 @@ FIRST_RESPONSE_SAMPLE_SIZE = 100
 PR_REVIEW_SAMPLE_SIZE = 100
 STALE_ISSUE_CAP = 1000
 STALE_THRESHOLD_DAYS = 90
+
+# --- Institutional Type Classification patterns ---
+_GOV_PATTERNS = re.compile(
+    r"\b(gov|government|federal|state|county|city|municipal|ministry|"
+    r"parliament|cabinet|department|agency|public.?sector|"
+    r"gob|gobierno|kommun|kommune|regierung)\b",
+    re.IGNORECASE,
+)
+_ACADEMIC_PATTERNS = re.compile(
+    r"\b(university|universit[äéy]|college|institute|"
+    r"research|academia|school|faculty|lab|"
+    r"polytechnic|hochschule)\b|\.edu\b",
+    re.IGNORECASE,
+)
+_NONPROFIT_PATTERNS = re.compile(
+    r"\b(nonprofit|non.?profit|ngo|foundation|charity|"
+    r"association|civic|community|open.?source|"
+    r"free.?software|mozilla|apache|linux|"
+    r"humanitarian|volunteer)\b|\.org\b",
+    re.IGNORECASE,
+)
 
 NEWCOMER_LABEL_PATTERNS = [
     "good first issue",
@@ -218,11 +240,144 @@ def _compute_pr_review_metrics(
     return median_turnaround, avg_comments
 
 
+def _compute_hhi(org_commits: dict[str, int]) -> float | None:
+    """Compute Herfindahl-Hirschman Index for organizational concentration.
+
+    HHI ranges from near 0 (perfect competition) to 10,000 (monopoly).
+    A single-org project has HHI = 10,000. Lower values indicate more
+    diverse organizational participation.
+
+    Uses commit shares: HHI = Σ(share_i * 100)² where share_i = org_commits_i / total.
+    """
+    if not org_commits:
+        return None
+    total = sum(org_commits.values())
+    if total == 0:
+        return None
+    hhi = sum(((commits / total) * 100) ** 2 for commits in org_commits.values())
+    return round(hhi, 1)
+
+
+def _classify_org_type(company: str) -> str:
+    """Classify an organization string into institutional type.
+
+    Returns one of: "government", "academic", "nonprofit", "company", "unknown".
+    """
+    if not company or company == "Unknown":
+        return "unknown"
+    if _GOV_PATTERNS.search(company):
+        return "government"
+    if _ACADEMIC_PATTERNS.search(company):
+        return "academic"
+    if _NONPROFIT_PATTERNS.search(company):
+        return "nonprofit"
+    # If the company field is non-empty and doesn't match other patterns,
+    # it's likely a private company
+    return "company"
+
+
+def _compute_institutional_types(
+    person_metrics: list[PersonMetrics],
+    client: GitHubClient,
+) -> dict[str, int]:
+    """Classify contributors by their organizational affiliation type.
+
+    Uses the cached user info (company field) already fetched during
+    org_diversity computation. Returns {type: count}.
+    """
+    types: dict[str, int] = {
+        "government": 0,
+        "academic": 0,
+        "nonprofit": 0,
+        "company": 0,
+        "unknown": 0,
+    }
+    for p in person_metrics:
+        if p.login:
+            user_info = client.get_user_info(p.login)
+            company = user_info.get("company") or ""
+            company = company.strip().lstrip("@")
+            org_type = _classify_org_type(company)
+            types[org_type] += 1
+        else:
+            types["unknown"] += 1
+    return types
+
+
+def _compute_dora_metrics(
+    repo_metrics: RepoMetrics,
+    temporal_metrics: TemporalMetrics | None,
+) -> tuple[float | None, float | None, float | None]:
+    """Compute DORA-inspired metrics from existing data.
+
+    Returns:
+        (deployment_frequency_per_month, median_lead_time_days, change_failure_rate)
+
+    - Deployment frequency: releases per month over the repo's lifetime.
+    - Lead time: median days between consecutive releases (proxy for
+      time from code change to production).
+    - Change failure rate: ratio of reverted/hotfix PRs to total merged PRs
+      (heuristic based on PR title patterns).
+    """
+    deployment_freq: float | None = None
+    median_lead_time: float | None = None
+    change_failure_rate: float | None = None
+
+    # --- Deployment frequency ---
+    if temporal_metrics and temporal_metrics.release_count > 0:
+        repo_age_months = (
+            (repo_metrics.updated_at - repo_metrics.created_at).days / 30.44
+        )
+        if repo_age_months > 0:
+            deployment_freq = round(
+                temporal_metrics.release_count / repo_age_months, 2
+            )
+
+    # --- Lead time (median days between consecutive releases) ---
+    if temporal_metrics and temporal_metrics.release_count >= 2:
+        sorted_releases = sorted(
+            temporal_metrics.releases, key=lambda r: r.created_at
+        )
+        intervals_days: list[float] = []
+        for i in range(1, len(sorted_releases)):
+            delta = (
+                sorted_releases[i].created_at - sorted_releases[i - 1].created_at
+            ).total_seconds() / 86400
+            intervals_days.append(delta)
+        if intervals_days:
+            sorted_intervals = sorted(intervals_days)
+            n = len(sorted_intervals)
+            if n % 2 == 0:
+                median_lead_time = round(
+                    (sorted_intervals[n // 2 - 1] + sorted_intervals[n // 2]) / 2, 1
+                )
+            else:
+                median_lead_time = round(sorted_intervals[n // 2], 1)
+
+    # --- Change failure rate (heuristic from PR titles) ---
+    if temporal_metrics and temporal_metrics.pr_count_merged > 0:
+        failure_pattern = re.compile(
+            r"\b(revert|hotfix|hot.?fix|rollback|roll.?back|"
+            r"fix.?deploy|emergency|patch|bugfix|bug.?fix)\b",
+            re.IGNORECASE,
+        )
+        failure_count = 0
+        for pr in temporal_metrics.prs:
+            if pr.merged_at and failure_pattern.search(pr.title):
+                failure_count += 1
+        change_failure_rate = round(
+            failure_count / temporal_metrics.pr_count_merged, 4
+        )
+
+    return deployment_freq, median_lead_time, change_failure_rate
+
+
 def collect_chaoss_metrics(
     client: GitHubClient,
     repo: Repository.Repository,
     person_metrics: list[PersonMetrics],
     temporal_metrics: TemporalMetrics | None,
+    repo_metrics: RepoMetrics | None = None,
 ) -> ChaossMetrics:
     """Collect CHAOSS framework metrics."""
     slug = repo.full_name
@@ -383,6 +538,19 @@ def collect_chaoss_metrics(
     logger.info("Computing PR review metrics for %s", slug)
     pr_review_turnaround, pr_review_depth = _compute_pr_review_metrics(repo)
 
+    # --- Herfindahl-Hirschman Index ---
+    hhi = _compute_hhi(org_commits)
+
+    # --- Institutional Type Classification ---
+    logger.info("Computing institutional type classification for %s", slug)
+    contributor_org_types = _compute_institutional_types(person_metrics, client)
+
+    # --- DORA Metrics ---
+    logger.info("Computing DORA metrics for %s", slug)
+    dora_deploy_freq, dora_lead_time, dora_cfr = _compute_dora_metrics(
+        repo_metrics, temporal_metrics
+    ) if repo_metrics else (None, None, None)
+
     return ChaossMetrics(
         repo_full_name=slug,
         weekly_commits=weekly_commits,
@@ -415,4 +583,9 @@ def collect_chaoss_metrics(
         open_issue_count=open_count,
         median_pr_review_turnaround_hours=pr_review_turnaround,
         avg_review_comments_per_pr=pr_review_depth,
+        herfindahl_hirschman_index=hhi,
+        contributor_org_types=contributor_org_types,
+        dora_deployment_frequency_per_month=dora_deploy_freq,
+        dora_median_lead_time_days=dora_lead_time,
+        dora_change_failure_rate=dora_cfr,
     )
