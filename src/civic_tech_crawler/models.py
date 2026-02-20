@@ -159,6 +159,15 @@ class ChaossMetrics:
     dora_deployment_frequency_per_month: float | None = None
     dora_median_lead_time_days: float | None = None
     dora_change_failure_rate: float | None = None
+    # Core-Periphery Network Analysis
+    core_contributor_count: int = 0
+    periphery_contributor_count: int = 0
+    core_periphery_ratio: float | None = None
+    network_density: float | None = None
+    avg_degree_centrality: float | None = None
+    pr_review_edges: list[dict] = field(
+        default_factory=list
+    )  # [{author: str, reviewer: str}, ...] — cached for re-computation
 
 
 @dataclass
@@ -176,9 +185,23 @@ class CrossProjectOverlap:
 
 
 @dataclass
+class CorePeripheryContributor:
+    """Per-contributor core-periphery network analysis metrics."""
+    repo_full_name: str
+    login: str
+    degree_centrality: float
+    betweenness_centrality: float
+    classification: str  # "core" or "periphery"
+    num_collaborators: int
+
+
+@dataclass
 class RepositoryData:
     repo_metrics: RepoMetrics
     person_metrics: list[PersonMetrics]
     temporal_metrics: TemporalMetrics | None
     chaoss_metrics: ChaossMetrics | None
     crawled_at: datetime | None = None
+    core_periphery_contributors: list[CorePeripheryContributor] = field(
+        default_factory=list
+    )

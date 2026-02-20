@@ -153,11 +153,12 @@ def crawl_repository(
         progress.update(task_id, description=f"[bold blue]{slug}[/] - temporal metrics")
         temporal_metrics = collect_temporal_metrics(client, repo)
 
-    # Step 5: CHAOSS metrics
+    # Step 5: CHAOSS metrics + Core-Periphery
     chaoss_metrics = None
+    cp_contributors = []
     if not config.skip_chaoss:
         progress.update(task_id, description=f"[bold blue]{slug}[/] - CHAOSS metrics")
-        chaoss_metrics = collect_chaoss_metrics(
+        chaoss_metrics, cp_contributors = collect_chaoss_metrics(
             client,
             repo,
             person_metrics,
@@ -171,6 +172,7 @@ def crawl_repository(
         temporal_metrics=temporal_metrics,
         chaoss_metrics=chaoss_metrics,
         crawled_at=datetime.now(timezone.utc),
+        core_periphery_contributors=cp_contributors,
     )
 
 
@@ -292,6 +294,15 @@ def main() -> None:
         f"{overlap.total_unique_contributors} contributors in 2+ repos "
         f"({overlap.multi_repo_ratio:.1%})"
     )
+    # Core-periphery summary
+    for rd in all_data:
+        if rd.chaoss_metrics and rd.chaoss_metrics.core_contributor_count > 0:
+            cm = rd.chaoss_metrics
+            console.print(
+                f"  Core-periphery [{rd.repo_metrics.full_name}]: "
+                f"{cm.core_contributor_count} core / {cm.periphery_contributor_count} periphery "
+                f"(density={cm.network_density})"
+            )
     console.print(f"  Rate limit remaining: {client.rate_limit_remaining}")
 
     client.close()

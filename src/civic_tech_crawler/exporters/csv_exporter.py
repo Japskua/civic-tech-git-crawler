@@ -38,6 +38,7 @@ def export_csv(
     _export_chaoss_summary(data, out)
     _export_prs(data, out)
     _export_tags(data, out)
+    _export_core_periphery(data, out)
     if cross_project_overlap:
         _export_cross_project_overlap(cross_project_overlap, out)
 
@@ -123,6 +124,11 @@ def _export_chaoss_summary(data: list[RepositoryData], out: Path) -> None:
         "dora_deployment_frequency_per_month",
         "dora_median_lead_time_days",
         "dora_change_failure_rate",
+        "core_contributor_count",
+        "periphery_contributor_count",
+        "core_periphery_ratio",
+        "network_density",
+        "avg_degree_centrality",
     ]
     filepath = out / "chaoss_summary.csv"
     with open(filepath, "w", newline="") as f:
@@ -180,6 +186,23 @@ def _export_tags(data: list[RepositoryData], out: Path) -> None:
                     }
                     writer.writerow(row)
     logger.info("Wrote %s", filepath.name)
+
+
+def _export_core_periphery(data: list[RepositoryData], out: Path) -> None:
+    """Export per-contributor core-periphery network analysis."""
+    headers = [
+        "repo_full_name", "login", "degree_centrality",
+        "betweenness_centrality", "classification", "num_collaborators",
+    ]
+    filepath = out / "core_periphery.csv"
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            for c in rd.core_periphery_contributors:
+                writer.writerow({h: _fmt(getattr(c, h)) for h in headers})
+    total = sum(len(rd.core_periphery_contributors) for rd in data)
+    logger.info("Wrote %s (%d rows)", filepath.name, total)
 
 
 def _export_cross_project_overlap(

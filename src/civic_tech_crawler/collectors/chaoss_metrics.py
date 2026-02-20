@@ -3,10 +3,17 @@ import math
 import re
 from datetime import datetime, timedelta, timezone
 
+import networkx as nx
 from github import GithubException, Repository
 
 from civic_tech_crawler.client import GitHubClient
-from civic_tech_crawler.models import ChaossMetrics, PersonMetrics, RepoMetrics, TemporalMetrics
+from civic_tech_crawler.models import (
+    ChaossMetrics,
+    CorePeripheryContributor,
+    PersonMetrics,
+    RepoMetrics,
+    TemporalMetrics,
+)
 from civic_tech_crawler.utils.osi_licenses import is_osi_approved
 
 logger = logging.getLogger(__name__)
@@ -193,16 +200,19 @@ def _compute_median_first_response(
 def _compute_pr_review_metrics(
     repo: Repository.Repository,
     sample_size: int = PR_REVIEW_SAMPLE_SIZE,
-) -> tuple[float | None, float | None]:
-    """Compute median review turnaround and average review comments per PR.
+) -> tuple[float | None, float | None, list[tuple[str, str]]]:
+    """Compute median review turnaround, average review comments per PR,
+    and PR author-reviewer collaboration edges.
 
     Samples the most recently merged PRs.
 
     Returns:
-        (median_turnaround_hours, avg_comments_per_pr)
+        (median_turnaround_hours, avg_comments_per_pr, edges)
+        where edges is a list of (author_login, reviewer_login) tuples.
     """
     turnaround_hours: list[float] = []
     review_comment_counts: list[int] = []
+    edges: list[tuple[str, str]] = []
 
     try:
         closed_prs = repo.get_pulls(state="closed", sort="updated", direction="desc")
@@ -213,8 +223,16 @@ def _compute_pr_review_metrics(
             if pr.merged_at is None:
                 continue  # skip closed-but-not-merged
 
+            pr_author = pr.user.login if pr.user else None
+
             try:
                 reviews = list(pr.get_reviews())
+                # Capture author-reviewer edges for core-periphery analysis
+                if pr_author and reviews:
+                    for review in reviews:
+                        reviewer_login = review.user.login if review.user else None
+                        if reviewer_login and reviewer_login != pr_author:
+                            edges.append((pr_author, reviewer_login))
                 if reviews:
                     # First review turnaround
                     first_review = min(reviews, key=lambda r: r.submitted_at)
@@ -237,7 +255,7 @@ def _compute_pr_review_metrics(
     if review_comment_counts:
         avg_comments = round(sum(review_comment_counts) / len(review_comment_counts), 2)
 
-    return median_turnaround, avg_comments
+    return median_turnaround, avg_comments, edges
 
 
 def _compute_hhi(org_commits: dict[str, int]) -> float | None:
@@ -372,14 +390,82 @@ def _compute_dora_metrics(
     return deployment_freq, median_lead_time, change_failure_rate
 
 
+def _compute_core_periphery(
+    edges: list[tuple[str, str]],
+) -> tuple[int, int, float | None, float | None, float | None, list[dict]]:
+    """Compute core-periphery classification from PR author-reviewer edges.
+
+    Uses degree centrality and betweenness centrality on an undirected
+    collaboration graph. Contributors with degree centrality strictly above
+    the median are classified as "core"; the rest as "periphery".
+
+    Args:
+        edges: List of (author_login, reviewer_login) tuples.
+
+    Returns:
+        (core_count, periphery_count, core_periphery_ratio,
+         network_density, avg_degree_centrality, contributor_details)
+    """
+    if not edges:
+        return 0, 0, None, None, None, []
+
+    G = nx.Graph()
+    for author, reviewer in edges:
+        if G.has_edge(author, reviewer):
+            G[author][reviewer]["weight"] += 1
+        else:
+            G.add_edge(author, reviewer, weight=1)
+
+    if G.number_of_nodes() < 2:
+        return 0, 0, None, None, None, []
+
+    degree_cent = nx.degree_centrality(G)
+    betweenness_cent = nx.betweenness_centrality(G)
+    density = nx.density(G)
+
+    # Classification threshold: median degree centrality
+    centrality_values = sorted(degree_cent.values())
+    n = len(centrality_values)
+    if n % 2 == 0:
+        median_cent = (centrality_values[n // 2 - 1] + centrality_values[n // 2]) / 2
+    else:
+        median_cent = centrality_values[n // 2]
+
+    contributor_details: list[dict] = []
+    core_count = 0
+    periphery_count = 0
+
+    for node in G.nodes():
+        dc = degree_cent[node]
+        bc = betweenness_cent[node]
+        classification = "core" if dc > median_cent else "periphery"
+        if classification == "core":
+            core_count += 1
+        else:
+            periphery_count += 1
+        contributor_details.append({
+            "login": node,
+            "degree_centrality": round(dc, 4),
+            "betweenness_centrality": round(bc, 4),
+            "classification": classification,
+            "num_collaborators": G.degree(node),
+        })
+
+    total = core_count + periphery_count
+    ratio = round(core_count / total, 4) if total > 0 else None
+    avg_dc = round(sum(degree_cent.values()) / len(degree_cent), 4)
+
+    return core_count, periphery_count, ratio, round(density, 4), avg_dc, contributor_details
+
+
 def collect_chaoss_metrics(
     client: GitHubClient,
     repo: Repository.Repository,
     person_metrics: list[PersonMetrics],
     temporal_metrics: TemporalMetrics | None,
     repo_metrics: RepoMetrics | None = None,
-) -> ChaossMetrics:
-    """Collect CHAOSS framework metrics."""
+) -> tuple[ChaossMetrics, list[CorePeripheryContributor]]:
+    """Collect CHAOSS framework metrics and core-periphery classification."""
     slug = repo.full_name
     logger.info("Collecting CHAOSS metrics for %s", slug)
 
@@ -534,9 +620,16 @@ def collect_chaoss_metrics(
     except GithubException:
         pass
 
-    # --- PR Review Depth & Turnaround ---
+    # --- PR Review Depth & Turnaround + Collaboration Edges ---
     logger.info("Computing PR review metrics for %s", slug)
-    pr_review_turnaround, pr_review_depth = _compute_pr_review_metrics(repo)
+    pr_review_turnaround, pr_review_depth, pr_review_edges = _compute_pr_review_metrics(repo)
+
+    # --- Core-Periphery Network Analysis ---
+    logger.info("Computing core-periphery network analysis for %s", slug)
+    (
+        core_count, periphery_count, cp_ratio,
+        net_density, avg_dc, cp_contributor_details,
+    ) = _compute_core_periphery(pr_review_edges)
 
     # --- Herfindahl-Hirschman Index ---
     hhi = _compute_hhi(org_commits)
@@ -551,7 +644,7 @@ def collect_chaoss_metrics(
         repo_metrics, temporal_metrics
     ) if repo_metrics else (None, None, None)
 
-    return ChaossMetrics(
+    chaoss = ChaossMetrics(
         repo_full_name=slug,
         weekly_commits=weekly_commits,
         change_request_acceptance_ratio=acceptance_ratio,
@@ -588,4 +681,24 @@ def collect_chaoss_metrics(
         dora_deployment_frequency_per_month=dora_deploy_freq,
         dora_median_lead_time_days=dora_lead_time,
         dora_change_failure_rate=dora_cfr,
+        core_contributor_count=core_count,
+        periphery_contributor_count=periphery_count,
+        core_periphery_ratio=cp_ratio,
+        network_density=net_density,
+        avg_degree_centrality=avg_dc,
+        pr_review_edges=[{"author": a, "reviewer": r} for a, r in pr_review_edges],
     )
+
+    cp_contributors = [
+        CorePeripheryContributor(
+            repo_full_name=slug,
+            login=d["login"],
+            degree_centrality=d["degree_centrality"],
+            betweenness_centrality=d["betweenness_centrality"],
+            classification=d["classification"],
+            num_collaborators=d["num_collaborators"],
+        )
+        for d in cp_contributor_details
+    ]
+
+    return chaoss, cp_contributors
