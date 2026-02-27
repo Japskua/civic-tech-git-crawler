@@ -122,5 +122,6 @@ def collect_repo_metrics(
         deployments_count=deployments_count,
         created_at=repo.created_at,
         updated_at=repo.updated_at,
+        pushed_at=repo.pushed_at,
         size_kb=repo.size,
     )

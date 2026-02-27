@@ -55,7 +55,7 @@ def _export_repo_metrics(data: list[RepositoryData], out: Path) -> None:
         "stars", "watchers", "forks",
         "cloud_detected", "cloud_signals", "ai_ml_detected", "ai_ml_signals",
         "has_ci_cd", "ci_cd_workflows", "deployments_count",
-        "created_at", "updated_at", "size_kb",
+        "created_at", "updated_at", "pushed_at", "size_kb",
     ]
     filepath = out / "repo_metrics.csv"
     with open(filepath, "w", newline="") as f:

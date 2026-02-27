@@ -83,7 +83,7 @@ Civic technology research has primarily focused on adoption, participation, and 
 
 We developed an open-source Python tool, *Civic Tech Git Crawler*, that collects repository metrics from the GitHub REST API. The tool implements a five-stage pipeline for each repository:
 
-1. **Repository Metrics:** Basic metadata (stars, forks, watchers, languages, license, creation date), community health indicators (contributing guidelines, code of conduct, governance documentation, issue/PR templates), CI/CD workflow detection, and deployment counts.
+1. **Repository Metrics:** Basic metadata (stars, forks, watchers, languages, license, creation/update/push timestamps), community health indicators (contributing guidelines, code of conduct, governance documentation, issue/PR templates), CI/CD workflow detection, and deployment counts. Notably, the tool captures both `updated_at` (any GitHub activity) and `pushed_at` (last code push) to distinguish genuinely active repositories from those with only issue/PR activity.
 
 2. **Contributor Metrics:** Per-person commit counts, code additions, and code deletions derived from GitHub's contributor statistics API, which provides weekly breakdowns of activity per contributor.
 

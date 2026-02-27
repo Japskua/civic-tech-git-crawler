@@ -51,7 +51,8 @@ class RepoMetrics:
     deployments_count: int
     created_at: datetime
     updated_at: datetime
-    size_kb: int
+    pushed_at: datetime | None = None
+    size_kb: int = 0
 
 
 @dataclass

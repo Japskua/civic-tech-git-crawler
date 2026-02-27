@@ -79,6 +79,7 @@ def _dict_to_repo_metrics(d: dict) -> RepoMetrics:
         deployments_count=d["deployments_count"],
         created_at=_parse_datetime(d["created_at"]),
         updated_at=_parse_datetime(d["updated_at"]),
+        pushed_at=_parse_datetime(d.get("pushed_at")),
         size_kb=d["size_kb"],
     )
 

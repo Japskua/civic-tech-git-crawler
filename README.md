@@ -380,7 +380,8 @@ These are collected for each repository and exported to `repo_metrics.csv`.
 | CI/CD workflows | `ci_cd_workflows` | list | Names of CI/CD workflows |
 | Deployments | `deployments_count` | integer | Number of GitHub deployments |
 | Created | `created_at` | datetime | Repository creation date |
-| Updated | `updated_at` | datetime | Last update date |
+| Updated | `updated_at` | datetime | Last update date (any activity: issues, PRs, settings) |
+| Pushed | `pushed_at` | datetime | Last code push date (more accurate for activity filtering than `updated_at`) |
 | Size | `size_kb` | integer | Repository size in kilobytes |
 
 **Note on stars vs. watchers:** The GitHub API has a historical naming inconsistency. This tool uses `stargazers_count` for stars and `subscribers_count` for watchers, which are the correct current mappings.
