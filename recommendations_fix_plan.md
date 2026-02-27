@@ -251,15 +251,37 @@ Builds an undirected collaboration graph where nodes = contributors and edges = 
 
 ---
 
+---
+
+## Data Quality Fix: Anonymous Contributor Fallback
+
+Fixes `num_developers=0` and empty `person_metrics` for repos where all commit authors use emails not linked to GitHub accounts (e.g., `codeforamerica/iac-transit-baseapp`).
+
+### Root Cause
+
+GitHub's `/contributors` and `/stats/contributors` endpoints only return contributors linked to GitHub user accounts. Commits made with unlinked emails (e.g., `user@MacBook.local`) produce `author: null` and are invisible to both endpoints.
+
+### Fix
+
+| File | Change |
+|------|--------|
+| `repo_metrics.py` | Added `anon=true` fallback: retries with `repo.get_contributors(anon="true")` when count is 0 but commits exist (1 extra API call, edge case only) |
+| `person_metrics.py` | Added `_fallback_person_metrics()`: iterates commits (capped at 500), groups by author email to build `PersonMetrics` records |
+| `cli.py` | Passes `repo_metrics` to `collect_person_metrics()` so fallback can check `total_commits` |
+
+---
+
 ## All Files Modified (Cumulative)
 
-| File | PR #1 | PR #2 | PR #3 |
-|------|-------|-------|-------|
-| `pyproject.toml` | | | ✅ networkx |
-| `models.py` | 15 fields | 8 fields + CrossProjectOverlap | 6 fields + CorePeripheryContributor |
-| `chaoss_metrics.py` | 4 helpers + 6 sections | 4 sections | Modified return types + core-periphery |
-| `client.py` | 1 new method | | |
-| `cache.py` | 15 `.get()` calls | 8 `.get()` calls | 6 `.get()` calls + CorePeripheryContributor |
-| `csv_exporter.py` | 15 headers | 8 headers + overlap CSV | 5 headers + core_periphery CSV |
-| `cli.py` | | Overlap computation | Tuple unpack + summary |
-| `README.md` | ✅ | ✅ | ✅ |
+| File | PR #1 | PR #2 | PR #3 | Post-merge |
+|------|-------|-------|-------|------------|
+| `pyproject.toml` | | | ✅ networkx | |
+| `models.py` | 15 fields | 8 fields + CrossProjectOverlap | 6 fields + CorePeripheryContributor | |
+| `chaoss_metrics.py` | 4 helpers + 6 sections | 4 sections | Modified return types + core-periphery | |
+| `client.py` | 1 new method | | | |
+| `cache.py` | 15 `.get()` calls | 8 `.get()` calls | 6 `.get()` calls + CorePeripheryContributor | |
+| `csv_exporter.py` | 15 headers | 8 headers + overlap CSV | 5 headers + core_periphery CSV | |
+| `cli.py` | | Overlap computation | Tuple unpack + summary | Pass repo_metrics to person_metrics |
+| `repo_metrics.py` | | | | anon=true fallback |
+| `person_metrics.py` | | | | Commit-based fallback |
+| `README.md` | ✅ | ✅ | ✅ | ✅ |

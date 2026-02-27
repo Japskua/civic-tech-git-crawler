@@ -134,7 +134,7 @@ def crawl_repository(
 
     # Step 2: Person metrics
     progress.update(task_id, description=f"[bold blue]{slug}[/] - person metrics")
-    person_metrics = collect_person_metrics(client, repo)
+    person_metrics = collect_person_metrics(client, repo, repo_metrics=repo_metrics)
 
     # Step 3: Detection (cloud/AI/ML)
     temporal_metrics = None

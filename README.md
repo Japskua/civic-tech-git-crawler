@@ -352,7 +352,7 @@ These are collected for each repository and exported to `repo_metrics.csv`.
 |--------|--------|------|-------------|
 | Repository name | `full_name` | string | Full `owner/repo` identifier |
 | Description | `description` | string | Repository description |
-| Developers | `num_developers` | integer | Total number of unique contributors |
+| Developers | `num_developers` | integer | Total number of unique contributors (falls back to `anon=true` for repos with unlinked commit authors) |
 | Commits | `total_commits` | integer | Total commit count across all branches |
 | Languages | `languages` | dict | Programming languages with byte counts (e.g., `Python=1715697;HTML=102611`) |
 | Primary language | `primary_language` | string | Most-used programming language |
@@ -402,7 +402,7 @@ Per-person metrics are exported to `person_metrics.csv`. One row per (repository
 | Avg additions/commit | `avg_additions_per_commit` | float | Mean lines added per commit |
 | Avg deletions/commit | `avg_deletions_per_commit` | float | Mean lines deleted per commit |
 
-**Data source:** The GitHub [Repository Statistics API](https://docs.github.com/en/rest/metrics/statistics#get-all-contributor-commit-activity) (`/repos/{owner}/{repo}/stats/contributors`), which returns weekly breakdowns of commits, additions, and deletions per contributor. The tool aggregates all weeks to produce totals and averages.
+**Data source:** The GitHub [Repository Statistics API](https://docs.github.com/en/rest/metrics/statistics#get-all-contributor-commit-activity) (`/repos/{owner}/{repo}/stats/contributors`), which returns weekly breakdowns of commits, additions, and deletions per contributor. The tool aggregates all weeks to produce totals and averages. **Fallback:** When the statistics endpoint returns empty (e.g., all commit authors use emails not linked to GitHub accounts), the tool falls back to iterating commits directly (capped at 500) and grouping by author email.
 
 ---
 
@@ -706,6 +706,7 @@ GitHub's statistics endpoints (`/stats/contributors`, `/stats/commit_activity`) 
 - **Linear backoff**: Waits 3s, 6s, 9s, 12s, 15s between attempts
 - **Maximum 5 retries** (configurable via `github.max_retries`)
 - **Graceful degradation**: If stats are unavailable after all retries, the affected metrics are recorded as `null` rather than failing the entire repository
+- **Anonymous contributor fallback**: If the contributors endpoint returns 0 but commits exist (e.g., all authors use unlinked emails), the tool retries with `anon=true`. Person metrics fall back to commit-based counting (capped at 500 commits)
 
 ---
 

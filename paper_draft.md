@@ -182,7 +182,7 @@ Data was collected on 20 February 2026 using the Civic Tech Git Crawler tool (v0
 Several methodological limitations should be noted:
 
 1. **GitHub-centric:** The tool currently supports only GitHub-hosted repositories. Civic tech projects hosted on GitLab, Gitea, or other platforms are excluded. **[MOCKUP: GitLab support is planned for future versions.]**
-2. **API constraints:** GitHub's contributor statistics API only identifies the first 500 author email addresses linked to GitHub users; additional contributors appear as anonymous.
+2. **API constraints:** GitHub's contributor statistics API only returns authors linked to GitHub user accounts. Commits made with unlinked email addresses (e.g., local machine emails) are invisible to both the `/contributors` and `/stats/contributors` endpoints. The tool mitigates this with two fallbacks: `num_developers` retries with `anon=true` to include anonymous contributors, and person metrics fall back to iterating commits (capped at 500) grouped by author email. These fallbacks ensure non-zero counts for repositories with unlinked contributors, though weekly breakdowns are unavailable in the commit-based fallback path.
 3. **Organisational diversity:** The `company` field in GitHub profiles is self-reported, unstructured, and frequently empty ("Unknown" in our data). This limits the reliability of organisational diversity metrics.
 4. **Issue classification:** Defect resolution duration depends on the presence of a "bug" label. Projects using different labelling conventions (or no labels) will have missing data for this metric.
 5. **Temporal window:** The commit activity API returns only the most recent 52 weeks of weekly data, limiting longitudinal burstiness analysis.

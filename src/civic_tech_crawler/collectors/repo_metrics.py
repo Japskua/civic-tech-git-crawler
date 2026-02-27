@@ -44,6 +44,18 @@ def collect_repo_metrics(
     except GithubException as e:
         logger.warning("Could not fetch commits for %s: %s", slug, e)
 
+    # Fallback: if no linked contributors but commits exist, include anonymous
+    if num_developers == 0 and total_commits > 0:
+        try:
+            num_developers = repo.get_contributors(anon="true").totalCount
+            logger.info(
+                "%s: found %d contributors (incl. anonymous) via anon fallback",
+                slug,
+                num_developers,
+            )
+        except GithubException:
+            logger.warning("Anon contributors fallback failed for %s", slug)
+
     # License
     license_spdx: str | None = None
     license_name: str | None = None

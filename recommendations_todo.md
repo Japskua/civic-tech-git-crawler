@@ -33,6 +33,12 @@ Based on the analysis in `recommended_actions_20_02_2026.md`.
 - [x] **DORA Metrics** — Deployment frequency, median lead time, change failure rate (heuristic from PR titles). *(PR #2)*
 - [x] **Herfindahl-Hirschman Index** — Organizational commit concentration index (0–10,000 scale). *(PR #2)*
 
+## Data Quality Fixes
+
+- [x] **Anonymous contributor fallback** — `repo_metrics.py` now retries with `anon=true` when `get_contributors().totalCount == 0` but `total_commits > 0`. Fixes `num_developers=0` for repos where all commit authors use unlinked emails.
+- [x] **Commit-based person metrics fallback** — `person_metrics.py` falls back to iterating commits (capped at 500) when `stats/contributors` returns empty. Groups by author email to build minimal `PersonMetrics` records.
+- [x] **Wired `repo_metrics` into `person_metrics`** — `cli.py` passes `repo_metrics` to `collect_person_metrics()` so the fallback can check `total_commits`.
+
 ## Supporting Changes (All Complete)
 
 - [x] Added 29 new fields to `ChaossMetrics` dataclass in `models.py`
