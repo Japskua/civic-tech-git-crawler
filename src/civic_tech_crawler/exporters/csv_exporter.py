@@ -39,6 +39,11 @@ def export_csv(
     _export_prs(data, out)
     _export_tags(data, out)
     _export_core_periphery(data, out)
+    _export_weekly_snapshots(data, out)
+    _export_contributor_lifecycles(data, out)
+    _export_contributor_weekly_activity(data, out)
+    _export_issue_records(data, out)
+    _export_issue_summary(data, out)
     if cross_project_overlap:
         _export_cross_project_overlap(cross_project_overlap, out)
 
@@ -203,6 +208,130 @@ def _export_core_periphery(data: list[RepositoryData], out: Path) -> None:
                 writer.writerow({h: _fmt(getattr(c, h)) for h in headers})
     total = sum(len(rd.core_periphery_contributors) for rd in data)
     logger.info("Wrote %s (%d rows)", filepath.name, total)
+
+
+def _export_weekly_snapshots(data: list[RepositoryData], out: Path) -> None:
+    """Export weekly project-level commit/contributor snapshots."""
+    headers = [
+        "repo_full_name", "week_start", "total_commits",
+        "unique_contributors", "new_contributors",
+        "cumulative_commits", "cumulative_contributors",
+    ]
+    filepath = out / "weekly_snapshots.csv"
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            ch = rd.commit_history
+            if ch:
+                for s in ch.weekly_snapshots:
+                    row = {"repo_full_name": ch.repo_full_name}
+                    row.update({h: _fmt(getattr(s, h)) for h in headers[1:]})
+                    writer.writerow(row)
+    total = sum(
+        len(rd.commit_history.weekly_snapshots)
+        for rd in data
+        if rd.commit_history
+    )
+    logger.info("Wrote %s (%d rows)", filepath.name, total)
+
+
+def _export_contributor_lifecycles(data: list[RepositoryData], out: Path) -> None:
+    """Export per-contributor lifecycle analysis."""
+    headers = [
+        "repo_full_name", "contributor_id", "login", "name", "email",
+        "first_commit_date", "last_commit_date", "duration_days",
+        "total_commits", "active_weeks", "total_weeks_span",
+        "activity_ratio", "status", "departed_weeks_ago",
+        "avg_commits_per_active_week",
+    ]
+    filepath = out / "contributor_lifecycles.csv"
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            ch = rd.commit_history
+            if ch:
+                for lc in ch.contributor_lifecycles:
+                    writer.writerow({h: _fmt(getattr(lc, h)) for h in headers})
+    total = sum(
+        len(rd.commit_history.contributor_lifecycles)
+        for rd in data
+        if rd.commit_history
+    )
+    logger.info("Wrote %s (%d rows)", filepath.name, total)
+
+
+def _export_contributor_weekly_activity(data: list[RepositoryData], out: Path) -> None:
+    """Export per-contributor weekly commit counts."""
+    headers = ["repo_full_name", "contributor_id", "week_start", "commits"]
+    filepath = out / "contributor_weekly_activity.csv"
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            ch = rd.commit_history
+            if ch:
+                for cw in ch.contributor_weeks:
+                    row = {
+                        "repo_full_name": ch.repo_full_name,
+                        "contributor_id": cw.contributor_id,
+                        "week_start": cw.week_start,
+                        "commits": cw.commits,
+                    }
+                    writer.writerow(row)
+    total = sum(
+        len(rd.commit_history.contributor_weeks)
+        for rd in data
+        if rd.commit_history
+    )
+    logger.info("Wrote %s (%d rows)", filepath.name, total)
+
+
+def _export_issue_records(data: list[RepositoryData], out: Path) -> None:
+    """Export per-issue detailed records."""
+    headers = [
+        "repo_full_name", "number", "title", "state",
+        "author_login", "closed_by_login",
+        "created_at", "closed_at", "updated_at",
+        "comment_count", "labels", "time_to_close_days",
+    ]
+    filepath = out / "issue_records.csv"
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            ia = rd.issue_analytics
+            if ia:
+                for issue in ia.issues:
+                    row = {"repo_full_name": ia.repo_full_name}
+                    row.update({h: _fmt(getattr(issue, h)) for h in headers[1:]})
+                    writer.writerow(row)
+    total = sum(
+        len(rd.issue_analytics.issues)
+        for rd in data
+        if rd.issue_analytics
+    )
+    logger.info("Wrote %s (%d rows)", filepath.name, total)
+
+
+def _export_issue_summary(data: list[RepositoryData], out: Path) -> None:
+    """Export per-repo issue analytics summary."""
+    headers = [
+        "repo_full_name", "total_issues", "open_issues", "closed_issues",
+        "avg_comments_per_issue", "median_time_to_close_days",
+        "unique_openers", "unique_closers",
+        "top_openers", "top_closers",
+    ]
+    filepath = out / "issue_summary.csv"
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            ia = rd.issue_analytics
+            if ia:
+                writer.writerow({h: _fmt(getattr(ia, h)) for h in headers})
+    logger.info("Wrote %s", filepath.name)
 
 
 def _export_cross_project_overlap(
