@@ -1,6 +1,6 @@
-# Example Results — Pilot Run
+# Example Results
 
-These files are real output from a pilot run of the Civic Tech Git Crawler, included so you can browse the tool's output without running it yourself.
+These files are real output from the Civic Tech Git Crawler, included so you can browse the tool's output without running it yourself.
 
 ---
 
@@ -8,19 +8,19 @@ These files are real output from a pilot run of the Civic Tech Git Crawler, incl
 
 | | |
 |---|---|
-| **Date collected** | 20 February 2026 |
-| **Tool version** | v0.2.0 |
+| **Date collected** | 4 March 2026 |
+| **Tool version** | v0.3.0 |
 | **Configuration** | `config.example.yaml` (included in repository root) |
-| **API calls consumed** | ~1,300 requests |
-| **Crawl time** | ~17 minutes |
+| **API calls consumed** | ~5,000 requests |
+| **Crawl time** | ~25 minutes |
 | **GitHub API rate limit** | 5,000 requests/hour (authenticated) |
 
 ## Repositories Crawled
 
 | Repository | Category | Origin | Age | Contributors | Commits | Primary Language |
 |-----------|----------|--------|-----|-------------|---------|-----------------|
-| [DemocracyClub/UK-Polling-Stations](https://github.com/DemocracyClub/UK-Polling-Stations) | Electoral infrastructure | UK NGO | 11 years | 33 | 8,419 | Python |
-| [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | Voter information | UK NGO | 10 years | 29 | 3,327 | Python |
+| [DemocracyClub/UK-Polling-Stations](https://github.com/DemocracyClub/UK-Polling-Stations) | Electoral infrastructure | UK NGO | 11 years | 33 | 8,446 | Python |
+| [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | Voter information | UK NGO | 10 years | 29 | 3,334 | Python |
 | [fvialibre/edia](https://github.com/fvialibre/edia) | AI fairness research | Argentine NGO | 2 years | 3 | 81 | Jupyter Notebook |
 
 ## Output Files
@@ -31,18 +31,17 @@ These files are real output from a pilot run of the Civic Tech Git Crawler, incl
 | `person_metrics.csv` | 66 | Per-contributor metrics: commit counts, lines added/deleted, averages per commit |
 | `temporal_summary.csv` | 3 | PR counts (total, merged, open, closed), tag and release counts per repository |
 | `chaoss_summary.csv` | 3 | 39 columns of CHAOSS and extended metrics: bus factor, burstiness, retention cohorts, responsiveness, HHI, DORA, core-periphery, and more |
-| `pull_requests.csv` | 7,176 | Individual PR records with timestamps and authors |
+| `pull_requests.csv` | 7,211 | Individual PR records with timestamps and authors |
 | `tags.csv` | 0 | Git tags (none of the pilot repos use formal tagging) |
 | `core_periphery.csv` | 13 | Per-contributor network analysis: degree/betweenness centrality, core/periphery classification |
-| `weekly_snapshots.csv` | varies | Weekly commit/contributor counts with cumulative totals per repository |
-| `contributor_lifecycles.csv` | varies | Per-contributor lifecycle: first/last commit, duration, active/departed status |
-| `contributor_weekly_activity.csv` | varies | Per-person weekly commit counts |
-| `issue_records.csv` | varies | Individual issue records with author, closer, comments, labels |
+| `weekly_snapshots.csv` | 808 | Weekly commit/contributor counts with cumulative totals per repository |
+| `contributor_lifecycles.csv` | 70 | Per-contributor lifecycle: first/last commit, duration, active/departed status |
+| `contributor_weekly_activity.csv` | 1,746 | Per-person weekly commit counts |
+| `issue_records.csv` | 4,082 | Individual issue records with author, closer, comments, labels |
 | `issue_summary.csv` | 3 | Aggregated issue analytics per repository |
 | `cross_project_overlap.csv` | 47 | Contributors and how many of the crawled repos they contribute to |
 | `full_results.json` | — | Complete nested data for all repositories in a single JSON file (same data as the CSVs, but in hierarchical format suitable for programmatic analysis) |
-
-> **Note:** Files marked with `varies` were added in the deep temporal analytics update and may not be present in the pilot data, which was collected before these features were implemented.
+| `plots/` | 17 | Publication-ready PNG visualizations (6 chart types × 3 repos, minus 1 — edia has no issues) |
 
 ## Key Highlights
 
@@ -50,11 +49,12 @@ Some notable findings from this pilot dataset:
 
 - **Bus factor 1-2** across all projects — even the 11-year-old UK-Polling-Stations depends on just 2 developers for 50% of commits
 - **Elephant factor 1** everywhere — a single organisation accounts for the majority of commits in each project
-- **HHI 5,071-7,655** — all projects exceed the "highly concentrated" threshold of 2,500
-- **Stale issue ratios 68-98%** — the majority of open issues have had no activity for 90+ days
-- **PR reviews are fast (4-23h median)** but shallow (0.11 comments/PR average)
+- **HHI 5,080-7,654** — all projects exceed the "highly concentrated" threshold of 2,500
+- **Stale issue ratios 66-97%** — the majority of open issues have had no activity for 90+ days
+- **PR reviews range from 8h to 49h median** with shallow review depth (0.09-0.11 comments/PR average)
 - **40.4% contributor overlap** — 19 of 47 unique contributors are active in both DemocracyClub projects
-- **Core-periphery structure**: UK-Polling-Stations has 2 core / 3 periphery reviewers; WhoCanIVoteFor has a single core reviewer acting as hub
+- **Core-periphery structure**: UK-Polling-Stations has 1 core / 4 periphery reviewers; WhoCanIVoteFor has 1 core / 5 periphery reviewers
+- **70 contributor lifecycles** tracked across all repos, with departure detection (no commits in 90+ days)
 
 ## How to Reproduce
 
@@ -91,7 +91,7 @@ cp = pd.read_csv("example_results/core_periphery.csv")
 print(cp[["repo_full_name", "login", "classification", "degree_centrality"]])
 ```
 
-### Deep temporal analytics (if available)
+### Deep temporal analytics
 
 ```python
 # Load contributor lifecycles

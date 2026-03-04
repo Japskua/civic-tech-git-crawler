@@ -1,0 +1,71 @@
+repo_full_name,contributor_id,login,name,email,first_commit_date,last_commit_date,duration_days,total_commits,active_weeks,total_weeks_span,activity_ratio,status,departed_weeks_ago,avg_commits_per_active_week
+DemocracyClub/UK-Polling-Stations,chris48s,chris48s,chris48s,chris48s@users.noreply.github.com,2017-01-21T19:01:47+00:00,2026-02-26T14:28:28+00:00,3322,2784,183,474,0.3861,active,,15.21
+DemocracyClub/UK-Polling-Stations,polling-bot-4000,polling-bot-4000,polling-bot-4000,developers@democracyclub.org.uk,2022-02-07T18:54:47+00:00,2026-02-27T11:02:22+00:00,1480,1460,115,211,0.545,active,,12.7
+DemocracyClub/UK-Polling-Stations,GeoWill,GeoWill,GeoWill,roper.william@gmail.com,2019-02-18T15:32:59+00:00,2026-02-17T10:52:29+00:00,2555,1366,167,365,0.4575,active,,8.18
+DemocracyClub/UK-Polling-Stations,symroe,symroe,Sym Roe,sym.roe@talusdesign.co.uk,2015-02-21T00:25:07+00:00,2025-11-27T17:34:32+00:00,3932,788,150,561,0.2674,departed,13,5.25
+DemocracyClub/UK-Polling-Stations,c.mshaw@yahoo.co.uk,,chris48s,c.mshaw@yahoo.co.uk,2016-01-30T20:33:19+00:00,2017-01-20T21:43:48+00:00,356,449,43,50,0.86,departed,475,10.44
+DemocracyClub/UK-Polling-Stations,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2020-10-06T20:09:35+00:00,2025-05-29T11:47:08+00:00,1695,311,89,242,0.3678,departed,39,3.49
+DemocracyClub/UK-Polling-Stations,smsmith97,smsmith97,smsmith97,sean.m.smith97@outlook.com,2021-02-15T15:02:53+00:00,2021-05-06T15:24:59+00:00,80,219,12,11,1.0909,departed,251,18.25
+DemocracyClub/UK-Polling-Stations,awdem,awdem,awdem,wdemontmollin@gmail.com,2024-01-25T16:12:51+00:00,2026-02-27T10:38:17+00:00,763,208,46,109,0.422,active,,4.52
+DemocracyClub/UK-Polling-Stations,davidmiller,davidmiller,David Miller,david@deadpansincerity.com,2015-03-26T05:24:28+00:00,2016-07-17T10:48:03+00:00,479,186,8,68,0.1176,departed,502,23.25
+DemocracyClub/UK-Polling-Stations,alexdutton,alexdutton,Alex Dutton,democracyclub@alexdutton.co.uk,2019-10-29T10:33:00+00:00,2022-05-05T13:49:34+00:00,919,180,20,131,0.1527,departed,199,9.0
+DemocracyClub/UK-Polling-Stations,pyup-bot,pyup-bot,pyup-bot,github-bot@pyup.io,2017-11-27T12:06:08+00:00,2020-08-03T09:39:49+00:00,979,142,80,139,0.5755,departed,291,1.77
+DemocracyClub/UK-Polling-Stations,VirginiaDooley,VirginiaDooley,Virginia Dooley,vcdooley@gmail.com,2021-06-17T15:18:20+00:00,2024-06-05T08:05:09+00:00,1083,131,33,154,0.2143,departed,91,3.97
+DemocracyClub/UK-Polling-Stations,JoeMitchell,JoeMitchell,Joe Mitchell,joseph.in.africa@gmail.com,2016-02-29T16:37:46+00:00,2017-04-27T20:16:30+00:00,423,86,15,60,0.25,departed,461,5.73
+DemocracyClub/UK-Polling-Stations,blacktyger,blacktyger,blacktyger,blacktyg3r@gmail.com,2023-03-14T10:01:12+00:00,2024-06-11T19:30:05+00:00,455,47,13,65,0.2,departed,90,3.62
+DemocracyClub/UK-Polling-Stations,Bekabyx,Bekabyx,Beka Lewis,bekabyx@gmail.com,2022-10-26T16:25:50+00:00,2023-08-21T13:43:39+00:00,298,21,10,42,0.2381,departed,132,2.1
+DemocracyClub/UK-Polling-Stations,pmk01,pmk01,Peter Keeling,61510609+pmk01@users.noreply.github.com,2020-12-22T14:13:00+00:00,2024-05-28T08:56:26+00:00,1252,10,7,178,0.0393,departed,92,1.43
+DemocracyClub/UK-Polling-Stations,mtravis,mtravis,mtravis,matt.travis1@gmail.com,2019-05-10T20:28:16+00:00,2019-05-17T09:22:28+00:00,6,7,2,1,2.0,departed,354,3.5
+DemocracyClub/UK-Polling-Stations,andylolz,andylolz,Andy Lulham,a.lulham@gmail.com,2015-04-30T08:48:49+00:00,2016-06-20T11:35:33+00:00,417,7,5,59,0.0847,departed,506,1.4
+DemocracyClub/UK-Polling-Stations,tfgg,tfgg,Tim Green,timothy.green@gmail.com,2016-03-21T15:07:05+00:00,2016-03-23T15:46:29+00:00,2,7,1,1,1.0,departed,518,7.0
+DemocracyClub/UK-Polling-Stations,dependabot-support,dependabot-support,dependabot[bot],support@dependabot.com,2018-07-30T13:39:19+00:00,2019-05-09T05:21:01+00:00,282,6,5,40,0.125,departed,355,1.2
+DemocracyClub/UK-Polling-Stations,ashb,ashb,Ash Berlin,ash_github@firemirror.com,2016-06-17T20:34:27+00:00,2016-06-20T15:00:33+00:00,2,6,2,1,2.0,departed,506,3.0
+DemocracyClub/UK-Polling-Stations,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2019-11-18T05:49:41+00:00,2020-10-06T20:07:51+00:00,323,5,5,46,0.1087,departed,282,1.0
+DemocracyClub/UK-Polling-Stations,hishivshah,hishivshah,Hishiv Shah,hishivshah@gmail.com,2016-11-07T20:34:35+00:00,2017-02-18T23:35:25+00:00,103,4,3,14,0.2143,departed,471,1.33
+DemocracyClub/UK-Polling-Stations,virginia.dooley@democracyclub.org.uk,,Virginia Dooley,virginia.dooley@democracyclub.org.uk,2021-06-21T09:55:04+00:00,2021-12-14T11:48:55+00:00,176,3,3,25,0.12,departed,220,1.0
+DemocracyClub/UK-Polling-Stations,transifex-integration[bot],transifex-integration[bot],transifex-integration[bot],43880903+transifex-integration[bot]@users.noreply.github.com,2021-04-28T15:21:43+00:00,2021-05-04T14:37:27+00:00,5,3,2,1,2.0,departed,252,1.5
+DemocracyClub/UK-Polling-Stations,michaeljcollinsuk,michaeljcollinsuk,Michael Collins,michaeljcollinsuk@users.noreply.github.com,2022-04-29T13:13:25+00:00,2022-04-29T13:13:25+00:00,0,1,1,1,1.0,departed,200,1.0
+DemocracyClub/UK-Polling-Stations,zuzak,zuzak,Douglas Gardner,douglas@chippy.ch,2021-04-30T09:22:39+00:00,2021-04-30T09:22:39+00:00,0,1,1,1,1.0,departed,252,1.0
+DemocracyClub/UK-Polling-Stations,maxbachmann,maxbachmann,maxbachmann,ssh@maxbachmann.de,2020-03-22T22:52:10+00:00,2020-03-22T22:52:10+00:00,0,1,1,1,1.0,departed,310,1.0
+DemocracyClub/UK-Polling-Stations,EdwardBetts,EdwardBetts,Edward Betts,edward@4angle.com,2019-04-10T11:00:51+00:00,2019-04-10T11:00:51+00:00,0,1,1,1,1.0,departed,359,1.0
+DemocracyClub/UK-Polling-Stations,greenkeeper[bot],greenkeeper[bot],greenkeeper[bot],greenkeeper[bot]@users.noreply.github.com,2018-06-21T21:52:56+00:00,2018-06-21T21:52:56+00:00,0,1,1,1,1.0,departed,401,1.0
+DemocracyClub/UK-Polling-Stations,malcolmmoyes,malcolmmoyes,Malcolm Moyes,malcolmmoyes@googlemail.com,2017-09-27T16:03:30+00:00,2017-09-27T16:03:30+00:00,0,1,1,1,1.0,departed,439,1.0
+DemocracyClub/UK-Polling-Stations,mvl22,mvl22,Martin,martin@lucas-smith.co.uk,2017-06-05T20:22:42+00:00,2017-06-05T20:22:42+00:00,0,1,1,1,1.0,departed,456,1.0
+DemocracyClub/UK-Polling-Stations,BobHarper1,BobHarper1,Bob Harper,bob.harper87@gmail.com,2017-05-26T08:38:07+00:00,2017-05-26T08:38:07+00:00,0,1,1,1,1.0,departed,457,1.0
+DemocracyClub/UK-Polling-Stations,waffle-iron,waffle-iron,Making GitHub Delicious,iron@waffle.io,2016-02-01T10:07:27+00:00,2016-02-01T10:07:27+00:00,0,1,1,1,1.0,departed,526,1.0
+DemocracyClub/UK-Polling-Stations,dracos,dracos,Matthew Somerville,dracos@users.noreply.github.com,2015-03-18T14:52:57+00:00,2015-03-18T14:52:57+00:00,0,1,1,1,1.0,departed,571,1.0
+DemocracyClub/WhoCanIVoteFor,symroe,symroe,Sym Roe,sym.roe@talusdesign.co.uk,2016-03-08T11:39:54+00:00,2026-03-04T09:01:06+00:00,3647,1371,194,521,0.3724,active,,7.07
+DemocracyClub/WhoCanIVoteFor,VirginiaDooley,VirginiaDooley,Virginia Dooley,vcdooley@gmail.com,2021-01-19T17:20:31+00:00,2024-10-22T14:03:26+00:00,1371,562,119,195,0.6103,departed,71,4.72
+DemocracyClub/WhoCanIVoteFor,michaeljcollinsuk,michaeljcollinsuk,Michael Collins,michaelj.collinsuk@gmail.com,2021-01-07T17:42:37+00:00,2022-05-30T14:29:17+00:00,507,451,64,72,0.8889,departed,196,7.05
+DemocracyClub/WhoCanIVoteFor,chris48s,chris48s,chris48s,chris48s@users.noreply.github.com,2017-02-15T17:03:07+00:00,2026-02-02T16:43:45+00:00,3273,293,75,467,0.1606,active,,3.91
+DemocracyClub/WhoCanIVoteFor,awdem,awdem,Will de Montmollin,123189726+awdem@users.noreply.github.com,2025-01-23T11:14:25+00:00,2026-03-02T12:13:16+00:00,403,115,29,57,0.5088,active,,3.97
+DemocracyClub/WhoCanIVoteFor,Bekabyx,Bekabyx,Rebeka Lewis,bekabyx@gmail.com,2022-09-14T16:10:13+00:00,2023-10-05T11:46:05+00:00,385,97,25,55,0.4545,departed,125,3.88
+DemocracyClub/WhoCanIVoteFor,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2020-11-02T09:32:13+00:00,2025-01-22T13:33:35+00:00,1542,93,47,220,0.2136,departed,57,1.98
+DemocracyClub/WhoCanIVoteFor,annapowellsmith,annapowellsmith,Anna Powell-Smith,annapowellsmith@gmail.com,2017-05-19T11:50:17+00:00,2017-06-09T01:51:30+00:00,20,70,4,2,2.0,departed,455,17.5
+DemocracyClub/WhoCanIVoteFor,mrwilson,mrwilson,Alex Wilson,gpg@probablyfine.co.uk,2017-05-01T18:49:22+00:00,2020-12-28T14:31:13+00:00,1336,40,15,190,0.0789,departed,270,2.67
+DemocracyClub/WhoCanIVoteFor,virginia.dooley@democracyclub.org.uk,,Virginia Dooley,virginia.dooley@democracyclub.org.uk,2021-01-21T13:29:51+00:00,2023-09-28T11:02:18+00:00,979,34,20,139,0.1439,departed,126,1.7
+DemocracyClub/WhoCanIVoteFor,dependabot-support,dependabot-support,dependabot[bot],support@dependabot.com,2018-08-30T11:15:27+00:00,2019-04-15T05:30:56+00:00,227,32,18,32,0.5625,departed,359,1.78
+DemocracyClub/WhoCanIVoteFor,tfgg,tfgg,Timothy Green,timothy.green@gmail.com,2016-04-30T15:57:52+00:00,2017-05-20T20:30:18+00:00,385,32,3,55,0.0545,departed,458,10.67
+DemocracyClub/WhoCanIVoteFor,GeoWill,GeoWill,GeoWill,roper.william@gmail.com,2020-05-05T11:52:49+00:00,2026-02-05T19:34:36+00:00,2102,28,12,300,0.04,active,,2.33
+DemocracyClub/WhoCanIVoteFor,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2019-08-06T01:46:35+00:00,2020-11-02T11:34:40+00:00,454,24,14,64,0.2188,departed,278,1.71
+DemocracyClub/WhoCanIVoteFor,davidmiller,davidmiller,David Miller,david@deadpansincerity.com,2016-04-30T16:14:04+00:00,2017-05-22T22:43:53+00:00,387,22,7,55,0.1273,departed,458,3.14
+DemocracyClub/WhoCanIVoteFor,pmk01,pmk01,Peter Keeling,61510609+pmk01@users.noreply.github.com,2020-11-27T12:44:19+00:00,2025-09-15T15:15:19+00:00,1753,21,17,250,0.068,departed,24,1.24
+DemocracyClub/WhoCanIVoteFor,BobHarper1,BobHarper1,Bob Harper,bob.harper87@gmail.com,2017-05-22T22:10:52+00:00,2017-06-05T11:50:53+00:00,13,14,3,1,3.0,departed,456,4.67
+DemocracyClub/WhoCanIVoteFor,andylolz,andylolz,Andy Lulham,a.lulham@gmail.com,2016-04-06T21:54:01+00:00,2017-06-08T10:12:48+00:00,427,13,4,61,0.0656,departed,455,3.25
+DemocracyClub/WhoCanIVoteFor,JoeMitchell,JoeMitchell,Joe Mitchell,joseph.in.africa@gmail.com,2016-04-19T08:29:47+00:00,2019-08-01T13:26:24+00:00,1199,7,7,171,0.0409,departed,343,1.0
+DemocracyClub/WhoCanIVoteFor,c.mshaw@yahoo.co.uk,,chris48s,c.mshaw@yahoo.co.uk,2016-09-29T18:39:36+00:00,2016-09-29T19:02:16+00:00,0,3,1,1,1.0,departed,491,3.0
+DemocracyClub/WhoCanIVoteFor,hugovk,hugovk,Hugo,hugovk@users.noreply.github.com,2017-05-12T19:10:39+00:00,2017-05-22T17:14:36+00:00,9,2,2,1,2.0,departed,458,1.0
+DemocracyClub/WhoCanIVoteFor,davidwyld,davidwyld,David Wilby,24752124+davidwilby@users.noreply.github.com,2024-05-29T10:31:04+00:00,2024-05-29T10:31:04+00:00,0,1,1,1,1.0,departed,92,1.0
+DemocracyClub/WhoCanIVoteFor,malcomio,malcomio,Malcolm Young,malcolm.young@capgemini.com,2024-04-12T09:00:04+00:00,2024-04-12T09:00:04+00:00,0,1,1,1,1.0,departed,98,1.0
+DemocracyClub/WhoCanIVoteFor,jussiheinonen,jussiheinonen,Jussi Heinonen,heinonen.jussi@gmail.com,2022-05-02T10:19:37+00:00,2022-05-02T10:19:37+00:00,0,1,1,1,1.0,departed,200,1.0
+DemocracyClub/WhoCanIVoteFor,transifex-integration[bot],transifex-integration[bot],transifex-integration[bot],43880903+transifex-integration[bot]@users.noreply.github.com,2022-04-14T16:55:31+00:00,2022-04-14T16:55:31+00:00,0,1,1,1,1.0,departed,202,1.0
+DemocracyClub/WhoCanIVoteFor,danjordan,danjordan,Dan Jordan,dan@dan-jordan.co.uk,2021-09-09T16:57:21+00:00,2021-09-09T16:57:21+00:00,0,1,1,1,1.0,departed,233,1.0
+DemocracyClub/WhoCanIVoteFor,h2g2bob,h2g2bob,h2g2bob,h2g2bob@users.noreply.github.com,2021-04-12T21:41:43+00:00,2021-04-12T21:41:43+00:00,0,1,1,1,1.0,departed,255,1.0
+DemocracyClub/WhoCanIVoteFor,KateSeary,KateSeary,KateSeary,77492318+KateSeary@users.noreply.github.com,2021-01-25T11:57:47+00:00,2021-01-25T11:57:47+00:00,0,1,1,1,1.0,departed,266,1.0
+DemocracyClub/WhoCanIVoteFor,issyl0,issyl0,Isabell (Issy) Long,me@issyl0.co.uk,2019-05-01T22:01:34+00:00,2019-05-01T22:01:34+00:00,0,1,1,1,1.0,departed,356,1.0
+DemocracyClub/WhoCanIVoteFor,edjw,edjw,edjw,edjw@users.noreply.github.com,2019-04-29T10:25:25+00:00,2019-04-29T10:25:25+00:00,0,1,1,1,1.0,departed,357,1.0
+DemocracyClub/WhoCanIVoteFor,waffle-iron,waffle-iron,Making GitHub Delicious,iron@waffle.io,2016-03-24T09:53:24+00:00,2016-03-24T09:53:24+00:00,0,1,1,1,1.0,departed,518,1.0
+fvialibre/edia,LMartinezEXEX,LMartinezEXEX,LMartinezEXEX,lautaro.martinezexex@gmail.com,2022-10-24T19:11:49+00:00,2023-04-03T17:57:09+00:00,160,55,17,22,0.7727,departed,152,3.24
+fvialibre/edia,nanom,nanom,Hernán J. Maina,hernan.maina@mi.unc.edu.ar,2022-12-19T15:34:36+00:00,2023-09-08T07:14:16+00:00,262,24,8,37,0.2162,departed,129,3.0
+fvialibre/edia,fvialibre,fvialibre,Fundación Vía Libre,121266455+fvialibre@users.noreply.github.com,2023-01-15T03:19:06+00:00,2023-01-15T03:19:06+00:00,0,1,1,1,1.0,departed,163,1.0
+fvialibre/edia,luciagonzalez,,Lucia Gonzalez,luciagonzalez,2022-12-21T13:59:51+00:00,2022-12-21T13:59:51+00:00,0,1,1,1,1.0,departed,166,1.0
