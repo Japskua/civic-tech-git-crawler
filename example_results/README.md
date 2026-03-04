@@ -34,8 +34,15 @@ These files are real output from a pilot run of the Civic Tech Git Crawler, incl
 | `pull_requests.csv` | 7,176 | Individual PR records with timestamps and authors |
 | `tags.csv` | 0 | Git tags (none of the pilot repos use formal tagging) |
 | `core_periphery.csv` | 13 | Per-contributor network analysis: degree/betweenness centrality, core/periphery classification |
+| `weekly_snapshots.csv` | varies | Weekly commit/contributor counts with cumulative totals per repository |
+| `contributor_lifecycles.csv` | varies | Per-contributor lifecycle: first/last commit, duration, active/departed status |
+| `contributor_weekly_activity.csv` | varies | Per-person weekly commit counts |
+| `issue_records.csv` | varies | Individual issue records with author, closer, comments, labels |
+| `issue_summary.csv` | 3 | Aggregated issue analytics per repository |
 | `cross_project_overlap.csv` | 47 | Contributors and how many of the crawled repos they contribute to |
 | `full_results.json` | — | Complete nested data for all repositories in a single JSON file (same data as the CSVs, but in hierarchical format suitable for programmatic analysis) |
+
+> **Note:** Files marked with `varies` were added in the deep temporal analytics update and may not be present in the pilot data, which was collected before these features were implemented.
 
 ## Key Highlights
 
@@ -82,6 +89,22 @@ print(chaoss[["repo_full_name", "bus_factor", "burstiness_cv", "stale_issue_rati
 # Browse core-periphery network
 cp = pd.read_csv("example_results/core_periphery.csv")
 print(cp[["repo_full_name", "login", "classification", "degree_centrality"]])
+```
+
+### Deep temporal analytics (if available)
+
+```python
+# Load contributor lifecycles
+lifecycles = pd.read_csv("example_results/contributor_lifecycles.csv")
+print(lifecycles[["repo_full_name", "contributor_id", "status", "activity_ratio"]])
+
+# Load issue analytics
+issues = pd.read_csv("example_results/issue_records.csv")
+print(issues[["repo_full_name", "number", "state", "time_to_close_days"]])
+
+# Load weekly snapshots
+snapshots = pd.read_csv("example_results/weekly_snapshots.csv")
+print(snapshots[["repo_full_name", "week_start", "total_commits", "cumulative_commits"]])
 ```
 
 ## How to Load in R
