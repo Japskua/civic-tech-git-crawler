@@ -15,7 +15,9 @@ from civic_tech_crawler.cache import (
 )
 from civic_tech_crawler.client import GitHubClient
 from civic_tech_crawler.collectors.chaoss_metrics import collect_chaoss_metrics
+from civic_tech_crawler.collectors.commit_history import collect_commit_history
 from civic_tech_crawler.collectors.detection import run_detection
+from civic_tech_crawler.collectors.issue_analytics import collect_issue_analytics
 from civic_tech_crawler.collectors.person_metrics import collect_person_metrics
 from civic_tech_crawler.collectors.repo_metrics import collect_repo_metrics
 from civic_tech_crawler.collectors.temporal_metrics import collect_temporal_metrics
@@ -59,6 +61,14 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--skip-detection", action="store_true", help="Skip cloud/AI-ML detection"
+    )
+    parser.add_argument(
+        "--skip-commit-history", action="store_true",
+        help="Skip full commit history analysis (weekly snapshots, contributor lifecycles)",
+    )
+    parser.add_argument(
+        "--skip-issue-analytics", action="store_true",
+        help="Skip detailed issue analytics (per-issue records, opener/closer tracking)",
     )
     parser.add_argument("--verbose", action="store_true", help="Enable debug logging")
     parser.add_argument(
@@ -166,6 +176,18 @@ def crawl_repository(
             repo_metrics=repo_metrics,
         )
 
+    # Step 6: Full commit history (weekly snapshots, contributor lifecycles)
+    commit_history = None
+    if not config.skip_commit_history:
+        progress.update(task_id, description=f"[bold blue]{slug}[/] - commit history")
+        commit_history = collect_commit_history(client, repo)
+
+    # Step 7: Issue analytics (per-issue records, opener/closer tracking)
+    issue_analytics = None
+    if not config.skip_issue_analytics:
+        progress.update(task_id, description=f"[bold blue]{slug}[/] - issue analytics")
+        issue_analytics = collect_issue_analytics(client, repo)
+
     return RepositoryData(
         repo_metrics=repo_metrics,
         person_metrics=person_metrics,
@@ -173,6 +195,8 @@ def crawl_repository(
         chaoss_metrics=chaoss_metrics,
         crawled_at=datetime.now(timezone.utc),
         core_periphery_contributors=cp_contributors,
+        commit_history=commit_history,
+        issue_analytics=issue_analytics,
     )
 
 
@@ -190,6 +214,8 @@ def main() -> None:
             skip_chaoss=args.skip_chaoss,
             skip_temporal=args.skip_temporal,
             skip_detection=args.skip_detection,
+            skip_commit_history=args.skip_commit_history,
+            skip_issue_analytics=args.skip_issue_analytics,
         )
     except ValueError as e:
         console.print(f"[red]Configuration error:[/red] {e}")

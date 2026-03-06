@@ -15,6 +15,8 @@ class CrawlerConfig:
     skip_chaoss: bool = False
     skip_temporal: bool = False
     skip_detection: bool = False
+    skip_commit_history: bool = False
+    skip_issue_analytics: bool = False
 
 
 @dataclass
@@ -197,6 +199,89 @@ class CorePeripheryContributor:
 
 
 @dataclass
+class WeeklySnapshot:
+    """Weekly project-level commit/contributor aggregation."""
+    week_start: str  # ISO date (Monday of the week)
+    total_commits: int
+    unique_contributors: int
+    new_contributors: int  # first-time contributors this week
+    cumulative_commits: int
+    cumulative_contributors: int
+
+
+@dataclass
+class ContributorWeek:
+    """Per-person weekly commit activity."""
+    contributor_id: str  # login or email (unique key)
+    week_start: str
+    commits: int
+
+
+@dataclass
+class ContributorLifecycle:
+    """Contributor lifecycle: appearance, departure, duration."""
+    repo_full_name: str
+    contributor_id: str  # login or email
+    login: str | None
+    name: str | None
+    email: str
+    first_commit_date: datetime
+    last_commit_date: datetime
+    duration_days: int
+    total_commits: int
+    active_weeks: int  # weeks with >= 1 commit
+    total_weeks_span: int  # weeks from first to last commit
+    activity_ratio: float  # active_weeks / total_weeks_span
+    status: str  # "active" or "departed" (no commits in 90 days)
+    departed_weeks_ago: int | None
+    avg_commits_per_active_week: float
+
+
+@dataclass
+class CommitHistoryMetrics:
+    """Full commit history parsed into weekly snapshots + contributor lifecycles."""
+    repo_full_name: str
+    weekly_snapshots: list[WeeklySnapshot]
+    contributor_lifecycles: list[ContributorLifecycle]
+    contributor_weeks: list[ContributorWeek]
+    total_weeks: int
+    total_unique_contributors: int
+    new_contributor_rate_per_month: float | None
+
+
+@dataclass
+class IssueRecord:
+    """Per-issue detailed record."""
+    number: int
+    title: str
+    state: str  # "open" or "closed"
+    author_login: str | None
+    closed_by_login: str | None
+    created_at: datetime
+    closed_at: datetime | None
+    updated_at: datetime
+    comment_count: int
+    labels: list[str]
+    time_to_close_days: float | None
+
+
+@dataclass
+class IssueAnalytics:
+    """Container for all issue analytics."""
+    repo_full_name: str
+    issues: list[IssueRecord]
+    total_issues: int
+    open_issues: int
+    closed_issues: int
+    avg_comments_per_issue: float | None
+    median_time_to_close_days: float | None
+    unique_openers: int
+    unique_closers: int
+    top_openers: dict[str, int] = field(default_factory=dict)
+    top_closers: dict[str, int] = field(default_factory=dict)
+
+
+@dataclass
 class RepositoryData:
     repo_metrics: RepoMetrics
     person_metrics: list[PersonMetrics]
@@ -206,3 +291,5 @@ class RepositoryData:
     core_periphery_contributors: list[CorePeripheryContributor] = field(
         default_factory=list
     )
+    commit_history: CommitHistoryMetrics | None = None
+    issue_analytics: IssueAnalytics | None = None

@@ -38,6 +38,8 @@ def load_config(
     skip_chaoss: bool = False,
     skip_temporal: bool = False,
     skip_detection: bool = False,
+    skip_commit_history: bool = False,
+    skip_issue_analytics: bool = False,
 ) -> CrawlerConfig:
     """Load configuration from YAML file with CLI overrides."""
     path = Path(config_path)
@@ -75,4 +77,6 @@ def load_config(
         skip_chaoss=skip_chaoss,
         skip_temporal=skip_temporal,
         skip_detection=skip_detection,
+        skip_commit_history=skip_commit_history,
+        skip_issue_analytics=skip_issue_analytics,
     )

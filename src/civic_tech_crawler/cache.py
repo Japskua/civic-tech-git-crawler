@@ -13,7 +13,12 @@ from pathlib import Path
 
 from civic_tech_crawler.models import (
     ChaossMetrics,
+    CommitHistoryMetrics,
+    ContributorLifecycle,
+    ContributorWeek,
     CorePeripheryContributor,
+    IssueAnalytics,
+    IssueRecord,
     PersonMetrics,
     PRRecord,
     ReleaseRecord,
@@ -21,6 +26,7 @@ from civic_tech_crawler.models import (
     RepositoryData,
     TagRecord,
     TemporalMetrics,
+    WeeklySnapshot,
 )
 
 logger = logging.getLogger(__name__)
@@ -192,6 +198,89 @@ def _dict_to_chaoss_metrics(d: dict | None) -> ChaossMetrics | None:
     )
 
 
+def _dict_to_commit_history_metrics(d: dict | None) -> CommitHistoryMetrics | None:
+    if d is None:
+        return None
+    return CommitHistoryMetrics(
+        repo_full_name=d["repo_full_name"],
+        weekly_snapshots=[
+            WeeklySnapshot(
+                week_start=s["week_start"],
+                total_commits=s["total_commits"],
+                unique_contributors=s["unique_contributors"],
+                new_contributors=s["new_contributors"],
+                cumulative_commits=s["cumulative_commits"],
+                cumulative_contributors=s["cumulative_contributors"],
+            )
+            for s in d["weekly_snapshots"]
+        ],
+        contributor_lifecycles=[
+            ContributorLifecycle(
+                repo_full_name=lc["repo_full_name"],
+                contributor_id=lc["contributor_id"],
+                login=lc.get("login"),
+                name=lc.get("name"),
+                email=lc["email"],
+                first_commit_date=_parse_datetime(lc["first_commit_date"]),
+                last_commit_date=_parse_datetime(lc["last_commit_date"]),
+                duration_days=lc["duration_days"],
+                total_commits=lc["total_commits"],
+                active_weeks=lc["active_weeks"],
+                total_weeks_span=lc["total_weeks_span"],
+                activity_ratio=lc["activity_ratio"],
+                status=lc["status"],
+                departed_weeks_ago=lc.get("departed_weeks_ago"),
+                avg_commits_per_active_week=lc["avg_commits_per_active_week"],
+            )
+            for lc in d["contributor_lifecycles"]
+        ],
+        contributor_weeks=[
+            ContributorWeek(
+                contributor_id=cw["contributor_id"],
+                week_start=cw["week_start"],
+                commits=cw["commits"],
+            )
+            for cw in d["contributor_weeks"]
+        ],
+        total_weeks=d["total_weeks"],
+        total_unique_contributors=d["total_unique_contributors"],
+        new_contributor_rate_per_month=d.get("new_contributor_rate_per_month"),
+    )
+
+
+def _dict_to_issue_analytics(d: dict | None) -> IssueAnalytics | None:
+    if d is None:
+        return None
+    return IssueAnalytics(
+        repo_full_name=d["repo_full_name"],
+        issues=[
+            IssueRecord(
+                number=i["number"],
+                title=i["title"],
+                state=i["state"],
+                author_login=i.get("author_login"),
+                closed_by_login=i.get("closed_by_login"),
+                created_at=_parse_datetime(i["created_at"]),
+                closed_at=_parse_datetime(i.get("closed_at")),
+                updated_at=_parse_datetime(i["updated_at"]),
+                comment_count=i["comment_count"],
+                labels=i["labels"],
+                time_to_close_days=i.get("time_to_close_days"),
+            )
+            for i in d["issues"]
+        ],
+        total_issues=d["total_issues"],
+        open_issues=d["open_issues"],
+        closed_issues=d["closed_issues"],
+        avg_comments_per_issue=d.get("avg_comments_per_issue"),
+        median_time_to_close_days=d.get("median_time_to_close_days"),
+        unique_openers=d["unique_openers"],
+        unique_closers=d["unique_closers"],
+        top_openers=d.get("top_openers", {}),
+        top_closers=d.get("top_closers", {}),
+    )
+
+
 def _dict_to_repository_data(d: dict) -> RepositoryData:
     """Reconstruct a RepositoryData dataclass from a JSON-loaded dict."""
     return RepositoryData(
@@ -211,6 +300,8 @@ def _dict_to_repository_data(d: dict) -> RepositoryData:
             )
             for c in d.get("core_periphery_contributors", [])
         ],
+        commit_history=_dict_to_commit_history_metrics(d.get("commit_history")),
+        issue_analytics=_dict_to_issue_analytics(d.get("issue_analytics")),
     )
 
 

@@ -18,9 +18,12 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
   - [Temporal Metrics](#temporal-metrics)
   - [CHAOSS Metrics](#chaoss-metrics)
   - [Technology Detection](#technology-detection)
+  - [Commit History & Contributor Lifecycles](#commit-history--contributor-lifecycles)
+  - [Issue Analytics](#issue-analytics)
 - [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery)
 - [Analysis Pipeline](#analysis-pipeline)
 - [API Rate Limits](#api-rate-limits)
+- [Visualization](#visualization)
 - [Examples](#examples)
 - [Extending the Tool](#extending-the-tool)
 - [Citing This Tool](#citing-this-tool)
@@ -74,6 +77,8 @@ This installs the following dependencies:
 | [httpx](https://www.python-httpx.org/) | HTTP client for API endpoints not covered by PyGithub |
 | [NetworkX](https://networkx.org/) | Graph analysis library for core-periphery network metrics |
 | [PyYAML](https://pyyaml.org/) | YAML configuration file parsing |
+| [Matplotlib](https://matplotlib.org/) | Chart generation for the visualization script |
+| [Pandas](https://pandas.pydata.org/) | Data loading and manipulation for the visualization script |
 | [Rich](https://rich.readthedocs.io/) | Terminal progress bars and formatted output |
 
 ---
@@ -230,8 +235,9 @@ uv run civic-tech-crawler --config config.yaml
 ```
 usage: civic-tech-crawler [-h] [--config CONFIG] [--token TOKEN] [--repos REPOS]
                           [--output-dir OUTPUT_DIR] [--skip-chaoss]
-                          [--skip-temporal] [--skip-detection] [--verbose]
-                          [--force] [--export-only]
+                          [--skip-temporal] [--skip-detection]
+                          [--skip-commit-history] [--skip-issue-analytics]
+                          [--verbose] [--force] [--export-only]
 
 GitHub repository metrics crawler for civic tech research
 
@@ -244,6 +250,8 @@ options:
   --skip-chaoss            Skip CHAOSS metrics collection
   --skip-temporal          Skip temporal metrics (PRs, tags, releases)
   --skip-detection         Skip cloud/AI-ML technology detection
+  --skip-commit-history    Skip full commit history parsing
+  --skip-issue-analytics   Skip detailed issue analytics
   --verbose                Enable debug logging
   --force                  Re-crawl all repos even if cached data exists
   --export-only            Skip crawling; regenerate CSV/JSON from cached per-repo data
@@ -260,6 +268,8 @@ options:
 | `--skip-chaoss` | Skips CHAOSS metric collection (bus factor, burstiness, defect resolution, etc.). Saves significant API calls. |
 | `--skip-temporal` | Skips pulling all PRs, tags, and releases. Useful when only repository-level metrics are needed. Also disables CHAOSS metrics that depend on PR data (acceptance ratio, release frequency). |
 | `--skip-detection` | Skips cloud and AI/ML technology detection. Saves a few API calls per repository. |
+| `--skip-commit-history` | Skips full commit history parsing (weekly snapshots, contributor lifecycles). Saves ~N/100 API calls per repo where N is the total number of commits. |
+| `--skip-issue-analytics` | Skips detailed issue analytics (per-issue records, closer tracking). Saves significant API calls for repos with many closed issues (up to ~2000 calls for the `closed_by` field). |
 | `--verbose` | Shows detailed debug output including every HTTP request and response. |
 | `--force` | Re-crawl all repositories even if cached results exist in the output directory. Overwrites existing cache files. |
 | `--export-only` | Skip crawling entirely. Regenerates all CSV and JSON output files from the existing cached per-repo JSON files in the output directory. Useful for rebuilding exports after manual edits or for merging results from multiple runs. |
@@ -289,6 +299,11 @@ All output files are written to the output directory (default: `./output/`). Bot
 | `pull_requests.csv` | 1 per pull request | Individual PR records with timestamps and authors |
 | `tags.csv` | 1 per tag | Git tags with commit SHAs and dates |
 | `core_periphery.csv` | 1 per contributor in review network | Core-periphery network analysis (centrality, classification) per contributor |
+| `weekly_snapshots.csv` | 1 per repository-week | Weekly commit/contributor counts with cumulative totals |
+| `contributor_lifecycles.csv` | 1 per repository-contributor pair | Contributor lifecycle: first/last commit, duration, activity ratio, active/departed status |
+| `contributor_weekly_activity.csv` | 1 per contributor-week pair | Per-person weekly commit counts |
+| `issue_records.csv` | 1 per issue | Individual issue records: author, closer, comments, labels, time-to-close |
+| `issue_summary.csv` | 1 per repository | Aggregated issue analytics: counts, averages, top openers/closers |
 | `cross_project_overlap.csv` | 1 per unique contributor | Cross-project contributor overlap (login, number of repos contributed to) |
 
 ### JSON files
@@ -335,6 +350,24 @@ All output files are written to the output directory (default: `./output/`). Bot
       "bus_factor": 3,
       "burstiness_cv": 1.27,
       "...": "..."
+    },
+    "commit_history": {
+      "repo_full_name": "owner/repo",
+      "total_weeks": 355,
+      "total_unique_contributors": 31,
+      "new_contributor_rate_per_month": 0.32,
+      "weekly_snapshots": [ "..." ],
+      "contributor_lifecycles": [ "..." ],
+      "contributor_weeks": [ "..." ]
+    },
+    "issue_analytics": {
+      "repo_full_name": "owner/repo",
+      "total_issues": 415,
+      "open_issues": 102,
+      "closed_issues": 313,
+      "avg_comments_per_issue": 2.1,
+      "median_time_to_close_days": 14.5,
+      "issues": [ "..." ]
     }
   }
 ]
@@ -553,6 +586,109 @@ Detection is positive (`cloud_detected: True` or `ai_ml_detected: True`) if **at
 
 ---
 
+### Commit History & Contributor Lifecycles
+
+The commit history collector parses the **full commit history** of each repository (not limited to the 52-week window of the GitHub Statistics API). This enables long-term temporal analysis of project activity and contributor engagement patterns.
+
+**Data source:** `repo.get_commits()` — paginated iteration through all commits. Only list-level data (author + date) is used, so no individual commit API calls are needed. **API cost:** ~1 call per 100 commits.
+
+#### Weekly Snapshots (`weekly_snapshots.csv`)
+
+One row per (repository, ISO week) pair. Weeks are aligned to Monday start dates.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `repo_full_name` | string | Repository identifier |
+| `week_start` | date | Monday of the ISO week (e.g., `2024-01-08`) |
+| `total_commits` | integer | Number of commits in this week |
+| `unique_contributors` | integer | Number of distinct contributors in this week |
+| `new_contributors` | integer | Number of contributors making their first-ever commit in this week |
+| `cumulative_commits` | integer | Running total of commits up to and including this week |
+| `cumulative_contributors` | integer | Running total of unique contributors up to and including this week |
+
+#### Contributor Lifecycles (`contributor_lifecycles.csv`)
+
+One row per (repository, contributor) pair. Provides lifecycle analysis for each contributor.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `repo_full_name` | string | Repository identifier |
+| `contributor_id` | string | Unique identifier: GitHub login if linked, else author email |
+| `login` | string | GitHub username (empty if commit author has no linked account) |
+| `name` | string | Name from commit metadata |
+| `email` | string | Email from commit metadata |
+| `first_commit_date` | datetime | Timestamp of this contributor's first commit |
+| `last_commit_date` | datetime | Timestamp of this contributor's most recent commit |
+| `duration_days` | integer | Days between first and last commit |
+| `total_commits` | integer | Total number of commits by this contributor |
+| `active_weeks` | integer | Number of ISO weeks with at least one commit |
+| `total_weeks_span` | integer | Total ISO weeks from first to last commit |
+| `activity_ratio` | float | `active_weeks / total_weeks_span` — measures engagement density (1.0 = committed every week) |
+| `status` | string | `active` if last commit within 90 days, `departed` otherwise |
+| `departed_weeks_ago` | integer | Weeks since last commit (only for departed contributors) |
+| `avg_commits_per_active_week` | float | `total_commits / active_weeks` |
+
+**Contributor identification:** Uses the GitHub login associated with the commit author if available. Falls back to the commit author email for unlinked accounts. This is consistent with the person metrics collector.
+
+**Departure detection:** Contributors with no commits in the last 90 days are classified as `departed`. The `departed_weeks_ago` field shows how long ago they were last active.
+
+#### Contributor Weekly Activity (`contributor_weekly_activity.csv`)
+
+One row per (repository, contributor, ISO week) triple. Only weeks where the contributor made at least one commit are included.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `repo_full_name` | string | Repository identifier |
+| `contributor_id` | string | Unique identifier (login or email) |
+| `week_start` | date | Monday of the ISO week |
+| `commits` | integer | Number of commits by this contributor in this week |
+
+---
+
+### Issue Analytics
+
+The issue analytics collector retrieves **all issues** (excluding pull requests) with per-issue detail and summary statistics. This enables analysis of community engagement, issue responsiveness, and contributor participation patterns.
+
+**Data source:** `repo.get_issues(state="all")` — paginated iteration through all issues. Pull requests are filtered out. The `closed_by` field requires an individual issue fetch per closed issue (capped at 2,000). **API cost:** ~M/100 + C calls (M = total issues, C = closed issues, capped at 2,000).
+
+#### Issue Records (`issue_records.csv`)
+
+One row per issue (excluding pull requests).
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `repo_full_name` | string | Repository identifier |
+| `number` | integer | Issue number |
+| `title` | string | Issue title |
+| `state` | string | `open` or `closed` |
+| `author_login` | string | GitHub username of the issue author |
+| `closed_by_login` | string | GitHub username of the person who closed the issue (empty if open) |
+| `created_at` | datetime | When the issue was created |
+| `closed_at` | datetime | When the issue was closed (empty if open) |
+| `updated_at` | datetime | When the issue was last updated |
+| `comment_count` | integer | Number of comments on the issue |
+| `labels` | list | Semicolon-separated label names |
+| `time_to_close_days` | float | Days from creation to closure (empty if open) |
+
+#### Issue Summary (`issue_summary.csv`)
+
+One row per repository with aggregated issue analytics.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `repo_full_name` | string | Repository identifier |
+| `total_issues` | integer | Total number of issues (excluding PRs) |
+| `open_issues` | integer | Currently open issues |
+| `closed_issues` | integer | Closed issues |
+| `avg_comments_per_issue` | float | Mean number of comments across all issues |
+| `median_time_to_close_days` | float | Median days from creation to closure for closed issues |
+| `unique_openers` | integer | Number of distinct users who opened issues |
+| `unique_closers` | integer | Number of distinct users who closed issues |
+| `top_openers` | dict | Semicolon-separated `login=count` pairs for most frequent issue openers |
+| `top_closers` | dict | Semicolon-separated `login=count` pairs for most frequent issue closers |
+
+---
+
 ## Incremental Runs & Crash Recovery
 
 The tool supports **incremental crawling**, meaning you can run it in parts across multiple sessions and the results accumulate automatically. This is essential when crawling large numbers of repositories.
@@ -677,7 +813,23 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                     |  +-------------+---------------+   |
                     |                |                    |
                     |  +-------------v---------------+   |
-                    |  | 6. SAVE TO CACHE             |   |
+                    |  | 6. COMMIT HISTORY (optional) |   |
+                    |  |    - All commits parsed      |   |
+                    |  |    - Weekly snapshots         |   |
+                    |  |    - Contributor lifecycles   |   |
+                    |  |    - Departure detection      |   |
+                    |  +-------------+---------------+   |
+                    |                |                    |
+                    |  +-------------v---------------+   |
+                    |  | 7. ISSUE ANALYTICS (optional)|   |
+                    |  |    - All issues (no PRs)     |   |
+                    |  |    - Per-issue records        |   |
+                    |  |    - Closer attribution       |   |
+                    |  |    - Summary statistics       |   |
+                    |  +-------------+---------------+   |
+                    |                |                    |
+                    |  +-------------v---------------+   |
+                    |  | 8. SAVE TO CACHE             |   |
                     |  |    - Immediate persistence   |   |
                     |  |    - Crash-safe (per-repo)   |   |
                     |  +-----------------------------+   |
@@ -686,7 +838,7 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                                        |
                           +------------v-------------+
                           |    EXPORT RESULTS        |
-                          |    - 8 CSV files         |
+                          |    - 13 CSV files        |
                           |    - Full JSON           |
                           |    (from all cached data)|
                           +--------------------------+
@@ -725,15 +877,17 @@ GitHub's statistics endpoints (`/stats/contributors`, `/stats/commit_activity`) 
 | Tags + releases | ~2-5 |
 | Detection (root files + dependency files) | ~3-5 |
 | Labels + bug issues | ~2-10 |
-| **Total per repository** | **~25-150** |
+| Full commit history (paginated) | ~N/100 (N = total commits) |
+| Issue analytics (list + closed_by) | ~M/100 + C (M = issues, C = closed, capped at 2,000) |
+| **Total per repository** | **~25-500** |
 
 ### Planning your runs
 
 | Repositories | Estimated API Calls | Time (approx.) |
 |-------------|--------------------|----|
-| 3 | 75-450 | 1-5 minutes |
-| 10 | 250-1,500 | 5-15 minutes |
-| 50 | 1,250-7,500 | 20-60 minutes |
+| 3 | 75-1,500 | 1-10 minutes |
+| 10 | 250-5,000 | 5-30 minutes |
+| 50 | 1,250-25,000 | 30-120 minutes (use incremental runs) |
 | 100+ | 2,500+ | Use incremental runs across sessions |
 
 The tool monitors remaining API calls and automatically sleeps when the rate limit is nearly exhausted, resuming when the limit resets (every hour). For large-scale crawling, the [incremental caching](#incremental-runs--crash-recovery) feature means you can split runs across multiple sessions without losing progress.
@@ -748,7 +902,48 @@ uv run civic-tech-crawler --skip-temporal --skip-chaoss --skip-detection
 
 # Skip only CHAOSS (which depends on temporal data anyway)
 uv run civic-tech-crawler --skip-chaoss
+
+# Skip the deep temporal analytics (commit history + issue analytics)
+uv run civic-tech-crawler --skip-commit-history --skip-issue-analytics
 ```
+
+---
+
+## Visualization
+
+A standalone visualization script generates publication-ready PNG charts from the crawled CSV data.
+
+### Usage
+
+```bash
+# Generate all charts for all repositories
+uv run python scripts/visualize.py --output-dir ./output
+
+# Generate charts for a single repository
+uv run python scripts/visualize.py --output-dir ./output --repo DemocracyClub/WhoCanIVoteFor
+```
+
+Charts are saved to `output/plots/` as PNG files at 150 DPI.
+
+### Chart types
+
+| Chart | Filename | Description |
+|-------|----------|-------------|
+| Project Growth | `{repo}_growth.png` | Dual-axis line chart of cumulative commits and cumulative contributors over time |
+| Weekly Activity | `{repo}_weekly_activity.png` | Bar chart of weekly commit counts with a contributor count overlay line |
+| Contributor Lifecycles | `{repo}_lifecycle.png` | Horizontal Gantt chart showing the active period of the top 30 contributors (green = active, red = departed) |
+| New Contributor Rate | `{repo}_new_contributors.png` | Bar chart of new contributors per week with a 4-week rolling average line |
+| Issue Trends | `{repo}_issue_trends.png` | Monthly issues opened vs. closed with a cumulative open issues area fill |
+| Top Contributors | `{repo}_top_contributors.png` | Horizontal bar chart of the top 15 contributors showing additions vs. deletions |
+
+### Data sources
+
+The visualization script reads from these CSV files (generated by the crawler):
+
+- `weekly_snapshots.csv` — growth curves, weekly activity, new contributor rate
+- `contributor_lifecycles.csv` — lifecycle Gantt chart
+- `issue_records.csv` — issue trend analysis
+- `person_metrics.csv` — top contributors chart
 
 ---
 
@@ -804,7 +999,19 @@ uv run civic-tech-crawler --config config.yaml --force
 uv run civic-tech-crawler --config config.yaml --verbose 2>&1 | tee crawl.log
 ```
 
-### Example 7: Loading results in Python for analysis
+### Example 7: Generate visualizations
+
+```bash
+# Generate all plots from crawled data
+uv run python scripts/visualize.py --output-dir ./output
+
+# Generate plots for a single repository
+uv run python scripts/visualize.py --output-dir ./output --repo DemocracyClub/WhoCanIVoteFor
+
+# Output: output/plots/{Owner}_{Repo}_{chart_name}.png
+```
+
+### Example 8: Loading results in Python for analysis
 
 ```python
 import pandas as pd
@@ -823,7 +1030,7 @@ chaoss = pd.read_csv("output/chaoss_summary.csv")
 print(chaoss[["repo_full_name", "bus_factor", "burstiness_cv", "change_request_acceptance_ratio"]])
 ```
 
-### Example 8: Loading results in R
+### Example 9: Loading results in R
 
 ```r
 library(readr)
@@ -845,7 +1052,32 @@ contributors %>%
   arrange(desc(total_commits))
 ```
 
-### Example 9: Full nested JSON analysis
+### Example 10: Loading deep temporal analytics in Python
+
+```python
+import pandas as pd
+
+# Load weekly snapshots for growth analysis
+snapshots = pd.read_csv("output/weekly_snapshots.csv")
+print(snapshots[["repo_full_name", "week_start", "total_commits", "cumulative_commits"]])
+
+# Load contributor lifecycles
+lifecycles = pd.read_csv("output/contributor_lifecycles.csv")
+active = lifecycles[lifecycles["status"] == "active"]
+departed = lifecycles[lifecycles["status"] == "departed"]
+print(f"Active: {len(active)}, Departed: {len(departed)}")
+print(active[["repo_full_name", "contributor_id", "total_commits", "activity_ratio"]])
+
+# Load issue analytics
+issues = pd.read_csv("output/issue_records.csv")
+print(issues[["repo_full_name", "number", "state", "comment_count", "time_to_close_days"]])
+
+# Issue summary
+summary = pd.read_csv("output/issue_summary.csv")
+print(summary[["repo_full_name", "total_issues", "median_time_to_close_days", "unique_openers"]])
+```
+
+### Example 11: Full nested JSON analysis
 
 ```python
 import json
@@ -909,6 +1141,8 @@ civic_tech_git_crawler/
 ├── pyproject.toml                  # Dependencies and project metadata
 ├── config.example.yaml             # Example configuration
 ├── config.yaml                     # Your configuration (gitignored)
+├── scripts/
+│   └── visualize.py                # Visualization script (6 chart types)
 ├── src/
 │   └── civic_tech_crawler/
 │       ├── __init__.py             # Package version
@@ -923,15 +1157,18 @@ civic_tech_git_crawler/
 │       │   ├── person_metrics.py   # Per-contributor metrics
 │       │   ├── temporal_metrics.py # PRs, tags, releases
 │       │   ├── chaoss_metrics.py   # CHAOSS framework metrics
+│       │   ├── commit_history.py   # Full commit history & contributor lifecycles
+│       │   ├── issue_analytics.py  # Detailed issue analytics
 │       │   └── detection.py        # Cloud/AI-ML detection
 │       ├── exporters/
-│       │   ├── csv_exporter.py     # CSV output (8 files)
+│       │   ├── csv_exporter.py     # CSV output (13 files)
 │       │   └── json_exporter.py    # JSON output (full + per-repo)
 │       └── utils/
 │           ├── rate_limiter.py     # API rate limit monitoring
 │           ├── retry.py            # 202 retry + backoff logic
 │           └── osi_licenses.py     # OSI-approved SPDX license list
 └── output/                         # Generated output (gitignored)
+    └── plots/                      # Generated visualizations (gitignored)
 ```
 
 ---

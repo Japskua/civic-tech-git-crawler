@@ -5233,16 +5233,16 @@ DemocracyClub/UK-Polling-Stations,8834,import script fixes LE 2026 1,closed,awde
 DemocracyClub/UK-Polling-Stations,8836,Import script for Mole Valley (2026-05-07) (closes #8835),closed,polling-bot-4000,2026-02-11T14:42:46+00:00,2026-02-11T15:42:28+00:00,2026-02-11T15:42:28+00:00
 DemocracyClub/UK-Polling-Stations,8837,Council detail page update,closed,awdem,2026-02-12T12:41:52+00:00,2026-02-16T13:31:20+00:00,2026-02-16T13:31:20+00:00
 DemocracyClub/UK-Polling-Stations,8838,Fix typo in accessibility information upload message,closed,chris48s,2026-02-12T13:52:21+00:00,2026-02-18T13:59:51+00:00,2026-02-18T13:59:51+00:00
-DemocracyClub/UK-Polling-Stations,8840,Import script for Haringey (2026-05-07) (closes #8839),open,polling-bot-4000,2026-02-13T11:57:03+00:00,,
-DemocracyClub/UK-Polling-Stations,8843,Import script for Gosport (2026-05-07) (closes #8841),open,polling-bot-4000,2026-02-13T14:04:02+00:00,,
-DemocracyClub/UK-Polling-Stations,8845,Import script for Newcastle (2026-05-07) (closes #8844),open,polling-bot-4000,2026-02-16T09:54:11+00:00,,
-DemocracyClub/UK-Polling-Stations,8847,Import script for Watford (2026-05-07) (closes #8846),open,polling-bot-4000,2026-02-16T14:24:47+00:00,,
-DemocracyClub/UK-Polling-Stations,8849,Import script for Cambridge (2026-05-07) (closes #8848),open,polling-bot-4000,2026-02-16T14:26:15+00:00,,
+DemocracyClub/UK-Polling-Stations,8840,Import script for Haringey (2026-05-07) (closes #8839),closed,polling-bot-4000,2026-02-13T11:57:03+00:00,2026-02-26T09:24:21+00:00,2026-02-26T09:24:21+00:00
+DemocracyClub/UK-Polling-Stations,8843,Import script for Gosport (2026-05-07) (closes #8841),closed,polling-bot-4000,2026-02-13T14:04:02+00:00,2026-03-04T08:37:33+00:00,2026-03-04T08:37:33+00:00
+DemocracyClub/UK-Polling-Stations,8845,Import script for Newcastle (2026-05-07) (closes #8844),closed,polling-bot-4000,2026-02-16T09:54:11+00:00,2026-02-23T15:55:42+00:00,2026-02-23T15:55:42+00:00
+DemocracyClub/UK-Polling-Stations,8847,Import script for Watford (2026-05-07) (closes #8846),closed,polling-bot-4000,2026-02-16T14:24:47+00:00,2026-02-26T11:37:11+00:00,2026-02-26T11:37:12+00:00
+DemocracyClub/UK-Polling-Stations,8849,Import script for Cambridge (2026-05-07) (closes #8848),closed,polling-bot-4000,2026-02-16T14:26:15+00:00,2026-03-04T08:50:17+00:00,2026-03-04T08:50:17+00:00
 DemocracyClub/UK-Polling-Stations,8851,Import script for Pembrokeshire (2026-05-07) (closes #8850),closed,polling-bot-4000,2026-02-16T14:34:51+00:00,2026-02-17T14:57:41+00:00,2026-02-17T14:57:41+00:00
 DemocracyClub/UK-Polling-Stations,8852,Feat/halarose update,closed,awdem,2026-02-16T16:17:18+00:00,2026-02-17T11:53:06+00:00,2026-02-17T11:53:06+00:00
-DemocracyClub/UK-Polling-Stations,8854,Import script for Pendle (2026-05-07) (closes #8853),open,polling-bot-4000,2026-02-16T16:37:21+00:00,,
-DemocracyClub/UK-Polling-Stations,8856,Import script for Highland (2026-05-07) (closes #8855),open,polling-bot-4000,2026-02-16T17:20:39+00:00,,
-DemocracyClub/UK-Polling-Stations,8858,Import script for North Kesteven (2026-03-12) (closes #8857),open,polling-bot-4000,2026-02-17T11:10:22+00:00,,
+DemocracyClub/UK-Polling-Stations,8854,Import script for Pendle (2026-05-07) (closes #8853),closed,polling-bot-4000,2026-02-16T16:37:21+00:00,2026-02-23T15:42:52+00:00,2026-02-23T15:42:52+00:00
+DemocracyClub/UK-Polling-Stations,8856,Import script for Highland (2026-05-07) (closes #8855),closed,polling-bot-4000,2026-02-16T17:20:39+00:00,2026-02-26T10:49:57+00:00,2026-02-26T10:49:57+00:00
+DemocracyClub/UK-Polling-Stations,8858,Import script for North Kesteven (2026-03-12) (closes #8857),closed,polling-bot-4000,2026-02-17T11:10:22+00:00,2026-02-23T16:04:31+00:00,2026-02-23T16:04:31+00:00
 DemocracyClub/UK-Polling-Stations,8859,Add environment to subject of ssm failure emails,closed,GeoWill,2026-02-17T11:21:54+00:00,2026-02-17T14:03:29+00:00,2026-02-17T14:03:29+00:00
 DemocracyClub/UK-Polling-Stations,8861,Import script for Gwynedd (2026-05-07) (closes #8860),closed,polling-bot-4000,2026-02-17T11:38:58+00:00,2026-02-18T09:47:47+00:00,2026-02-18T09:47:47+00:00
 DemocracyClub/UK-Polling-Stations,8864,Import script for Mid Suffolk (2026-05-07) (closes #8863),open,polling-bot-4000,2026-02-17T12:44:10+00:00,,
@@ -5251,24 +5251,56 @@ DemocracyClub/UK-Polling-Stations,8868,misc import fixes 20260507-2,closed,awdem
 DemocracyClub/UK-Polling-Stations,8870,Import script for West Oxfordshire (2026-05-07) (closes #8869),open,polling-bot-4000,2026-02-17T15:37:10+00:00,,
 DemocracyClub/UK-Polling-Stations,8871,sort all addresses together in pickers,closed,chris48s,2026-02-17T16:56:33+00:00,2026-02-18T08:51:14+00:00,2026-02-18T08:51:14+00:00
 DemocracyClub/UK-Polling-Stations,8873,Import script for Carmarthenshire (2026-05-07) (closes #8872),closed,polling-bot-4000,2026-02-17T17:11:32+00:00,2026-02-18T13:52:58+00:00,2026-02-18T13:52:58+00:00
-DemocracyClub/UK-Polling-Stations,8875,Import script for Broxbourne (2026-05-07) (closes #8874),open,polling-bot-4000,2026-02-17T17:40:20+00:00,,
-DemocracyClub/UK-Polling-Stations,8877,Import script for St Helens (2026-05-07) (closes #8876),open,polling-bot-4000,2026-02-18T09:56:20+00:00,,
-DemocracyClub/UK-Polling-Stations,8879,Import script for South Cambridgeshire (2026-05-07) (closes #8878),open,polling-bot-4000,2026-02-18T11:01:07+00:00,,
-DemocracyClub/UK-Polling-Stations,8881,Import script for Fife (2026-05-07) (closes #8880),open,polling-bot-4000,2026-02-18T15:07:33+00:00,,
+DemocracyClub/UK-Polling-Stations,8875,Import script for Broxbourne (2026-05-07) (closes #8874),closed,polling-bot-4000,2026-02-17T17:40:20+00:00,2026-02-27T09:20:24+00:00,2026-02-27T09:20:24+00:00
+DemocracyClub/UK-Polling-Stations,8877,Import script for St Helens (2026-05-07) (closes #8876),closed,polling-bot-4000,2026-02-18T09:56:20+00:00,2026-02-26T11:25:59+00:00,2026-02-26T11:25:59+00:00
+DemocracyClub/UK-Polling-Stations,8879,Import script for South Cambridgeshire (2026-05-07) (closes #8878),closed,polling-bot-4000,2026-02-18T11:01:07+00:00,2026-02-27T09:28:58+00:00,2026-02-27T09:28:58+00:00
+DemocracyClub/UK-Polling-Stations,8881,Import script for Fife (2026-05-07) (closes #8880),closed,polling-bot-4000,2026-02-18T15:07:33+00:00,2026-02-27T09:44:18+00:00,2026-02-27T09:44:18+00:00
 DemocracyClub/UK-Polling-Stations,8883,Import script for Swansea (2026-05-07) (closes #8882),closed,polling-bot-4000,2026-02-18T16:38:03+00:00,2026-02-19T12:07:34+00:00,2026-02-19T12:07:34+00:00
-DemocracyClub/UK-Polling-Stations,8885,Import script for Brent (2026-05-07) (closes #8884),open,polling-bot-4000,2026-02-18T21:56:38+00:00,,
+DemocracyClub/UK-Polling-Stations,8885,Import script for Brent (2026-05-07) (closes #8884),closed,polling-bot-4000,2026-02-18T21:56:38+00:00,2026-02-27T10:02:34+00:00,2026-02-27T10:02:34+00:00
 DemocracyClub/UK-Polling-Stations,8886,station change for GAT,closed,awdem,2026-02-19T11:33:59+00:00,2026-02-19T11:59:52+00:00,2026-02-19T11:59:52+00:00
 DemocracyClub/UK-Polling-Stations,8888,Import script for Renfrewshire (2026-05-07) (closes #8887),open,polling-bot-4000,2026-02-19T12:45:22+00:00,,
 DemocracyClub/UK-Polling-Stations,8889,fix PEM script,closed,awdem,2026-02-19T12:46:01+00:00,2026-02-19T12:54:11+00:00,2026-02-19T12:54:11+00:00
 DemocracyClub/UK-Polling-Stations,8890,WiP,open,GeoWill,2026-02-19T14:48:31+00:00,,
 DemocracyClub/UK-Polling-Stations,8893,Import script for Powys (2026-05-07) (closes #8891),closed,polling-bot-4000,2026-02-19T14:54:35+00:00,2026-02-19T16:58:11+00:00,2026-02-19T16:58:11+00:00
 DemocracyClub/UK-Polling-Stations,8894,vulns20260220,closed,awdem,2026-02-20T09:44:50+00:00,2026-02-20T09:52:47+00:00,2026-02-20T09:52:47+00:00
-DemocracyClub/UK-Polling-Stations,8896,Import script for Conwy (2026-05-07) (closes #8895),open,polling-bot-4000,2026-02-20T10:35:20+00:00,,
+DemocracyClub/UK-Polling-Stations,8896,Import script for Conwy (2026-05-07) (closes #8895),closed,polling-bot-4000,2026-02-20T10:35:20+00:00,2026-02-23T11:30:14+00:00,2026-02-23T11:30:14+00:00
 DemocracyClub/UK-Polling-Stations,8899,Import script for Stevenage (2026-05-07) (closes #8897),open,polling-bot-4000,2026-02-20T14:19:35+00:00,,
-DemocracyClub/UK-Polling-Stations,8901,Import script for Merthyr Tydfil (2026-05-07) (closes #8900),open,polling-bot-4000,2026-02-20T15:14:54+00:00,,
-DemocracyClub/UK-Polling-Stations,8904,Import script for Bridgend (2026-05-07) (closes #8902),open,polling-bot-4000,2026-02-20T15:35:51+00:00,,
-DemocracyClub/UK-Polling-Stations,8907,Import script for Neath Port Talbot (2026-05-07) (closes #8905),open,polling-bot-4000,2026-02-20T15:54:18+00:00,,
-DemocracyClub/UK-Polling-Stations,8909,Import script for Rhondda Cynon Taf (2026-05-07) (closes #8908),open,polling-bot-4000,2026-02-20T16:27:52+00:00,,
+DemocracyClub/UK-Polling-Stations,8901,Import script for Merthyr Tydfil (2026-05-07) (closes #8900),closed,polling-bot-4000,2026-02-20T15:14:54+00:00,2026-02-23T10:32:15+00:00,2026-02-23T10:32:15+00:00
+DemocracyClub/UK-Polling-Stations,8904,Import script for Bridgend (2026-05-07) (closes #8902),closed,polling-bot-4000,2026-02-20T15:35:51+00:00,2026-02-23T11:45:26+00:00,2026-02-23T11:45:26+00:00
+DemocracyClub/UK-Polling-Stations,8907,Import script for Neath Port Talbot (2026-05-07) (closes #8905),closed,polling-bot-4000,2026-02-20T15:54:18+00:00,2026-02-23T12:45:13+00:00,2026-02-23T12:45:13+00:00
+DemocracyClub/UK-Polling-Stations,8909,Import script for Rhondda Cynon Taf (2026-05-07) (closes #8908),closed,polling-bot-4000,2026-02-20T16:27:52+00:00,2026-02-23T15:30:32+00:00,2026-02-23T15:30:32+00:00
+DemocracyClub/UK-Polling-Stations,8912,Import script for Chelmsford (2026-05-07) (closes #8911),open,polling-bot-4000,2026-02-23T09:23:41+00:00,,
+DemocracyClub/UK-Polling-Stations,8914,Import script for Chelmsford (2026-03-05) (closes #8913),open,polling-bot-4000,2026-02-23T10:07:35+00:00,,
+DemocracyClub/UK-Polling-Stations,8916,Import script for Dundee (2026-05-07) (closes #8915),open,polling-bot-4000,2026-02-23T10:35:24+00:00,,
+DemocracyClub/UK-Polling-Stations,8918,Import script for Gwynedd (2026-05-07) (closes #8917),closed,polling-bot-4000,2026-02-23T10:52:20+00:00,2026-02-23T12:30:49+00:00,2026-02-23T12:30:49+00:00
+DemocracyClub/UK-Polling-Stations,8920,Import script for Hart (2026-05-07) (closes #8919),open,polling-bot-4000,2026-02-23T15:34:25+00:00,,
+DemocracyClub/UK-Polling-Stations,8922,Import script for Basingstoke and Deane (2026-05-07) (closes #8921),open,polling-bot-4000,2026-02-23T16:00:57+00:00,,
+DemocracyClub/UK-Polling-Stations,8924,Import script for Basildon (2026-05-07) (closes #8923),open,polling-bot-4000,2026-02-24T11:23:00+00:00,,
+DemocracyClub/UK-Polling-Stations,8926,Import script for Portsmouth (2026-05-07) (closes #8925),open,polling-bot-4000,2026-02-24T12:37:08+00:00,,
+DemocracyClub/UK-Polling-Stations,8928,Import script for Guildford (2026-05-07) (closes #8927),open,polling-bot-4000,2026-02-24T12:43:57+00:00,,
+DemocracyClub/UK-Polling-Stations,8930,Import script for Monmouthshire (2026-05-07) (closes #8929),closed,polling-bot-4000,2026-02-25T13:17:22+00:00,2026-02-26T11:11:12+00:00,2026-02-26T11:11:12+00:00
+DemocracyClub/UK-Polling-Stations,8932,Import script for Torfaen (2026-05-07) (closes #8931),closed,polling-bot-4000,2026-02-25T14:25:39+00:00,2026-02-26T11:18:13+00:00,2026-02-26T11:18:13+00:00
+DemocracyClub/UK-Polling-Stations,8933,disable coveralls in deploy,closed,awdem,2026-02-26T09:51:54+00:00,2026-02-26T10:06:59+00:00,2026-02-26T10:06:59+00:00
+DemocracyClub/UK-Polling-Stations,8935,Import script for Ipswich (2026-05-07) (closes #8934),open,polling-bot-4000,2026-02-26T10:31:53+00:00,,
+DemocracyClub/UK-Polling-Stations,8937,Import script for Crawley (2026-05-07) (closes #8936),open,polling-bot-4000,2026-02-26T11:11:13+00:00,,
+DemocracyClub/UK-Polling-Stations,8939,Import script for Perth & Kinross (2026-05-07) (closes #8938),open,polling-bot-4000,2026-02-26T11:26:23+00:00,,
+DemocracyClub/UK-Polling-Stations,8941,Import script for Angus (2026-05-07) (closes #8940),open,polling-bot-4000,2026-02-26T11:28:46+00:00,,
+DemocracyClub/UK-Polling-Stations,8943,Import script for Spelthorne (2026-05-07) (closes #8942),open,polling-bot-4000,2026-02-26T11:34:49+00:00,,
+DemocracyClub/UK-Polling-Stations,8944,only show a11y note blocks if we have text in target language,closed,chris48s,2026-02-26T11:45:21+00:00,2026-02-26T13:30:02+00:00,2026-02-26T13:30:02+00:00
+DemocracyClub/UK-Polling-Stations,8946,Import script for Cheltenham (2026-05-07) (closes #8945),open,polling-bot-4000,2026-02-26T12:04:19+00:00,,
+DemocracyClub/UK-Polling-Stations,8948,Import script for Denbighshire (2026-05-07) (closes #8947),closed,polling-bot-4000,2026-02-26T14:09:33+00:00,2026-02-27T09:52:25+00:00,2026-02-27T09:52:25+00:00
+DemocracyClub/UK-Polling-Stations,8949,Set next charismatic election date,closed,chris48s,2026-02-26T14:29:13+00:00,2026-03-03T09:49:04+00:00,2026-03-03T09:49:04+00:00
+DemocracyClub/UK-Polling-Stations,8951,Import script for Tamworth (2026-03-05) (closes #8950),open,polling-bot-4000,2026-02-26T15:42:22+00:00,,
+DemocracyClub/UK-Polling-Stations,8953,Import script for Cherwell (2026-05-07) (closes #8952),open,polling-bot-4000,2026-02-26T15:45:19+00:00,,
+DemocracyClub/UK-Polling-Stations,8955,Import script for Tamworth (2026-05-07) (closes #8954),open,polling-bot-4000,2026-02-26T15:46:19+00:00,,
+DemocracyClub/UK-Polling-Stations,8957,Import script for City of Lincoln (2026-05-07) (closes #8956),open,polling-bot-4000,2026-02-27T10:26:02+00:00,,
+DemocracyClub/UK-Polling-Stations,8958,misc-import-fixes20260507-3,closed,awdem,2026-02-27T10:44:45+00:00,2026-02-27T10:48:24+00:00,2026-02-27T10:48:24+00:00
+DemocracyClub/UK-Polling-Stations,8960,Import script for Flintshire (2026-05-07) (closes #8959),closed,polling-bot-4000,2026-02-27T11:02:23+00:00,2026-03-03T09:32:04+00:00,2026-03-03T09:32:04+00:00
+DemocracyClub/UK-Polling-Stations,8962,Import script for Comhairle nan Eilean Siar (2026-05-07) (closes #8961),open,polling-bot-4000,2026-03-01T07:46:55+00:00,,
+DemocracyClub/UK-Polling-Stations,8964,Import script for Uttlesford (2026-05-07) (closes #8963),open,polling-bot-4000,2026-03-02T16:27:27+00:00,,
+DemocracyClub/UK-Polling-Stations,8966,Import script for Brentwood (2026-05-07) (closes #8965),open,polling-bot-4000,2026-03-03T10:42:37+00:00,,
+DemocracyClub/UK-Polling-Stations,8968,Import script for Wrexham (2026-05-07) (closes #8967),open,polling-bot-4000,2026-03-03T13:54:53+00:00,,
+DemocracyClub/UK-Polling-Stations,8970,Import script for Chichester (2026-05-07) (closes #8969),open,polling-bot-4000,2026-03-03T14:03:14+00:00,,
 DemocracyClub/WhoCanIVoteFor,6,waffle.io Badge,closed,waffle-iron,2016-03-24T09:53:24+00:00,2016-03-24T09:53:35+00:00,2016-03-24T09:53:35+00:00
 DemocracyClub/WhoCanIVoteFor,15,Add missing columns to elections table,closed,andylolz,2016-04-06T21:50:12+00:00,,2016-04-08T15:40:16+00:00
 DemocracyClub/WhoCanIVoteFor,16,Ignore sqlite dbs,closed,andylolz,2016-04-06T21:54:32+00:00,2016-04-08T15:42:25+00:00,2016-04-08T15:42:25+00:00
@@ -7169,8 +7201,11 @@ DemocracyClub/WhoCanIVoteFor,2315,security updates 20260109,closed,awdem,2026-01
 DemocracyClub/WhoCanIVoteFor,2316,always display past election status text,closed,awdem,2026-01-13T15:52:08+00:00,2026-01-15T09:39:27+00:00,2026-01-15T09:39:27+00:00
 DemocracyClub/WhoCanIVoteFor,2317,pass object to cancelled election template,closed,chris48s,2026-01-22T16:56:50+00:00,2026-01-22T17:00:43+00:00,2026-01-22T17:00:43+00:00
 DemocracyClub/WhoCanIVoteFor,2318,apply security patches,closed,chris48s,2026-02-02T16:35:20+00:00,2026-02-02T16:43:46+00:00,2026-02-02T16:43:46+00:00
-DemocracyClub/WhoCanIVoteFor,2320,Delete bios when urls is missing,open,GeoWill,2026-02-05T19:36:06+00:00,,
+DemocracyClub/WhoCanIVoteFor,2320,Delete bios when urls is missing,closed,GeoWill,2026-02-05T19:36:06+00:00,2026-03-03T14:31:36+00:00,2026-03-03T14:31:36+00:00
 DemocracyClub/WhoCanIVoteFor,2322,vulns20260220,closed,awdem,2026-02-20T09:46:47+00:00,2026-02-20T09:53:25+00:00,2026-02-20T09:53:25+00:00
+DemocracyClub/WhoCanIVoteFor,2323,multi-candidacy candidates with different parties,closed,awdem,2026-02-24T11:58:46+00:00,2026-03-02T12:13:16+00:00,2026-03-02T12:13:16+00:00
+DemocracyClub/WhoCanIVoteFor,2325,Don't cache the candidates_for_ballots endpoint,closed,symroe,2026-03-03T21:35:03+00:00,2026-03-04T09:01:06+00:00,2026-03-04T09:01:06+00:00
+DemocracyClub/WhoCanIVoteFor,2326,forward useful things to candidates_for_ballots endpoint,open,chris48s,2026-03-04T10:18:44+00:00,,
 fvialibre/edia,1,added en support to all interfaces,open,rortiz04,2024-10-10T15:44:17+00:00,,
 fvialibre/edia,2,"Updated chatbot feedback, added schools, fixed bugs",closed,guidoivetta,2024-11-26T16:04:42+00:00,2024-11-26T16:05:13+00:00,2024-11-26T16:05:13+00:00
 fvialibre/edia,3,"Log skips, exclude pairs skipped many times, remove country-converter",closed,Aplietexe,2025-03-05T12:47:45+00:00,2025-03-07T11:30:16+00:00,2025-03-07T11:30:16+00:00
