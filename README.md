@@ -22,6 +22,7 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
   - [Issue Analytics](#issue-analytics)
 - [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery)
 - [Analysis Pipeline](#analysis-pipeline)
+- [Statistical Analysis](#statistical-analysis)
 - [API Rate Limits](#api-rate-limits)
 - [Visualization](#visualization)
 - [Examples](#examples)
@@ -79,6 +80,8 @@ This installs the following dependencies:
 | [PyYAML](https://pyyaml.org/) | YAML configuration file parsing |
 | [Matplotlib](https://matplotlib.org/) | Chart generation for the visualization script |
 | [Pandas](https://pandas.pydata.org/) | Data loading and manipulation for the visualization script |
+| [SciPy](https://scipy.org/) | Statistical testing (Spearman, Mann-Whitney U, Wilcoxon, Kruskal-Wallis, Shapiro-Wilk) |
+| [NumPy](https://numpy.org/) | Numerical computation for statistical analysis |
 | [Rich](https://rich.readthedocs.io/) | Terminal progress bars and formatted output |
 
 ---
@@ -286,7 +289,7 @@ uv run python -m civic_tech_crawler --config config.yaml
 
 All output files are written to the output directory (default: `./output/`). Both CSV and JSON formats are produced automatically.
 
-> **Want to see what the output looks like?** Browse the [`example_results/`](example_results/) directory for real output from a pilot run against 3 civic tech repositories.
+> **Want to see what the output looks like?** Browse the [`example_results/`](example_results/) directory for real output from a crawl of 29 civic tech repositories, including 12 statistical analysis CSVs and 165 visualisation PNGs.
 
 ### CSV files
 
@@ -430,11 +433,22 @@ Per-person metrics are exported to `person_metrics.csv`. One row per (repository
 | Repository | `repo_full_name` | string | Repository identifier |
 | Username | `login` | string | GitHub username |
 | Name | `name` | string | Real name from GitHub profile |
+| Bot flag | `is_bot` | boolean | Whether this contributor is detected as a bot |
 | Commits | `num_commits` | integer | Total commits by this contributor |
 | Additions | `additions` | integer | Total lines of code added |
 | Deletions | `deletions` | integer | Total lines of code deleted |
 | Avg additions/commit | `avg_additions_per_commit` | float | Mean lines added per commit |
 | Avg deletions/commit | `avg_deletions_per_commit` | float | Mean lines deleted per commit |
+
+#### Bot Detection
+
+Contributors are automatically classified as bots using a heuristic detection pipeline. A contributor is flagged as `is_bot = True` if their GitHub login matches any of:
+
+- The `[bot]` suffix (e.g., `dependabot[bot]`, `renovate[bot]`, `github-actions[bot]`)
+- Known bot login patterns: `snyk-bot`, `codecov[bot]`, `imgbot[bot]`, `stale[bot]`, `allcontributors[bot]`, `transifex-integration[bot]`
+- The general patterns `*-bot` or `*Bot` in the login name
+
+Bot detection enables **dual metric reporting** in the CHAOSS metrics: all concentration metrics (bus factor, elephant factor, HHI) are computed both with and without bot contributors. This follows recommendations from Dey et al. (2020) and Golzadeh et al. (2021).
 
 **Data source:** The GitHub [Repository Statistics API](https://docs.github.com/en/rest/metrics/statistics#get-all-contributor-commit-activity) (`/repos/{owner}/{repo}/stats/contributors`), which returns weekly breakdowns of commits, additions, and deletions per contributor. The tool aggregates all weeks to produce totals and averages. **Fallback:** When the statistics endpoint returns empty (e.g., all commit authors use emails not linked to GitHub accounts), the tool falls back to iterating commits directly (capped at 500) and grouping by author email.
 
@@ -542,6 +556,27 @@ These metrics extend the core CHAOSS framework with additional indicators recomm
 | Core-Periphery Ratio | `core_periphery_ratio` | Core-periphery structure (Crowston & Howison, 2006) | Proportion of core contributors: `core / (core + periphery)`. |
 | Network Density | `network_density` | Social network analysis | Ratio of actual edges to possible edges in the PR review collaboration graph. Higher density = more interconnected reviews. |
 | Avg Degree Centrality | `avg_degree_centrality` | Social network analysis | Average number of unique collaborators per person (normalized). Higher values indicate broader collaboration patterns. |
+
+#### Bot-Filtered Metrics
+
+All concentration metrics are computed in dual mode — with and without bot contributors — to assess the impact of automated accounts on project health indicators. The following additional columns are present in `chaoss_summary.csv`:
+
+| Metric | Column | Description |
+|--------|--------|-------------|
+| Bus Factor (no bots) | `bus_factor_no_bots` | Bus factor computed excluding bot contributors |
+| Elephant Factor (no bots) | `elephant_factor_no_bots` | Elephant factor computed excluding bot contributors |
+| HHI (no bots) | `hhi_no_bots` | HHI where each unknown-affiliation contributor is treated as their own org (not lumped into "Unknown") and bots are excluded |
+| HHI (known orgs only) | `hhi_known_orgs_only` | HHI computed using only contributors with known organisational affiliation |
+| Bot contributor count | `bot_contributor_count` | Number of bot contributors detected in this repository |
+| Bot commit count | `bot_commit_count` | Total commits by bot contributors |
+| Unknown org contributors | `unknown_org_contributor_count` | Number of contributors with unknown organisational affiliation |
+
+**Interpreting the three HHI variants:**
+- `herfindahl_hirschman_index`: Original HHI — all unknown-affiliation contributors lumped into one "Unknown" org. Can inflate concentration artificially.
+- `hhi_no_bots`: Improved HHI — bots excluded, each unknown contributor treated as their own org. Better reflects true organisational diversity.
+- `hhi_known_orgs_only`: Strictest HHI — only contributors with identified organisations. Most accurate but smallest sample.
+
+In antitrust economics, HHI < 1,500 = unconcentrated, 1,500–2,500 = moderately concentrated, > 2,500 = highly concentrated (US DOJ guidelines).
 
 #### Core-Periphery Network Analysis
 
@@ -863,6 +898,85 @@ GitHub's statistics endpoints (`/stats/contributors`, `/stats/commit_activity`) 
 
 ---
 
+## Statistical Analysis
+
+A standalone statistical analysis script performs comprehensive non-parametric testing on the crawled data. This is designed for academic research papers and generates publication-ready CSV tables.
+
+### Usage
+
+```bash
+# Run statistical analysis on crawled data
+uv run python scripts/statistical_analysis.py
+
+# Specify a custom output directory
+uv run python scripts/statistical_analysis.py --output-dir ./my_output
+```
+
+Output files are saved to `{output-dir}/statistical_analysis/`.
+
+### Analyses Performed
+
+| Analysis | Output File | Description |
+|----------|-------------|-------------|
+| Dataset summary | `dataset_summary.csv` | High-level overview: repo count, org count, language count, contributor totals (human vs. bot) |
+| Descriptive statistics | `descriptive_statistics.csv` | Count, mean, std, min, Q1, median, Q3, max, IQR for 25+ metrics |
+| Normality tests | `normality_tests.csv` | Shapiro-Wilk tests for key metrics (justifies non-parametric methods) |
+| Correlation matrix | `spearman_correlations.csv` | 17x17 Spearman rank correlation matrix |
+| P-value matrix | `spearman_p_values.csv` | 17x17 p-value matrix for correlations |
+| FDR-corrected pairs | `correlation_pairs_fdr.csv` | All pairwise correlations with Benjamini-Hochberg FDR correction |
+| Partial correlations | `partial_correlations.csv` | Partial Spearman correlations controlling for num_developers (disentangles size effects) |
+| Group comparisons | `group_comparisons.csv` | Mann-Whitney U tests (CI/CD, cloud, AI/ML, license) with Cliff's delta effect sizes |
+| Bot impact | `bot_impact.csv` | Per-repo bot counts and metric comparisons (with/without bots) |
+| Bot impact tests | `wilcoxon_bot_impact.csv` | Wilcoxon signed-rank paired tests for bot impact on HHI, bus factor, elephant factor |
+| Maturity analysis | `maturity_analysis.csv` | Mature vs. young project comparison (median age split) with Mann-Whitney U |
+| Organisation comparison | `org_kruskal_wallis.csv` | Kruskal-Wallis H tests comparing metrics across organisations (≥3 repos each) |
+
+### Statistical Methods
+
+**Why non-parametric?** The script first runs Shapiro-Wilk normality tests on all key metrics. In our n=29 dataset, 11 of 12 metrics are significantly non-normal (p < 0.05), justifying the exclusive use of non-parametric methods.
+
+| Method | Purpose | When Used |
+|--------|---------|-----------|
+| Shapiro-Wilk | Normality testing | All key metrics |
+| Spearman rank correlation | Monotonic relationships | All metric pairs (136 unique pairs for 17 metrics) |
+| Benjamini-Hochberg FDR | Multiple testing correction | Applied to all 136 correlation p-values at alpha=0.05 |
+| Partial Spearman correlation | Control for confounders | 10 key pairs, controlling for num_developers |
+| Mann-Whitney U | Two-group comparison | CI/CD vs. no CI/CD, mature vs. young, etc. |
+| Cliff's delta | Non-parametric effect size | All two-group comparisons |
+| Wilcoxon signed-rank | Paired comparison | Metrics with bots vs. without bots (same repos) |
+| Kruskal-Wallis H | Multi-group comparison | Cross-organisation differences (3+ groups) |
+| Epsilon-squared | Kruskal-Wallis effect size | All multi-group comparisons |
+
+### Example: Loading Statistical Results
+
+```python
+import pandas as pd
+
+# Which correlations survived FDR correction?
+corr = pd.read_csv("output/statistical_analysis/correlation_pairs_fdr.csv")
+significant = corr[corr["significant_fdr"] == True]
+print(f"{len(significant)} of {len(corr)} pairs survive FDR correction")
+print(significant[["var_a", "var_b", "rho", "p_value"]].head(10))
+
+# Which relationships are confounded by project size?
+partial = pd.read_csv("output/statistical_analysis/partial_correlations.csv")
+robust = partial[partial["interpretation"] == "robust"]
+confounded = partial[partial["interpretation"] == "confounded"]
+print(f"Robust: {len(robust)}, Confounded: {len(confounded)}")
+print(partial[["var_a", "var_b", "rho_zero_order", "rho_partial", "interpretation"]])
+
+# Does bot filtering change concentration metrics?
+wilcoxon = pd.read_csv("output/statistical_analysis/wilcoxon_bot_impact.csv")
+print(wilcoxon[["comparison", "median_with", "median_without", "p_value", "significant"]])
+
+# How do mature vs. young projects differ?
+maturity = pd.read_csv("output/statistical_analysis/maturity_analysis.csv")
+sig = maturity[maturity["p_value"] < 0.05]
+print(sig[["metric", "mature_median", "young_median", "p_value", "cliffs_delta", "effect_magnitude"]])
+```
+
+---
+
 ## API Rate Limits
 
 ### Estimated API usage per repository
@@ -999,7 +1113,21 @@ uv run civic-tech-crawler --config config.yaml --force
 uv run civic-tech-crawler --config config.yaml --verbose 2>&1 | tee crawl.log
 ```
 
-### Example 7: Generate visualizations
+### Example 7: Run statistical analysis
+
+```bash
+# Run full statistical analysis pipeline
+uv run python scripts/statistical_analysis.py
+
+# Results appear in output/statistical_analysis/
+ls output/statistical_analysis/
+# bot_impact.csv  correlation_pairs_fdr.csv  dataset_summary.csv
+# descriptive_statistics.csv  group_comparisons.csv  maturity_analysis.csv
+# normality_tests.csv  org_kruskal_wallis.csv  partial_correlations.csv
+# spearman_correlations.csv  spearman_p_values.csv  wilcoxon_bot_impact.csv
+```
+
+### Example 8: Generate visualizations
 
 ```bash
 # Generate all plots from crawled data
@@ -1011,7 +1139,7 @@ uv run python scripts/visualize.py --output-dir ./output --repo DemocracyClub/Wh
 # Output: output/plots/{Owner}_{Repo}_{chart_name}.png
 ```
 
-### Example 8: Loading results in Python for analysis
+### Example 9: Loading results in Python for analysis
 
 ```python
 import pandas as pd
@@ -1020,17 +1148,24 @@ import pandas as pd
 repos = pd.read_csv("output/repo_metrics.csv")
 print(repos[["full_name", "stars", "forks", "num_developers", "total_commits"]])
 
-# Load contributor metrics
+# Load contributor metrics (with bot detection)
 contributors = pd.read_csv("output/person_metrics.csv")
-top = contributors.sort_values("num_commits", ascending=False).head(10)
+humans = contributors[contributors["is_bot"] == False]
+bots = contributors[contributors["is_bot"] == True]
+print(f"Human contributors: {len(humans)}, Bot contributors: {len(bots)}")
+
+top = humans.sort_values("num_commits", ascending=False).head(10)
 print(top[["repo_full_name", "login", "num_commits", "additions", "deletions"]])
 
-# Load CHAOSS metrics
+# Load CHAOSS metrics (with and without bot filtering)
 chaoss = pd.read_csv("output/chaoss_summary.csv")
-print(chaoss[["repo_full_name", "bus_factor", "burstiness_cv", "change_request_acceptance_ratio"]])
+print(chaoss[["repo_full_name", "bus_factor", "bus_factor_no_bots",
+              "herfindahl_hirschman_index", "hhi_no_bots",
+              "burstiness_cv", "stale_issue_ratio",
+              "bot_contributor_count", "bot_commit_count"]])
 ```
 
-### Example 9: Loading results in R
+### Example 10: Loading results in R
 
 ```r
 library(readr)
@@ -1052,7 +1187,7 @@ contributors %>%
   arrange(desc(total_commits))
 ```
 
-### Example 10: Loading deep temporal analytics in Python
+### Example 11: Loading deep temporal analytics in Python
 
 ```python
 import pandas as pd
@@ -1077,7 +1212,7 @@ summary = pd.read_csv("output/issue_summary.csv")
 print(summary[["repo_full_name", "total_issues", "median_time_to_close_days", "unique_openers"]])
 ```
 
-### Example 11: Full nested JSON analysis
+### Example 12: Full nested JSON analysis
 
 ```python
 import json
@@ -1091,6 +1226,66 @@ for repo in data:
     cloud = repo["repo_metrics"]["cloud_detected"]
     ai_ml = repo["repo_metrics"]["ai_ml_detected"]
     print(f"{name}: bus_factor={bus}, cloud={cloud}, ai_ml={ai_ml}")
+```
+
+### Example 13: Working with statistical analysis results
+
+```python
+import pandas as pd
+
+# 1. Dataset summary
+summary = pd.read_csv("output/statistical_analysis/dataset_summary.csv")
+print(f"Repos: {summary['total_repositories'].iloc[0]}")
+print(f"Contributors: {summary['total_contributors'].iloc[0]} "
+      f"({summary['human_contributors'].iloc[0]} human, "
+      f"{summary['bot_contributors'].iloc[0]} bot)")
+
+# 2. Find FDR-significant correlations
+corr = pd.read_csv("output/statistical_analysis/correlation_pairs_fdr.csv")
+sig = corr[corr["significant_fdr"] == True].sort_values("rho", key=abs, ascending=False)
+print(f"\n{len(sig)} FDR-significant correlations:")
+print(sig[["var_a", "var_b", "rho", "p_value"]].to_string(index=False))
+
+# 3. Identify confounded vs robust relationships
+partial = pd.read_csv("output/statistical_analysis/partial_correlations.csv")
+for _, row in partial.iterrows():
+    print(f"{row['var_a']} <-> {row['var_b']}: "
+          f"zero-order={row['rho_zero_order']:.3f}, "
+          f"partial={row['rho_partial']:.3f} -> {row['interpretation']}")
+
+# 4. Bot impact on concentration metrics
+wilcoxon = pd.read_csv("output/statistical_analysis/wilcoxon_bot_impact.csv")
+for _, row in wilcoxon.iterrows():
+    status = "SIGNIFICANT" if row.get("significant") else "not significant"
+    print(f"{row['comparison']}: median {row['median_with']:.0f} -> "
+          f"{row['median_without']:.0f} (p={row['p_value']}, {status})")
+
+# 5. Mature vs young projects
+maturity = pd.read_csv("output/statistical_analysis/maturity_analysis.csv")
+sig_mat = maturity[maturity["p_value"] < 0.05]
+print(f"\nSignificant maturity differences:")
+print(sig_mat[["metric", "mature_median", "young_median",
+               "p_value", "cliffs_delta", "effect_magnitude"]].to_string(index=False))
+```
+
+### Example 14: End-to-end research workflow
+
+```bash
+# 1. Crawl repositories
+GITHUB_TOKEN=$(gh auth token) uv run civic-tech-crawler --config config.example.yaml
+
+# 2. Run statistical analysis
+uv run python scripts/statistical_analysis.py
+
+# 3. Generate visualisations
+uv run python scripts/visualize.py --output-dir ./output
+
+# 4. Copy results for version control (output/ is gitignored)
+cp -r output/statistical_analysis/ example_results/statistical_analysis/
+cp -r output/plots/ example_results/plots/
+cp output/*.csv example_results/
+
+# Results are now ready for inclusion in a research paper
 ```
 
 ---
@@ -1141,8 +1336,10 @@ civic_tech_git_crawler/
 ├── pyproject.toml                  # Dependencies and project metadata
 ├── config.example.yaml             # Example configuration
 ├── config.yaml                     # Your configuration (gitignored)
+├── paper_draft.md                     # Research paper (n=29, publication-ready)
 ├── scripts/
-│   └── visualize.py                # Visualization script (6 chart types)
+│   ├── visualize.py                # Visualization script (6 chart types)
+│   └── statistical_analysis.py     # Statistical testing (12 analysis types)
 ├── src/
 │   └── civic_tech_crawler/
 │       ├── __init__.py             # Package version
@@ -1167,8 +1364,13 @@ civic_tech_git_crawler/
 │           ├── rate_limiter.py     # API rate limit monitoring
 │           ├── retry.py            # 202 retry + backoff logic
 │           └── osi_licenses.py     # OSI-approved SPDX license list
+├── example_results/                    # Real output from n=29 crawl (tracked)
+│   ├── *.csv                       # 13 crawl data CSVs
+│   ├── statistical_analysis/       # 12 statistical analysis CSVs
+│   └── plots/                      # 165 visualisation PNGs
 └── output/                         # Generated output (gitignored)
-    └── plots/                      # Generated visualizations (gitignored)
+    ├── plots/                      # Generated visualizations
+    └── statistical_analysis/       # Generated statistical analysis
 ```
 
 ---
