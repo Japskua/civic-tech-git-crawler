@@ -100,6 +100,7 @@ def _dict_to_person_metrics(d: dict) -> PersonMetrics:
         deletions=d["deletions"],
         avg_additions_per_commit=d["avg_additions_per_commit"],
         avg_deletions_per_commit=d["avg_deletions_per_commit"],
+        is_bot=d.get("is_bot", False),
     )
 
 
@@ -182,8 +183,17 @@ def _dict_to_chaoss_metrics(d: dict | None) -> ChaossMetrics | None:
         open_issue_count=d.get("open_issue_count", 0),
         median_pr_review_turnaround_hours=d.get("median_pr_review_turnaround_hours"),
         avg_review_comments_per_pr=d.get("avg_review_comments_per_pr"),
+        # Bot-filtered metrics
+        bus_factor_no_bots=d.get("bus_factor_no_bots"),
+        bot_contributor_count=d.get("bot_contributor_count", 0),
+        bot_commit_count=d.get("bot_commit_count", 0),
+        # Elephant factor (bot-filtered)
+        elephant_factor_no_bots=d.get("elephant_factor_no_bots"),
         # HHI, Institutional Types, DORA (added in add_future_metrics branch)
         herfindahl_hirschman_index=d.get("herfindahl_hirschman_index"),
+        hhi_no_bots=d.get("hhi_no_bots"),
+        hhi_known_orgs_only=d.get("hhi_known_orgs_only"),
+        unknown_org_contributor_count=d.get("unknown_org_contributor_count", 0),
         contributor_org_types=d.get("contributor_org_types", {}),
         dora_deployment_frequency_per_month=d.get("dora_deployment_frequency_per_month"),
         dora_median_lead_time_days=d.get("dora_median_lead_time_days"),

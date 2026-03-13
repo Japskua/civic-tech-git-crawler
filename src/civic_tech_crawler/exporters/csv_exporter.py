@@ -77,6 +77,7 @@ def _export_person_metrics(data: list[RepositoryData], out: Path) -> None:
         "repo_full_name", "login", "name", "num_commits",
         "additions", "deletions",
         "avg_additions_per_commit", "avg_deletions_per_commit",
+        "is_bot",
     ]
     filepath = out / "person_metrics.csv"
     with open(filepath, "w", newline="") as f:
@@ -109,13 +110,14 @@ def _export_temporal_summary(data: list[RepositoryData], out: Path) -> None:
 def _export_chaoss_summary(data: list[RepositoryData], out: Path) -> None:
     headers = [
         "repo_full_name",
-        "change_request_acceptance_ratio", "bus_factor",
+        "change_request_acceptance_ratio", "bus_factor", "bus_factor_no_bots",
+        "bot_contributor_count", "bot_commit_count",
         "contribution_types",
         "organizational_diversity", "newcomer_friendly_labels", "total_labels",
         "release_frequency_per_month", "fork_count",
         "burstiness_cv", "burstiness_mean", "burstiness_std",
         "median_defect_resolution_days", "osi_approved_license",
-        "elephant_factor",
+        "elephant_factor", "elephant_factor_no_bots",
         "contributor_new_count", "contributor_casual_count", "contributor_regular_count",
         "median_time_to_first_response_issues_hours",
         "median_time_to_first_response_prs_hours",
@@ -124,7 +126,8 @@ def _export_chaoss_summary(data: list[RepositoryData], out: Path) -> None:
         "readme_last_updated", "contributing_last_updated",
         "stale_issue_ratio", "stale_issue_count", "open_issue_count",
         "median_pr_review_turnaround_hours", "avg_review_comments_per_pr",
-        "herfindahl_hirschman_index",
+        "herfindahl_hirschman_index", "hhi_no_bots", "hhi_known_orgs_only",
+        "unknown_org_contributor_count",
         "contributor_org_types",
         "dora_deployment_frequency_per_month",
         "dora_median_lead_time_days",

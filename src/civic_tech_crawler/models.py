@@ -67,6 +67,7 @@ class PersonMetrics:
     deletions: int
     avg_additions_per_commit: float
     avg_deletions_per_commit: float
+    is_bot: bool = False
 
 
 @dataclass
@@ -131,8 +132,13 @@ class ChaossMetrics:
     defect_resolution_durations_days: list[dict]  # [{issue_number, days}]
     median_defect_resolution_days: float | None
     osi_approved_license: bool
+    # Bot-filtered variants
+    bus_factor_no_bots: int | None = None
+    bot_contributor_count: int = 0
+    bot_commit_count: int = 0
     # Elephant Factor (org-level bus factor)
     elephant_factor: int | None = None
+    elephant_factor_no_bots: int | None = None
     # Contributor Retention Cohorts
     contributor_new_count: int = 0  # 1 active week
     contributor_casual_count: int = 0  # 2-12 active weeks
@@ -154,6 +160,9 @@ class ChaossMetrics:
     avg_review_comments_per_pr: float | None = None
     # Herfindahl-Hirschman Index (org concentration)
     herfindahl_hirschman_index: float | None = None
+    hhi_no_bots: float | None = None
+    hhi_known_orgs_only: float | None = None
+    unknown_org_contributor_count: int = 0
     # Institutional Type Classification
     contributor_org_types: dict[str, int] = field(
         default_factory=lambda: {}
