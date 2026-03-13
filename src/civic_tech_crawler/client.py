@@ -113,11 +113,25 @@ class GitHubClient:
                 "login": user.login,
                 "name": user.name,
                 "company": user.company,
+                "bio": user.bio,
+                "email": user.email,
             }
         except GithubException:
-            info = {"login": login, "name": None, "company": None}
+            info = {"login": login, "name": None, "company": None, "bio": None, "email": None}
         self._user_cache[login] = info
         return info
+
+    def get_user_orgs(self, login: str) -> list[str]:
+        """Get public organization memberships for a user.
+
+        Uses: GET /users/{login}/orgs
+        Returns list of org login names.
+        """
+        self._rate_limiter.wait_if_needed()
+        resp = self._httpx.get(f"/users/{login}/orgs")
+        if resp.status_code == 200:
+            return [org.get("login", "") for org in resp.json()]
+        return []
 
     def get_last_commit_date_for_path(self, slug: str, path: str) -> str | None:
         """Get ISO date string of the most recent commit touching a file path.

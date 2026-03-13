@@ -7,6 +7,7 @@ import networkx as nx
 from github import GithubException, Repository
 
 from civic_tech_crawler.client import GitHubClient
+from civic_tech_crawler.collectors.person_metrics import is_bot_account
 from civic_tech_crawler.models import (
     ChaossMetrics,
     CorePeripheryContributor,
@@ -43,6 +44,41 @@ _NONPROFIT_PATTERNS = re.compile(
     r"humanitarian|volunteer)\b|\.org\b",
     re.IGNORECASE,
 )
+
+# Known GitHub org names mapped to institutional types
+_KNOWN_ORG_TYPES: dict[str, str] = {
+    # Civic tech NGOs / nonprofits
+    "DemocracyClub": "nonprofit",
+    "codeforamerica": "nonprofit",
+    "CodeForAfrica": "nonprofit",
+    "codeforjapan": "nonprofit",
+    "codeforall": "nonprofit",
+    "mysociety": "nonprofit",
+    "fvialibre": "nonprofit",
+    "okfn": "nonprofit",
+    "openaustralia": "nonprofit",
+    "civiform": "nonprofit",
+    "iiab": "nonprofit",
+    "meshtastic": "nonprofit",
+    "luftdata": "nonprofit",
+    # Government
+    "alphagov": "government",
+    "18F": "government",
+    "usds": "government",
+    "gsa": "government",
+    # Academic / research
+    "markov-root": "academic",
+}
+
+# Email domain to institutional type mapping
+_EMAIL_DOMAIN_TYPES: dict[str, str] = {
+    ".gov": "government",
+    ".gov.uk": "government",
+    ".gov.au": "government",
+    ".edu": "academic",
+    ".ac.uk": "academic",
+    ".ac.jp": "academic",
+}
 
 NEWCOMER_LABEL_PATTERNS = [
     "good first issue",
@@ -294,14 +330,69 @@ def _classify_org_type(company: str) -> str:
     return "company"
 
 
+def _classify_email_domain(email: str | None) -> str | None:
+    """Classify institutional type from email domain."""
+    if not email:
+        return None
+    email_lower = email.lower()
+    for suffix, org_type in _EMAIL_DOMAIN_TYPES.items():
+        if email_lower.endswith(suffix):
+            return org_type
+    return None
+
+
+def _classify_contributor(
+    login: str,
+    client: GitHubClient,
+) -> str:
+    """Classify a contributor using multiple signals.
+
+    Priority: company field > known org membership > bio field > email domain.
+    Returns one of: "government", "academic", "nonprofit", "company", "unknown".
+    """
+    user_info = client.get_user_info(login)
+    company = (user_info.get("company") or "").strip().lstrip("@")
+
+    # 1. Company field (existing approach)
+    if company and company != "Unknown":
+        result = _classify_org_type(company)
+        if result != "unknown":
+            return result
+
+    # 2. Check known org membership
+    orgs = client.get_user_orgs(login)
+    for org_login in orgs:
+        if org_login in _KNOWN_ORG_TYPES:
+            return _KNOWN_ORG_TYPES[org_login]
+
+    # 3. Bio field scanning
+    bio = user_info.get("bio") or ""
+    if bio:
+        bio_type = _classify_org_type(bio)
+        if bio_type != "unknown":
+            return bio_type
+
+    # 4. Email domain heuristic
+    email = user_info.get("email")
+    email_type = _classify_email_domain(email)
+    if email_type:
+        return email_type
+
+    # 5. If company field was non-empty but didn't match patterns, it's a company
+    if company:
+        return "company"
+
+    return "unknown"
+
+
 def _compute_institutional_types(
     person_metrics: list[PersonMetrics],
     client: GitHubClient,
 ) -> dict[str, int]:
     """Classify contributors by their organizational affiliation type.
 
-    Uses the cached user info (company field) already fetched during
-    org_diversity computation. Returns {type: count}.
+    Uses multiple signals: company field, org membership, bio, email domain.
+    Returns {type: count}.
     """
     types: dict[str, int] = {
         "government": 0,
@@ -311,12 +402,11 @@ def _compute_institutional_types(
         "unknown": 0,
     }
     for p in person_metrics:
-        if p.login:
-            user_info = client.get_user_info(p.login)
-            company = user_info.get("company") or ""
-            company = company.strip().lstrip("@")
-            org_type = _classify_org_type(company)
+        if p.login and not p.is_bot:
+            org_type = _classify_contributor(p.login, client)
             types[org_type] += 1
+        elif p.is_bot:
+            pass  # Skip bots from institutional classification
         else:
             types["unknown"] += 1
     return types
@@ -504,16 +594,43 @@ def collect_chaoss_metrics(
     except GithubException:
         contribution_types["issues"] = 0
 
+    # --- Bot-filtered metrics ---
+    humans = [p for p in person_metrics if not p.is_bot]
+    bots = [p for p in person_metrics if p.is_bot]
+    bot_contributor_count = len(bots)
+    bot_commit_count = sum(p.num_commits for p in bots)
+    bus_factor_no_bots = _compute_bus_factor(humans) if humans else None
+
     # --- Organizational Diversity + Elephant Factor data ---
     org_diversity: dict[str, int] = {}
     org_commits: dict[str, int] = {}
+    # For HHI fix: track per-unknown-contributor org commits separately
+    org_commits_unknown_split: dict[str, int] = {}
+    org_commits_known_only: dict[str, int] = {}
+    unknown_org_count = 0
     for p in person_metrics:
+        if p.is_bot:
+            continue  # Exclude bots from org diversity
         if p.login:
             user_info = client.get_user_info(p.login)
             company = user_info.get("company") or "Unknown"
             company = company.strip().lstrip("@")
+            if not company or company == "Unknown":
+                company = "Unknown"
             org_diversity[company] = org_diversity.get(company, 0) + 1
             org_commits[company] = org_commits.get(company, 0) + p.num_commits
+            # For HHI fix: split unknown contributors into individuals
+            if company == "Unknown":
+                unknown_org_count += 1
+                ind_key = f"_unknown_{p.login}"
+                org_commits_unknown_split[ind_key] = p.num_commits
+            else:
+                org_commits_unknown_split[company] = (
+                    org_commits_unknown_split.get(company, 0) + p.num_commits
+                )
+                org_commits_known_only[company] = (
+                    org_commits_known_only.get(company, 0) + p.num_commits
+                )
 
     # --- Issue Label Inclusivity ---
     newcomer_labels: list[str] = []
@@ -579,6 +696,8 @@ def collect_chaoss_metrics(
 
     # --- Elephant Factor (org-level bus factor) ---
     elephant_factor = _compute_elephant_factor(org_commits)
+    # Bot-filtered: use org_commits which already excludes bots
+    elephant_factor_no_bots = elephant_factor  # already bot-filtered above
 
     # --- Contributor Retention Cohorts ---
     logger.info("Computing contributor retention cohorts for %s", slug)
@@ -633,6 +752,10 @@ def collect_chaoss_metrics(
 
     # --- Herfindahl-Hirschman Index ---
     hhi = _compute_hhi(org_commits)
+    # HHI with unknown contributors split into individuals (reduces phantom concentration)
+    hhi_no_bots = _compute_hhi(org_commits_unknown_split)
+    # HHI using only known-org contributors (cleanest signal, but may have small N)
+    hhi_known_orgs_only = _compute_hhi(org_commits_known_only) if org_commits_known_only else None
 
     # --- Institutional Type Classification ---
     logger.info("Computing institutional type classification for %s", slug)
@@ -661,7 +784,11 @@ def collect_chaoss_metrics(
         defect_resolution_durations_days=defect_durations,
         median_defect_resolution_days=median_defect_days,
         osi_approved_license=is_osi_approved(license_spdx),
+        bus_factor_no_bots=bus_factor_no_bots,
+        bot_contributor_count=bot_contributor_count,
+        bot_commit_count=bot_commit_count,
         elephant_factor=elephant_factor,
+        elephant_factor_no_bots=elephant_factor_no_bots,
         contributor_new_count=new_count,
         contributor_casual_count=casual_count,
         contributor_regular_count=regular_count,
@@ -677,6 +804,9 @@ def collect_chaoss_metrics(
         median_pr_review_turnaround_hours=pr_review_turnaround,
         avg_review_comments_per_pr=pr_review_depth,
         herfindahl_hirschman_index=hhi,
+        hhi_no_bots=hhi_no_bots,
+        hhi_known_orgs_only=hhi_known_orgs_only,
+        unknown_org_contributor_count=unknown_org_count,
         contributor_org_types=contributor_org_types,
         dora_deployment_frequency_per_month=dora_deploy_freq,
         dora_median_lead_time_days=dora_lead_time,

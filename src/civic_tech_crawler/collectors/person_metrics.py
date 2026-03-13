@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import re
 
 from github import GithubException, Repository
 
@@ -11,6 +12,29 @@ logger = logging.getLogger(__name__)
 
 # Maximum commits to iterate when falling back to the commits API
 _FALLBACK_COMMIT_CAP = 500
+
+# Bot detection patterns
+_BOT_LOGIN_SUFFIX = re.compile(r"\[bot\]$", re.IGNORECASE)
+_BOT_LOGIN_PATTERN = re.compile(
+    r"(?:-bot$|-bot-|Bot$|^dependabot|^renovate|^greenkeeper|^snyk-bot"
+    r"|^imgbot|^codecov|^stale|^allcontributors|^github-actions"
+    r"|^pyup-bot|^transifex-integration|^weblate|^crowdin-bot"
+    r"|^mergify|^semantic-release-bot|^release-drafter"
+    r"|^pre-commit-ci|^netlify|^vercel|^railway-app"
+    r"|^sonarcloud|^coveralls|^codeclimate)",
+    re.IGNORECASE,
+)
+
+
+def is_bot_account(login: str | None) -> bool:
+    """Detect whether a GitHub login belongs to a bot account."""
+    if not login:
+        return False
+    if _BOT_LOGIN_SUFFIX.search(login):
+        return True
+    if _BOT_LOGIN_PATTERN.search(login):
+        return True
+    return False
 
 
 def collect_person_metrics(
@@ -49,6 +73,7 @@ def collect_person_metrics(
         avg_add = total_additions / total_commits if total_commits > 0 else 0.0
         avg_del = total_deletions / total_commits if total_commits > 0 else 0.0
 
+        bot = is_bot_account(login)
         results.append(
             PersonMetrics(
                 repo_full_name=slug,
@@ -59,10 +84,15 @@ def collect_person_metrics(
                 deletions=total_deletions,
                 avg_additions_per_commit=round(avg_add, 2),
                 avg_deletions_per_commit=round(avg_del, 2),
+                is_bot=bot,
             )
         )
 
-    logger.info("Collected metrics for %d contributors in %s", len(results), slug)
+    bot_count = sum(1 for r in results if r.is_bot)
+    logger.info(
+        "Collected metrics for %d contributors in %s (%d bots detected)",
+        len(results), slug, bot_count,
+    )
     return results
 
 
@@ -114,16 +144,18 @@ def _fallback_person_metrics(
         num = data["commits"]
         add = data["additions"]
         delete = data["deletions"]
+        login = data["login"]
         results.append(
             PersonMetrics(
                 repo_full_name=slug,
-                login=data["login"],
+                login=login,
                 name=data["name"],
                 num_commits=num,
                 additions=add,
                 deletions=delete,
                 avg_additions_per_commit=round(add / num, 2) if num > 0 else 0.0,
                 avg_deletions_per_commit=round(delete / num, 2) if num > 0 else 0.0,
+                is_bot=is_bot_account(login),
             )
         )
 
