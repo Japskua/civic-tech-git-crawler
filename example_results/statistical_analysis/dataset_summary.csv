@@ -1,0 +1,2 @@
+total_repositories,unique_organisations,unique_primary_languages,primary_languages,total_contributors,human_contributors,bot_contributors,total_commits,total_stars,total_forks,repos_with_ci_cd,repos_with_cloud,repos_with_ai_ml,repos_with_osi_license,median_age_years
+29,10,14,"Astro, C++, Dockerfile, HCL, Java, JavaScript, Jinja, Jupyter Notebook, Kotlin, PHP, Python, Ruby, SCSS, TypeScript",694,642,52,79084,11406,3140,25,20,2,10,5.2

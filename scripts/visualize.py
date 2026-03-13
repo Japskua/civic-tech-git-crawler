@@ -303,7 +303,12 @@ def plot_top_contributors(df: pd.DataFrame, repo: str, out: Path) -> Path | None
     rdf = rdf.nlargest(15, "num_commits").sort_values("num_commits")
 
     labels = rdf.apply(
-        lambda r: r["login"] if pd.notna(r["login"]) and r["login"] else r["name"], axis=1,
+        lambda r: (
+            str(r["login"]) if pd.notna(r.get("login")) and r["login"]
+            else str(r["name"]) if pd.notna(r.get("name")) and r["name"]
+            else "unknown"
+        ),
+        axis=1,
     )
 
     fig, ax = plt.subplots(figsize=(12, 6))
