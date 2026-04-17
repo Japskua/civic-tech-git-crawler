@@ -1,13 +1,45 @@
 import logging
+import time
+from dataclasses import dataclass
 from typing import Any
 
 import httpx
 from github import Auth, Github, GithubException, Repository
 
 from civic_tech_crawler.utils.rate_limiter import RateLimiter
-from civic_tech_crawler.utils.retry import retry_on_none
 
 logger = logging.getLogger(__name__)
+
+
+# Lightweight replacements for PyGithub's StatsContributor / StatsCommitActivity.
+# PyGithub's Requester recursively retries HTTP 202 responses (Requester.py:1238),
+# which causes RecursionError on stats endpoints that take minutes to compute
+# (observed on DemocracyClub/UK-Polling-Stations, WhoCanIVoteFor).
+@dataclass(frozen=True, slots=True)
+class StatsWeek:
+    w: int   # unix timestamp (seconds)
+    a: int   # additions
+    d: int   # deletions
+    c: int   # commits
+
+
+@dataclass(frozen=True, slots=True)
+class StatsAuthor:
+    login: str | None
+
+
+@dataclass(frozen=True, slots=True)
+class StatsContributorRecord:
+    author: StatsAuthor | None
+    total: int
+    weeks: list[StatsWeek]
+
+
+@dataclass(frozen=True, slots=True)
+class StatsCommitActivityRecord:
+    week: int           # unix timestamp (seconds) of the week start (Sunday)
+    total: int
+    days: list[int]
 
 
 class GitHubClient:
@@ -37,23 +69,85 @@ class GitHubClient:
         self._rate_limiter.wait_if_needed()
         return self._github.get_repo(slug)
 
-    def get_stats_contributors(self, repo: Repository.Repository) -> Any:
-        """Get contributor stats with 202-retry logic."""
-        return retry_on_none(
-            func=lambda: repo.get_stats_contributors(),
-            max_retries=self._max_retries,
-            base_delay=self._retry_delay,
-            description=f"stats/contributors for {repo.full_name}",
-        )
+    def _get_stats_endpoint(self, slug: str, endpoint: str) -> list | None:
+        """Fetch a /stats/{endpoint} JSON payload with iterative 202-retry.
 
-    def get_stats_commit_activity(self, repo: Repository.Repository) -> Any:
-        """Get weekly commit activity with 202-retry logic."""
-        return retry_on_none(
-            func=lambda: repo.get_stats_commit_activity(),
-            max_retries=self._max_retries,
-            base_delay=self._retry_delay,
-            description=f"stats/commit_activity for {repo.full_name}",
-        )
+        GitHub returns 202 while computing stats. We retry with linear backoff
+        (3s, 6s, 9s, ...). Returns the parsed JSON list, or None if the endpoint
+        never finished computing or returned an error.
+        """
+        url = f"/repos/{slug}/stats/{endpoint}"
+        for attempt in range(1, self._max_retries + 1):
+            self._rate_limiter.wait_if_needed()
+            try:
+                resp = self._httpx.get(url)
+            except httpx.HTTPError as e:
+                logger.warning("stats/%s for %s transport error: %s", endpoint, slug, e)
+                return None
+            if resp.status_code == 200:
+                return resp.json()
+            if resp.status_code == 202:
+                delay = self._retry_delay * attempt
+                logger.info(
+                    "stats/%s for %s computing (attempt %d/%d), waiting %.1fs...",
+                    endpoint, slug, attempt, self._max_retries, delay,
+                )
+                time.sleep(delay)
+                continue
+            logger.warning(
+                "stats/%s for %s returned HTTP %d", endpoint, slug, resp.status_code
+            )
+            return None
+        logger.warning("stats/%s for %s still 202 after %d attempts", endpoint, slug, self._max_retries)
+        return None
+
+    def get_stats_contributors(
+        self, repo: Repository.Repository
+    ) -> list[StatsContributorRecord] | None:
+        """Get contributor stats via httpx with iterative 202-retry.
+
+        Bypasses PyGithub's get_stats_contributors, which recursively retries
+        202 responses and hits RecursionError on large repos.
+        """
+        data = self._get_stats_endpoint(repo.full_name, "contributors")
+        if not data:
+            return None
+        return [
+            StatsContributorRecord(
+                author=(
+                    StatsAuthor(login=(c.get("author") or {}).get("login"))
+                    if c.get("author") is not None
+                    else None
+                ),
+                total=int(c.get("total", 0)),
+                weeks=[
+                    StatsWeek(
+                        w=int(w.get("w", 0)),
+                        a=int(w.get("a", 0)),
+                        d=int(w.get("d", 0)),
+                        c=int(w.get("c", 0)),
+                    )
+                    for w in (c.get("weeks") or [])
+                ],
+            )
+            for c in data
+        ]
+
+    def get_stats_commit_activity(
+        self, repo: Repository.Repository
+    ) -> list[StatsCommitActivityRecord] | None:
+        """Get weekly commit activity via httpx with iterative 202-retry."""
+        data = self._get_stats_endpoint(repo.full_name, "commit_activity")
+        if not data:
+            return None
+        return [
+            StatsCommitActivityRecord(
+                week=int(item.get("week", 0)),
+                total=int(item.get("total", 0)),
+                days=list(item.get("days") or []),
+            )
+            for item in data
+        ]
 
     def get_community_profile(self, slug: str) -> dict:
         """GET /repos/{owner}/{repo}/community/profile via httpx."""
