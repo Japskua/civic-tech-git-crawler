@@ -53,7 +53,7 @@ def collect_person_metrics(
             logger.info(
                 "%s: stats/contributors empty, falling back to commits API", slug
             )
-            return _fallback_person_metrics(repo, slug)
+            return _fallback_person_metrics(client, repo, slug)
         logger.warning("Could not retrieve contributor stats for %s", slug)
         return []
 
@@ -97,6 +97,7 @@ def collect_person_metrics(
 
 
 def _fallback_person_metrics(
+    client: GitHubClient,
     repo: Repository.Repository,
     slug: str,
 ) -> list[PersonMetrics]:
@@ -131,10 +132,12 @@ def _fallback_person_metrics(
                 }
 
             authors[email]["commits"] += 1
-            stats = commit.stats
-            if stats:
-                authors[email]["additions"] += stats.additions
-                authors[email]["deletions"] += stats.deletions
+            # Use httpx-based stats to avoid PyGithub RecursionError on large repos
+            stats = client.get_commit_stats(slug, commit.sha)
+            if stats is not None:
+                additions, deletions = stats
+                authors[email]["additions"] += additions
+                authors[email]["deletions"] += deletions
     except GithubException as e:
         logger.warning("Fallback commit iteration failed for %s: %s", slug, e)
         return []

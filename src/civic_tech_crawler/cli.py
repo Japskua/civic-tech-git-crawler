@@ -292,8 +292,7 @@ def main() -> None:
                 crawled_count += 1
             except Exception as e:
                 logger.error("Failed to crawl %s: %s", slug, e)
-                if args.verbose:
-                    logger.exception("Full traceback:")
+                logger.exception("Full traceback for %s:", slug)
             progress.advance(overall)
 
     # Cross-project contributor overlap (post-crawl, cross-repo analysis)
