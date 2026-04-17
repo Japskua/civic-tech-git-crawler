@@ -56,6 +56,10 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
     # Key = contributor_id (login or email)
     contributor_info: dict[str, dict] = {}  # id -> {login, name, email}
     contributor_commits: dict[str, list[datetime]] = defaultdict(list)
+    # (contributor_id, week_start) -> {additions, deletions}
+    contributor_week_lines: dict[tuple[str, str], dict[str, int]] = defaultdict(
+        lambda: {"additions": 0, "deletions": 0}
+    )
 
     # Weekly tracking
     week_commits: dict[str, int] = defaultdict(int)  # week_start -> count
@@ -95,6 +99,16 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
             week = _iso_week_start(author_date)
             week_commits[week] += 1
             week_contributors[week].add(contributor_id)
+
+            # Per-contributor weekly line changes (triggers an extra API call per commit)
+            try:
+                stats = commit.stats
+                if stats is not None:
+                    bucket = contributor_week_lines[(contributor_id, week)]
+                    bucket["additions"] += stats.additions or 0
+                    bucket["deletions"] += stats.deletions or 0
+            except GithubException as e:
+                logger.debug("Skipping stats for commit %s in %s: %s", commit.sha, slug, e)
 
         except (AttributeError, TypeError) as e:
             logger.debug("Skipping commit in %s: %s", slug, e)
@@ -187,11 +201,14 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
         for d in commit_dates:
             cid_week_counts[_iso_week_start(d)] += 1
         for week, count in sorted(cid_week_counts.items()):
+            lines = contributor_week_lines.get((cid, week), {"additions": 0, "deletions": 0})
             contributor_weeks.append(
                 ContributorWeek(
                     contributor_id=cid,
                     week_start=week,
                     commits=count,
+                    lines_added=lines["additions"],
+                    lines_removed=lines["deletions"],
                 )
             )
 

@@ -224,6 +224,8 @@ class ContributorWeek:
     contributor_id: str  # login or email (unique key)
     week_start: str
     commits: int
+    lines_added: int = 0
+    lines_removed: int = 0
 
 
 @dataclass
