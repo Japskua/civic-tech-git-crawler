@@ -100,15 +100,16 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
             week_commits[week] += 1
             week_contributors[week].add(contributor_id)
 
-            # Per-contributor weekly line changes (triggers an extra API call per commit)
-            try:
-                stats = commit.stats
+            # Per-contributor weekly line changes (one extra API call per commit)
+            # Uses httpx directly instead of commit.stats to avoid PyGithub recursion
+            # on large repos (~1k+ commits triggered RecursionError via lazy-load).
+            if client is not None:
+                stats = client.get_commit_stats(slug, commit.sha)
                 if stats is not None:
+                    additions, deletions = stats
                     bucket = contributor_week_lines[(contributor_id, week)]
-                    bucket["additions"] += stats.additions or 0
-                    bucket["deletions"] += stats.deletions or 0
-            except GithubException as e:
-                logger.debug("Skipping stats for commit %s in %s: %s", commit.sha, slug, e)
+                    bucket["additions"] += additions
+                    bucket["deletions"] += deletions
 
         except (AttributeError, TypeError) as e:
             logger.debug("Skipping commit in %s: %s", slug, e)

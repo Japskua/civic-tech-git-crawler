@@ -133,6 +133,23 @@ class GitHubClient:
             return [org.get("login", "") for org in resp.json()]
         return []
 
+    def get_commit_stats(self, slug: str, sha: str) -> tuple[int, int] | None:
+        """Return (additions, deletions) for a single commit via httpx.
+
+        Bypasses PyGithub's lazy-load on Commit.stats, which has been observed
+        to trigger RecursionError on large repos (see feature/weekly-line-changes).
+        """
+        self._rate_limiter.wait_if_needed()
+        try:
+            resp = self._httpx.get(f"/repos/{slug}/commits/{sha}")
+        except httpx.HTTPError as e:
+            logger.debug("get_commit_stats %s/%s transport error: %s", slug, sha, e)
+            return None
+        if resp.status_code != 200:
+            return None
+        stats = resp.json().get("stats") or {}
+        return int(stats.get("additions", 0)), int(stats.get("deletions", 0))
+
     def get_last_commit_date_for_path(self, slug: str, path: str) -> str | None:
         """Get ISO date string of the most recent commit touching a file path.
 
