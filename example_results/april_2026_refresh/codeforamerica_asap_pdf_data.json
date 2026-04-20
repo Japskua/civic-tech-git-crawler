@@ -1,0 +1,5260 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforamerica/asap_pdf",
+    "name": "asap_pdf",
+    "description": "This app helps you to manage your PDF accessibility audit workflows.",
+    "num_developers": 5,
+    "total_commits": 603,
+    "languages": {
+      "Ruby": 188534,
+      "HTML": 146758,
+      "Python": 128742,
+      "HCL": 57929,
+      "JavaScript": 32091,
+      "Shell": 14538,
+      "Dockerfile": 6260,
+      "CSS": 2388
+    },
+    "primary_language": "Ruby",
+    "first_commit_date": "2025-01-31T21:38:58+00:00",
+    "last_commit_date": "2026-04-09T15:00:06+00:00",
+    "license_spdx": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": true,
+    "health_percentage": 50,
+    "stars": 46,
+    "watchers": 7,
+    "forks": 7,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:HCL",
+      "language:Dockerfile",
+      "file:Dockerfile",
+      "file:docker-compose.yml"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "CI",
+      "CI",
+      "Deploy to AWS",
+      "AI Evaluation Suite",
+      "Tofu Plan",
+      "Python Component Linting and Tests",
+      "Rspec Tests",
+      "Dependabot Updates"
+    ],
+    "deployments_count": 1732,
+    "created_at": "2025-01-31T21:38:33+00:00",
+    "updated_at": "2026-04-15T18:04:36+00:00",
+    "pushed_at": "2026-04-16T11:54:52+00:00",
+    "size_kb": 86899
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "jennthom",
+      "name": "Jenn Thom",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 2,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "lkacenja",
+      "name": "Leo Kacenjar",
+      "num_commits": 309,
+      "additions": 69441,
+      "deletions": 96804,
+      "avg_additions_per_commit": 224.73,
+      "avg_deletions_per_commit": 313.28,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "num_commits": 93,
+      "additions": 587,
+      "deletions": 575,
+      "avg_additions_per_commit": 6.31,
+      "avg_deletions_per_commit": 6.18,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "allisonmorgan",
+      "name": "Allison Morgan",
+      "num_commits": 28,
+      "additions": 2403,
+      "deletions": 694,
+      "avg_additions_per_commit": 85.82,
+      "avg_deletions_per_commit": 24.79,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "xdotcommer",
+      "name": "Michael Cowden",
+      "num_commits": 69,
+      "additions": 71404,
+      "deletions": 47989,
+      "avg_additions_per_commit": 1034.84,
+      "avg_deletions_per_commit": 695.49,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforamerica/asap_pdf",
+    "pr_count_total": 414,
+    "pr_count_merged": 297,
+    "pr_count_open": 9,
+    "pr_count_closed_unmerged": 108,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Bump kamal from 2.4.0 to 2.5.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-04T11:33:45+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-06T23:52:14+00:00"
+      },
+      {
+        "number": 2,
+        "title": "Bump solid_cache from 1.0.6 to 1.0.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-06T11:59:58+00:00",
+        "merged_at": "2025-02-19T16:38:26+00:00",
+        "closed_at": "2025-02-19T16:38:26+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Bump rspec-rails from 7.1.0 to 7.1.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-06T12:00:13+00:00",
+        "merged_at": "2025-02-19T16:33:10+00:00",
+        "closed_at": "2025-02-19T16:33:10+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Bump kamal from 2.4.0 to 2.5.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-06T23:52:12+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-10T11:40:07+00:00"
+      },
+      {
+        "number": 5,
+        "title": "Bump dockerfile-rails from 1.7.5 to 1.7.6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-07T12:01:59+00:00",
+        "merged_at": "2025-02-19T16:33:20+00:00",
+        "closed_at": "2025-02-19T16:33:20+00:00"
+      },
+      {
+        "number": 6,
+        "title": "Bump aws-sdk-s3 from 1.179.0 to 1.180.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-07T12:02:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-11T20:58:11+00:00"
+      },
+      {
+        "number": 7,
+        "title": "Bump ruby-lsp from 0.23.8 to 0.23.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-07T12:02:45+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-11T11:18:14+00:00"
+      },
+      {
+        "number": 8,
+        "title": "Bump kamal from 2.4.0 to 2.5.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-10T11:40:05+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-11T20:58:06+00:00"
+      },
+      {
+        "number": 9,
+        "title": "Bump grape from 2.2.0 to 2.3.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-10T11:40:15+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-11T20:58:10+00:00"
+      },
+      {
+        "number": 10,
+        "title": "Bump bullet from 8.0.0 to 8.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-10T11:40:42+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-11T16:33:19+00:00"
+      },
+      {
+        "number": 11,
+        "title": "Bump ruby-lsp from 0.23.8 to 0.23.10",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-11T11:18:12+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-17T12:14:58+00:00"
+      },
+      {
+        "number": 12,
+        "title": "Bump standard from 1.44.0 to 1.45.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-12T11:51:35+00:00",
+        "merged_at": "2025-02-19T16:33:29+00:00",
+        "closed_at": "2025-02-19T16:33:29+00:00"
+      },
+      {
+        "number": 13,
+        "title": "Bump thruster from 0.1.10 to 0.1.11",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-12T11:51:50+00:00",
+        "merged_at": "2025-02-19T16:33:43+00:00",
+        "closed_at": "2025-02-19T16:33:43+00:00"
+      },
+      {
+        "number": 14,
+        "title": "Bump ruby-lsp from 0.23.8 to 0.23.11",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-17T12:14:56+00:00",
+        "merged_at": "2025-02-19T16:33:55+00:00",
+        "closed_at": "2025-02-19T16:33:55+00:00"
+      },
+      {
+        "number": 15,
+        "title": "Bump overcommit from 0.66.0 to 0.67.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-17T12:15:25+00:00",
+        "merged_at": "2025-02-19T16:38:10+00:00",
+        "closed_at": "2025-02-19T16:38:10+00:00"
+      },
+      {
+        "number": 16,
+        "title": "Bump aws-sdk-s3 from 1.180.0 to 1.181.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-17T12:15:38+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-19T13:31:29+00:00"
+      },
+      {
+        "number": 17,
+        "title": "Bump sidekiq from 7.3.8 to 7.3.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-17T12:15:48+00:00",
+        "merged_at": "2025-02-19T16:33:00+00:00",
+        "closed_at": "2025-02-19T16:33:00+00:00"
+      },
+      {
+        "number": 18,
+        "title": "Bump aws-sdk-s3 from 1.180.0 to 1.182.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-19T13:31:26+00:00",
+        "merged_at": "2025-02-19T16:32:45+00:00",
+        "closed_at": "2025-02-19T16:32:45+00:00"
+      },
+      {
+        "number": 19,
+        "title": "Bump redis from 5.3.0 to 5.4.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-20T11:48:16+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-27T23:25:01+00:00"
+      },
+      {
+        "number": 21,
+        "title": "Bump sqlite3 from 2.5.0 to 2.6.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-21T11:30:14+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-27T23:24:59+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Bump cssbundling-rails from 1.4.1 to 1.4.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-24T14:13:22+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-27T23:25:03+00:00"
+      },
+      {
+        "number": 23,
+        "title": "Bump dockerfile-rails from 1.7.6 to 1.7.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-24T14:13:37+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-25T12:14:32+00:00"
+      },
+      {
+        "number": 24,
+        "title": "20 tailwind version sync",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-02-24T17:24:20+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-27T22:35:46+00:00"
+      },
+      {
+        "number": 25,
+        "title": "Bump dockerfile-rails from 1.7.6 to 1.7.8",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-25T12:14:29+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-27T11:52:21+00:00"
+      },
+      {
+        "number": 26,
+        "title": "Bump dockerfile-rails from 1.7.6 to 1.7.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-27T11:52:19+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-27T23:25:07+00:00"
+      },
+      {
+        "number": 27,
+        "title": "Bump kamal from 2.5.2 to 2.5.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-27T11:52:36+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-27T23:25:06+00:00"
+      },
+      {
+        "number": 28,
+        "title": "Asap 19 document summary rebase",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-02-27T23:16:51+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-05T20:46:35+00:00"
+      },
+      {
+        "number": 29,
+        "title": "Bump aws-actions/amazon-ecs-deploy-task-definition from 1 to 2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-28T11:41:32+00:00",
+        "merged_at": "2025-02-28T15:23:11+00:00",
+        "closed_at": "2025-02-28T15:23:11+00:00"
+      },
+      {
+        "number": 30,
+        "title": "Add document classification",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-02-28T22:06:43+00:00",
+        "merged_at": "2025-02-28T22:50:12+00:00",
+        "closed_at": "2025-02-28T22:50:12+00:00"
+      },
+      {
+        "number": 31,
+        "title": "Attempt to get CI running for python components.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-03T22:22:04+00:00",
+        "merged_at": "2025-03-06T21:53:16+00:00",
+        "closed_at": "2025-03-06T21:53:16+00:00"
+      },
+      {
+        "number": 32,
+        "title": "Small fixes to the document classifier script",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-03-03T23:10:23+00:00",
+        "merged_at": "2025-03-04T17:59:51+00:00",
+        "closed_at": "2025-03-04T17:59:51+00:00"
+      },
+      {
+        "number": 33,
+        "title": "Bump turbo-rails from 2.0.11 to 2.0.13",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-05T11:18:49+00:00",
+        "merged_at": "2025-03-05T20:42:54+00:00",
+        "closed_at": "2025-03-05T20:42:54+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Bump overcommit from 0.67.0 to 0.67.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-05T11:19:02+00:00",
+        "merged_at": "2025-03-05T20:42:33+00:00",
+        "closed_at": "2025-03-05T20:42:33+00:00"
+      },
+      {
+        "number": 35,
+        "title": "Bump cssbundling-rails from 1.4.2 to 1.4.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-05T11:19:42+00:00",
+        "merged_at": "2025-03-05T20:42:08+00:00",
+        "closed_at": "2025-03-05T20:42:08+00:00"
+      },
+      {
+        "number": 36,
+        "title": "Some filenames and urls are not properly decoded",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-05T17:17:19+00:00",
+        "merged_at": "2025-03-05T21:10:59+00:00",
+        "closed_at": "2025-03-05T21:10:59+00:00"
+      },
+      {
+        "number": 37,
+        "title": "Bump esbuild from 0.24.2 to 0.25.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-05T21:05:41+00:00",
+        "merged_at": "2025-03-05T21:06:54+00:00",
+        "closed_at": "2025-03-05T21:06:54+00:00"
+      },
+      {
+        "number": 38,
+        "title": "Bump sidekiq from 7.3.9 to 8.0.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-06T11:32:14+00:00",
+        "merged_at": "2025-03-06T21:53:35+00:00",
+        "closed_at": "2025-03-06T21:53:35+00:00"
+      },
+      {
+        "number": 39,
+        "title": "1337 improve lambda error handling",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-06T20:28:36+00:00",
+        "merged_at": "2025-03-17T19:36:05+00:00",
+        "closed_at": "2025-03-17T19:36:05+00:00"
+      },
+      {
+        "number": 40,
+        "title": "Bump sidekiq from 8.0.0 to 8.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-07T11:39:35+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-19T18:23:24+00:00"
+      },
+      {
+        "number": 41,
+        "title": "Bump actions/setup-python from 3 to 5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-07T12:00:09+00:00",
+        "merged_at": "2025-04-10T15:49:33+00:00",
+        "closed_at": "2025-04-10T15:49:34+00:00"
+      },
+      {
+        "number": 42,
+        "title": "Bump actions/checkout from 3 to 4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-07T12:00:14+00:00",
+        "merged_at": "2025-03-20T15:09:21+00:00",
+        "closed_at": "2025-03-20T15:09:21+00:00"
+      },
+      {
+        "number": 43,
+        "title": "Bump tailwindcss-ruby from 4.0.9 to 4.0.12",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-10T11:20:08+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-17T12:05:57+00:00"
+      },
+      {
+        "number": 44,
+        "title": "Initial commit of web crawling script",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-03-10T16:36:57+00:00",
+        "merged_at": "2025-03-10T22:38:07+00:00",
+        "closed_at": "2025-03-10T22:38:07+00:00"
+      },
+      {
+        "number": 45,
+        "title": "Bump thruster from 0.1.11 to 0.1.12",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-11T11:24:54+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-19T18:23:34+00:00"
+      },
+      {
+        "number": 46,
+        "title": "Bump standard from 1.45.0 to 1.47.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-12T11:35:18+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-19T18:23:25+00:00"
+      },
+      {
+        "number": 47,
+        "title": "Bump rails from 8.0.1 to 8.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-12T11:36:06+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-19T18:23:37+00:00"
+      },
+      {
+        "number": 48,
+        "title": "1337 add capybara tests",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-13T22:03:30+00:00",
+        "merged_at": "2025-03-17T19:36:27+00:00",
+        "closed_at": "2025-03-17T19:36:27+00:00"
+      },
+      {
+        "number": 49,
+        "title": "Bump solid_queue from 1.1.3 to 1.1.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-17T12:03:32+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-19T18:23:37+00:00"
+      },
+      {
+        "number": 50,
+        "title": "Bump tailwindcss-ruby from 4.0.9 to 4.0.14",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-17T12:05:55+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-19T18:23:28+00:00"
+      },
+      {
+        "number": 51,
+        "title": "Asap 21 add document recommendation",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-17T17:26:24+00:00",
+        "merged_at": "2025-03-17T21:05:54+00:00",
+        "closed_at": "2025-03-17T21:05:54+00:00"
+      },
+      {
+        "number": 52,
+        "title": "Update list of classifications",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-03-17T23:40:16+00:00",
+        "merged_at": "2025-03-17T23:53:21+00:00",
+        "closed_at": "2025-03-17T23:53:21+00:00"
+      },
+      {
+        "number": 53,
+        "title": "Linting and add confidence for recommendation component.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-18T17:27:41+00:00",
+        "merged_at": "2025-03-18T18:29:40+00:00",
+        "closed_at": "2025-03-18T18:29:40+00:00"
+      },
+      {
+        "number": 54,
+        "title": "Bump ruby-lsp from 0.23.11 to 0.23.12",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-19T11:42:33+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-19T18:23:29+00:00"
+      },
+      {
+        "number": 55,
+        "title": "Update config to include crawling defaults",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-03-20T00:03:30+00:00",
+        "merged_at": "2025-03-28T16:35:56+00:00",
+        "closed_at": "2025-03-28T16:35:56+00:00"
+      },
+      {
+        "number": 56,
+        "title": "Bump csv from 3.3.2 to 3.3.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-20T11:17:26+00:00",
+        "merged_at": "2025-03-20T15:09:07+00:00",
+        "closed_at": "2025-03-20T15:09:07+00:00"
+      },
+      {
+        "number": 57,
+        "title": "Stashing work on getting https working in AWS.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-20T17:33:44+00:00",
+        "merged_at": "2025-03-21T15:17:01+00:00",
+        "closed_at": "2025-03-21T15:17:01+00:00"
+      },
+      {
+        "number": 58,
+        "title": "Bump tailwindcss-ruby from 4.0.14 to 4.0.15",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-24T11:42:44+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-26T12:10:24+00:00"
+      },
+      {
+        "number": 59,
+        "title": "Bump tailwindcss-ruby from 4.0.14 to 4.0.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-26T12:10:22+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-27T11:25:30+00:00"
+      },
+      {
+        "number": 60,
+        "title": "Bump view_component from 3.21.0 to 3.22.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-26T12:11:01+00:00",
+        "merged_at": "2025-04-10T17:14:43+00:00",
+        "closed_at": "2025-04-10T17:14:43+00:00"
+      },
+      {
+        "number": 61,
+        "title": "Bump tailwindcss-ruby from 4.0.14 to 4.0.17",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-27T11:25:28+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-07T12:01:03+00:00"
+      },
+      {
+        "number": 62,
+        "title": "1337 ready lambdas for aws",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-27T22:50:09+00:00",
+        "merged_at": "2025-03-28T14:08:42+00:00",
+        "closed_at": "2025-03-28T14:08:42+00:00"
+      },
+      {
+        "number": 63,
+        "title": "Bump ruby-lsp from 0.23.12 to 0.23.13",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-03-31T12:27:28+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-10T11:40:34+00:00"
+      },
+      {
+        "number": 64,
+        "title": "Grab bag of tweaks",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-03-31T20:35:54+00:00",
+        "merged_at": "2025-03-31T22:05:16+00:00",
+        "closed_at": "2025-03-31T22:05:16+00:00"
+      },
+      {
+        "number": 65,
+        "title": "Collect number of tables and number of images found in PDF",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-04-01T00:57:27+00:00",
+        "merged_at": "2025-04-02T16:56:51+00:00",
+        "closed_at": "2025-04-02T16:56:51+00:00"
+      },
+      {
+        "number": 66,
+        "title": "Bump aws-sdk-s3 from 1.182.0 to 1.183.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-01T11:19:39+00:00",
+        "merged_at": "2025-04-10T17:21:10+00:00",
+        "closed_at": "2025-04-10T17:21:10+00:00"
+      },
+      {
+        "number": 67,
+        "title": "Bump sidekiq from 8.0.1 to 8.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-02T11:37:54+00:00",
+        "merged_at": "2025-04-10T17:05:34+00:00",
+        "closed_at": "2025-04-10T17:05:34+00:00"
+      },
+      {
+        "number": 68,
+        "title": "Update the site seed files to use V2",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-03T22:49:50+00:00",
+        "merged_at": "2025-04-04T15:59:47+00:00",
+        "closed_at": "2025-04-04T15:59:47+00:00"
+      },
+      {
+        "number": 69,
+        "title": "Bump brakeman from 7.0.0 to 7.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-04T11:57:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-07T12:02:52+00:00"
+      },
+      {
+        "number": 70,
+        "title": "Asap 74 refactor summarization component",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-04T19:32:42+00:00",
+        "merged_at": "2025-04-10T19:29:33+00:00",
+        "closed_at": "2025-04-10T19:29:33+00:00"
+      },
+      {
+        "number": 71,
+        "title": "Bump tailwindcss-ruby from 4.0.14 to 4.1.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-07T12:01:01+00:00",
+        "merged_at": "2025-04-10T16:59:20+00:00",
+        "closed_at": "2025-04-10T16:59:20+00:00"
+      },
+      {
+        "number": 72,
+        "title": "Bump smarter_csv from 1.13.1 to 1.14.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-07T12:02:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-09T11:58:22+00:00"
+      },
+      {
+        "number": 73,
+        "title": "Bump brakeman from 7.0.0 to 7.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-07T12:02:50+00:00",
+        "merged_at": "2025-04-10T16:09:17+00:00",
+        "closed_at": "2025-04-10T16:09:17+00:00"
+      },
+      {
+        "number": 74,
+        "title": "Bump smarter_csv from 1.13.1 to 1.14.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-09T11:58:20+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-10T11:39:36+00:00"
+      },
+      {
+        "number": 75,
+        "title": "Bump standard from 1.47.0 to 1.49.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-09T11:58:51+00:00",
+        "merged_at": "2025-04-10T16:07:59+00:00",
+        "closed_at": "2025-04-10T16:07:59+00:00"
+      },
+      {
+        "number": 76,
+        "title": "Bump smarter_csv from 1.13.1 to 1.14.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-10T11:39:33+00:00",
+        "merged_at": "2025-04-10T15:57:34+00:00",
+        "closed_at": "2025-04-10T15:57:34+00:00"
+      },
+      {
+        "number": 77,
+        "title": "Bump ruby-lsp from 0.23.12 to 0.23.14",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-10T11:40:32+00:00",
+        "merged_at": "2025-04-10T15:52:49+00:00",
+        "closed_at": "2025-04-10T15:52:49+00:00"
+      },
+      {
+        "number": 78,
+        "title": "Deploy: 2025-04-10",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-10T15:50:32+00:00",
+        "merged_at": "2025-04-10T19:19:39+00:00",
+        "closed_at": "2025-04-10T19:19:39+00:00"
+      },
+      {
+        "number": 79,
+        "title": "1337 sprint 4 quick wins",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-10T20:59:18+00:00",
+        "merged_at": "2025-04-11T19:54:13+00:00",
+        "closed_at": "2025-04-11T19:54:13+00:00"
+      },
+      {
+        "number": 80,
+        "title": "Bump dotenv-rails from 3.1.7 to 3.1.8",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-11T11:25:34+00:00",
+        "merged_at": "2025-04-11T19:04:35+00:00",
+        "closed_at": "2025-04-11T19:04:35+00:00"
+      },
+      {
+        "number": 81,
+        "title": "Deploy: 2024-04-11",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-11T19:05:05+00:00",
+        "merged_at": "2025-04-11T19:56:55+00:00",
+        "closed_at": "2025-04-11T19:56:55+00:00"
+      },
+      {
+        "number": 82,
+        "title": "Bump csv from 3.3.3 to 3.3.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-14T11:50:38+00:00",
+        "merged_at": "2025-04-15T14:47:50+00:00",
+        "closed_at": "2025-04-15T14:47:50+00:00"
+      },
+      {
+        "number": 83,
+        "title": "1337 sprint 5 bugfixes",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-14T14:42:29+00:00",
+        "merged_at": "2025-04-16T14:08:12+00:00",
+        "closed_at": "2025-04-16T14:08:12+00:00"
+      },
+      {
+        "number": 84,
+        "title": "Add support for multi-user sites",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-14T22:53:48+00:00",
+        "merged_at": "2025-04-18T14:53:15+00:00",
+        "closed_at": "2025-04-18T14:53:15+00:00"
+      },
+      {
+        "number": 85,
+        "title": "Deploy: 2024-04-18",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-15T14:50:13+00:00",
+        "merged_at": "2025-04-18T17:39:23+00:00",
+        "closed_at": "2025-04-18T17:39:23+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Asap 116 pdf in memory",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-15T17:28:58+00:00",
+        "merged_at": "2025-04-16T20:28:52+00:00",
+        "closed_at": "2025-04-16T20:28:52+00:00"
+      },
+      {
+        "number": 87,
+        "title": "Bump csv from 3.3.3 to 3.3.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-16T11:53:41+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-18T17:40:16+00:00"
+      },
+      {
+        "number": 88,
+        "title": "Update SLC file and add new columns for count of tables and images",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-04-18T21:57:16+00:00",
+        "merged_at": "2025-04-21T16:55:50+00:00",
+        "closed_at": "2025-04-21T16:55:50+00:00"
+      },
+      {
+        "number": 89,
+        "title": "Bump tailwindcss-ruby from 4.1.3 to 4.1.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-21T13:26:16+00:00",
+        "merged_at": "2025-04-21T16:57:52+00:00",
+        "closed_at": "2025-04-21T16:57:52+00:00"
+      },
+      {
+        "number": 90,
+        "title": "Deploy: 2025-04-21",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-21T16:56:21+00:00",
+        "merged_at": "2025-04-21T17:05:59+00:00",
+        "closed_at": "2025-04-21T17:06:00+00:00"
+      },
+      {
+        "number": 91,
+        "title": "Bump thruster from 0.1.12 to 0.1.13",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-22T11:20:05+00:00",
+        "merged_at": "2025-04-29T17:05:44+00:00",
+        "closed_at": "2025-04-29T17:05:45+00:00"
+      },
+      {
+        "number": 92,
+        "title": "1337 dev import",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-22T14:50:31+00:00",
+        "merged_at": "2025-04-22T20:12:18+00:00",
+        "closed_at": "2025-04-22T20:12:18+00:00"
+      },
+      {
+        "number": 93,
+        "title": "Deploy: 2025-04-29",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-22T20:13:03+00:00",
+        "merged_at": "2025-04-29T17:29:57+00:00",
+        "closed_at": "2025-04-29T17:29:58+00:00"
+      },
+      {
+        "number": 94,
+        "title": "Asap 111 bulk document operations",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-24T19:55:24+00:00",
+        "merged_at": "2025-04-28T14:19:14+00:00",
+        "closed_at": "2025-04-28T14:19:14+00:00"
+      },
+      {
+        "number": 95,
+        "title": "Bump sidekiq from 8.0.2 to 8.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-25T11:55:31+00:00",
+        "merged_at": "2025-04-28T21:53:37+00:00",
+        "closed_at": "2025-04-28T21:53:37+00:00"
+      },
+      {
+        "number": 96,
+        "title": "Add scrapes of Georgia sites and other crawler fixes",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-04-25T17:21:36+00:00",
+        "merged_at": "2025-04-28T17:02:04+00:00",
+        "closed_at": "2025-04-28T17:02:04+00:00"
+      },
+      {
+        "number": 97,
+        "title": "Bump ruby-lsp from 0.23.14 to 0.23.15",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-28T13:58:26+00:00",
+        "merged_at": "2025-04-29T17:02:18+00:00",
+        "closed_at": "2025-04-29T17:02:18+00:00"
+      },
+      {
+        "number": 98,
+        "title": "1337 serve files through endpoint",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-28T20:18:41+00:00",
+        "merged_at": "2025-04-28T21:52:41+00:00",
+        "closed_at": "2025-04-28T21:52:41+00:00"
+      },
+      {
+        "number": 99,
+        "title": "Bump aws-sdk-s3 from 1.183.0 to 1.184.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-29T11:27:28+00:00",
+        "merged_at": "2025-04-29T17:08:13+00:00",
+        "closed_at": "2025-04-29T17:08:13+00:00"
+      },
+      {
+        "number": 100,
+        "title": "Bump sidekiq from 8.0.2 to 8.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-29T11:29:03+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-29T17:11:35+00:00"
+      },
+      {
+        "number": 101,
+        "title": "Bump aws-sdk-lambda from 1.148.0 to 1.149.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-29T11:30:05+00:00",
+        "merged_at": "2025-04-29T17:07:50+00:00",
+        "closed_at": "2025-04-29T17:07:50+00:00"
+      },
+      {
+        "number": 102,
+        "title": "1337 fix document request regressions",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-29T15:07:28+00:00",
+        "merged_at": "2025-04-29T16:59:44+00:00",
+        "closed_at": "2025-04-29T16:59:44+00:00"
+      },
+      {
+        "number": 103,
+        "title": "Bump net-imap from 0.5.6 to 0.5.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-04-29T20:05:03+00:00",
+        "merged_at": "2025-04-29T20:08:47+00:00",
+        "closed_at": "2025-04-29T20:08:47+00:00"
+      },
+      {
+        "number": 104,
+        "title": "Deploy: 2025-04-29-2",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-04-29T20:09:15+00:00",
+        "merged_at": "2025-04-29T20:15:04+00:00",
+        "closed_at": "2025-04-29T20:15:04+00:00"
+      },
+      {
+        "number": 105,
+        "title": "Revert SLC file to one with count of tables and images",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-04-29T20:57:33+00:00",
+        "merged_at": "2025-04-29T21:00:08+00:00",
+        "closed_at": "2025-04-29T21:00:08+00:00"
+      },
+      {
+        "number": 106,
+        "title": "Bump rspec-rails from 7.1.1 to 8.0.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-01T11:33:47+00:00",
+        "merged_at": "2025-05-08T19:44:02+00:00",
+        "closed_at": "2025-05-08T19:44:02+00:00"
+      },
+      {
+        "number": 107,
+        "title": "Bump ruby-lsp from 0.23.15 to 0.23.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-01T11:34:09+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-07T11:34:37+00:00"
+      },
+      {
+        "number": 108,
+        "title": "Automate evaluation process",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-01T21:37:16+00:00",
+        "merged_at": "2025-05-07T22:34:30+00:00",
+        "closed_at": "2025-05-07T22:34:30+00:00"
+      },
+      {
+        "number": 109,
+        "title": "Bump aws-sdk-secretsmanager from 1.113.0 to 1.114.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-02T11:57:34+00:00",
+        "merged_at": "2025-05-08T19:53:15+00:00",
+        "closed_at": "2025-05-08T19:53:15+00:00"
+      },
+      {
+        "number": 110,
+        "title": "Bump aws-sdk-s3 from 1.184.0 to 1.185.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-02T11:57:54+00:00",
+        "merged_at": "2025-05-08T19:52:24+00:00",
+        "closed_at": "2025-05-08T19:52:24+00:00"
+      },
+      {
+        "number": 111,
+        "title": "Bump aws-sdk-lambda from 1.149.0 to 1.150.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-02T11:58:35+00:00",
+        "merged_at": "2025-05-08T19:51:48+00:00",
+        "closed_at": "2025-05-08T19:51:48+00:00"
+      },
+      {
+        "number": 112,
+        "title": "Bump smarter_csv from 1.14.2 to 1.14.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-05T12:41:58+00:00",
+        "merged_at": "2025-05-08T19:09:43+00:00",
+        "closed_at": "2025-05-08T19:09:43+00:00"
+      },
+      {
+        "number": 113,
+        "title": "Bump tailwindcss-ruby from 4.1.4 to 4.1.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-05T12:50:52+00:00",
+        "merged_at": "2025-05-08T19:06:33+00:00",
+        "closed_at": "2025-05-08T19:06:33+00:00"
+      },
+      {
+        "number": 114,
+        "title": "Asap 153 remove georgia",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-05T20:40:17+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-05T20:41:19+00:00"
+      },
+      {
+        "number": 115,
+        "title": "Asap 153 remove georgia documents",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-05T20:43:46+00:00",
+        "merged_at": "2025-05-06T14:16:19+00:00",
+        "closed_at": "2025-05-06T14:16:19+00:00"
+      },
+      {
+        "number": 116,
+        "title": "Deploy: 2025-05-08",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-06T14:17:33+00:00",
+        "merged_at": "2025-05-08T20:00:30+00:00",
+        "closed_at": "2025-05-08T20:00:30+00:00"
+      },
+      {
+        "number": 117,
+        "title": "Early May app polish charcuterie board",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-06T15:31:45+00:00",
+        "merged_at": "2025-05-07T22:31:12+00:00",
+        "closed_at": "2025-05-07T22:31:12+00:00"
+      },
+      {
+        "number": 118,
+        "title": "Adding SLC departments",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-05-06T20:56:40+00:00",
+        "merged_at": "2025-05-07T21:46:23+00:00",
+        "closed_at": "2025-05-07T21:46:23+00:00"
+      },
+      {
+        "number": 119,
+        "title": "Bump ruby-lsp from 0.23.15 to 0.23.17",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-07T11:34:35+00:00",
+        "merged_at": "2025-05-08T19:05:50+00:00",
+        "closed_at": "2025-05-08T19:05:50+00:00"
+      },
+      {
+        "number": 120,
+        "title": "Update Austin PDFs",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-05-07T22:18:35+00:00",
+        "merged_at": "2025-05-14T16:57:40+00:00",
+        "closed_at": "2025-05-14T16:57:40+00:00"
+      },
+      {
+        "number": 121,
+        "title": "Integrate pdf complexity into application",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-05-08T18:06:19+00:00",
+        "merged_at": "2025-05-08T19:35:25+00:00",
+        "closed_at": "2025-05-08T19:35:25+00:00"
+      },
+      {
+        "number": 122,
+        "title": "Bump ruby-lsp from 0.23.15 to 0.23.17",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-09T11:15:06+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-09T21:57:27+00:00"
+      },
+      {
+        "number": 123,
+        "title": "Bump tailwindcss-ruby from 4.1.4 to 4.1.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-09T11:16:07+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-09T21:57:27+00:00"
+      },
+      {
+        "number": 124,
+        "title": "Bump smarter_csv from 1.14.2 to 1.14.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-09T11:16:37+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-09T21:57:28+00:00"
+      },
+      {
+        "number": 125,
+        "title": "Asap 25 make some dashboards",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-09T21:59:14+00:00",
+        "merged_at": "2025-05-13T14:16:55+00:00",
+        "closed_at": "2025-05-13T14:16:55+00:00"
+      },
+      {
+        "number": 126,
+        "title": "Bump tailwindcss-ruby from 4.1.4 to 4.1.6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-12T11:48:03+00:00",
+        "merged_at": "2025-05-15T13:43:01+00:00",
+        "closed_at": "2025-05-15T13:43:01+00:00"
+      },
+      {
+        "number": 127,
+        "title": "Bump aws-sdk-secretsmanager from 1.114.0 to 1.115.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-13T11:45:29+00:00",
+        "merged_at": "2025-05-15T13:46:36+00:00",
+        "closed_at": "2025-05-15T13:46:36+00:00"
+      },
+      {
+        "number": 128,
+        "title": "Bump aws-sdk-s3 from 1.185.0 to 1.186.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-13T11:46:06+00:00",
+        "merged_at": "2025-05-15T13:45:53+00:00",
+        "closed_at": "2025-05-15T13:45:54+00:00"
+      },
+      {
+        "number": 129,
+        "title": "Bump ruby-lsp from 0.23.15 to 0.23.18",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-13T11:46:45+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-14T11:39:07+00:00"
+      },
+      {
+        "number": 130,
+        "title": "Bump aws-sdk-lambda from 1.150.0 to 1.151.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-13T11:47:52+00:00",
+        "merged_at": "2025-05-15T13:45:24+00:00",
+        "closed_at": "2025-05-15T13:45:24+00:00"
+      },
+      {
+        "number": 131,
+        "title": "Deploy: 2025-05-15",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-13T14:17:53+00:00",
+        "merged_at": "2025-05-15T17:19:57+00:00",
+        "closed_at": "2025-05-15T17:19:57+00:00"
+      },
+      {
+        "number": 132,
+        "title": "1337 light responsive theming",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-13T15:13:46+00:00",
+        "merged_at": "2025-05-14T21:38:08+00:00",
+        "closed_at": "2025-05-14T21:38:08+00:00"
+      },
+      {
+        "number": 133,
+        "title": "Asap 161 fix url edgecases",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-13T17:02:27+00:00",
+        "merged_at": "2025-05-14T21:40:49+00:00",
+        "closed_at": "2025-05-14T21:40:50+00:00"
+      },
+      {
+        "number": 134,
+        "title": "Bump ruby-lsp from 0.23.15 to 0.23.19",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-14T11:39:04+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-15T12:28:08+00:00"
+      },
+      {
+        "number": 135,
+        "title": "Bump standard from 1.49.0 to 1.50.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-14T11:40:04+00:00",
+        "merged_at": "2025-05-15T13:34:15+00:00",
+        "closed_at": "2025-05-15T13:34:16+00:00"
+      },
+      {
+        "number": 136,
+        "title": "Asap 159 sort and filter collaboration",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-14T21:23:11+00:00",
+        "merged_at": "2025-05-15T13:51:02+00:00",
+        "closed_at": "2025-05-15T13:51:02+00:00"
+      },
+      {
+        "number": 137,
+        "title": "Bump ruby-lsp from 0.23.15 to 0.23.20",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-15T12:28:06+00:00",
+        "merged_at": "2025-05-15T13:41:43+00:00",
+        "closed_at": "2025-05-15T13:41:43+00:00"
+      },
+      {
+        "number": 138,
+        "title": "Bump bootsnap from 1.18.4 to 1.18.6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-15T12:28:24+00:00",
+        "merged_at": "2025-05-15T13:36:31+00:00",
+        "closed_at": "2025-05-15T13:36:31+00:00"
+      },
+      {
+        "number": 139,
+        "title": "1337 model update 2025 05 15",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-15T17:13:33+00:00",
+        "merged_at": "2025-05-15T17:16:15+00:00",
+        "closed_at": "2025-05-15T17:16:15+00:00"
+      },
+      {
+        "number": 140,
+        "title": "Bump aws-sdk-s3 from 1.186.0 to 1.186.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-16T11:22:08+00:00",
+        "merged_at": "2025-05-22T19:30:10+00:00",
+        "closed_at": "2025-05-22T19:30:10+00:00"
+      },
+      {
+        "number": 141,
+        "title": "Bump tailwindcss-ruby from 4.1.6 to 4.1.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-16T11:22:28+00:00",
+        "merged_at": "2025-05-22T19:25:51+00:00",
+        "closed_at": "2025-05-22T19:25:51+00:00"
+      },
+      {
+        "number": 142,
+        "title": "1337 use stock fargate module",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-16T21:16:30+00:00",
+        "merged_at": "2025-05-16T21:16:44+00:00",
+        "closed_at": "2025-05-16T21:16:44+00:00"
+      },
+      {
+        "number": 143,
+        "title": "Add more Georgia data, fix date parse error, and add testing",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-05-19T20:25:47+00:00",
+        "merged_at": "2025-05-21T18:35:30+00:00",
+        "closed_at": "2025-05-21T18:35:30+00:00"
+      },
+      {
+        "number": 144,
+        "title": "Asap 164 workflow decision rework",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-19T21:31:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-19T22:21:37+00:00"
+      },
+      {
+        "number": 145,
+        "title": "Asap 164 workflow decision rework no status",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-19T22:22:11+00:00",
+        "merged_at": "2025-05-22T14:13:50+00:00",
+        "closed_at": "2025-05-22T14:13:50+00:00"
+      },
+      {
+        "number": 146,
+        "title": "Asap 174 improve search filter",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-20T15:34:18+00:00",
+        "merged_at": "2025-05-21T19:02:34+00:00",
+        "closed_at": "2025-05-21T19:02:34+00:00"
+      },
+      {
+        "number": 147,
+        "title": "Bump ruby-lsp from 0.23.20 to 0.23.21",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-21T11:41:57+00:00",
+        "merged_at": "2025-05-22T19:23:06+00:00",
+        "closed_at": "2025-05-22T19:23:06+00:00"
+      },
+      {
+        "number": 148,
+        "title": "Deploy: 2025-05-22",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-21T18:54:56+00:00",
+        "merged_at": "2025-05-22T21:00:18+00:00",
+        "closed_at": "2025-05-22T21:00:18+00:00"
+      },
+      {
+        "number": 149,
+        "title": "Asap 154 animate preloader",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-05-21T19:13:28+00:00",
+        "merged_at": "2025-05-22T19:11:43+00:00",
+        "closed_at": "2025-05-22T19:11:43+00:00"
+      },
+      {
+        "number": 150,
+        "title": "Bump view_component from 3.22.0 to 3.23.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-22T11:26:06+00:00",
+        "merged_at": "2025-05-22T19:21:02+00:00",
+        "closed_at": "2025-05-22T19:21:02+00:00"
+      },
+      {
+        "number": 151,
+        "title": "Bump ruby-lsp from 0.23.21 to 0.23.22",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-23T12:03:09+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-26T12:38:09+00:00"
+      },
+      {
+        "number": 152,
+        "title": "Bump view_component from 3.23.0 to 3.23.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-23T12:03:38+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-26T12:37:00+00:00"
+      },
+      {
+        "number": 153,
+        "title": "Bump view_component from 3.23.0 to 3.23.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-26T12:36:57+00:00",
+        "merged_at": "2025-06-02T22:39:26+00:00",
+        "closed_at": "2025-06-02T22:39:26+00:00"
+      },
+      {
+        "number": 154,
+        "title": "Bump ruby-lsp from 0.23.21 to 0.23.23",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-26T12:38:07+00:00",
+        "merged_at": "2025-06-02T22:38:46+00:00",
+        "closed_at": "2025-06-02T22:38:46+00:00"
+      },
+      {
+        "number": 155,
+        "title": "Bump rspec from 3.13.0 to 3.13.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-28T11:22:57+00:00",
+        "merged_at": "2025-06-02T22:33:37+00:00",
+        "closed_at": "2025-06-02T22:33:37+00:00"
+      },
+      {
+        "number": 156,
+        "title": "Bump sidekiq from 8.0.3 to 8.0.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-29T11:46:54+00:00",
+        "merged_at": "2025-06-02T22:26:24+00:00",
+        "closed_at": "2025-06-02T22:26:24+00:00"
+      },
+      {
+        "number": 157,
+        "title": "Bump aws-sdk-s3 from 1.186.1 to 1.187.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-29T11:47:45+00:00",
+        "merged_at": null,
+        "closed_at": "2025-05-30T11:49:20+00:00"
+      },
+      {
+        "number": 158,
+        "title": "Bump tailwindcss-ruby from 4.1.7 to 4.1.8",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-30T11:48:24+00:00",
+        "merged_at": "2025-06-02T22:39:15+00:00",
+        "closed_at": "2025-06-02T22:39:15+00:00"
+      },
+      {
+        "number": 159,
+        "title": "Bump smarter_csv from 1.14.3 to 1.14.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-30T11:48:36+00:00",
+        "merged_at": "2025-06-02T22:26:50+00:00",
+        "closed_at": "2025-06-02T22:26:50+00:00"
+      },
+      {
+        "number": 160,
+        "title": "Bump aws-sdk-s3 from 1.186.1 to 1.188.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-30T11:49:18+00:00",
+        "merged_at": "2025-06-02T22:25:46+00:00",
+        "closed_at": "2025-06-02T22:25:46+00:00"
+      },
+      {
+        "number": 162,
+        "title": "Bump csv from 3.3.4 to 3.3.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-02T12:19:48+00:00",
+        "merged_at": "2025-06-02T22:22:44+00:00",
+        "closed_at": "2025-06-02T22:22:45+00:00"
+      },
+      {
+        "number": 163,
+        "title": "Update the doucmentation for current state.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-02T17:37:15+00:00",
+        "merged_at": "2025-06-02T22:17:31+00:00",
+        "closed_at": "2025-06-02T22:17:31+00:00"
+      },
+      {
+        "number": 164,
+        "title": "Deploy: 2025-06-03",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-02T22:18:02+00:00",
+        "merged_at": "2025-06-03T18:57:19+00:00",
+        "closed_at": "2025-06-03T18:57:19+00:00"
+      },
+      {
+        "number": 165,
+        "title": "Bump aws-sdk-secretsmanager from 1.115.0 to 1.116.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:37:38+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:49+00:00"
+      },
+      {
+        "number": 166,
+        "title": "Bump aws-sdk-lambda from 1.151.0 to 1.152.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:37:51+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:50+00:00"
+      },
+      {
+        "number": 167,
+        "title": "Bump turbo-rails from 2.0.13 to 2.0.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:38:24+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:51+00:00"
+      },
+      {
+        "number": 168,
+        "title": "Bump sidekiq from 8.0.3 to 8.0.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:38:45+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:51+00:00"
+      },
+      {
+        "number": 169,
+        "title": "Bump aws-sigv4 from 1.11.0 to 1.12.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:39:03+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:52+00:00"
+      },
+      {
+        "number": 170,
+        "title": "Bump csv from 3.3.4 to 3.3.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:39:21+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:53+00:00"
+      },
+      {
+        "number": 171,
+        "title": "Bump aws-sdk-s3 from 1.186.1 to 1.189.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:39:34+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:53+00:00"
+      },
+      {
+        "number": 172,
+        "title": "Bump rspec from 3.13.0 to 3.13.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:39:50+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:54+00:00"
+      },
+      {
+        "number": 173,
+        "title": "Bump smarter_csv from 1.14.3 to 1.14.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:40:04+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:54+00:00"
+      },
+      {
+        "number": 174,
+        "title": "Bump view_component from 3.23.0 to 3.23.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T11:40:18+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-03T15:06:55+00:00"
+      },
+      {
+        "number": 175,
+        "title": "Remove setuptools from requirements. Use pip-chill output.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-03T15:06:04+00:00",
+        "merged_at": "2025-06-03T17:48:24+00:00",
+        "closed_at": "2025-06-03T17:48:24+00:00"
+      },
+      {
+        "number": 176,
+        "title": "Asap 156 add ai exeption check eval",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-03T19:40:20+00:00",
+        "merged_at": "2025-06-04T22:46:11+00:00",
+        "closed_at": "2025-06-04T22:46:11+00:00"
+      },
+      {
+        "number": 177,
+        "title": "Bump ruby-lsp from 0.23.23 to 0.23.24",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-04T11:18:33+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-09T11:58:13+00:00"
+      },
+      {
+        "number": 178,
+        "title": "Document adding sites, documents and users.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-04T22:33:29+00:00",
+        "merged_at": "2025-06-05T17:07:25+00:00",
+        "closed_at": "2025-06-05T17:07:25+00:00"
+      },
+      {
+        "number": 179,
+        "title": "Deploy: 2025-06-17",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-04T22:47:18+00:00",
+        "merged_at": "2025-06-17T19:04:14+00:00",
+        "closed_at": "2025-06-17T19:04:14+00:00"
+      },
+      {
+        "number": 180,
+        "title": "Update deterministic score; using this branch for local evaluation",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-06-05T16:46:48+00:00",
+        "merged_at": "2025-06-10T21:23:20+00:00",
+        "closed_at": "2025-06-10T21:23:20+00:00"
+      },
+      {
+        "number": 181,
+        "title": "Bump ruby-lsp from 0.23.23 to 0.24.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-09T11:58:11+00:00",
+        "merged_at": "2025-06-17T18:32:46+00:00",
+        "closed_at": "2025-06-17T18:32:46+00:00"
+      },
+      {
+        "number": 182,
+        "title": "Asap 180 make output useful",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-09T22:09:08+00:00",
+        "merged_at": "2025-06-13T20:13:30+00:00",
+        "closed_at": "2025-06-13T20:13:30+00:00"
+      },
+      {
+        "number": 183,
+        "title": "Bump aws-sdk-s3 from 1.188.0 to 1.189.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-11T11:49:29+00:00",
+        "merged_at": "2025-06-17T18:39:16+00:00",
+        "closed_at": "2025-06-17T18:39:16+00:00"
+      },
+      {
+        "number": 184,
+        "title": "Bump aws-sigv4 from 1.11.0 to 1.12.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-11T11:49:44+00:00",
+        "merged_at": "2025-06-17T18:43:16+00:00",
+        "closed_at": "2025-06-17T18:43:16+00:00"
+      },
+      {
+        "number": 185,
+        "title": "Bump factory_bot_rails from 6.4.4 to 6.5.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-13T11:47:51+00:00",
+        "merged_at": "2025-06-17T18:33:11+00:00",
+        "closed_at": "2025-06-17T18:33:11+00:00"
+      },
+      {
+        "number": 186,
+        "title": "Asap 115 harden off api",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-13T20:55:21+00:00",
+        "merged_at": "2025-06-17T17:31:09+00:00",
+        "closed_at": "2025-06-17T17:31:09+00:00"
+      },
+      {
+        "number": 187,
+        "title": "Bump tailwindcss-ruby from 4.1.8 to 4.1.10",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-16T12:42:02+00:00",
+        "merged_at": "2025-06-17T18:38:36+00:00",
+        "closed_at": "2025-06-17T18:38:36+00:00"
+      },
+      {
+        "number": 188,
+        "title": "Improve LLM prompting",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-06-16T19:44:32+00:00",
+        "merged_at": "2025-06-25T22:45:31+00:00",
+        "closed_at": "2025-06-25T22:45:31+00:00"
+      },
+      {
+        "number": 189,
+        "title": "Bump chartkick from 5.1.5 to 5.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-17T11:43:06+00:00",
+        "merged_at": "2025-06-17T18:28:09+00:00",
+        "closed_at": "2025-06-17T18:28:09+00:00"
+      },
+      {
+        "number": 190,
+        "title": "Asap 181 scale up evals 10x",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-17T19:26:10+00:00",
+        "merged_at": "2025-06-18T20:10:51+00:00",
+        "closed_at": "2025-06-18T20:10:51+00:00"
+      },
+      {
+        "number": 191,
+        "title": "1337 cleanup terraform",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-17T20:14:00+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-17T20:16:57+00:00"
+      },
+      {
+        "number": 192,
+        "title": "Sweep away the cruft.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-17T20:17:13+00:00",
+        "merged_at": "2025-06-18T20:11:06+00:00",
+        "closed_at": "2025-06-18T20:11:06+00:00"
+      },
+      {
+        "number": 193,
+        "title": "Bump debug from 1.10.0 to 1.11.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-18T11:29:54+00:00",
+        "merged_at": "2025-07-01T18:26:05+00:00",
+        "closed_at": "2025-07-01T18:26:05+00:00"
+      },
+      {
+        "number": 194,
+        "title": "Deploy: 2026-07-01",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-18T20:22:49+00:00",
+        "merged_at": "2025-07-01T20:01:21+00:00",
+        "closed_at": "2025-07-01T20:01:21+00:00"
+      },
+      {
+        "number": 195,
+        "title": "Bump grape from 2.3.0 to 2.4.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-19T11:26:11+00:00",
+        "merged_at": "2025-07-01T18:28:01+00:00",
+        "closed_at": "2025-07-01T18:28:01+00:00"
+      },
+      {
+        "number": 196,
+        "title": "Bump aws-sdk-s3 from 1.189.1 to 1.190.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-19T11:26:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-26T11:23:26+00:00"
+      },
+      {
+        "number": 197,
+        "title": "Bump thruster from 0.1.13 to 0.1.14",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-19T11:27:20+00:00",
+        "merged_at": "2025-07-01T18:29:52+00:00",
+        "closed_at": "2025-07-01T18:29:53+00:00"
+      },
+      {
+        "number": 198,
+        "title": "Bump rspec-rails from 8.0.0 to 8.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-20T11:36:42+00:00",
+        "merged_at": "2025-07-01T18:39:48+00:00",
+        "closed_at": "2025-07-01T18:39:49+00:00"
+      },
+      {
+        "number": 199,
+        "title": "Bump aws-sdk-lambda from 1.151.0 to 1.153.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-20T11:36:58+00:00",
+        "merged_at": "2025-07-01T18:40:57+00:00",
+        "closed_at": "2025-07-01T18:40:57+00:00"
+      },
+      {
+        "number": 200,
+        "title": "Bump ruby-lsp from 0.24.1 to 0.24.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-20T11:37:26+00:00",
+        "merged_at": "2025-07-01T18:30:54+00:00",
+        "closed_at": "2025-07-01T18:30:54+00:00"
+      },
+      {
+        "number": 201,
+        "title": "Fix corrupted SLC urls",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-23T19:26:06+00:00",
+        "merged_at": "2025-06-25T21:37:05+00:00",
+        "closed_at": "2025-06-25T21:37:05+00:00"
+      },
+      {
+        "number": 202,
+        "title": "Asap 178 accessibility audit",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-23T22:10:23+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-25T15:30:21+00:00"
+      },
+      {
+        "number": 203,
+        "title": "Asap 178 accessibility audit local",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-25T15:30:43+00:00",
+        "merged_at": "2025-06-27T14:31:37+00:00",
+        "closed_at": "2025-06-27T14:31:37+00:00"
+      },
+      {
+        "number": 204,
+        "title": "Bump aws-sdk-s3 from 1.189.1 to 1.191.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-26T11:23:23+00:00",
+        "merged_at": "2025-07-01T18:58:57+00:00",
+        "closed_at": "2025-07-01T18:58:57+00:00"
+      },
+      {
+        "number": 205,
+        "title": "Bump dockerfile-rails from 1.7.9 to 1.7.10",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-30T14:43:28+00:00",
+        "merged_at": "2025-07-01T18:25:12+00:00",
+        "closed_at": "2025-07-01T18:25:12+00:00"
+      },
+      {
+        "number": 206,
+        "title": "Asap 178 fix low hanging fruit",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-06-30T17:23:57+00:00",
+        "merged_at": "2025-07-01T18:23:52+00:00",
+        "closed_at": "2025-07-01T18:23:52+00:00"
+      },
+      {
+        "number": 207,
+        "title": "Bump overcommit from 0.67.1 to 0.68.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-01T12:44:25+00:00",
+        "merged_at": "2025-07-01T17:28:47+00:00",
+        "closed_at": "2025-07-01T17:28:47+00:00"
+      },
+      {
+        "number": 208,
+        "title": "Bump tailwindcss-ruby from 4.1.10 to 4.1.11",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-01T13:07:53+00:00",
+        "merged_at": "2025-07-01T17:21:58+00:00",
+        "closed_at": "2025-07-01T17:21:58+00:00"
+      },
+      {
+        "number": 209,
+        "title": "Add author to history tab.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-01T15:42:29+00:00",
+        "merged_at": "2025-07-01T17:05:11+00:00",
+        "closed_at": "2025-07-01T17:05:11+00:00"
+      },
+      {
+        "number": 210,
+        "title": "Bump brace-expansion from 2.0.1 to 2.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-01T17:10:44+00:00",
+        "merged_at": "2025-07-01T17:17:57+00:00",
+        "closed_at": "2025-07-01T17:17:57+00:00"
+      },
+      {
+        "number": 211,
+        "title": "Update requests library.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-01T17:16:49+00:00",
+        "merged_at": "2025-07-01T17:19:19+00:00",
+        "closed_at": "2025-07-01T17:19:19+00:00"
+      },
+      {
+        "number": 212,
+        "title": "Update pillow.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-01T19:13:08+00:00",
+        "merged_at": "2025-07-01T19:15:20+00:00",
+        "closed_at": "2025-07-01T19:15:20+00:00"
+      },
+      {
+        "number": 213,
+        "title": "Bump sidekiq from 8.0.4 to 8.0.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-02T11:24:02+00:00",
+        "merged_at": "2025-07-15T15:30:42+00:00",
+        "closed_at": "2025-07-15T15:30:42+00:00"
+      },
+      {
+        "number": 214,
+        "title": "Bump aws-sdk-s3 from 1.191.0 to 1.192.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-03T11:28:37+00:00",
+        "merged_at": "2025-07-15T15:30:27+00:00",
+        "closed_at": "2025-07-15T15:30:27+00:00"
+      },
+      {
+        "number": 215,
+        "title": "Scraping additional Georgia sites",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-07-08T17:47:24+00:00",
+        "merged_at": "2025-07-15T18:37:43+00:00",
+        "closed_at": "2025-07-15T18:37:43+00:00"
+      },
+      {
+        "number": 216,
+        "title": "Experiment with asking LLM to return exception check in plain language",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-07-09T00:03:04+00:00",
+        "merged_at": "2025-07-11T16:53:36+00:00",
+        "closed_at": "2025-07-11T16:53:36+00:00"
+      },
+      {
+        "number": 217,
+        "title": "Bump ruby-lsp from 0.24.2 to 0.25.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-09T11:41:04+00:00",
+        "merged_at": "2025-07-15T14:24:48+00:00",
+        "closed_at": "2025-07-15T14:24:48+00:00"
+      },
+      {
+        "number": 218,
+        "title": "Asap 92 regenerate exception check results",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-09T14:49:17+00:00",
+        "merged_at": "2025-07-09T17:58:11+00:00",
+        "closed_at": "2025-07-09T17:58:11+00:00"
+      },
+      {
+        "number": 219,
+        "title": "Use DeepEval faithfulness metric and remove custom version.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-09T15:49:19+00:00",
+        "merged_at": "2025-07-22T20:52:13+00:00",
+        "closed_at": "2025-07-22T20:52:14+00:00"
+      },
+      {
+        "number": 220,
+        "title": "Deploy: 2025-07-15",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-09T17:59:03+00:00",
+        "merged_at": "2025-07-15T20:02:20+00:00",
+        "closed_at": "2025-07-15T20:02:20+00:00"
+      },
+      {
+        "number": 221,
+        "title": "Asap 197 replace user management with devise",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-10T20:04:05+00:00",
+        "merged_at": "2025-07-14T20:36:46+00:00",
+        "closed_at": "2025-07-14T20:36:46+00:00"
+      },
+      {
+        "number": 222,
+        "title": "Asap 173 admin user UI",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-14T22:50:04+00:00",
+        "merged_at": "2025-07-28T18:08:36+00:00",
+        "closed_at": "2025-07-28T18:08:36+00:00"
+      },
+      {
+        "number": 223,
+        "title": "Bump aws-sdk-s3 from 1.192.0 to 1.193.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-16T11:35:36+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-22T11:54:18+00:00"
+      },
+      {
+        "number": 224,
+        "title": "Bump propshaft from 1.1.0 to 1.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-16T11:35:46+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-22T11:54:29+00:00"
+      },
+      {
+        "number": 225,
+        "title": "Bump redis from 5.4.0 to 5.4.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-17T11:58:20+00:00",
+        "merged_at": "2025-07-23T15:32:05+00:00",
+        "closed_at": "2025-07-23T15:32:05+00:00"
+      },
+      {
+        "number": 226,
+        "title": "Add tooltip to filters and insights page.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-18T19:29:33+00:00",
+        "merged_at": "2025-07-21T14:58:20+00:00",
+        "closed_at": "2025-07-21T14:58:20+00:00"
+      },
+      {
+        "number": 228,
+        "title": "Bump brakeman from 7.0.2 to 7.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-21T12:50:40+00:00",
+        "merged_at": "2025-07-23T15:31:53+00:00",
+        "closed_at": "2025-07-23T15:31:53+00:00"
+      },
+      {
+        "number": 229,
+        "title": "Bump ruby-lsp from 0.25.0 to 0.26.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-21T13:02:26+00:00",
+        "merged_at": "2025-07-23T15:57:31+00:00",
+        "closed_at": "2025-07-23T15:57:32+00:00"
+      },
+      {
+        "number": 230,
+        "title": "Deploy: 2025-07-23",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-21T14:59:31+00:00",
+        "merged_at": "2025-07-23T17:09:02+00:00",
+        "closed_at": "2025-07-23T17:09:02+00:00"
+      },
+      {
+        "number": 231,
+        "title": "Bump aws-sdk-lambda from 1.153.0 to 1.154.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-22T11:53:58+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-23T12:01:45+00:00"
+      },
+      {
+        "number": 232,
+        "title": "Bump aws-sdk-secretsmanager from 1.115.0 to 1.117.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-22T11:54:04+00:00",
+        "merged_at": "2025-07-23T16:00:29+00:00",
+        "closed_at": "2025-07-23T16:00:29+00:00"
+      },
+      {
+        "number": 233,
+        "title": "Bump aws-sdk-s3 from 1.192.0 to 1.194.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-22T11:54:15+00:00",
+        "merged_at": "2025-07-23T16:00:42+00:00",
+        "closed_at": "2025-07-23T16:00:42+00:00"
+      },
+      {
+        "number": 234,
+        "title": "Bump propshaft from 1.1.0 to 1.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-22T11:54:27+00:00",
+        "merged_at": "2025-07-23T15:56:06+00:00",
+        "closed_at": "2025-07-23T15:56:07+00:00"
+      },
+      {
+        "number": 235,
+        "title": "Asap 171 make document import more flexible",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-22T21:59:05+00:00",
+        "merged_at": "2025-08-05T22:41:09+00:00",
+        "closed_at": "2025-08-05T22:41:09+00:00"
+      },
+      {
+        "number": 236,
+        "title": "Bump sidekiq from 8.0.5 to 8.0.6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-23T12:01:31+00:00",
+        "merged_at": "2025-07-23T15:31:20+00:00",
+        "closed_at": "2025-07-23T15:31:20+00:00"
+      },
+      {
+        "number": 237,
+        "title": "Bump aws-sdk-lambda from 1.153.0 to 1.155.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-23T12:01:43+00:00",
+        "merged_at": "2025-07-23T16:15:52+00:00",
+        "closed_at": "2025-07-23T16:15:52+00:00"
+      },
+      {
+        "number": 238,
+        "title": "Bump nokogiri from 1.18.8 to 1.18.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-23T17:00:13+00:00",
+        "merged_at": "2025-07-23T17:03:03+00:00",
+        "closed_at": "2025-07-23T17:03:03+00:00"
+      },
+      {
+        "number": 239,
+        "title": "Asap 204 change all file handling to requests",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-23T21:23:51+00:00",
+        "merged_at": "2025-07-28T13:56:15+00:00",
+        "closed_at": "2025-07-28T13:56:15+00:00"
+      },
+      {
+        "number": 240,
+        "title": "Migrate Gemini 1.5-Pro models to Gemini 2.0 Flash models",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-07-25T19:38:46+00:00",
+        "merged_at": "2025-07-28T16:18:22+00:00",
+        "closed_at": "2025-07-28T16:18:22+00:00"
+      },
+      {
+        "number": 241,
+        "title": "Deploy: 2025-07-28",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-28T15:36:15+00:00",
+        "merged_at": "2025-07-29T15:24:57+00:00",
+        "closed_at": "2025-07-29T15:24:57+00:00"
+      },
+      {
+        "number": 242,
+        "title": "Asap 198 setup emails and password reset",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-28T16:54:44+00:00",
+        "merged_at": "2025-07-29T15:06:17+00:00",
+        "closed_at": "2025-07-29T15:06:17+00:00"
+      },
+      {
+        "number": 243,
+        "title": "Bump pg from 1.5.9 to 1.6.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-29T11:29:53+00:00",
+        "merged_at": "2025-07-29T15:16:42+00:00",
+        "closed_at": "2025-07-29T15:16:42+00:00"
+      },
+      {
+        "number": 244,
+        "title": "Return password reset link.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-07-29T21:52:22+00:00",
+        "merged_at": "2025-08-04T21:57:45+00:00",
+        "closed_at": "2025-08-04T21:57:45+00:00"
+      },
+      {
+        "number": 245,
+        "title": "Bump view_component from 3.23.2 to 4.0.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-30T11:53:34+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-06T11:40:35+00:00"
+      },
+      {
+        "number": 246,
+        "title": "Bump aws-sdk-ses from 1.85.0 to 1.86.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-30T11:54:10+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-01T12:07:32+00:00"
+      },
+      {
+        "number": 247,
+        "title": "Bump aws-sdk-secretsmanager from 1.117.0 to 1.118.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T12:07:05+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-05T15:01:39+00:00"
+      },
+      {
+        "number": 248,
+        "title": "Bump aws-sdk-s3 from 1.194.0 to 1.195.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T12:07:16+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-05T15:01:54+00:00"
+      },
+      {
+        "number": 249,
+        "title": "Bump aws-sdk-ses from 1.85.0 to 1.87.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T12:07:30+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-05T17:26:33+00:00"
+      },
+      {
+        "number": 250,
+        "title": "Bump puma from 6.6.0 to 6.6.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T12:08:03+00:00",
+        "merged_at": "2025-08-13T15:18:07+00:00",
+        "closed_at": "2025-08-13T15:18:07+00:00"
+      },
+      {
+        "number": 251,
+        "title": "Bump aws-sdk-lambda from 1.155.0 to 1.156.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T12:08:13+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-05T15:12:41+00:00"
+      },
+      {
+        "number": 252,
+        "title": "Bump pg from 1.6.0 to 1.6.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-04T15:39:10+00:00",
+        "merged_at": "2025-08-13T15:18:16+00:00",
+        "closed_at": "2025-08-13T15:18:17+00:00"
+      },
+      {
+        "number": 253,
+        "title": "Bump aws-sdk-secretsmanager from 1.117.0 to 1.119.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T15:01:36+00:00",
+        "merged_at": "2025-08-13T15:29:39+00:00",
+        "closed_at": "2025-08-13T15:29:39+00:00"
+      },
+      {
+        "number": 254,
+        "title": "Bump aws-sdk-s3 from 1.194.0 to 1.196.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T15:01:52+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-06T11:40:24+00:00"
+      },
+      {
+        "number": 255,
+        "title": "Deploy: 2025-08-05",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-05T15:12:02+00:00",
+        "merged_at": "2025-08-06T15:36:45+00:00",
+        "closed_at": "2025-08-06T15:36:45+00:00"
+      },
+      {
+        "number": 256,
+        "title": "Bump aws-sdk-lambda from 1.155.0 to 1.157.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T15:12:37+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-12T17:21:59+00:00"
+      },
+      {
+        "number": 257,
+        "title": "Bump thruster from 0.1.14 to 0.1.15",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T15:45:09+00:00",
+        "merged_at": "2025-08-13T15:18:25+00:00",
+        "closed_at": "2025-08-13T15:18:25+00:00"
+      },
+      {
+        "number": 258,
+        "title": "Bump aws-sdk-ses from 1.85.0 to 1.88.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T17:26:31+00:00",
+        "merged_at": "2025-08-13T15:25:00+00:00",
+        "closed_at": "2025-08-13T15:25:00+00:00"
+      },
+      {
+        "number": 259,
+        "title": "Add cloudfront module with temporary redirect for production domain.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-05T22:46:38+00:00",
+        "merged_at": "2025-08-06T15:22:21+00:00",
+        "closed_at": "2025-08-06T15:22:21+00:00"
+      },
+      {
+        "number": 260,
+        "title": "Bump aws-sdk-s3 from 1.194.0 to 1.196.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-06T11:40:21+00:00",
+        "merged_at": "2025-08-13T15:13:57+00:00",
+        "closed_at": "2025-08-13T15:13:57+00:00"
+      },
+      {
+        "number": 261,
+        "title": "Bump view_component from 3.23.2 to 4.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-06T11:40:32+00:00",
+        "merged_at": "2025-08-13T15:22:58+00:00",
+        "closed_at": "2025-08-13T15:22:58+00:00"
+      },
+      {
+        "number": 262,
+        "title": "Use DeepEval 3.3.6 in all components.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-06T16:20:59+00:00",
+        "merged_at": "2025-08-12T15:44:22+00:00",
+        "closed_at": "2025-08-12T15:44:22+00:00"
+      },
+      {
+        "number": 263,
+        "title": "Add is_active flag to document inferences and use it.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-08T22:53:53+00:00",
+        "merged_at": "2025-08-13T18:40:25+00:00",
+        "closed_at": "2025-08-13T18:40:25+00:00"
+      },
+      {
+        "number": 264,
+        "title": "Bump sidekiq from 8.0.6 to 8.0.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-11T16:56:43+00:00",
+        "merged_at": "2025-08-13T15:12:59+00:00",
+        "closed_at": "2025-08-13T15:12:59+00:00"
+      },
+      {
+        "number": 265,
+        "title": "Asap 208 feedback UI",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-11T19:36:00+00:00",
+        "merged_at": "2025-08-22T21:34:56+00:00",
+        "closed_at": "2025-08-22T21:34:56+00:00"
+      },
+      {
+        "number": 266,
+        "title": "1337 google analytics",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-12T15:39:05+00:00",
+        "merged_at": "2025-08-13T14:07:24+00:00",
+        "closed_at": "2025-08-13T14:07:24+00:00"
+      },
+      {
+        "number": 267,
+        "title": "Deploy: 2025-08-13",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-12T15:44:52+00:00",
+        "merged_at": "2025-08-13T19:04:35+00:00",
+        "closed_at": "2025-08-13T19:04:35+00:00"
+      },
+      {
+        "number": 268,
+        "title": "Asap 214 better missing document strategies",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-12T15:52:40+00:00",
+        "merged_at": "2025-08-12T20:39:19+00:00",
+        "closed_at": "2025-08-12T20:39:20+00:00"
+      },
+      {
+        "number": 269,
+        "title": "Bump actions/checkout from 4 to 5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-12T17:14:19+00:00",
+        "merged_at": "2025-08-13T15:18:35+00:00",
+        "closed_at": "2025-08-13T15:18:35+00:00"
+      },
+      {
+        "number": 270,
+        "title": "Bump rspec-rails from 8.0.1 to 8.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-12T17:16:23+00:00",
+        "merged_at": "2025-08-13T15:13:07+00:00",
+        "closed_at": "2025-08-13T15:13:07+00:00"
+      },
+      {
+        "number": 271,
+        "title": "Bump aws-sdk-lambda from 1.155.0 to 1.158.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-12T17:21:57+00:00",
+        "merged_at": "2025-08-13T15:31:30+00:00",
+        "closed_at": "2025-08-13T15:31:30+00:00"
+      },
+      {
+        "number": 272,
+        "title": "Bump rails from 8.0.2 to 8.0.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-14T11:24:11+00:00",
+        "merged_at": "2025-08-21T22:22:01+00:00",
+        "closed_at": "2025-08-21T22:22:01+00:00"
+      },
+      {
+        "number": 273,
+        "title": "Bump view_component from 4.0.1 to 4.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-15T11:40:25+00:00",
+        "merged_at": "2025-08-21T22:21:37+00:00",
+        "closed_at": "2025-08-21T22:21:37+00:00"
+      },
+      {
+        "number": 274,
+        "title": "Break up the document inference prompts into two prompts",
+        "state": "closed",
+        "author_login": "allisonmorgan",
+        "created_at": "2025-08-15T20:13:50+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-19T20:42:01+00:00"
+      },
+      {
+        "number": 275,
+        "title": "1337 setup production environment",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-15T21:33:50+00:00",
+        "merged_at": "2025-08-21T21:27:48+00:00",
+        "closed_at": "2025-08-21T21:27:48+00:00"
+      },
+      {
+        "number": 276,
+        "title": "Bump aws-sdk-s3 from 1.196.1 to 1.197.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-20T11:53:44+00:00",
+        "merged_at": "2025-08-21T22:21:04+00:00",
+        "closed_at": "2025-08-21T22:21:04+00:00"
+      },
+      {
+        "number": 277,
+        "title": "Bump rubyzip from 3.0.1 to 3.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-21T11:27:40+00:00",
+        "merged_at": "2025-08-21T22:20:28+00:00",
+        "closed_at": "2025-08-21T22:20:29+00:00"
+      },
+      {
+        "number": 278,
+        "title": "Bump tailwindcss-ruby from 4.1.11 to 4.1.12",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-21T11:27:53+00:00",
+        "merged_at": "2025-08-21T22:19:59+00:00",
+        "closed_at": "2025-08-21T22:19:59+00:00"
+      },
+      {
+        "number": 279,
+        "title": "Deploy: 2025-08-21",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-21T21:31:11+00:00",
+        "merged_at": "2025-08-21T21:38:19+00:00",
+        "closed_at": "2025-08-21T21:38:19+00:00"
+      },
+      {
+        "number": 280,
+        "title": "1337 Fix the production function name.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-21T21:50:28+00:00",
+        "merged_at": "2025-08-21T22:02:29+00:00",
+        "closed_at": "2025-08-21T22:02:29+00:00"
+      },
+      {
+        "number": 281,
+        "title": "Bump pypdf from 5.8.0 to 6.0.0 in /python_components/ci",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-21T22:26:17+00:00",
+        "merged_at": "2025-08-21T22:28:59+00:00",
+        "closed_at": "2025-08-21T22:28:59+00:00"
+      },
+      {
+        "number": 282,
+        "title": "Dep 2025-08-21",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-21T22:38:55+00:00",
+        "merged_at": "2025-08-21T22:42:00+00:00",
+        "closed_at": "2025-08-21T22:42:00+00:00"
+      },
+      {
+        "number": 283,
+        "title": "Deploy: 2025-08-21-2",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-21T22:42:30+00:00",
+        "merged_at": "2025-08-21T22:49:40+00:00",
+        "closed_at": "2025-08-21T22:49:40+00:00"
+      },
+      {
+        "number": 284,
+        "title": "Asap 215 document audit export",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-25T18:37:14+00:00",
+        "merged_at": "2025-09-03T12:41:37+00:00",
+        "closed_at": "2025-09-03T12:41:37+00:00"
+      },
+      {
+        "number": 285,
+        "title": "Bump aws-sdk-lambda from 1.158.0 to 1.159.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-27T03:09:28+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-27T20:03:52+00:00"
+      },
+      {
+        "number": 286,
+        "title": "Asap 216 collect more llm information",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-27T17:21:40+00:00",
+        "merged_at": "2025-09-02T14:28:33+00:00",
+        "closed_at": "2025-09-02T14:28:33+00:00"
+      },
+      {
+        "number": 287,
+        "title": "Deploy: 2025-09-03",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-08-27T18:11:37+00:00",
+        "merged_at": "2025-09-03T15:18:27+00:00",
+        "closed_at": "2025-09-03T15:18:27+00:00"
+      },
+      {
+        "number": 288,
+        "title": "Bump aws-sdk-secretsmanager from 1.119.0 to 1.120.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-27T19:17:22+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-03T13:14:30+00:00"
+      },
+      {
+        "number": 289,
+        "title": "Bump aws-sdk-ses from 1.88.0 to 1.89.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-27T19:18:26+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-29T11:14:36+00:00"
+      },
+      {
+        "number": 290,
+        "title": "Bump aws-sdk-s3 from 1.197.0 to 1.198.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-27T19:20:25+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-03T13:14:31+00:00"
+      },
+      {
+        "number": 291,
+        "title": "Bump aws-sdk-lambda from 1.158.0 to 1.160.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-27T20:03:50+00:00",
+        "merged_at": "2025-09-03T13:14:15+00:00",
+        "closed_at": "2025-09-03T13:14:15+00:00"
+      },
+      {
+        "number": 292,
+        "title": "Bump aws-sdk-ses from 1.88.0 to 1.90.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-29T11:14:34+00:00",
+        "merged_at": "2025-09-03T13:10:10+00:00",
+        "closed_at": "2025-09-03T13:10:10+00:00"
+      },
+      {
+        "number": 293,
+        "title": "Bump pg from 1.6.1 to 1.6.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-03T05:29:31+00:00",
+        "merged_at": "2025-09-03T13:09:46+00:00",
+        "closed_at": "2025-09-03T13:09:46+00:00"
+      },
+      {
+        "number": 294,
+        "title": "Dep: 2025-09-03",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-03T13:18:40+00:00",
+        "merged_at": "2025-09-03T13:21:34+00:00",
+        "closed_at": "2025-09-03T13:21:34+00:00"
+      },
+      {
+        "number": 295,
+        "title": "Hide llm author for inferences without one.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-03T13:33:40+00:00",
+        "merged_at": "2025-09-03T13:39:13+00:00",
+        "closed_at": "2025-09-03T13:39:13+00:00"
+      },
+      {
+        "number": 296,
+        "title": "Bump actions/setup-python from 5 to 6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-04T12:38:53+00:00",
+        "merged_at": "2025-09-17T19:16:46+00:00",
+        "closed_at": "2025-09-17T19:16:46+00:00"
+      },
+      {
+        "number": 297,
+        "title": "Bump aws-actions/configure-aws-credentials from 4 to 5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-04T12:38:56+00:00",
+        "merged_at": "2025-09-17T19:16:38+00:00",
+        "closed_at": "2025-09-17T19:16:38+00:00"
+      },
+      {
+        "number": 298,
+        "title": "Bump puma from 6.6.1 to 7.0.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-04T13:14:53+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-08T12:18:16+00:00"
+      },
+      {
+        "number": 299,
+        "title": "Bump puma from 6.6.1 to 7.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-08T12:18:14+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-09T11:15:33+00:00"
+      },
+      {
+        "number": 300,
+        "title": "Bump rubyzip from 3.0.2 to 3.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-08T12:18:49+00:00",
+        "merged_at": "2025-09-17T19:16:25+00:00",
+        "closed_at": "2025-09-17T19:16:25+00:00"
+      },
+      {
+        "number": 301,
+        "title": "Bump factory_bot_rails from 6.5.0 to 6.5.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-08T12:19:39+00:00",
+        "merged_at": "2025-09-17T19:16:13+00:00",
+        "closed_at": "2025-09-17T19:16:13+00:00"
+      },
+      {
+        "number": 302,
+        "title": "Bump aws-sdk-s3 from 1.198.0 to 1.199.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-09T11:15:18+00:00",
+        "merged_at": "2025-09-17T19:15:36+00:00",
+        "closed_at": "2025-09-17T19:15:36+00:00"
+      },
+      {
+        "number": 303,
+        "title": "Bump puma from 6.6.1 to 7.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-09T11:15:31+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-15T12:27:59+00:00"
+      },
+      {
+        "number": 304,
+        "title": "Asap 222 admin page tweaks",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-09T14:49:51+00:00",
+        "merged_at": "2025-09-17T20:30:15+00:00",
+        "closed_at": "2025-09-17T20:30:15+00:00"
+      },
+      {
+        "number": 305,
+        "title": "Asap 221 migrate off preview model",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-09T17:01:33+00:00",
+        "merged_at": "2025-09-15T20:29:21+00:00",
+        "closed_at": "2025-09-15T20:29:21+00:00"
+      },
+      {
+        "number": 306,
+        "title": "Bump standard from 1.50.0 to 1.51.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-10T11:18:37+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-15T12:39:11+00:00"
+      },
+      {
+        "number": 307,
+        "title": "Asap 223 slc dept bug",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-10T18:53:15+00:00",
+        "merged_at": "2025-09-17T20:29:52+00:00",
+        "closed_at": "2025-09-17T20:29:52+00:00"
+      },
+      {
+        "number": 308,
+        "title": "Bump puma from 6.6.1 to 7.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-15T12:27:57+00:00",
+        "merged_at": "2025-09-17T19:12:26+00:00",
+        "closed_at": "2025-09-17T19:12:26+00:00"
+      },
+      {
+        "number": 309,
+        "title": "Bump standard from 1.50.0 to 1.51.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-15T12:39:08+00:00",
+        "merged_at": "2025-09-17T19:12:09+00:00",
+        "closed_at": "2025-09-17T19:12:09+00:00"
+      },
+      {
+        "number": 310,
+        "title": "Bump tailwindcss-ruby from 4.1.12 to 4.1.13",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-15T12:46:06+00:00",
+        "merged_at": "2025-09-17T19:11:53+00:00",
+        "closed_at": "2025-09-17T19:11:53+00:00"
+      },
+      {
+        "number": 311,
+        "title": "Deploy: 2025-09-17",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-15T20:30:14+00:00",
+        "merged_at": "2025-09-17T20:57:17+00:00",
+        "closed_at": "2025-09-17T20:57:17+00:00"
+      },
+      {
+        "number": 312,
+        "title": "Bump langchain-community from 0.3.24 to 0.3.27 in /python_components/evaluation",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-17T19:08:05+00:00",
+        "merged_at": "2025-09-17T19:17:22+00:00",
+        "closed_at": "2025-09-17T19:17:22+00:00"
+      },
+      {
+        "number": 313,
+        "title": "Dep: 2025-09-17",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-17T19:30:57+00:00",
+        "merged_at": "2025-09-17T20:32:05+00:00",
+        "closed_at": "2025-09-17T20:32:05+00:00"
+      },
+      {
+        "number": 315,
+        "title": "Bump rails from 8.0.2.1 to 8.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-23T11:18:36+00:00",
+        "merged_at": "2025-10-01T19:34:42+00:00",
+        "closed_at": "2025-10-01T19:34:42+00:00"
+      },
+      {
+        "number": 316,
+        "title": "Bump propshaft from 1.2.1 to 1.3.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-24T11:17:47+00:00",
+        "merged_at": "2025-10-01T19:57:59+00:00",
+        "closed_at": "2025-10-01T19:57:59+00:00"
+      },
+      {
+        "number": 317,
+        "title": "Bump puma from 7.0.3 to 7.0.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-24T11:17:59+00:00",
+        "merged_at": "2025-10-01T16:48:31+00:00",
+        "closed_at": "2025-10-01T16:48:32+00:00"
+      },
+      {
+        "number": 318,
+        "title": "Asap 225 add comparison to crawler",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-24T14:10:45+00:00",
+        "merged_at": "2025-10-01T20:50:14+00:00",
+        "closed_at": "2025-10-01T20:50:14+00:00"
+      },
+      {
+        "number": 319,
+        "title": "Add lifecycle policy to all the registries.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-25T15:14:21+00:00",
+        "merged_at": "2025-09-26T17:57:51+00:00",
+        "closed_at": "2025-09-26T17:57:51+00:00"
+      },
+      {
+        "number": 320,
+        "title": "Bump aws-sdk-s3 from 1.199.0 to 1.199.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-26T11:16:30+00:00",
+        "merged_at": "2025-10-01T19:58:15+00:00",
+        "closed_at": "2025-10-01T19:58:16+00:00"
+      },
+      {
+        "number": 321,
+        "title": "Deploy: 2025-10-01",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-26T17:58:24+00:00",
+        "merged_at": "2025-10-01T21:09:01+00:00",
+        "closed_at": "2025-10-01T21:09:01+00:00"
+      },
+      {
+        "number": 322,
+        "title": "1337 documentation updates",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-26T19:58:51+00:00",
+        "merged_at": "2025-09-26T20:16:55+00:00",
+        "closed_at": "2025-09-26T20:16:55+00:00"
+      },
+      {
+        "number": 323,
+        "title": "Add default site emails to config.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-26T21:10:43+00:00",
+        "merged_at": "2025-09-26T21:32:23+00:00",
+        "closed_at": "2025-09-26T21:32:23+00:00"
+      },
+      {
+        "number": 324,
+        "title": "Bump rubyzip from 3.1.0 to 3.1.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-29T15:00:09+00:00",
+        "merged_at": "2025-10-01T16:48:05+00:00",
+        "closed_at": "2025-10-01T16:48:05+00:00"
+      },
+      {
+        "number": 325,
+        "title": "Bump turbo-rails from 2.0.16 to 2.0.17",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-29T15:18:22+00:00",
+        "merged_at": "2025-10-01T16:47:32+00:00",
+        "closed_at": "2025-10-01T16:47:32+00:00"
+      },
+      {
+        "number": 326,
+        "title": "Asap 229 remove queue dependencies",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-29T17:26:41+00:00",
+        "merged_at": "2025-09-29T19:45:51+00:00",
+        "closed_at": "2025-09-29T19:45:51+00:00"
+      },
+      {
+        "number": 327,
+        "title": "Asap 231 more documentation clarity",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-29T21:58:00+00:00",
+        "merged_at": "2025-10-01T20:11:08+00:00",
+        "closed_at": "2025-10-01T20:11:08+00:00"
+      },
+      {
+        "number": 328,
+        "title": "Remove unused S3-based storage for documents.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-09-30T14:20:20+00:00",
+        "merged_at": "2025-09-30T14:46:51+00:00",
+        "closed_at": "2025-09-30T14:46:51+00:00"
+      },
+      {
+        "number": 329,
+        "title": "Dep: 2025-10-01",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-01T16:50:24+00:00",
+        "merged_at": "2025-10-01T20:28:58+00:00",
+        "closed_at": "2025-10-01T20:28:58+00:00"
+      },
+      {
+        "number": 330,
+        "title": "1337 load documents by encoding variant",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-02T16:02:31+00:00",
+        "merged_at": "2025-10-02T16:28:42+00:00",
+        "closed_at": "2025-10-02T16:28:42+00:00"
+      },
+      {
+        "number": 331,
+        "title": "Deploy: 2025-10-02",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-02T16:29:03+00:00",
+        "merged_at": "2025-10-02T16:32:47+00:00",
+        "closed_at": "2025-10-02T16:32:47+00:00"
+      },
+      {
+        "number": 332,
+        "title": "Make variants protocol agnostic and actually add tests this time.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-02T20:33:43+00:00",
+        "merged_at": "2025-10-02T20:40:36+00:00",
+        "closed_at": "2025-10-02T20:40:36+00:00"
+      },
+      {
+        "number": 333,
+        "title": "Bump selenium-webdriver from 4.35.0 to 4.36.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-03T11:17:11+00:00",
+        "merged_at": "2025-10-14T20:00:20+00:00",
+        "closed_at": "2025-10-14T20:00:20+00:00"
+      },
+      {
+        "number": 334,
+        "title": "Add info link to login area.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-03T15:00:16+00:00",
+        "merged_at": "2025-10-10T17:44:20+00:00",
+        "closed_at": "2025-10-10T17:44:20+00:00"
+      },
+      {
+        "number": 335,
+        "title": "Bump solid_cache from 1.0.7 to 1.0.8",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-09T11:18:03+00:00",
+        "merged_at": "2025-10-14T20:04:50+00:00",
+        "closed_at": "2025-10-14T20:04:50+00:00"
+      },
+      {
+        "number": 336,
+        "title": "Asap 234 new tagged mixed protocol bug",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-10T17:40:47+00:00",
+        "merged_at": "2025-10-10T17:45:13+00:00",
+        "closed_at": "2025-10-10T17:45:14+00:00"
+      },
+      {
+        "number": 337,
+        "title": "Deploy: 2025-10-14",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-10T17:46:56+00:00",
+        "merged_at": "2025-10-14T21:21:00+00:00",
+        "closed_at": "2025-10-14T21:21:00+00:00"
+      },
+      {
+        "number": 338,
+        "title": "Bump aws-sdk-lambda from 1.160.0 to 1.161.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-13T11:51:41+00:00",
+        "merged_at": "2025-10-14T19:59:58+00:00",
+        "closed_at": "2025-10-14T19:59:58+00:00"
+      },
+      {
+        "number": 339,
+        "title": "Bump chartkick from 5.2.0 to 5.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-14T11:43:22+00:00",
+        "merged_at": "2025-10-14T19:59:46+00:00",
+        "closed_at": "2025-10-14T19:59:46+00:00"
+      },
+      {
+        "number": 340,
+        "title": "Dep: 2025-10-14",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-14T20:10:18+00:00",
+        "merged_at": "2025-10-14T20:15:00+00:00",
+        "closed_at": "2025-10-14T20:15:00+00:00"
+      },
+      {
+        "number": 341,
+        "title": "Bump rubyzip from 3.1.1 to 3.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-15T11:19:45+00:00",
+        "merged_at": "2025-10-16T20:48:29+00:00",
+        "closed_at": "2025-10-16T20:48:29+00:00"
+      },
+      {
+        "number": 342,
+        "title": "Bump aws-sdk-s3 from 1.199.1 to 1.200.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-16T11:15:30+00:00",
+        "merged_at": "2025-10-16T20:48:09+00:00",
+        "closed_at": "2025-10-16T20:48:10+00:00"
+      },
+      {
+        "number": 343,
+        "title": "Asap 235 mail deliverability tweaks",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-16T16:33:56+00:00",
+        "merged_at": "2025-10-16T20:40:39+00:00",
+        "closed_at": "2025-10-16T20:40:39+00:00"
+      },
+      {
+        "number": 344,
+        "title": "Bump rack from 3.2.2 to 3.2.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-16T20:43:22+00:00",
+        "merged_at": "2025-10-16T20:46:37+00:00",
+        "closed_at": "2025-10-16T20:46:37+00:00"
+      },
+      {
+        "number": 345,
+        "title": "Dep: 2025-10-16",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-16T20:49:12+00:00",
+        "merged_at": "2025-10-16T20:52:34+00:00",
+        "closed_at": "2025-10-16T20:52:34+00:00"
+      },
+      {
+        "number": 346,
+        "title": "Deploy: 2025-10-16",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-16T20:53:16+00:00",
+        "merged_at": "2025-10-16T21:00:17+00:00",
+        "closed_at": "2025-10-16T21:00:18+00:00"
+      },
+      {
+        "number": 347,
+        "title": "Bump puma from 7.0.4 to 7.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-20T12:15:57+00:00",
+        "merged_at": "2025-10-29T15:19:33+00:00",
+        "closed_at": "2025-10-29T15:19:34+00:00"
+      },
+      {
+        "number": 348,
+        "title": "Bump thruster from 0.1.15 to 0.1.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-20T12:16:12+00:00",
+        "merged_at": "2025-10-29T15:32:26+00:00",
+        "closed_at": "2025-10-29T15:32:26+00:00"
+      },
+      {
+        "number": 349,
+        "title": "Bump selenium-webdriver from 4.36.0 to 4.37.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-20T12:16:50+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-27T12:22:06+00:00"
+      },
+      {
+        "number": 350,
+        "title": "Bump rspec from 3.13.1 to 3.13.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-21T11:17:55+00:00",
+        "merged_at": "2025-10-29T15:33:16+00:00",
+        "closed_at": "2025-10-29T15:33:16+00:00"
+      },
+      {
+        "number": 351,
+        "title": "Bump aws-sdk-s3 from 1.200.0 to 1.201.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-22T11:19:37+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-29T11:18:22+00:00"
+      },
+      {
+        "number": 352,
+        "title": "Bump aws-sdk-ses from 1.90.0 to 1.91.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-22T11:19:50+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-28T11:18:05+00:00"
+      },
+      {
+        "number": 353,
+        "title": "Bump aws-sdk-secretsmanager from 1.120.0 to 1.121.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-22T11:20:01+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-28T11:18:30+00:00"
+      },
+      {
+        "number": 354,
+        "title": "Bump aws-sdk-lambda from 1.161.0 to 1.162.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-22T11:20:11+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-24T11:15:39+00:00"
+      },
+      {
+        "number": 355,
+        "title": "Bump rails from 8.0.3 to 8.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-23T11:18:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-29T11:18:12+00:00"
+      },
+      {
+        "number": 356,
+        "title": "Bump view_component from 4.0.2 to 4.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-23T11:18:53+00:00",
+        "merged_at": "2025-10-29T15:36:45+00:00",
+        "closed_at": "2025-10-29T15:36:45+00:00"
+      },
+      {
+        "number": 357,
+        "title": "Bump aws-sdk-lambda from 1.161.0 to 1.163.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-24T11:15:37+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-29T11:17:59+00:00"
+      },
+      {
+        "number": 358,
+        "title": "Bump actions/upload-artifact from 4 to 5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-27T11:56:23+00:00",
+        "merged_at": "2025-10-29T15:40:19+00:00",
+        "closed_at": "2025-10-29T15:40:19+00:00"
+      },
+      {
+        "number": 359,
+        "title": "Bump selenium-webdriver from 4.36.0 to 4.38.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-27T12:22:03+00:00",
+        "merged_at": "2025-10-29T15:33:33+00:00",
+        "closed_at": "2025-10-29T15:33:33+00:00"
+      },
+      {
+        "number": 360,
+        "title": "Bump aws-sdk-ses from 1.90.0 to 1.92.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-28T11:18:02+00:00",
+        "merged_at": "2025-10-29T15:40:10+00:00",
+        "closed_at": "2025-10-29T15:40:10+00:00"
+      },
+      {
+        "number": 361,
+        "title": "Bump aws-sdk-secretsmanager from 1.120.0 to 1.122.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-28T11:18:28+00:00",
+        "merged_at": "2025-10-29T15:39:08+00:00",
+        "closed_at": "2025-10-29T15:39:08+00:00"
+      },
+      {
+        "number": 362,
+        "title": "Add retry logic to support multiple download configurations",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-28T21:39:08+00:00",
+        "merged_at": "2025-10-28T22:26:17+00:00",
+        "closed_at": "2025-10-28T22:26:17+00:00"
+      },
+      {
+        "number": 363,
+        "title": "Deploy: 2025-10-29",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-28T22:29:44+00:00",
+        "merged_at": "2025-10-29T16:35:52+00:00",
+        "closed_at": "2025-10-29T16:35:52+00:00"
+      },
+      {
+        "number": 364,
+        "title": "Bump aws-sdk-lambda from 1.161.0 to 1.164.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-29T11:17:57+00:00",
+        "merged_at": "2025-10-29T15:37:38+00:00",
+        "closed_at": "2025-10-29T15:37:38+00:00"
+      },
+      {
+        "number": 365,
+        "title": "Bump rails from 8.0.3 to 8.1.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-29T11:18:09+00:00",
+        "merged_at": "2025-10-29T15:18:44+00:00",
+        "closed_at": "2025-10-29T15:18:44+00:00"
+      },
+      {
+        "number": 366,
+        "title": "Bump aws-sdk-s3 from 1.200.0 to 1.202.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-29T11:18:19+00:00",
+        "merged_at": "2025-10-29T15:37:28+00:00",
+        "closed_at": "2025-10-29T15:37:28+00:00"
+      },
+      {
+        "number": 367,
+        "title": "Dep: 2025-10-29",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2025-10-29T15:35:21+00:00",
+        "merged_at": "2025-10-29T15:44:30+00:00",
+        "closed_at": "2025-10-29T15:44:30+00:00"
+      },
+      {
+        "number": 368,
+        "title": "Bump ruby-lsp from 0.26.1 to 0.26.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-30T11:17:44+00:00",
+        "merged_at": "2026-01-16T21:38:12+00:00",
+        "closed_at": "2026-01-16T21:38:12+00:00"
+      },
+      {
+        "number": 369,
+        "title": "Bump tailwindcss-ruby from 4.1.13 to 4.1.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-30T11:18:06+00:00",
+        "merged_at": null,
+        "closed_at": "2026-01-16T21:25:39+00:00"
+      },
+      {
+        "number": 370,
+        "title": "Bump paper_trail from 16.0.0 to 17.0.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-30T11:18:17+00:00",
+        "merged_at": "2026-01-16T20:28:21+00:00",
+        "closed_at": "2026-01-16T20:28:21+00:00"
+      },
+      {
+        "number": 371,
+        "title": "Bump turbo-rails from 2.0.17 to 2.0.20",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-30T11:18:31+00:00",
+        "merged_at": "2026-01-16T21:37:19+00:00",
+        "closed_at": "2026-01-16T21:37:19+00:00"
+      },
+      {
+        "number": 372,
+        "title": "Bump rubyzip from 3.2.0 to 3.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-30T11:18:50+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-03T11:22:08+00:00"
+      },
+      {
+        "number": 373,
+        "title": "Bump thruster from 0.1.15 to 0.1.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-30T11:19:05+00:00",
+        "merged_at": null,
+        "closed_at": "2026-01-19T13:28:48+00:00"
+      },
+      {
+        "number": 374,
+        "title": "Bump aws-sdk-lambda from 1.164.0 to 1.165.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-03T11:21:33+00:00",
+        "merged_at": "2026-01-16T21:37:08+00:00",
+        "closed_at": "2026-01-16T21:37:08+00:00"
+      },
+      {
+        "number": 375,
+        "title": "Bump rubyzip from 3.2.0 to 3.2.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-03T11:22:05+00:00",
+        "merged_at": "2026-01-16T21:33:11+00:00",
+        "closed_at": "2026-01-16T21:33:11+00:00"
+      },
+      {
+        "number": 376,
+        "title": "Bump brakeman from 7.1.0 to 7.1.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-04T11:16:25+00:00",
+        "merged_at": "2026-01-16T21:33:02+00:00",
+        "closed_at": "2026-01-16T21:33:02+00:00"
+      },
+      {
+        "number": 377,
+        "title": "Bump aws-sdk-s3 from 1.202.0 to 1.203.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-06T11:20:27+00:00",
+        "merged_at": null,
+        "closed_at": "2026-01-16T21:27:00+00:00"
+      },
+      {
+        "number": 378,
+        "title": "Bump solid_cache from 1.0.8 to 1.0.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-07T11:15:32+00:00",
+        "merged_at": null,
+        "closed_at": "2026-01-16T21:25:39+00:00"
+      },
+      {
+        "number": 379,
+        "title": "Bump actions/checkout from 5 to 6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-21T11:25:46+00:00",
+        "merged_at": "2026-01-16T22:05:51+00:00",
+        "closed_at": "2026-01-16T22:05:51+00:00"
+      },
+      {
+        "number": 380,
+        "title": "Bump actions/upload-artifact from 5 to 6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-12-15T11:15:51+00:00",
+        "merged_at": "2026-01-16T22:05:37+00:00",
+        "closed_at": "2026-01-16T22:05:37+00:00"
+      },
+      {
+        "number": 381,
+        "title": "Asap 280 non admin report download",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-01-16T16:08:58+00:00",
+        "merged_at": "2026-01-16T16:40:17+00:00",
+        "closed_at": "2026-01-16T16:40:17+00:00"
+      },
+      {
+        "number": 382,
+        "title": "Bump httparty from 0.23.1 to 0.24.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-16T16:58:02+00:00",
+        "merged_at": "2026-01-16T21:53:53+00:00",
+        "closed_at": "2026-01-16T21:53:53+00:00"
+      },
+      {
+        "number": 383,
+        "title": "Bump glob from 10.4.5 to 10.5.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-16T16:58:17+00:00",
+        "merged_at": "2026-01-16T21:51:24+00:00",
+        "closed_at": "2026-01-16T21:51:24+00:00"
+      },
+      {
+        "number": 384,
+        "title": "Remove some unused gems.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-01-16T21:15:29+00:00",
+        "merged_at": "2026-01-16T21:25:12+00:00",
+        "closed_at": "2026-01-16T21:25:12+00:00"
+      },
+      {
+        "number": 385,
+        "title": "Bump aws-sdk-s3 from 1.202.0 to 1.208.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-16T21:27:10+00:00",
+        "merged_at": "2026-01-16T21:32:15+00:00",
+        "closed_at": "2026-01-16T21:32:16+00:00"
+      },
+      {
+        "number": 386,
+        "title": "Bump action_text-trix from 2.1.15 to 2.1.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-16T21:27:40+00:00",
+        "merged_at": "2026-01-16T21:51:15+00:00",
+        "closed_at": "2026-01-16T21:51:15+00:00"
+      },
+      {
+        "number": 387,
+        "title": "Dependencies: 2026-01-16",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-01-16T21:40:08+00:00",
+        "merged_at": "2026-01-16T22:26:49+00:00",
+        "closed_at": "2026-01-16T22:26:49+00:00"
+      },
+      {
+        "number": 388,
+        "title": "Deploy: 2026-01-16",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-01-16T22:27:15+00:00",
+        "merged_at": "2026-01-16T22:37:03+00:00",
+        "closed_at": "2026-01-16T22:37:04+00:00"
+      },
+      {
+        "number": 389,
+        "title": "Bump thruster from 0.1.15 to 0.1.17",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:28:45+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:26+00:00"
+      },
+      {
+        "number": 390,
+        "title": "Bump brakeman from 7.1.1 to 7.1.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:29:03+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:27+00:00"
+      },
+      {
+        "number": 391,
+        "title": "Bump standard from 1.51.1 to 1.53.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:29:19+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:28+00:00"
+      },
+      {
+        "number": 392,
+        "title": "Bump debug from 1.11.0 to 1.11.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:29:35+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:28+00:00"
+      },
+      {
+        "number": 393,
+        "title": "Bump aws-sdk-s3 from 1.208.0 to 1.212.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:29:50+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:29+00:00"
+      },
+      {
+        "number": 394,
+        "title": "Bump bootsnap from 1.18.6 to 1.21.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:30:09+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:30+00:00"
+      },
+      {
+        "number": 395,
+        "title": "Bump turbo-rails from 2.0.20 to 2.0.21",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:30:26+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:30+00:00"
+      },
+      {
+        "number": 396,
+        "title": "Bump aws-sdk-secretsmanager from 1.122.0 to 1.128.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:30:40+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:31+00:00"
+      },
+      {
+        "number": 397,
+        "title": "Bump aws-sdk-lambda from 1.165.0 to 1.174.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:30:55+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:32+00:00"
+      },
+      {
+        "number": 398,
+        "title": "Bump view_component from 4.1.0 to 4.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-19T13:31:12+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:32+00:00"
+      },
+      {
+        "number": 399,
+        "title": "Add 2026-01 SLC crawl",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-01-27T16:12:23+00:00",
+        "merged_at": "2026-01-27T19:19:42+00:00",
+        "closed_at": "2026-01-27T19:19:42+00:00"
+      },
+      {
+        "number": 400,
+        "title": "Deploy: 2026-01-27",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-01-27T19:20:56+00:00",
+        "merged_at": "2026-01-27T19:33:26+00:00",
+        "closed_at": "2026-01-27T19:33:26+00:00"
+      },
+      {
+        "number": 401,
+        "title": "Bump aws-actions/configure-aws-credentials from 5 to 6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-05T11:54:15+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:33+00:00"
+      },
+      {
+        "number": 402,
+        "title": "Bump actions/upload-artifact from 6 to 7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-27T11:53:41+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:34+00:00"
+      },
+      {
+        "number": 403,
+        "title": "Bump opentofu/setup-opentofu from 1 to 2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-17T11:53:44+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T20:26:34+00:00"
+      },
+      {
+        "number": 404,
+        "title": "#1337 Prevent live lambda images from expiring.",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-04-07T16:07:47+00:00",
+        "merged_at": "2026-04-07T16:18:36+00:00",
+        "closed_at": "2026-04-07T16:18:36+00:00"
+      },
+      {
+        "number": 405,
+        "title": "Dependencies: 2026-04-07",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-04-07T17:23:00+00:00",
+        "merged_at": "2026-04-07T20:25:11+00:00",
+        "closed_at": "2026-04-07T20:25:11+00:00"
+      },
+      {
+        "number": 406,
+        "title": "Deploy: 2026-04-07",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "created_at": "2026-04-07T20:25:51+00:00",
+        "merged_at": "2026-04-07T20:57:07+00:00",
+        "closed_at": "2026-04-07T20:57:07+00:00"
+      },
+      {
+        "number": 407,
+        "title": "Bump aws-sdk-lambda from 1.176.0 to 1.177.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-08T11:58:21+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 408,
+        "title": "Bump thruster from 0.1.15 to 0.1.20",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-08T11:58:41+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 409,
+        "title": "Bump overcommit from 0.68.0 to 0.69.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-08T11:58:57+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 410,
+        "title": "Bump aws-sdk-s3 from 1.218.0 to 1.219.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-08T11:59:13+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 411,
+        "title": "Bump brakeman from 7.1.2 to 8.0.4",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-08T11:59:51+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 412,
+        "title": "Bump grape from 2.4.0 to 3.1.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-08T12:00:16+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-09T11:55:26+00:00"
+      },
+      {
+        "number": 413,
+        "title": "Bump puma from 7.2.0 to 8.0.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-09T11:54:29+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 414,
+        "title": "Bump selenium-webdriver from 4.41.0 to 4.42.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-09T11:55:05+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-10T11:54:51+00:00"
+      },
+      {
+        "number": 415,
+        "title": "Bump grape from 2.4.0 to 3.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-09T11:55:23+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-16T11:54:51+00:00"
+      },
+      {
+        "number": 416,
+        "title": "Bump selenium-webdriver from 4.41.0 to 4.43.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-10T11:54:49+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 417,
+        "title": "Bump smarter_csv from 1.16.2 to 1.16.3",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-15T11:54:58+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 418,
+        "title": "Bump grape from 2.4.0 to 3.2.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-16T11:54:49+00:00",
+        "merged_at": null,
+        "closed_at": null
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforamerica/asap_pdf",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.7174,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 500,
+      "pull_requests": 414,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 3,
+      "Code for America": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 14,
+    "release_frequency_per_month": null,
+    "fork_count": 7,
+    "burstiness_cv": null,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 1,
+    "bot_commit_count": 93,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 46.3,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 4,
+    "time_to_first_response_prs_sample_size": 100,
+    "readme_last_updated": "2026-04-09T15:00:06+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 1.0,
+    "stale_issue_count": 3,
+    "open_issue_count": 3,
+    "median_pr_review_turnaround_hours": 22.3,
+    "avg_review_comments_per_pr": 0.46,
+    "herfindahl_hirschman_index": 6343.8,
+    "hhi_no_bots": 6098.9,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 3,
+    "contributor_org_types": {
+      "government": 1,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 2,
+      "unknown": 1
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0034,
+    "core_contributor_count": 1,
+    "periphery_contributor_count": 3,
+    "core_periphery_ratio": 0.25,
+    "network_density": 0.5,
+    "avg_degree_centrality": 0.5,
+    "pr_review_edges": [
+      {
+        "author": "lkacenja",
+        "reviewer": "4dh"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "embarnard"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "allisonmorgan",
+        "reviewer": "lkacenja"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      },
+      {
+        "author": "lkacenja",
+        "reviewer": "allisonmorgan"
+      }
+    ]
+  },
+  "crawled_at": "2026-04-20T10:13:25.402468+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "lkacenja",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 1.0,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "4dh",
+      "degree_centrality": 0.3333,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "allisonmorgan",
+      "degree_centrality": 0.3333,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/asap_pdf",
+      "login": "embarnard",
+      "degree_centrality": 0.3333,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "codeforamerica/asap_pdf",
+    "weekly_snapshots": [
+      {
+        "week_start": "2025-01-27",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 9,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-02-03",
+        "total_commits": 12,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 21,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-02-10",
+        "total_commits": 18,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 39,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-17",
+        "total_commits": 29,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 68,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-24",
+        "total_commits": 37,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 105,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-03-03",
+        "total_commits": 78,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 183,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-10",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 185,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-17",
+        "total_commits": 45,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 230,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-24",
+        "total_commits": 38,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 268,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-31",
+        "total_commits": 44,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 312,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-04-07",
+        "total_commits": 16,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 328,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-04-14",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 335,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-04-21",
+        "total_commits": 5,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 340,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-04-28",
+        "total_commits": 16,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 356,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-05-05",
+        "total_commits": 24,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 380,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-05-12",
+        "total_commits": 26,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 406,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 31,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 437,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 13,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 450,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-09",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 452,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-16",
+        "total_commits": 11,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 463,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-23",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 466,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 18,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 484,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-07",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 486,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-14",
+        "total_commits": 6,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 492,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-21",
+        "total_commits": 16,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 508,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-28",
+        "total_commits": 10,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 518,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-08-04",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 522,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-08-11",
+        "total_commits": 28,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 550,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-08-18",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 558,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-01",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 563,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-15",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 569,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-22",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 572,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-29",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 581,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-06",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 583,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 588,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-27",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 592,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 597,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 599,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 603,
+        "cumulative_contributors": 5
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforamerica/asap_pdf",
+        "contributor_id": "lkacenja",
+        "login": "lkacenja",
+        "name": "Leo Kacenjar",
+        "email": "lkacenja@gmail.com",
+        "first_commit_date": "2025-03-03T22:04:31+00:00",
+        "last_commit_date": "2026-04-07T20:57:07+00:00",
+        "duration_days": 399,
+        "total_commits": 309,
+        "active_weeks": 33,
+        "total_weeks_span": 57,
+        "activity_ratio": 0.5789,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 9.36
+      },
+      {
+        "repo_full_name": "codeforamerica/asap_pdf",
+        "contributor_id": "xdotcommer",
+        "login": "xdotcommer",
+        "name": "Michael Cowden",
+        "email": "michael.cowden@gmail.com",
+        "first_commit_date": "2025-01-31T21:38:58+00:00",
+        "last_commit_date": "2025-03-25T19:27:55+00:00",
+        "duration_days": 52,
+        "total_commits": 161,
+        "active_weeks": 8,
+        "total_weeks_span": 7,
+        "activity_ratio": 1.1429,
+        "status": "departed",
+        "departed_weeks_ago": 55,
+        "avg_commits_per_active_week": 20.12
+      },
+      {
+        "repo_full_name": "codeforamerica/asap_pdf",
+        "contributor_id": "dependabot[bot]",
+        "login": "dependabot[bot]",
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "first_commit_date": "2025-02-11T20:58:17+00:00",
+        "last_commit_date": "2026-01-16T20:28:21+00:00",
+        "duration_days": 338,
+        "total_commits": 103,
+        "active_weeks": 20,
+        "total_weeks_span": 48,
+        "activity_ratio": 0.4167,
+        "status": "departed",
+        "departed_weeks_ago": 13,
+        "avg_commits_per_active_week": 5.15
+      },
+      {
+        "repo_full_name": "codeforamerica/asap_pdf",
+        "contributor_id": "allisonmorgan",
+        "login": "allisonmorgan",
+        "name": "Allison Morgan",
+        "email": "allison.morgan@gmail.com",
+        "first_commit_date": "2025-02-28T21:38:42+00:00",
+        "last_commit_date": "2025-07-28T16:18:22+00:00",
+        "duration_days": 149,
+        "total_commits": 29,
+        "active_weeks": 16,
+        "total_weeks_span": 21,
+        "activity_ratio": 0.7619,
+        "status": "departed",
+        "departed_weeks_ago": 37,
+        "avg_commits_per_active_week": 1.81
+      },
+      {
+        "repo_full_name": "codeforamerica/asap_pdf",
+        "contributor_id": "jennthom",
+        "login": "jennthom",
+        "name": "Jenn Thom",
+        "email": "jenn.thom@gmail.com",
+        "first_commit_date": "2026-04-09T15:00:06+00:00",
+        "last_commit_date": "2026-04-09T15:00:06+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "jennthom",
+        "week_start": "2026-04-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-03-03",
+        "commits": 35,
+        "lines_added": 29455,
+        "lines_removed": 44528
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-03-17",
+        "commits": 8,
+        "lines_added": 1110,
+        "lines_removed": 214
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-03-24",
+        "commits": 34,
+        "lines_added": 1070,
+        "lines_removed": 593
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-03-31",
+        "commits": 41,
+        "lines_added": 859,
+        "lines_removed": 31208
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-04-07",
+        "commits": 6,
+        "lines_added": 691,
+        "lines_removed": 198
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-04-14",
+        "commits": 6,
+        "lines_added": 1007,
+        "lines_removed": 2001
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-04-21",
+        "commits": 2,
+        "lines_added": 45,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-04-28",
+        "commits": 8,
+        "lines_added": 1274,
+        "lines_removed": 772
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-05-05",
+        "commits": 15,
+        "lines_added": 8314,
+        "lines_removed": 621
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-05-12",
+        "commits": 18,
+        "lines_added": 2403,
+        "lines_removed": 1298
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-05-19",
+        "commits": 26,
+        "lines_added": 2585,
+        "lines_removed": 1470
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-06-02",
+        "commits": 5,
+        "lines_added": 1692,
+        "lines_removed": 1176
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-06-09",
+        "commits": 1,
+        "lines_added": 217,
+        "lines_removed": 79
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-06-16",
+        "commits": 5,
+        "lines_added": 2072,
+        "lines_removed": 1443
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-06-23",
+        "commits": 2,
+        "lines_added": 147,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-06-30",
+        "commits": 7,
+        "lines_added": 484,
+        "lines_removed": 1223
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-07-07",
+        "commits": 1,
+        "lines_added": 87,
+        "lines_removed": 96
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-07-14",
+        "commits": 2,
+        "lines_added": 2265,
+        "lines_removed": 720
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-07-21",
+        "commits": 7,
+        "lines_added": 100,
+        "lines_removed": 986
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-07-28",
+        "commits": 8,
+        "lines_added": 2004,
+        "lines_removed": 752
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-08-04",
+        "commits": 4,
+        "lines_added": 786,
+        "lines_removed": 364
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-08-11",
+        "commits": 17,
+        "lines_added": 492,
+        "lines_removed": 259
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-08-18",
+        "commits": 8,
+        "lines_added": 3253,
+        "lines_removed": 2034
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-09-01",
+        "commits": 5,
+        "lines_added": 1998,
+        "lines_removed": 928
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-09-15",
+        "commits": 6,
+        "lines_added": 1172,
+        "lines_removed": 462
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-09-22",
+        "commits": 3,
+        "lines_added": 79,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-09-29",
+        "commits": 9,
+        "lines_added": 2157,
+        "lines_removed": 1731
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-10-06",
+        "commits": 2,
+        "lines_added": 33,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-10-13",
+        "commits": 5,
+        "lines_added": 141,
+        "lines_removed": 68
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2025-10-27",
+        "commits": 4,
+        "lines_added": 381,
+        "lines_removed": 283
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2026-01-12",
+        "commits": 4,
+        "lines_added": 230,
+        "lines_removed": 184
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2026-01-26",
+        "commits": 2,
+        "lines_added": 264,
+        "lines_removed": 66
+      },
+      {
+        "contributor_id": "lkacenja",
+        "week_start": "2026-04-06",
+        "commits": 3,
+        "lines_added": 574,
+        "lines_removed": 1012
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-02-10",
+        "commits": 4,
+        "lines_added": 18,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-02-17",
+        "commits": 5,
+        "lines_added": 30,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-02-24",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-03-03",
+        "commits": 6,
+        "lines_added": 179,
+        "lines_removed": 179
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-03-17",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-04-07",
+        "commits": 10,
+        "lines_added": 57,
+        "lines_removed": 55
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-04-14",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-04-21",
+        "commits": 1,
+        "lines_added": 7,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-04-28",
+        "commits": 6,
+        "lines_added": 18,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-05-05",
+        "commits": 7,
+        "lines_added": 48,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-05-12",
+        "commits": 7,
+        "lines_added": 39,
+        "lines_removed": 39
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-05-19",
+        "commits": 4,
+        "lines_added": 16,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-06-02",
+        "commits": 8,
+        "lines_added": 28,
+        "lines_removed": 28
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-06-16",
+        "commits": 6,
+        "lines_added": 36,
+        "lines_removed": 34
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-06-30",
+        "commits": 11,
+        "lines_added": 38,
+        "lines_removed": 38
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-07-14",
+        "commits": 3,
+        "lines_added": 11,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-07-21",
+        "commits": 9,
+        "lines_added": 47,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-07-28",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-08-11",
+        "commits": 11,
+        "lines_added": 43,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-01-12",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-02-24",
+        "commits": 2,
+        "lines_added": 163,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-03-03",
+        "commits": 2,
+        "lines_added": 12,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-03-10",
+        "commits": 2,
+        "lines_added": 536,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-03-17",
+        "commits": 6,
+        "lines_added": 202,
+        "lines_removed": 176
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-03-24",
+        "commits": 1,
+        "lines_added": 42,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-03-31",
+        "commits": 3,
+        "lines_added": 100,
+        "lines_removed": 56
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-04-21",
+        "commits": 2,
+        "lines_added": 53,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-04-28",
+        "commits": 2,
+        "lines_added": 175,
+        "lines_removed": 70
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-05-05",
+        "commits": 2,
+        "lines_added": 204,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-05-12",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-05-19",
+        "commits": 1,
+        "lines_added": 669,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-06-09",
+        "commits": 1,
+        "lines_added": 237,
+        "lines_removed": 244
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-06-23",
+        "commits": 1,
+        "lines_added": 31,
+        "lines_removed": 33
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-07-07",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-07-14",
+        "commits": 1,
+        "lines_added": 130,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "allisonmorgan",
+        "week_start": "2025-07-28",
+        "commits": 1,
+        "lines_added": 9,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-01-27",
+        "commits": 9,
+        "lines_added": 4170,
+        "lines_removed": 309
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-02-03",
+        "commits": 12,
+        "lines_added": 2233,
+        "lines_removed": 478
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-02-10",
+        "commits": 14,
+        "lines_added": 10187,
+        "lines_removed": 746
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-02-17",
+        "commits": 24,
+        "lines_added": 1238,
+        "lines_removed": 1120
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-02-24",
+        "commits": 34,
+        "lines_added": 3177,
+        "lines_removed": 269
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-03-03",
+        "commits": 35,
+        "lines_added": 70400,
+        "lines_removed": 47080
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-03-17",
+        "commits": 30,
+        "lines_added": 663,
+        "lines_removed": 818
+      },
+      {
+        "contributor_id": "xdotcommer",
+        "week_start": "2025-03-24",
+        "commits": 3,
+        "lines_added": 180,
+        "lines_removed": 91
+      }
+    ],
+    "total_weeks": 39,
+    "total_unique_contributors": 5,
+    "new_contributor_rate_per_month": 0.35
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforamerica/asap_pdf",
+    "issues": [
+      {
+        "number": 20,
+        "title": "Tailwind version prevents css compilation",
+        "state": "closed",
+        "author_login": "lkacenja",
+        "closed_by_login": "xdotcommer",
+        "created_at": "2025-02-20T16:09:43+00:00",
+        "closed_at": "2025-02-27T18:32:36+00:00",
+        "updated_at": "2025-02-27T18:32:36+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 7.1
+      },
+      {
+        "number": 161,
+        "title": "Related Code from Luxembourg - simplA11yPDFCrawler",
+        "state": "open",
+        "author_login": "mgifford",
+        "closed_by_login": null,
+        "created_at": "2025-05-31T12:44:42+00:00",
+        "closed_at": null,
+        "updated_at": "2025-06-02T19:32:01+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 227,
+        "title": "suggested updates to crawler.py",
+        "state": "open",
+        "author_login": "raybellwaves",
+        "closed_by_login": null,
+        "created_at": "2025-07-21T02:59:50+00:00",
+        "closed_at": null,
+        "updated_at": "2025-07-24T20:20:33+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 314,
+        "title": "Docs might need updating",
+        "state": "open",
+        "author_login": "jrichview",
+        "closed_by_login": null,
+        "created_at": "2025-09-22T19:25:12+00:00",
+        "closed_at": null,
+        "updated_at": "2025-10-01T21:45:05+00:00",
+        "comment_count": 8,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 4,
+    "open_issues": 3,
+    "closed_issues": 1,
+    "avg_comments_per_issue": 2.5,
+    "median_time_to_close_days": 7.1,
+    "unique_openers": 4,
+    "unique_closers": 1,
+    "top_openers": {
+      "lkacenja": 1,
+      "mgifford": 1,
+      "raybellwaves": 1,
+      "jrichview": 1
+    },
+    "top_closers": {
+      "xdotcommer": 1
+    }
+  }
+}

@@ -2,13 +2,15 @@
 
 These files are real output from the Civic Tech Git Crawler, included so you can browse the tool's output without running it yourself.
 
+The files in this directory correspond to the **March 13, 2026 snapshot** that backs the statistical analyses in Sections 4.1–4.6 of the paper. A subsequent **April 20, 2026 full re-crawl** — extending the dataset with per-(contributor, week) lines added/removed — is in [`april_2026_refresh/`](april_2026_refresh/) and backs Section 4.7 of the paper.
+
 ---
 
 ## Data Collection Details
 
 | | |
 |---|---|
-| **Date collected** | 12 March 2026 |
+| **Date collected** | 13 March 2026 |
 | **Tool version** | v0.4.0 |
 | **Configuration** | `config.example.yaml` (included in repository root) |
 | **Repositories** | 29 repos from 10 organisations |
