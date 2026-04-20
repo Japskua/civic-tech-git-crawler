@@ -1,6 +1,8 @@
 import logging
 import time
+from collections.abc import Iterator
 from dataclasses import dataclass
+from datetime import datetime
 from typing import Any
 
 import httpx
@@ -40,6 +42,22 @@ class StatsCommitActivityRecord:
     week: int           # unix timestamp (seconds) of the week start (Sunday)
     total: int
     days: list[int]
+
+
+@dataclass(frozen=True, slots=True)
+class CommitRecord:
+    """Commit data fetched in bulk via GraphQL (100 commits per API call).
+
+    Replaces the REST per-commit-stats pattern that costs N API calls for N
+    commits. For a repo with 8k commits: 80 GraphQL calls instead of 8000.
+    """
+    sha: str
+    additions: int
+    deletions: int
+    committed_date: datetime
+    author_email: str
+    author_name: str
+    author_login: str | None
 
 
 class GitHubClient:
@@ -259,6 +277,120 @@ class GitHubClient:
             if data and len(data) > 0:
                 return data[0].get("commit", {}).get("author", {}).get("date")
         return None
+
+    def execute_graphql(
+        self,
+        query: str,
+        variables: dict | None = None,
+    ) -> dict | None:
+        """Execute a GraphQL query. Returns the 'data' payload or None on error."""
+        self._rate_limiter.wait_if_needed()
+        payload: dict[str, Any] = {"query": query}
+        if variables:
+            payload["variables"] = variables
+        try:
+            resp = self._httpx.post("/graphql", json=payload)
+        except httpx.HTTPError as e:
+            logger.warning("GraphQL transport error: %s", e)
+            return None
+        if resp.status_code != 200:
+            logger.warning(
+                "GraphQL returned HTTP %d: %s", resp.status_code, resp.text[:200]
+            )
+            return None
+        body = resp.json()
+        if body.get("errors"):
+            logger.warning("GraphQL errors: %s", body["errors"])
+        return body.get("data")
+
+    def iter_commits_graphql(self, slug: str) -> Iterator[CommitRecord]:
+        """Yield every commit on the default branch via GraphQL, 100 per API call.
+
+        Each CommitRecord includes additions/deletions/committedDate/author, so
+        callers don't need the per-commit REST stats call. For a repo with N
+        commits this costs ceil(N/100) API calls instead of N.
+        """
+        try:
+            owner, name = slug.split("/", 1)
+        except ValueError:
+            logger.warning("Invalid slug %r", slug)
+            return
+
+        query = """
+        query ($owner: String!, $name: String!, $cursor: String) {
+          repository(owner: $owner, name: $name) {
+            defaultBranchRef {
+              target {
+                ... on Commit {
+                  history(first: 100, after: $cursor) {
+                    pageInfo { hasNextPage endCursor }
+                    nodes {
+                      oid
+                      additions
+                      deletions
+                      committedDate
+                      author {
+                        email
+                        name
+                        user { login }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        """
+        cursor: str | None = None
+        while True:
+            data = self.execute_graphql(
+                query, {"owner": owner, "name": name, "cursor": cursor}
+            )
+            if data is None:
+                return
+            repo_data = data.get("repository")
+            if not repo_data:
+                return
+            branch = repo_data.get("defaultBranchRef")
+            if not branch:
+                return
+            target = (branch or {}).get("target") or {}
+            history = target.get("history")
+            if not history:
+                return
+            for node in history.get("nodes") or []:
+                if not node:
+                    continue
+                sha = node.get("oid")
+                if not sha:
+                    continue
+                committed_raw = node.get("committedDate")
+                try:
+                    committed_date = datetime.fromisoformat(
+                        committed_raw.replace("Z", "+00:00")
+                    ) if committed_raw else None
+                except (AttributeError, ValueError):
+                    committed_date = None
+                if committed_date is None:
+                    continue
+                author = node.get("author") or {}
+                user = author.get("user") or {}
+                yield CommitRecord(
+                    sha=sha,
+                    additions=int(node.get("additions") or 0),
+                    deletions=int(node.get("deletions") or 0),
+                    committed_date=committed_date,
+                    author_email=author.get("email") or "unknown",
+                    author_name=author.get("name") or "",
+                    author_login=user.get("login"),
+                )
+            page_info = history.get("pageInfo") or {}
+            if not page_info.get("hasNextPage"):
+                return
+            cursor = page_info.get("endCursor")
+            if not cursor:
+                return
 
     @property
     def rate_limit_remaining(self) -> int:
