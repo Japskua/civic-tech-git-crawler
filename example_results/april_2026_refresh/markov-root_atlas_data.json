@@ -1,0 +1,466 @@
+{
+  "repo_metrics": {
+    "full_name": "markov-root/atlas",
+    "name": "atlas",
+    "description": null,
+    "num_developers": 2,
+    "total_commits": 48,
+    "languages": {
+      "Astro": 217233,
+      "TypeScript": 144089,
+      "Typst": 5722,
+      "CSS": 3775,
+      "JavaScript": 1854,
+      "Dockerfile": 1195
+    },
+    "primary_language": "Astro",
+    "first_commit_date": "2026-01-10T01:46:11+00:00",
+    "last_commit_date": "2026-03-26T15:02:36+00:00",
+    "license_spdx": null,
+    "license_name": null,
+    "is_osi_approved": false,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": false,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 0,
+    "stars": 8,
+    "watchers": 0,
+    "forks": 5,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:Dockerfile",
+      "file:Dockerfile"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Deploy",
+      "pages-build-deployment"
+    ],
+    "deployments_count": 104,
+    "created_at": "2025-05-27T00:19:24+00:00",
+    "updated_at": "2026-03-26T15:06:52+00:00",
+    "pushed_at": "2026-03-26T15:02:55+00:00",
+    "size_kb": 1665351
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "markov-root/atlas",
+      "login": "markov-root",
+      "name": "markov-root",
+      "num_commits": 1,
+      "additions": 8,
+      "deletions": 2,
+      "avg_additions_per_commit": 8.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "markov-root/atlas",
+      "login": null,
+      "name": "F\u00e9lix Dorn",
+      "num_commits": 46,
+      "additions": 24915,
+      "deletions": 6639,
+      "avg_additions_per_commit": 541.63,
+      "avg_deletions_per_commit": 144.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "markov-root/atlas",
+      "login": "felixdorn",
+      "name": "F\u00e9lix Dorn",
+      "num_commits": 1,
+      "additions": 2,
+      "deletions": 2,
+      "avg_additions_per_commit": 2.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "markov-root/atlas",
+    "pr_count_total": 2,
+    "pr_count_merged": 1,
+    "pr_count_open": 1,
+    "pr_count_closed_unmerged": 0,
+    "prs": [
+      {
+        "number": 4,
+        "title": "fix: Prevent FAQ double render on mobile",
+        "state": "closed",
+        "author_login": "yel-hadd",
+        "created_at": "2025-10-12T23:32:25+00:00",
+        "merged_at": "2025-11-02T14:41:52+00:00",
+        "closed_at": "2025-11-02T14:41:52+00:00"
+      },
+      {
+        "number": 6,
+        "title": "fix(loader): accept 'source' as fallback for Iframe src attribute",
+        "state": "open",
+        "author_login": "Sappique",
+        "created_at": "2026-04-14T18:27:06+00:00",
+        "merged_at": null,
+        "closed_at": null
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "markov-root/atlas",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.5,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 48,
+      "pull_requests": 2,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 2
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 5,
+    "burstiness_cv": null,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 2,
+        "days_to_close": 236.1
+      },
+      {
+        "issue_number": 1,
+        "days_to_close": 236.1
+      }
+    ],
+    "median_defect_resolution_days": 236.1,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 4,
+    "time_to_first_response_prs_sample_size": 2,
+    "readme_last_updated": null,
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 0.0,
+    "stale_issue_count": 0,
+    "open_issue_count": 1,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": 10000.0,
+    "hhi_no_bots": 5000.0,
+    "hhi_known_orgs_only": null,
+    "unknown_org_contributor_count": 2,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 0,
+      "unknown": 3
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-04-20T10:22:29.659024+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "markov-root/atlas",
+    "weekly_snapshots": [
+      {
+        "week_start": "2026-01-05",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 3,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 10,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2026-02-02",
+        "total_commits": 20,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-02-09",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 32,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-02-16",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 34,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-02-23",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 40,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 41,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-03-23",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 48,
+        "cumulative_contributors": 3
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "markov-root/atlas",
+        "contributor_id": "git@xfe.li",
+        "login": null,
+        "name": "F\u00e9lix Dorn",
+        "email": "git@xfe.li",
+        "first_commit_date": "2026-01-10T01:46:11+00:00",
+        "last_commit_date": "2026-03-23T14:12:48+00:00",
+        "duration_days": 72,
+        "total_commits": 46,
+        "active_weeks": 8,
+        "total_weeks_span": 10,
+        "activity_ratio": 0.8,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 5.75
+      },
+      {
+        "repo_full_name": "markov-root/atlas",
+        "contributor_id": "markov-root",
+        "login": "markov-root",
+        "name": "markov-root",
+        "email": "183495292+markov-root@users.noreply.github.com",
+        "first_commit_date": "2026-03-26T15:02:36+00:00",
+        "last_commit_date": "2026-03-26T15:02:36+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "markov-root/atlas",
+        "contributor_id": "felixdorn",
+        "login": "felixdorn",
+        "name": "F\u00e9lix Dorn",
+        "email": "github@felixdorn.fr",
+        "first_commit_date": "2026-02-02T15:30:46+00:00",
+        "last_commit_date": "2026-02-02T15:30:46+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "markov-root",
+        "week_start": "2026-03-23",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-01-05",
+        "commits": 3,
+        "lines_added": 10674,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-01-26",
+        "commits": 7,
+        "lines_added": 3111,
+        "lines_removed": 2152
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-02-02",
+        "commits": 19,
+        "lines_added": 5642,
+        "lines_removed": 2123
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-02-09",
+        "commits": 2,
+        "lines_added": 9,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-02-16",
+        "commits": 2,
+        "lines_added": 1415,
+        "lines_removed": 1188
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-02-23",
+        "commits": 6,
+        "lines_added": 3545,
+        "lines_removed": 1050
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-03-02",
+        "commits": 1,
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "git@xfe.li",
+        "week_start": "2026-03-23",
+        "commits": 6,
+        "lines_added": 507,
+        "lines_removed": 107
+      },
+      {
+        "contributor_id": "felixdorn",
+        "week_start": "2026-02-02",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      }
+    ],
+    "total_weeks": 8,
+    "total_unique_contributors": 3,
+    "new_contributor_rate_per_month": 1.19
+  },
+  "issue_analytics": {
+    "repo_full_name": "markov-root/atlas",
+    "issues": [
+      {
+        "number": 1,
+        "title": "Bug: Toggle collapse on sidebar",
+        "state": "closed",
+        "author_login": "markov-root",
+        "closed_by_login": "markov-root",
+        "created_at": "2025-06-11T13:37:47+00:00",
+        "closed_at": "2026-02-02T15:48:00+00:00",
+        "updated_at": "2026-02-02T15:48:00+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 236.09
+      },
+      {
+        "number": 2,
+        "title": "Bug: Flash 404 on page load",
+        "state": "closed",
+        "author_login": "markov-root",
+        "closed_by_login": "markov-root",
+        "created_at": "2025-06-11T13:39:15+00:00",
+        "closed_at": "2026-02-02T15:48:01+00:00",
+        "updated_at": "2026-02-02T15:48:01+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 236.09
+      },
+      {
+        "number": 3,
+        "title": "FAQ Page double render on mobile",
+        "state": "closed",
+        "author_login": "markov-root",
+        "closed_by_login": "markov-root",
+        "created_at": "2025-07-15T08:23:40+00:00",
+        "closed_at": "2025-11-02T14:41:52+00:00",
+        "updated_at": "2025-11-02T14:41:53+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 110.26
+      },
+      {
+        "number": 5,
+        "title": "Interactive figures in Risks, Governance, and Evaluations chapters show infinite loading spinner",
+        "state": "open",
+        "author_login": "Sappique",
+        "closed_by_login": null,
+        "created_at": "2026-04-14T18:23:02+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-14T18:23:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 4,
+    "open_issues": 1,
+    "closed_issues": 3,
+    "avg_comments_per_issue": 0,
+    "median_time_to_close_days": 236.09,
+    "unique_openers": 2,
+    "unique_closers": 1,
+    "top_openers": {
+      "markov-root": 3,
+      "Sappique": 1
+    },
+    "top_closers": {
+      "markov-root": 3
+    }
+  }
+}

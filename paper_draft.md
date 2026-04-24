@@ -4,7 +4,7 @@
 
 ## Abstract
 
-Civic technology — software developed to enhance civic engagement, government transparency, and public participation — depends heavily on open-source communities. Yet the sustainability, contributor dynamics, and community health of these projects remain poorly understood at scale. This paper presents a methodological framework and automated toolchain for analysing civic tech repositories using the GitHub API, implementing 25+ metrics from the CHAOSS (Community Health Analytics in Open Source Software) framework and academic literature on open-source sustainability. We apply the framework to 29 repositories from 10 organisations spanning electoral systems, government services, environmental monitoring, mesh networking, and digital rights across six continents. Our analysis of 694 contributors (642 human, 52 bot) and 79,084 commits reveals that civic tech projects exhibit critically low contributor concentration (median bus factor 2, range 1–11), high organisational concentration (median HHI 2,606 without bots), and substantial community responsiveness variation (median issue response time 35.5 hours, range 0–7,300 hours). Bot contributors significantly inflate organisational concentration metrics (Wilcoxon signed-rank p = 6 × 10⁻⁵) but do not affect bus factor. Of 136 metric pairs tested, 36 Spearman correlations survive Benjamini–Hochberg FDR correction, with the strongest being bus factor and HHI (ρ = −0.935). Partial correlation analysis controlling for project size reveals that five of ten key relationships are confounded by team size, while five remain robust. Mature projects (≥ 5.2 years) have significantly more developers (U, p = 0.003, δ = 0.64) and higher community health scores (p = 0.012, δ = 0.54) than younger projects. We discuss implications for civic tech sustainability, contributor onboarding, and the application of CHAOSS metrics to domain-specific open-source ecosystems.
+Civic technology — software developed to enhance civic engagement, government transparency, and public participation — depends heavily on open-source communities. Yet the sustainability, contributor dynamics, and community health of these projects remain poorly understood at scale. This paper presents a methodological framework and automated toolchain for analysing civic tech repositories using the GitHub API, implementing 25+ metrics from the CHAOSS (Community Health Analytics in Open Source Software) framework and academic literature on open-source sustainability. We apply the framework to 29 repositories from 10 organisations spanning electoral systems, government services, environmental monitoring, mesh networking, and digital rights across six continents. Our analysis of 694 contributors (642 human, 52 bot) and 79,084 commits reveals that civic tech projects exhibit critically low contributor concentration (median bus factor 2, range 1–11), high organisational concentration (median HHI 2,606 without bots), and substantial community responsiveness variation (median issue response time 35.5 hours, range 0–7,300 hours). Bot contributors significantly inflate organisational concentration metrics (Wilcoxon signed-rank p = 6 × 10⁻⁵) but do not affect bus factor. Of 136 metric pairs tested, 36 Spearman correlations survive Benjamini–Hochberg FDR correction, with the strongest being bus factor and HHI (ρ = −0.935). Partial correlation analysis controlling for project size reveals that five of ten key relationships are confounded by team size, while five remain robust. Mature projects (≥ 5.2 years) have significantly more developers (U, p = 0.003, δ = 0.64) and higher community health scores (p = 0.012, δ = 0.54) than younger projects. An effort-resolved analysis of 12,449 contributor-weeks (893 contributors, 19.0 M lines added, 17.6 M lines removed) shows that 86% of active weeks across the dataset are dominated by a single contributor and that effort-weighted concentration (median Gini 0.82) is systematically higher than commit-count concentration (mean Δ = +0.068), indicating that count-based sustainability metrics under-estimate true concentration. We discuss implications for civic tech sustainability, contributor onboarding, and the application of CHAOSS metrics to domain-specific open-source ecosystems.
 
 ---
 
@@ -104,10 +104,11 @@ The dataset spans 14 primary programming languages (Python, Java, JavaScript, Ty
 
 ### 3.3 Data Collection
 
-Data was collected using our open-source Python CLI tool (`civic-tech-crawler`) in March 2026. The tool interacts with the GitHub REST and GraphQL APIs to collect:
+Data was collected using our open-source Python CLI tool (`civic-tech-crawler`). An initial collection in March 2026 produced the aggregate health metrics; a full re-crawl in April 2026 refreshed the dataset and added an effort-resolved view of the default-branch commit history (§4.7). The tool interacts with the GitHub REST and GraphQL APIs to collect:
 
 - Repository metadata (creation date, languages, license, topics, community profile)
-- Commit history via `GET /repos/{owner}/{repo}/stats/contributors`
+- Weekly contributor stats via `GET /repos/{owner}/{repo}/stats/contributors` (with an iterative-retry wrapper around HTTP 202 responses, since GitHub computes these statistics asynchronously)
+- **Per-commit effort data** — oid, `additions`, `deletions`, `committedDate` and author info — fetched in 100-commit batches via the GraphQL `Repository.defaultBranchRef.target.history` connection. This replaces a naive per-commit REST call pattern that was otherwise too slow to run against the full dataset, and yields `contributor_weekly_activity.csv`, a (repository × contributor × ISO-week) table of `commits`, `lines_added` and `lines_removed` covering 12,449 rows
 - Issue and pull request data via paginated API endpoints
 - Contributor profiles via `GET /users/{login}`
 - Technology detection (CI/CD, cloud, AI/ML) via file and dependency scanning
@@ -286,6 +287,76 @@ Mature projects have significantly more developers (p = 0.003, large effect), hi
 
 **Other factors.** Cloud infrastructure usage (20 of 29 repos) and OSI-approved license presence (10 of 29) showed no significant associations with health metrics. AI/ML detection (only 2 repos) had insufficient sample size for meaningful comparison.
 
+### 4.7 Effort Concentration and Code Churn (Weekly LOC Analysis)
+
+The metrics presented so far rely on *counts* — counts of contributors, of commits, of issues. To capture effort directly, we extended the data collection to record, for every (contributor, ISO-week) pair in a repository's default-branch history, the number of commits together with the **lines added** and **lines removed** in those commits (see §3.3). Across the 29 repositories this produced 12,449 contributor-weeks spanning 2015-02-16 to 2026-04-13, with 893 unique contributors and cumulative totals of 80,807 commits, 19.0 million lines added and 17.6 million lines removed.
+
+**On the interpretation of line counts.** GitHub reports `additions` and `deletions` per commit as non-negative integers derived from the diff against the commit's first parent. Consequently, every row in `contributor_weekly_activity.csv` has `lines_added ≥ 0` and `lines_removed ≥ 0`; no individual observation is negative. However, the *cumulative* `additions − deletions` for a repository can be negative when summed over its default-branch history. This occurs when the traversed history contains large deletions that are not offset by equally large additions in the same traversal — for example, when a repository's early history included a branch-surgery event, when bulk data files are replaced by smaller versions over many commits, or when vendored directories (e.g. `node_modules`, compiled assets) that were committed early are later purged. Two repositories in our dataset exhibit net-negative LOC: DemocracyClub/UK-Polling-Stations (+6.3M / −9.7M → −3.4M net) and CodeForAfrica/sensors.AFRICA (+388K / −403K → −15K net). In UK-Polling-Stations the net-negative balance is concentrated in two 2016 weeks that each removed ≈2.95 million lines — consistent with a one-off purge of committed generated data. We therefore report `lines_added` and `lines_removed` separately throughout, and avoid aggregate "net LOC" as a primary metric.
+
+The three analyses below are enabled by this per-week effort data.
+
+**(A) Weekly elephant factor (time-resolved contributor concentration).** For each repository we computed, for every week that had at least one line of change, the share of that week's total `lines_added + lines_removed` contributed by the single busiest author that week. Averaged over a repository's active weeks, this yields a **mean top-share**. Weeks where the top-share exceeds 50% are termed *elephant weeks*; weeks where it exceeds 99.9% are *single-contributor weeks*. Unlike the static elephant factor, this metric is resolved in time and captures week-by-week sustainability risk.
+
+**Table 8: Weekly Elephant Factor — most- and least-collaborative repositories**
+
+| Repository | Active weeks | Mean top-share | Elephant weeks (%) | Single-contrib weeks (%) |
+|---|---|---|---|---|
+| fvialibre/heseia-sentence-bias-dataset | 3 | 100.0% | 100 | 100 |
+| codeforamerica/cmr-maryland-eligibility-determination | 8 | 100.0% | 100 | 100 |
+| codeforamerica/document-transfer-service | 9 | 100.0% | 100 | 100 |
+| markov-root/atlas | 8 | 99.8% | 100 | 88 |
+| CodeForAfrica/openAFRICA | 50 | 97.4% | 100 | 88 |
+| … | | | | |
+| CodeForAfrica/outbreak.AFRICA | 60 | 77.3% | 95 | 35 |
+| CodeForAfrica/ui | 195 | 71.5% | 82 | 15 |
+| meshtastic/firmware | 320 | 65.3% | 72 | 8 |
+| codeforamerica/vita-min | 324 | 55.2% | 50 | 3 |
+| civiform/civiform | 272 | 50.5% | 43 | 3 |
+
+Weighted by active weeks across the dataset, **86% of all active weeks were elephant weeks** — a single contributor accounted for at least half of the code change in the week. Only two repositories (civiform/civiform and codeforamerica/vita-min) fall below the 50% elephant-week threshold, and both are among the most mature and contributor-rich repositories in the sample. Six repositories have over 80% single-contributor weeks, meaning that in a large majority of the weeks when those projects were active, exactly one person was writing the code. This is a finer-grained and arguably more alarming sustainability signal than the static bus factor: the typical civic tech project is not merely *ultimately* dependent on a small number of people, it is *weekly* dependent on whichever one of them happens to be active.
+
+**(B) Churn ratio (maintenance vs. growth phase).** We define weekly churn as `deletions / (additions + deletions)`. Values near 0 denote pure growth, near 1 denote pure cleanup, and 0.5 denotes a balanced add-then-remove week. Aggregated over a repository's full history, the resulting **overall churn ratio** summarises the repository's long-term development posture.
+
+**Table 9: Churn Ratio — growth-mode vs. maintenance-mode extremes**
+
+| Repository | Overall churn | +Lines | −Lines | Net LOC | Deletion-heavy weeks (%) |
+|---|---|---|---|---|---|
+| DemocracyClub/UK-Polling-Stations | 0.61 | 6,295,705 | 9,732,924 | −3,437,219 | 29.6 |
+| CodeForAfrica/sensors.AFRICA | 0.51 | 388,074 | 403,490 | −15,416 | 23.1 |
+| CodeForAfrica/GenderGap.AFRICA | 0.48 | 88,041 | 80,564 | +7,477 | 15.1 |
+| codeforamerica/asap_pdf | 0.47 | 164,890 | 149,035 | +15,855 | 15.4 |
+| CodeForAfrica/Dominion.AFRICA | 0.45 | 107,875 | 89,352 | +18,523 | 19.2 |
+| … | | | | | |
+| markov-root/atlas | 0.21 | 24,925 | 6,643 | +18,282 | 12.5 |
+| codeforjapan/BirdXplorer | 0.18 | 87,107 | 19,743 | +67,364 | 3.5 |
+| codeforamerica/tofu-modules-aws-serverless-database | 0.13 | 2,849 | 440 | +2,409 | 6.7 |
+| codeforamerica/document-transfer-service | 0.10 | 7,810 | 838 | +6,972 | 0 |
+| luftdata/luftdata.se | 0.07 | 14,648 | 1,058 | +13,590 | 2.1 |
+
+Overall churn ratios range from 0.07 (luftdata/luftdata.se, essentially pure growth) to 0.61 (UK-Polling-Stations). Two repositories are net-negative over their history (see paragraph on interpretation above). The dataset median overall churn is 0.34 (IQR 0.15), lower than the 0.50 that would indicate balanced maintenance-style development — suggesting that most repositories in the sample are still in growth mode rather than consolidation. The exceptions are concentrated in CodeForAfrica and DemocracyClub projects, which show the highest deletion-heavy week proportions.
+
+**(C) Effort Gini coefficient (inequality of lines contributed).** For each repository we computed the Gini coefficient of `lines_added + lines_removed` aggregated per contributor, alongside a Gini of the `commits` per contributor for comparison. A Gini of 0 means every active contributor moved the same number of lines; 1 means one contributor moved all the lines.
+
+**Table 10: Effort Gini — most and least unequal repositories**
+
+| Repository | Contributors | Gini(lines) | Gini(commits) | Top-1 contributor | Top-1 share of lines |
+|---|---|---|---|---|---|
+| meshtastic/Meshtastic-Android | 109 | 0.97 | 0.93 | jamesarich | 68% |
+| meshtastic/firmware | 424 | 0.96 | 0.92 | caveman99 | 19% |
+| meshtastic/web | 74 | 0.95 | 0.88 | danditomaso | 43% |
+| DemocracyClub/UK-Polling-Stations | 35 | 0.92 | 0.82 | symroe | 52% |
+| iiab/iiab | 42 | 0.91 | 0.92 | holta | 66% |
+| … | | | | | |
+| CodeForAfrica/openAFRICA | 8 | 0.63 | 0.58 | (various) | 46% |
+| CodeForAfrica/academy.AFRICA | 5 | 0.61 | 0.66 | — | 53% |
+| codeforamerica/asap_pdf | 5 | 0.60 | 0.51 | — | 53% |
+| codeforamerica/tax-benefits-backend | 9 | 0.59 | 0.34 | — | 56% |
+| CodeForAfrica/Dominion.AFRICA | 8 | 0.57 | 0.59 | — | 35% |
+
+Effort Gini coefficients range from 0.57 to 0.97, with a median of 0.82 — a level that would conventionally be considered extremely high in income-inequality studies. Crucially, the lines-Gini is systematically higher than the commits-Gini: the mean gap across the 29 repositories is **+0.068**, and every repository except CodeForAfrica/PromiseTracker has lines-Gini ≥ commits-Gini. This gap quantifies a methodologically important phenomenon: *a repository's effort concentration is systematically more extreme than its commit concentration suggests.* The most pronounced example is codeforamerica/tax-benefits-backend (Δ = +0.25), where one contributor commits roughly as often as others but moves far more lines per commit. For research that uses commit counts as a proxy for contribution weight, this gap is a measurement bias in a consistent direction (toward under-estimating concentration).
+
+Taken together, the three analyses paint a consistent picture: civic tech effort is concentrated both *across contributors* (Gini ≈ 0.82 median) and *across time* (86% of active weeks dominated by a single contributor), and effort-based measurements reveal concentration that commit-count measurements systematically under-represent.
+
 ---
 
 ## 5. Discussion
@@ -297,6 +368,8 @@ Our analysis of 29 civic tech repositories reveals a landscape characterised by 
 The high stale issue ratio (median 75%) suggests widespread difficulty in managing community contributions and user requests. Combined with the finding that burstiness and stale issue ratio are robustly correlated (ρ = 0.553 after controlling for project size), this paints a picture of projects that experience periods of intense activity followed by neglect — leaving community members' issues unaddressed.
 
 Bot contributors significantly inflate organisational concentration metrics (HHI) but do not materially affect the bus factor. This is an important methodological finding: studies that use HHI to measure organisational diversity should filter bot contributors, while bus factor analyses are relatively robust to bot presence. The exception occurs in projects with very high bot commit proportions (> 25%), where bot filtering can substantially change the bus factor (as seen with civiform).
+
+The effort-resolved analysis in §4.7 sharpens the sustainability picture. Weighted by active weeks across the dataset, **86% of all active weeks have a single contributor responsible for ≥50% of the week's code change**, and the median effort-Gini across repositories is **0.82** — levels that indicate extreme week-by-week and contributor-by-contributor concentration. A systematic gap between effort-Gini and commit-Gini (mean Δ = +0.068, positive in 28 of 29 repositories) shows that commit-count metrics consistently under-estimate effort concentration. The two repositories in the sample that fall below the 50% elephant-week threshold (civiform/civiform, codeforamerica/vita-min) are also among the largest and most mature — suggesting that meaningful week-level collaboration may only emerge at substantial team scale, while the typical civic tech project operates in a serial single-maintainer regime that no count-based metric fully exposes.
 
 ### 5.2 The Confounding Effect of Project Size
 

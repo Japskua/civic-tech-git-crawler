@@ -249,6 +249,8 @@ def _dict_to_commit_history_metrics(d: dict | None) -> CommitHistoryMetrics | No
                 contributor_id=cw["contributor_id"],
                 week_start=cw["week_start"],
                 commits=cw["commits"],
+                lines_added=cw.get("lines_added", 0),
+                lines_removed=cw.get("lines_removed", 0),
             )
             for cw in d["contributor_weeks"]
         ],

@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 import re
 
-from github import GithubException, Repository
+from github import Repository
 
 from civic_tech_crawler.client import GitHubClient
 from civic_tech_crawler.models import PersonMetrics, RepoMetrics
@@ -53,7 +53,7 @@ def collect_person_metrics(
             logger.info(
                 "%s: stats/contributors empty, falling back to commits API", slug
             )
-            return _fallback_person_metrics(repo, slug)
+            return _fallback_person_metrics(client, repo, slug)
         logger.warning("Could not retrieve contributor stats for %s", slug)
         return []
 
@@ -97,47 +97,39 @@ def collect_person_metrics(
 
 
 def _fallback_person_metrics(
+    client: GitHubClient,
     repo: Repository.Repository,
     slug: str,
 ) -> list[PersonMetrics]:
-    """Build minimal person metrics from the commits API.
+    """Build minimal person metrics from the commits API via GraphQL.
 
     Used when stats/contributors returns empty (e.g. all commit authors are
-    anonymous / not linked to GitHub accounts).  Iterates up to
-    _FALLBACK_COMMIT_CAP commits and groups by author email.
+    anonymous / not linked to GitHub accounts). Iterates up to
+    _FALLBACK_COMMIT_CAP commits (GraphQL batches 100 per API call) and
+    groups by author email.
     """
     # email -> {name, login, commits, additions, deletions}
     authors: dict[str, dict] = {}
 
-    try:
-        commits = repo.get_commits()
-        for i, commit in enumerate(commits):
-            if i >= _FALLBACK_COMMIT_CAP:
-                break
-            git_commit = commit.commit
-            email = git_commit.author.email or "unknown"
-            name = git_commit.author.name
+    for i, rec in enumerate(client.iter_commits_graphql(slug)):
+        if i >= _FALLBACK_COMMIT_CAP:
+            break
+        email = rec.author_email or "unknown"
+        name = rec.author_name
+        login = rec.author_login
 
-            # Use linked GitHub login if available
-            login = commit.author.login if commit.author else None
+        if email not in authors:
+            authors[email] = {
+                "login": login,
+                "name": name,
+                "commits": 0,
+                "additions": 0,
+                "deletions": 0,
+            }
 
-            if email not in authors:
-                authors[email] = {
-                    "login": login,
-                    "name": name,
-                    "commits": 0,
-                    "additions": 0,
-                    "deletions": 0,
-                }
-
-            authors[email]["commits"] += 1
-            stats = commit.stats
-            if stats:
-                authors[email]["additions"] += stats.additions
-                authors[email]["deletions"] += stats.deletions
-    except GithubException as e:
-        logger.warning("Fallback commit iteration failed for %s: %s", slug, e)
-        return []
+        authors[email]["commits"] += 1
+        authors[email]["additions"] += rec.additions
+        authors[email]["deletions"] += rec.deletions
 
     results: list[PersonMetrics] = []
     for email, data in authors.items():

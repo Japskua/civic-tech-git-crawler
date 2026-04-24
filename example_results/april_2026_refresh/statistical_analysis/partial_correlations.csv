@@ -1,0 +1,8 @@
+var_a,var_b,control,n,rho_zero_order,p_zero_order,rho_partial,p_partial,rho_change,interpretation
+bus_factor_no_bots,hhi_no_bots,num_developers,29,-0.9099,0.0,-0.8743,0.0,0.0356,robust
+bus_factor_no_bots,health_percentage,num_developers,29,0.201,0.295694,-0.1324,0.493418,0.0686,robust
+core_contributor_count,network_density,num_developers,24,-0.7092,0.000104,-0.7253,6.1e-05,-0.0161,robust
+bus_factor_no_bots,core_contributor_count,num_developers,29,0.801,0.0,0.7163,1.2e-05,0.0847,robust
+hhi_no_bots,health_percentage,num_developers,29,-0.1909,0.321331,0.1726,0.370477,0.0183,robust
+hhi_no_bots,stale_issue_ratio,num_developers,18,0.3264,0.18619,0.199,0.428624,0.1274,robust
+change_request_acceptance_ratio,median_pr_review_turnaround_hours,num_developers,24,-0.4335,0.034318,-0.4306,0.035707,0.0029,robust

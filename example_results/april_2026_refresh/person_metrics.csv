@@ -1,0 +1,446 @@
+repo_full_name,login,name,num_commits,additions,deletions,avg_additions_per_commit,avg_deletions_per_commit,is_bot
+DemocracyClub/UK-Polling-Stations,GeoWill,GeoWill,91,5665,7433,62.25,81.68,False
+DemocracyClub/UK-Polling-Stations,awdem,awdem,68,1273,293,18.72,4.31,False
+DemocracyClub/UK-Polling-Stations,polling-bot-4000,polling-bot-4000,256,4439,5346,17.34,20.88,True
+DemocracyClub/UK-Polling-Stations,chris48s,chris48s,69,4136,2388,59.94,34.61,False
+DemocracyClub/UK-Polling-Stations,blacktyger,blacktyger,4,35,27,8.75,6.75,False
+DemocracyClub/UK-Polling-Stations,chris48s,chris48s,7,36,28,5.14,4.0,False
+DemocracyClub/UK-Polling-Stations,dependabot[bot],dependabot[bot],2,26,49,13.0,24.5,True
+DemocracyClub/UK-Polling-Stations,symroe,Sym Roe,1,2,2,2.0,2.0,False
+DemocracyClub/UK-Polling-Stations,symroe,symroe,2,9,10,4.5,5.0,False
+DemocracyClub/WhoCanIVoteFor,symroe,Sym Roe,78,5399,1133,69.22,14.53,False
+DemocracyClub/WhoCanIVoteFor,awdem,awdem,122,2934,897,24.05,7.35,False
+DemocracyClub/WhoCanIVoteFor,awdem,Will de Montmollin,46,2545,599,55.33,13.02,False
+DemocracyClub/WhoCanIVoteFor,chris48s,chris48s,60,3460,2144,57.67,35.73,False
+DemocracyClub/WhoCanIVoteFor,chris48s,chris48s,140,3571,2343,25.51,16.74,False
+DemocracyClub/WhoCanIVoteFor,GeoWill,GeoWill,25,1100,486,44.0,19.44,False
+DemocracyClub/WhoCanIVoteFor,symroe,symroe,14,269,82,19.21,5.86,False
+DemocracyClub/WhoCanIVoteFor,pmk01,Peter Keeling,5,7,11,1.4,2.2,False
+DemocracyClub/WhoCanIVoteFor,dependabot[bot],dependabot[bot],2,2,2,1.0,1.0,True
+DemocracyClub/WhoCanIVoteFor,VirginiaDooley,Virginia Dooley,5,62,27,12.4,5.4,False
+DemocracyClub/WhoCanIVoteFor,symroe,Sym Roe,3,45,36,15.0,12.0,False
+fvialibre/edia,nanom,Hernán J. Maina,24,1569,8424,65.38,351.0,False
+fvialibre/edia,LMartinezEXEX,LMartinezEXEX,41,6637,7418,161.88,180.93,False
+fvialibre/edia,LMartinezEXEX,Lautaro Martinez,14,18801,4780,1342.93,341.43,False
+fvialibre/edia,fvialibre,Fundación Vía Libre,1,2,2,2.0,2.0,False
+fvialibre/edia,,Lucia Gonzalez,1,82,2,82.0,2.0,False
+luftdata/luftdata.se,ebner,Hannes Ebner,143,13023,733,91.07,5.13,False
+luftdata/luftdata.se,peterk,Peter Krantz,9,55,6,6.11,0.67,False
+luftdata/luftdata.se,Naesstrom,Erik Näsström,44,1372,263,31.18,5.98,False
+luftdata/luftdata.se,christopherkullenberg,intensifier,10,198,56,19.8,5.6,False
+CodeForAfrica/PromiseTracker,kelvinkipruto,Kipruto,391,133815,49409,342.24,126.37,False
+CodeForAfrica/PromiseTracker,kilemensi,Clemence Kyara,3,508,388,169.33,129.33,False
+CodeForAfrica/PromiseTracker,dependabot[bot],dependabot[bot],6,901,661,150.17,110.17,True
+CodeForAfrica/PromiseTracker,koechkevin,KEVIN KOECH,5,8307,1111,1661.4,222.2,False
+CodeForAfrica/PromiseTracker,,Kevin Koech,24,10524,2055,438.5,85.62,False
+CodeForAfrica/PromiseTracker,koechkevin,Kevin Koech,1,5529,5411,5529.0,5411.0,False
+CodeForAfrica/academy.AFRICA,,Kevin Koech,27,933,223,34.56,8.26,False
+CodeForAfrica/academy.AFRICA,kelvinkipruto,kelvin kipruto,233,26073,21127,111.9,90.67,False
+CodeForAfrica/academy.AFRICA,koechkevin,Kevin Koech,236,36108,10085,153.0,42.73,False
+CodeForAfrica/academy.AFRICA,,Kevin Koech,3,83,25,27.67,8.33,False
+CodeForAfrica/academy.AFRICA,kilemensi,Clemence Kyara,1,17,1,17.0,1.0,False
+CodeForAfrica/Dominion.AFRICA,kilemensi,Clemence Kyara,48,13821,18325,287.94,381.77,False
+CodeForAfrica/Dominion.AFRICA,kilemensi,Clemence Kyara,119,15970,20642,134.2,173.46,False
+CodeForAfrica/Dominion.AFRICA,dependabot[bot],dependabot[bot],29,884,554,30.48,19.1,True
+CodeForAfrica/Dominion.AFRICA,esirK,Isaiah King'ori,1,134,1,134.0,1.0,False
+CodeForAfrica/Dominion.AFRICA,esirK,esir,7,137,4,19.57,0.57,False
+CodeForAfrica/Dominion.AFRICA,KhadijaMahanga,Khadija Mahanga,152,39951,22590,262.84,148.62,False
+CodeForAfrica/Dominion.AFRICA,karimkawambwa,karimkawambwa,58,4476,3522,77.17,60.72,False
+CodeForAfrica/Dominion.AFRICA,DavidLemayian,David Lemayian,31,2580,2876,83.23,92.77,False
+CodeForAfrica/Dominion.AFRICA,DavidLemayian,David Lemayian,11,362,14670,32.91,1333.64,False
+CodeForAfrica/Dominion.AFRICA,nerdlet,nerdlet,41,2902,1641,70.78,40.02,False
+CodeForAfrica/Dominion.AFRICA,,Brenda Nyokabi Bucha,3,2487,1670,829.0,556.67,False
+CodeForAfrica/GenderGap.AFRICA,elric-wamugu,Eric Wamugu,2,38,24,19.0,12.0,False
+CodeForAfrica/GenderGap.AFRICA,thepsalmist,Xavier Frankline Odhiambo,2,2,2,1.0,1.0,False
+CodeForAfrica/GenderGap.AFRICA,Kinjuriu,Stephane Njoki,4,333,353,83.25,88.25,False
+CodeForAfrica/GenderGap.AFRICA,Kinjuriu,Kinjuriu,7,492,505,70.29,72.14,False
+CodeForAfrica/GenderGap.AFRICA,kilemensi,Clemence Kyara,19,374,224,19.68,11.79,False
+CodeForAfrica/GenderGap.AFRICA,dependabot[bot],dependabot[bot],14,372,222,26.57,15.86,True
+CodeForAfrica/GenderGap.AFRICA,kilemensi,_ Kilemensi,1,1,1,1.0,1.0,False
+CodeForAfrica/GenderGap.AFRICA,nerdlet,Brenda Nyokabi Bucha,20,4210,14176,210.5,708.8,False
+CodeForAfrica/GenderGap.AFRICA,,Brenda Nyokabi Bucha,5,2427,1964,485.4,392.8,False
+CodeForAfrica/GenderGap.AFRICA,robinkiplangat,Robin Kiplang'at,2,47,43,23.5,21.5,False
+CodeForAfrica/GenderGap.AFRICA,DavidLemayian,David Lemayian,3,90,76,30.0,25.33,False
+CodeForAfrica/GenderGap.AFRICA,dependabot[bot],dependabot[bot],2,19,7,9.5,3.5,True
+CodeForAfrica/GenderGap.AFRICA,DavidLemayian,David Lemayian,37,48732,36564,1317.08,988.22,False
+CodeForAfrica/GenderGap.AFRICA,robinkiplangat,4bic,2,71,69,35.5,34.5,False
+CodeForAfrica/GenderGap.AFRICA,mtuchi,Emmanuel Evance,1,937,11498,937.0,11498.0,False
+CodeForAfrica/GenderGap.AFRICA,,nerdlet,15,11362,696,757.47,46.4,False
+CodeForAfrica/GenderGap.AFRICA,emmalewis,Emma Lewis,70,6795,11955,97.07,170.79,False
+CodeForAfrica/GenderGap.AFRICA,chaficnajjar,Chafic Najjar,48,11739,2185,244.56,45.52,False
+CodeForAfrica/openAFRICA,Arame93,Arame Thiam,4,133,5,33.25,1.25,False
+CodeForAfrica/openAFRICA,thepsalmist,Xavier Frankline Odhiambo,13,1031,1077,79.31,82.85,False
+CodeForAfrica/openAFRICA,thepsalmist,Xavier Frankline,46,1121,1167,24.37,25.37,False
+CodeForAfrica/openAFRICA,,=xavierfrank4,2,26,151,13.0,75.5,False
+CodeForAfrica/openAFRICA,esirK,esir,6,965,813,160.83,135.5,False
+CodeForAfrica/openAFRICA,esirK,Isaiah King'ori,2,4,4,2.0,2.0,False
+CodeForAfrica/openAFRICA,DavidLemayian,David Lemayian,57,2180,428,38.25,7.51,False
+CodeForAfrica/openAFRICA,phillipahereza,Phillip Ahereza,15,270,48,18.0,3.2,False
+CodeForAfrica/openAFRICA,WNjihia,WNjihia,1,47,10,47.0,10.0,False
+CodeForAfrica/openAFRICA,,Mercy-Muchai,8,62,22,7.75,2.75,False
+CodeForAfrica/outbreak.AFRICA,kilemensi,Clemence Kyara,66,13537,14233,205.11,215.65,False
+CodeForAfrica/outbreak.AFRICA,kilemensi,Clemence Kyara,192,27503,21460,143.24,111.77,False
+CodeForAfrica/outbreak.AFRICA,dependabot[bot],dependabot[bot],17,422,398,24.82,23.41,True
+CodeForAfrica/outbreak.AFRICA,thepsalmist,Xavier Frankline Odhiambo,2,2,2,1.0,1.0,False
+CodeForAfrica/outbreak.AFRICA,KobbyMmo,Obed Amoasi,18,1725,944,95.83,52.44,False
+CodeForAfrica/outbreak.AFRICA,KhadijaMahanga,Khadija Mahanga,150,6311,4304,42.07,28.69,False
+CodeForAfrica/outbreak.AFRICA,dependabot-preview[bot],dependabot-preview[bot],9,980,757,108.89,84.11,True
+CodeForAfrica/outbreak.AFRICA,gertie-sheshe,gertie-sheshe,3,58,2,19.33,0.67,False
+CodeForAfrica/outbreak.AFRICA,TriciaGovindasamy,TriciaGovindasamy,27,999,68,37.0,2.52,False
+CodeForAfrica/outbreak.AFRICA,,Brenda Nyokabi Bucha,4,655,37,163.75,9.25,False
+CodeForAfrica/outbreak.AFRICA,nerdlet,nerdlet,12,29,56,2.42,4.67,False
+CodeForAfrica/ui,claude,Claude,1,0,0,0.0,0.0,False
+CodeForAfrica/ui,github-advanced-security[bot],,3,0,0,0.0,0.0,True
+CodeForAfrica/ui,xnbchd,kelvin,4,0,0,0.0,0.0,False
+CodeForAfrica/ui,github-actions[bot],,5,0,0,0.0,0.0,True
+CodeForAfrica/ui,DavidTheProgrammer,Muma,6,0,0,0.0,0.0,False
+CodeForAfrica/ui,saminegash,Samuel Negash Hailu,14,0,0,0.0,0.0,False
+CodeForAfrica/ui,KhadijaMahanga,Khadija Mahanga,22,0,0,0.0,0.0,False
+CodeForAfrica/ui,VinneyJ,Vincent Otieno,33,0,0,0.0,0.0,False
+CodeForAfrica/ui,thepsalmist,Xavier Frankline Odhiambo,45,0,0,0.0,0.0,False
+CodeForAfrica/ui,dependabot-preview[bot],,79,0,0,0.0,0.0,True
+CodeForAfrica/ui,dependabot[bot],,106,0,0,0.0,0.0,True
+CodeForAfrica/ui,KobbyMmo,Obed Amoasi,229,0,0,0.0,0.0,False
+CodeForAfrica/ui,gertie-sheshe,Gertrude,327,0,0,0.0,0.0,False
+CodeForAfrica/ui,m453h,Michael Hudson Nkotagu,382,0,0,0.0,0.0,False
+CodeForAfrica/ui,esirK,Isaiah King'ori,401,0,0,0.0,0.0,False
+CodeForAfrica/ui,nerdlet,Brenda Nyokabi Bucha,1018,0,0,0.0,0.0,False
+CodeForAfrica/ui,koechkevin,KEVIN KOECH,1681,0,0,0.0,0.0,False
+CodeForAfrica/ui,kelvinkipruto,Kipruto,2587,0,0,0.0,0.0,False
+CodeForAfrica/ui,kilemensi,Clemence Kyara,3138,0,0,0.0,0.0,False
+CodeForAfrica/sensors.AFRICA,kilemensi,Clemence Kyara,78,24914,43457,319.41,557.14,False
+CodeForAfrica/sensors.AFRICA,kilemensi,Clemence Kyara,104,27585,47316,265.24,454.96,False
+CodeForAfrica/sensors.AFRICA,gideonmaina,Giddie,3,105,14,35.0,4.67,False
+CodeForAfrica/sensors.AFRICA,thepsalmist,Xavier Frankline Odhiambo,2,15368,512,7684.0,256.0,False
+CodeForAfrica/sensors.AFRICA,m453h,Michael Hudson Nkotagu,5,58,23,11.6,4.6,False
+CodeForAfrica/sensors.AFRICA,thepsalmist,Xavier Frankline,17,19432,4940,1143.06,290.59,False
+CodeForAfrica/sensors.AFRICA,usmanbiu,usmanbiu,4,26,23,6.5,5.75,False
+CodeForAfrica/sensors.AFRICA,dependabot[bot],dependabot[bot],33,2735,1818,82.88,55.09,True
+CodeForAfrica/sensors.AFRICA,kilemensi,kilemensi,31,1558,846,50.26,27.29,False
+CodeForAfrica/sensors.AFRICA,,Code for Africa,5,14,14,2.8,2.8,False
+CodeForAfrica/sensors.AFRICA,kelvinkipruto,Kipruto,29,14457,14155,498.52,488.1,False
+CodeForAfrica/sensors.AFRICA,koechkevin,KEVIN KOECH,4,45,11,11.25,2.75,False
+CodeForAfrica/sensors.AFRICA,esirK,Isaiah King'ori,1,152,4,152.0,4.0,False
+CodeForAfrica/sensors.AFRICA,esirK,esir,11,168,20,15.27,1.82,False
+CodeForAfrica/sensors.AFRICA,,Brenda Nyokabi Bucha,16,3687,14787,230.44,924.19,False
+CodeForAfrica/sensors.AFRICA,nerdlet,Brenda Nyokabi Bucha,113,25965,50216,229.78,444.39,False
+CodeForAfrica/sensors.AFRICA,KobbyMmo,Obed Amoasi,7,7444,8334,1063.43,1190.57,False
+CodeForAfrica/sensors.AFRICA,dependabot-preview[bot],dependabot-preview[bot],5,457,26,91.4,5.2,True
+CodeForAfrica/sensors.AFRICA,mtuchi,mtuchi,3,41,35,13.67,11.67,False
+CodeForAfrica/sensors.AFRICA,karimkawambwa,Karim Kawambwa,12,504,255,42.0,21.25,False
+CodeForAfrica/sensors.AFRICA,chegejames,chege james,3,22,27,7.33,9.0,False
+CodeForAfrica/sensors.AFRICA,DavidLemayian,David Lemayian,12,14514,2221,1209.5,185.08,False
+CodeForAfrica/sensors.AFRICA,snyk-bot,Snyk bot,1,1,1,1.0,1.0,True
+CodeForAfrica/sensors.AFRICA,DavidLemayian,David Lemayian,1,1,1,1.0,1.0,False
+codeforamerica/form-flow,dependabot[bot],dependabot[bot],347,1980,1852,5.71,5.34,True
+codeforamerica/form-flow,cram-cfa,Marc P,76,12174,12194,160.18,160.45,False
+codeforamerica/form-flow,ShaynaCummings,Shayna Cummings,1,5,0,5.0,0.0,False
+codeforamerica/form-flow,cfa-platforms-robot,CfA Platforms Robot,55,148,148,2.69,2.69,True
+codeforamerica/form-flow,spokenbird,Alex Gonzalez,11,1546,265,140.55,24.09,False
+codeforamerica/form-flow,analoo,Ana Medrano Fernandez,6,1105,103,184.17,17.17,False
+codeforamerica/form-flow,spokenbird,spokenbird,1,25,0,25.0,0.0,False
+codeforamerica/form-flow,mtodd-cfa,Morgan Todd,3,135,25,45.0,8.33,False
+codeforamerica/vita-min,DrewProebstel,Drew Proebstel,67,5897,24476,88.01,365.31,False
+codeforamerica/vita-min,embarnard,em barnard,104,16414,5946,157.83,57.17,False
+codeforamerica/vita-min,dependabot[bot],dependabot[bot],19,412,320,21.68,16.84,True
+codeforamerica/vita-min,spompea-cfa,spompea-cfa,24,2377,2773,99.04,115.54,False
+codeforamerica/vita-min,tahsinaislam,Tahsina Islam,68,8165,5235,120.07,76.99,False
+codeforamerica/vita-min,DrewProebstelCfa,DrewProebstelCfa,2,138,6,69.0,3.0,False
+codeforamerica/vita-min,anisharamnani,Anisha Ramnani,12,344,6913,28.67,576.08,False
+codeforamerica/vita-min,mpidcock,Martha Pidcock,10,1113,904,111.3,90.4,False
+codeforamerica/vita-min,mrotondo,Mike Rotondo,28,891,681,31.82,24.32,False
+codeforamerica/vita-min,powersurge360,Kevin Diale,17,3107,1273,182.76,74.88,False
+codeforamerica/vita-min,jenny-heath,jenny-heath,30,2090,2469,69.67,82.3,False
+codeforamerica/vita-min,mmazanec22,Melanie Mazanec,1,22,11,22.0,11.0,False
+codeforamerica/vita-min,arinchoi03,Yejee Arin Choi,51,5122,884,100.43,17.33,False
+codeforamerica/vita-min,jachan,John Chan,15,1701,539,113.4,35.93,False
+codeforamerica/vita-min,anisharamnani,Anisha Ramnani,14,582,381,41.57,27.21,False
+codeforamerica/vita-min,jnf,jey,5,1183,39,236.6,7.8,False
+codeforamerica/vita-min,jenny-heath,Jenny Heath,2,47,17,23.5,8.5,False
+codeforamerica/vita-min,,Hugo Melo,12,404,108,33.67,9.0,False
+codeforamerica/vita-min,aloverso,Anne LoVerso,15,758,238,50.53,15.87,False
+codeforamerica/vita-min,spompea-cfa,spompea-cfa,4,392,402,98.0,100.5,False
+codeforamerica/tofu-modules-aws-serverless-database,jamesiarmes,James Armes (they/them),28,2418,385,86.36,13.75,False
+codeforamerica/tofu-modules-aws-serverless-database,github-actions[bot],github-actions[bot],11,89,14,8.09,1.27,True
+codeforamerica/tofu-modules-aws-serverless-database,jenny-heath,jenny-heath,1,342,41,342.0,41.0,False
+codeforamerica/tax-benefits-backend,mrotondo,Mike Rotondo,40,1557,275,38.92,6.88,False
+codeforamerica/tax-benefits-backend,DrewProebstel,Drew Proebstel,15,540,137,36.0,9.13,False
+codeforamerica/tax-benefits-backend,tahsinaislam,Tahsina Islam,13,268,48,20.62,3.69,False
+codeforamerica/tax-benefits-backend,powersurge360,Kevin Diale,10,298,74,29.8,7.4,False
+codeforamerica/tax-benefits-backend,jamesiarmes,James Armes (they/them),45,5747,1898,127.71,42.18,False
+codeforamerica/tax-benefits-backend,robdiciuccio,Rob DiCiuccio,6,387,26,64.5,4.33,False
+codeforamerica/tax-benefits-backend,anisharamnani,Anisha Ramnani,13,501,319,38.54,24.54,False
+codeforamerica/tax-benefits-backend,jenny-heath,jenny-heath,12,203,57,16.92,4.75,False
+codeforamerica/tax-benefits-backend,arinchoi03,Yejee Arin Choi,26,1098,153,42.23,5.88,False
+codeforamerica/tax-benefits-backend,anisharamnani,Anisha Ramnani,1,32,12,32.0,12.0,False
+codeforamerica/tax-benefits-backend,jamesiarmes,James Armes (they/them),1,36,0,36.0,0.0,False
+codeforamerica/pya,dependabot[bot],dependabot[bot],84,495,489,5.89,5.82,True
+codeforamerica/pya,tahsinaislam,Tahsina Islam,6,203,356,33.83,59.33,False
+codeforamerica/pya,embarnard,em barnard,1,6,6,6.0,6.0,False
+codeforamerica/pya,mrotondo,Mike Rotondo,7,227,210,32.43,30.0,False
+codeforamerica/pya,powersurge360,Kevin Diale,12,106,64,8.83,5.33,False
+codeforamerica/pya,DrewProebstel,Drew Proebstel,67,8757,3659,130.7,54.61,False
+codeforamerica/pya,jenny-heath,jenny-heath,1,19,0,19.0,0.0,False
+codeforamerica/pya,arinchoi03,Yejee Arin Choi,53,1567,708,29.57,13.36,False
+codeforamerica/pya,anisharamnani,Anisha Ramnani,5,720,720,144.0,144.0,False
+codeforamerica/pya,anisharamnani,Anisha Ramnani,16,7062,839,441.38,52.44,False
+codeforamerica/pya,arinchoi03,Yejee Arin Choi,4,40,3,10.0,0.75,False
+codeforamerica/honeycrisp-gem,jnf,jey,2,16,2,8.0,1.0,False
+codeforamerica/honeycrisp-gem,jnf,jey,2,139,26,69.5,13.0,False
+codeforamerica/honeycrisp-gem,dependabot[bot],dependabot[bot],29,260,263,8.97,9.07,True
+codeforamerica/honeycrisp-gem,arinchoi03,Arin Choi,56,394,111,7.04,1.98,False
+codeforamerica/honeycrisp-gem,arinchoi03,Yejee Arin Choi,7,72,80,10.29,11.43,False
+codeforamerica/honeycrisp-gem,mmazanec22,Melanie,21,237,165,11.29,7.86,False
+codeforamerica/honeycrisp-gem,ash-rc,Ash Campo,8,338,145,42.25,18.12,False
+codeforamerica/honeycrisp-gem,Montana,Michael Mendy,2,54,32,27.0,16.0,False
+codeforamerica/honeycrisp-gem,sree-cfa,Sree P,4,234,173,58.5,43.25,False
+codeforamerica/honeycrisp-gem,sree-cfa,Sree,3,21,8,7.0,2.67,False
+codeforamerica/honeycrisp-gem,tdooner,Tom Dooner,10,862,974,86.2,97.4,False
+codeforamerica/honeycrisp-gem,mquadri23,Maria Quadri,2,44,36,22.0,18.0,False
+codeforamerica/honeycrisp-gem,cy-by,Cypress Borg,5,61,9,12.2,1.8,False
+codeforamerica/honeycrisp-gem,,Colt Borg,10,769,1799,76.9,179.9,False
+codeforamerica/honeycrisp-gem,bengolder,Benjamin Golder,12,603,302,50.25,25.17,False
+codeforamerica/honeycrisp-gem,fionatagious,ftang-cfa,1,1,1,1.0,1.0,False
+codeforamerica/honeycrisp-gem,hartsick,Christa Hartsock,87,30109,5771,346.08,66.33,False
+codeforamerica/honeycrisp-gem,bensheldon,Ben Sheldon,6,244,99,40.67,16.5,False
+codeforamerica/honeycrisp-gem,,Anule Ndukwu,12,1122,355,93.5,29.58,False
+codeforamerica/honeycrisp-gem,bensheldon,Ben Sheldon,14,2139,486,152.79,34.71,False
+codeforamerica/honeycrisp-gem,bytheway875,Shannon Byrne,2,2,5,1.0,2.5,False
+codeforamerica/honeycrisp-gem,lkogler,Laura Kogler,30,3662,18773,122.07,625.77,False
+codeforamerica/honeycrisp-gem,wschaefer,Whitney Schaefer,4,79,116,19.75,29.0,False
+codeforamerica/honeycrisp-gem,bytheway875,Shannon Byrne,1,335,309,335.0,309.0,False
+codeforamerica/honeycrisp-gem,tgrathwell,Travis Grathwell,2,1178,17,589.0,8.5,False
+codeforamerica/honeycrisp-gem,tgrathwell,tgrathwell,1,465,335,465.0,335.0,False
+codeforamerica/honeycrisp-gem,embarnard,em barnard-shao,1,39,23,39.0,23.0,False
+codeforamerica/honeycrisp-gem,stroopwafel79,Kristi Lanzisera,1,30,22,30.0,22.0,False
+codeforamerica/honeycrisp-gem,anule,Anule Ndukwu,3,264,43,88.0,14.33,False
+codeforamerica/honeycrisp-gem,SymonneSingleton,Symonne Singleton,3,24,27,8.0,9.0,False
+codeforamerica/honeycrisp-gem,jenny-heath,Jenny Heath,6,226,103,37.67,17.17,False
+codeforamerica/honeycrisp-gem,,Lou Moore,1,414,27,414.0,27.0,False
+codeforamerica/honeycrisp-gem,bencalegari,Ben Calegari,14,245,92,17.5,6.57,False
+codeforamerica/honeycrisp-gem,,Ben Calegari and Luigi Ray-Montanez,1,54,0,54.0,0.0,False
+codeforamerica/honeycrisp-gem,akingcfa,akingcfa,1,354,17,354.0,17.0,False
+codeforamerica/honeycrisp-gem,mrotondo,Mike Rotondo,3,33,25,11.0,8.33,False
+codeforamerica/honeycrisp-gem,mrotondo,Mike Rotondo,4,198,147,49.5,36.75,False
+codeforamerica/honeycrisp-gem,hartsick,Christa Hartsock,11,2951,1364,268.27,124.0,False
+codeforamerica/honeycrisp-gem,norrishung,Norris Hung,4,1173,760,293.25,190.0,False
+codeforamerica/honeycrisp-gem,stroopwafel79,Kristi Lanzisera,1,9,2,9.0,2.0,False
+codeforamerica/honeycrisp-gem,,Norris Hung,1,27,7,27.0,7.0,False
+codeforamerica/honeycrisp-gem,embarnard,Em Barnard-Shao,7,51,25,7.29,3.57,False
+codeforamerica/honeycrisp-gem,tdooner,Tom Dooner,5,123,70,24.6,14.0,False
+codeforamerica/honeycrisp-gem,,Emily Barnard,1,5,1,5.0,1.0,False
+codeforamerica/honeycrisp-gem,,Norris Hung,1,476,389,476.0,389.0,False
+codeforamerica/honeycrisp-gem,zaksoup,Zak Auerbach,3,24,3,8.0,1.0,False
+codeforamerica/honeycrisp-gem,wschaefer-cfa,wschaefer-cfa,5,1618,234,323.6,46.8,False
+codeforamerica/honeycrisp-gem,,Whitney Schaefer,4,1315,31,328.75,7.75,False
+codeforamerica/honeycrisp-gem,luigi,Luigi Ray-Montanez,1,4,3,4.0,3.0,False
+codeforamerica/asap_pdf,jennthom,Jenn Thom,1,1,2,1.0,2.0,False
+codeforamerica/asap_pdf,lkacenja,Leo Kacenjar,309,69441,96804,224.73,313.28,False
+codeforamerica/asap_pdf,dependabot[bot],dependabot[bot],93,587,575,6.31,6.18,True
+codeforamerica/asap_pdf,allisonmorgan,Allison Morgan,28,2403,694,85.82,24.79,False
+codeforamerica/asap_pdf,xdotcommer,Michael Cowden,69,71404,47989,1034.84,695.49,False
+codeforamerica/cmr-maryland-eligibility-determination,victorSauceda,victorSauceda,28,1796,448,64.14,16.0,False
+codeforamerica/cmr-maryland-eligibility-determination,victorSauceda,Victor Sauceda,21,1825,708,86.9,33.71,False
+codeforamerica/document-transfer-service,jamesiarmes,James Armes (they/them),12,7731,838,644.25,69.83,False
+codeforamerica/document-transfer-service,jamesiarmes,James Armes (they/them),1,79,0,79.0,0.0,False
+markov-root/atlas,markov-root,markov-root,1,8,2,8.0,2.0,False
+markov-root/atlas,,Félix Dorn,46,24915,6639,541.63,144.33,False
+markov-root/atlas,felixdorn,Félix Dorn,1,2,2,2.0,2.0,False
+fvialibre/heseia-sentence-bias-dataset,guidoivetta,Guido Ivetta,9,80245,65781,8916.11,7309.0,False
+codeforjapan/BirdXplorer,ayuki-joto,ayuki,193,22073,6639,114.37,34.4,False
+codeforjapan/BirdXplorer,yu23ki14,Yuki Kawabe,195,47388,8694,243.02,44.58,False
+codeforjapan/BirdXplorer,claude[bot],claude[bot],1,1,1,1.0,1.0,True
+codeforjapan/BirdXplorer,devin-ai-integration[bot],Devin AI,14,1988,1020,142.0,72.86,True
+codeforjapan/BirdXplorer,osoken,osoken,37,1115,382,30.14,10.32,False
+codeforjapan/BirdXplorer,osoken,Takeshi OSOEKAWA,6,114,66,19.0,11.0,False
+codeforjapan/BirdXplorer,sushichan044,Kentaro Suzuki,44,1443,417,32.8,9.48,False
+codeforjapan/BirdXplorer,iazzenma,jasta,10,89,56,8.9,5.6,False
+meshtastic/Meshtastic-Android,jamesarich,James Rich,349,138127,84336,395.78,241.65,False
+meshtastic/Meshtastic-Android,renovate[bot],renovate[bot],135,216,205,1.6,1.52,True
+meshtastic/Meshtastic-Android,Copilot,Copilot,1,4,4,4.0,4.0,False
+meshtastic/Meshtastic-Android,Klavionik,Roman Vlasenko,1,1,1,1.0,1.0,False
+meshtastic/Meshtastic-Android,theKorzh,Dmitry,1,39,1,39.0,1.0,False
+meshtastic/Meshtastic-Android,VictorioBerra,Victorio Berra,1,73,2,73.0,2.0,False
+meshtastic/Meshtastic-Android,skobkin,Alexey Skobkin,1,1,1,1.0,1.0,False
+meshtastic/Meshtastic-Android,github-actions[bot],github-actions[bot],7,108,109,15.43,15.57,True
+meshtastic/Meshtastic-Android,alecperkins,Alec Perkins,1,1,1,1.0,1.0,False
+meshtastic/Meshtastic-Android,ujade,Jade,1,2,0,2.0,0.0,False
+meshtastic/Meshtastic-Android,Kealper,Ken Piper,1,6,6,6.0,6.0,False
+meshtastic/Meshtastic-Android,nreisbeck,nreisbeck,1,1,1,1.0,1.0,False
+meshtastic/web,nikolya-prodigy,NIKOLYA PRODIGY,1,880,909,880.0,909.0,False
+meshtastic/web,mammuthus,mammuthus,1,17,17,17.0,17.0,False
+meshtastic/web,danditomaso,Dan Ditomaso,298,215933,146416,724.61,491.33,False
+meshtastic/web,dependabot[bot],dependabot[bot],10,2488,1553,248.8,155.3,True
+meshtastic/web,fresh3nough,fre$h,1,116,89,116.0,89.0,False
+meshtastic/web,weebl2000,Wessel,2,85,63,42.5,31.5,False
+meshtastic/web,rj-xy,rj-xy,1,3,0,3.0,0.0,False
+meshtastic/web,Pmmlabs,Alexey Stepanov,2,105,9,52.5,4.5,False
+meshtastic/web,dzienisz,Kamil Dzieniszewski,2,301,122,150.5,61.0,False
+meshtastic/web,github-actions[bot],github-actions[bot],20,98278,29623,4913.9,1481.15,True
+meshtastic/web,zeozeozeo,zeo,1,5,1,5.0,1.0,False
+meshtastic/web,jsacrist,jsacrist,1,15,1,15.0,1.0,False
+meshtastic/web,philon-,Jeremy Gallant,45,17835,7964,396.33,176.98,False
+meshtastic/web,benallfree,Ben Allfree,1,2,1,2.0,1.0,False
+meshtastic/web,Azarattum,Azarattum,1,1,0,1.0,0.0,False
+meshtastic/web,dzienisz,Kamil Dzieniszewski,4,846,295,211.5,73.75,False
+meshtastic/web,Nullvoid3771,Nullvoid3771,1,1,0,1.0,0.0,False
+meshtastic/web,bergie,Henri Bergius,8,455,77,56.88,9.62,False
+meshtastic/web,BMorgan1296,Brad,1,12,12,12.0,12.0,False
+meshtastic/web,thebentern,Ben Meadors,1,57,3,57.0,3.0,False
+meshtastic/web,eboye,Vasilj Milošević,1,18,8,18.0,8.0,False
+meshtastic/web,Hunter275,Hunter Thornsberry,38,6530,2308,171.84,60.74,False
+meshtastic/web,kimmydotzip,Kimberly Graham,1,77,3,77.0,3.0,False
+meshtastic/web,jamon,jamon,1,1,0,1.0,0.0,False
+meshtastic/web,philon-,philon-,9,1158,520,128.67,57.78,False
+meshtastic/web,aredridel,Aria Stewart,1,0,81,0.0,81.0,False
+meshtastic/web,vidplace7,Austin,3,12,2,4.0,0.67,False
+meshtastic/web,philon-,Jeremy Gallant,10,867,185,86.7,18.5,False
+meshtastic/web,James9074,James Thomas,18,1380,1318,76.67,73.22,False
+meshtastic/web,bkimmel,bkimmel,8,245,90,30.62,11.25,False
+meshtastic/web,varanauskas,Tadas Varanauskas,1,2,0,2.0,0.0,False
+meshtastic/web,KomelT,Tilen Komel,1,0,2,0.0,2.0,False
+meshtastic/web,KomelT,Tilen Komel,1,0,2,0.0,2.0,False
+meshtastic/web,sachaw,Sacha Weatherstone,5,1327,1283,265.4,256.6,False
+meshtastic/firmware,Kealper,Ken Piper,5,0,0,0.0,0.0,False
+meshtastic/firmware,hafu,Hannes Fuchs,5,0,0,0.0,0.0,False
+meshtastic/firmware,pdxlocations,,6,0,0,0.0,0.0,False
+meshtastic/firmware,Solarvortx,Solanaceae,6,0,0,0.0,0.0,False
+meshtastic/firmware,puzzled-pancake,,6,0,0,0.0,0.0,False
+meshtastic/firmware,jcyrio,Cyrio,6,0,0,0.0,0.0,False
+meshtastic/firmware,EricSesterhennX41,Eric Sesterhenn,6,0,0,0.0,0.0,False
+meshtastic/firmware,aHVzY2g,,6,0,0,0.0,0.0,False
+meshtastic/firmware,isseysandei,,6,0,0,0.0,0.0,False
+meshtastic/firmware,jake-b,,6,0,0,0.0,0.0,False
+meshtastic/firmware,mehuman,Mark Huson,6,0,0,0.0,0.0,False
+meshtastic/firmware,erayd,Erayd,6,0,0,0.0,0.0,False
+meshtastic/firmware,IZ1IVA,,7,0,0,0.0,0.0,False
+meshtastic/firmware,loodydo,,7,0,0,0.0,0.0,False
+meshtastic/firmware,charlieh0tel,Christopher Hoover,7,0,0,0.0,0.0,False
+meshtastic/firmware,lesykm,Mykhailo Lesyk,7,0,0,0.0,0.0,False
+meshtastic/firmware,jasonbcox,Jason B. Cox,7,0,0,0.0,0.0,False
+meshtastic/firmware,mskvortsov,,8,0,0,0.0,0.0,False
+meshtastic/firmware,claesg,,8,0,0,0.0,0.0,False
+meshtastic/firmware,augustozanellato,Augusto Zanellato,8,0,0,0.0,0.0,False
+meshtastic/firmware,Krezalis,Krezalis,8,0,0,0.0,0.0,False
+meshtastic/firmware,slavino,Slavomir Hustaty,8,0,0,0.0,0.0,False
+meshtastic/firmware,thoherr,Thomas Herrmann,8,0,0,0.0,0.0,False
+meshtastic/firmware,cpatulea,Catalin Patulea,8,0,0,0.0,0.0,False
+meshtastic/firmware,mrvdb,Marcel van der Boom,8,0,0,0.0,0.0,False
+meshtastic/firmware,And137,,9,0,0,0.0,0.0,False
+meshtastic/firmware,RCGV1,Benjamin Faershtein,9,0,0,0.0,0.0,False
+meshtastic/firmware,Heltec-Aaron-Lee,Aaron.Lee,9,0,0,0.0,0.0,False
+meshtastic/firmware,macvenez,Marco Veneziano,9,0,0,0.0,0.0,False
+meshtastic/firmware,DaneEvans,Dane Evans,9,0,0,0.0,0.0,False
+meshtastic/firmware,wnagele,Wolfgang Nagele,9,0,0,0.0,0.0,False
+meshtastic/firmware,titan098,David Ellefsen,9,0,0,0.0,0.0,False
+meshtastic/firmware,Dr-Gandalf,Jorge Castillo,10,0,0,0.0,0.0,False
+meshtastic/firmware,GPSFan,Ken McGuire,10,0,0,0.0,0.0,False
+meshtastic/firmware,linagee,,10,0,0,0.0,0.0,False
+meshtastic/firmware,RicInNewMexico,Ric In New Mexico,11,0,0,0.0,0.0,False
+meshtastic/firmware,dependabot[bot],,11,0,0,0.0,0.0,True
+meshtastic/firmware,syund,,11,0,0,0.0,0.0,False
+meshtastic/firmware,ThatKalle,Kalle Lilja,11,0,0,0.0,0.0,False
+meshtastic/firmware,mrekin,Max,11,0,0,0.0,0.0,False
+meshtastic/firmware,tavdog,Tavis,11,0,0,0.0,0.0,False
+meshtastic/firmware,oseiler2,Oliver Seiler,11,0,0,0.0,0.0,False
+meshtastic/firmware,Dafeman,,12,0,0,0.0,0.0,False
+meshtastic/firmware,BeardyWalrus,,12,0,0,0.0,0.0,False
+meshtastic/firmware,scruplelesswizard,Jason Murray,14,0,0,0.0,0.0,False
+meshtastic/firmware,dhskinner,David,14,0,0,0.0,0.0,False
+meshtastic/firmware,whywilson,Wilson,15,0,0,0.0,0.0,False
+meshtastic/firmware,oscgonfer,oscgonfer,15,0,0,0.0,0.0,False
+meshtastic/firmware,garthvh,Garth Vander Houwen,15,0,0,0.0,0.0,False
+meshtastic/firmware,girtsf,Girts,15,0,0,0.0,0.0,False
+meshtastic/firmware,vfurman-gh,,16,0,0,0.0,0.0,False
+meshtastic/firmware,weebl2000,Wessel,16,0,0,0.0,0.0,False
+meshtastic/firmware,DanielCao0,Daniel.Cao,17,0,0,0.0,0.0,False
+meshtastic/firmware,gjelsoe,Michael Gjelsø,17,0,0,0.0,0.0,False
+meshtastic/firmware,joshpirihi,,18,0,0,0.0,0.0,False
+meshtastic/firmware,Dylanliacc,dylanli,19,0,0,0.0,0.0,False
+meshtastic/firmware,beegee-tokyo,Bernd Giesecke,19,0,0,0.0,0.0,False
+meshtastic/firmware,code8buster,,20,0,0,0.0,0.0,False
+meshtastic/firmware,h3lix1,Clive Blackledge,20,0,0,0.0,0.0,False
+meshtastic/firmware,Links2004,Markus,20,0,0,0.0,0.0,False
+meshtastic/firmware,S5NC,,21,0,0,0.0,0.0,False
+meshtastic/firmware,costonisp,co sto,21,0,0,0.0,0.0,False
+meshtastic/firmware,Mictronics,,23,0,0,0.0,0.0,False
+meshtastic/firmware,prampec,Balázs Kelemen,26,0,0,0.0,0.0,False
+meshtastic/firmware,Quency-D,,27,0,0,0.0,0.0,False
+meshtastic/firmware,D4rk4,Dmitry Galenko,27,0,0,0.0,0.0,False
+meshtastic/firmware,Stary2001,Chloe Bethel,29,0,0,0.0,0.0,False
+meshtastic/firmware,andrekir,Andre K,30,0,0,0.0,0.0,False
+meshtastic/firmware,osmanovv,Vladislav Osmanov,31,0,0,0.0,0.0,False
+meshtastic/firmware,WillyJL,WillyJL,32,0,0,0.0,0.0,False
+meshtastic/firmware,rcarteraz,rcarteraz,34,0,0,0.0,0.0,False
+meshtastic/firmware,Professr,Ellie H,34,0,0,0.0,0.0,False
+meshtastic/firmware,garethhcoleman,Gareth Coleman,35,0,0,0.0,0.0,False
+meshtastic/firmware,Jorropo,,36,0,0,0.0,0.0,False
+meshtastic/firmware,crossan007,Charles Crossan,36,0,0,0.0,0.0,False
+meshtastic/firmware,compumike,Mike Robbins,36,0,0,0.0,0.0,False
+meshtastic/firmware,esev,Eric Severance,37,0,0,0.0,0.0,False
+meshtastic/firmware,a-f-G-U-C,,38,0,0,0.0,0.0,False
+meshtastic/firmware,ndoo,Andrew Yong,41,0,0,0.0,0.0,False
+meshtastic/firmware,NomDeTom,Tom,45,0,0,0.0,0.0,False
+meshtastic/firmware,lewisxhe,Lewis He,59,0,0,0.0,0.0,False
+meshtastic/firmware,mkinney,,59,0,0,0.0,0.0,False
+meshtastic/firmware,HarukiToreda,HarukiToreda,66,0,0,0.0,0.0,False
+meshtastic/firmware,ford-jones,inertia,91,0,0,0.0,0.0,False
+meshtastic/firmware,markbirss,Mark Trevor Birss,105,0,0,0.0,0.0,False
+meshtastic/firmware,Xaositek,Jason P,110,0,0,0.0,0.0,False
+meshtastic/firmware,,,120,0,0,0.0,0.0,False
+meshtastic/firmware,todd-herbert,,127,0,0,0.0,0.0,False
+meshtastic/firmware,mverch67,Manuel,143,0,0,0.0,0.0,False
+meshtastic/firmware,sachaw,Sacha Weatherstone,175,0,0,0.0,0.0,False
+meshtastic/firmware,renovate[bot],,247,0,0,0.0,0.0,True
+meshtastic/firmware,fifieldt,Tom Fifield,268,0,0,0.0,0.0,False
+meshtastic/firmware,GUVWAF,,301,0,0,0.0,0.0,False
+meshtastic/firmware,vidplace7,Austin,366,0,0,0.0,0.0,False
+meshtastic/firmware,github-actions[bot],,524,0,0,0.0,0.0,True
+meshtastic/firmware,jp-bennett,Jonathan Bennett,651,0,0,0.0,0.0,False
+meshtastic/firmware,mc-hamster,Jm Casler,1155,0,0,0.0,0.0,False
+meshtastic/firmware,caveman99,Thomas Göttgens,1898,0,0,0.0,0.0,False
+meshtastic/firmware,geeksville,geeksville,2162,0,0,0.0,0.0,False
+meshtastic/firmware,thebentern,Ben Meadors,2859,0,0,0.0,0.0,False
+civiform/civiform,renovate[bot],renovate[bot],239,4626,5554,19.36,23.24,True
+civiform/civiform,shane-exygy,shane-exygy,34,4431,2274,130.32,66.88,False
+civiform/civiform,gwendolyngoetz,Gwendolyn Goetz,37,23239,2048,628.08,55.35,False
+civiform/civiform,melanie-exygy,Melanie Barker,13,1247,349,95.92,26.85,False
+civiform/civiform,tallulahkay,Tallulah Kay,61,4829,2957,79.16,48.48,False
+civiform/civiform,rockycodes,rocky,15,1930,1829,128.67,121.93,False
+civiform/civiform,AlvieH,Alvin Hermans,21,2961,705,141.0,33.57,False
+civiform/civiform,swatkat1,Swathi Murthi,9,418,99,46.44,11.0,False
+civiform/civiform,dependabot[bot],dependabot[bot],23,296,761,12.87,33.09,True
+civiform/civiform,transifex-integration[bot],transifex-integration[bot],2,7353,446,3676.5,223.0,True
+civiform/civiform,CallaJune,Calla,25,4578,1981,183.12,79.24,False
+civiform/civiform,fernandez-jack,fernandez-jack,5,736,160,147.2,32.0,False
+civiform/civiform,nb1701,Nick Burgan,9,787,28,87.44,3.11,False
+civiform/civiform,azhangggggg,azhangggggg,3,237,21,79.0,7.0,False
+civiform/civiform,alchemypls,alchemypls,1,8,0,8.0,0.0,False
+civiform/civiform,osajulian-dev,osajulian-dev,3,8,2,2.67,0.67,False
+iiab/iiab,Hermanio,Herman Õunapuu,1,0,0,0.0,0.0,False
+iiab/iiab,floydianslips,Joshua Dennis,1,0,0,0.0,0.0,False
+iiab/iiab,peckjon,Jon Peck,1,0,0,0.0,0.0,False
+iiab/iiab,Daniel-Mietchen,Daniel Mietchen,1,0,0,0.0,0.0,False
+iiab/iiab,adamsclafani,Adam Sclafani,2,0,0,0.0,0.0,False
+iiab/iiab,icebox827,Denis Lafontant,2,0,0,0.0,0.0,False
+iiab/iiab,rgangela99,Angela Liu,4,0,0,0.0,0.0,False
+iiab/iiab,c-w,Clemens Wolff,4,0,0,0.0,0.0,False
+iiab/iiab,dahagag,Mohamad Abuelhagag,9,0,0,0.0,0.0,False
+iiab/iiab,EMG70,,10,0,0,0.0,0.0,False
+iiab/iiab,lemueldsouza,,12,0,0,0.0,0.0,False
+iiab/iiab,neomatrixcode,Josué Acevedo (Neomatrix),14,0,0,0.0,0.0,False
+iiab/iiab,deldesir,Blondel Mondesir,29,0,0,0.0,0.0,False
+iiab/iiab,mitra42,Mitra Ardron,37,0,0,0.0,0.0,False
+iiab/iiab,cwivagg,,41,0,0,0.0,0.0,False
+iiab/iiab,Akatama,Jimmy Lindsey,51,0,0,0.0,0.0,False
+iiab/iiab,avni,avni,72,0,0,0.0,0.0,False
+iiab/iiab,arky,Arky,80,0,0,0.0,0.0,False
+iiab/iiab,m-anish,Anish Mangal,148,0,0,0.0,0.0,False
+iiab/iiab,veeara282,,149,0,0,0.0,0.0,False
+iiab/iiab,chapmanjacobd,Jacob Chapman,198,0,0,0.0,0.0,False
+iiab/iiab,orblivion,Daniel Krol,228,0,0,0.0,0.0,False
+iiab/iiab,tim-moody,Tim Moody,285,0,0,0.0,0.0,False
+iiab/iiab,Ark74,Luis Guzman,311,0,0,0.0,0.0,False
+iiab/iiab,georgejhunt,,736,0,0,0.0,0.0,False
+iiab/iiab,jvonau,Jerry Vonau,1538,0,0,0.0,0.0,False
+iiab/iiab,holta,A Holt,10580,0,0,0.0,0.0,False

@@ -267,7 +267,14 @@ def _export_contributor_lifecycles(data: list[RepositoryData], out: Path) -> Non
 
 def _export_contributor_weekly_activity(data: list[RepositoryData], out: Path) -> None:
     """Export per-contributor weekly commit counts."""
-    headers = ["repo_full_name", "contributor_id", "week_start", "commits"]
+    headers = [
+        "repo_full_name",
+        "contributor_id",
+        "week_start",
+        "commits",
+        "lines_added",
+        "lines_removed",
+    ]
     filepath = out / "contributor_weekly_activity.csv"
     with open(filepath, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=headers)
@@ -281,6 +288,8 @@ def _export_contributor_weekly_activity(data: list[RepositoryData], out: Path) -
                         "contributor_id": cw.contributor_id,
                         "week_start": cw.week_start,
                         "commits": cw.commits,
+                        "lines_added": cw.lines_added,
+                        "lines_removed": cw.lines_removed,
                     }
                     writer.writerow(row)
     total = sum(

@@ -12,6 +12,9 @@ wheels/
 # Output data
 output/
 
+# Crawl logs
+logs/
+
 # Config with secrets
 config.yaml
 !config.example.yaml

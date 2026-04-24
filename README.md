@@ -23,6 +23,7 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
 - [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery)
 - [Analysis Pipeline](#analysis-pipeline)
 - [Statistical Analysis](#statistical-analysis)
+- [Weekly Activity Analysis](#weekly-activity-analysis)
 - [API Rate Limits](#api-rate-limits)
 - [Visualization](#visualization)
 - [Examples](#examples)
@@ -304,7 +305,7 @@ All output files are written to the output directory (default: `./output/`). Bot
 | `core_periphery.csv` | 1 per contributor in review network | Core-periphery network analysis (centrality, classification) per contributor |
 | `weekly_snapshots.csv` | 1 per repository-week | Weekly commit/contributor counts with cumulative totals |
 | `contributor_lifecycles.csv` | 1 per repository-contributor pair | Contributor lifecycle: first/last commit, duration, activity ratio, active/departed status |
-| `contributor_weekly_activity.csv` | 1 per contributor-week pair | Per-person weekly commit counts |
+| `contributor_weekly_activity.csv` | 1 per contributor-week pair | Per-person weekly commit counts with lines added / removed |
 | `issue_records.csv` | 1 per issue | Individual issue records: author, closer, comments, labels, time-to-close |
 | `issue_summary.csv` | 1 per repository | Aggregated issue analytics: counts, averages, top openers/closers |
 | `cross_project_overlap.csv` | 1 per unique contributor | Cross-project contributor overlap (login, number of repos contributed to) |
@@ -625,7 +626,9 @@ Detection is positive (`cloud_detected: True` or `ai_ml_detected: True`) if **at
 
 The commit history collector parses the **full commit history** of each repository (not limited to the 52-week window of the GitHub Statistics API). This enables long-term temporal analysis of project activity and contributor engagement patterns.
 
-**Data source:** `repo.get_commits()` — paginated iteration through all commits. Only list-level data (author + date) is used, so no individual commit API calls are needed. **API cost:** ~1 call per 100 commits.
+**Data source:** The GitHub GraphQL API — `Repository.defaultBranchRef.target.history(first: 100, after: $cursor)` — fetches 100 commits per API call and returns `oid`, `additions`, `deletions`, `committedDate`, author email/name, and author GitHub login in a single payload. This is roughly **35× faster** than the previous per-commit REST pattern (benchmarked on an 8,700-commit repo: ~3 minutes vs. ~50 minutes at the 5 000/hour rate limit) and gives us line-level effort data "for free" as part of the same request. **API cost:** ~1 call per 100 commits (i.e. `ceil(N / 100)` where N is the commit count).
+
+> **Implementation note on PyGithub.** The collector previously used PyGithub's `Commit.stats` lazy-load for per-commit additions/deletions. PyGithub's `Requester.__requestRaw` retries HTTP 202 responses *recursively* ([Requester.py:1238](https://github.com/PyGithub/PyGithub/blob/main/github/Requester.py)); for GitHub's stats endpoints that take minutes to compute, the retries accumulate Python stack frames until `RecursionError` is raised. The GraphQL rewrite bypasses that code path entirely. The companion httpx-based `GitHubClient.get_stats_contributors` and `get_stats_commit_activity` methods do the same for the REST stats endpoints with an iterative (for-loop) retry.
 
 #### Weekly Snapshots (`weekly_snapshots.csv`)
 
@@ -669,7 +672,7 @@ One row per (repository, contributor) pair. Provides lifecycle analysis for each
 
 #### Contributor Weekly Activity (`contributor_weekly_activity.csv`)
 
-One row per (repository, contributor, ISO week) triple. Only weeks where the contributor made at least one commit are included.
+One row per (repository, contributor, ISO week) triple. Only weeks where the contributor made at least one commit are included. The `lines_added` and `lines_removed` columns come from the same GraphQL commit-history query that produces the weekly snapshots — there is no extra API cost.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -677,6 +680,10 @@ One row per (repository, contributor, ISO week) triple. Only weeks where the con
 | `contributor_id` | string | Unique identifier (login or email) |
 | `week_start` | date | Monday of the ISO week |
 | `commits` | integer | Number of commits by this contributor in this week |
+| `lines_added` | integer | Sum of `additions` across this contributor's commits in this week (non-negative) |
+| `lines_removed` | integer | Sum of `deletions` across this contributor's commits in this week (non-negative) |
+
+**Interpretation of line counts.** GitHub reports per-commit `additions` and `deletions` as non-negative integers computed as the diff against the commit's first parent. Every row is therefore non-negative, but summing `lines_added − lines_removed` across a repository's entire default-branch history can be negative — this happens when the traversed history contains large deletions not offset by equally large earlier additions (e.g. repositories where bulk data files are replaced with smaller versions over many commits, or where vendored directories that predate the current default branch are later purged). Two repositories in the example dataset exhibit this pattern (`DemocracyClub/UK-Polling-Stations` and `CodeForAfrica/sensors.AFRICA`). The crawler therefore reports `lines_added` and `lines_removed` separately rather than a signed delta.
 
 ---
 
@@ -849,9 +856,11 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                     |                |                    |
                     |  +-------------v---------------+   |
                     |  | 6. COMMIT HISTORY (optional) |   |
-                    |  |    - All commits parsed      |   |
+                    |  |    - GraphQL history query   |   |
+                    |  |      (100 commits / call)    |   |
                     |  |    - Weekly snapshots         |   |
                     |  |    - Contributor lifecycles   |   |
+                    |  |    - Per-(person,week) LOC    |   |
                     |  |    - Departure detection      |   |
                     |  +-------------+---------------+   |
                     |                |                    |
@@ -973,6 +982,53 @@ print(wilcoxon[["comparison", "median_with", "median_without", "p_value", "signi
 maturity = pd.read_csv("output/statistical_analysis/maturity_analysis.csv")
 sig = maturity[maturity["p_value"] < 0.05]
 print(sig[["metric", "mature_median", "young_median", "p_value", "cliffs_delta", "effect_magnitude"]])
+```
+
+---
+
+## Weekly Activity Analysis
+
+A second analysis script derives effort-resolved sustainability metrics from the per-(contributor, week) `lines_added` / `lines_removed` data in `contributor_weekly_activity.csv`. These analyses complement the count-based metrics in `statistical_analysis/` with an effort-weighted view of contributor concentration.
+
+### Usage
+
+```bash
+uv run python scripts/weekly_activity_analysis.py
+```
+
+Reads `output/contributor_weekly_activity.csv` and writes to `output/weekly_activity_analysis/`.
+
+### Analyses Performed
+
+| Analysis | Output File | Description |
+|---|---|---|
+| Weekly Elephant Factor | `weekly_elephant_factor.csv` | Per repo: mean share of weekly `lines_added + lines_removed` contributed by the single busiest author that week; percentage of weeks where that share ≥ 50% ("elephant weeks") and ≥ 99.9% ("single-contributor weeks"). A time-resolved complement to the static elephant factor in `chaoss_summary.csv`. |
+| Churn Ratio | `churn_ratio.csv` | Per repo: overall and weekly `deletions / (additions + deletions)`, alongside total adds/removes, net LOC delta, and percentage of deletion-heavy weeks. Values close to 0 indicate growth mode, close to 1 indicate cleanup/rewrite mode. |
+| Effort Gini | `effort_gini.csv` | Per repo: Gini coefficient of total `lines_added + lines_removed` per contributor, paired with the Gini of per-contributor commit counts. The gap between the two quantifies how much effort-weighted concentration exceeds count-based concentration. |
+| Summary | `summary.md` | Human-readable Markdown rundown of the most striking findings across all three analyses. |
+
+### Example: Loading weekly activity results
+
+```python
+import pandas as pd
+
+# Which repos are most dominated by one contributor week-by-week?
+elephant = pd.read_csv("output/weekly_activity_analysis/weekly_elephant_factor.csv")
+print(elephant.sort_values("mean_top_share", ascending=False)
+              .head(10)[["repo_full_name", "mean_top_share",
+                         "elephant_weeks_pct", "single_contributor_weeks_pct"]])
+
+# Which repos are in growth vs. maintenance mode?
+churn = pd.read_csv("output/weekly_activity_analysis/churn_ratio.csv")
+print(churn[["repo_full_name", "overall_churn_ratio", "net_loc_delta"]]
+        .sort_values("overall_churn_ratio", ascending=False))
+
+# How much does count-based concentration under-estimate effort concentration?
+gini = pd.read_csv("output/weekly_activity_analysis/effort_gini.csv")
+gini["gini_gap"] = gini["effort_gini_lines"] - gini["effort_gini_commits"]
+print(gini.sort_values("gini_gap", ascending=False)
+          [["repo_full_name", "effort_gini_lines", "effort_gini_commits", "gini_gap"]]
+          .head(10))
 ```
 
 ---
@@ -1338,8 +1394,9 @@ civic_tech_git_crawler/
 ├── config.yaml                     # Your configuration (gitignored)
 ├── paper_draft.md                     # Research paper (n=29, publication-ready)
 ├── scripts/
-│   ├── visualize.py                # Visualization script (6 chart types)
-│   └── statistical_analysis.py     # Statistical testing (12 analysis types)
+│   ├── visualize.py                    # Visualization script (6 chart types)
+│   ├── statistical_analysis.py         # Statistical testing (12 analysis types)
+│   └── weekly_activity_analysis.py     # Weekly elephant factor, churn ratio, effort Gini
 ├── src/
 │   └── civic_tech_crawler/
 │       ├── __init__.py             # Package version
