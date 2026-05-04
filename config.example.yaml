@@ -33,6 +33,15 @@ repositories:
   - "meshtastic/firmware"
   - "civiform/civiform"
   - "iiab/iiab"
+  - "ForumMagnum/ForumMagnum"
+  - "Significant-Gravitas/AutoGPT"
+  - "mastodon/mastodon"
+  - "okfde/froide"
+  - "openplans/shareabouts"
+  - "codeforamerica/recordtrac"
+  - "CodeForAfrica/actNOW"
+  - "CitizensFoundation/your-priorities-app"
+  - "mysociety/ceuk-marking"
 
 output:
   directory: "./output"
