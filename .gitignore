@@ -15,6 +15,7 @@ output/
 # Crawl logs
 logs/
 *.log
+*.log.*
 
 # Config with secrets
 config.yaml
