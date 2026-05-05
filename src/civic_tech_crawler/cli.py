@@ -254,6 +254,17 @@ def main() -> None:
     )
     console.print(f"Rate limit remaining: {client.rate_limit_remaining}")
 
+    # Warm up GitHub's async /stats/* endpoints for any repo we will actually
+    # crawl (skip cache hits). Lets the per-repo stats builds proceed in
+    # parallel server-side while we do our sequential collection work, so most
+    # repos return 200 by the time chaoss_metrics needs them.
+    repos_to_warm = [
+        s for s in config.repositories
+        if args.force or not is_cached(s, output_dir)
+    ]
+    if repos_to_warm:
+        client.warm_stats_endpoints(repos_to_warm)
+
     all_data: list[RepositoryData] = []
     crawled_count = 0
     cached_count = 0

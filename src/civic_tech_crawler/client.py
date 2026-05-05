@@ -87,6 +87,33 @@ class GitHubClient:
         self._rate_limiter.wait_if_needed()
         return self._github.get_repo(slug)
 
+    def warm_stats_endpoints(self, slugs: list[str], endpoints: tuple[str, ...] = ("commit_activity", "contributors")) -> dict[str, int]:
+        """Fire one request per (slug, endpoint) to trigger GitHub's async stats build.
+
+        GitHub computes /stats/* asynchronously: the first request returns 202 and
+        starts the build, subsequent requests return 200 once it finishes. By
+        firing all requests up-front, the per-repo builds proceed in parallel
+        server-side while the crawler does its sequential work — so by the time
+        we actually need a repo's stats during chaoss_metrics collection, GitHub
+        has typically had several minutes to compute them.
+
+        Sequential, no retries, no body parsing. ~0.3 s per request, so 37 repos
+        × 2 endpoints ≈ 22 s of pre-pass. Returns a dict of HTTP status counts.
+        """
+        counts: dict[int, int] = {}
+        logger.info("Warming stats endpoints for %d repos × %d endpoints...", len(slugs), len(endpoints))
+        for slug in slugs:
+            for endpoint in endpoints:
+                self._rate_limiter.wait_if_needed()
+                try:
+                    resp = self._httpx.get(f"/repos/{slug}/stats/{endpoint}")
+                    counts[resp.status_code] = counts.get(resp.status_code, 0) + 1
+                except httpx.HTTPError:
+                    counts[-1] = counts.get(-1, 0) + 1
+        summary = ", ".join(f"{k}: {v}" for k, v in sorted(counts.items()))
+        logger.info("Stats warm-up complete: %s", summary)
+        return counts
+
     def _get_stats_endpoint(self, slug: str, endpoint: str) -> list | None:
         """Fetch a /stats/{endpoint} JSON payload with iterative 202-retry.
 
