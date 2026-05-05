@@ -1,0 +1,4651 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforjapan/BirdXplorer",
+    "name": "BirdXplorer",
+    "description": null,
+    "num_developers": 9,
+    "total_commits": 711,
+    "languages": {
+      "Python": 743078,
+      "Shell": 47260,
+      "Dockerfile": 1974,
+      "Mako": 635
+    },
+    "primary_language": "Python",
+    "first_commit_date": "2023-09-24T01:43:12+00:00",
+    "last_commit_date": "2026-04-13T09:23:46+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 50,
+    "stars": 11,
+    "watchers": 5,
+    "forks": 4,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:Dockerfile"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Deploy CDK Stack",
+      "Release",
+      "Claude PR Assistant",
+      "Deploy API (dev)",
+      "Deploy ETL Lambda (dev)",
+      "Main",
+      "Release to Production",
+      "Project test"
+    ],
+    "deployments_count": 0,
+    "created_at": "2023-09-06T08:59:29+00:00",
+    "updated_at": "2026-04-13T09:23:51+00:00",
+    "pushed_at": "2026-04-13T09:23:48+00:00",
+    "size_kb": 2075
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "ayuki-joto",
+      "name": "ayuki",
+      "num_commits": 193,
+      "additions": 22073,
+      "deletions": 6639,
+      "avg_additions_per_commit": 114.37,
+      "avg_deletions_per_commit": 34.4,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "yu23ki14",
+      "name": "Yuki Kawabe",
+      "num_commits": 195,
+      "additions": 47388,
+      "deletions": 8694,
+      "avg_additions_per_commit": 243.02,
+      "avg_deletions_per_commit": 44.58,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "claude[bot]",
+      "name": "claude[bot]",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "devin-ai-integration[bot]",
+      "name": "Devin AI",
+      "num_commits": 14,
+      "additions": 1988,
+      "deletions": 1020,
+      "avg_additions_per_commit": 142.0,
+      "avg_deletions_per_commit": 72.86,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "osoken",
+      "name": "osoken",
+      "num_commits": 37,
+      "additions": 1115,
+      "deletions": 382,
+      "avg_additions_per_commit": 30.14,
+      "avg_deletions_per_commit": 10.32,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "osoken",
+      "name": "Takeshi OSOEKAWA",
+      "num_commits": 6,
+      "additions": 114,
+      "deletions": 66,
+      "avg_additions_per_commit": 19.0,
+      "avg_deletions_per_commit": 11.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "sushichan044",
+      "name": "Kentaro Suzuki",
+      "num_commits": 44,
+      "additions": 1443,
+      "deletions": 417,
+      "avg_additions_per_commit": 32.8,
+      "avg_deletions_per_commit": 9.48,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "iazzenma",
+      "name": "jasta",
+      "num_commits": 10,
+      "additions": 89,
+      "deletions": 56,
+      "avg_additions_per_commit": 8.9,
+      "avg_deletions_per_commit": 5.6,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforjapan/BirdXplorer",
+    "pr_count_total": 130,
+    "pr_count_merged": 126,
+    "pr_count_open": 1,
+    "pr_count_closed_unmerged": 3,
+    "prs": [
+      {
+        "number": 2,
+        "title": "Modify README",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2023-10-18T07:15:08+00:00",
+        "merged_at": "2023-10-18T07:39:35+00:00",
+        "closed_at": "2023-10-18T07:39:35+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Update issue templates",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2023-10-18T07:26:13+00:00",
+        "merged_at": "2023-10-18T07:26:45+00:00",
+        "closed_at": "2023-10-18T07:26:45+00:00"
+      },
+      {
+        "number": 18,
+        "title": "Feature/13 refactor participant",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-10-29T09:55:29+00:00",
+        "merged_at": "2023-10-29T09:57:25+00:00",
+        "closed_at": "2023-10-29T09:57:25+00:00"
+      },
+      {
+        "number": 19,
+        "title": "feat(models): add EncollmentState class",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-10-29T10:03:25+00:00",
+        "merged_at": "2023-10-29T10:08:54+00:00",
+        "closed_at": "2023-10-29T10:08:54+00:00"
+      },
+      {
+        "number": 21,
+        "title": "feat(models): implement TwitterTimestamp class",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-10-29T11:10:42+00:00",
+        "merged_at": "2023-10-31T13:42:28+00:00",
+        "closed_at": "2023-10-31T13:42:28+00:00"
+      },
+      {
+        "number": 23,
+        "title": "feat(models): add special type for timestamp_of_last_earn_out",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-10-31T13:47:03+00:00",
+        "merged_at": "2023-11-01T10:07:13+00:00",
+        "closed_at": "2023-11-01T10:07:13+00:00"
+      },
+      {
+        "number": 25,
+        "title": "update successful_rating_needed_to_earn_in",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-10-31T14:03:46+00:00",
+        "merged_at": "2023-11-01T10:08:41+00:00",
+        "closed_at": "2023-11-01T10:08:41+00:00"
+      },
+      {
+        "number": 26,
+        "title": "feat(models): update modelingPopulation type for UserEnrollment",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-10-31T14:06:52+00:00",
+        "merged_at": "2023-11-01T10:11:41+00:00",
+        "closed_at": "2023-11-01T10:11:41+00:00"
+      },
+      {
+        "number": 27,
+        "title": "feat(models): add NonNegativeFloat class",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-10-31T14:22:56+00:00",
+        "merged_at": "2023-11-01T10:15:20+00:00",
+        "closed_at": "2023-11-01T10:15:20+00:00"
+      },
+      {
+        "number": 28,
+        "title": "feat(models): add summary property to the Note class",
+        "state": "closed",
+        "author_login": "kota-yata",
+        "created_at": "2023-10-31T15:19:44+00:00",
+        "merged_at": "2023-11-01T10:16:40+00:00",
+        "closed_at": "2023-11-01T10:16:40+00:00"
+      },
+      {
+        "number": 29,
+        "title": "chore(ci): tox\u3092\u4f7f\u3063\u305f\u30c6\u30b9\u30c8\u3092\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "NEKOYASAN",
+        "created_at": "2023-11-01T07:19:00+00:00",
+        "merged_at": "2023-11-01T10:05:18+00:00",
+        "closed_at": "2023-11-01T10:05:18+00:00"
+      },
+      {
+        "number": 30,
+        "title": "Feature/add binary bool type",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2023-11-01T08:54:35+00:00",
+        "merged_at": "2023-11-14T15:02:26+00:00",
+        "closed_at": "2023-11-14T15:02:26+00:00"
+      },
+      {
+        "number": 31,
+        "title": "feat(models): add BinaryBool",
+        "state": "closed",
+        "author_login": "kota-yata",
+        "created_at": "2023-11-01T09:59:12+00:00",
+        "merged_at": null,
+        "closed_at": "2023-11-01T10:07:20+00:00"
+      },
+      {
+        "number": 35,
+        "title": "feat(models): add enum properties",
+        "state": "closed",
+        "author_login": "kota-yata",
+        "created_at": "2023-11-10T02:19:54+00:00",
+        "merged_at": "2023-11-14T14:40:23+00:00",
+        "closed_at": "2023-11-14T14:40:23+00:00"
+      },
+      {
+        "number": 36,
+        "title": "feat(model): generalize note_author_participant_id",
+        "state": "closed",
+        "author_login": "kota-yata",
+        "created_at": "2023-11-15T04:13:40+00:00",
+        "merged_at": "2023-12-04T08:21:59+00:00",
+        "closed_at": "2023-12-04T08:21:59+00:00"
+      },
+      {
+        "number": 38,
+        "title": "Feature/37 topic model poc",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2023-11-21T13:25:05+00:00",
+        "merged_at": "2024-02-24T02:11:38+00:00",
+        "closed_at": "2024-02-24T02:11:39+00:00"
+      },
+      {
+        "number": 43,
+        "title": "fix(pyproject): add ignore DeprecationWarning caused by the base libr\u2026",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-02-23T06:08:09+00:00",
+        "merged_at": "2024-02-24T02:09:51+00:00",
+        "closed_at": "2024-02-24T02:09:51+00:00"
+      },
+      {
+        "number": 45,
+        "title": "Fix/issue 44 add ignore e701",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-02-23T06:12:19+00:00",
+        "merged_at": "2024-02-24T02:09:50+00:00",
+        "closed_at": "2024-02-24T02:09:50+00:00"
+      },
+      {
+        "number": 46,
+        "title": "Feature/issue 40 add topics endpoint",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-02-25T18:10:15+00:00",
+        "merged_at": "2024-03-11T08:30:48+00:00",
+        "closed_at": "2024-03-11T08:30:48+00:00"
+      },
+      {
+        "number": 47,
+        "title": "Feature/issue 39 add notes endpoint",
+        "state": "closed",
+        "author_login": "kota-yata",
+        "created_at": "2024-03-10T14:53:02+00:00",
+        "merged_at": "2024-04-24T15:10:33+00:00",
+        "closed_at": "2024-04-24T15:10:33+00:00"
+      },
+      {
+        "number": 49,
+        "title": "chore(pyproject): bump pip to 24.0",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-03-23T03:20:36+00:00",
+        "merged_at": "2024-03-23T03:23:27+00:00",
+        "closed_at": "2024-03-23T03:23:27+00:00"
+      },
+      {
+        "number": 50,
+        "title": "feat(app): add posts route",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-03-23T15:48:10+00:00",
+        "merged_at": "2024-04-15T10:05:09+00:00",
+        "closed_at": "2024-04-15T10:05:09+00:00"
+      },
+      {
+        "number": 56,
+        "title": "python package \u306e\u69cb\u6210\u5909\u66f4 (api, common, etl)",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-05-04T13:22:45+00:00",
+        "merged_at": "2024-05-09T08:44:00+00:00",
+        "closed_at": "2024-05-09T08:44:00+00:00"
+      },
+      {
+        "number": 57,
+        "title": "API\u306eDocker\u5316",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-05-09T06:16:23+00:00",
+        "merged_at": "2024-05-16T14:21:26+00:00",
+        "closed_at": "2024-05-16T14:21:26+00:00"
+      },
+      {
+        "number": 59,
+        "title": "\u5404\u30d1\u30c3\u30b1\u30fc\u30b8\u3067main\u30d6\u30e9\u30f3\u30c1\u306e`common`\u3092\u4f7f\u3046",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-05-13T06:09:46+00:00",
+        "merged_at": "2024-05-16T14:24:59+00:00",
+        "closed_at": "2024-05-16T14:24:59+00:00"
+      },
+      {
+        "number": 60,
+        "title": "ETL base",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-05-13T07:08:31+00:00",
+        "merged_at": "2024-06-10T08:47:07+00:00",
+        "closed_at": "2024-06-10T08:47:07+00:00"
+      },
+      {
+        "number": 66,
+        "title": "Extract\u30d5\u30a7\u30fc\u30ba\u306eCommunityNote\u30ed\u30fc\u30c7\u30fc\u30bf\u306e\u62bd\u51fa",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-05-23T01:49:57+00:00",
+        "merged_at": "2024-05-30T12:54:03+00:00",
+        "closed_at": "2024-05-30T12:54:03+00:00"
+      },
+      {
+        "number": 70,
+        "title": "dev\u74b0\u5883\u3067\u306eCommon\u30e9\u30a4\u30d6\u30e9\u30ea\u306e\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5148\u3092\u5909\u66f4",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-06-24T00:07:30+00:00",
+        "merged_at": "2024-07-09T09:30:09+00:00",
+        "closed_at": "2024-07-09T09:30:09+00:00"
+      },
+      {
+        "number": 72,
+        "title": "Extract and Transform to csv",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-06-26T01:27:17+00:00",
+        "merged_at": "2024-07-09T09:32:50+00:00",
+        "closed_at": "2024-07-09T09:32:50+00:00"
+      },
+      {
+        "number": 74,
+        "title": "Upgrade pip before install packages",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-06-28T05:22:34+00:00",
+        "merged_at": "2024-07-08T13:55:29+00:00",
+        "closed_at": "2024-07-08T13:55:29+00:00"
+      },
+      {
+        "number": 75,
+        "title": "Add cors settings",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-06-28T05:54:44+00:00",
+        "merged_at": "2024-07-09T09:33:15+00:00",
+        "closed_at": "2024-07-09T09:33:15+00:00"
+      },
+      {
+        "number": 76,
+        "title": "api: use `gunicorn` in production",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-06-28T07:42:38+00:00",
+        "merged_at": null,
+        "closed_at": "2024-08-05T07:28:22+00:00"
+      },
+      {
+        "number": 78,
+        "title": "Feat/add topic seed",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2024-07-18T08:57:04+00:00",
+        "merged_at": "2024-08-16T21:50:03+00:00",
+        "closed_at": "2024-08-16T21:50:03+00:00"
+      },
+      {
+        "number": 81,
+        "title": "modify docker file for dev env",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-07-30T09:46:38+00:00",
+        "merged_at": "2024-07-30T09:50:04+00:00",
+        "closed_at": "2024-07-30T09:50:04+00:00"
+      },
+      {
+        "number": 82,
+        "title": "/v1/data/posts \u306b NoteId \u306b\u3088\u308b\u7d5e\u308a\u8fbc\u307f\u3092\u8ffd\u52a0\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-08-05T06:35:42+00:00",
+        "merged_at": "2024-08-10T01:48:58+00:00",
+        "closed_at": "2024-08-10T01:48:58+00:00"
+      },
+      {
+        "number": 85,
+        "title": "fix: mypy ignore statement",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-08-05T06:59:59+00:00",
+        "merged_at": "2024-08-10T01:47:42+00:00",
+        "closed_at": "2024-08-10T01:47:42+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Migrate TweetId into PostId",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-08-05T07:22:16+00:00",
+        "merged_at": "2024-08-10T01:49:11+00:00",
+        "closed_at": "2024-08-10T01:49:11+00:00"
+      },
+      {
+        "number": 87,
+        "title": "deploy to render",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-08-10T02:00:00+00:00",
+        "merged_at": "2024-08-10T02:00:12+00:00",
+        "closed_at": "2024-08-10T02:00:12+00:00"
+      },
+      {
+        "number": 89,
+        "title": "Deploy",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-08-10T05:09:16+00:00",
+        "merged_at": "2024-08-10T05:27:08+00:00",
+        "closed_at": "2024-08-10T05:27:08+00:00"
+      },
+      {
+        "number": 90,
+        "title": "OR search for topic",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-08-10T05:10:02+00:00",
+        "merged_at": "2024-08-10T05:27:17+00:00",
+        "closed_at": "2024-08-10T05:27:18+00:00"
+      },
+      {
+        "number": 91,
+        "title": "Pagination for posts",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-08-16T05:28:01+00:00",
+        "merged_at": "2024-08-17T01:40:29+00:00",
+        "closed_at": "2024-08-17T01:40:29+00:00"
+      },
+      {
+        "number": 94,
+        "title": "fix: add support for 18-digit post id",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-08-17T03:23:31+00:00",
+        "merged_at": "2024-08-17T03:24:01+00:00",
+        "closed_at": "2024-08-17T03:24:01+00:00"
+      },
+      {
+        "number": 96,
+        "title": "Pagination",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-08-17T06:36:50+00:00",
+        "merged_at": "2024-08-17T06:56:33+00:00",
+        "closed_at": "2024-08-17T06:56:33+00:00"
+      },
+      {
+        "number": 97,
+        "title": "Feat/issue 95 add text search for post",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-08-17T07:15:03+00:00",
+        "merged_at": "2024-08-17T08:23:34+00:00",
+        "closed_at": "2024-08-17T08:23:34+00:00"
+      },
+      {
+        "number": 98,
+        "title": "Fix digits",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-08-17T07:17:50+00:00",
+        "merged_at": "2024-08-17T07:18:51+00:00",
+        "closed_at": "2024-08-17T07:18:51+00:00"
+      },
+      {
+        "number": 101,
+        "title": "Links Added to Posts in the Response",
+        "state": "closed",
+        "author_login": "iazzenma",
+        "created_at": "2024-08-18T02:06:36+00:00",
+        "merged_at": "2024-08-18T02:12:08+00:00",
+        "closed_at": "2024-08-18T02:12:08+00:00"
+      },
+      {
+        "number": 102,
+        "title": "Feat/issue 99 improve posts",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-08-18T03:02:47+00:00",
+        "merged_at": "2024-09-02T04:24:43+00:00",
+        "closed_at": "2024-09-02T04:24:43+00:00"
+      },
+      {
+        "number": 103,
+        "title": "Issue #100: Unify the term used on Post/Note endpoints",
+        "state": "closed",
+        "author_login": "iazzenma",
+        "created_at": "2024-08-18T03:03:45+00:00",
+        "merged_at": "2024-08-24T03:28:09+00:00",
+        "closed_at": "2024-08-24T03:28:09+00:00"
+      },
+      {
+        "number": 110,
+        "title": "Post\u306b\u30e1\u30c7\u30a3\u30a2\u60c5\u5831\u3092\u7d10\u3065\u3051\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-09-30T10:38:47+00:00",
+        "merged_at": "2024-10-08T22:37:36+00:00",
+        "closed_at": "2024-10-08T22:37:36+00:00"
+      },
+      {
+        "number": 111,
+        "title": "ETL: \u6295\u7a3f\u3078\u306e\u57cb\u3081\u8fbc\u307f\u30ea\u30f3\u30af\u306eCSV\u751f\u6210",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-10-02T01:43:10+00:00",
+        "merged_at": "2024-10-06T23:19:28+00:00",
+        "closed_at": "2024-10-06T23:19:28+00:00"
+      },
+      {
+        "number": 114,
+        "title": "Post.link \u3092 computed field\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-10-02T07:49:29+00:00",
+        "merged_at": "2024-10-08T22:33:05+00:00",
+        "closed_at": "2024-10-08T22:33:05+00:00"
+      },
+      {
+        "number": 115,
+        "title": "fix: fix type error on BaseModel",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-10-06T04:18:05+00:00",
+        "merged_at": "2024-10-06T23:08:44+00:00",
+        "closed_at": "2024-10-06T23:08:44+00:00"
+      },
+      {
+        "number": 116,
+        "title": "Feat/issue 104 url data model",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-10-06T06:00:00+00:00",
+        "merged_at": "2024-10-06T23:10:05+00:00",
+        "closed_at": "2024-10-06T23:10:05+00:00"
+      },
+      {
+        "number": 117,
+        "title": "Feat/issue 105 posts url search",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2024-10-06T07:26:13+00:00",
+        "merged_at": "2024-10-06T23:19:57+00:00",
+        "closed_at": "2024-10-06T23:19:57+00:00"
+      },
+      {
+        "number": 118,
+        "title": "X API\u304b\u3089Post\u3092\u53d6\u5f97\u3059\u308b\u969b\u306bMedia\u60c5\u5831\u3092\u4fdd\u5b58\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-10-10T06:35:00+00:00",
+        "merged_at": "2024-10-11T02:44:50+00:00",
+        "closed_at": "2024-10-11T02:44:50+00:00"
+      },
+      {
+        "number": 119,
+        "title": "remove prefect",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-10-11T02:43:14+00:00",
+        "merged_at": "2024-10-11T04:08:44+00:00",
+        "closed_at": "2024-10-11T04:08:44+00:00"
+      },
+      {
+        "number": 120,
+        "title": "fix media for video",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-10-11T02:55:50+00:00",
+        "merged_at": "2024-10-11T03:38:48+00:00",
+        "closed_at": "2024-10-11T03:38:48+00:00"
+      },
+      {
+        "number": 121,
+        "title": "Infra/etl docker",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-10-11T06:28:28+00:00",
+        "merged_at": "2024-10-11T06:29:37+00:00",
+        "closed_at": "2024-10-11T06:29:37+00:00"
+      },
+      {
+        "number": 124,
+        "title": "LinkId\u306epydantic\u4e92\u63db\u6027\u3092\u6539\u5584\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-10-16T02:26:33+00:00",
+        "merged_at": "2024-10-24T00:02:59+00:00",
+        "closed_at": "2024-10-24T00:02:59+00:00"
+      },
+      {
+        "number": 125,
+        "title": "load s3",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-10-25T05:05:57+00:00",
+        "merged_at": "2024-10-25T05:11:46+00:00",
+        "closed_at": "2024-10-25T05:11:46+00:00"
+      },
+      {
+        "number": 126,
+        "title": "Swagger UI \u4e0a\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u3092\u6574\u5099\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-10-25T08:09:45+00:00",
+        "merged_at": "2024-11-02T00:32:33+00:00",
+        "closed_at": "2024-11-02T00:32:33+00:00"
+      },
+      {
+        "number": 127,
+        "title": "add pagenation to notes endpoint",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-11-01T02:11:58+00:00",
+        "merged_at": "2024-11-01T02:20:41+00:00",
+        "closed_at": "2024-11-01T02:20:41+00:00"
+      },
+      {
+        "number": 128,
+        "title": "fix: \u30af\u30a8\u30ea\u30d1\u30e9\u30e1\u30fc\u30bf\u540d\u79f0\u3092\u4ed6\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u3068\u305d\u308d\u3048\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-11-01T12:41:02+00:00",
+        "merged_at": "2024-11-02T00:17:46+00:00",
+        "closed_at": "2024-11-02T00:17:46+00:00"
+      },
+      {
+        "number": 129,
+        "title": "docs: \u5177\u4f53\u7684\u306a\u4f7f\u7528\u4f8b\u3092\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2024-11-01T12:54:48+00:00",
+        "merged_at": "2024-11-02T00:17:18+00:00",
+        "closed_at": "2024-11-02T00:17:18+00:00"
+      },
+      {
+        "number": 132,
+        "title": "\u30d5\u30ea\u30fc\u30ef\u30fc\u30c9\u691c\u7d22\u3092Notes\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306b\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-11-03T06:58:54+00:00",
+        "merged_at": "2024-11-03T07:00:06+00:00",
+        "closed_at": "2024-11-03T07:00:06+00:00"
+      },
+      {
+        "number": 134,
+        "title": "Post",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-11-03T11:40:11+00:00",
+        "merged_at": "2024-11-03T11:41:16+00:00",
+        "closed_at": "2024-11-03T11:41:16+00:00"
+      },
+      {
+        "number": 139,
+        "title": "Search Mock",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2024-12-23T05:35:22+00:00",
+        "merged_at": "2024-12-23T05:47:46+00:00",
+        "closed_at": "2024-12-23T05:47:46+00:00"
+      },
+      {
+        "number": 140,
+        "title": "fix: \u660e\u793a\u7684\u306b\u5168\u30aa\u30ea\u30b8\u30f3\u304b\u3089\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u3092\u8a31\u53ef\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "created_at": "2025-01-16T11:04:59+00:00",
+        "merged_at": "2025-01-16T11:08:52+00:00",
+        "closed_at": "2025-01-16T11:08:52+00:00"
+      },
+      {
+        "number": 141,
+        "title": "Add search endpoint logic.",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-01-26T23:46:05+00:00",
+        "merged_at": "2025-02-06T02:18:57+00:00",
+        "closed_at": "2025-02-06T02:18:57+00:00"
+      },
+      {
+        "number": 144,
+        "title": "fix: fix file name",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2025-02-22T03:42:18+00:00",
+        "merged_at": "2025-02-22T03:45:07+00:00",
+        "closed_at": "2025-02-22T03:45:07+00:00"
+      },
+      {
+        "number": 145,
+        "title": "feat: add alembic",
+        "state": "closed",
+        "author_login": "osoken",
+        "created_at": "2025-02-22T07:40:34+00:00",
+        "merged_at": "2025-03-09T23:50:28+00:00",
+        "closed_at": "2025-03-09T23:50:28+00:00"
+      },
+      {
+        "number": 148,
+        "title": "docs: Add comprehensive development guide for new developers",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "created_at": "2025-04-28T01:02:01+00:00",
+        "merged_at": null,
+        "closed_at": "2025-04-28T05:10:55+00:00"
+      },
+      {
+        "number": 149,
+        "title": "cleanup unused files",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-04-28T02:07:34+00:00",
+        "merged_at": "2025-04-28T02:32:44+00:00",
+        "closed_at": "2025-04-28T02:32:44+00:00"
+      },
+      {
+        "number": 150,
+        "title": "\u65b0\u898f\u958b\u767a\u8005\u5411\u3051\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u306e\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "created_at": "2025-04-28T04:00:45+00:00",
+        "merged_at": "2025-04-28T04:21:28+00:00",
+        "closed_at": "2025-04-28T04:21:28+00:00"
+      },
+      {
+        "number": 151,
+        "title": "Fix #146: PaginationMeta\u3067\u8fd4\u3059URL\u306b\u91cd\u8907\u30af\u30a8\u30ea\u30d1\u30e9\u30e1\u30fc\u30bf\u3092\u4fdd\u6301\u3059\u308b",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "created_at": "2025-04-28T04:43:51+00:00",
+        "merged_at": "2025-04-28T05:12:04+00:00",
+        "closed_at": "2025-04-28T05:12:04+00:00"
+      },
+      {
+        "number": 152,
+        "title": "[WIP] Feat/use cdk",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2025-05-15T09:07:49+00:00",
+        "merged_at": "2025-09-10T04:11:51+00:00",
+        "closed_at": "2025-09-10T04:11:51+00:00"
+      },
+      {
+        "number": 153,
+        "title": "chore(main): release 0.1.0",
+        "state": "open",
+        "author_login": "github-actions[bot]",
+        "created_at": "2025-05-20T07:59:57+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 166,
+        "title": "feat: implement ETL Pipeline infrastructure foundation",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-06-11T04:02:16+00:00",
+        "merged_at": "2025-06-11T04:10:50+00:00",
+        "closed_at": "2025-06-11T04:10:50+00:00"
+      },
+      {
+        "number": 167,
+        "title": "feat: implement ETL pipeline configuration loader",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-06-11T04:30:15+00:00",
+        "merged_at": "2025-06-11T04:34:08+00:00",
+        "closed_at": "2025-06-11T04:34:08+00:00"
+      },
+      {
+        "number": 168,
+        "title": "ETL Pipeline\u57fa\u76e4\u6574\u5099: \u65e2\u5b58\u30b3\u30fc\u30c9\u306e\u30b3\u30f3\u30dd\u30fc\u30cd\u30f3\u30c8\u5316\u958b\u59cb",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-06-11T05:00:36+00:00",
+        "merged_at": "2025-06-11T05:02:02+00:00",
+        "closed_at": "2025-06-11T05:02:02+00:00"
+      },
+      {
+        "number": 172,
+        "title": "Feature/add new columns",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-09-07T05:58:04+00:00",
+        "merged_at": "2025-09-07T06:16:00+00:00",
+        "closed_at": "2025-09-07T06:16:00+00:00"
+      },
+      {
+        "number": 173,
+        "title": "add author_id, rate_count, aggregatedAt",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-09-07T09:12:19+00:00",
+        "merged_at": "2025-09-07T09:13:42+00:00",
+        "closed_at": "2025-09-07T09:13:42+00:00"
+      },
+      {
+        "number": 181,
+        "title": "Issue/174",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-10-22T03:54:45+00:00",
+        "merged_at": "2025-10-22T03:54:55+00:00",
+        "closed_at": "2025-10-22T03:54:55+00:00"
+      },
+      {
+        "number": 183,
+        "title": "Add comprehensive tests for get_latest_100_notes_lambda",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "created_at": "2025-10-22T04:14:19+00:00",
+        "merged_at": "2025-10-22T04:42:22+00:00",
+        "closed_at": "2025-10-22T04:42:22+00:00"
+      },
+      {
+        "number": 184,
+        "title": "Refactro/fix #175",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2025-10-22T06:48:00+00:00",
+        "merged_at": "2025-10-28T06:33:23+00:00",
+        "closed_at": "2025-10-28T06:33:23+00:00"
+      },
+      {
+        "number": 186,
+        "title": "Fix #185: Connect realtime notes extraction to LanguageDetect pipeline",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "created_at": "2025-10-28T07:20:50+00:00",
+        "merged_at": "2025-10-28T07:37:15+00:00",
+        "closed_at": "2025-10-28T07:37:15+00:00"
+      },
+      {
+        "number": 187,
+        "title": "Update extract_ecs.py to coexist with realtime note extraction (Issue #177)",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "created_at": "2025-10-28T08:04:35+00:00",
+        "merged_at": "2025-10-31T06:11:15+00:00",
+        "closed_at": "2025-10-31T06:11:15+00:00"
+      },
+      {
+        "number": 188,
+        "title": "fix: migration",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2025-10-28T09:58:32+00:00",
+        "merged_at": "2025-11-13T09:09:53+00:00",
+        "closed_at": "2025-11-13T09:09:53+00:00"
+      },
+      {
+        "number": 189,
+        "title": "Add locked_status to NoteRecord and implement note status update Lambda (Issue #179)",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "created_at": "2025-10-31T06:57:11+00:00",
+        "merged_at": "2025-10-31T08:13:30+00:00",
+        "closed_at": "2025-10-31T08:13:30+00:00"
+      },
+      {
+        "number": 191,
+        "title": "feat: add api action",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2025-11-19T10:28:09+00:00",
+        "merged_at": "2025-12-11T07:12:11+00:00",
+        "closed_at": "2025-12-11T07:12:11+00:00"
+      },
+      {
+        "number": 192,
+        "title": "add hot reload and update search endpoint",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-12-11T23:26:51+00:00",
+        "merged_at": "2025-12-11T23:27:34+00:00",
+        "closed_at": "2025-12-11T23:27:34+00:00"
+      },
+      {
+        "number": 193,
+        "title": "fix created_at null error",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-12-12T05:14:54+00:00",
+        "merged_at": "2025-12-12T05:15:02+00:00",
+        "closed_at": "2025-12-12T05:15:02+00:00"
+      },
+      {
+        "number": 194,
+        "title": "optional post data",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-12-12T06:46:07+00:00",
+        "merged_at": "2025-12-12T06:46:17+00:00",
+        "closed_at": "2025-12-12T06:46:17+00:00"
+      },
+      {
+        "number": 195,
+        "title": "author id null",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-12-12T07:11:24+00:00",
+        "merged_at": "2025-12-12T07:28:01+00:00",
+        "closed_at": "2025-12-12T07:28:01+00:00"
+      },
+      {
+        "number": 196,
+        "title": "refactor: simplify workflows and improve deploy action consistency",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2025-12-15T05:03:57+00:00",
+        "merged_at": "2025-12-17T02:37:55+00:00",
+        "closed_at": "2025-12-17T02:37:55+00:00"
+      },
+      {
+        "number": 197,
+        "title": "update realtime",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2025-12-17T09:05:36+00:00",
+        "merged_at": "2025-12-17T09:05:46+00:00",
+        "closed_at": "2025-12-17T09:05:46+00:00"
+      },
+      {
+        "number": 198,
+        "title": "Dex/speckit",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-01-13T06:55:06+00:00",
+        "merged_at": "2026-01-13T06:55:14+00:00",
+        "closed_at": "2026-01-13T06:55:14+00:00"
+      },
+      {
+        "number": 199,
+        "title": "001 graph api backend",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-01-13T12:03:52+00:00",
+        "merged_at": "2026-01-13T12:04:02+00:00",
+        "closed_at": "2026-01-13T12:04:02+00:00"
+      },
+      {
+        "number": 201,
+        "title": "refactor: add date filtering",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-01-22T06:59:17+00:00",
+        "merged_at": "2026-01-22T07:54:40+00:00",
+        "closed_at": "2026-01-22T07:54:40+00:00"
+      },
+      {
+        "number": 202,
+        "title": "refactor: add retry handler with exponential backoff for AI service",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-01-23T09:08:31+00:00",
+        "merged_at": "2026-01-23T11:21:12+00:00",
+        "closed_at": "2026-01-23T11:21:13+00:00"
+      },
+      {
+        "number": 203,
+        "title": "refactor: rename migration script for adding `is_collaborative_note` \u2026",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-01-26T09:33:10+00:00",
+        "merged_at": "2026-01-26T09:47:11+00:00",
+        "closed_at": "2026-01-26T09:47:11+00:00"
+      },
+      {
+        "number": 204,
+        "title": "refactor: prevent duplicate note additions in ECS extraction",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-01-26T17:46:28+00:00",
+        "merged_at": "2026-01-27T03:55:15+00:00",
+        "closed_at": "2026-01-27T03:55:15+00:00"
+      },
+      {
+        "number": 205,
+        "title": "\u30bf\u30a4\u30e0\u30ec\u30f3\u30b8\u5909\u66f4\u306e\u305f\u3081\u306esettings.json\u306e\u5909\u66f4",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-01-27T02:12:17+00:00",
+        "merged_at": "2026-01-27T02:12:26+00:00",
+        "closed_at": "2026-01-27T02:12:26+00:00"
+      },
+      {
+        "number": 206,
+        "title": "refactor: improve error handling and response parsing in ",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-01-27T12:18:33+00:00",
+        "merged_at": "2026-01-28T09:02:54+00:00",
+        "closed_at": "2026-01-28T09:02:54+00:00"
+      },
+      {
+        "number": 207,
+        "title": "refactor: add delayed requeue logic in `postlookup_lambda`",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-01-28T12:03:31+00:00",
+        "merged_at": "2026-02-04T10:38:12+00:00",
+        "closed_at": "2026-02-04T10:38:12+00:00"
+      },
+      {
+        "number": 208,
+        "title": "refactor: add `skip_topic_detect` and `skip_tweet_lookup` flags acros\u2026",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-06T16:54:21+00:00",
+        "merged_at": "2026-02-07T06:57:29+00:00",
+        "closed_at": "2026-02-07T06:57:29+00:00"
+      },
+      {
+        "number": 209,
+        "title": "ETL\u518d\u51e6\u7406\u306e\u6700\u9069\u5316\u3068\u30b9\u30ad\u30c3\u30d7\u30ed\u30b8\u30c3\u30af\u6539\u5584",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-07T13:08:27+00:00",
+        "merged_at": "2026-02-16T10:51:16+00:00",
+        "closed_at": "2026-02-16T10:51:16+00:00"
+      },
+      {
+        "number": 210,
+        "title": "feat: unify graph API endpoints to use Unix timestamp parameters",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-02-16T10:50:38+00:00",
+        "merged_at": "2026-02-16T10:51:40+00:00",
+        "closed_at": "2026-02-16T10:51:40+00:00"
+      },
+      {
+        "number": 211,
+        "title": "Feature/graph start end",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-02-16T11:43:22+00:00",
+        "merged_at": "2026-02-16T11:43:29+00:00",
+        "closed_at": "2026-02-16T11:43:29+00:00"
+      },
+      {
+        "number": 212,
+        "title": "feat: \u8a55\u4fa1\u30c7\u30fc\u30bf\u306e\u53d6\u5f97\u30fb\u96c6\u8a08\u3068\u30b9\u30c6\u30fc\u30bf\u30b9\u66f4\u65b0\u51e6\u7406\u306e\u4fee\u6b63",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-02-17T02:21:34+00:00",
+        "merged_at": "2026-02-17T07:37:24+00:00",
+        "closed_at": "2026-02-17T07:37:24+00:00"
+      },
+      {
+        "number": 213,
+        "title": "fix: process most recent available date in ETL",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-02-17T08:07:47+00:00",
+        "merged_at": "2026-02-18T01:33:08+00:00",
+        "closed_at": "2026-02-18T01:33:08+00:00"
+      },
+      {
+        "number": 214,
+        "title": "fix: backfill missing language and fix SQS silent failures",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-18T01:51:24+00:00",
+        "merged_at": "2026-02-19T01:28:10+00:00",
+        "closed_at": "2026-02-19T01:28:10+00:00"
+      },
+      {
+        "number": 215,
+        "title": "fix(tests): update API tests to enforce new TOP 5000 limit for graphs",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-18T03:09:58+00:00",
+        "merged_at": "2026-02-18T03:22:43+00:00",
+        "closed_at": "2026-02-18T03:22:43+00:00"
+      },
+      {
+        "number": 216,
+        "title": "fix: SQS\u30b5\u30a4\u30ec\u30f3\u30c8\u5931\u6557\u4fee\u6b63 & PostLookup \u30d0\u30c3\u30c1\u51e6\u7406\u5316",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-19T05:10:48+00:00",
+        "merged_at": "2026-02-19T07:07:58+00:00",
+        "closed_at": "2026-02-19T07:07:58+00:00"
+      },
+      {
+        "number": 217,
+        "title": "feat: add language/keyword filters and top-note-accounts endpoint to graph API",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-02-19T06:30:11+00:00",
+        "merged_at": "2026-02-19T07:18:52+00:00",
+        "closed_at": "2026-02-19T07:18:52+00:00"
+      },
+      {
+        "number": 218,
+        "title": "chore: empty commit",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-02-19T07:32:48+00:00",
+        "merged_at": "2026-02-19T08:49:58+00:00",
+        "closed_at": "2026-02-19T08:49:58+00:00"
+      },
+      {
+        "number": 219,
+        "title": "feat: Extract ECS\u30bf\u30b9\u30af\u306e\u9ad8\u901f\u5316\uff0826\u6642\u9593\u21922-3\u6642\u9593\uff09",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-20T01:47:36+00:00",
+        "merged_at": "2026-02-21T03:37:22+00:00",
+        "closed_at": "2026-02-21T03:37:22+00:00"
+      },
+      {
+        "number": 221,
+        "title": "refactor: replace TwitterTimestamp base class and remove unused ",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-21T05:26:50+00:00",
+        "merged_at": "2026-02-21T05:58:35+00:00",
+        "closed_at": "2026-02-21T05:58:35+00:00"
+      },
+      {
+        "number": 222,
+        "title": "feat(api): add `total` count to pagination metadata and update tests",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-21T07:40:59+00:00",
+        "merged_at": "2026-02-21T07:49:11+00:00",
+        "closed_at": "2026-02-21T07:49:11+00:00"
+      },
+      {
+        "number": 223,
+        "title": "Fix/search language normalization",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-21T11:11:25+00:00",
+        "merged_at": "2026-02-21T15:59:36+00:00",
+        "closed_at": "2026-02-21T15:59:36+00:00"
+      },
+      {
+        "number": 224,
+        "title": "Fix/helpfulness level nullable",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-02-23T08:34:28+00:00",
+        "merged_at": "2026-02-23T12:14:12+00:00",
+        "closed_at": "2026-02-23T12:14:12+00:00"
+      },
+      {
+        "number": 227,
+        "title": "feat: add daily rating count recalculation to ETL pipeline",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-03-02T07:17:26+00:00",
+        "merged_at": "2026-03-09T05:21:40+00:00",
+        "closed_at": "2026-03-09T05:21:40+00:00"
+      },
+      {
+        "number": 228,
+        "title": "fix: resolve PK index conflicts during staging table swaps",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-03-09T07:39:37+00:00",
+        "merged_at": "2026-03-10T07:59:38+00:00",
+        "closed_at": "2026-03-10T07:59:38+00:00"
+      },
+      {
+        "number": 229,
+        "title": "feat: add order_by support to search endpoint",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-03-11T01:37:59+00:00",
+        "merged_at": "2026-03-11T02:28:26+00:00",
+        "closed_at": "2026-03-11T02:28:26+00:00"
+      },
+      {
+        "number": 230,
+        "title": "perf: optimize search endpoint sort query performance",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "created_at": "2026-03-12T09:33:50+00:00",
+        "merged_at": "2026-03-12T09:34:57+00:00",
+        "closed_at": "2026-03-12T09:34:57+00:00"
+      },
+      {
+        "number": 231,
+        "title": "feat: compute has_been_helpfuled in note_transform_lambda",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-03-24T12:30:26+00:00",
+        "merged_at": "2026-03-26T10:59:24+00:00",
+        "closed_at": "2026-03-26T10:59:24+00:00"
+      },
+      {
+        "number": 232,
+        "title": "perf: RDS I/O\u6700\u9069\u5316 - ETL Lambda\u30af\u30a8\u30ea\u30d0\u30eb\u30af\u5316 + \u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-03-31T07:10:22+00:00",
+        "merged_at": "2026-04-01T12:27:44+00:00",
+        "closed_at": "2026-04-01T12:27:44+00:00"
+      },
+      {
+        "number": 233,
+        "title": "feat: \u30ec\u30dd\u30fc\u30c8\u81ea\u52d5\u751f\u6210\u306e\u6539\u5584 (basePath\u5bfe\u5fdc\u30fb1\u30b3\u30df\u30c3\u30c8\u5316)",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-04-09T09:42:57+00:00",
+        "merged_at": "2026-04-09T11:04:33+00:00",
+        "closed_at": "2026-04-09T11:04:33+00:00"
+      },
+      {
+        "number": 234,
+        "title": "feat: \u691c\u7d22API\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\u6700\u9069\u5316 \u2014 COUNT\u30af\u30a8\u30ea\u5206\u96e2\u3068N+1\u4fee\u6b63",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-04-11T01:17:37+00:00",
+        "merged_at": "2026-04-11T02:00:41+00:00",
+        "closed_at": "2026-04-11T02:00:41+00:00"
+      },
+      {
+        "number": 235,
+        "title": "fix: validate_timestamp_range\u3092\u30ab\u30ec\u30f3\u30c0\u30fc\u65e5\u6570\u30d9\u30fc\u30b9\u306e\u6bd4\u8f03\u306b\u4fee\u6b63",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "created_at": "2026-04-13T05:33:27+00:00",
+        "merged_at": "2026-04-13T09:23:47+00:00",
+        "closed_at": "2026-04-13T09:23:47+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforjapan/BirdXplorer",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.9692,
+    "bus_factor": 2,
+    "contribution_types": {
+      "code_commits": 500,
+      "pull_requests": 130,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 5,
+      "STORES, Inc.": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 4,
+    "burstiness_cv": null,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 2,
+    "bot_contributor_count": 2,
+    "bot_commit_count": 15,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 59.2,
+    "median_time_to_first_response_prs_hours": 7.9,
+    "time_to_first_response_issues_sample_size": 100,
+    "time_to_first_response_prs_sample_size": 100,
+    "readme_last_updated": "2024-11-01T12:53:21+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 0.5,
+    "stale_issue_count": 2,
+    "open_issue_count": 4,
+    "median_pr_review_turnaround_hours": 1.0,
+    "avg_review_comments_per_pr": 0.06,
+    "herfindahl_hirschman_index": 8350.2,
+    "hhi_no_bots": 3853.7,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 5,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 1,
+      "unknown": 5
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 2,
+    "periphery_contributor_count": 4,
+    "core_periphery_ratio": 0.3333,
+    "network_density": 0.3333,
+    "avg_degree_centrality": 0.3333,
+    "pr_review_edges": [
+      {
+        "author": "yu23ki14",
+        "reviewer": "ayuki-joto"
+      },
+      {
+        "author": "yu23ki14",
+        "reviewer": "ayuki-joto"
+      },
+      {
+        "author": "ayuki-joto",
+        "reviewer": "yu23ki14"
+      },
+      {
+        "author": "ayuki-joto",
+        "reviewer": "yu23ki14"
+      },
+      {
+        "author": "osoken",
+        "reviewer": "yu23ki14"
+      },
+      {
+        "author": "yu23ki14",
+        "reviewer": "osoken"
+      },
+      {
+        "author": "yu23ki14",
+        "reviewer": "osoken"
+      },
+      {
+        "author": "yu23ki14",
+        "reviewer": "osoken"
+      },
+      {
+        "author": "yu23ki14",
+        "reviewer": "sushichan044"
+      },
+      {
+        "author": "ayuki-joto",
+        "reviewer": "yu23ki14"
+      },
+      {
+        "author": "ayuki-joto",
+        "reviewer": "stasfilin"
+      },
+      {
+        "author": "ayuki-joto",
+        "reviewer": "yu23ki14"
+      },
+      {
+        "author": "yu23ki14",
+        "reviewer": "osoken"
+      },
+      {
+        "author": "devin-ai-integration[bot]",
+        "reviewer": "yu23ki14"
+      }
+    ]
+  },
+  "crawled_at": "2026-05-04T13:20:04.199451+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "yu23ki14",
+      "degree_centrality": 0.8,
+      "betweenness_centrality": 0.9,
+      "classification": "core",
+      "num_collaborators": 4
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "ayuki-joto",
+      "degree_centrality": 0.4,
+      "betweenness_centrality": 0.4,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "osoken",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "sushichan044",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "stasfilin",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforjapan/BirdXplorer",
+      "login": "devin-ai-integration[bot]",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "codeforjapan/BirdXplorer",
+    "weekly_snapshots": [
+      {
+        "week_start": "2023-09-18",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 8,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-09-25",
+        "total_commits": 15,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 23,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-10-02",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 27,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-10-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 28,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-10-16",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 35,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-23",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 41,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-30",
+        "total_commits": 18,
+        "unique_contributors": 4,
+        "new_contributors": 2,
+        "cumulative_commits": 59,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-11-06",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 61,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-11-13",
+        "total_commits": 17,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 78,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-11-20",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 81,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-12-04",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 83,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-12-11",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 85,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-02-19",
+        "total_commits": 16,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 101,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-02-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 102,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-03-11",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 103,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-03-18",
+        "total_commits": 12,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 115,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-04-15",
+        "total_commits": 14,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 129,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-04-22",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 131,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-04-29",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 138,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2024-05-06",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 142,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-05-13",
+        "total_commits": 15,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 157,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-05-20",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 159,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-05-27",
+        "total_commits": 20,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 179,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-06-03",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 180,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-06-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 181,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-06-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 182,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-06-24",
+        "total_commits": 11,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 193,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-07-08",
+        "total_commits": 12,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 205,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-07-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 207,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2024-07-22",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 209,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2024-07-29",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 211,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2024-08-05",
+        "total_commits": 25,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 236,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2024-08-12",
+        "total_commits": 53,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 289,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-08-19",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 291,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-09-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 292,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-09-16",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 294,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-09-23",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 298,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-09-30",
+        "total_commits": 20,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 318,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-10-07",
+        "total_commits": 28,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 346,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-10-14",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 348,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-10-21",
+        "total_commits": 12,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 360,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-10-28",
+        "total_commits": 26,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 386,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-12-23",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 389,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-01-13",
+        "total_commits": 6,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 395,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-01-20",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 398,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-01-27",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 401,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-02-03",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 404,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-02-17",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 407,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-03-03",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 408,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-04-28",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 417,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-05-12",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 419,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 429,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 442,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-06-09",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 444,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 452,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-07-28",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 455,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-08-18",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 457,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-08-25",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 462,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-09-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 469,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-09-08",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 471,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-09-22",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 472,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-09-29",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 482,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-10-06",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 485,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 487,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 16,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 503,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-10-27",
+        "total_commits": 15,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 518,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-03",
+        "total_commits": 11,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 529,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 530,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 531,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 535,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 544,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-15",
+        "total_commits": 11,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 555,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 15,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 570,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-19",
+        "total_commits": 8,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 578,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 22,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 600,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-02",
+        "total_commits": 8,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 608,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-09",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 613,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-16",
+        "total_commits": 51,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 664,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-23",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 668,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 673,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-09",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 682,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-23",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 684,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-30",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 693,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 16,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 709,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-13",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 711,
+        "cumulative_contributors": 9
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "yu23ki14",
+        "login": "yu23ki14",
+        "name": "Yuki Kawabe",
+        "email": "yuki_021423@yahoo.co.jp",
+        "first_commit_date": "2023-10-18T07:12:05+00:00",
+        "last_commit_date": "2026-03-12T09:34:57+00:00",
+        "duration_days": 876,
+        "total_commits": 239,
+        "active_weeks": 48,
+        "total_weeks_span": 125,
+        "activity_ratio": 0.384,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 4.98
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "ayuki-joto",
+        "login": "ayuki-joto",
+        "name": "ayuki",
+        "email": "19406594+ayuki-joto@users.noreply.github.com",
+        "first_commit_date": "2024-07-18T08:49:31+00:00",
+        "last_commit_date": "2026-04-13T09:23:46+00:00",
+        "duration_days": 634,
+        "total_commits": 197,
+        "active_weeks": 29,
+        "total_weeks_span": 90,
+        "activity_ratio": 0.3222,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 6.79
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "osoken",
+        "login": "osoken",
+        "name": "osoken",
+        "email": "osoken@osoekawalab.com",
+        "first_commit_date": "2023-09-24T01:43:12+00:00",
+        "last_commit_date": "2025-02-22T07:36:10+00:00",
+        "duration_days": 517,
+        "total_commits": 161,
+        "active_weeks": 25,
+        "total_weeks_span": 73,
+        "activity_ratio": 0.3425,
+        "status": "departed",
+        "departed_weeks_ago": 62,
+        "avg_commits_per_active_week": 6.44
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "sushichan044",
+        "login": "sushichan044",
+        "name": "Kentaro Suzuki",
+        "email": "mail@sushichan.live",
+        "first_commit_date": "2024-05-09T05:51:58+00:00",
+        "last_commit_date": "2025-01-16T11:08:52+00:00",
+        "duration_days": 252,
+        "total_commits": 62,
+        "active_weeks": 10,
+        "total_weeks_span": 36,
+        "activity_ratio": 0.2778,
+        "status": "departed",
+        "departed_weeks_ago": 67,
+        "avg_commits_per_active_week": 6.2
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "kota-yata",
+        "login": "kota-yata",
+        "name": "kota-yata",
+        "email": "kota@yatagai.com",
+        "first_commit_date": "2023-10-31T15:19:10+00:00",
+        "last_commit_date": "2024-04-21T15:42:47+00:00",
+        "duration_days": 173,
+        "total_commits": 23,
+        "active_weeks": 7,
+        "total_weeks_span": 24,
+        "activity_ratio": 0.2917,
+        "status": "departed",
+        "departed_weeks_ago": 106,
+        "avg_commits_per_active_week": 3.29
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "devin-ai-integration[bot]",
+        "login": "devin-ai-integration[bot]",
+        "name": "Devin AI",
+        "email": "158243242+devin-ai-integration[bot]@users.noreply.github.com",
+        "first_commit_date": "2025-04-28T04:00:21+00:00",
+        "last_commit_date": "2025-10-31T06:56:11+00:00",
+        "duration_days": 186,
+        "total_commits": 14,
+        "active_weeks": 3,
+        "total_weeks_span": 26,
+        "activity_ratio": 0.1154,
+        "status": "departed",
+        "departed_weeks_ago": 26,
+        "avg_commits_per_active_week": 4.67
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "iazzenma",
+        "login": "iazzenma",
+        "name": "jasta",
+        "email": "b11902008@ntu.edu.tw",
+        "first_commit_date": "2024-08-16T04:05:39+00:00",
+        "last_commit_date": "2024-08-18T03:09:53+00:00",
+        "duration_days": 1,
+        "total_commits": 10,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 89,
+        "avg_commits_per_active_week": 10.0
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "NEKOYASAN",
+        "login": "NEKOYASAN",
+        "name": "NEKOYASAN",
+        "email": "hello@nekoyasan.me",
+        "first_commit_date": "2023-11-01T07:18:17+00:00",
+        "last_commit_date": "2023-11-14T14:52:00+00:00",
+        "duration_days": 13,
+        "total_commits": 4,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 128,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeforjapan/BirdXplorer",
+        "contributor_id": "claude[bot]",
+        "login": "claude[bot]",
+        "name": "claude[bot]",
+        "email": "209825114+claude[bot]@users.noreply.github.com",
+        "first_commit_date": "2026-01-22T07:54:10+00:00",
+        "last_commit_date": "2026-01-22T07:54:10+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 14,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2024-07-15",
+        "commits": 2,
+        "lines_added": 222,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2024-07-22",
+        "commits": 2,
+        "lines_added": 122,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2024-08-12",
+        "commits": 4,
+        "lines_added": 427,
+        "lines_removed": 237
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-05-12",
+        "commits": 2,
+        "lines_added": 78,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-05-19",
+        "commits": 10,
+        "lines_added": 199,
+        "lines_removed": 34
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-06-02",
+        "commits": 13,
+        "lines_added": 521,
+        "lines_removed": 50
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-06-30",
+        "commits": 8,
+        "lines_added": 1055,
+        "lines_removed": 198
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-07-28",
+        "commits": 2,
+        "lines_added": 424,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-08-18",
+        "commits": 2,
+        "lines_added": 538,
+        "lines_removed": 49
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-09-29",
+        "commits": 10,
+        "lines_added": 626,
+        "lines_removed": 251
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-10-13",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-10-20",
+        "commits": 5,
+        "lines_added": 2674,
+        "lines_removed": 715
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-10-27",
+        "commits": 6,
+        "lines_added": 53,
+        "lines_removed": 142
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-11-03",
+        "commits": 11,
+        "lines_added": 1127,
+        "lines_removed": 458
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-11-17",
+        "commits": 1,
+        "lines_added": 94,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-12-01",
+        "commits": 4,
+        "lines_added": 13,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2025-12-15",
+        "commits": 8,
+        "lines_added": 388,
+        "lines_removed": 216
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-01-19",
+        "commits": 5,
+        "lines_added": 1126,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-01-26",
+        "commits": 20,
+        "lines_added": 1760,
+        "lines_removed": 1258
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-02-02",
+        "commits": 7,
+        "lines_added": 681,
+        "lines_removed": 312
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-02-09",
+        "commits": 5,
+        "lines_added": 188,
+        "lines_removed": 167
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-02-16",
+        "commits": 25,
+        "lines_added": 3464,
+        "lines_removed": 1456
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-02-23",
+        "commits": 4,
+        "lines_added": 126,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-03-02",
+        "commits": 5,
+        "lines_added": 864,
+        "lines_removed": 166
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-03-09",
+        "commits": 5,
+        "lines_added": 959,
+        "lines_removed": 219
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-03-23",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-03-30",
+        "commits": 9,
+        "lines_added": 2704,
+        "lines_removed": 266
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-04-06",
+        "commits": 16,
+        "lines_added": 1975,
+        "lines_removed": 359
+      },
+      {
+        "contributor_id": "ayuki-joto",
+        "week_start": "2026-04-13",
+        "commits": 2,
+        "lines_added": 5,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2023-10-16",
+        "commits": 4,
+        "lines_added": 112,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2023-10-30",
+        "commits": 10,
+        "lines_added": 519,
+        "lines_removed": 36
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2023-11-13",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-03-11",
+        "commits": 1,
+        "lines_added": 614,
+        "lines_removed": 90
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-04-15",
+        "commits": 1,
+        "lines_added": 666,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-04-22",
+        "commits": 1,
+        "lines_added": 73,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-05-06",
+        "commits": 1,
+        "lines_added": 747,
+        "lines_removed": 184
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-05-13",
+        "commits": 3,
+        "lines_added": 1183,
+        "lines_removed": 353
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-05-20",
+        "commits": 2,
+        "lines_added": 39,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-05-27",
+        "commits": 3,
+        "lines_added": 28,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-06-03",
+        "commits": 1,
+        "lines_added": 307,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-06-10",
+        "commits": 1,
+        "lines_added": 194,
+        "lines_removed": 34
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-06-17",
+        "commits": 1,
+        "lines_added": 144,
+        "lines_removed": 17
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-06-24",
+        "commits": 6,
+        "lines_added": 176,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-07-08",
+        "commits": 6,
+        "lines_added": 454,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-07-29",
+        "commits": 2,
+        "lines_added": 226,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-08-05",
+        "commits": 20,
+        "lines_added": 908,
+        "lines_removed": 169
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-08-12",
+        "commits": 14,
+        "lines_added": 1366,
+        "lines_removed": 440
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-09-02",
+        "commits": 1,
+        "lines_added": 155,
+        "lines_removed": 190
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-09-30",
+        "commits": 13,
+        "lines_added": 1621,
+        "lines_removed": 669
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-10-07",
+        "commits": 12,
+        "lines_added": 763,
+        "lines_removed": 340
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-10-21",
+        "commits": 5,
+        "lines_added": 169,
+        "lines_removed": 36
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-10-28",
+        "commits": 14,
+        "lines_added": 1308,
+        "lines_removed": 174
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2024-12-23",
+        "commits": 3,
+        "lines_added": 590,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-01-13",
+        "commits": 4,
+        "lines_added": 1026,
+        "lines_removed": 290
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-01-20",
+        "commits": 3,
+        "lines_added": 210,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-01-27",
+        "commits": 3,
+        "lines_added": 7,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-02-03",
+        "commits": 3,
+        "lines_added": 907,
+        "lines_removed": 271
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-03-03",
+        "commits": 1,
+        "lines_added": 464,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-04-28",
+        "commits": 6,
+        "lines_added": 348,
+        "lines_removed": 922
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-06-09",
+        "commits": 2,
+        "lines_added": 177,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-07-28",
+        "commits": 1,
+        "lines_added": 29,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-08-25",
+        "commits": 5,
+        "lines_added": 242,
+        "lines_removed": 51
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-09-01",
+        "commits": 7,
+        "lines_added": 503,
+        "lines_removed": 58
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-09-08",
+        "commits": 2,
+        "lines_added": 2663,
+        "lines_removed": 64
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-09-22",
+        "commits": 1,
+        "lines_added": 1519,
+        "lines_removed": 507
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-10-06",
+        "commits": 3,
+        "lines_added": 801,
+        "lines_removed": 683
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-10-20",
+        "commits": 4,
+        "lines_added": 2846,
+        "lines_removed": 632
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-10-27",
+        "commits": 5,
+        "lines_added": 1129,
+        "lines_removed": 230
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 730,
+        "lines_removed": 390
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-12-08",
+        "commits": 9,
+        "lines_added": 313,
+        "lines_removed": 165
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2025-12-15",
+        "commits": 3,
+        "lines_added": 1165,
+        "lines_removed": 441
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2026-01-12",
+        "commits": 15,
+        "lines_added": 20051,
+        "lines_removed": 197
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2026-01-19",
+        "commits": 2,
+        "lines_added": 1126,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2026-01-26",
+        "commits": 2,
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2026-02-02",
+        "commits": 1,
+        "lines_added": 153,
+        "lines_removed": 81
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2026-02-16",
+        "commits": 26,
+        "lines_added": 3545,
+        "lines_removed": 1525
+      },
+      {
+        "contributor_id": "yu23ki14",
+        "week_start": "2026-03-09",
+        "commits": 4,
+        "lines_added": 550,
+        "lines_removed": 66
+      },
+      {
+        "contributor_id": "claude[bot]",
+        "week_start": "2026-01-19",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "devin-ai-integration[bot]",
+        "week_start": "2025-04-28",
+        "commits": 3,
+        "lines_added": 249,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "devin-ai-integration[bot]",
+        "week_start": "2025-10-20",
+        "commits": 7,
+        "lines_added": 782,
+        "lines_removed": 468
+      },
+      {
+        "contributor_id": "devin-ai-integration[bot]",
+        "week_start": "2025-10-27",
+        "commits": 4,
+        "lines_added": 957,
+        "lines_removed": 541
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-09-18",
+        "commits": 8,
+        "lines_added": 343,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-09-25",
+        "commits": 15,
+        "lines_added": 335,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-10-02",
+        "commits": 4,
+        "lines_added": 118,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-10-09",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-10-16",
+        "commits": 3,
+        "lines_added": 26,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-10-23",
+        "commits": 6,
+        "lines_added": 209,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-10-30",
+        "commits": 5,
+        "lines_added": 291,
+        "lines_removed": 17
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-11-06",
+        "commits": 1,
+        "lines_added": 102,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-11-13",
+        "commits": 11,
+        "lines_added": 346,
+        "lines_removed": 43
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2023-11-20",
+        "commits": 3,
+        "lines_added": 78,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-02-19",
+        "commits": 13,
+        "lines_added": 706,
+        "lines_removed": 140
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-02-26",
+        "commits": 1,
+        "lines_added": 128,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-03-18",
+        "commits": 12,
+        "lines_added": 719,
+        "lines_removed": 75
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-04-15",
+        "commits": 2,
+        "lines_added": 10,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-04-22",
+        "commits": 1,
+        "lines_added": 290,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-04-29",
+        "commits": 7,
+        "lines_added": 1089,
+        "lines_removed": 526
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-05-13",
+        "commits": 3,
+        "lines_added": 279,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-05-27",
+        "commits": 17,
+        "lines_added": 201,
+        "lines_removed": 163
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-07-08",
+        "commits": 5,
+        "lines_added": 19,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-08-12",
+        "commits": 25,
+        "lines_added": 407,
+        "lines_removed": 336
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-08-19",
+        "commits": 2,
+        "lines_added": 33,
+        "lines_removed": 33
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-09-16",
+        "commits": 2,
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-09-23",
+        "commits": 4,
+        "lines_added": 147,
+        "lines_removed": 35
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2024-09-30",
+        "commits": 7,
+        "lines_added": 174,
+        "lines_removed": 32
+      },
+      {
+        "contributor_id": "osoken",
+        "week_start": "2025-02-17",
+        "commits": 3,
+        "lines_added": 464,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-05-06",
+        "commits": 3,
+        "lines_added": 54,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-05-13",
+        "commits": 9,
+        "lines_added": 933,
+        "lines_removed": 208
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-06-24",
+        "commits": 5,
+        "lines_added": 69,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-07-08",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-08-05",
+        "commits": 5,
+        "lines_added": 47,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-10-07",
+        "commits": 16,
+        "lines_added": 458,
+        "lines_removed": 161
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-10-14",
+        "commits": 2,
+        "lines_added": 24,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-10-21",
+        "commits": 7,
+        "lines_added": 489,
+        "lines_removed": 98
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2024-10-28",
+        "commits": 12,
+        "lines_added": 423,
+        "lines_removed": 128
+      },
+      {
+        "contributor_id": "sushichan044",
+        "week_start": "2025-01-13",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "iazzenma",
+        "week_start": "2024-08-12",
+        "commits": 10,
+        "lines_added": 89,
+        "lines_removed": 56
+      },
+      {
+        "contributor_id": "kota-yata",
+        "week_start": "2023-10-30",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "kota-yata",
+        "week_start": "2023-11-06",
+        "commits": 1,
+        "lines_added": 16,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "kota-yata",
+        "week_start": "2023-11-13",
+        "commits": 3,
+        "lines_added": 22,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "kota-yata",
+        "week_start": "2023-12-04",
+        "commits": 2,
+        "lines_added": 8,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "kota-yata",
+        "week_start": "2023-12-11",
+        "commits": 2,
+        "lines_added": 83,
+        "lines_removed": 71
+      },
+      {
+        "contributor_id": "kota-yata",
+        "week_start": "2024-02-19",
+        "commits": 3,
+        "lines_added": 90,
+        "lines_removed": 72
+      },
+      {
+        "contributor_id": "kota-yata",
+        "week_start": "2024-04-15",
+        "commits": 11,
+        "lines_added": 430,
+        "lines_removed": 152
+      },
+      {
+        "contributor_id": "NEKOYASAN",
+        "week_start": "2023-10-30",
+        "commits": 2,
+        "lines_added": 26,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "NEKOYASAN",
+        "week_start": "2023-11-13",
+        "commits": 2,
+        "lines_added": 26,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 85,
+    "total_unique_contributors": 9,
+    "new_contributor_rate_per_month": 0.29
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforjapan/BirdXplorer",
+    "issues": [
+      {
+        "number": 1,
+        "title": "Add .env instruction on README",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-18T07:13:27+00:00",
+        "closed_at": "2023-10-18T07:39:36+00:00",
+        "updated_at": "2023-10-18T07:39:36+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.02
+      },
+      {
+        "number": 3,
+        "title": "Create Issue template",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-18T07:16:38+00:00",
+        "closed_at": "2023-10-18T07:26:46+00:00",
+        "updated_at": "2023-10-18T07:26:46+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 5,
+        "title": "CI\u307e\u308f\u308b\u3088\u3046\u306b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-18T07:32:23+00:00",
+        "closed_at": "2023-11-01T10:05:19+00:00",
+        "updated_at": "2023-11-01T10:05:19+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 14.11
+      },
+      {
+        "number": 6,
+        "title": "\u771f\u507d\u5024\uff080 or 1\uff09\u306e\u578b\u30af\u30e9\u30b9\u3092\u3064\u304f\u308a\u3001\u8a72\u5f53\u578b\u306e\u30d7\u30ed\u30d1\u30c6\u30a3\u3092Note\u30af\u30e9\u30b9\u306b\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "osoken",
+        "created_at": "2023-10-23T03:01:50+00:00",
+        "closed_at": "2023-11-14T15:03:41+00:00",
+        "updated_at": "2023-11-14T15:03:42+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 22.5
+      },
+      {
+        "number": 7,
+        "title": "Note\u30af\u30e9\u30b9\u306b\u4efb\u610f\u6587\u5b57\u5217\u306esummary\u30d7\u30ed\u30d1\u30c6\u30a3\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-23T03:03:11+00:00",
+        "closed_at": "2023-11-01T10:16:41+00:00",
+        "updated_at": "2023-11-01T10:16:42+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 9.3
+      },
+      {
+        "number": 8,
+        "title": "milliseconds\u306e\u578b\u3092\u6c4e\u7528\u30af\u30e9\u30b9\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "osoken",
+        "created_at": "2023-10-23T03:05:06+00:00",
+        "closed_at": "2023-10-31T13:42:29+00:00",
+        "updated_at": "2023-10-31T13:42:29+00:00",
+        "comment_count": 3,
+        "labels": [],
+        "time_to_close_days": 8.44
+      },
+      {
+        "number": 9,
+        "title": "Note\u30af\u30e9\u30b9\u306benum\u3067\u8868\u73fe\u3055\u308c\u308b\u30d7\u30ed\u30d1\u30c6\u30a3\u3092\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "osoken",
+        "created_at": "2023-10-23T03:13:15+00:00",
+        "closed_at": "2023-11-14T14:40:24+00:00",
+        "updated_at": "2023-11-14T14:40:25+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 22.48
+      },
+      {
+        "number": 10,
+        "title": "note_author_participant_id\u306e\u578b\u3092\u6c4e\u7528\u5316",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "kota-yata",
+        "created_at": "2023-10-23T03:15:01+00:00",
+        "closed_at": "2023-12-04T08:22:00+00:00",
+        "updated_at": "2023-12-04T08:22:00+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 42.21
+      },
+      {
+        "number": 11,
+        "title": "notes-00000.tsv\u306b\u5bfe\u5fdc\u3059\u308bNote\u30af\u30e9\u30b9\u3092\u3064\u304f\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-23T03:17:41+00:00",
+        "closed_at": "2024-02-13T11:25:17+00:00",
+        "updated_at": "2024-02-13T11:25:17+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 113.34
+      },
+      {
+        "number": 12,
+        "title": "userEnrollment-00000.tsv \u306b\u5bfe\u5fdc\u3059\u308b\u30af\u30e9\u30b9\u3092\u4f5c\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-29T09:11:27+00:00",
+        "closed_at": "2024-02-13T11:25:17+00:00",
+        "updated_at": "2024-02-13T11:25:17+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 107.09
+      },
+      {
+        "number": 13,
+        "title": "participantId \u578b\u3092\u6c4e\u7528\u5316",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2023-10-29T09:18:00+00:00",
+        "closed_at": "2023-10-29T09:57:26+00:00",
+        "updated_at": "2023-10-29T09:57:26+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.03
+      },
+      {
+        "number": 14,
+        "title": "enrollmentState \u3092\u5c02\u7528\u578b\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2023-10-29T09:19:02+00:00",
+        "closed_at": "2023-10-29T10:08:55+00:00",
+        "updated_at": "2023-10-29T10:08:56+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.03
+      },
+      {
+        "number": 15,
+        "title": "timestampOfLastEarnOut \u3092\u578b\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-29T09:33:56+00:00",
+        "closed_at": "2023-11-01T10:07:15+00:00",
+        "updated_at": "2023-11-01T10:07:15+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 3.02
+      },
+      {
+        "number": 16,
+        "title": "modelingPopulation \u3092\u578b\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-29T09:34:44+00:00",
+        "closed_at": "2023-11-01T10:11:42+00:00",
+        "updated_at": "2023-11-01T10:11:42+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 3.03
+      },
+      {
+        "number": 17,
+        "title": "modelingGroup \u306e\u578b\u3092\u4f5c\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-29T09:35:54+00:00",
+        "closed_at": "2023-11-01T10:15:21+00:00",
+        "updated_at": "2023-11-01T10:15:21+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 3.03
+      },
+      {
+        "number": 20,
+        "title": "timestampOfLastStateChange \u3092\u578b\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2023-10-29T11:03:03+00:00",
+        "closed_at": "2023-10-31T13:42:29+00:00",
+        "updated_at": "2023-10-31T13:42:29+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 2.11
+      },
+      {
+        "number": 22,
+        "title": "\u30b3\u30df\u30e5\u30cb\u30c6\u30a3\u30ce\u30fc\u30c8\u306e\u30c7\u30fc\u30bf\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u3059\u308b\u30b9\u30af\u30ea\u30d7\u30c8",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-31T06:37:08+00:00",
+        "closed_at": "2024-02-13T11:25:17+00:00",
+        "updated_at": "2024-02-13T11:25:17+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 105.2
+      },
+      {
+        "number": 24,
+        "title": "successfulRatingNeededToEarnIn \u306e\u578b\u3092\u5b9a\u7fa9\u3059\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-10-31T13:48:59+00:00",
+        "closed_at": "2023-11-01T10:08:42+00:00",
+        "updated_at": "2023-11-01T10:08:42+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.85
+      },
+      {
+        "number": 32,
+        "title": "X\u306e100\u30c9\u30eb\u30d7\u30e9\u30f3\u3067\u6700\u65b03000\u306e\u30c7\u30fc\u30bf\u3092\u30c8\u30d4\u30c3\u30af\u63a8\u5b9a\u30b5\u30f3\u30d7\u30eb\u3068\u3057\u3066\u3068\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-11-01T11:02:58+00:00",
+        "closed_at": "2024-02-13T11:25:18+00:00",
+        "updated_at": "2024-02-13T11:25:18+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 104.02
+      },
+      {
+        "number": 33,
+        "title": "user enrollments \u306e\u305f\u3081\u306e\u30eb\u30fc\u30c8\u3092\u4f5c\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2023-11-08T15:18:42+00:00",
+        "closed_at": "2023-11-09T15:25:13+00:00",
+        "updated_at": "2023-11-09T15:25:14+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 1.0
+      },
+      {
+        "number": 34,
+        "title": "user-enrollments \u30eb\u30fc\u30c8\u306e\u4e2d\u8eab\u3092\u4f5c\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-11-09T15:26:24+00:00",
+        "closed_at": "2024-02-13T11:25:18+00:00",
+        "updated_at": "2024-02-13T11:25:18+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 95.83
+      },
+      {
+        "number": 37,
+        "title": "Topic \u63a8\u5b9a\u306e PoC",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2023-11-21T13:04:45+00:00",
+        "closed_at": "2024-02-13T11:25:18+00:00",
+        "updated_at": "2024-02-13T11:25:18+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 83.93
+      },
+      {
+        "number": 39,
+        "title": "notes\u30ea\u30b9\u30c8\u3092\u8fd4\u3059\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u3092\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "osoken",
+        "created_at": "2024-02-13T11:35:45+00:00",
+        "closed_at": "2024-04-24T15:10:34+00:00",
+        "updated_at": "2024-04-24T15:10:34+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 71.15
+      },
+      {
+        "number": 40,
+        "title": "topics\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306e\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-02-13T11:42:18+00:00",
+        "closed_at": "2024-03-11T08:30:49+00:00",
+        "updated_at": "2024-03-11T08:30:49+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 26.87
+      },
+      {
+        "number": 41,
+        "title": "posts\u30ea\u30b9\u30c8\u3092\u8fd4\u3059\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u3092\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-02-13T11:47:30+00:00",
+        "closed_at": "2024-04-15T10:05:10+00:00",
+        "updated_at": "2024-04-15T10:05:10+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 61.93
+      },
+      {
+        "number": 42,
+        "title": "fix error on test",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2024-02-23T04:30:42+00:00",
+        "closed_at": "2024-02-24T02:09:53+00:00",
+        "updated_at": "2024-03-25T21:53:13+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.9
+      },
+      {
+        "number": 44,
+        "title": "add ignore E701 error",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2024-02-23T06:09:51+00:00",
+        "closed_at": "2024-02-24T02:09:51+00:00",
+        "updated_at": "2024-02-24T02:09:51+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.83
+      },
+      {
+        "number": 48,
+        "title": "tox \u306e pip \u306e version \u3092 24.0 \u306b\u4e0a\u3052\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2024-03-23T03:14:42+00:00",
+        "closed_at": "2024-03-23T03:23:27+00:00",
+        "updated_at": "2024-03-23T03:23:28+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 51,
+        "title": "Implement query filter (note_id) for posts route",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-03-25T09:04:53+00:00",
+        "closed_at": "2024-08-10T01:48:59+00:00",
+        "updated_at": "2024-08-10T01:48:59+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 137.7
+      },
+      {
+        "number": 52,
+        "title": "Pagination for posts route endpoint",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "iazzenma",
+        "created_at": "2024-03-25T09:06:42+00:00",
+        "closed_at": "2024-08-18T03:01:35+00:00",
+        "updated_at": "2024-08-18T03:01:35+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 145.75
+      },
+      {
+        "number": 53,
+        "title": "api, etl, common \u306b python package \u3092\u5206\u3051\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-02T06:50:52+00:00",
+        "closed_at": "2024-05-09T08:44:01+00:00",
+        "updated_at": "2024-05-09T08:44:01+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 7.08
+      },
+      {
+        "number": 54,
+        "title": "API\u90e8\u5206\u306eDocker\u5316",
+        "state": "closed",
+        "author_login": "kota-yata",
+        "closed_by_login": "osoken",
+        "created_at": "2024-05-02T06:56:47+00:00",
+        "closed_at": "2024-05-16T14:21:27+00:00",
+        "updated_at": "2024-05-16T14:21:27+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 14.31
+      },
+      {
+        "number": 55,
+        "title": "CORS \u306e\u8a2d\u5b9a\u304c\u3067\u304d\u308b\u3088\u3046\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-02T07:03:29+00:00",
+        "closed_at": "2024-07-09T09:33:16+00:00",
+        "updated_at": "2024-07-09T09:33:16+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 68.1
+      },
+      {
+        "number": 58,
+        "title": "`api` \u3084 `etl` \u306e `common` \u4f9d\u5b58 URL \u3092\u4fee\u6b63",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2024-05-12T11:38:28+00:00",
+        "closed_at": "2024-05-16T14:25:00+00:00",
+        "updated_at": "2024-05-16T14:25:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 4.12
+      },
+      {
+        "number": 61,
+        "title": "ETL Extract: Twitter API \u304b\u3089\u30c7\u30fc\u30bf\u3092\u53d6\u5f97",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-13T07:20:40+00:00",
+        "closed_at": "2024-06-25T23:56:15+00:00",
+        "updated_at": "2024-06-25T23:56:15+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 43.69
+      },
+      {
+        "number": 62,
+        "title": "ETL Transform: Note\u306e\u30c7\u30fc\u30bf\u5f62\u5f0f\u3092\u5909\u63db\u3057\u3066CSV\u30fbJSON\u3068\u3057\u3066\u4fdd\u5b58\u3002",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-13T07:23:03+00:00",
+        "closed_at": "2024-07-22T07:27:50+00:00",
+        "updated_at": "2024-07-22T07:27:50+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 70.0
+      },
+      {
+        "number": 63,
+        "title": "ETL Transform: Post\u306e\u30c7\u30fc\u30bf\u5f62\u5f0f\u3092\u5909\u63db\u3057\u3066CSV\u30fbJSON\u3068\u3057\u3066\u4fdd\u5b58",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-13T07:25:45+00:00",
+        "closed_at": "2024-07-22T07:27:50+00:00",
+        "updated_at": "2024-07-22T07:27:50+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 70.0
+      },
+      {
+        "number": 64,
+        "title": "ETL Transform: OpenAI API\u3092\u7528\u3044\u3066Topic\u63a8\u5b9a\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-13T07:30:20+00:00",
+        "closed_at": "2024-09-02T04:26:15+00:00",
+        "updated_at": "2024-09-02T04:26:15+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 111.87
+      },
+      {
+        "number": 65,
+        "title": "ETL Transform: OpenAI API\u3092\u7528\u3044\u3066Language\u63a8\u5b9a\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-13T07:35:47+00:00",
+        "closed_at": "2024-08-16T21:50:04+00:00",
+        "updated_at": "2024-08-16T21:50:04+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 95.59
+      },
+      {
+        "number": 67,
+        "title": "API \u306e prod \u306e Dockerfile \u306e\u30b5\u30fc\u30d6\u30b3\u30de\u30f3\u30c9\u3092 `gunicorn` \u4f7f\u3044\u305f\u3044",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-05-23T06:24:01+00:00",
+        "closed_at": "2024-10-08T22:38:06+00:00",
+        "updated_at": "2024-10-08T22:38:06+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 138.68
+      },
+      {
+        "number": 68,
+        "title": "README.md \u304c\u3001\u30d1\u30c3\u30b1\u30fc\u30b8\u5206\u5272\u524d\u306e\u5185\u5bb9",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-06-10T08:38:53+00:00",
+        "closed_at": "2025-04-28T01:00:17+00:00",
+        "updated_at": "2025-04-28T01:00:17+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 321.68
+      },
+      {
+        "number": 69,
+        "title": "pyproject.toml \u306e common \u306e\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5143\u3092\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2024-06-10T08:56:27+00:00",
+        "closed_at": "2024-07-09T12:46:50+00:00",
+        "updated_at": "2024-07-09T12:46:51+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 29.16
+      },
+      {
+        "number": 71,
+        "title": "/post \u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306e\u8fd4\u5374\u306bMedia\uff08\u753b\u50cf\u3084\u52d5\u753b\uff09\u3092\u8ffd\u52a0\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-06-26T01:11:59+00:00",
+        "closed_at": "2024-10-08T22:37:37+00:00",
+        "updated_at": "2024-10-08T22:37:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 104.89
+      },
+      {
+        "number": 73,
+        "title": "Dockerfile\u5185\u3067pip\u3092\u6700\u65b0\u7248\u306bupgrade\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "closed_by_login": "osoken",
+        "created_at": "2024-06-28T05:18:18+00:00",
+        "closed_at": "2024-07-08T13:55:30+00:00",
+        "updated_at": "2024-07-08T13:55:30+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 10.36
+      },
+      {
+        "number": 77,
+        "title": "Fix tox error in etl directory",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-07-09T12:51:24+00:00",
+        "closed_at": "2024-09-02T04:26:31+00:00",
+        "updated_at": "2024-09-02T04:26:32+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 54.65
+      },
+      {
+        "number": 79,
+        "title": "ETL: Load CSV data to postgresql",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-07-22T07:40:55+00:00",
+        "closed_at": "2025-04-28T01:00:17+00:00",
+        "updated_at": "2025-04-28T01:00:17+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 279.72
+      },
+      {
+        "number": 80,
+        "title": "Dev environment: ModuleNotFoundError: No module named 'birdxplorer_common'",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-07-22T07:59:35+00:00",
+        "closed_at": "2024-08-05T00:33:46+00:00",
+        "updated_at": "2024-08-05T00:33:46+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 13.69
+      },
+      {
+        "number": 83,
+        "title": "fix mypy error in common",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-08-05T06:49:40+00:00",
+        "closed_at": "2024-08-10T01:47:43+00:00",
+        "updated_at": "2024-08-10T01:47:43+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 4.79
+      },
+      {
+        "number": 84,
+        "title": "TweetId \u3092 PostId \u306b\u7d71\u4e00\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-08-05T06:55:13+00:00",
+        "closed_at": "2024-08-10T01:49:12+00:00",
+        "updated_at": "2024-08-10T01:49:12+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 4.79
+      },
+      {
+        "number": 88,
+        "title": "Make get Notes endpoint topic filter as OR",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-08-10T03:02:49+00:00",
+        "closed_at": "2024-08-10T05:27:18+00:00",
+        "updated_at": "2024-08-10T05:27:18+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.1
+      },
+      {
+        "number": 92,
+        "title": "Fix error for /notes when post_id empty",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-08-16T06:06:02+00:00",
+        "closed_at": "2024-08-17T07:18:35+00:00",
+        "updated_at": "2024-08-17T07:18:35+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 1.05
+      },
+      {
+        "number": 93,
+        "title": "Server error for 18 characters post_id",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-08-17T03:13:10+00:00",
+        "closed_at": "2024-08-17T03:24:03+00:00",
+        "updated_at": "2024-08-17T03:24:03+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 95,
+        "title": "text search on posts's text field",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-08-17T06:19:45+00:00",
+        "closed_at": "2024-08-17T08:23:35+00:00",
+        "updated_at": "2024-08-17T08:23:35+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.09
+      },
+      {
+        "number": 99,
+        "title": "Improve Response Time for GET Requests on Posts",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-08-18T01:17:01+00:00",
+        "closed_at": "2024-09-02T04:24:44+00:00",
+        "updated_at": "2024-09-02T04:24:44+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 15.13
+      },
+      {
+        "number": 100,
+        "title": "Different Parameter Name in Get Notes/Posts",
+        "state": "closed",
+        "author_login": "iazzenma",
+        "closed_by_login": "osoken",
+        "created_at": "2024-08-18T01:54:58+00:00",
+        "closed_at": "2024-08-24T03:28:10+00:00",
+        "updated_at": "2024-08-24T03:28:10+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 6.06
+      },
+      {
+        "number": 104,
+        "title": "URL Entity\u306e\u30c7\u30fc\u30bf\u30e2\u30c7\u30eb\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-09-02T04:29:56+00:00",
+        "closed_at": "2024-10-06T23:10:06+00:00",
+        "updated_at": "2024-10-06T23:10:06+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 34.78
+      },
+      {
+        "number": 105,
+        "title": "URL Entity\u306b\u3088\u3063\u3066\u691c\u7d22\u3067\u304d\u308b\u3088\u3046\u306b /post \u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u3092\u6539\u826f\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-09-02T04:32:59+00:00",
+        "closed_at": "2024-10-06T23:19:58+00:00",
+        "updated_at": "2024-10-06T23:19:58+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 34.78
+      },
+      {
+        "number": 106,
+        "title": "URL Entity\u306b\u4fdd\u5b58\u3067\u304d\u308b\u3088\u3046\u306bExtract\u6642\u306bembededURL\u3092\u30ab\u30ce\u30cb\u30ab\u30e9\u30a4\u30ba\u3055\u305b\u3066\u3001csv\u306b\u5410\u304d\u51fa\u3059",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-09-02T04:35:51+00:00",
+        "closed_at": "2024-10-08T22:37:59+00:00",
+        "updated_at": "2024-10-08T22:37:59+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 36.75
+      },
+      {
+        "number": 107,
+        "title": "Notes\u3067\u5168\u6587\u691c\u7d22\u3067\u304d\u308b\u3088\u3046\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "NEKOYASAN",
+        "created_at": "2024-09-17T06:36:48+00:00",
+        "closed_at": "2024-11-04T04:25:16+00:00",
+        "updated_at": "2024-11-04T04:25:17+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 47.91
+      },
+      {
+        "number": 108,
+        "title": "ETL\u306epost\u53d6\u5f97\u306e\u969b\u306bmedia\u3092\u8ffd\u52a0\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-09-20T11:48:07+00:00",
+        "closed_at": "2024-10-11T02:44:51+00:00",
+        "updated_at": "2024-10-11T02:44:51+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 20.62
+      },
+      {
+        "number": 109,
+        "title": "ETL\u306b\u304a\u3051\u308b\u30c7\u30fc\u30bf\u306e\u5dee\u5206\u53d6\u5f97\u306e\u30a4\u30f3\u30d5\u30e9\u3092CDK\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-09-20T12:00:45+00:00",
+        "closed_at": "2025-04-28T01:00:18+00:00",
+        "updated_at": "2025-04-28T01:00:18+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 219.54
+      },
+      {
+        "number": 112,
+        "title": "Pydantic\u306e\u30d9\u30fc\u30b9\u30e2\u30c7\u30eb\u306e\u30c6\u30b9\u30c8\u304cGithubActions\u3067\u843d\u3061\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-10-02T01:57:17+00:00",
+        "closed_at": "2024-10-06T23:08:45+00:00",
+        "updated_at": "2024-10-06T23:08:45+00:00",
+        "comment_count": 3,
+        "labels": [],
+        "time_to_close_days": 4.88
+      },
+      {
+        "number": 113,
+        "title": "Post\u30e2\u30c7\u30eb\u306elink\u3092Computed Field\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-10-02T06:55:39+00:00",
+        "closed_at": "2024-10-08T22:37:51+00:00",
+        "updated_at": "2024-10-08T22:37:51+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 6.65
+      },
+      {
+        "number": 122,
+        "title": "API\u306eswagger\u3068readme\u3092\u5145\u5b9f\u3055\u305b\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "sushichan044",
+        "created_at": "2024-10-15T06:35:41+00:00",
+        "closed_at": "2024-11-02T01:35:06+00:00",
+        "updated_at": "2024-11-02T01:35:06+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 17.79
+      },
+      {
+        "number": 123,
+        "title": "LinkId\u306epydantic\u5bfe\u5fdc\u3092\u6539\u5584\u3059\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-10-16T01:55:26+00:00",
+        "closed_at": "2024-10-24T00:02:59+00:00",
+        "updated_at": "2024-10-24T00:03:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 7.92
+      },
+      {
+        "number": 130,
+        "title": "\u30ce\u30fc\u30c8\u3092\u30d5\u30ea\u30fc\u30ef\u30fc\u30c9\u691c\u7d22\u3067\u304d\u308b\u3088\u3046\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-11-03T06:25:17+00:00",
+        "closed_at": "2024-11-04T01:21:54+00:00",
+        "updated_at": "2024-11-04T01:21:54+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.79
+      },
+      {
+        "number": 131,
+        "title": "\u6ce8\u76ee\u5ea6\u306e\u9ad8\u3044\u30c4\u30a4\u30fc\u30c8\u3001\u30ce\u30fc\u30c8\u3092\u53ce\u96c6\u3059\u308b\u305f\u3081\u306equery\u306e\u8ffd\u52a0",
+        "state": "open",
+        "author_login": "ayuki-joto",
+        "closed_by_login": null,
+        "created_at": "2024-11-03T06:41:35+00:00",
+        "closed_at": null,
+        "updated_at": "2024-11-03T06:41:35+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 133,
+        "title": "userID\u3092\u5143\u306b\u3001\u8a72\u5f53\u30e6\u30fc\u30b6\u30fc\u306e\u904e\u53bb\u306ePost\u3092\u53d6\u5f97",
+        "state": "closed",
+        "author_login": "sitopp",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-11-03T10:06:08+00:00",
+        "closed_at": "2024-11-04T01:21:54+00:00",
+        "updated_at": "2024-11-04T01:21:54+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.64
+      },
+      {
+        "number": 135,
+        "title": "\u30a2\u30c9\u30d0\u30f3\u30b9\u30c9\u30b5\u30fc\u30c1\u306e\u4ed5\u69d8\u7b56\u5b9a",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-11-04T01:23:14+00:00",
+        "closed_at": "2025-04-28T01:00:18+00:00",
+        "updated_at": "2025-04-28T01:00:18+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 174.98
+      },
+      {
+        "number": 136,
+        "title": "\u30ec\u30dd\u30b8\u30c8\u30ea\u306e\u8a2d\u8a08\u3092\u8003\u3048\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-11-04T02:28:58+00:00",
+        "closed_at": "2025-04-28T01:00:18+00:00",
+        "updated_at": "2025-04-28T01:00:18+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 174.94
+      },
+      {
+        "number": 137,
+        "title": "ETL\u3092\u5206\u5272\u3057\u3066\u30ce\u30fc\u30c8\u5358\u4f4d\u3067\u51e6\u7406\u306eQueue\u7ba1\u7406\u3092\u3067\u304d\u308b\u3088\u3046\u306b\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-11-04T02:39:44+00:00",
+        "closed_at": "2025-04-28T01:00:19+00:00",
+        "updated_at": "2025-04-28T01:00:19+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 174.93
+      },
+      {
+        "number": 138,
+        "title": "\u30a2\u30c9\u30d0\u30f3\u30b9\u30c9\u30b5\u30fc\u30c1\u306eOpenAPI\u3068\u30e2\u30c3\u30af\u306e\u4f5c\u6210",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2024-12-23T03:21:33+00:00",
+        "closed_at": "2025-04-28T01:00:19+00:00",
+        "updated_at": "2025-04-28T01:00:19+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 125.9
+      },
+      {
+        "number": 142,
+        "title": "Database Migration \u30c4\u30fc\u30eb\u306e\u5c0e\u5165",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-02-22T03:26:39+00:00",
+        "closed_at": "2025-03-09T23:50:29+00:00",
+        "updated_at": "2025-03-09T23:50:29+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 15.85
+      },
+      {
+        "number": 143,
+        "title": "\u30e9\u30a4\u30bb\u30f3\u30b9\u30d5\u30a1\u30a4\u30eb\u540d\u306e\u30b9\u30da\u30eb\u30df\u30b9",
+        "state": "closed",
+        "author_login": "osoken",
+        "closed_by_login": "osoken",
+        "created_at": "2025-02-22T03:39:45+00:00",
+        "closed_at": "2025-02-22T04:07:06+00:00",
+        "updated_at": "2025-02-22T04:07:07+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.02
+      },
+      {
+        "number": 146,
+        "title": "PaginationMeta \u3067\u8fd4\u3059 url \u306b\u3064\u3044\u3066\u3001\u540c\u3058\u30af\u30a8\u30ea\u30d1\u30e9\u30e1\u30fc\u30bf\u304c 2 \u56de\u4ee5\u4e0a\u6307\u5b9a\u3055\u308c\u305f\u3068\u304d\u306b\u6700\u5f8c\u306e\u3082\u306e\u4ee5\u5916\u304c\u6d88\u3048\u3066\u3044\u308b",
+        "state": "closed",
+        "author_login": "sushichan044",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-03-07T08:42:16+00:00",
+        "closed_at": "2025-04-28T05:12:06+00:00",
+        "updated_at": "2025-04-28T05:12:06+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 51.85
+      },
+      {
+        "number": 147,
+        "title": "\u30c9\u30ad\u30e5\u30e1\u30f3\u30c6\u30fc\u30b7\u30e7\u30f3\u30c4\u30fc\u30eb\u306e\u5c0e\u5165\u691c\u8a0e\u30fb\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7",
+        "state": "open",
+        "author_login": "osoken",
+        "closed_by_login": null,
+        "created_at": "2025-04-06T03:18:37+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-06T03:18:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 154,
+        "title": "ETL\u306e\u67d4\u8edf\u6027\u5411\u4e0a",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T03:12:05+00:00",
+        "closed_at": "2025-07-30T01:47:14+00:00",
+        "updated_at": "2025-07-30T01:47:14+00:00",
+        "comment_count": 8,
+        "labels": [],
+        "time_to_close_days": 50.94
+      },
+      {
+        "number": 155,
+        "title": "ETL Pipeline\u57fa\u76e4\u6574\u5099: \u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u69cb\u9020\u3068PipelineComponent\u57fa\u5e95\u30af\u30e9\u30b9\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:20:53+00:00",
+        "closed_at": "2025-07-30T01:47:14+00:00",
+        "updated_at": "2025-07-30T01:47:14+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 156,
+        "title": "ETL Pipeline\u57fa\u76e4\u6574\u5099: \u8a2d\u5b9a\u30ed\u30fc\u30c0\u30fc(config_loader.py)\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:23:02+00:00",
+        "closed_at": "2025-06-11T04:34:09+00:00",
+        "updated_at": "2025-06-11T04:34:09+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 1.97
+      },
+      {
+        "number": 157,
+        "title": "ETL Pipeline\u57fa\u76e4\u6574\u5099: \u65e2\u5b58\u30b3\u30fc\u30c9\u306e\u30b3\u30f3\u30dd\u30fc\u30cd\u30f3\u30c8\u5316\u958b\u59cb",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:23:43+00:00",
+        "closed_at": "2025-07-30T01:47:15+00:00",
+        "updated_at": "2025-07-30T01:47:15+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 158,
+        "title": "ETL Pipeline \u30d5\u30a3\u30eb\u30bf\u30ea\u30f3\u30b0\u5b9f\u88c5: Filter\u57fa\u5e95\u30af\u30e9\u30b9\u3068FilterChain",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:24:54+00:00",
+        "closed_at": "2025-07-30T01:47:15+00:00",
+        "updated_at": "2025-07-30T01:47:15+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 159,
+        "title": "ETL Pipeline \u57fa\u672c\u30d5\u30a3\u30eb\u30bf\u5b9f\u88c5: Language, Keyword, Status \u30d5\u30a3\u30eb\u30bf",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:25:19+00:00",
+        "closed_at": "2025-07-30T01:47:15+00:00",
+        "updated_at": "2025-07-30T01:47:15+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 160,
+        "title": "ETL Pipeline \u8a2d\u5b9a\u30d5\u30a1\u30a4\u30eb\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\u78ba\u5b9a",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:25:51+00:00",
+        "closed_at": "2025-07-30T01:47:15+00:00",
+        "updated_at": "2025-07-30T01:47:15+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 161,
+        "title": "ETL Pipeline Extract\u6bb5\u968e\u3067\u306e\u30d5\u30a3\u30eb\u30bf\u7d71\u5408",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:26:29+00:00",
+        "closed_at": "2025-07-30T01:47:16+00:00",
+        "updated_at": "2025-07-30T01:47:16+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 162,
+        "title": "ETL Pipeline\u7d71\u5408: PipelineExecutor\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:26:58+00:00",
+        "closed_at": "2025-07-30T01:47:16+00:00",
+        "updated_at": "2025-07-30T01:47:16+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 163,
+        "title": "ETL Pipeline\u7d71\u5408: main.py\u8a2d\u5b9a\u99c6\u52d5\u5b9f\u884c\u3078\u306e\u6539\u4fee",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T05:27:28+00:00",
+        "closed_at": "2025-07-30T01:47:16+00:00",
+        "updated_at": "2025-07-30T01:47:16+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 50.85
+      },
+      {
+        "number": 164,
+        "title": "\u30ea\u30ea\u30fc\u30b9\u30c1\u30a7\u30c3\u30af",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T08:39:49+00:00",
+        "closed_at": "2025-07-30T01:47:23+00:00",
+        "updated_at": "2025-07-30T01:47:23+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 50.71
+      },
+      {
+        "number": 165,
+        "title": "\u30ea\u30ea\u30fc\u30b9\u30c1\u30a7\u30c3\u30af",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-06-09T08:50:58+00:00",
+        "closed_at": "2025-07-30T01:47:23+00:00",
+        "updated_at": "2025-07-30T01:47:23+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 50.71
+      },
+      {
+        "number": 169,
+        "title": "\u516c\u8074AI\u306e\u57cb\u3081\u8fbc\u307f\u30fb\u30a4\u30f3\u30c6\u30b0\u30ec\u30fc\u30b7\u30e7\u30f3",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2025-07-30T01:55:14+00:00",
+        "closed_at": "2026-02-21T03:38:28+00:00",
+        "updated_at": "2026-02-21T03:38:28+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 206.07
+      },
+      {
+        "number": 170,
+        "title": "CN\u30c7\u30fc\u30bf\u306e\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u30b9\u30af\u30ec\u30a4\u30d4\u30f3\u30b0\u306e\u8a2d\u8a08\u30fb\u5b9f\u88c5",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-07-30T02:01:05+00:00",
+        "closed_at": "2025-10-31T06:31:01+00:00",
+        "updated_at": "2025-10-31T06:31:01+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 93.19
+      },
+      {
+        "number": 171,
+        "title": "CN\u306e\u8a55\u4fa1\u30c7\u30fc\u30bf\u3092ETL\u30fbAPI\u306b\u8ffd\u52a0\u3059\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-07-30T02:13:24+00:00",
+        "closed_at": "2025-09-10T04:28:36+00:00",
+        "updated_at": "2025-09-10T04:28:36+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 42.09
+      },
+      {
+        "number": 174,
+        "title": "\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u306e\u30c7\u30fc\u30bf\u53d6\u5f97",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-09-10T04:30:18+00:00",
+        "closed_at": "2025-10-22T04:53:18+00:00",
+        "updated_at": "2025-10-22T04:53:18+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 42.02
+      },
+      {
+        "number": 175,
+        "title": "AI\u306b\u3088\u308b\u8a00\u8a9e\u5224\u5b9a",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-09-10T04:32:19+00:00",
+        "closed_at": "2025-10-28T06:33:24+00:00",
+        "updated_at": "2025-10-28T06:33:24+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 48.08
+      },
+      {
+        "number": 176,
+        "title": "Post lookup\u306e\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2025-09-10T04:35:21+00:00",
+        "closed_at": "2026-02-19T02:00:50+00:00",
+        "updated_at": "2026-02-19T02:00:50+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 161.89
+      },
+      {
+        "number": 177,
+        "title": "TSV\u30c7\u30fc\u30bf\u306e\u53d6\u5f97\u3092\u304a\u3053\u306a\u3063\u3066\u3044\u308bextract_ecs.py\u3092\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-09-10T04:38:22+00:00",
+        "closed_at": "2025-10-31T06:11:16+00:00",
+        "updated_at": "2025-10-31T06:11:16+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 51.06
+      },
+      {
+        "number": 178,
+        "title": "Row\u7cfb\u306e\u30c6\u30fc\u30d6\u30eb\u304b\u3089\u5b9f\u969b\u306eAPI\u304c\u53c2\u7167\u3059\u308b\u30c6\u30fc\u30d6\u30eb\u306b\u30c7\u30fc\u30bf\u3092\u30ed\u30fc\u30c9\u3055\u305b\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2025-09-10T04:40:34+00:00",
+        "closed_at": "2026-03-26T10:59:25+00:00",
+        "updated_at": "2026-03-26T10:59:25+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 197.26
+      },
+      {
+        "number": 179,
+        "title": "RowNoteStatusRecord\u304b\u3089NoteRecord\u306e\u30b9\u30c6\u30fc\u30bf\u30b9\u95a2\u9023\u30ab\u30e9\u30e0\u306b\u30c7\u30fc\u30bf\u3092\u5909\u63db",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2025-10-08T06:18:58+00:00",
+        "closed_at": "2026-02-19T02:01:15+00:00",
+        "updated_at": "2026-02-19T02:01:15+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 133.82
+      },
+      {
+        "number": 180,
+        "title": "rating\u306e\u53d6\u5f97",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2025-10-08T06:20:54+00:00",
+        "closed_at": "2026-02-21T03:37:41+00:00",
+        "updated_at": "2026-02-21T03:37:41+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 135.89
+      },
+      {
+        "number": 182,
+        "title": "get_latest_100_notes_lambda\u306e\u30c6\u30b9\u30c8\u30b3\u30fc\u30c9\u5145\u5b9f\u5316",
+        "state": "closed",
+        "author_login": "devin-ai-integration[bot]",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-10-22T04:06:02+00:00",
+        "closed_at": "2025-10-22T04:42:38+00:00",
+        "updated_at": "2025-10-22T04:42:38+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.03
+      },
+      {
+        "number": 185,
+        "title": "\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u53d6\u5f97\u3057\u305fCommunityNote\u3092RowNote\u30c6\u30fc\u30d6\u30eb\u306b\u4fdd\u5b58\u3057\u3001LanguageDetectSQS\u306b\u30ad\u30e5\u30fc\u3092\u8ffd\u52a0",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2025-10-28T06:59:10+00:00",
+        "closed_at": "2025-10-28T07:37:16+00:00",
+        "updated_at": "2025-10-28T07:37:16+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.03
+      },
+      {
+        "number": 190,
+        "title": "BirdXplorer API\u306e\u30db\u30b9\u30c8\u3092AWS\u3067\u3067\u304d\u308b\u3088\u3046\u306b\u3059\u308b\u3002",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2025-11-14T03:18:35+00:00",
+        "closed_at": "2026-02-21T03:37:34+00:00",
+        "updated_at": "2026-02-21T03:37:34+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 99.01
+      },
+      {
+        "number": 200,
+        "title": "note-transform-lambda\u306b\u65e5\u4ed8\u30d5\u30a3\u30eb\u30bf\u30ea\u30f3\u30b0\u3092\u8ffd\u52a0\u3057\u3066\u53e4\u3044\u30c7\u30fc\u30bf\u306e\u51e6\u7406\u3092\u9632\u3050",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2026-01-20T00:03:23+00:00",
+        "closed_at": "2026-01-22T07:54:42+00:00",
+        "updated_at": "2026-01-22T07:54:42+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 2.33
+      },
+      {
+        "number": 220,
+        "title": "rating\u306e\u518d\u96c6\u8a08",
+        "state": "closed",
+        "author_login": "ayuki-joto",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2026-02-21T04:03:42+00:00",
+        "closed_at": "2026-03-09T05:21:41+00:00",
+        "updated_at": "2026-03-09T05:21:41+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 16.05
+      },
+      {
+        "number": 225,
+        "title": "2\u6708\u306e\u30ec\u30dd\u30fc\u30c8\u3064\u304f\u308b",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "ayuki-joto",
+        "created_at": "2026-02-25T07:17:49+00:00",
+        "closed_at": "2026-04-07T03:39:02+00:00",
+        "updated_at": "2026-04-07T03:39:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 40.85
+      },
+      {
+        "number": 226,
+        "title": "Search\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306eOrderBy",
+        "state": "closed",
+        "author_login": "yu23ki14",
+        "closed_by_login": "yu23ki14",
+        "created_at": "2026-02-25T07:22:15+00:00",
+        "closed_at": "2026-03-11T02:28:27+00:00",
+        "updated_at": "2026-03-11T02:28:27+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 13.8
+      },
+      {
+        "number": 236,
+        "title": "Realtime Notes Extraction Lambda \u306e\u5b8c\u6210\u5ea6\u5411\u4e0a",
+        "state": "open",
+        "author_login": "yu23ki14",
+        "closed_by_login": null,
+        "created_at": "2026-04-17T06:21:53+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-17T06:43:06+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 237,
+        "title": "CSV \u30a8\u30af\u30b9\u30dd\u30fc\u30c8 API \u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306e\u8ffd\u52a0",
+        "state": "open",
+        "author_login": "yu23ki14",
+        "closed_by_login": null,
+        "created_at": "2026-04-17T06:35:24+00:00",
+        "closed_at": null,
+        "updated_at": "2026-05-01T07:34:21+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 107,
+    "open_issues": 4,
+    "closed_issues": 103,
+    "avg_comments_per_issue": 0.59,
+    "median_time_to_close_days": 40.85,
+    "unique_openers": 8,
+    "unique_closers": 7,
+    "top_openers": {
+      "yu23ki14": 65,
+      "osoken": 28,
+      "sushichan044": 6,
+      "ayuki-joto": 4,
+      "kota-yata": 1,
+      "iazzenma": 1,
+      "sitopp": 1,
+      "devin-ai-integration[bot]": 1
+    },
+    "top_closers": {
+      "yu23ki14": 74,
+      "osoken": 17,
+      "ayuki-joto": 8,
+      "kota-yata": 1,
+      "iazzenma": 1,
+      "NEKOYASAN": 1,
+      "sushichan044": 1
+    }
+  }
+}

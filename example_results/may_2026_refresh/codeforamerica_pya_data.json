@@ -1,0 +1,4879 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforamerica/pya",
+    "name": "pya",
+    "description": "FYST Prior Year Access - for clients retrieving a pdf of a past tax return",
+    "num_developers": 9,
+    "total_commits": 258,
+    "languages": {
+      "Ruby": 205353,
+      "SCSS": 47167,
+      "HTML": 32893,
+      "JavaScript": 16425,
+      "Shell": 4533,
+      "Dockerfile": 2516,
+      "CSS": 491
+    },
+    "primary_language": "Ruby",
+    "first_commit_date": "2025-05-21T20:41:28+00:00",
+    "last_commit_date": "2026-04-27T20:02:27+00:00",
+    "license_spdx": null,
+    "license_name": null,
+    "is_osi_approved": false,
+    "topics": [
+      "tax-benefits"
+    ],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": true,
+    "health_percentage": 37,
+    "stars": 2,
+    "watchers": 2,
+    "forks": 0,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:Dockerfile",
+      "file:Dockerfile"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Run Linter and Tests",
+      "Deploy to AWS Production",
+      "Deploy to AWS Staging",
+      "Standard Ruby Linter",
+      "Dependabot Updates"
+    ],
+    "deployments_count": 753,
+    "created_at": "2025-05-21T20:30:02+00:00",
+    "updated_at": "2026-04-27T20:02:33+00:00",
+    "pushed_at": "2026-05-01T17:31:55+00:00",
+    "size_kb": 16917
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "num_commits": 85,
+      "additions": 496,
+      "deletions": 490,
+      "avg_additions_per_commit": 5.84,
+      "avg_deletions_per_commit": 5.76,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "DrewProebstel",
+      "name": "Drew Proebstel",
+      "num_commits": 68,
+      "additions": 8761,
+      "deletions": 3660,
+      "avg_additions_per_commit": 128.84,
+      "avg_deletions_per_commit": 53.82,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "tahsinaislam",
+      "name": "Tahsina Islam",
+      "num_commits": 6,
+      "additions": 203,
+      "deletions": 356,
+      "avg_additions_per_commit": 33.83,
+      "avg_deletions_per_commit": 59.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "embarnard",
+      "name": "em barnard",
+      "num_commits": 1,
+      "additions": 6,
+      "deletions": 6,
+      "avg_additions_per_commit": 6.0,
+      "avg_deletions_per_commit": 6.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "mrotondo",
+      "name": "Mike Rotondo",
+      "num_commits": 7,
+      "additions": 227,
+      "deletions": 210,
+      "avg_additions_per_commit": 32.43,
+      "avg_deletions_per_commit": 30.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "powersurge360",
+      "name": "Kevin Diale",
+      "num_commits": 12,
+      "additions": 106,
+      "deletions": 64,
+      "avg_additions_per_commit": 8.83,
+      "avg_deletions_per_commit": 5.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "jenny-heath",
+      "name": "jenny-heath",
+      "num_commits": 1,
+      "additions": 19,
+      "deletions": 0,
+      "avg_additions_per_commit": 19.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "arinchoi03",
+      "name": "Yejee Arin Choi",
+      "num_commits": 53,
+      "additions": 1567,
+      "deletions": 708,
+      "avg_additions_per_commit": 29.57,
+      "avg_deletions_per_commit": 13.36,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "anisharamnani",
+      "name": "Anisha Ramnani",
+      "num_commits": 5,
+      "additions": 720,
+      "deletions": 720,
+      "avg_additions_per_commit": 144.0,
+      "avg_deletions_per_commit": 144.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "anisharamnani",
+      "name": "Anisha Ramnani",
+      "num_commits": 16,
+      "additions": 7062,
+      "deletions": 839,
+      "avg_additions_per_commit": 441.38,
+      "avg_deletions_per_commit": 52.44,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "arinchoi03",
+      "name": "Yejee Arin Choi",
+      "num_commits": 4,
+      "additions": 40,
+      "deletions": 3,
+      "avg_additions_per_commit": 10.0,
+      "avg_deletions_per_commit": 0.75,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforamerica/pya",
+    "pr_count_total": 324,
+    "pr_count_merged": 234,
+    "pr_count_open": 11,
+    "pr_count_closed_unmerged": 79,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Bump selenium-webdriver from 4.32.0 to 4.33.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-05-26T14:58:03+00:00",
+        "merged_at": "2025-06-12T22:31:42+00:00",
+        "closed_at": "2025-06-12T22:31:42+00:00"
+      },
+      {
+        "number": 2,
+        "title": "Update gemfile",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-05-30T16:38:41+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-02T18:24:18+00:00"
+      },
+      {
+        "number": 3,
+        "title": "FYST-2100 spike dockerize rails app",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-06-02T18:24:55+00:00",
+        "merged_at": "2025-06-02T18:25:09+00:00",
+        "closed_at": "2025-06-02T18:25:09+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Set up heroku review apps + get to a green build",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-02T18:27:48+00:00",
+        "merged_at": "2025-06-03T17:40:32+00:00",
+        "closed_at": "2025-06-03T17:40:32+00:00"
+      },
+      {
+        "number": 5,
+        "title": "Push docker image to ECR & trigger infrastructure deployment",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-06-02T21:49:12+00:00",
+        "merged_at": "2025-06-02T21:52:19+00:00",
+        "closed_at": "2025-06-02T21:52:19+00:00"
+      },
+      {
+        "number": 6,
+        "title": "Bump turbo-rails from 2.0.13 to 2.0.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-03T14:31:08+00:00",
+        "merged_at": "2025-06-12T22:31:50+00:00",
+        "closed_at": "2025-06-12T22:31:50+00:00"
+      },
+      {
+        "number": 7,
+        "title": "Add github PR template",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-03T22:04:31+00:00",
+        "merged_at": "2025-06-03T22:05:24+00:00",
+        "closed_at": "2025-06-03T22:05:24+00:00"
+      },
+      {
+        "number": 8,
+        "title": "Test to check pull request template",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-03T22:06:15+00:00",
+        "merged_at": "2025-06-04T16:02:41+00:00",
+        "closed_at": "2025-06-04T16:02:41+00:00"
+      },
+      {
+        "number": 9,
+        "title": "Revert \"Test to check pull request template\"",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-04T16:03:00+00:00",
+        "merged_at": "2025-06-04T16:03:53+00:00",
+        "closed_at": "2025-06-04T16:03:53+00:00"
+      },
+      {
+        "number": 10,
+        "title": "FYST-2124 Push PYA Docker Image to ECR",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-06-06T22:18:06+00:00",
+        "merged_at": "2025-06-09T19:07:31+00:00",
+        "closed_at": "2025-06-09T19:07:31+00:00"
+      },
+      {
+        "number": 11,
+        "title": "Bump sqlite3 from 2.6.0 to 2.7.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-10T14:50:12+00:00",
+        "merged_at": "2025-06-12T22:32:03+00:00",
+        "closed_at": "2025-06-12T22:32:03+00:00"
+      },
+      {
+        "number": 12,
+        "title": "[FYST-2125] deploy tax benefits backend from pya via gha",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-10T16:58:00+00:00",
+        "merged_at": "2025-06-10T21:51:25+00:00",
+        "closed_at": "2025-06-10T21:51:25+00:00"
+      },
+      {
+        "number": 13,
+        "title": "FYST-2106 Add Slack integration",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-06-10T20:22:16+00:00",
+        "merged_at": "2025-06-10T21:40:41+00:00",
+        "closed_at": "2025-06-10T21:40:41+00:00"
+      },
+      {
+        "number": 14,
+        "title": "[FYST-2130] Add git duet",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-10T21:36:20+00:00",
+        "merged_at": "2025-06-10T21:51:36+00:00",
+        "closed_at": "2025-06-10T21:51:36+00:00"
+      },
+      {
+        "number": 15,
+        "title": "Update README.md",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-06-11T01:07:58+00:00",
+        "merged_at": "2025-06-16T20:27:01+00:00",
+        "closed_at": "2025-06-16T20:27:01+00:00"
+      },
+      {
+        "number": 16,
+        "title": "[FYST-2124] Deploy to staging on merge to main branch",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-11T19:35:11+00:00",
+        "merged_at": "2025-06-11T21:49:16+00:00",
+        "closed_at": "2025-06-11T21:49:16+00:00"
+      },
+      {
+        "number": 17,
+        "title": "Remove slack notification for successful test run",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-06-11T19:52:05+00:00",
+        "merged_at": "2025-06-11T21:06:24+00:00",
+        "closed_at": "2025-06-11T21:06:24+00:00"
+      },
+      {
+        "number": 18,
+        "title": "Bump rack from 3.1.15 to 3.1.16",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-12T22:33:01+00:00",
+        "merged_at": "2025-06-16T19:46:45+00:00",
+        "closed_at": "2025-06-16T19:46:45+00:00"
+      },
+      {
+        "number": 19,
+        "title": "Create workflow run dependency for deploy to staging",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-06-13T20:46:16+00:00",
+        "merged_at": "2025-06-13T21:39:31+00:00",
+        "closed_at": "2025-06-13T21:39:31+00:00"
+      },
+      {
+        "number": 20,
+        "title": "Fix workflow to utilize workflow_run parameter & use on-success/on-failure paths",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-13T21:51:22+00:00",
+        "merged_at": "2025-06-13T22:07:29+00:00",
+        "closed_at": "2025-06-13T22:07:29+00:00"
+      },
+      {
+        "number": 21,
+        "title": "Remove double slack notification on failure of tests on main",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-13T22:13:24+00:00",
+        "merged_at": "2025-06-13T22:24:47+00:00",
+        "closed_at": "2025-06-13T22:24:47+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Make failure slack alert look like failure",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-13T22:30:23+00:00",
+        "merged_at": "2025-06-13T22:31:27+00:00",
+        "closed_at": "2025-06-13T22:31:27+00:00"
+      },
+      {
+        "number": 23,
+        "title": "Fix test & now test breaking deploy step",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-13T22:34:22+00:00",
+        "merged_at": "2025-06-13T22:36:11+00:00",
+        "closed_at": "2025-06-13T22:36:11+00:00"
+      },
+      {
+        "number": 24,
+        "title": "Add back the correct reference to aws keys",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-13T22:40:19+00:00",
+        "merged_at": "2025-06-13T22:41:32+00:00",
+        "closed_at": "2025-06-13T22:41:32+00:00"
+      },
+      {
+        "number": 25,
+        "title": "[FYST-2133] Make the deploys run serially instead of concurrently",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-13T22:58:07+00:00",
+        "merged_at": "2025-06-16T19:46:37+00:00",
+        "closed_at": "2025-06-16T19:46:37+00:00"
+      },
+      {
+        "number": 26,
+        "title": "FYST-2136 switch test runner to rspec & use postgresql as well",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-06-16T19:49:54+00:00",
+        "merged_at": "2025-06-18T21:20:30+00:00",
+        "closed_at": "2025-06-18T21:20:30+00:00"
+      },
+      {
+        "number": 27,
+        "title": "[FYST-2133] Make the deploys run serially instead of concurrently (fix indentation)",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-16T19:50:51+00:00",
+        "merged_at": null,
+        "closed_at": "2025-06-16T19:52:17+00:00"
+      },
+      {
+        "number": 28,
+        "title": "[FYST-2133] Make the deploys run serially instead of concurrently (fix indentation)",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-16T19:54:21+00:00",
+        "merged_at": "2025-06-16T20:26:53+00:00",
+        "closed_at": "2025-06-16T20:26:53+00:00"
+      },
+      {
+        "number": 29,
+        "title": "[FYST-2134] Set deploy_defaults for deployed databases (staging/production)",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-17T22:03:04+00:00",
+        "merged_at": "2025-06-24T23:09:48+00:00",
+        "closed_at": "2025-06-24T23:09:48+00:00"
+      },
+      {
+        "number": 30,
+        "title": "Bump thruster from 0.1.13 to 0.1.14",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-18T14:41:04+00:00",
+        "merged_at": "2025-07-01T23:03:40+00:00",
+        "closed_at": "2025-07-01T23:03:40+00:00"
+      },
+      {
+        "number": 31,
+        "title": "Bump debug from 1.10.0 to 1.11.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-18T14:41:16+00:00",
+        "merged_at": "2025-07-01T23:03:51+00:00",
+        "closed_at": "2025-07-01T23:03:51+00:00"
+      },
+      {
+        "number": 32,
+        "title": "Bump kamal from 2.6.1 to 2.7.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-18T14:41:25+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-03T16:35:32+00:00"
+      },
+      {
+        "number": 33,
+        "title": "Delete idea",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-18T21:06:07+00:00",
+        "merged_at": "2025-06-18T21:07:39+00:00",
+        "closed_at": "2025-06-18T21:07:39+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Revert \"FYST-2136 switch test runner to rspec & use postgresql as well\"",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-06-18T21:40:46+00:00",
+        "merged_at": "2025-06-18T21:41:36+00:00",
+        "closed_at": "2025-06-18T21:41:36+00:00"
+      },
+      {
+        "number": 35,
+        "title": "Revert \"Revert \"FYST-2136 switch test runner to rspec & use postgresql as well\"\"",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-23T16:14:54+00:00",
+        "merged_at": "2025-06-23T16:52:05+00:00",
+        "closed_at": "2025-06-23T16:52:06+00:00"
+      },
+      {
+        "number": 36,
+        "title": "Bump solid_cable from 3.0.8 to 3.0.11",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-23T16:32:21+00:00",
+        "merged_at": "2025-07-01T23:04:04+00:00",
+        "closed_at": "2025-07-01T23:04:04+00:00"
+      },
+      {
+        "number": 37,
+        "title": "[FYST-2131] Define the environment for staging deploy",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-23T19:27:50+00:00",
+        "merged_at": "2025-06-25T16:30:30+00:00",
+        "closed_at": "2025-06-25T16:30:30+00:00"
+      },
+      {
+        "number": 38,
+        "title": "[FYST-2131] Add deploy to production github action",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-23T21:54:26+00:00",
+        "merged_at": "2025-07-29T18:37:25+00:00",
+        "closed_at": "2025-07-29T18:37:25+00:00"
+      },
+      {
+        "number": 39,
+        "title": "Bump rspec-rails from 8.0.0 to 8.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-24T15:01:34+00:00",
+        "merged_at": "2025-07-01T23:04:14+00:00",
+        "closed_at": "2025-07-01T23:04:14+00:00"
+      },
+      {
+        "number": 40,
+        "title": "[FYST-2147] Utilize the correct s3 buckets for active storage",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-25T21:34:02+00:00",
+        "merged_at": "2025-07-01T23:05:26+00:00",
+        "closed_at": "2025-07-01T23:05:26+00:00"
+      },
+      {
+        "number": 41,
+        "title": "[FYST-2086] Create archived intakes + access logs tables and seed data",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-26T22:33:49+00:00",
+        "merged_at": "2025-07-02T19:41:33+00:00",
+        "closed_at": "2025-07-02T19:41:33+00:00"
+      },
+      {
+        "number": 42,
+        "title": "Bump selenium-webdriver from 4.33.0 to 4.34.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-30T17:54:41+00:00",
+        "merged_at": "2025-07-01T23:05:35+00:00",
+        "closed_at": "2025-07-01T23:05:35+00:00"
+      },
+      {
+        "number": 43,
+        "title": "Bump aws-sdk-s3 from 1.136.0 to 1.191.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-02T14:53:07+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-03T14:42:55+00:00"
+      },
+      {
+        "number": 44,
+        "title": "FYST-2148-staging-pya-v-2-landing-page",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-02T16:50:16+00:00",
+        "merged_at": "2025-07-08T16:21:14+00:00",
+        "closed_at": "2025-07-08T16:21:14+00:00"
+      },
+      {
+        "number": 45,
+        "title": "[TBE-195] Remove kamal from the PYA project",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-02T19:48:34+00:00",
+        "merged_at": "2025-07-03T16:34:40+00:00",
+        "closed_at": "2025-07-03T16:34:40+00:00"
+      },
+      {
+        "number": 46,
+        "title": "Bump aws-sdk-s3 from 1.136.0 to 1.192.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-03T14:42:52+00:00",
+        "merged_at": "2025-07-03T19:15:04+00:00",
+        "closed_at": "2025-07-03T19:15:04+00:00"
+      },
+      {
+        "number": 47,
+        "title": "Bump pry-byebug from 3.10.1 to 3.11.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-03T14:43:05+00:00",
+        "merged_at": "2025-07-10T22:02:08+00:00",
+        "closed_at": "2025-07-10T22:02:08+00:00"
+      },
+      {
+        "number": 48,
+        "title": "[FYST-2169] set the database name so that we can log in on staging",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-03T16:11:51+00:00",
+        "merged_at": "2025-07-03T16:12:09+00:00",
+        "closed_at": "2025-07-03T16:12:09+00:00"
+      },
+      {
+        "number": 49,
+        "title": "[FYST-2169] Update entrypoint to run db:seed",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-03T17:58:47+00:00",
+        "merged_at": "2025-07-03T18:25:32+00:00",
+        "closed_at": "2025-07-03T18:25:32+00:00"
+      },
+      {
+        "number": 50,
+        "title": "Update README with information on how to query against the db",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-03T22:41:53+00:00",
+        "merged_at": "2025-07-07T16:15:19+00:00",
+        "closed_at": "2025-07-07T16:15:19+00:00"
+      },
+      {
+        "number": 51,
+        "title": "Fyst 2141 build pya year selection",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-10T19:55:24+00:00",
+        "merged_at": "2025-07-15T16:17:29+00:00",
+        "closed_at": "2025-07-15T16:17:29+00:00"
+      },
+      {
+        "number": 52,
+        "title": "Fyst 2087 implement pya email validation",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-12T00:11:24+00:00",
+        "merged_at": "2025-07-16T22:19:28+00:00",
+        "closed_at": "2025-07-16T22:19:28+00:00"
+      },
+      {
+        "number": 53,
+        "title": "Bump annotaterb from 4.16.0 to 4.17.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-14T16:52:04+00:00",
+        "merged_at": "2025-07-15T23:06:06+00:00",
+        "closed_at": "2025-07-15T23:06:06+00:00"
+      },
+      {
+        "number": 54,
+        "title": "Bump solid_queue from 1.1.5 to 1.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-14T17:26:43+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-22T20:33:46+00:00"
+      },
+      {
+        "number": 55,
+        "title": "Update README to include information on connecting to rails console via `aws ecs execute-command`",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-16T03:24:46+00:00",
+        "merged_at": "2025-07-23T16:32:16+00:00",
+        "closed_at": "2025-07-23T16:32:16+00:00"
+      },
+      {
+        "number": 56,
+        "title": "Bump propshaft from 1.1.0 to 1.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-16T14:55:14+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-22T14:56:55+00:00"
+      },
+      {
+        "number": 57,
+        "title": "Bump aws-sdk-s3 from 1.192.0 to 1.193.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-16T14:55:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-22T14:56:38+00:00"
+      },
+      {
+        "number": 58,
+        "title": "Fyst 2091 implement pya knock out pages",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-16T22:21:12+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-22T18:21:39+00:00"
+      },
+      {
+        "number": 59,
+        "title": "Revert \"Fyst 2087 implement pya email validation\"",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-16T22:33:04+00:00",
+        "merged_at": "2025-07-16T22:33:11+00:00",
+        "closed_at": "2025-07-16T22:33:11+00:00"
+      },
+      {
+        "number": 60,
+        "title": "Fyst 2087 implement pya email validation",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-16T22:35:51+00:00",
+        "merged_at": "2025-07-17T17:20:21+00:00",
+        "closed_at": "2025-07-17T17:20:21+00:00"
+      },
+      {
+        "number": 61,
+        "title": "Fyst 2142 implement pya sms contact validation",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-17T22:36:36+00:00",
+        "merged_at": "2025-07-22T20:32:50+00:00",
+        "closed_at": "2025-07-22T20:32:50+00:00"
+      },
+      {
+        "number": 62,
+        "title": "Bump factory_bot_rails from 6.4.4 to 6.5.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-18T15:07:41+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-22T20:33:43+00:00"
+      },
+      {
+        "number": 63,
+        "title": "Bump valid_email2 from 4.0.6 to 7.0.13",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-18T15:07:52+00:00",
+        "merged_at": "2025-07-31T19:05:53+00:00",
+        "closed_at": "2025-07-31T19:05:53+00:00"
+      },
+      {
+        "number": 64,
+        "title": "Bump brakeman from 7.0.2 to 7.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-21T16:57:09+00:00",
+        "merged_at": "2025-07-21T19:06:01+00:00",
+        "closed_at": "2025-07-21T19:06:01+00:00"
+      },
+      {
+        "number": 65,
+        "title": "Tbe 237 update cfa styleguide gem on pya and remove explicit font face in head of pya project",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-21T18:44:23+00:00",
+        "merged_at": "2025-07-28T18:20:56+00:00",
+        "closed_at": "2025-07-28T18:20:56+00:00"
+      },
+      {
+        "number": 66,
+        "title": "Bump aws-sdk-s3 from 1.192.0 to 1.194.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-22T14:56:36+00:00",
+        "merged_at": "2025-07-31T19:06:01+00:00",
+        "closed_at": "2025-07-31T19:06:01+00:00"
+      },
+      {
+        "number": 67,
+        "title": "Bump propshaft from 1.1.0 to 1.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-22T14:56:52+00:00",
+        "merged_at": "2025-07-31T19:06:09+00:00",
+        "closed_at": "2025-07-31T19:06:09+00:00"
+      },
+      {
+        "number": 68,
+        "title": "Fyst 2144 verification code",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-22T16:09:37+00:00",
+        "merged_at": "2025-07-24T22:44:26+00:00",
+        "closed_at": "2025-07-24T22:44:26+00:00"
+      },
+      {
+        "number": 69,
+        "title": "Bump solid_queue from 1.2.0 to 1.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-23T14:50:15+00:00",
+        "merged_at": "2025-07-31T19:06:18+00:00",
+        "closed_at": "2025-07-31T19:06:18+00:00"
+      },
+      {
+        "number": 70,
+        "title": "Bump importmap-rails from 2.1.0 to 2.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-23T14:50:24+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-31T14:33:00+00:00"
+      },
+      {
+        "number": 71,
+        "title": "Fyst 2186 email verification sending",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-24T20:31:09+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-28T17:30:44+00:00"
+      },
+      {
+        "number": 72,
+        "title": "Sending emails and text message with code verifications",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-28T16:58:46+00:00",
+        "merged_at": "2025-07-31T18:43:20+00:00",
+        "closed_at": "2025-07-31T18:43:20+00:00"
+      },
+      {
+        "number": 73,
+        "title": "Bump pg from 1.5.9 to 1.6.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-28T17:21:48+00:00",
+        "merged_at": "2025-07-31T19:06:24+00:00",
+        "closed_at": "2025-07-31T19:06:24+00:00"
+      },
+      {
+        "number": 74,
+        "title": "Add Twilio Integration",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-07-28T19:59:54+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-29T22:18:53+00:00"
+      },
+      {
+        "number": 75,
+        "title": "Fyst 2131 write deploy to production GitHub action from pya 2",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T18:55:41+00:00",
+        "merged_at": "2025-07-29T18:55:57+00:00",
+        "closed_at": "2025-07-29T18:55:58+00:00"
+      },
+      {
+        "number": 76,
+        "title": "Fyst 2131 write deploy to production GitHub action from pya 2",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T19:03:19+00:00",
+        "merged_at": "2025-07-29T19:09:08+00:00",
+        "closed_at": "2025-07-29T19:09:08+00:00"
+      },
+      {
+        "number": 77,
+        "title": "Fyst 2131 write deploy to production GitHub action from pya 3",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T19:14:18+00:00",
+        "merged_at": "2025-07-29T19:15:10+00:00",
+        "closed_at": "2025-07-29T19:15:10+00:00"
+      },
+      {
+        "number": 78,
+        "title": "Fyst 2131 write deploy to production GitHub action from pya 3",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T19:28:26+00:00",
+        "merged_at": "2025-07-29T19:29:34+00:00",
+        "closed_at": "2025-07-29T19:29:34+00:00"
+      },
+      {
+        "number": 79,
+        "title": "Fyst 2131 write deploy to production GitHub action from pya 4",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T20:08:48+00:00",
+        "merged_at": "2025-07-29T20:10:22+00:00",
+        "closed_at": "2025-07-29T20:10:22+00:00"
+      },
+      {
+        "number": 80,
+        "title": "[FYST-2131] Add release notes to the deploy action",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T21:17:24+00:00",
+        "merged_at": "2025-07-29T21:20:17+00:00",
+        "closed_at": "2025-07-29T21:20:17+00:00"
+      },
+      {
+        "number": 81,
+        "title": "Fyst 2131 write deploy to production GitHub action from pya 5",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T21:32:34+00:00",
+        "merged_at": "2025-07-29T21:34:00+00:00",
+        "closed_at": "2025-07-29T21:34:00+00:00"
+      },
+      {
+        "number": 82,
+        "title": "FYST-2131 remove duplicate release_note job",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T21:40:01+00:00",
+        "merged_at": "2025-07-29T21:40:47+00:00",
+        "closed_at": "2025-07-29T21:40:47+00:00"
+      },
+      {
+        "number": 83,
+        "title": "Use slack-github-action instead to only send a single-line message",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T21:53:57+00:00",
+        "merged_at": "2025-07-29T21:54:04+00:00",
+        "closed_at": "2025-07-29T21:54:04+00:00"
+      },
+      {
+        "number": 84,
+        "title": "Fyst 2131 write deploy to production GitHub action from pya 5",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T22:03:20+00:00",
+        "merged_at": "2025-07-29T22:21:35+00:00",
+        "closed_at": "2025-07-29T22:21:35+00:00"
+      },
+      {
+        "number": 85,
+        "title": "Make sure to fetch tags",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T22:29:48+00:00",
+        "merged_at": "2025-07-29T22:29:55+00:00",
+        "closed_at": "2025-07-29T22:29:55+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Replace text with payload for this new slack library",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T23:05:18+00:00",
+        "merged_at": "2025-07-29T23:05:24+00:00",
+        "closed_at": "2025-07-29T23:05:24+00:00"
+      },
+      {
+        "number": 87,
+        "title": "Fix json again",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-29T23:11:34+00:00",
+        "merged_at": "2025-07-29T23:11:39+00:00",
+        "closed_at": "2025-07-29T23:11:40+00:00"
+      },
+      {
+        "number": 88,
+        "title": "FYST-2090-add-ssn-itin-validation-step-to-prior-year-access-flow",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-29T23:53:45+00:00",
+        "merged_at": "2025-08-19T19:44:11+00:00",
+        "closed_at": "2025-08-19T19:44:11+00:00"
+      },
+      {
+        "number": 89,
+        "title": "Bump slackapi/slack-github-action from 1.24.0 to 2.1.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-30T14:58:18+00:00",
+        "merged_at": "2025-07-31T19:06:50+00:00",
+        "closed_at": "2025-07-31T19:06:50+00:00"
+      },
+      {
+        "number": 90,
+        "title": "PYA deploy action clean up",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-30T16:29:26+00:00",
+        "merged_at": "2025-07-30T16:29:35+00:00",
+        "closed_at": "2025-07-30T16:29:35+00:00"
+      },
+      {
+        "number": 91,
+        "title": "Bump nokogiri from 1.18.8 to 1.18.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-30T17:21:50+00:00",
+        "merged_at": "2025-07-31T19:06:34+00:00",
+        "closed_at": "2025-07-31T19:06:35+00:00"
+      },
+      {
+        "number": 92,
+        "title": "Bump thor from 1.3.2 to 1.4.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-30T17:21:55+00:00",
+        "merged_at": "2025-07-31T19:06:41+00:00",
+        "closed_at": "2025-07-31T19:06:41+00:00"
+      },
+      {
+        "number": 93,
+        "title": "Update release_type default to \"minor\" ",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-30T18:00:48+00:00",
+        "merged_at": "2025-07-31T19:05:27+00:00",
+        "closed_at": "2025-07-31T19:05:27+00:00"
+      },
+      {
+        "number": 94,
+        "title": "Fyst 2093 implement mailing address validation",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-31T00:15:13+00:00",
+        "merged_at": "2025-08-21T17:22:21+00:00",
+        "closed_at": "2025-08-21T17:22:21+00:00"
+      },
+      {
+        "number": 95,
+        "title": "Bump importmap-rails from 2.1.0 to 2.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-07-31T14:32:58+00:00",
+        "merged_at": "2025-07-31T19:06:57+00:00",
+        "closed_at": "2025-07-31T19:06:57+00:00"
+      },
+      {
+        "number": 96,
+        "title": "remove solid que",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-31T19:52:35+00:00",
+        "merged_at": "2025-07-31T20:02:11+00:00",
+        "closed_at": "2025-07-31T20:02:11+00:00"
+      },
+      {
+        "number": 97,
+        "title": "Dp/delayed job",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-31T20:10:19+00:00",
+        "merged_at": "2025-07-31T20:14:36+00:00",
+        "closed_at": "2025-07-31T20:14:36+00:00"
+      },
+      {
+        "number": 98,
+        "title": "Bump aws-sdk-s3 from 1.194.0 to 1.195.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T14:43:16+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-05T15:50:47+00:00"
+      },
+      {
+        "number": 99,
+        "title": "Bump mailgun-ruby from 1.3.7 to 1.3.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T14:43:29+00:00",
+        "merged_at": "2025-08-05T21:59:57+00:00",
+        "closed_at": "2025-08-05T21:59:57+00:00"
+      },
+      {
+        "number": 100,
+        "title": "Bump puma from 6.6.0 to 6.6.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T14:43:44+00:00",
+        "merged_at": "2025-08-07T18:40:01+00:00",
+        "closed_at": "2025-08-07T18:40:01+00:00"
+      },
+      {
+        "number": 101,
+        "title": "Bump importmap-rails from 2.2.1 to 2.2.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-01T14:43:55+00:00",
+        "merged_at": "2025-08-07T18:40:09+00:00",
+        "closed_at": "2025-08-07T18:40:09+00:00"
+      },
+      {
+        "number": 102,
+        "title": "Add logging to text and email jobs for error messages",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-04T18:09:09+00:00",
+        "merged_at": "2025-08-04T18:10:35+00:00",
+        "closed_at": "2025-08-04T18:10:35+00:00"
+      },
+      {
+        "number": 103,
+        "title": "Add logging tojobs",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-04T18:18:58+00:00",
+        "merged_at": "2025-08-04T18:38:56+00:00",
+        "closed_at": "2025-08-04T18:38:56+00:00"
+      },
+      {
+        "number": 104,
+        "title": "FYST-2219 change linter to standardrb and add GitHub action to run linter",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-08-04T18:56:56+00:00",
+        "merged_at": "2025-08-05T20:10:42+00:00",
+        "closed_at": "2025-08-05T20:10:42+00:00"
+      },
+      {
+        "number": 105,
+        "title": "set eager load to true",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-04T19:54:10+00:00",
+        "merged_at": "2025-08-04T19:55:58+00:00",
+        "closed_at": "2025-08-04T19:55:58+00:00"
+      },
+      {
+        "number": 106,
+        "title": "Bump pg from 1.6.0 to 1.6.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-04T20:42:48+00:00",
+        "merged_at": "2025-08-07T18:48:33+00:00",
+        "closed_at": "2025-08-07T18:48:33+00:00"
+      },
+      {
+        "number": 107,
+        "title": "Config mailgun",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-04T22:07:12+00:00",
+        "merged_at": "2025-08-05T22:05:37+00:00",
+        "closed_at": "2025-08-05T22:05:37+00:00"
+      },
+      {
+        "number": 108,
+        "title": "Bump aws-sdk-s3 from 1.194.0 to 1.196.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T15:50:44+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-06T14:49:29+00:00"
+      },
+      {
+        "number": 109,
+        "title": "Bump annotaterb from 4.17.0 to 4.18.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T16:42:13+00:00",
+        "merged_at": "2025-08-07T18:52:52+00:00",
+        "closed_at": "2025-08-07T18:52:52+00:00"
+      },
+      {
+        "number": 110,
+        "title": "Bump thruster from 0.1.14 to 0.1.15",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-05T18:43:12+00:00",
+        "merged_at": "2025-08-07T19:01:52+00:00",
+        "closed_at": "2025-08-07T19:01:52+00:00"
+      },
+      {
+        "number": 111,
+        "title": "Bump aws-sdk-s3 from 1.194.0 to 1.196.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-06T14:49:25+00:00",
+        "merged_at": "2025-08-07T19:04:35+00:00",
+        "closed_at": "2025-08-07T19:04:35+00:00"
+      },
+      {
+        "number": 112,
+        "title": "[FYST-2091] Add Idaho form link on Knockout page + fix error message",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-07T17:45:45+00:00",
+        "merged_at": "2025-08-08T20:59:30+00:00",
+        "closed_at": "2025-08-08T20:59:31+00:00"
+      },
+      {
+        "number": 113,
+        "title": "Bump phony from 2.22.3 to 2.22.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-08T14:26:14+00:00",
+        "merged_at": "2025-08-08T17:12:51+00:00",
+        "closed_at": "2025-08-08T17:12:51+00:00"
+      },
+      {
+        "number": 114,
+        "title": "Always keep one worker on for heroku review apps",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-11T16:41:40+00:00",
+        "merged_at": "2025-08-11T16:55:19+00:00",
+        "closed_at": "2025-08-11T16:55:19+00:00"
+      },
+      {
+        "number": 115,
+        "title": "Update with required inputs since gha is using the latest slack version (the one we have pinned seems to be..gone)",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-11T21:21:29+00:00",
+        "merged_at": "2025-08-11T21:23:58+00:00",
+        "closed_at": "2025-08-11T21:23:58+00:00"
+      },
+      {
+        "number": 116,
+        "title": "Remove comma \ud83d\ude22 ",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-11T22:18:07+00:00",
+        "merged_at": "2025-08-11T22:19:33+00:00",
+        "closed_at": "2025-08-11T22:19:33+00:00"
+      },
+      {
+        "number": 117,
+        "title": "Public error pages",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-12T16:01:25+00:00",
+        "merged_at": "2025-08-26T21:39:08+00:00",
+        "closed_at": "2025-08-26T21:39:08+00:00"
+      },
+      {
+        "number": 118,
+        "title": "Bump jbuilder from 2.13.0 to 2.14.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-12T19:05:58+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-13T14:54:56+00:00"
+      },
+      {
+        "number": 119,
+        "title": "Bump actions/checkout from 4 to 5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-12T20:34:13+00:00",
+        "merged_at": "2025-08-14T17:19:57+00:00",
+        "closed_at": "2025-08-14T17:19:57+00:00"
+      },
+      {
+        "number": 120,
+        "title": "Bump rspec-rails from 8.0.1 to 8.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-12T21:21:54+00:00",
+        "merged_at": "2025-08-14T19:52:36+00:00",
+        "closed_at": "2025-08-14T19:52:36+00:00"
+      },
+      {
+        "number": 121,
+        "title": "Bump selenium-webdriver from 4.34.0 to 4.35.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-13T14:54:39+00:00",
+        "merged_at": "2025-08-14T19:56:02+00:00",
+        "closed_at": "2025-08-14T19:56:02+00:00"
+      },
+      {
+        "number": 122,
+        "title": "Bump jbuilder from 2.13.0 to 2.14.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-13T14:54:54+00:00",
+        "merged_at": "2025-08-14T20:14:57+00:00",
+        "closed_at": "2025-08-14T20:14:57+00:00"
+      },
+      {
+        "number": 123,
+        "title": "Bump rails from 8.0.2 to 8.0.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-14T15:05:46+00:00",
+        "merged_at": "2025-08-14T20:04:46+00:00",
+        "closed_at": "2025-08-14T20:04:46+00:00"
+      },
+      {
+        "number": 124,
+        "title": "Bump solid_cable from 3.0.11 to 3.0.12",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-14T15:06:01+00:00",
+        "merged_at": "2025-08-14T20:18:58+00:00",
+        "closed_at": "2025-08-14T20:18:58+00:00"
+      },
+      {
+        "number": 125,
+        "title": "Bump activestorage from 8.0.2 to 8.0.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-14T19:53:05+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-14T20:05:43+00:00"
+      },
+      {
+        "number": 126,
+        "title": "Bump activerecord from 8.0.2 to 8.0.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-14T19:53:13+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-14T20:05:43+00:00"
+      },
+      {
+        "number": 127,
+        "title": "Fyst 2083 build pya pdf download page",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-15T23:08:33+00:00",
+        "merged_at": "2025-08-28T21:32:03+00:00",
+        "closed_at": "2025-08-28T21:32:03+00:00"
+      },
+      {
+        "number": 128,
+        "title": "Bump twilio-ruby from 7.7.0 to 7.7.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-19T20:14:07+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-28T14:58:01+00:00"
+      },
+      {
+        "number": 129,
+        "title": "Bump phony from 2.22.4 to 2.22.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-19T21:32:13+00:00",
+        "merged_at": "2025-09-09T19:02:28+00:00",
+        "closed_at": "2025-09-09T19:02:28+00:00"
+      },
+      {
+        "number": 130,
+        "title": "Bump rails-i18n from 8.0.1 to 8.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-19T22:06:40+00:00",
+        "merged_at": "2025-09-09T18:56:10+00:00",
+        "closed_at": "2025-09-09T18:56:10+00:00"
+      },
+      {
+        "number": 131,
+        "title": "Bump aws-sdk-s3 from 1.196.1 to 1.197.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-20T14:44:38+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-27T21:28:55+00:00"
+      },
+      {
+        "number": 132,
+        "title": "test",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-21T17:14:01+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-21T21:21:18+00:00"
+      },
+      {
+        "number": 133,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-21T22:05:01+00:00",
+        "merged_at": "2025-08-22T16:22:55+00:00",
+        "closed_at": "2025-08-22T16:22:55+00:00"
+      },
+      {
+        "number": 134,
+        "title": "Testing pat",
+        "state": "closed",
+        "author_login": "martha-brandt",
+        "created_at": "2025-08-21T23:44:02+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-21T23:48:29+00:00"
+      },
+      {
+        "number": 135,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-22T16:58:12+00:00",
+        "merged_at": "2025-08-22T17:11:25+00:00",
+        "closed_at": "2025-08-22T17:11:25+00:00"
+      },
+      {
+        "number": 136,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-22T18:23:00+00:00",
+        "merged_at": "2025-08-22T19:39:53+00:00",
+        "closed_at": "2025-08-22T19:39:53+00:00"
+      },
+      {
+        "number": 137,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-25T21:46:52+00:00",
+        "merged_at": "2025-08-25T22:36:32+00:00",
+        "closed_at": "2025-08-25T22:36:32+00:00"
+      },
+      {
+        "number": 138,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-25T22:54:39+00:00",
+        "merged_at": "2025-08-25T23:19:15+00:00",
+        "closed_at": "2025-08-25T23:19:16+00:00"
+      },
+      {
+        "number": 139,
+        "title": "Bump aws-sdk-s3 from 1.196.1 to 1.198.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-27T21:28:51+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-09T14:26:50+00:00"
+      },
+      {
+        "number": 140,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-27T22:32:33+00:00",
+        "merged_at": "2025-08-27T22:42:46+00:00",
+        "closed_at": "2025-08-27T22:42:46+00:00"
+      },
+      {
+        "number": 141,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-27T23:12:32+00:00",
+        "merged_at": "2025-08-27T23:16:20+00:00",
+        "closed_at": "2025-08-27T23:16:20+00:00"
+      },
+      {
+        "number": 142,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-27T23:58:28+00:00",
+        "merged_at": "2025-08-28T00:03:11+00:00",
+        "closed_at": "2025-08-28T00:03:11+00:00"
+      },
+      {
+        "number": 143,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-28T00:58:09+00:00",
+        "merged_at": "2025-08-28T02:06:55+00:00",
+        "closed_at": "2025-08-28T02:06:55+00:00"
+      },
+      {
+        "number": 144,
+        "title": "Bump twilio-ruby from 7.7.0 to 7.7.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-28T14:57:58+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-04T15:08:49+00:00"
+      },
+      {
+        "number": 145,
+        "title": "Bump annotaterb from 4.18.0 to 4.19.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-28T14:58:11+00:00",
+        "merged_at": "2025-09-09T18:56:22+00:00",
+        "closed_at": "2025-09-09T18:56:22+00:00"
+      },
+      {
+        "number": 146,
+        "title": "Dp/undo logging merges",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-28T18:17:55+00:00",
+        "merged_at": "2025-08-28T18:24:01+00:00",
+        "closed_at": "2025-08-28T18:24:01+00:00"
+      },
+      {
+        "number": 147,
+        "title": "FYST-2088-log-client-activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-28T23:37:25+00:00",
+        "merged_at": "2025-09-04T18:41:16+00:00",
+        "closed_at": "2025-09-04T18:41:16+00:00"
+      },
+      {
+        "number": 148,
+        "title": "Bump mailgun-ruby from 1.3.9 to 1.3.10",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-29T14:21:16+00:00",
+        "merged_at": "2025-09-09T18:56:32+00:00",
+        "closed_at": "2025-09-09T18:56:32+00:00"
+      },
+      {
+        "number": 149,
+        "title": "Revert \"Fyst 2088 log client activity (#143)\"",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-02T17:19:36+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-02T17:19:47+00:00"
+      },
+      {
+        "number": 150,
+        "title": "update deploy workflows",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-02T19:23:58+00:00",
+        "merged_at": "2025-09-02T19:26:42+00:00",
+        "closed_at": "2025-09-02T19:26:42+00:00"
+      },
+      {
+        "number": 151,
+        "title": "Bump pg from 1.6.1 to 1.6.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-03T07:17:40+00:00",
+        "merged_at": "2025-09-09T18:56:58+00:00",
+        "closed_at": "2025-09-09T18:56:58+00:00"
+      },
+      {
+        "number": 152,
+        "title": "FYST-2182-drop-down-menu-need-to-be-fixed-for-mobile",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-03T17:37:37+00:00",
+        "merged_at": "2025-09-04T18:42:02+00:00",
+        "closed_at": "2025-09-04T18:42:02+00:00"
+      },
+      {
+        "number": 153,
+        "title": "Fyst 2083 build pya pdf download page",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-03T22:09:13+00:00",
+        "merged_at": "2025-09-03T22:17:06+00:00",
+        "closed_at": "2025-09-03T22:17:06+00:00"
+      },
+      {
+        "number": 154,
+        "title": "Fyst 2083 build pya pdf download page",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-03T23:20:33+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-04T18:41:48+00:00"
+      },
+      {
+        "number": 155,
+        "title": "Bump aws-actions/configure-aws-credentials from 4 to 5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-04T14:43:18+00:00",
+        "merged_at": "2025-09-09T18:57:03+00:00",
+        "closed_at": "2025-09-09T18:57:03+00:00"
+      },
+      {
+        "number": 156,
+        "title": "Bump twilio-ruby from 7.7.0 to 7.8.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-04T15:08:47+00:00",
+        "merged_at": "2025-09-09T18:57:15+00:00",
+        "closed_at": "2025-09-09T18:57:15+00:00"
+      },
+      {
+        "number": 157,
+        "title": "Bump puma from 6.6.1 to 7.0.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-04T15:12:04+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-08T15:11:27+00:00"
+      },
+      {
+        "number": 158,
+        "title": "add logging to debug staging",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-04T19:30:14+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-08T16:59:38+00:00"
+      },
+      {
+        "number": 159,
+        "title": "Fyst 2088 log client activity",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-04T22:51:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-04T22:54:46+00:00"
+      },
+      {
+        "number": 160,
+        "title": "Fyst 2083 build pya pdf download page",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-04T22:56:03+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-08T16:59:26+00:00"
+      },
+      {
+        "number": 161,
+        "title": "ignore shas that already exist",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-05T00:02:06+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-08T16:59:16+00:00"
+      },
+      {
+        "number": 162,
+        "title": "Dp/use warden to manage sessions",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-05T20:22:42+00:00",
+        "merged_at": "2025-09-16T23:46:53+00:00",
+        "closed_at": "2025-09-16T23:46:53+00:00"
+      },
+      {
+        "number": 163,
+        "title": "Bump puma from 6.6.1 to 7.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-08T15:11:24+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-09T14:27:11+00:00"
+      },
+      {
+        "number": 164,
+        "title": "Bump factory_bot_rails from 6.5.0 to 6.5.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-08T15:11:35+00:00",
+        "merged_at": "2025-09-09T18:57:38+00:00",
+        "closed_at": "2025-09-09T18:57:38+00:00"
+      },
+      {
+        "number": 165,
+        "title": "Bump aws-sdk-s3 from 1.196.1 to 1.199.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-09T14:26:47+00:00",
+        "merged_at": "2025-09-09T18:57:44+00:00",
+        "closed_at": "2025-09-09T18:57:44+00:00"
+      },
+      {
+        "number": 166,
+        "title": "Bump puma from 6.6.1 to 7.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-09T14:27:08+00:00",
+        "merged_at": "2025-09-09T19:02:14+00:00",
+        "closed_at": "2025-09-09T19:02:14+00:00"
+      },
+      {
+        "number": 167,
+        "title": "Bump standard from 1.50.0 to 1.51.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-10T14:22:22+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-15T15:13:55+00:00"
+      },
+      {
+        "number": 168,
+        "title": "Update standard",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-10T17:57:50+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-27T17:23:29+00:00"
+      },
+      {
+        "number": 169,
+        "title": "FYST-2203-update-copy-on-year-selection-page",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-12T18:45:15+00:00",
+        "merged_at": "2025-09-16T23:47:11+00:00",
+        "closed_at": "2025-09-16T23:47:11+00:00"
+      },
+      {
+        "number": 170,
+        "title": "Bump standard from 1.50.0 to 1.51.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-15T15:13:52+00:00",
+        "merged_at": null,
+        "closed_at": "2026-02-20T14:51:12+00:00"
+      },
+      {
+        "number": 171,
+        "title": "Bump puma from 7.0.2 to 7.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-15T15:33:36+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-24T14:23:50+00:00"
+      },
+      {
+        "number": 172,
+        "title": "Bump twilio-ruby from 7.8.0 to 7.8.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-18T14:23:09+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-25T14:40:43+00:00"
+      },
+      {
+        "number": 173,
+        "title": "Bump rails from 8.0.2.1 to 8.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-23T14:20:08+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-22T14:27:57+00:00"
+      },
+      {
+        "number": 174,
+        "title": "Bump propshaft from 1.2.1 to 1.3.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-24T14:23:36+00:00",
+        "merged_at": "2026-01-30T23:36:08+00:00",
+        "closed_at": "2026-01-30T23:36:08+00:00"
+      },
+      {
+        "number": 175,
+        "title": "Bump puma from 7.0.2 to 7.0.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-24T14:23:48+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-20T15:33:43+00:00"
+      },
+      {
+        "number": 176,
+        "title": "Bump twilio-ruby from 7.8.0 to 7.8.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-25T14:40:40+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-30T14:23:28+00:00"
+      },
+      {
+        "number": 177,
+        "title": "Bump aws-sdk-s3 from 1.199.0 to 1.199.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-26T14:23:25+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-16T14:27:49+00:00"
+      },
+      {
+        "number": 178,
+        "title": "Bump turbo-rails from 2.0.16 to 2.0.17",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-26T14:23:41+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-29T14:31:35+00:00"
+      },
+      {
+        "number": 179,
+        "title": "Bump mailgun-ruby from 1.3.10 to 1.4.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-30T14:23:03+00:00",
+        "merged_at": "2025-12-08T22:33:15+00:00",
+        "closed_at": "2025-12-08T22:33:15+00:00"
+      },
+      {
+        "number": 180,
+        "title": "Bump twilio-ruby from 7.8.0 to 7.8.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-30T14:23:24+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-14T14:38:29+00:00"
+      },
+      {
+        "number": 181,
+        "title": "Bump selenium-webdriver from 4.35.0 to 4.36.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-03T14:22:26+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-20T15:18:56+00:00"
+      },
+      {
+        "number": 182,
+        "title": "Bump solid_cache from 1.0.7 to 1.0.8",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-09T14:25:00+00:00",
+        "merged_at": "2025-12-09T00:56:25+00:00",
+        "closed_at": "2025-12-09T00:56:25+00:00"
+      },
+      {
+        "number": 183,
+        "title": "Bump twilio-ruby from 7.8.0 to 7.8.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-14T14:38:26+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-28T14:25:52+00:00"
+      },
+      {
+        "number": 184,
+        "title": "Bump aws-sdk-s3 from 1.199.0 to 1.200.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-16T14:27:46+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-22T14:27:15+00:00"
+      },
+      {
+        "number": 185,
+        "title": "Add sentry gems and initializer",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-10-17T21:31:17+00:00",
+        "merged_at": "2025-10-21T21:11:59+00:00",
+        "closed_at": "2025-10-21T21:11:59+00:00"
+      },
+      {
+        "number": 186,
+        "title": "Add datadog gem and initializer",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-10-17T23:46:16+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-08T18:22:54+00:00"
+      },
+      {
+        "number": 187,
+        "title": "Bump selenium-webdriver from 4.35.0 to 4.37.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-20T15:18:53+00:00",
+        "merged_at": "2025-10-21T22:34:45+00:00",
+        "closed_at": "2025-10-21T22:34:45+00:00"
+      },
+      {
+        "number": 188,
+        "title": "Bump puma from 7.0.2 to 7.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-20T15:33:39+00:00",
+        "merged_at": "2025-12-09T01:15:03+00:00",
+        "closed_at": "2025-12-09T01:15:03+00:00"
+      },
+      {
+        "number": 189,
+        "title": "update rack",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-10-20T22:43:52+00:00",
+        "merged_at": "2025-10-20T22:46:06+00:00",
+        "closed_at": "2025-10-20T22:46:06+00:00"
+      },
+      {
+        "number": 190,
+        "title": "update sinatra to satisfy dependabot",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-10-20T22:49:10+00:00",
+        "merged_at": "2025-10-20T22:52:40+00:00",
+        "closed_at": "2025-10-20T22:52:40+00:00"
+      },
+      {
+        "number": 191,
+        "title": "update rexml to satisfy dependabot",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-10-20T22:53:47+00:00",
+        "merged_at": "2025-10-20T22:57:27+00:00",
+        "closed_at": "2025-10-20T22:57:27+00:00"
+      },
+      {
+        "number": 192,
+        "title": "Bump annotaterb from 4.19.0 to 4.20.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-22T14:26:59+00:00",
+        "merged_at": null,
+        "closed_at": "2026-02-20T14:50:50+00:00"
+      },
+      {
+        "number": 193,
+        "title": "Bump aws-sdk-s3 from 1.199.0 to 1.201.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-22T14:27:12+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-29T14:32:18+00:00"
+      },
+      {
+        "number": 194,
+        "title": "Bump rails from 8.0.2.1 to 8.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-22T14:27:53+00:00",
+        "merged_at": null,
+        "closed_at": "2025-10-29T14:31:50+00:00"
+      },
+      {
+        "number": 195,
+        "title": "add openssl dep at version new enough to fix https://github.com/ruby/openssl/issues/949",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-10-24T20:29:34+00:00",
+        "merged_at": "2025-10-24T22:04:45+00:00",
+        "closed_at": "2025-10-24T22:04:45+00:00"
+      },
+      {
+        "number": 196,
+        "title": "Bump twilio-ruby from 7.8.0 to 7.8.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-28T14:25:50+00:00",
+        "merged_at": null,
+        "closed_at": "2026-02-20T14:51:34+00:00"
+      },
+      {
+        "number": 197,
+        "title": "FYST-2232-change-s-3-location-in-state-file-archived-intake-model-file-to-prod",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-10-28T22:10:31+00:00",
+        "merged_at": "2025-10-31T19:34:52+00:00",
+        "closed_at": "2025-10-31T19:34:52+00:00"
+      },
+      {
+        "number": 198,
+        "title": "Bump turbo-rails from 2.0.16 to 2.0.20",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-29T14:31:33+00:00",
+        "merged_at": null,
+        "closed_at": "2026-02-20T14:47:14+00:00"
+      },
+      {
+        "number": 199,
+        "title": "Bump rails from 8.0.2.1 to 8.1.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-29T14:31:47+00:00",
+        "merged_at": null,
+        "closed_at": "2026-02-20T14:53:02+00:00"
+      },
+      {
+        "number": 200,
+        "title": "Bump aws-sdk-s3 from 1.199.0 to 1.202.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-10-29T14:32:15+00:00",
+        "merged_at": "2025-11-20T16:19:49+00:00",
+        "closed_at": "2025-11-20T16:19:49+00:00"
+      },
+      {
+        "number": 201,
+        "title": "Fyst 2306/move archived intakes",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-06T23:51:01+00:00",
+        "merged_at": "2025-11-13T20:34:54+00:00",
+        "closed_at": "2025-11-13T20:34:54+00:00"
+      },
+      {
+        "number": 202,
+        "title": "Fyst 2266 update fyst pya homepage fileyourstatetaxes org after sunset",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-12T21:36:48+00:00",
+        "merged_at": "2025-11-14T19:59:14+00:00",
+        "closed_at": "2025-11-14T19:59:14+00:00"
+      },
+      {
+        "number": 203,
+        "title": "Ignore mise and change routes to prevent it from going to different urls",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-11-12T23:02:17+00:00",
+        "merged_at": "2025-11-13T15:59:05+00:00",
+        "closed_at": "2025-11-13T15:59:05+00:00"
+      },
+      {
+        "number": 204,
+        "title": "Temporarily adds honeycrisp to get past private issues",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-11-13T20:57:32+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-13T21:11:15+00:00"
+      },
+      {
+        "number": 205,
+        "title": "Fix honeycrisp with pat",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-11-13T22:08:52+00:00",
+        "merged_at": "2025-11-14T20:07:46+00:00",
+        "closed_at": "2025-11-14T20:07:46+00:00"
+      },
+      {
+        "number": 206,
+        "title": "Update script bucket",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-13T22:49:46+00:00",
+        "merged_at": "2025-11-13T23:15:23+00:00",
+        "closed_at": "2025-11-13T23:15:23+00:00"
+      },
+      {
+        "number": 207,
+        "title": "Test deploy",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-14T00:01:01+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-14T19:50:19+00:00"
+      },
+      {
+        "number": 208,
+        "title": "Trying env!",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-11-14T20:49:09+00:00",
+        "merged_at": "2025-11-14T20:52:59+00:00",
+        "closed_at": "2025-11-14T20:52:59+00:00"
+      },
+      {
+        "number": 209,
+        "title": "Revert \"Fyst 2266 update fyst pya homepage fileyourstatetaxes org after sunset\"",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-14T21:04:25+00:00",
+        "merged_at": "2025-11-14T21:07:36+00:00",
+        "closed_at": "2025-11-14T21:07:37+00:00"
+      },
+      {
+        "number": 210,
+        "title": "Fyst 2266 update fyst pya homepage fileyourstatetaxes org after sunset",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-14T21:12:19+00:00",
+        "merged_at": "2025-11-14T21:14:01+00:00",
+        "closed_at": "2025-11-14T21:14:01+00:00"
+      },
+      {
+        "number": 211,
+        "title": "Fyst 2300 add spanish translations to pya v 2 pages",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-14T21:26:11+00:00",
+        "merged_at": "2025-11-17T18:02:08+00:00",
+        "closed_at": "2025-11-17T18:02:08+00:00"
+      },
+      {
+        "number": 212,
+        "title": "test",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-14T23:47:28+00:00",
+        "merged_at": "2025-11-15T00:01:23+00:00",
+        "closed_at": "2025-11-15T00:01:23+00:00"
+      },
+      {
+        "number": 213,
+        "title": "Update script bucket",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-15T00:30:56+00:00",
+        "merged_at": "2025-11-15T00:42:45+00:00",
+        "closed_at": "2025-11-15T00:42:46+00:00"
+      },
+      {
+        "number": 214,
+        "title": "Update script",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-15T01:14:17+00:00",
+        "merged_at": "2025-11-15T01:25:03+00:00",
+        "closed_at": "2025-11-15T01:25:03+00:00"
+      },
+      {
+        "number": 215,
+        "title": "Update script 2",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-15T01:46:06+00:00",
+        "merged_at": "2025-11-15T01:48:00+00:00",
+        "closed_at": "2025-11-15T01:48:00+00:00"
+      },
+      {
+        "number": 216,
+        "title": "don't need credentials on ecs",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-15T02:05:58+00:00",
+        "merged_at": "2025-11-15T02:09:04+00:00",
+        "closed_at": "2025-11-15T02:09:04+00:00"
+      },
+      {
+        "number": 217,
+        "title": "update_script_4",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-15T02:33:08+00:00",
+        "merged_at": "2025-11-15T02:43:38+00:00",
+        "closed_at": "2025-11-15T02:43:38+00:00"
+      },
+      {
+        "number": 218,
+        "title": "Fyst 2319 conditional copy on lockout page not displaying correctly",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-15T05:24:39+00:00",
+        "merged_at": "2025-11-17T23:18:04+00:00",
+        "closed_at": "2025-11-17T23:18:04+00:00"
+      },
+      {
+        "number": 219,
+        "title": "fix refresh errors",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-15T06:32:41+00:00",
+        "merged_at": "2025-11-17T18:11:22+00:00",
+        "closed_at": "2025-11-17T18:11:22+00:00"
+      },
+      {
+        "number": 220,
+        "title": "create a script for attaching pdf blobs",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-16T23:44:54+00:00",
+        "merged_at": "2025-11-16T23:59:01+00:00",
+        "closed_at": "2025-11-16T23:59:01+00:00"
+      },
+      {
+        "number": 221,
+        "title": "Update deploy to prod",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-17T19:41:38+00:00",
+        "merged_at": "2025-11-17T20:38:48+00:00",
+        "closed_at": "2025-11-17T20:38:48+00:00"
+      },
+      {
+        "number": 222,
+        "title": "fix a redirect name",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-17T20:21:58+00:00",
+        "merged_at": "2025-11-17T20:26:42+00:00",
+        "closed_at": "2025-11-17T20:26:42+00:00"
+      },
+      {
+        "number": 223,
+        "title": "Fyst 2300 add spanish translations to pya v 2 pages 2",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-17T20:22:09+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-17T20:22:33+00:00"
+      },
+      {
+        "number": 224,
+        "title": "Fyst 2300 add spanish translations to pya v 2 pages",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-17T20:22:49+00:00",
+        "merged_at": "2025-11-17T20:33:59+00:00",
+        "closed_at": "2025-11-17T20:33:59+00:00"
+      },
+      {
+        "number": 225,
+        "title": "Fyst 2318 contact information disappears upon entry",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-17T23:01:35+00:00",
+        "merged_at": "2025-11-18T22:27:17+00:00",
+        "closed_at": "2025-11-18T22:27:17+00:00"
+      },
+      {
+        "number": 226,
+        "title": "new script",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-18T00:01:30+00:00",
+        "merged_at": "2025-11-18T00:10:12+00:00",
+        "closed_at": "2025-11-18T00:10:12+00:00"
+      },
+      {
+        "number": 227,
+        "title": "some spanish translation and fixes for the knockout page",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-18T00:16:49+00:00",
+        "merged_at": "2025-11-18T00:18:39+00:00",
+        "closed_at": "2025-11-18T00:18:39+00:00"
+      },
+      {
+        "number": 228,
+        "title": "Attach script with threads",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-18T19:28:12+00:00",
+        "merged_at": "2025-11-18T19:32:23+00:00",
+        "closed_at": "2025-11-18T19:32:23+00:00"
+      },
+      {
+        "number": 229,
+        "title": "Gc start on script",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-18T21:54:31+00:00",
+        "merged_at": "2025-11-18T21:57:24+00:00",
+        "closed_at": "2025-11-18T21:57:24+00:00"
+      },
+      {
+        "number": 230,
+        "title": "home page fix",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-19T23:31:06+00:00",
+        "merged_at": "2025-11-19T23:46:45+00:00",
+        "closed_at": "2025-11-19T23:46:45+00:00"
+      },
+      {
+        "number": 231,
+        "title": "Let's see if it works \\o/",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-11-20T16:40:00+00:00",
+        "merged_at": "2025-11-20T16:41:39+00:00",
+        "closed_at": "2025-11-20T16:41:40+00:00"
+      },
+      {
+        "number": 232,
+        "title": "Aliases DEPLOY_PAT for bundle use",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-11-20T17:41:25+00:00",
+        "merged_at": "2025-11-20T18:09:38+00:00",
+        "closed_at": "2025-11-20T18:09:38+00:00"
+      },
+      {
+        "number": 233,
+        "title": "Pya button fix",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-20T22:47:13+00:00",
+        "merged_at": "2025-11-21T00:33:29+00:00",
+        "closed_at": "2025-11-21T00:33:29+00:00"
+      },
+      {
+        "number": 234,
+        "title": "Bump actions/checkout from 5 to 6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-21T14:21:21+00:00",
+        "merged_at": "2025-12-02T17:51:03+00:00",
+        "closed_at": "2025-12-02T17:51:03+00:00"
+      },
+      {
+        "number": 235,
+        "title": "FYST-2189-make-failed-attempts-reset-every-hour",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-24T16:53:56+00:00",
+        "merged_at": "2025-11-24T19:26:25+00:00",
+        "closed_at": "2025-11-24T19:26:25+00:00"
+      },
+      {
+        "number": 236,
+        "title": "FYST-2312/add-intercom-to-pya",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-24T19:41:58+00:00",
+        "merged_at": "2025-12-08T19:44:30+00:00",
+        "closed_at": "2025-12-08T19:44:30+00:00"
+      },
+      {
+        "number": 237,
+        "title": "Revert \"FYST-2189-make-failed-attempts-reset-every-hour\"",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-24T19:46:20+00:00",
+        "merged_at": "2025-11-24T19:48:05+00:00",
+        "closed_at": "2025-11-24T19:48:05+00:00"
+      },
+      {
+        "number": 238,
+        "title": "Fyst 2189 make failed attempts reset every hour",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-11-24T19:54:35+00:00",
+        "merged_at": "2025-11-24T19:57:39+00:00",
+        "closed_at": "2025-11-24T19:57:39+00:00"
+      },
+      {
+        "number": 239,
+        "title": "FYST-2326-update-pya-footer",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-02T23:40:33+00:00",
+        "merged_at": "2025-12-03T21:44:15+00:00",
+        "closed_at": "2025-12-03T21:44:15+00:00"
+      },
+      {
+        "number": 240,
+        "title": "update intercom copy",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-09T23:08:35+00:00",
+        "merged_at": "2025-12-09T23:50:13+00:00",
+        "closed_at": "2025-12-09T23:50:13+00:00"
+      },
+      {
+        "number": 241,
+        "title": "FYST-2328-add-spanish-translations-to-intercom-button-and-footer",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-10T19:50:42+00:00",
+        "merged_at": "2025-12-10T21:29:42+00:00",
+        "closed_at": "2025-12-10T21:29:42+00:00"
+      },
+      {
+        "number": 242,
+        "title": "few words",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-10T22:44:01+00:00",
+        "merged_at": "2025-12-10T22:45:34+00:00",
+        "closed_at": "2025-12-10T22:45:34+00:00"
+      },
+      {
+        "number": 243,
+        "title": "Switching to IAM auth for databases",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-12-15T19:36:13+00:00",
+        "merged_at": "2025-12-15T19:52:17+00:00",
+        "closed_at": "2025-12-15T19:52:17+00:00"
+      },
+      {
+        "number": 244,
+        "title": "Trying to remove the URL to see if things are less explode-y",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-12-15T20:12:19+00:00",
+        "merged_at": "2025-12-15T20:14:06+00:00",
+        "closed_at": "2025-12-15T20:14:07+00:00"
+      },
+      {
+        "number": 245,
+        "title": "Attempting moving gem around",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-12-15T20:50:55+00:00",
+        "merged_at": "2025-12-15T20:52:49+00:00",
+        "closed_at": "2025-12-15T20:52:49+00:00"
+      },
+      {
+        "number": 246,
+        "title": "Fyst 2327/revert failed iam auth",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-12-15T21:15:07+00:00",
+        "merged_at": "2025-12-15T21:44:38+00:00",
+        "closed_at": "2025-12-15T21:44:38+00:00"
+      },
+      {
+        "number": 247,
+        "title": "Just updating the tag \ud83d\ude35\u200d\ud83d\udcab",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-12-17T15:21:39+00:00",
+        "merged_at": "2026-01-20T21:14:26+00:00",
+        "closed_at": "2026-01-20T21:14:26+00:00"
+      },
+      {
+        "number": 248,
+        "title": "Update AWS-SDK",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-12-24T18:27:12+00:00",
+        "merged_at": "2025-12-24T18:41:13+00:00",
+        "closed_at": "2025-12-24T18:41:13+00:00"
+      },
+      {
+        "number": 249,
+        "title": "remove scripts",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-01-14T22:02:18+00:00",
+        "merged_at": "2026-01-15T20:12:35+00:00",
+        "closed_at": "2026-01-15T20:12:35+00:00"
+      },
+      {
+        "number": 250,
+        "title": "Fyst 2327/new day new attempt",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-01-20T21:46:18+00:00",
+        "merged_at": null,
+        "closed_at": "2026-01-20T21:46:30+00:00"
+      },
+      {
+        "number": 251,
+        "title": "Forgot the ssl-mode",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-01-20T21:47:26+00:00",
+        "merged_at": "2026-01-20T22:03:05+00:00",
+        "closed_at": "2026-01-20T22:03:05+00:00"
+      },
+      {
+        "number": 252,
+        "title": "update brakeman",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-01-29T22:02:23+00:00",
+        "merged_at": "2026-01-29T22:07:02+00:00",
+        "closed_at": "2026-01-29T22:07:02+00:00"
+      },
+      {
+        "number": 253,
+        "title": "Bump aws-actions/configure-aws-credentials from 5 to 6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-05T14:45:22+00:00",
+        "merged_at": "2026-03-03T22:57:32+00:00",
+        "closed_at": "2026-03-03T22:57:32+00:00"
+      },
+      {
+        "number": 254,
+        "title": "Swapping to deployment app over PAT",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-02-11T16:26:03+00:00",
+        "merged_at": "2026-02-11T17:34:01+00:00",
+        "closed_at": "2026-02-11T17:34:01+00:00"
+      },
+      {
+        "number": 255,
+        "title": "Bump rack from 3.2.3 to 3.2.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-19T20:10:11+00:00",
+        "merged_at": "2026-02-19T20:12:29+00:00",
+        "closed_at": "2026-02-19T20:12:29+00:00"
+      },
+      {
+        "number": 256,
+        "title": "Bump faraday from 2.14.0 to 2.14.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-19T20:10:36+00:00",
+        "merged_at": "2026-02-19T20:13:08+00:00",
+        "closed_at": "2026-02-19T20:13:08+00:00"
+      },
+      {
+        "number": 257,
+        "title": "Bump nokogiri from 1.18.10 to 1.19.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-19T20:14:27+00:00",
+        "merged_at": "2026-02-19T20:15:09+00:00",
+        "closed_at": "2026-02-19T20:15:09+00:00"
+      },
+      {
+        "number": 258,
+        "title": "Bump debug from 1.11.0 to 1.11.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:45:42+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:28+00:00"
+      },
+      {
+        "number": 259,
+        "title": "Bump importmap-rails from 2.2.2 to 2.2.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:46:05+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:24+00:00"
+      },
+      {
+        "number": 260,
+        "title": "Bump devise from 4.9.4 to 5.0.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:46:26+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:26+00:00"
+      },
+      {
+        "number": 261,
+        "title": "Bump sentry-ruby from 5.28.0 to 6.3.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:46:49+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:26+00:00"
+      },
+      {
+        "number": 262,
+        "title": "Bump turbo-rails from 2.0.16 to 2.0.23",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:47:10+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:25+00:00"
+      },
+      {
+        "number": 263,
+        "title": "Bump aws-sdk-s3 from 1.209.0 to 1.213.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:47:32+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:34+00:00"
+      },
+      {
+        "number": 264,
+        "title": "Bump annotaterb from 4.19.0 to 4.22.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:50:47+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:29+00:00"
+      },
+      {
+        "number": 265,
+        "title": "Bump standard from 1.50.0 to 1.54.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:51:09+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:42+00:00"
+      },
+      {
+        "number": 266,
+        "title": "Bump twilio-ruby from 7.8.0 to 7.10.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:51:31+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-03T22:48:35+00:00"
+      },
+      {
+        "number": 267,
+        "title": "Bump rails from 8.0.2.1 to 8.1.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-20T14:52:59+00:00",
+        "merged_at": "2026-03-03T23:08:17+00:00",
+        "closed_at": "2026-03-03T23:08:17+00:00"
+      },
+      {
+        "number": 268,
+        "title": "bundle update",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-03T22:36:55+00:00",
+        "merged_at": "2026-03-03T22:47:37+00:00",
+        "closed_at": "2026-03-03T22:47:38+00:00"
+      },
+      {
+        "number": 269,
+        "title": "Bump aws-sdk-s3 from 1.213.0 to 1.214.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-05T14:46:29+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-06T14:45:22+00:00"
+      },
+      {
+        "number": 270,
+        "title": "change thruster port to 8080 in dockerfile",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-05T20:09:20+00:00",
+        "merged_at": "2026-03-05T20:31:12+00:00",
+        "closed_at": "2026-03-05T20:31:12+00:00"
+      },
+      {
+        "number": 271,
+        "title": "Bump aws-sdk-s3 from 1.213.0 to 1.215.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-06T14:45:19+00:00",
+        "merged_at": "2026-03-12T17:05:00+00:00",
+        "closed_at": "2026-03-12T17:05:00+00:00"
+      },
+      {
+        "number": 272,
+        "title": "Bump thruster from 0.1.18 to 0.1.19",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-06T14:45:41+00:00",
+        "merged_at": "2026-03-12T17:05:38+00:00",
+        "closed_at": "2026-03-12T17:05:38+00:00"
+      },
+      {
+        "number": 273,
+        "title": "Bump phony from 3.0.2 to 3.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-10T14:46:24+00:00",
+        "merged_at": "2026-03-12T17:05:59+00:00",
+        "closed_at": "2026-03-12T17:05:59+00:00"
+      },
+      {
+        "number": 274,
+        "title": "Bump twilio-ruby from 7.10.1 to 7.10.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-10T14:46:55+00:00",
+        "merged_at": "2026-03-12T17:07:02+00:00",
+        "closed_at": "2026-03-12T17:07:02+00:00"
+      },
+      {
+        "number": 275,
+        "title": "Bump rspec-rails from 8.0.3 to 8.0.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-11T14:50:56+00:00",
+        "merged_at": "2026-03-12T17:07:21+00:00",
+        "closed_at": "2026-03-12T17:07:21+00:00"
+      },
+      {
+        "number": 276,
+        "title": "Revert \"change thruster port to 8080 in dockerfile\"",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-03-12T17:00:34+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-30T18:15:46+00:00"
+      },
+      {
+        "number": 277,
+        "title": "Bump slackapi/slack-github-action from 2.1.1 to 3.0.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-13T14:44:50+00:00",
+        "merged_at": "2026-03-30T18:15:34+00:00",
+        "closed_at": "2026-03-30T18:15:34+00:00"
+      },
+      {
+        "number": 278,
+        "title": "Bump aws-sdk-s3 from 1.215.0 to 1.216.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-13T14:45:44+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-19T14:46:07+00:00"
+      },
+      {
+        "number": 279,
+        "title": "Bump actions/create-github-app-token from 2 to 3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-16T15:06:49+00:00",
+        "merged_at": "2026-03-30T18:16:00+00:00",
+        "closed_at": "2026-03-30T18:16:01+00:00"
+      },
+      {
+        "number": 280,
+        "title": "Bump sentry-ruby from 6.4.1 to 6.5.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-16T15:07:35+00:00",
+        "merged_at": "2026-03-23T20:39:27+00:00",
+        "closed_at": "2026-03-23T20:39:27+00:00"
+      },
+      {
+        "number": 281,
+        "title": "Bump sentry-rails from 6.4.1 to 6.5.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-16T15:08:09+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-23T20:40:13+00:00"
+      },
+      {
+        "number": 282,
+        "title": "Bump devise from 5.0.2 to 5.0.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-17T14:46:13+00:00",
+        "merged_at": "2026-03-17T23:24:33+00:00",
+        "closed_at": "2026-03-17T23:24:33+00:00"
+      },
+      {
+        "number": 283,
+        "title": "Bump action_text-trix from 2.1.16 to 2.1.17",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-17T23:26:02+00:00",
+        "merged_at": "2026-03-17T23:27:15+00:00",
+        "closed_at": "2026-03-17T23:27:15+00:00"
+      },
+      {
+        "number": 284,
+        "title": "Bump aws-sdk-s3 from 1.215.0 to 1.217.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-19T14:46:04+00:00",
+        "merged_at": "2026-03-23T20:42:32+00:00",
+        "closed_at": "2026-03-23T20:42:32+00:00"
+      },
+      {
+        "number": 285,
+        "title": "Bump json from 2.19.1 to 2.19.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-23T18:25:49+00:00",
+        "merged_at": "2026-03-23T20:40:34+00:00",
+        "closed_at": "2026-03-23T20:40:34+00:00"
+      },
+      {
+        "number": 286,
+        "title": "Bump bcrypt from 3.1.21 to 3.1.22",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-23T18:26:04+00:00",
+        "merged_at": "2026-03-23T20:41:47+00:00",
+        "closed_at": "2026-03-23T20:41:47+00:00"
+      },
+      {
+        "number": 287,
+        "title": "Revert \"Bump aws-sdk-s3 from 1.215.0 to 1.217.0\"",
+        "state": "closed",
+        "author_login": "embarnard",
+        "created_at": "2026-03-23T20:52:56+00:00",
+        "merged_at": "2026-03-23T20:56:49+00:00",
+        "closed_at": "2026-03-23T20:56:49+00:00"
+      },
+      {
+        "number": 288,
+        "title": "Bump rails from 8.1.2 to 8.1.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-24T14:45:52+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-25T14:46:27+00:00"
+      },
+      {
+        "number": 289,
+        "title": "Bump aws-sdk-s3 from 1.215.0 to 1.217.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-24T14:46:13+00:00",
+        "merged_at": "2026-03-30T18:16:16+00:00",
+        "closed_at": "2026-03-30T18:16:16+00:00"
+      },
+      {
+        "number": 290,
+        "title": "Bump twilio-ruby from 7.10.3 to 7.10.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-24T14:46:39+00:00",
+        "merged_at": "2026-03-30T18:16:36+00:00",
+        "closed_at": "2026-03-30T18:16:36+00:00"
+      },
+      {
+        "number": 291,
+        "title": "Bump phony from 3.0.3 to 3.0.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-25T14:46:02+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-27T14:45:11+00:00"
+      },
+      {
+        "number": 292,
+        "title": "Bump rails from 8.1.2.1 to 8.1.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-25T14:46:24+00:00",
+        "merged_at": "2026-03-30T18:19:48+00:00",
+        "closed_at": "2026-03-30T18:19:48+00:00"
+      },
+      {
+        "number": 293,
+        "title": "Bump thruster from 0.1.19 to 0.1.20",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-25T14:46:48+00:00",
+        "merged_at": "2026-03-30T18:20:01+00:00",
+        "closed_at": "2026-03-30T18:20:01+00:00"
+      },
+      {
+        "number": 294,
+        "title": "Bump phony from 3.0.3 to 3.0.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-27T14:45:08+00:00",
+        "merged_at": "2026-03-30T18:16:53+00:00",
+        "closed_at": "2026-03-30T18:16:53+00:00"
+      },
+      {
+        "number": 295,
+        "title": "Bump mailgun-ruby from 1.4.2 to 1.4.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-30T16:15:21+00:00",
+        "merged_at": "2026-03-30T18:17:16+00:00",
+        "closed_at": "2026-03-30T18:17:16+00:00"
+      },
+      {
+        "number": 296,
+        "title": "Bump pg-aws_rds_iam from 0.7.0 to 0.8.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-30T16:16:07+00:00",
+        "merged_at": "2026-03-30T18:20:23+00:00",
+        "closed_at": "2026-03-30T18:20:23+00:00"
+      },
+      {
+        "number": 297,
+        "title": "Bump activestorage from 8.1.2 to 8.1.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-30T18:13:12+00:00",
+        "merged_at": "2026-03-30T18:15:02+00:00",
+        "closed_at": "2026-03-30T18:15:02+00:00"
+      },
+      {
+        "number": 298,
+        "title": "Bump activesupport from 8.1.2 to 8.1.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-30T18:13:32+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-30T18:15:54+00:00"
+      },
+      {
+        "number": 299,
+        "title": "Bump action_text-trix from 2.1.17 to 2.1.18",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-30T18:13:57+00:00",
+        "merged_at": "2026-03-30T18:18:29+00:00",
+        "closed_at": "2026-03-30T18:18:29+00:00"
+      },
+      {
+        "number": 300,
+        "title": "Bump actionpack from 8.1.2 to 8.1.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-30T18:13:59+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-30T18:15:53+00:00"
+      },
+      {
+        "number": 301,
+        "title": "Bump aws-sdk-s3 from 1.217.0 to 1.217.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-03-31T14:45:46+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-01T18:51:03+00:00"
+      },
+      {
+        "number": 302,
+        "title": "Bump aws-sdk-s3 from 1.217.0 to 1.218.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-01T18:51:01+00:00",
+        "merged_at": "2026-04-03T16:44:06+00:00",
+        "closed_at": "2026-04-03T16:44:06+00:00"
+      },
+      {
+        "number": 303,
+        "title": "TEF-345 Update pya deploy actions to wait on tax benefits backend",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-04-02T22:47:07+00:00",
+        "merged_at": "2026-04-03T16:42:44+00:00",
+        "closed_at": "2026-04-03T16:42:44+00:00"
+      },
+      {
+        "number": 304,
+        "title": "Bump rack from 3.2.5 to 3.2.6",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-06T19:24:40+00:00",
+        "merged_at": "2026-04-06T19:28:45+00:00",
+        "closed_at": "2026-04-06T19:28:45+00:00"
+      },
+      {
+        "number": 305,
+        "title": "Bump aws-sdk-s3 from 1.218.0 to 1.219.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-08T14:46:57+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-23T14:53:17+00:00"
+      },
+      {
+        "number": 306,
+        "title": "Bump selenium-webdriver from 4.41.0 to 4.42.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-09T14:46:07+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-10T14:45:17+00:00"
+      },
+      {
+        "number": 307,
+        "title": "Bump jwt from 2.10.2 to 3.1.2",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-09T14:46:35+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 308,
+        "title": "Bump puma from 7.2.0 to 8.0.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-09T14:46:55+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-27T18:28:39+00:00"
+      },
+      {
+        "number": 309,
+        "title": "Bump intercom-rails from 1.0.6 to 1.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-09T14:47:15+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-20T17:15:00+00:00"
+      },
+      {
+        "number": 310,
+        "title": "Bump actions/github-script from 8 to 9",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-10T14:44:51+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 311,
+        "title": "Bump selenium-webdriver from 4.41.0 to 4.43.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-10T14:45:14+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 312,
+        "title": "Bump rack-session from 2.1.1 to 2.1.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-13T22:18:35+00:00",
+        "merged_at": "2026-04-15T16:54:50+00:00",
+        "closed_at": "2026-04-15T16:54:50+00:00"
+      },
+      {
+        "number": 313,
+        "title": "update addressable and rack-session",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-04-14T21:53:59+00:00",
+        "merged_at": "2026-04-20T17:47:52+00:00",
+        "closed_at": "2026-04-20T17:47:52+00:00"
+      },
+      {
+        "number": 314,
+        "title": "Bump addressable from 2.8.9 to 2.9.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-14T22:23:58+00:00",
+        "merged_at": "2026-04-15T16:55:08+00:00",
+        "closed_at": "2026-04-15T16:55:08+00:00"
+      },
+      {
+        "number": 315,
+        "title": "Bump twilio-ruby from 7.10.4 to 7.10.5",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-16T14:45:47+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 316,
+        "title": "Bump intercom-rails from 1.0.6 to 1.1.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-20T17:14:57+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 317,
+        "title": "Bump propshaft from 1.3.1 to 1.3.2",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-20T17:15:16+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 318,
+        "title": "Bump slackapi/slack-github-action from 3.0.1 to 3.0.2",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-23T14:53:00+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 319,
+        "title": "Bump aws-sdk-s3 from 1.218.0 to 1.220.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-23T14:53:13+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 320,
+        "title": "Bump bootsnap from 1.23.0 to 1.24.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-27T18:28:10+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-29T14:45:40+00:00"
+      },
+      {
+        "number": 321,
+        "title": "Bump puma from 7.2.0 to 8.0.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-27T18:28:37+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 322,
+        "title": "Bump erb from 6.0.2 to 6.0.4",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-27T20:00:16+00:00",
+        "merged_at": "2026-04-27T20:02:28+00:00",
+        "closed_at": "2026-04-27T20:02:28+00:00"
+      },
+      {
+        "number": 323,
+        "title": "Bump bootsnap from 1.23.0 to 1.24.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-04-29T14:45:37+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 324,
+        "title": "security: dependabot cooldown",
+        "state": "open",
+        "author_login": "robdiciuccio",
+        "created_at": "2026-05-01T17:33:05+00:00",
+        "merged_at": null,
+        "closed_at": null
+      }
+    ],
+    "tag_count": 36,
+    "tags": [
+      {
+        "name": "v2.13.0",
+        "commit_sha": "bce1f995a615b10ee9be151c0945892d2135a9f2",
+        "date": "2026-03-05T20:31:12+00:00"
+      },
+      {
+        "name": "v2.12.0",
+        "commit_sha": "a81c94948bca4358f10d4b010fea094b0753fc9d",
+        "date": "2026-03-03T23:08:17+00:00"
+      },
+      {
+        "name": "v2.11.1",
+        "commit_sha": "9a59963ac8c395b3f3152e73a8c482dfb745fa53",
+        "date": "2026-01-29T22:07:00+00:00"
+      },
+      {
+        "name": "v2.11.0",
+        "commit_sha": "87e88212c5459bcfc2141ff6e171e166a3ef30d8",
+        "date": "2026-01-20T22:03:04+00:00"
+      },
+      {
+        "name": "v2.10.0",
+        "commit_sha": "38b5d6d8860a689a0970995b8e9aa73335309ef9",
+        "date": "2025-12-10T22:45:34+00:00"
+      },
+      {
+        "name": "v2.9.0",
+        "commit_sha": "e05a67acca1f819a03f73b14afea9f1e5a3c0f9a",
+        "date": "2025-12-09T23:50:13+00:00"
+      },
+      {
+        "name": "v2.8.0",
+        "commit_sha": "90104931064b4b1688a19937f7289854656f2a95",
+        "date": "2025-12-03T21:44:15+00:00"
+      },
+      {
+        "name": "v2.7.0",
+        "commit_sha": "80c0148a1d09f522cc7c18ed6c262b79157f76ad",
+        "date": "2025-11-21T00:33:28+00:00"
+      },
+      {
+        "name": "v2.6.0",
+        "commit_sha": "1c871ca3f68a030f70c28837fccd0c7267a02184",
+        "date": "2025-11-19T23:46:44+00:00"
+      },
+      {
+        "name": "v2.5.0",
+        "commit_sha": "6f33e1dcfd35ad37329262caecab0e5d3bc5caa5",
+        "date": "2025-11-18T22:27:16+00:00"
+      },
+      {
+        "name": "v2.4.0",
+        "commit_sha": "d924892a900cc4b71998e5a05fababa5980f7595",
+        "date": "2025-11-18T21:57:24+00:00"
+      },
+      {
+        "name": "v2.3.0",
+        "commit_sha": "4dc2a822000832006ca9ee8391bbdc07b9e648b7",
+        "date": "2025-11-18T19:32:22+00:00"
+      },
+      {
+        "name": "v2.2.0",
+        "commit_sha": "323d441e0089472519b1ae69c4b4bbefc5a76331",
+        "date": "2025-11-18T00:18:39+00:00"
+      },
+      {
+        "name": "v2.1.0",
+        "commit_sha": "30deb644234002bd15b612416950073e3bf24b68",
+        "date": "2025-11-17T20:38:48+00:00"
+      },
+      {
+        "name": "v2.0.0",
+        "commit_sha": "5a07e4f31be27c15027f28cb268104513b60e0f6",
+        "date": "2025-11-17T20:26:42+00:00"
+      },
+      {
+        "name": "v1.0.1",
+        "commit_sha": "67a8fbead26db27d6db04133f643b4cc44c15ad1",
+        "date": "2025-10-21T22:34:44+00:00"
+      },
+      {
+        "name": "v1.0.0",
+        "commit_sha": "c8942fd77b834734895d3f7becd8998130eadb1f",
+        "date": "2025-09-16T23:47:11+00:00"
+      },
+      {
+        "name": "v0.6.0",
+        "commit_sha": "9d9bc25baede1938b6d1039a91cd1da67d0d5962",
+        "date": "2025-08-26T21:39:08+00:00"
+      },
+      {
+        "name": "v0.5.1",
+        "commit_sha": "859ab07959f10949379884d19b8c33c7b428caf7",
+        "date": "2025-08-14T20:18:58+00:00"
+      },
+      {
+        "name": "v0.5.0",
+        "commit_sha": "c7a9577b8a03cf7587ecd0afdb5473c9b3e655c5",
+        "date": "2025-08-11T22:19:33+00:00"
+      },
+      {
+        "name": "v0.4.0",
+        "commit_sha": "dcdf471c95f64c66e58738b876a8615615888d4c",
+        "date": "2025-08-11T21:23:58+00:00"
+      },
+      {
+        "name": "v0.3.0",
+        "commit_sha": "e1fe40f0f5a5b124c3350a5a1351be56405fd97c",
+        "date": "2025-08-11T16:55:18+00:00"
+      },
+      {
+        "name": "v0.2.2",
+        "commit_sha": "f3f05fd29ff4a1d9a357972ff9ab7ce90cf5492c",
+        "date": "2025-07-29T23:11:39+00:00"
+      },
+      {
+        "name": "v0.2.1",
+        "commit_sha": "ff76b51925877674eb2849824ce3a26ea79351be",
+        "date": "2025-07-29T23:05:24+00:00"
+      },
+      {
+        "name": "v0.2.0",
+        "commit_sha": "2bf0fcb9a011538362433b1071032d5e3d8fe7e2",
+        "date": "2025-07-29T22:29:55+00:00"
+      },
+      {
+        "name": "v0.1.5",
+        "commit_sha": "d212c3a94b641264d4140deffa5a783f2594f564",
+        "date": "2025-07-29T22:14:37+00:00"
+      },
+      {
+        "name": "v0.1.4",
+        "commit_sha": "70fc9d099450ccce371b3a8e815086989ee432b9",
+        "date": "2025-07-29T22:09:58+00:00"
+      },
+      {
+        "name": "v0.1.3",
+        "commit_sha": "5fbe0264ae7eef37ba1e99a2d2986cd08650d81d",
+        "date": "2025-07-29T22:02:41+00:00"
+      },
+      {
+        "name": "v0.1.2",
+        "commit_sha": "3a0f33fa9e68527f9e42118c3cada13c221c700b",
+        "date": "2025-07-29T21:54:04+00:00"
+      },
+      {
+        "name": "v0.1.1",
+        "commit_sha": "b0aba4f920c0524aa0065deb57a827a8c70c947a",
+        "date": "2025-07-29T21:40:47+00:00"
+      },
+      {
+        "name": "v0.1.0",
+        "commit_sha": "99409841d80877ce25149a3d2a9c2ddb4c4a2d4d",
+        "date": "2025-07-29T21:20:17+00:00"
+      },
+      {
+        "name": "v0.0.5",
+        "commit_sha": "201d9c7043b41b37d013f757d1971aebf4f0f2a3",
+        "date": "2025-07-29T20:10:22+00:00"
+      },
+      {
+        "name": "v0.0.4",
+        "commit_sha": "201d9c7043b41b37d013f757d1971aebf4f0f2a3",
+        "date": "2025-07-29T20:10:22+00:00"
+      },
+      {
+        "name": "v0.0.3",
+        "commit_sha": "7b3b5fcea88cfee982b23d254c727a0290f2aafe",
+        "date": "2025-07-29T19:29:34+00:00"
+      },
+      {
+        "name": "v0.0.2",
+        "commit_sha": "672b3bd1a0d2b412d683b0721755353c1f4c00b8",
+        "date": "2025-07-29T19:15:10+00:00"
+      },
+      {
+        "name": "v0.0.1",
+        "commit_sha": "50a40102588f6b34708ef5ce8f15ff8a5245daf4",
+        "date": "2025-07-29T19:09:07+00:00"
+      }
+    ],
+    "release_count": 36,
+    "releases": [
+      {
+        "tag_name": "v2.13.0",
+        "name": "change-thruster-port",
+        "created_at": "2026-03-05T20:31:12+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.12.0",
+        "name": "dependency-updates",
+        "created_at": "2026-03-03T23:08:17+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.11.1",
+        "name": "v2.11.1",
+        "created_at": "2026-01-29T22:07:00+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.11.0",
+        "name": "Updates the database access to use rds iam instead of password",
+        "created_at": "2026-01-20T22:03:04+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.10.0",
+        "name": "pya spanish",
+        "created_at": "2025-12-10T22:45:34+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.9.0",
+        "name": "v2.9.0",
+        "created_at": "2025-12-09T23:50:13+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.8.0",
+        "name": "fix background and failed attempt bug",
+        "created_at": "2025-12-03T21:44:15+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.7.0",
+        "name": "v2.7.0",
+        "created_at": "2025-11-21T00:33:28+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.6.0",
+        "name": "fix homepage",
+        "created_at": "2025-11-19T23:46:44+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.5.0",
+        "name": "pya launch",
+        "created_at": "2025-11-18T22:27:16+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.4.0",
+        "name": "more script work",
+        "created_at": "2025-11-18T21:57:24+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.3.0",
+        "name": "new script close io",
+        "created_at": "2025-11-18T19:32:22+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.2.0",
+        "name": "bring in the 2nd attachment script",
+        "created_at": "2025-11-18T00:18:39+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.1.0",
+        "name": "add honeycrisp fix",
+        "created_at": "2025-11-17T20:38:48+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2.0.0",
+        "name": "Bring in the scripts",
+        "created_at": "2025-11-17T20:26:42+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v1.0.1",
+        "name": "v1.0.1",
+        "created_at": "2025-10-21T22:34:44+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v1.0.0",
+        "name": "v1.0.0",
+        "created_at": "2025-09-16T23:47:11+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.6.0",
+        "name": "v0.6.0",
+        "created_at": "2025-08-26T21:39:08+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.5.1",
+        "name": "dependency gem updates",
+        "created_at": "2025-08-14T20:18:58+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.5.0",
+        "name": "v0.5.0",
+        "created_at": "2025-08-11T22:19:33+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.4.0",
+        "name": "Add email/text verification, update GHA",
+        "created_at": "2025-08-11T21:23:58+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.3.0",
+        "name": "Add email/text verification, update GHA",
+        "created_at": "2025-08-11T16:55:18+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.2.2",
+        "name": "v0.2.2",
+        "created_at": "2025-07-29T23:11:39+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.2.1",
+        "name": "v0.2.1",
+        "created_at": "2025-07-29T23:05:24+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.2.0",
+        "name": "v0.2.0",
+        "created_at": "2025-07-29T22:29:55+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.1.5",
+        "name": "v0.1.5",
+        "created_at": "2025-07-29T22:14:37+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.1.4",
+        "name": "v0.1.4",
+        "created_at": "2025-07-29T22:09:58+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.1.3",
+        "name": "v0.1.3",
+        "created_at": "2025-07-29T22:02:41+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.1.2",
+        "name": "v0.1.2",
+        "created_at": "2025-07-29T21:54:04+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.1.1",
+        "name": "v0.1.1",
+        "created_at": "2025-07-29T21:40:47+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "created_at": "2025-07-29T21:20:17+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.0.5",
+        "name": "Tweaking production deploy script",
+        "created_at": "2025-07-29T20:10:22+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.0.4",
+        "name": "Tweaking production deploy script",
+        "created_at": "2025-07-29T20:10:22+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.0.3",
+        "name": "FIRST RELEASE",
+        "created_at": "2025-07-29T19:29:34+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.0.2",
+        "name": "FIRST RELEASE",
+        "created_at": "2025-07-29T19:15:10+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v0.0.1",
+        "name": "First release!",
+        "created_at": "2025-07-29T19:09:07+00:00",
+        "is_prerelease": false
+      }
+    ]
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforamerica/pya",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.7222,
+    "bus_factor": 2,
+    "contribution_types": {
+      "code_commits": 258,
+      "pull_requests": 324,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 9,
+      "Code for America": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 13,
+    "release_frequency_per_month": 5.0,
+    "fork_count": 0,
+    "burstiness_cv": null,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 2,
+    "bot_contributor_count": 1,
+    "bot_commit_count": 85,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": 1.4,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 100,
+    "readme_last_updated": "2025-08-05T20:10:41+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": 1.5,
+    "avg_review_comments_per_pr": 0.2,
+    "herfindahl_hirschman_index": 9885.1,
+    "hhi_no_bots": 3876.7,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 9,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 6,
+      "unknown": 4
+    },
+    "dora_deployment_frequency_per_month": 3.22,
+    "dora_median_lead_time_days": 0.2,
+    "dora_change_failure_rate": 0.0342,
+    "core_contributor_count": 4,
+    "periphery_contributor_count": 7,
+    "core_periphery_ratio": 0.3636,
+    "network_density": 0.2909,
+    "avg_degree_centrality": 0.2909,
+    "pr_review_edges": [
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "dependabot[bot]",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "dependabot[bot]",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "martha-brandt"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "embarnard"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "embarnard"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "embarnard"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "embarnard"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "martha-brandt"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "embarnard"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "martha-brandt"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      }
+    ]
+  },
+  "crawled_at": "2026-05-04T12:51:46.476313+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "DrewProebstel",
+      "degree_centrality": 0.6,
+      "betweenness_centrality": 0.2778,
+      "classification": "core",
+      "num_collaborators": 6
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "mrotondo",
+      "degree_centrality": 0.8,
+      "betweenness_centrality": 0.5333,
+      "classification": "core",
+      "num_collaborators": 8
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "tahsinaislam",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "dependabot[bot]",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "anisharamnani",
+      "degree_centrality": 0.3,
+      "betweenness_centrality": 0.0,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "jamesiarmes",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "robdiciuccio",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "powersurge360",
+      "degree_centrality": 0.5,
+      "betweenness_centrality": 0.2333,
+      "classification": "core",
+      "num_collaborators": 5
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "martha-brandt",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "embarnard",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/pya",
+      "login": "jenny-heath",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "codeforamerica/pya",
+    "weekly_snapshots": [
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 3,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-05-26",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 11,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 19,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-06-09",
+        "total_commits": 15,
+        "unique_contributors": 4,
+        "new_contributors": 2,
+        "cumulative_commits": 45,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-16",
+        "total_commits": 7,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 52,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-06-23",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 55,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 11,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 66,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-07-07",
+        "total_commits": 3,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 69,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-07-14",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 74,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-07-21",
+        "total_commits": 4,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 78,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-07-28",
+        "total_commits": 29,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 107,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-08-04",
+        "total_commits": 14,
+        "unique_contributors": 5,
+        "new_contributors": 0,
+        "cumulative_commits": 121,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-08-11",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 130,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-08-18",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 135,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-08-25",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 144,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-09-01",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 148,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-09-08",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 158,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-09-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 160,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 6,
+        "unique_contributors": 3,
+        "new_contributors": 2,
+        "cumulative_commits": 166,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-10-27",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 167,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 15,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 182,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-17",
+        "total_commits": 16,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 198,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-24",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 201,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 203,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 210,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-15",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 214,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-22",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 215,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 216,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-19",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 218,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 220,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-02-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 221,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-02-16",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 224,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 228,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-03-09",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 233,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-03-16",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 235,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-03-23",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 240,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-30",
+        "total_commits": 13,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 253,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 254,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-13",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 256,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 257,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-27",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 258,
+        "cumulative_contributors": 9
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "dependabot[bot]",
+        "login": "dependabot[bot]",
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "first_commit_date": "2025-06-12T22:31:41+00:00",
+        "last_commit_date": "2026-04-27T20:02:27+00:00",
+        "duration_days": 318,
+        "total_commits": 85,
+        "active_weeks": 24,
+        "total_weeks_span": 45,
+        "activity_ratio": 0.5333,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 3.54
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "DrewProebstel",
+        "login": "DrewProebstel",
+        "name": "Drew Proebstel",
+        "email": "d.proebstel@gmail.com",
+        "first_commit_date": "2025-06-16T20:27:01+00:00",
+        "last_commit_date": "2026-04-20T17:47:51+00:00",
+        "duration_days": 307,
+        "total_commits": 68,
+        "active_weeks": 18,
+        "total_weeks_span": 43,
+        "activity_ratio": 0.4186,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 3.78
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "arinchoi03",
+        "login": "arinchoi03",
+        "name": "Yejee Arin Choi",
+        "email": "achoi@codeforamerica.org",
+        "first_commit_date": "2025-06-02T18:27:26+00:00",
+        "last_commit_date": "2025-08-11T22:19:33+00:00",
+        "duration_days": 70,
+        "total_commits": 57,
+        "active_weeks": 10,
+        "total_weeks_span": 10,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 37,
+        "avg_commits_per_active_week": 5.7
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "anisharamnani",
+        "login": "anisharamnani",
+        "name": "Anisha Ramnani",
+        "email": "aramnani@codeforamerica.org",
+        "first_commit_date": "2025-05-21T20:41:28+00:00",
+        "last_commit_date": "2025-08-05T20:10:41+00:00",
+        "duration_days": 75,
+        "total_commits": 21,
+        "active_weeks": 6,
+        "total_weeks_span": 10,
+        "activity_ratio": 0.6,
+        "status": "departed",
+        "departed_weeks_ago": 38,
+        "avg_commits_per_active_week": 3.5
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "powersurge360",
+        "login": "powersurge360",
+        "name": "Kevin Diale",
+        "email": "powersurge360@gmail.com",
+        "first_commit_date": "2025-11-13T15:59:05+00:00",
+        "last_commit_date": "2026-02-11T17:34:01+00:00",
+        "duration_days": 90,
+        "total_commits": 12,
+        "active_weeks": 5,
+        "total_weeks_span": 12,
+        "activity_ratio": 0.4167,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 2.4
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "mrotondo",
+        "login": "mrotondo",
+        "name": "Mike Rotondo",
+        "email": "mrotondo@gmail.com",
+        "first_commit_date": "2025-10-20T22:46:06+00:00",
+        "last_commit_date": "2026-03-05T20:31:12+00:00",
+        "duration_days": 135,
+        "total_commits": 7,
+        "active_weeks": 3,
+        "total_weeks_span": 19,
+        "activity_ratio": 0.1579,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 2.33
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "tahsinaislam",
+        "login": "tahsinaislam",
+        "name": "Tahsina Islam",
+        "email": "79296603+tahsinaislam@users.noreply.github.com",
+        "first_commit_date": "2025-06-10T21:40:41+00:00",
+        "last_commit_date": "2026-04-03T16:42:44+00:00",
+        "duration_days": 296,
+        "total_commits": 6,
+        "active_weeks": 5,
+        "total_weeks_span": 42,
+        "activity_ratio": 0.119,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.2
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "embarnard",
+        "login": "embarnard",
+        "name": "em barnard",
+        "email": "49880002+embarnard@users.noreply.github.com",
+        "first_commit_date": "2026-03-23T20:56:49+00:00",
+        "last_commit_date": "2026-03-23T20:56:49+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/pya",
+        "contributor_id": "jenny-heath",
+        "login": "jenny-heath",
+        "name": "jenny-heath",
+        "email": "43800769+jenny-heath@users.noreply.github.com",
+        "first_commit_date": "2025-10-21T21:11:59+00:00",
+        "last_commit_date": "2025-10-21T21:11:59+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 27,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-06-09",
+        "commits": 3,
+        "lines_added": 14,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-06-16",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-06-30",
+        "commits": 6,
+        "lines_added": 27,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-07-07",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-07-14",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-07-21",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-07-28",
+        "commits": 9,
+        "lines_added": 32,
+        "lines_removed": 32
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-08-04",
+        "commits": 8,
+        "lines_added": 26,
+        "lines_removed": 23
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-08-11",
+        "commits": 6,
+        "lines_added": 67,
+        "lines_removed": 67
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-09-08",
+        "commits": 10,
+        "lines_added": 27,
+        "lines_removed": 31
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-10-20",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-11-17",
+        "commits": 1,
+        "lines_added": 7,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-12-01",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2025-12-08",
+        "commits": 3,
+        "lines_added": 21,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-01-26",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-02-16",
+        "commits": 3,
+        "lines_added": 16,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-03-02",
+        "commits": 2,
+        "lines_added": 61,
+        "lines_removed": 58
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-03-09",
+        "commits": 5,
+        "lines_added": 17,
+        "lines_removed": 17
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-03-16",
+        "commits": 2,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-03-23",
+        "commits": 4,
+        "lines_added": 11,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-03-30",
+        "commits": 12,
+        "lines_added": 145,
+        "lines_removed": 145
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-04-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-04-13",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2026-04-27",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-06-16",
+        "commits": 1,
+        "lines_added": 71,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-07-07",
+        "commits": 1,
+        "lines_added": 733,
+        "lines_removed": 220
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-07-14",
+        "commits": 4,
+        "lines_added": 1928,
+        "lines_removed": 1528
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-07-21",
+        "commits": 2,
+        "lines_added": 1131,
+        "lines_removed": 90
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-07-28",
+        "commits": 3,
+        "lines_added": 1152,
+        "lines_removed": 56
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-08-04",
+        "commits": 2,
+        "lines_added": 20,
+        "lines_removed": 34
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-08-18",
+        "commits": 5,
+        "lines_added": 901,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-08-25",
+        "commits": 8,
+        "lines_added": 410,
+        "lines_removed": 361
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-09-01",
+        "commits": 4,
+        "lines_added": 205,
+        "lines_removed": 57
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-09-15",
+        "commits": 2,
+        "lines_added": 382,
+        "lines_removed": 326
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-10-27",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-11-10",
+        "commits": 12,
+        "lines_added": 351,
+        "lines_removed": 145
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-11-17",
+        "commits": 13,
+        "lines_added": 869,
+        "lines_removed": 177
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-11-24",
+        "commits": 3,
+        "lines_added": 371,
+        "lines_removed": 288
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-12-01",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-12-08",
+        "commits": 4,
+        "lines_added": 223,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2026-01-12",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 347
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2026-04-20",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-06-09",
+        "commits": 1,
+        "lines_added": 39,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-08-04",
+        "commits": 2,
+        "lines_added": 36,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-08-25",
+        "commits": 1,
+        "lines_added": 88,
+        "lines_removed": 342
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-12-22",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2026-03-30",
+        "commits": 1,
+        "lines_added": 34,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "embarnard",
+        "week_start": "2026-03-23",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2025-10-20",
+        "commits": 4,
+        "lines_added": 11,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-01-26",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-03-02",
+        "commits": 2,
+        "lines_added": 214,
+        "lines_removed": 201
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2025-11-10",
+        "commits": 3,
+        "lines_added": 14,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2025-11-17",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2025-12-15",
+        "commits": 4,
+        "lines_added": 20,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2026-01-19",
+        "commits": 2,
+        "lines_added": 12,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2026-02-09",
+        "commits": 1,
+        "lines_added": 58,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "jenny-heath",
+        "week_start": "2025-10-20",
+        "commits": 1,
+        "lines_added": 19,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-02",
+        "commits": 15,
+        "lines_added": 89,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-09",
+        "commits": 8,
+        "lines_added": 86,
+        "lines_removed": 37
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-16",
+        "commits": 3,
+        "lines_added": 12,
+        "lines_removed": 31
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-23",
+        "commits": 3,
+        "lines_added": 242,
+        "lines_removed": 77
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-30",
+        "commits": 5,
+        "lines_added": 669,
+        "lines_removed": 441
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-07-07",
+        "commits": 1,
+        "lines_added": 22,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-07-21",
+        "commits": 1,
+        "lines_added": 177,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-07-28",
+        "commits": 17,
+        "lines_added": 295,
+        "lines_removed": 105
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-08-04",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-08-11",
+        "commits": 3,
+        "lines_added": 12,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-05-19",
+        "commits": 3,
+        "lines_added": 3057,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-05-26",
+        "commits": 8,
+        "lines_added": 3864,
+        "lines_removed": 809
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-06-02",
+        "commits": 4,
+        "lines_added": 137,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-06-09",
+        "commits": 3,
+        "lines_added": 32,
+        "lines_removed": 63
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-06-16",
+        "commits": 2,
+        "lines_added": 293,
+        "lines_removed": 293
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-08-04",
+        "commits": 1,
+        "lines_added": 399,
+        "lines_removed": 384
+      }
+    ],
+    "total_weeks": 41,
+    "total_unique_contributors": 9,
+    "new_contributor_rate_per_month": 0.8
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforamerica/pya",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  }
+}

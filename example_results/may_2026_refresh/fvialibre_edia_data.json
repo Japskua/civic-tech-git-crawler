@@ -1,0 +1,670 @@
+{
+  "repo_metrics": {
+    "full_name": "fvialibre/edia",
+    "name": "edia",
+    "description": "EDIA: Stereotypes and Discrimination in Artificial Intelligence",
+    "num_developers": 3,
+    "total_commits": 81,
+    "languages": {
+      "Jupyter Notebook": 961012,
+      "Python": 118633,
+      "Shell": 990
+    },
+    "primary_language": "Jupyter Notebook",
+    "first_commit_date": "2022-10-24T19:11:49+00:00",
+    "last_commit_date": "2023-09-08T07:14:16+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 42,
+    "stars": 6,
+    "watchers": 2,
+    "forks": 0,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": true,
+    "ai_ml_signals": [
+      "language:Jupyter Notebook",
+      "dependency:torch",
+      "dependency:scikit-learn",
+      "dependency:transformers"
+    ],
+    "has_ci_cd": false,
+    "ci_cd_workflows": [],
+    "deployments_count": 0,
+    "created_at": "2022-10-24T19:04:16+00:00",
+    "updated_at": "2024-10-08T21:44:30+00:00",
+    "pushed_at": "2026-05-02T00:54:48+00:00",
+    "size_kb": 2181
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "fvialibre/edia",
+      "login": "nanom",
+      "name": "Hern\u00e1n J. Maina",
+      "num_commits": 24,
+      "additions": 1569,
+      "deletions": 8424,
+      "avg_additions_per_commit": 65.38,
+      "avg_deletions_per_commit": 351.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "fvialibre/edia",
+      "login": "LMartinezEXEX",
+      "name": "LMartinezEXEX",
+      "num_commits": 41,
+      "additions": 6637,
+      "deletions": 7418,
+      "avg_additions_per_commit": 161.88,
+      "avg_deletions_per_commit": 180.93,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "fvialibre/edia",
+      "login": "LMartinezEXEX",
+      "name": "Lautaro Martinez",
+      "num_commits": 14,
+      "additions": 18801,
+      "deletions": 4780,
+      "avg_additions_per_commit": 1342.93,
+      "avg_deletions_per_commit": 341.43,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "fvialibre/edia",
+      "login": "fvialibre",
+      "name": "Fundaci\u00f3n V\u00eda Libre",
+      "num_commits": 1,
+      "additions": 2,
+      "deletions": 2,
+      "avg_additions_per_commit": 2.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "fvialibre/edia",
+      "login": null,
+      "name": "Lucia Gonzalez",
+      "num_commits": 1,
+      "additions": 82,
+      "deletions": 2,
+      "avg_additions_per_commit": 82.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "fvialibre/edia",
+    "pr_count_total": 4,
+    "pr_count_merged": 3,
+    "pr_count_open": 1,
+    "pr_count_closed_unmerged": 0,
+    "prs": [
+      {
+        "number": 1,
+        "title": "added en support to all interfaces",
+        "state": "open",
+        "author_login": "rortiz04",
+        "created_at": "2024-10-10T15:44:17+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 2,
+        "title": "Updated chatbot feedback, added schools, fixed bugs",
+        "state": "closed",
+        "author_login": "guidoivetta",
+        "created_at": "2024-11-26T16:04:42+00:00",
+        "merged_at": "2024-11-26T16:05:13+00:00",
+        "closed_at": "2024-11-26T16:05:13+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Log skips, exclude pairs skipped many times, remove country-converter",
+        "state": "closed",
+        "author_login": "Aplietexe",
+        "created_at": "2025-03-05T12:47:45+00:00",
+        "merged_at": "2025-03-07T11:30:16+00:00",
+        "closed_at": "2025-03-07T11:30:16+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Validator i18n",
+        "state": "closed",
+        "author_login": "guidoivetta",
+        "created_at": "2025-08-07T21:08:26+00:00",
+        "merged_at": "2025-08-07T21:10:07+00:00",
+        "closed_at": "2025-08-07T21:10:07+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "fvialibre/edia",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.75,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 81,
+      "pull_requests": 4,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "FaMAF - UNC": 1,
+      "Unknown": 3
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 0,
+    "burstiness_cv": null,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": 0.1,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 4,
+    "readme_last_updated": "2023-01-26T23:42:42+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": 46.7,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": 5800.0,
+    "hhi_no_bots": 5082.2,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 3,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 2,
+      "unknown": 3
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 2,
+    "core_periphery_ratio": 0.0,
+    "network_density": 1.0,
+    "avg_degree_centrality": 1.0,
+    "pr_review_edges": [
+      {
+        "author": "Aplietexe",
+        "reviewer": "guidoivetta"
+      }
+    ]
+  },
+  "crawled_at": "2026-05-04T08:39:43.670022+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "fvialibre/edia",
+      "login": "Aplietexe",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "fvialibre/edia",
+      "login": "guidoivetta",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "fvialibre/edia",
+    "weekly_snapshots": [
+      {
+        "week_start": "2022-10-24",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 3,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-10-31",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 5,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-11-07",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 7,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-11-14",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 10,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-11-21",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 13,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-12-05",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 16,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-12-12",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 23,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-12-19",
+        "total_commits": 11,
+        "unique_contributors": 3,
+        "new_contributors": 2,
+        "cumulative_commits": 34,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2022-12-26",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 39,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2023-01-09",
+        "total_commits": 4,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 43,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-01-16",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 48,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-01-23",
+        "total_commits": 15,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 63,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-02-06",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 70,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-02-13",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 73,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-03-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 74,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-03-27",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 76,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-04-03",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 79,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-09-04",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 81,
+        "cumulative_contributors": 4
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "fvialibre/edia",
+        "contributor_id": "LMartinezEXEX",
+        "login": "LMartinezEXEX",
+        "name": "LMartinezEXEX",
+        "email": "lautaro.martinezexex@gmail.com",
+        "first_commit_date": "2022-10-24T19:11:49+00:00",
+        "last_commit_date": "2023-04-03T17:57:09+00:00",
+        "duration_days": 160,
+        "total_commits": 55,
+        "active_weeks": 17,
+        "total_weeks_span": 22,
+        "activity_ratio": 0.7727,
+        "status": "departed",
+        "departed_weeks_ago": 160,
+        "avg_commits_per_active_week": 3.24
+      },
+      {
+        "repo_full_name": "fvialibre/edia",
+        "contributor_id": "nanom",
+        "login": "nanom",
+        "name": "Hern\u00e1n J. Maina",
+        "email": "hernan.maina@mi.unc.edu.ar",
+        "first_commit_date": "2022-12-19T15:34:36+00:00",
+        "last_commit_date": "2023-09-08T07:14:16+00:00",
+        "duration_days": 262,
+        "total_commits": 24,
+        "active_weeks": 8,
+        "total_weeks_span": 37,
+        "activity_ratio": 0.2162,
+        "status": "departed",
+        "departed_weeks_ago": 138,
+        "avg_commits_per_active_week": 3.0
+      },
+      {
+        "repo_full_name": "fvialibre/edia",
+        "contributor_id": "fvialibre",
+        "login": "fvialibre",
+        "name": "Fundaci\u00f3n V\u00eda Libre",
+        "email": "121266455+fvialibre@users.noreply.github.com",
+        "first_commit_date": "2023-01-15T03:19:06+00:00",
+        "last_commit_date": "2023-01-15T03:19:06+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 172,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "fvialibre/edia",
+        "contributor_id": "luciagonzalez",
+        "login": null,
+        "name": "Lucia Gonzalez",
+        "email": "luciagonzalez",
+        "first_commit_date": "2022-12-21T13:59:51+00:00",
+        "last_commit_date": "2022-12-21T13:59:51+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 175,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "nanom",
+        "week_start": "2022-12-19",
+        "commits": 5,
+        "lines_added": 249,
+        "lines_removed": 391
+      },
+      {
+        "contributor_id": "nanom",
+        "week_start": "2022-12-26",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "nanom",
+        "week_start": "2023-01-09",
+        "commits": 1,
+        "lines_added": 53,
+        "lines_removed": 49
+      },
+      {
+        "contributor_id": "nanom",
+        "week_start": "2023-01-16",
+        "commits": 4,
+        "lines_added": 50,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "nanom",
+        "week_start": "2023-01-23",
+        "commits": 7,
+        "lines_added": 633,
+        "lines_removed": 7494
+      },
+      {
+        "contributor_id": "nanom",
+        "week_start": "2023-02-06",
+        "commits": 3,
+        "lines_added": 104,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "nanom",
+        "week_start": "2023-02-13",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "nanom",
+        "week_start": "2023-09-04",
+        "commits": 2,
+        "lines_added": 477,
+        "lines_removed": 464
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-10-24",
+        "commits": 3,
+        "lines_added": 1694,
+        "lines_removed": 83
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-10-31",
+        "commits": 2,
+        "lines_added": 269,
+        "lines_removed": 134
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-11-07",
+        "commits": 2,
+        "lines_added": 750,
+        "lines_removed": 90
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-11-14",
+        "commits": 3,
+        "lines_added": 713,
+        "lines_removed": 66
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-11-21",
+        "commits": 3,
+        "lines_added": 327,
+        "lines_removed": 158
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-12-05",
+        "commits": 3,
+        "lines_added": 189,
+        "lines_removed": 62
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-12-12",
+        "commits": 7,
+        "lines_added": 1930,
+        "lines_removed": 1111
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-12-19",
+        "commits": 5,
+        "lines_added": 6728,
+        "lines_removed": 96
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2022-12-26",
+        "commits": 4,
+        "lines_added": 5211,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-01-09",
+        "commits": 2,
+        "lines_added": 210,
+        "lines_removed": 111
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-01-16",
+        "commits": 1,
+        "lines_added": 17,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-01-23",
+        "commits": 8,
+        "lines_added": 3023,
+        "lines_removed": 9881
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-02-06",
+        "commits": 4,
+        "lines_added": 186,
+        "lines_removed": 66
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-02-13",
+        "commits": 2,
+        "lines_added": 4024,
+        "lines_removed": 285
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-03-20",
+        "commits": 1,
+        "lines_added": 52,
+        "lines_removed": 23
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-03-27",
+        "commits": 2,
+        "lines_added": 95,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "LMartinezEXEX",
+        "week_start": "2023-04-03",
+        "commits": 3,
+        "lines_added": 20,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "fvialibre",
+        "week_start": "2023-01-09",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "luciagonzalez",
+        "week_start": "2022-12-19",
+        "commits": 1,
+        "lines_added": 82,
+        "lines_removed": 2
+      }
+    ],
+    "total_weeks": 18,
+    "total_unique_contributors": 4,
+    "new_contributor_rate_per_month": 0.39
+  },
+  "issue_analytics": {
+    "repo_full_name": "fvialibre/edia",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  }
+}

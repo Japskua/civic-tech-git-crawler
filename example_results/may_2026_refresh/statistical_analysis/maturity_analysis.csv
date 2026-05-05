@@ -1,0 +1,12 @@
+comparison,metric,mature_n,young_n,mature_median,young_median,U_statistic,p_value,cliffs_delta,effect_magnitude
+Mature (≥6.2y) vs Young (<6.2y),num_developers,19,19,27.0,5.0,265.5,0.0135,0.4709,medium
+Mature (≥6.2y) vs Young (<6.2y),total_commits,19,19,3521.0,674.0,263.0,0.0167,0.4571,medium
+Mature (≥6.2y) vs Young (<6.2y),bus_factor,19,19,2.0,1.0,248.5,0.0325,0.3767,medium
+Mature (≥6.2y) vs Young (<6.2y),bus_factor_no_bots,19,19,2.0,1.0,252.0,0.0259,0.3961,medium
+Mature (≥6.2y) vs Young (<6.2y),hhi_no_bots,19,19,3185.6,5082.2,111.0,0.0437,-0.385,medium
+Mature (≥6.2y) vs Young (<6.2y),stale_issue_ratio,16,11,0.9928,0.7271,114.0,0.1926,0.2955,small
+Mature (≥6.2y) vs Young (<6.2y),health_percentage,19,19,50.0,50.0,222.0,0.2218,0.2299,small
+Mature (≥6.2y) vs Young (<6.2y),core_contributor_count,19,19,1.0,1.0,205.0,0.4734,0.1357,negligible
+Mature (≥6.2y) vs Young (<6.2y),network_density,16,14,0.4,0.3425,98.0,0.5737,-0.125,negligible
+Mature (≥6.2y) vs Young (<6.2y),change_request_acceptance_ratio,19,18,0.8225,0.8142,173.5,0.9515,0.0146,negligible
+Mature (≥6.2y) vs Young (<6.2y),median_pr_review_turnaround_hours,16,14,3.35,2.2,128.0,0.5191,0.1429,negligible

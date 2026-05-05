@@ -1,0 +1,5521 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforamerica/recordtrac",
+    "name": "recordtrac",
+    "description": "Manage and display public record requests, built by the Code for America 2013 Oakland team, maintained by @richaagarwal",
+    "num_developers": 17,
+    "total_commits": 2570,
+    "languages": {
+      "CSS": 203609,
+      "HTML": 179923,
+      "Python": 133155,
+      "JavaScript": 68680,
+      "Mako": 412,
+      "Shell": 403
+    },
+    "primary_language": "CSS",
+    "first_commit_date": "2013-03-28T17:14:02+00:00",
+    "last_commit_date": "2021-03-29T07:10:20+00:00",
+    "license_spdx": "NOASSERTION",
+    "license_name": "Other",
+    "is_osi_approved": false,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 37,
+    "stars": 60,
+    "watchers": 44,
+    "forks": 41,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "file:Procfile"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": false,
+    "ci_cd_workflows": [],
+    "deployments_count": 0,
+    "created_at": "2013-03-28T17:14:01+00:00",
+    "updated_at": "2024-01-03T07:49:40+00:00",
+    "pushed_at": "2021-03-29T07:10:20+00:00",
+    "size_kb": 19071
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "richaagarwal",
+      "name": "Richa Agarwal",
+      "num_commits": 248,
+      "additions": 7012,
+      "deletions": 51566,
+      "avg_additions_per_commit": 28.27,
+      "avg_deletions_per_commit": 207.93,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "bryant1410",
+      "name": "Santiago Castro",
+      "num_commits": 1,
+      "additions": 15,
+      "deletions": 15,
+      "avg_additions_per_commit": 15.0,
+      "avg_deletions_per_commit": 15.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": null,
+      "name": "Andrew Hyder",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "geofft",
+      "name": "Geoffrey Thomas",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "criscristina",
+      "name": "criscristina",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "mjumbewu",
+      "name": "Mjumbe Wawatu Ukweli",
+      "num_commits": 31,
+      "additions": 363,
+      "deletions": 175,
+      "avg_additions_per_commit": 11.71,
+      "avg_deletions_per_commit": 5.65,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": null,
+      "name": "richa",
+      "num_commits": 11,
+      "additions": 1161,
+      "deletions": 39456,
+      "avg_additions_per_commit": 105.55,
+      "avg_deletions_per_commit": 3586.91,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "gsf",
+      "name": "Gabriel Farrell",
+      "num_commits": 2,
+      "additions": 2,
+      "deletions": 2,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": null,
+      "name": "Stephen Mather",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "criscristina",
+      "name": "criscristina",
+      "num_commits": 199,
+      "additions": 6168,
+      "deletions": 46257,
+      "avg_additions_per_commit": 30.99,
+      "avg_deletions_per_commit": 232.45,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "migurski",
+      "name": "Michal Migurski",
+      "num_commits": 2,
+      "additions": 4016,
+      "deletions": 39998,
+      "avg_additions_per_commit": 2008.0,
+      "avg_deletions_per_commit": 19999.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "migurski",
+      "name": "migurski",
+      "num_commits": 1,
+      "additions": 160,
+      "deletions": 50,
+      "avg_additions_per_commit": 160.0,
+      "avg_deletions_per_commit": 50.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/recordtrac",
+      "login": "waltz",
+      "name": "CJ Bryan",
+      "num_commits": 1,
+      "additions": 28,
+      "deletions": 6,
+      "avg_additions_per_commit": 28.0,
+      "avg_deletions_per_commit": 6.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforamerica/recordtrac",
+    "pr_count_total": 49,
+    "pr_count_merged": 29,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 20,
+    "prs": [
+      {
+        "number": 3,
+        "title": "Show createdb in readme",
+        "state": "closed",
+        "author_login": "eddietejeda",
+        "created_at": "2013-04-24T20:20:58+00:00",
+        "merged_at": "2013-04-24T21:35:41+00:00",
+        "closed_at": "2013-04-24T21:35:41+00:00"
+      },
+      {
+        "number": 4,
+        "title": "show createdb intruction in readme",
+        "state": "closed",
+        "author_login": "eddietejeda",
+        "created_at": "2013-04-24T20:21:15+00:00",
+        "merged_at": "2013-04-24T21:35:42+00:00",
+        "closed_at": "2013-04-24T21:35:42+00:00"
+      },
+      {
+        "number": 5,
+        "title": "set gitignore file to ignore compiled python and defined settings",
+        "state": "closed",
+        "author_login": "eddietejeda",
+        "created_at": "2013-04-24T20:21:23+00:00",
+        "merged_at": "2013-04-24T21:28:29+00:00",
+        "closed_at": "2013-04-24T21:28:29+00:00"
+      },
+      {
+        "number": 7,
+        "title": "Added pre-requisite package details for Ubuntu installation",
+        "state": "closed",
+        "author_login": "migurski",
+        "created_at": "2013-05-15T19:18:47+00:00",
+        "merged_at": "2013-05-15T19:43:09+00:00",
+        "closed_at": "2013-05-15T19:43:09+00:00"
+      },
+      {
+        "number": 28,
+        "title": "Develop",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2013-06-30T00:24:40+00:00",
+        "merged_at": "2013-06-30T00:25:00+00:00",
+        "closed_at": "2013-06-30T00:25:00+00:00"
+      },
+      {
+        "number": 29,
+        "title": "Develop",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2013-07-01T00:30:02+00:00",
+        "merged_at": "2013-07-01T00:30:09+00:00",
+        "closed_at": "2013-07-01T00:30:09+00:00"
+      },
+      {
+        "number": 31,
+        "title": "Develop",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2013-07-01T19:41:49+00:00",
+        "merged_at": "2013-07-01T19:41:59+00:00",
+        "closed_at": "2013-07-01T19:41:59+00:00"
+      },
+      {
+        "number": 32,
+        "title": "Fixing typeahead",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2013-07-01T21:13:26+00:00",
+        "merged_at": "2013-07-01T21:13:34+00:00",
+        "closed_at": "2013-07-01T21:13:34+00:00"
+      },
+      {
+        "number": 44,
+        "title": "Added dbname and app name to the example config.",
+        "state": "closed",
+        "author_login": "ondrae",
+        "created_at": "2013-07-12T23:24:33+00:00",
+        "merged_at": "2013-07-15T18:42:16+00:00",
+        "closed_at": "2013-07-15T18:42:16+00:00"
+      },
+      {
+        "number": 45,
+        "title": "WIP - All requests order",
+        "state": "closed",
+        "author_login": "ondrae",
+        "created_at": "2013-07-12T23:47:02+00:00",
+        "merged_at": null,
+        "closed_at": "2013-07-18T05:12:10+00:00"
+      },
+      {
+        "number": 47,
+        "title": "All requests order",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2013-07-16T07:42:50+00:00",
+        "merged_at": "2013-07-16T07:42:57+00:00",
+        "closed_at": "2013-07-16T07:42:57+00:00"
+      },
+      {
+        "number": 49,
+        "title": "Small typo when removing the link from the record id.",
+        "state": "closed",
+        "author_login": "ondrae",
+        "created_at": "2013-07-18T06:08:26+00:00",
+        "merged_at": "2013-07-18T17:05:23+00:00",
+        "closed_at": "2013-07-18T17:05:23+00:00"
+      },
+      {
+        "number": 89,
+        "title": "Js refactor",
+        "state": "closed",
+        "author_login": "mholubowski",
+        "created_at": "2013-08-19T23:59:33+00:00",
+        "merged_at": "2013-08-20T19:05:27+00:00",
+        "closed_at": "2013-08-20T19:05:27+00:00"
+      },
+      {
+        "number": 90,
+        "title": "restructure merge",
+        "state": "closed",
+        "author_login": "criscristina",
+        "created_at": "2013-08-20T04:21:38+00:00",
+        "merged_at": null,
+        "closed_at": "2013-08-20T04:27:19+00:00"
+      },
+      {
+        "number": 91,
+        "title": "restructure merge",
+        "state": "closed",
+        "author_login": "criscristina",
+        "created_at": "2013-08-20T04:28:25+00:00",
+        "merged_at": null,
+        "closed_at": "2013-08-20T04:28:43+00:00"
+      },
+      {
+        "number": 93,
+        "title": "added row hover highlight, changed link to entire row",
+        "state": "closed",
+        "author_login": "criscristina",
+        "created_at": "2013-08-21T03:23:42+00:00",
+        "merged_at": "2013-08-26T00:29:42+00:00",
+        "closed_at": "2013-08-26T00:29:42+00:00"
+      },
+      {
+        "number": 94,
+        "title": "Signup",
+        "state": "closed",
+        "author_login": "criscristina",
+        "created_at": "2013-08-26T00:29:04+00:00",
+        "merged_at": "2013-08-26T20:08:37+00:00",
+        "closed_at": "2013-08-26T20:08:37+00:00"
+      },
+      {
+        "number": 111,
+        "title": "Add asciidoc pages.",
+        "state": "closed",
+        "author_login": "ananelson",
+        "created_at": "2013-10-24T19:57:26+00:00",
+        "merged_at": null,
+        "closed_at": "2013-10-24T19:59:23+00:00"
+      },
+      {
+        "number": 112,
+        "title": "Add asciidoc pages + update dexy configs.",
+        "state": "closed",
+        "author_login": "ananelson",
+        "created_at": "2013-10-24T20:06:31+00:00",
+        "merged_at": "2013-10-24T20:07:58+00:00",
+        "closed_at": "2013-10-24T20:07:58+00:00"
+      },
+      {
+        "number": 113,
+        "title": "add JSON example",
+        "state": "closed",
+        "author_login": "ananelson",
+        "created_at": "2013-10-24T20:27:22+00:00",
+        "merged_at": "2013-10-24T20:28:55+00:00",
+        "closed_at": "2013-10-24T20:28:55+00:00"
+      },
+      {
+        "number": 115,
+        "title": "Tests need a db named publicrecords",
+        "state": "closed",
+        "author_login": "pui",
+        "created_at": "2013-11-07T20:22:00+00:00",
+        "merged_at": null,
+        "closed_at": "2014-08-13T22:26:02+00:00"
+      },
+      {
+        "number": 120,
+        "title": "switch the base template to add an ie alert",
+        "state": "closed",
+        "author_login": "tlevine",
+        "created_at": "2013-11-20T19:04:19+00:00",
+        "merged_at": null,
+        "closed_at": "2024-10-31T07:00:39+00:00"
+      },
+      {
+        "number": 121,
+        "title": "Fixed typo: Mozzila -> Mozilla",
+        "state": "closed",
+        "author_login": "rtxanson",
+        "created_at": "2014-02-09T20:53:52+00:00",
+        "merged_at": null,
+        "closed_at": "2014-10-30T20:52:26+00:00"
+      },
+      {
+        "number": 122,
+        "title": "Update README.md",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2014-03-24T06:45:30+00:00",
+        "merged_at": "2014-04-05T00:01:56+00:00",
+        "closed_at": "2014-04-05T00:01:56+00:00"
+      },
+      {
+        "number": 123,
+        "title": "fixed small typo in about.adoc",
+        "state": "closed",
+        "author_login": "criscristina",
+        "created_at": "2014-07-07T16:51:50+00:00",
+        "merged_at": null,
+        "closed_at": "2014-08-30T00:25:50+00:00"
+      },
+      {
+        "number": 124,
+        "title": "Moving all the things back to CfA repository.",
+        "state": "closed",
+        "author_login": "migurski",
+        "created_at": "2014-07-23T20:29:08+00:00",
+        "merged_at": "2014-07-23T20:35:23+00:00",
+        "closed_at": "2014-07-23T20:35:23+00:00"
+      },
+      {
+        "number": 125,
+        "title": "Moar spam filters",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2014-07-23T20:42:02+00:00",
+        "merged_at": "2014-07-24T00:08:19+00:00",
+        "closed_at": "2014-07-24T00:08:19+00:00"
+      },
+      {
+        "number": 142,
+        "title": "Removed comments before HTML doctype for IE8 standards mode",
+        "state": "closed",
+        "author_login": "migurski",
+        "created_at": "2014-08-07T04:26:43+00:00",
+        "merged_at": "2014-08-08T22:40:26+00:00",
+        "closed_at": "2014-08-08T22:40:26+00:00"
+      },
+      {
+        "number": 143,
+        "title": "track tabs",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2014-08-13T22:14:09+00:00",
+        "merged_at": "2014-08-13T22:17:45+00:00",
+        "closed_at": "2014-08-13T22:17:45+00:00"
+      },
+      {
+        "number": 144,
+        "title": "Placeholder",
+        "state": "closed",
+        "author_login": "criscristina",
+        "created_at": "2014-08-19T22:07:59+00:00",
+        "merged_at": "2014-08-19T22:25:07+00:00",
+        "closed_at": "2014-08-19T22:25:07+00:00"
+      },
+      {
+        "number": 145,
+        "title": "Polyfills",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "created_at": "2014-08-22T21:00:31+00:00",
+        "merged_at": "2014-08-22T21:28:36+00:00",
+        "closed_at": "2014-08-22T21:28:36+00:00"
+      },
+      {
+        "number": 153,
+        "title": "validate_email module uses an underscore",
+        "state": "closed",
+        "author_login": "gsf",
+        "created_at": "2014-09-02T21:17:43+00:00",
+        "merged_at": null,
+        "closed_at": "2014-10-30T20:49:33+00:00"
+      },
+      {
+        "number": 154,
+        "title": "No departments import",
+        "state": "closed",
+        "author_login": "gsf",
+        "created_at": "2014-09-02T21:23:17+00:00",
+        "merged_at": "2014-10-30T20:24:53+00:00",
+        "closed_at": "2014-10-30T20:24:53+00:00"
+      },
+      {
+        "number": 155,
+        "title": "Consistent use of article before AGENCY_NAME",
+        "state": "closed",
+        "author_login": "gsf",
+        "created_at": "2014-09-19T19:32:43+00:00",
+        "merged_at": null,
+        "closed_at": "2014-10-30T20:49:55+00:00"
+      },
+      {
+        "number": 156,
+        "title": "fix broken postgresql link",
+        "state": "closed",
+        "author_login": "smathermather",
+        "created_at": "2014-10-03T20:26:47+00:00",
+        "merged_at": null,
+        "closed_at": "2014-10-06T01:16:25+00:00"
+      },
+      {
+        "number": 157,
+        "title": "change www.postgresapp.com to postgresapp.com/",
+        "state": "closed",
+        "author_login": "smathermather",
+        "created_at": "2014-10-06T01:15:46+00:00",
+        "merged_at": "2014-10-30T20:16:54+00:00",
+        "closed_at": "2014-10-30T20:16:54+00:00"
+      },
+      {
+        "number": 159,
+        "title": "Add update_user to the long import list",
+        "state": "closed",
+        "author_login": "gsf",
+        "created_at": "2014-10-07T21:20:46+00:00",
+        "merged_at": "2014-10-30T20:12:21+00:00",
+        "closed_at": "2014-10-30T20:12:21+00:00"
+      },
+      {
+        "number": 185,
+        "title": "Admin extensions",
+        "state": "closed",
+        "author_login": "mjumbewu",
+        "created_at": "2015-04-21T16:02:36+00:00",
+        "merged_at": "2015-08-14T02:02:34+00:00",
+        "closed_at": "2015-08-14T02:02:34+00:00"
+      },
+      {
+        "number": 186,
+        "title": "Update new_request_email.html",
+        "state": "closed",
+        "author_login": "criscristina",
+        "created_at": "2015-07-29T02:25:34+00:00",
+        "merged_at": null,
+        "closed_at": "2015-09-16T04:50:03+00:00"
+      },
+      {
+        "number": 187,
+        "title": "Feature/op 470",
+        "state": "closed",
+        "author_login": "estevez90",
+        "created_at": "2016-01-21T19:55:41+00:00",
+        "merged_at": null,
+        "closed_at": "2016-01-21T21:02:23+00:00"
+      },
+      {
+        "number": 188,
+        "title": "bugfix/OP-475",
+        "state": "closed",
+        "author_login": "estevez90",
+        "created_at": "2016-01-29T18:08:36+00:00",
+        "merged_at": null,
+        "closed_at": "2016-01-29T18:08:43+00:00"
+      },
+      {
+        "number": 189,
+        "title": "internationalization support",
+        "state": "closed",
+        "author_login": "mapmeld",
+        "created_at": "2016-02-03T18:51:57+00:00",
+        "merged_at": null,
+        "closed_at": "2018-05-02T20:07:15+00:00"
+      },
+      {
+        "number": 190,
+        "title": "Feature/OP 497: ICAP Scanning",
+        "state": "closed",
+        "author_login": "joelbcastillo",
+        "created_at": "2016-02-23T21:01:03+00:00",
+        "merged_at": null,
+        "closed_at": "2016-02-23T21:03:47+00:00"
+      },
+      {
+        "number": 191,
+        "title": "Bugfix/op 513",
+        "state": "closed",
+        "author_login": "zgary",
+        "created_at": "2016-03-04T22:46:44+00:00",
+        "merged_at": null,
+        "closed_at": "2016-03-04T22:51:52+00:00"
+      },
+      {
+        "number": 192,
+        "title": "fixed title of upload file to display",
+        "state": "closed",
+        "author_login": "zgary",
+        "created_at": "2016-03-04T22:48:42+00:00",
+        "merged_at": null,
+        "closed_at": "2016-03-04T22:52:20+00:00"
+      },
+      {
+        "number": 193,
+        "title": "Bugfix/OP-527",
+        "state": "closed",
+        "author_login": "joelbcastillo",
+        "created_at": "2016-03-08T00:01:18+00:00",
+        "merged_at": null,
+        "closed_at": "2016-03-08T00:01:36+00:00"
+      },
+      {
+        "number": 194,
+        "title": "Fix typo in README.md",
+        "state": "closed",
+        "author_login": "geofft",
+        "created_at": "2016-03-11T20:53:25+00:00",
+        "merged_at": "2016-03-18T20:02:27+00:00",
+        "closed_at": "2016-03-18T20:02:27+00:00"
+      },
+      {
+        "number": 195,
+        "title": "Hotfix/OP-555: Removed specific link from public records closing reason",
+        "state": "closed",
+        "author_login": "joelbcastillo",
+        "created_at": "2016-03-18T23:14:12+00:00",
+        "merged_at": null,
+        "closed_at": "2016-03-18T23:14:26+00:00"
+      },
+      {
+        "number": 198,
+        "title": "Fix broken headings in Markdown files",
+        "state": "closed",
+        "author_login": "bryant1410",
+        "created_at": "2017-04-17T10:16:57+00:00",
+        "merged_at": "2021-03-29T07:10:20+00:00",
+        "closed_at": "2021-03-29T07:10:20+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforamerica/recordtrac",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.5918,
+    "bus_factor": 2,
+    "contribution_types": {
+      "code_commits": 500,
+      "pull_requests": 49,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 8,
+      "Netflix": 1,
+      "onemedical": 1
+    },
+    "newcomer_friendly_labels": [],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 41,
+    "burstiness_cv": null,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 2,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 16.1,
+    "median_time_to_first_response_prs_hours": 384.6,
+    "time_to_first_response_issues_sample_size": 100,
+    "time_to_first_response_prs_sample_size": 49,
+    "readme_last_updated": "2017-04-17T10:16:51+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 1.0,
+    "stale_issue_count": 65,
+    "open_issue_count": 65,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": 9918.1,
+    "hhi_no_bots": 4357.4,
+    "hhi_known_orgs_only": 5000.0,
+    "unknown_org_contributor_count": 8,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 2,
+      "company": 2,
+      "unknown": 9
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-05-04T22:53:47.859494+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "codeforamerica/recordtrac",
+    "weekly_snapshots": [
+      {
+        "week_start": "2013-03-25",
+        "total_commits": 17,
+        "unique_contributors": 3,
+        "new_contributors": 3,
+        "cumulative_commits": 17,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2013-04-01",
+        "total_commits": 37,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 54,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2013-04-08",
+        "total_commits": 18,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 72,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2013-04-15",
+        "total_commits": 87,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 159,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2013-04-22",
+        "total_commits": 48,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 207,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2013-04-29",
+        "total_commits": 20,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 227,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2013-05-06",
+        "total_commits": 48,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 275,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2013-05-13",
+        "total_commits": 50,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 325,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-05-20",
+        "total_commits": 39,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 364,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-05-27",
+        "total_commits": 63,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 427,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-06-03",
+        "total_commits": 62,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 489,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-06-10",
+        "total_commits": 37,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 526,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-06-17",
+        "total_commits": 22,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 548,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-06-24",
+        "total_commits": 50,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 598,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-07-01",
+        "total_commits": 28,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 626,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2013-07-08",
+        "total_commits": 56,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 682,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2013-07-15",
+        "total_commits": 51,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 733,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2013-07-22",
+        "total_commits": 29,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 762,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2013-07-29",
+        "total_commits": 65,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 827,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2013-08-05",
+        "total_commits": 35,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 862,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2013-08-12",
+        "total_commits": 29,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 891,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2013-08-19",
+        "total_commits": 54,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 945,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2013-08-26",
+        "total_commits": 96,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 1041,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2013-09-02",
+        "total_commits": 56,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 1097,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2013-09-09",
+        "total_commits": 102,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 1199,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2013-09-16",
+        "total_commits": 74,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 1273,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2013-09-23",
+        "total_commits": 127,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 1400,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2013-09-30",
+        "total_commits": 48,
+        "unique_contributors": 5,
+        "new_contributors": 0,
+        "cumulative_commits": 1448,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2013-10-07",
+        "total_commits": 61,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 1509,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2013-10-14",
+        "total_commits": 10,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 1519,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2013-10-21",
+        "total_commits": 80,
+        "unique_contributors": 5,
+        "new_contributors": 1,
+        "cumulative_commits": 1599,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2013-10-28",
+        "total_commits": 72,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 1671,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2013-11-04",
+        "total_commits": 32,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 1703,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2013-11-11",
+        "total_commits": 20,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1723,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2013-11-18",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1726,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2014-01-20",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1728,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2014-01-27",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 1729,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2014-02-03",
+        "total_commits": 35,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1764,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2014-02-10",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1768,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2014-02-17",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 1770,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2014-02-24",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1777,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2014-03-03",
+        "total_commits": 29,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 1806,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2014-03-10",
+        "total_commits": 37,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1843,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2014-03-17",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1852,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2014-03-24",
+        "total_commits": 27,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1879,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2014-03-31",
+        "total_commits": 19,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 1898,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2014-04-07",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1908,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2014-04-14",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1912,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2014-04-21",
+        "total_commits": 29,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1941,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2014-04-28",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1943,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2014-05-05",
+        "total_commits": 23,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1966,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2014-05-12",
+        "total_commits": 17,
+        "unique_contributors": 4,
+        "new_contributors": 2,
+        "cumulative_commits": 1983,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2014-05-19",
+        "total_commits": 17,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 2000,
+        "cumulative_contributors": 17
+      },
+      {
+        "week_start": "2014-05-26",
+        "total_commits": 10,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 2010,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2014-06-02",
+        "total_commits": 13,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 2023,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2014-06-09",
+        "total_commits": 17,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2040,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2014-06-16",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2049,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2014-06-23",
+        "total_commits": 45,
+        "unique_contributors": 5,
+        "new_contributors": 2,
+        "cumulative_commits": 2094,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-06-30",
+        "total_commits": 9,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 2103,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-07-07",
+        "total_commits": 33,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2136,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-07-14",
+        "total_commits": 27,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 2163,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-07-21",
+        "total_commits": 21,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 2184,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-07-28",
+        "total_commits": 48,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2232,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-08-04",
+        "total_commits": 49,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 2281,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-08-11",
+        "total_commits": 25,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 2306,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-08-18",
+        "total_commits": 73,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2379,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-08-25",
+        "total_commits": 125,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2504,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2014-09-01",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 2505,
+        "cumulative_contributors": 21
+      },
+      {
+        "week_start": "2014-09-08",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2510,
+        "cumulative_contributors": 21
+      },
+      {
+        "week_start": "2014-10-06",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 2512,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2014-10-27",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2515,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2015-04-06",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 2523,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-04-13",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2526,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-04-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2533,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-04-27",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2539,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-05-04",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2540,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-05-18",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2547,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-06-01",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2548,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-06-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2549,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-07-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2550,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-08-10",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2552,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-08-24",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2553,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-08-31",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2555,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-09-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2556,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2015-09-14",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2566,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2016-03-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 2567,
+        "cumulative_contributors": 24
+      },
+      {
+        "week_start": "2016-03-14",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 2568,
+        "cumulative_contributors": 25
+      },
+      {
+        "week_start": "2017-04-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 2569,
+        "cumulative_contributors": 26
+      },
+      {
+        "week_start": "2021-03-29",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2570,
+        "cumulative_contributors": 26
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "richaagarwal",
+        "login": "richaagarwal",
+        "name": "Richa Agarwal",
+        "email": "richa.agarwal85@gmail.com",
+        "first_commit_date": "2013-03-28T17:14:02+00:00",
+        "last_commit_date": "2021-03-29T07:10:20+00:00",
+        "duration_days": 2922,
+        "total_commits": 1212,
+        "active_weeks": 62,
+        "total_weeks_span": 417,
+        "activity_ratio": 0.1487,
+        "status": "departed",
+        "departed_weeks_ago": 266,
+        "avg_commits_per_active_week": 19.55
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "criscristina",
+        "login": "criscristina",
+        "name": "criscristina",
+        "email": "criscristina@users.noreply.github.com",
+        "first_commit_date": "2013-03-28T17:50:16+00:00",
+        "last_commit_date": "2015-07-08T22:14:25+00:00",
+        "duration_days": 832,
+        "total_commits": 748,
+        "active_weeks": 46,
+        "total_weeks_span": 118,
+        "activity_ratio": 0.3898,
+        "status": "departed",
+        "departed_weeks_ago": 564,
+        "avg_commits_per_active_week": 16.26
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "login": null,
+        "name": "Richa Agarwal",
+        "email": "richa@Richas-MacBook-Air.local",
+        "first_commit_date": "2014-01-29T05:47:25+00:00",
+        "last_commit_date": "2014-06-02T23:55:53+00:00",
+        "duration_days": 124,
+        "total_commits": 252,
+        "active_weeks": 18,
+        "total_weeks_span": 17,
+        "activity_ratio": 1.0588,
+        "status": "departed",
+        "departed_weeks_ago": 621,
+        "avg_commits_per_active_week": 14.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "sheilad@codeforamerica.org",
+        "login": null,
+        "name": "SheilaLDugan",
+        "email": "sheilad@codeforamerica.org",
+        "first_commit_date": "2013-03-28T17:54:11+00:00",
+        "last_commit_date": "2013-11-08T16:54:22+00:00",
+        "duration_days": 224,
+        "total_commits": 155,
+        "active_weeks": 27,
+        "total_weeks_span": 32,
+        "activity_ratio": 0.8438,
+        "status": "departed",
+        "departed_weeks_ago": 651,
+        "avg_commits_per_active_week": 5.74
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "mholubowski",
+        "login": "mholubowski",
+        "name": "Mike Holubowski",
+        "email": "mike.holubowski@gmail.com",
+        "first_commit_date": "2013-08-08T17:42:01+00:00",
+        "last_commit_date": "2013-09-09T23:38:11+00:00",
+        "duration_days": 32,
+        "total_commits": 57,
+        "active_weeks": 6,
+        "total_weeks_span": 4,
+        "activity_ratio": 1.5,
+        "status": "departed",
+        "departed_weeks_ago": 659,
+        "avg_commits_per_active_week": 9.5
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "waltz",
+        "login": "waltz",
+        "name": "CJ Bryan",
+        "email": "christianbryan@gmail.com",
+        "first_commit_date": "2014-02-21T00:26:18+00:00",
+        "last_commit_date": "2014-06-26T22:11:16+00:00",
+        "duration_days": 125,
+        "total_commits": 40,
+        "active_weeks": 8,
+        "total_weeks_span": 17,
+        "activity_ratio": 0.4706,
+        "status": "departed",
+        "departed_weeks_ago": 618,
+        "avg_commits_per_active_week": 5.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "mjumbewu",
+        "login": "mjumbewu",
+        "name": "Mjumbe Wawatu Ukweli",
+        "email": "mjumbewu@gmail.com",
+        "first_commit_date": "2015-04-09T20:33:19+00:00",
+        "last_commit_date": "2015-05-20T03:49:46+00:00",
+        "duration_days": 40,
+        "total_commits": 31,
+        "active_weeks": 6,
+        "total_weeks_span": 5,
+        "activity_ratio": 1.2,
+        "status": "departed",
+        "departed_weeks_ago": 571,
+        "avg_commits_per_active_week": 5.17
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "jcody@umail.ucsb.edu",
+        "login": null,
+        "name": "Joey Cody",
+        "email": "jcody@umail.ucsb.edu",
+        "first_commit_date": "2013-09-23T22:24:41+00:00",
+        "last_commit_date": "2013-10-24T00:37:11+00:00",
+        "duration_days": 30,
+        "total_commits": 19,
+        "active_weeks": 5,
+        "total_weeks_span": 4,
+        "activity_ratio": 1.25,
+        "status": "departed",
+        "departed_weeks_ago": 653,
+        "avg_commits_per_active_week": 3.8
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "richa@codeforamerica.org",
+        "login": null,
+        "name": "richa",
+        "email": "richa@codeforamerica.org",
+        "first_commit_date": "2014-06-23T23:35:42+00:00",
+        "last_commit_date": "2014-10-30T20:24:53+00:00",
+        "duration_days": 128,
+        "total_commits": 13,
+        "active_weeks": 6,
+        "total_weeks_span": 18,
+        "activity_ratio": 0.3333,
+        "status": "departed",
+        "departed_weeks_ago": 600,
+        "avg_commits_per_active_week": 2.17
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "migurski",
+        "login": "migurski",
+        "name": "Michal Migurski",
+        "email": "mike@teczno.com",
+        "first_commit_date": "2013-05-15T19:17:28+00:00",
+        "last_commit_date": "2014-08-07T04:25:01+00:00",
+        "duration_days": 448,
+        "total_commits": 9,
+        "active_weeks": 4,
+        "total_weeks_span": 64,
+        "activity_ratio": 0.0625,
+        "status": "departed",
+        "departed_weeks_ago": 612,
+        "avg_commits_per_active_week": 2.25
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "jcody",
+        "login": "jcody",
+        "name": "Joey Cody",
+        "email": "joeydcody@gmail.com",
+        "first_commit_date": "2013-10-29T01:16:46+00:00",
+        "last_commit_date": "2013-10-30T21:18:41+00:00",
+        "duration_days": 1,
+        "total_commits": 7,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 652,
+        "avg_commits_per_active_week": 7.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "ananelson",
+        "login": "ananelson",
+        "name": "Ana Nelson",
+        "email": "ana@ananelson.com",
+        "first_commit_date": "2013-10-24T20:04:53+00:00",
+        "last_commit_date": "2013-10-24T20:25:45+00:00",
+        "duration_days": 0,
+        "total_commits": 4,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 653,
+        "avg_commits_per_active_week": 4.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "andyhull",
+        "login": "andyhull",
+        "name": "Andy Hull",
+        "email": "andyhull3@gmail.com",
+        "first_commit_date": "2014-06-24T18:50:30+00:00",
+        "last_commit_date": "2014-06-24T18:58:31+00:00",
+        "duration_days": 0,
+        "total_commits": 3,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 618,
+        "avg_commits_per_active_week": 3.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "ondrae",
+        "login": "ondrae",
+        "name": "Andrew Hyder",
+        "email": "hyd415@gmail.com",
+        "first_commit_date": "2013-07-12T23:20:40+00:00",
+        "last_commit_date": "2013-07-18T06:06:58+00:00",
+        "duration_days": 5,
+        "total_commits": 3,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 667,
+        "avg_commits_per_active_week": 1.5
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "eddietejeda",
+        "login": "eddietejeda",
+        "name": "Eddie A Tejeda",
+        "email": "eddie@codeforamerica.org",
+        "first_commit_date": "2013-04-24T20:12:14+00:00",
+        "last_commit_date": "2013-04-24T20:18:12+00:00",
+        "duration_days": 0,
+        "total_commits": 3,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 679,
+        "avg_commits_per_active_week": 3.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "gsf",
+        "login": "gsf",
+        "name": "Gabriel Farrell",
+        "email": "g@gsf.io",
+        "first_commit_date": "2014-09-02T21:23:15+00:00",
+        "last_commit_date": "2014-10-07T21:15:02+00:00",
+        "duration_days": 34,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 4,
+        "activity_ratio": 0.5,
+        "status": "departed",
+        "departed_weeks_ago": 603,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "tamara@postcode.io",
+        "login": null,
+        "name": "ttmp",
+        "email": "tamara@postcode.io",
+        "first_commit_date": "2014-05-14T03:40:40+00:00",
+        "last_commit_date": "2014-05-14T03:52:34+00:00",
+        "duration_days": 0,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 624,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "vdavez",
+        "login": "vdavez",
+        "name": "vzvenyach",
+        "email": "vdavez@gmail.com",
+        "first_commit_date": "2014-03-08T05:52:14+00:00",
+        "last_commit_date": "2014-03-08T05:55:21+00:00",
+        "duration_days": 0,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 634,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "bryant1410",
+        "login": "bryant1410",
+        "name": "Santiago Castro",
+        "email": "santi.1410@hotmail.com",
+        "first_commit_date": "2017-04-17T10:16:51+00:00",
+        "last_commit_date": "2017-04-17T10:16:51+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 472,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "andrewh@codeforamerica.org",
+        "login": null,
+        "name": "Andrew Hyder",
+        "email": "andrewh@codeforamerica.org",
+        "first_commit_date": "2016-03-18T20:02:27+00:00",
+        "last_commit_date": "2016-03-18T20:02:27+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 528,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "geofft",
+        "login": "geofft",
+        "name": "Geoffrey Thomas",
+        "email": "geofft@ldpreload.com",
+        "first_commit_date": "2016-03-11T20:52:33+00:00",
+        "last_commit_date": "2016-03-11T20:52:33+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 529,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "stephen@smathermather.com",
+        "login": null,
+        "name": "Stephen Mather",
+        "email": "stephen@smathermather.com",
+        "first_commit_date": "2014-10-06T01:15:26+00:00",
+        "last_commit_date": "2014-10-06T01:15:26+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 604,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "konklone",
+        "login": "konklone",
+        "name": "Eric Mill",
+        "email": "eric@konklone.com",
+        "first_commit_date": "2014-05-27T02:37:02+00:00",
+        "last_commit_date": "2014-05-27T02:37:02+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 622,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "rduecyg@gmail.com",
+        "login": null,
+        "name": "Reed Duecy-Gibbs",
+        "email": "rduecyg@gmail.com",
+        "first_commit_date": "2014-05-20T00:33:06+00:00",
+        "last_commit_date": "2014-05-20T00:33:06+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 623,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "vagrant@precise64.(none)",
+        "login": null,
+        "name": "vagrant",
+        "email": "vagrant@precise64.(none)",
+        "first_commit_date": "2014-05-14T20:26:56+00:00",
+        "last_commit_date": "2014-05-14T20:26:56+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 624,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/recordtrac",
+        "contributor_id": "pui",
+        "login": "pui",
+        "name": "Erica Kwan",
+        "email": "erica.kwan@gmail.com",
+        "first_commit_date": "2014-04-05T00:01:55+00:00",
+        "last_commit_date": "2014-04-05T00:01:55+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 630,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-03-25",
+        "commits": 10,
+        "lines_added": 318,
+        "lines_removed": 22
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-04-01",
+        "commits": 22,
+        "lines_added": 7915,
+        "lines_removed": 26589
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-04-08",
+        "commits": 13,
+        "lines_added": 291,
+        "lines_removed": 81
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-04-15",
+        "commits": 38,
+        "lines_added": 1019,
+        "lines_removed": 532
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-04-22",
+        "commits": 27,
+        "lines_added": 335,
+        "lines_removed": 151
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-04-29",
+        "commits": 15,
+        "lines_added": 119,
+        "lines_removed": 256
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-05-06",
+        "commits": 31,
+        "lines_added": 578,
+        "lines_removed": 361
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-05-13",
+        "commits": 20,
+        "lines_added": 760,
+        "lines_removed": 437
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-05-20",
+        "commits": 22,
+        "lines_added": 618,
+        "lines_removed": 625
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-05-27",
+        "commits": 49,
+        "lines_added": 714,
+        "lines_removed": 545
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-06-03",
+        "commits": 44,
+        "lines_added": 685,
+        "lines_removed": 2868
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-06-10",
+        "commits": 28,
+        "lines_added": 249,
+        "lines_removed": 172
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-06-17",
+        "commits": 19,
+        "lines_added": 2622,
+        "lines_removed": 367
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-06-24",
+        "commits": 25,
+        "lines_added": 2392,
+        "lines_removed": 1819
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-07-01",
+        "commits": 22,
+        "lines_added": 2985,
+        "lines_removed": 754
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-07-08",
+        "commits": 34,
+        "lines_added": 37319,
+        "lines_removed": 1429
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-07-15",
+        "commits": 30,
+        "lines_added": 665,
+        "lines_removed": 499
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-07-22",
+        "commits": 21,
+        "lines_added": 6535,
+        "lines_removed": 763
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-07-29",
+        "commits": 51,
+        "lines_added": 8713,
+        "lines_removed": 1088
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-08-05",
+        "commits": 26,
+        "lines_added": 1245,
+        "lines_removed": 678
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-08-12",
+        "commits": 13,
+        "lines_added": 196,
+        "lines_removed": 147
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-08-19",
+        "commits": 10,
+        "lines_added": 1112,
+        "lines_removed": 613
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-08-26",
+        "commits": 36,
+        "lines_added": 1356,
+        "lines_removed": 1027
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-09-02",
+        "commits": 32,
+        "lines_added": 2763,
+        "lines_removed": 7974
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-09-09",
+        "commits": 61,
+        "lines_added": 7560,
+        "lines_removed": 6015
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-09-16",
+        "commits": 24,
+        "lines_added": 900,
+        "lines_removed": 327
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-09-23",
+        "commits": 35,
+        "lines_added": 3170,
+        "lines_removed": 1334
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-09-30",
+        "commits": 22,
+        "lines_added": 410,
+        "lines_removed": 196
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-10-07",
+        "commits": 47,
+        "lines_added": 2134,
+        "lines_removed": 854
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-10-14",
+        "commits": 2,
+        "lines_added": 15,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-10-21",
+        "commits": 37,
+        "lines_added": 2322,
+        "lines_removed": 3028
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-10-28",
+        "commits": 39,
+        "lines_added": 698,
+        "lines_removed": 443
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-11-04",
+        "commits": 14,
+        "lines_added": 173,
+        "lines_removed": 68
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-11-11",
+        "commits": 12,
+        "lines_added": 108,
+        "lines_removed": 84
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2013-11-18",
+        "commits": 2,
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-03-24",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-05-12",
+        "commits": 2,
+        "lines_added": 18,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-05-19",
+        "commits": 3,
+        "lines_added": 1652,
+        "lines_removed": 356
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-05-26",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-06-02",
+        "commits": 4,
+        "lines_added": 58,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-06-09",
+        "commits": 9,
+        "lines_added": 158,
+        "lines_removed": 85
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-06-16",
+        "commits": 6,
+        "lines_added": 131,
+        "lines_removed": 85
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-06-23",
+        "commits": 22,
+        "lines_added": 321,
+        "lines_removed": 212
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-06-30",
+        "commits": 4,
+        "lines_added": 125,
+        "lines_removed": 52
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-07-07",
+        "commits": 33,
+        "lines_added": 389,
+        "lines_removed": 37714
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-07-14",
+        "commits": 19,
+        "lines_added": 113,
+        "lines_removed": 1374
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-07-21",
+        "commits": 8,
+        "lines_added": 174,
+        "lines_removed": 66
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-07-28",
+        "commits": 36,
+        "lines_added": 336,
+        "lines_removed": 582
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-08-04",
+        "commits": 22,
+        "lines_added": 120,
+        "lines_removed": 188
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-08-11",
+        "commits": 10,
+        "lines_added": 496,
+        "lines_removed": 205
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-08-18",
+        "commits": 25,
+        "lines_added": 1614,
+        "lines_removed": 5084
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-08-25",
+        "commits": 49,
+        "lines_added": 2578,
+        "lines_removed": 5642
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2014-09-08",
+        "commits": 5,
+        "lines_added": 18,
+        "lines_removed": 31
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-05-18",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-06-01",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-06-08",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-08-10",
+        "commits": 2,
+        "lines_added": 531,
+        "lines_removed": 163
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-08-24",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-08-31",
+        "commits": 2,
+        "lines_added": 15,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-09-07",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2015-09-14",
+        "commits": 10,
+        "lines_added": 169,
+        "lines_removed": 225
+      },
+      {
+        "contributor_id": "richaagarwal",
+        "week_start": "2021-03-29",
+        "commits": 1,
+        "lines_added": 15,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "bryant1410",
+        "week_start": "2017-04-17",
+        "commits": 1,
+        "lines_added": 15,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "andrewh@codeforamerica.org",
+        "week_start": "2016-03-14",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "geofft",
+        "week_start": "2016-03-07",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-03-25",
+        "commits": 4,
+        "lines_added": 26391,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-04-01",
+        "commits": 14,
+        "lines_added": 2723,
+        "lines_removed": 26428
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-04-08",
+        "commits": 4,
+        "lines_added": 324,
+        "lines_removed": 162
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-04-15",
+        "commits": 43,
+        "lines_added": 1479,
+        "lines_removed": 836
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-04-22",
+        "commits": 17,
+        "lines_added": 12369,
+        "lines_removed": 194
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-04-29",
+        "commits": 1,
+        "lines_added": 33,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-05-06",
+        "commits": 16,
+        "lines_added": 757,
+        "lines_removed": 349
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-05-13",
+        "commits": 25,
+        "lines_added": 1327,
+        "lines_removed": 570
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-05-20",
+        "commits": 17,
+        "lines_added": 325,
+        "lines_removed": 339
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-05-27",
+        "commits": 10,
+        "lines_added": 532,
+        "lines_removed": 269
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-06-03",
+        "commits": 14,
+        "lines_added": 4334,
+        "lines_removed": 1134
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-06-10",
+        "commits": 9,
+        "lines_added": 202,
+        "lines_removed": 148
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-06-17",
+        "commits": 3,
+        "lines_added": 1246,
+        "lines_removed": 1252
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-06-24",
+        "commits": 24,
+        "lines_added": 2245,
+        "lines_removed": 516
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-07-01",
+        "commits": 6,
+        "lines_added": 1827,
+        "lines_removed": 124
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-07-08",
+        "commits": 20,
+        "lines_added": 687,
+        "lines_removed": 355
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-07-15",
+        "commits": 17,
+        "lines_added": 37369,
+        "lines_removed": 1495
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-07-22",
+        "commits": 3,
+        "lines_added": 6809,
+        "lines_removed": 574
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-07-29",
+        "commits": 9,
+        "lines_added": 2869,
+        "lines_removed": 2335
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-08-05",
+        "commits": 7,
+        "lines_added": 1060,
+        "lines_removed": 513
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-08-12",
+        "commits": 4,
+        "lines_added": 108,
+        "lines_removed": 152
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-08-19",
+        "commits": 19,
+        "lines_added": 2493,
+        "lines_removed": 2378
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-08-26",
+        "commits": 43,
+        "lines_added": 3449,
+        "lines_removed": 8040
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-09-02",
+        "commits": 16,
+        "lines_added": 6591,
+        "lines_removed": 140
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-09-09",
+        "commits": 26,
+        "lines_added": 1345,
+        "lines_removed": 1628
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-09-16",
+        "commits": 42,
+        "lines_added": 7776,
+        "lines_removed": 6987
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-09-23",
+        "commits": 68,
+        "lines_added": 1598,
+        "lines_removed": 811
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-09-30",
+        "commits": 17,
+        "lines_added": 315,
+        "lines_removed": 170
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-10-14",
+        "commits": 7,
+        "lines_added": 170,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-10-21",
+        "commits": 14,
+        "lines_added": 470,
+        "lines_removed": 89
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-10-28",
+        "commits": 10,
+        "lines_added": 241,
+        "lines_removed": 87
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-11-04",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-11-11",
+        "commits": 8,
+        "lines_added": 103,
+        "lines_removed": 80
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2013-11-18",
+        "commits": 1,
+        "lines_added": 47,
+        "lines_removed": 26
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-01-20",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-06-02",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-06-23",
+        "commits": 11,
+        "lines_added": 846,
+        "lines_removed": 484
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-06-30",
+        "commits": 3,
+        "lines_added": 170,
+        "lines_removed": 129
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-07-14",
+        "commits": 5,
+        "lines_added": 276,
+        "lines_removed": 38954
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-07-21",
+        "commits": 11,
+        "lines_added": 72,
+        "lines_removed": 178
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-07-28",
+        "commits": 12,
+        "lines_added": 666,
+        "lines_removed": 139
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-08-04",
+        "commits": 25,
+        "lines_added": 1043,
+        "lines_removed": 1215
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-08-11",
+        "commits": 14,
+        "lines_added": 429,
+        "lines_removed": 328
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-08-18",
+        "commits": 48,
+        "lines_added": 1462,
+        "lines_removed": 3826
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2014-08-25",
+        "commits": 76,
+        "lines_added": 1992,
+        "lines_removed": 1472
+      },
+      {
+        "contributor_id": "criscristina",
+        "week_start": "2015-07-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "mjumbewu",
+        "week_start": "2015-04-06",
+        "commits": 8,
+        "lines_added": 57,
+        "lines_removed": 47
+      },
+      {
+        "contributor_id": "mjumbewu",
+        "week_start": "2015-04-13",
+        "commits": 3,
+        "lines_added": 44,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "mjumbewu",
+        "week_start": "2015-04-20",
+        "commits": 7,
+        "lines_added": 76,
+        "lines_removed": 54
+      },
+      {
+        "contributor_id": "mjumbewu",
+        "week_start": "2015-04-27",
+        "commits": 6,
+        "lines_added": 44,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "mjumbewu",
+        "week_start": "2015-05-04",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "mjumbewu",
+        "week_start": "2015-05-18",
+        "commits": 6,
+        "lines_added": 142,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "richa@codeforamerica.org",
+        "week_start": "2014-06-23",
+        "commits": 3,
+        "lines_added": 572,
+        "lines_removed": 405
+      },
+      {
+        "contributor_id": "richa@codeforamerica.org",
+        "week_start": "2014-06-30",
+        "commits": 2,
+        "lines_added": 888,
+        "lines_removed": 493
+      },
+      {
+        "contributor_id": "richa@codeforamerica.org",
+        "week_start": "2014-07-14",
+        "commits": 3,
+        "lines_added": 244,
+        "lines_removed": 38937
+      },
+      {
+        "contributor_id": "richa@codeforamerica.org",
+        "week_start": "2014-08-04",
+        "commits": 1,
+        "lines_added": 15,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "richa@codeforamerica.org",
+        "week_start": "2014-08-11",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "richa@codeforamerica.org",
+        "week_start": "2014-10-27",
+        "commits": 3,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "gsf",
+        "week_start": "2014-09-01",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "gsf",
+        "week_start": "2014-10-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "stephen@smathermather.com",
+        "week_start": "2014-10-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "migurski",
+        "week_start": "2013-05-13",
+        "commits": 1,
+        "lines_added": 11,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "migurski",
+        "week_start": "2013-09-30",
+        "commits": 5,
+        "lines_added": 82,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "migurski",
+        "week_start": "2014-07-21",
+        "commits": 2,
+        "lines_added": 4161,
+        "lines_removed": 40035
+      },
+      {
+        "contributor_id": "migurski",
+        "week_start": "2014-08-04",
+        "commits": 1,
+        "lines_added": 15,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-02-17",
+        "commits": 2,
+        "lines_added": 6,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-02-24",
+        "commits": 2,
+        "lines_added": 779,
+        "lines_removed": 126
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-03-03",
+        "commits": 11,
+        "lines_added": 261,
+        "lines_removed": 129
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-03-10",
+        "commits": 3,
+        "lines_added": 205,
+        "lines_removed": 237
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-06-02",
+        "commits": 5,
+        "lines_added": 433,
+        "lines_removed": 462
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-06-09",
+        "commits": 8,
+        "lines_added": 242,
+        "lines_removed": 248
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-06-16",
+        "commits": 3,
+        "lines_added": 610,
+        "lines_removed": 439
+      },
+      {
+        "contributor_id": "waltz",
+        "week_start": "2014-06-23",
+        "commits": 6,
+        "lines_added": 40,
+        "lines_removed": 28
+      },
+      {
+        "contributor_id": "andyhull",
+        "week_start": "2014-06-23",
+        "commits": 3,
+        "lines_added": 18,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-01-27",
+        "commits": 1,
+        "lines_added": 7,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-02-03",
+        "commits": 35,
+        "lines_added": 370,
+        "lines_removed": 36967
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-02-10",
+        "commits": 4,
+        "lines_added": 22,
+        "lines_removed": 22
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-02-24",
+        "commits": 5,
+        "lines_added": 437,
+        "lines_removed": 168
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-03-03",
+        "commits": 16,
+        "lines_added": 466,
+        "lines_removed": 549
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-03-10",
+        "commits": 34,
+        "lines_added": 781,
+        "lines_removed": 355
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-03-17",
+        "commits": 9,
+        "lines_added": 2573,
+        "lines_removed": 861
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-03-24",
+        "commits": 26,
+        "lines_added": 300,
+        "lines_removed": 248
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-03-31",
+        "commits": 18,
+        "lines_added": 371,
+        "lines_removed": 411
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-04-07",
+        "commits": 10,
+        "lines_added": 144,
+        "lines_removed": 284
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-04-14",
+        "commits": 4,
+        "lines_added": 97,
+        "lines_removed": 46
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-04-21",
+        "commits": 29,
+        "lines_added": 227,
+        "lines_removed": 125
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-04-28",
+        "commits": 2,
+        "lines_added": 253,
+        "lines_removed": 95
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-05-05",
+        "commits": 23,
+        "lines_added": 3010,
+        "lines_removed": 141
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-05-12",
+        "commits": 12,
+        "lines_added": 1915,
+        "lines_removed": 399
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-05-19",
+        "commits": 13,
+        "lines_added": 38460,
+        "lines_removed": 426
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-05-26",
+        "commits": 8,
+        "lines_added": 94,
+        "lines_removed": 55
+      },
+      {
+        "contributor_id": "richa@Richas-MacBook-Air.local",
+        "week_start": "2014-06-02",
+        "commits": 3,
+        "lines_added": 13,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "konklone",
+        "week_start": "2014-05-26",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "rduecyg@gmail.com",
+        "week_start": "2014-05-19",
+        "commits": 1,
+        "lines_added": 189,
+        "lines_removed": 69
+      },
+      {
+        "contributor_id": "vagrant@precise64.(none)",
+        "week_start": "2014-05-12",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "tamara@postcode.io",
+        "week_start": "2014-05-12",
+        "commits": 2,
+        "lines_added": 8,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "pui",
+        "week_start": "2014-03-31",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "vdavez",
+        "week_start": "2014-03-03",
+        "commits": 2,
+        "lines_added": 18,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-03-25",
+        "commits": 3,
+        "lines_added": 6,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-04-01",
+        "commits": 1,
+        "lines_added": 10092,
+        "lines_removed": 86
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-04-08",
+        "commits": 1,
+        "lines_added": 117,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-04-15",
+        "commits": 6,
+        "lines_added": 823,
+        "lines_removed": 261
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-04-22",
+        "commits": 1,
+        "lines_added": 57,
+        "lines_removed": 34
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-04-29",
+        "commits": 4,
+        "lines_added": 51,
+        "lines_removed": 186
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-05-06",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-05-13",
+        "commits": 4,
+        "lines_added": 83,
+        "lines_removed": 65
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-05-27",
+        "commits": 4,
+        "lines_added": 21,
+        "lines_removed": 71
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-06-03",
+        "commits": 4,
+        "lines_added": 69,
+        "lines_removed": 71
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-06-24",
+        "commits": 1,
+        "lines_added": 13,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-07-15",
+        "commits": 3,
+        "lines_added": 201,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-07-22",
+        "commits": 5,
+        "lines_added": 1032,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-07-29",
+        "commits": 5,
+        "lines_added": 1432,
+        "lines_removed": 507
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-08-05",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-08-12",
+        "commits": 1,
+        "lines_added": 12,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-08-19",
+        "commits": 6,
+        "lines_added": 144,
+        "lines_removed": 165
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-08-26",
+        "commits": 6,
+        "lines_added": 42,
+        "lines_removed": 32
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-09-02",
+        "commits": 2,
+        "lines_added": 136,
+        "lines_removed": 532
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-09-09",
+        "commits": 6,
+        "lines_added": 149,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-09-16",
+        "commits": 8,
+        "lines_added": 127,
+        "lines_removed": 69
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-09-23",
+        "commits": 19,
+        "lines_added": 299,
+        "lines_removed": 71
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-09-30",
+        "commits": 1,
+        "lines_added": 9,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-10-07",
+        "commits": 8,
+        "lines_added": 92,
+        "lines_removed": 58
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-10-21",
+        "commits": 21,
+        "lines_added": 434,
+        "lines_removed": 21
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-10-28",
+        "commits": 16,
+        "lines_added": 268,
+        "lines_removed": 62
+      },
+      {
+        "contributor_id": "sheilad@codeforamerica.org",
+        "week_start": "2013-11-04",
+        "commits": 17,
+        "lines_added": 68,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "jcody",
+        "week_start": "2013-10-28",
+        "commits": 7,
+        "lines_added": 283,
+        "lines_removed": 59
+      },
+      {
+        "contributor_id": "ananelson",
+        "week_start": "2013-10-21",
+        "commits": 4,
+        "lines_added": 191,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "jcody@umail.ucsb.edu",
+        "week_start": "2013-09-23",
+        "commits": 5,
+        "lines_added": 3377,
+        "lines_removed": 1275
+      },
+      {
+        "contributor_id": "jcody@umail.ucsb.edu",
+        "week_start": "2013-09-30",
+        "commits": 3,
+        "lines_added": 2015,
+        "lines_removed": 1045
+      },
+      {
+        "contributor_id": "jcody@umail.ucsb.edu",
+        "week_start": "2013-10-07",
+        "commits": 6,
+        "lines_added": 346,
+        "lines_removed": 228
+      },
+      {
+        "contributor_id": "jcody@umail.ucsb.edu",
+        "week_start": "2013-10-14",
+        "commits": 1,
+        "lines_added": 26,
+        "lines_removed": 36
+      },
+      {
+        "contributor_id": "jcody@umail.ucsb.edu",
+        "week_start": "2013-10-21",
+        "commits": 4,
+        "lines_added": 496,
+        "lines_removed": 247
+      },
+      {
+        "contributor_id": "mholubowski",
+        "week_start": "2013-08-05",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "mholubowski",
+        "week_start": "2013-08-12",
+        "commits": 11,
+        "lines_added": 817,
+        "lines_removed": 616
+      },
+      {
+        "contributor_id": "mholubowski",
+        "week_start": "2013-08-19",
+        "commits": 19,
+        "lines_added": 546,
+        "lines_removed": 2389
+      },
+      {
+        "contributor_id": "mholubowski",
+        "week_start": "2013-08-26",
+        "commits": 11,
+        "lines_added": 2810,
+        "lines_removed": 7482
+      },
+      {
+        "contributor_id": "mholubowski",
+        "week_start": "2013-09-02",
+        "commits": 6,
+        "lines_added": 2085,
+        "lines_removed": 7238
+      },
+      {
+        "contributor_id": "mholubowski",
+        "week_start": "2013-09-09",
+        "commits": 9,
+        "lines_added": 1054,
+        "lines_removed": 1563
+      },
+      {
+        "contributor_id": "ondrae",
+        "week_start": "2013-07-08",
+        "commits": 2,
+        "lines_added": 8,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "ondrae",
+        "week_start": "2013-07-15",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "eddietejeda",
+        "week_start": "2013-04-22",
+        "commits": 3,
+        "lines_added": 14,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 89,
+    "total_unique_contributors": 26,
+    "new_contributor_rate_per_month": 0.27
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforamerica/recordtrac",
+    "issues": [
+      {
+        "number": 1,
+        "title": "Why not re-use existing open source projects?",
+        "state": "closed",
+        "author_login": "jpmckinney",
+        "closed_by_login": "jpmckinney",
+        "created_at": "2013-04-12T21:07:22+00:00",
+        "closed_at": "2013-04-16T22:30:11+00:00",
+        "updated_at": "2013-04-16T22:30:11+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 4.06
+      },
+      {
+        "number": 2,
+        "title": "Database Migrations",
+        "state": "closed",
+        "author_login": "eddietejeda",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-04-24T19:50:16+00:00",
+        "closed_at": "2013-06-05T21:21:31+00:00",
+        "updated_at": "2013-06-05T21:21:31+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 42.06
+      },
+      {
+        "number": 6,
+        "title": "carriage returns in textarea field missing",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "SheilaLDugan",
+        "created_at": "2013-05-06T23:05:10+00:00",
+        "closed_at": "2013-08-07T23:18:27+00:00",
+        "updated_at": "2013-08-07T23:18:27+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 93.01
+      },
+      {
+        "number": 8,
+        "title": "Reroute dropdown doesn't go away unless you click on the name",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-05-15T21:48:43+00:00",
+        "closed_at": "2013-08-13T22:26:42+00:00",
+        "updated_at": "2013-08-13T22:26:42+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 90.03
+      },
+      {
+        "number": 9,
+        "title": "links showing up as documents",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-03T21:31:38+00:00",
+        "closed_at": "2013-06-07T11:57:39+00:00",
+        "updated_at": "2013-06-07T11:57:39+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 3.6
+      },
+      {
+        "number": 10,
+        "title": "\"all requests\" table numbering not sequential",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-11T00:37:32+00:00",
+        "closed_at": "2013-07-22T19:04:01+00:00",
+        "updated_at": "2013-07-22T19:04:01+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 41.77
+      },
+      {
+        "number": 11,
+        "title": "Drag and drop for file uploads",
+        "state": "open",
+        "author_login": "richaagarwal",
+        "closed_by_login": null,
+        "created_at": "2013-06-24T23:50:25+00:00",
+        "closed_at": null,
+        "updated_at": "2013-06-24T23:50:25+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 12,
+        "title": "Editing submitted request",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-25T22:04:00+00:00",
+        "closed_at": "2013-10-09T20:34:17+00:00",
+        "updated_at": "2013-10-09T20:34:17+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 105.94
+      },
+      {
+        "number": 13,
+        "title": "Re-opening a closed request",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "SheilaLDugan",
+        "created_at": "2013-06-25T22:07:05+00:00",
+        "closed_at": "2013-06-27T22:26:15+00:00",
+        "updated_at": "2013-06-27T22:26:15+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 2.01
+      },
+      {
+        "number": 14,
+        "title": "Trouble uploading .xls file",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-26T01:07:46+00:00",
+        "closed_at": "2013-06-26T18:19:48+00:00",
+        "updated_at": "2013-06-26T18:19:48+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug - high"
+        ],
+        "time_to_close_days": 0.72
+      },
+      {
+        "number": 15,
+        "title": "tabs not displaying active location",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-26T01:37:30+00:00",
+        "closed_at": "2013-07-18T05:12:10+00:00",
+        "updated_at": "2013-07-18T05:12:10+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 22.15
+      },
+      {
+        "number": 16,
+        "title": "Summary field should be required for adding a record",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-26T18:17:23+00:00",
+        "closed_at": "2013-07-04T01:00:58+00:00",
+        "updated_at": "2013-07-04T01:00:58+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - high"
+        ],
+        "time_to_close_days": 7.28
+      },
+      {
+        "number": 17,
+        "title": "Due Date",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-27T18:55:39+00:00",
+        "closed_at": "2013-06-28T23:55:58+00:00",
+        "updated_at": "2013-06-28T23:55:58+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 1.21
+      },
+      {
+        "number": 18,
+        "title": "All Request Table to Display Only Certain Departments",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-27T20:02:46+00:00",
+        "closed_at": "2013-10-09T20:35:36+00:00",
+        "updated_at": "2013-10-09T20:35:36+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 104.02
+      },
+      {
+        "number": 19,
+        "title": "Form for Submitting Request - Make Field Larger ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-06-27T20:13:56+00:00",
+        "closed_at": "2014-08-26T15:57:22+00:00",
+        "updated_at": "2014-08-26T15:57:22+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 424.82
+      },
+      {
+        "number": 20,
+        "title": "Remove City Login for Public Pages?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-27T20:18:36+00:00",
+        "closed_at": "2013-11-07T23:14:47+00:00",
+        "updated_at": "2013-11-07T23:14:47+00:00",
+        "comment_count": 2,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 133.12
+      },
+      {
+        "number": 21,
+        "title": "Require an email for submitting a request?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-06-27T22:29:02+00:00",
+        "closed_at": "2013-08-14T01:33:27+00:00",
+        "updated_at": "2013-08-14T01:33:27+00:00",
+        "comment_count": 2,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 47.13
+      },
+      {
+        "number": 22,
+        "title": "Attaching requests not submitted through the system ",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-06-28T19:06:36+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-14T01:28:30+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 23,
+        "title": "Template for requests received in-person or over the phone?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-06-28T19:15:55+00:00",
+        "closed_at": "2014-08-26T15:55:32+00:00",
+        "updated_at": "2014-08-26T15:55:32+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 423.86
+      },
+      {
+        "number": 24,
+        "title": "Multi-departmental requests - Routing to more than one person at a time ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-28T19:27:43+00:00",
+        "closed_at": "2013-10-09T20:36:53+00:00",
+        "updated_at": "2013-10-09T20:36:53+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 103.05
+      },
+      {
+        "number": 25,
+        "title": "Track fulfillment on an individual request by department",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-06-28T19:32:52+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-25T22:23:52+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 26,
+        "title": "Section for private communication with staff members ",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-06-28T19:42:39+00:00",
+        "closed_at": null,
+        "updated_at": "2013-06-28T19:44:32+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 27,
+        "title": "You need a Scribd account to download or print records. ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-06-28T19:48:18+00:00",
+        "closed_at": "2013-06-28T23:54:27+00:00",
+        "updated_at": "2013-06-28T23:54:46+00:00",
+        "comment_count": 2,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 0.17
+      },
+      {
+        "number": 30,
+        "title": "Unable to respond to question posted by city employee",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-01T13:43:06+00:00",
+        "closed_at": "2013-07-01T18:43:53+00:00",
+        "updated_at": "2013-07-01T18:43:53+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 0.21
+      },
+      {
+        "number": 33,
+        "title": "batch upload records to request",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2013-07-02T21:07:40+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-14T01:23:37+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 34,
+        "title": "\"Your Request\" Table Not Displaying All Information",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-03T20:02:51+00:00",
+        "closed_at": "2013-07-03T22:36:38+00:00",
+        "updated_at": "2013-07-03T22:36:38+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 0.11
+      },
+      {
+        "number": 35,
+        "title": "Display Date and Time Notes Added",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-07-03T20:03:36+00:00",
+        "closed_at": "2014-08-26T15:54:18+00:00",
+        "updated_at": "2014-08-26T15:54:18+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 418.83
+      },
+      {
+        "number": 36,
+        "title": "Add Information About Oakland Answers?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-03T20:04:06+00:00",
+        "closed_at": "2013-10-09T20:36:16+00:00",
+        "updated_at": "2013-10-09T20:36:16+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 98.02
+      },
+      {
+        "number": 37,
+        "title": "Table Not Sorting in Chronological Order ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-08T18:38:50+00:00",
+        "closed_at": "2013-10-26T21:47:07+00:00",
+        "updated_at": "2013-10-26T21:47:07+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 110.13
+      },
+      {
+        "number": 38,
+        "title": "responses are not listed chronologically",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-08T23:32:11+00:00",
+        "closed_at": "2013-07-18T05:12:10+00:00",
+        "updated_at": "2013-07-18T05:12:10+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 9.24
+      },
+      {
+        "number": 39,
+        "title": "Make close-out section a pull-down menu?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-07-12T15:52:25+00:00",
+        "closed_at": "2013-07-12T17:31:41+00:00",
+        "updated_at": "2013-07-12T17:31:41+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 0.07
+      },
+      {
+        "number": 40,
+        "title": "Right alignment of close request box?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-07-12T15:59:54+00:00",
+        "closed_at": null,
+        "updated_at": "2013-07-12T17:32:35+00:00",
+        "comment_count": 1,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 41,
+        "title": "Wrap text for all boxes to enter messages?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-07-12T16:07:57+00:00",
+        "closed_at": null,
+        "updated_at": "2013-07-12T16:07:57+00:00",
+        "comment_count": 0,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 42,
+        "title": "Make pending requests more visible?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-07-12T16:21:11+00:00",
+        "closed_at": null,
+        "updated_at": "2013-07-12T16:21:11+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 43,
+        "title": "Alerts when someone is out of the office",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-12T16:25:33+00:00",
+        "closed_at": "2013-10-09T20:41:31+00:00",
+        "updated_at": "2013-10-09T20:41:31+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 89.18
+      },
+      {
+        "number": 46,
+        "title": "unsubscribe option is showing up in emails for city employees",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-15T18:04:30+00:00",
+        "closed_at": "2013-08-05T20:29:19+00:00",
+        "updated_at": "2013-08-05T20:29:19+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 21.1
+      },
+      {
+        "number": 48,
+        "title": "click-to-popover elements require clicking the element again to dismiss popover",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2013-07-16T21:51:11+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-14T01:13:34+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 50,
+        "title": "Drop Down menu for \"Say Why\" field",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-07-22T21:13:46+00:00",
+        "closed_at": null,
+        "updated_at": "2013-07-22T21:14:21+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 51,
+        "title": "Include time in date stamp",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-22T21:15:59+00:00",
+        "closed_at": "2013-10-09T20:54:48+00:00",
+        "updated_at": "2013-10-09T20:54:48+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 78.99
+      },
+      {
+        "number": 52,
+        "title": "Pre-Selected Response for \"Summary\" field when you add a record?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-07-22T21:19:43+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-09T22:29:25+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 53,
+        "title": "Table Not Displaying the Number of Records User Indicated",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-07-22T21:24:34+00:00",
+        "closed_at": "2013-08-14T00:52:51+00:00",
+        "updated_at": "2013-08-14T00:52:51+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 22.14
+      },
+      {
+        "number": 54,
+        "title": "How do we capture new requests that don't come through the system?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-07-25T23:49:12+00:00",
+        "closed_at": "2013-08-14T01:28:30+00:00",
+        "updated_at": "2013-08-14T01:28:30+00:00",
+        "comment_count": 4,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 19.07
+      },
+      {
+        "number": 55,
+        "title": "On submit, redirect user to issue permalink",
+        "state": "closed",
+        "author_login": "migurski",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-07-27T19:24:56+00:00",
+        "closed_at": "2013-07-31T06:54:49+00:00",
+        "updated_at": "2013-07-31T06:54:49+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 3.48
+      },
+      {
+        "number": 56,
+        "title": "Mark request as duplicate when closing out> ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-07-30T01:35:35+00:00",
+        "closed_at": "2014-08-26T15:50:34+00:00",
+        "updated_at": "2014-08-26T15:50:34+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 392.59
+      },
+      {
+        "number": 57,
+        "title": "Make staff cards link to a new staff page",
+        "state": "closed",
+        "author_login": "migurski",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-06T23:23:46+00:00",
+        "closed_at": "2013-10-09T20:39:49+00:00",
+        "updated_at": "2013-10-09T20:39:49+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 63.89
+      },
+      {
+        "number": 58,
+        "title": "Make a distinction between requests for records and information ",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-07T23:12:46+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-08T19:22:56+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 59,
+        "title": "Urge users to submit detailed requests",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-07T23:15:33+00:00",
+        "closed_at": "2014-08-26T15:47:13+00:00",
+        "updated_at": "2014-08-26T15:47:13+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 383.69
+      },
+      {
+        "number": 60,
+        "title": "Warn requesters they have to pay for hard copies",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-07T23:20:18+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-07T23:22:24+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 61,
+        "title": "Allow city employees to view requester's email address?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-07T23:26:04+00:00",
+        "closed_at": "2013-10-26T21:36:26+00:00",
+        "updated_at": "2013-10-26T21:36:26+00:00",
+        "comment_count": 2,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 79.92
+      },
+      {
+        "number": 62,
+        "title": "Save request and response as PDF?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-07T23:31:06+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-08T19:30:56+00:00",
+        "comment_count": 4,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 63,
+        "title": "Allow city employees to re-route requests by department ",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-07T23:39:44+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-07T23:39:44+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 64,
+        "title": "Internal notes between city staff members?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-07T23:48:02+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-07T23:50:27+00:00",
+        "comment_count": 1,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 65,
+        "title": "A database of responsive records?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T03:06:05+00:00",
+        "closed_at": "2013-09-03T20:43:59+00:00",
+        "updated_at": "2013-09-03T20:43:59+00:00",
+        "comment_count": 4,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 26.73
+      },
+      {
+        "number": 66,
+        "title": "Instruct the public how to view records. ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T03:22:13+00:00",
+        "closed_at": "2013-09-03T20:41:51+00:00",
+        "updated_at": "2013-09-03T20:41:51+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 26.72
+      },
+      {
+        "number": 67,
+        "title": "Change calculation of due date",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-08T03:23:07+00:00",
+        "closed_at": "2013-10-26T21:47:29+00:00",
+        "updated_at": "2013-10-26T21:47:29+00:00",
+        "comment_count": 1,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 79.77
+      },
+      {
+        "number": 68,
+        "title": "Drop Down menu for frequently used websites ",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-08T03:30:55+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-08T19:11:42+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 69,
+        "title": "Show all records requests in table?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T03:34:18+00:00",
+        "closed_at": "2013-09-03T20:33:32+00:00",
+        "updated_at": "2013-09-03T20:33:32+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 26.71
+      },
+      {
+        "number": 70,
+        "title": "Attach multiple records at once. ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T03:36:20+00:00",
+        "closed_at": "2013-08-14T01:23:37+00:00",
+        "updated_at": "2013-08-14T01:23:37+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 5.91
+      },
+      {
+        "number": 71,
+        "title": "Suggestions on how to sort All Requests Table",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T03:56:53+00:00",
+        "closed_at": "2014-08-26T15:46:05+00:00",
+        "updated_at": "2014-08-26T15:46:05+00:00",
+        "comment_count": 1,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 383.49
+      },
+      {
+        "number": 72,
+        "title": "Suggestions on fields to be included in all request table",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-08T04:07:01+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-08T04:07:01+00:00",
+        "comment_count": 0,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 73,
+        "title": "Due dates automatically added to calendars",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-08T04:09:05+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-09T22:40:29+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 74,
+        "title": "Allow OGC to double-check closed requests. ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-08T04:10:36+00:00",
+        "closed_at": "2014-08-20T23:08:07+00:00",
+        "updated_at": "2014-08-20T23:08:07+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 377.79
+      },
+      {
+        "number": 75,
+        "title": "Staff directory misleading",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-08T15:24:46+00:00",
+        "closed_at": "2013-10-26T21:45:46+00:00",
+        "updated_at": "2013-10-26T21:45:46+00:00",
+        "comment_count": 3,
+        "labels": [],
+        "time_to_close_days": 79.26
+      },
+      {
+        "number": 76,
+        "title": "Doesn't understand the use of the summary section",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T15:34:28+00:00",
+        "closed_at": "2013-09-03T20:27:32+00:00",
+        "updated_at": "2013-09-03T20:27:32+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 26.2
+      },
+      {
+        "number": 77,
+        "title": "Add \"Other\" field to close the request feature",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T15:36:33+00:00",
+        "closed_at": "2013-09-03T20:27:09+00:00",
+        "updated_at": "2013-09-03T20:27:09+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 26.2
+      },
+      {
+        "number": 78,
+        "title": "Typo in tutorial ",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T15:37:12+00:00",
+        "closed_at": "2013-08-13T00:29:22+00:00",
+        "updated_at": "2013-08-13T00:29:22+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 4.37
+      },
+      {
+        "number": 79,
+        "title": "Review reasons to close the request",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-08T15:38:18+00:00",
+        "closed_at": "2013-09-03T20:26:18+00:00",
+        "updated_at": "2013-09-03T20:26:18+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 26.2
+      },
+      {
+        "number": 80,
+        "title": "Remove \"can be accessed phrase\"?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-08T15:39:01+00:00",
+        "closed_at": "2013-10-09T20:37:38+00:00",
+        "updated_at": "2013-10-09T20:37:38+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 62.21
+      },
+      {
+        "number": 81,
+        "title": "Preview all records in a separate window",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-09T20:03:01+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-09T20:54:29+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 82,
+        "title": "Reduce number of emails sent when records uploaded",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-09T20:11:29+00:00",
+        "closed_at": "2013-08-09T21:15:13+00:00",
+        "updated_at": "2013-08-09T21:15:13+00:00",
+        "comment_count": 5,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 0.04
+      },
+      {
+        "number": 83,
+        "title": "Send SMS Updates",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-09T20:16:09+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-09T23:03:20+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 84,
+        "title": "Send Twitter and Facebook updates to requesters?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-09T20:21:56+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-09T20:21:56+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 85,
+        "title": "Allow finer control of e-mail notifications",
+        "state": "open",
+        "author_login": "richaagarwal",
+        "closed_by_login": null,
+        "created_at": "2013-08-09T21:14:01+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-09T21:15:12+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 86,
+        "title": "SB 90 Reporting?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-08-09T22:25:33+00:00",
+        "closed_at": null,
+        "updated_at": "2013-08-13T21:48:16+00:00",
+        "comment_count": 1,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 87,
+        "title": "PRR Liaison's name displayed as \"None\"",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-16T15:59:10+00:00",
+        "closed_at": "2013-08-19T03:12:54+00:00",
+        "updated_at": "2013-08-19T03:12:54+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 2.47
+      },
+      {
+        "number": 88,
+        "title": "email notifications have broken image",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-08-16T22:32:35+00:00",
+        "closed_at": "2013-10-09T20:15:37+00:00",
+        "updated_at": "2013-10-09T20:15:37+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 53.9
+      },
+      {
+        "number": 92,
+        "title": "Staff card needs formatting",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-08-20T22:24:13+00:00",
+        "closed_at": "2013-10-08T21:39:55+00:00",
+        "updated_at": "2013-10-08T21:39:55+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "frontend"
+        ],
+        "time_to_close_days": 48.97
+      },
+      {
+        "number": 95,
+        "title": "Submit one request to multiple departments?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "SheilaLDugan",
+        "created_at": "2013-08-26T22:41:10+00:00",
+        "closed_at": "2013-09-03T20:09:59+00:00",
+        "updated_at": "2013-09-03T20:09:59+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 7.9
+      },
+      {
+        "number": 96,
+        "title": "Trouble uploading files",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-09-17T19:12:18+00:00",
+        "closed_at": "2013-10-09T19:04:32+00:00",
+        "updated_at": "2013-10-09T19:04:32+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - high"
+        ],
+        "time_to_close_days": 21.99
+      },
+      {
+        "number": 97,
+        "title": "Unable to edit Request Extension message",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-09-17T20:22:49+00:00",
+        "closed_at": "2013-10-07T21:17:03+00:00",
+        "updated_at": "2013-10-07T21:17:03+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 20.04
+      },
+      {
+        "number": 98,
+        "title": "Fix the \u201cmore\u201d feature for long paragraphs",
+        "state": "open",
+        "author_login": "migurski",
+        "closed_by_login": null,
+        "created_at": "2013-09-17T21:14:14+00:00",
+        "closed_at": null,
+        "updated_at": "2013-09-17T21:14:24+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - low",
+          "frontend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 99,
+        "title": "Don't include all names in helpers list?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-09-19T19:01:08+00:00",
+        "closed_at": "2013-10-09T20:55:22+00:00",
+        "updated_at": "2013-10-09T20:55:22+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 20.08
+      },
+      {
+        "number": 100,
+        "title": "Change \"Add a Note\" field",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-09-19T23:06:54+00:00",
+        "closed_at": "2013-10-09T20:06:07+00:00",
+        "updated_at": "2013-10-09T20:06:07+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 19.87
+      },
+      {
+        "number": 101,
+        "title": "'Explore Requests' loads very slow, and appears to be getting slower",
+        "state": "closed",
+        "author_login": "nneditch",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-09-28T01:07:28+00:00",
+        "closed_at": "2013-10-09T20:13:46+00:00",
+        "updated_at": "2013-10-09T20:13:46+00:00",
+        "comment_count": 3,
+        "labels": [],
+        "time_to_close_days": 11.8
+      },
+      {
+        "number": 102,
+        "title": "OPD Records lack clarity",
+        "state": "open",
+        "author_login": "spjika",
+        "closed_by_login": null,
+        "created_at": "2013-10-01T19:13:37+00:00",
+        "closed_at": null,
+        "updated_at": "2013-10-01T19:13:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 103,
+        "title": "Download button visibility",
+        "state": "closed",
+        "author_login": "spjika",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-10-01T19:15:21+00:00",
+        "closed_at": "2014-08-26T15:44:01+00:00",
+        "updated_at": "2014-08-26T15:44:01+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 328.85
+      },
+      {
+        "number": 104,
+        "title": "Search doesn't search the full request text.",
+        "state": "closed",
+        "author_login": "guelo",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-10-01T19:24:25+00:00",
+        "closed_at": "2013-10-09T19:57:12+00:00",
+        "updated_at": "2013-10-09T19:57:12+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 8.02
+      },
+      {
+        "number": 105,
+        "title": "logging in from a request doesn't route me to the city page",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-10-03T18:20:38+00:00",
+        "closed_at": "2013-11-06T23:15:46+00:00",
+        "updated_at": "2013-11-06T23:15:46+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 34.2
+      },
+      {
+        "number": 106,
+        "title": "logging in from logout screen doesn't work",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-10-03T23:24:56+00:00",
+        "closed_at": "2013-10-03T23:33:07+00:00",
+        "updated_at": "2013-10-03T23:33:07+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 107,
+        "title": "table not sorting by date correctly",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-10-08T21:41:49+00:00",
+        "closed_at": "2013-10-09T19:55:51+00:00",
+        "updated_at": "2013-10-09T19:55:51+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 0.93
+      },
+      {
+        "number": 108,
+        "title": "search by date",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-10-18T20:31:55+00:00",
+        "closed_at": "2014-08-20T23:09:15+00:00",
+        "updated_at": "2014-08-20T23:09:15+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 306.11
+      },
+      {
+        "number": 109,
+        "title": "multi-dept filter",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2013-10-18T20:32:29+00:00",
+        "closed_at": null,
+        "updated_at": "2013-10-18T20:32:29+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 110,
+        "title": "Windows don't close",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-10-23T20:06:32+00:00",
+        "closed_at": "2013-11-12T02:01:44+00:00",
+        "updated_at": "2013-11-12T02:01:44+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 19.25
+      },
+      {
+        "number": 114,
+        "title": "Landing page title should be more descriptive",
+        "state": "closed",
+        "author_login": "yesezra",
+        "closed_by_login": "criscristina",
+        "created_at": "2013-11-02T21:33:35+00:00",
+        "closed_at": "2013-11-05T22:28:36+00:00",
+        "updated_at": "2013-11-05T22:28:36+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 3.04
+      },
+      {
+        "number": 116,
+        "title": "Remove department or liaison after they respond to a request?",
+        "state": "closed",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2013-11-19T00:15:43+00:00",
+        "closed_at": "2014-08-20T23:09:33+00:00",
+        "updated_at": "2014-08-20T23:09:33+00:00",
+        "comment_count": 0,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 274.95
+      },
+      {
+        "number": 117,
+        "title": "Include back-up liaisons in all emails ",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-11-19T00:23:56+00:00",
+        "closed_at": null,
+        "updated_at": "2013-11-19T00:23:56+00:00",
+        "comment_count": 0,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 118,
+        "title": "Restrict who is able to respond to a question or add a note?",
+        "state": "open",
+        "author_login": "SheilaLDugan",
+        "closed_by_login": null,
+        "created_at": "2013-11-19T00:31:23+00:00",
+        "closed_at": null,
+        "updated_at": "2013-11-19T00:31:23+00:00",
+        "comment_count": 0,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 119,
+        "title": "No visibility into who is following a particular request",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2013-11-19T01:06:13+00:00",
+        "closed_at": null,
+        "updated_at": "2013-11-19T01:06:13+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 126,
+        "title": "\"Point of Contact\" and \"Helper\" filters behavior doesn't match representation",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-07-23T20:53:22+00:00",
+        "closed_at": "2014-08-06T18:49:49+00:00",
+        "updated_at": "2014-08-06T18:49:49+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug - medium"
+        ],
+        "time_to_close_days": 13.91
+      },
+      {
+        "number": 127,
+        "title": "agency logos are not displayed",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "criscristina",
+        "created_at": "2014-07-24T17:42:12+00:00",
+        "closed_at": "2014-08-26T15:42:53+00:00",
+        "updated_at": "2014-08-26T15:42:53+00:00",
+        "comment_count": 2,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": 32.92
+      },
+      {
+        "number": 128,
+        "title": "Data viz on landing not displayed",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-07-24T17:44:02+00:00",
+        "closed_at": "2014-08-20T23:13:26+00:00",
+        "updated_at": "2014-08-20T23:13:26+00:00",
+        "comment_count": 1,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": 27.23
+      },
+      {
+        "number": 129,
+        "title": "Dept drop-down on new request form is disconnected with control",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-07-24T18:03:35+00:00",
+        "closed_at": null,
+        "updated_at": "2014-07-24T18:03:35+00:00",
+        "comment_count": 0,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 130,
+        "title": "Example on new request page appears at end of form",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-07-24T18:08:18+00:00",
+        "closed_at": null,
+        "updated_at": "2014-07-24T18:08:18+00:00",
+        "comment_count": 0,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 131,
+        "title": "can not navigate to all requests page",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-07-24T18:15:19+00:00",
+        "closed_at": "2014-08-20T23:13:00+00:00",
+        "updated_at": "2014-08-20T23:13:00+00:00",
+        "comment_count": 0,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": 27.21
+      },
+      {
+        "number": 132,
+        "title": "Logos aren't resizing properly",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "criscristina",
+        "created_at": "2014-07-24T18:17:22+00:00",
+        "closed_at": "2014-08-26T15:41:49+00:00",
+        "updated_at": "2014-08-26T15:41:49+00:00",
+        "comment_count": 1,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": 32.89
+      },
+      {
+        "number": 133,
+        "title": "Mozilla Persona does not work",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-07-24T18:21:49+00:00",
+        "closed_at": "2014-08-20T23:12:46+00:00",
+        "updated_at": "2014-08-20T23:12:46+00:00",
+        "comment_count": 6,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": 27.2
+      },
+      {
+        "number": 134,
+        "title": "Status area displaying below form",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-07-24T18:25:54+00:00",
+        "closed_at": null,
+        "updated_at": "2014-07-24T18:25:54+00:00",
+        "comment_count": 0,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 135,
+        "title": "missing \"open\" filter option in public view",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-07-28T16:43:10+00:00",
+        "closed_at": "2014-08-20T23:05:49+00:00",
+        "updated_at": "2014-08-20T23:05:49+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug - low"
+        ],
+        "time_to_close_days": 23.27
+      },
+      {
+        "number": 136,
+        "title": "on page load, point of contact and helper are always checked",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-08-05T17:11:53+00:00",
+        "closed_at": "2014-08-06T18:49:14+00:00",
+        "updated_at": "2014-08-06T18:49:14+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 1.07
+      },
+      {
+        "number": 137,
+        "title": "Back button not working for requests page",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-08-05T17:17:50+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-05T17:17:50+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 138,
+        "title": "Changing filters deeper than page 1 on all requests page refreshes list without a reorientation",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-08-05T17:28:35+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-06T18:14:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 139,
+        "title": "all requests sorting errors",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-08-05T17:31:58+00:00",
+        "closed_at": "2014-08-20T17:28:37+00:00",
+        "updated_at": "2014-08-20T17:28:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 15.0
+      },
+      {
+        "number": 140,
+        "title": "request date filter providing confusing results",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-08-05T17:42:39+00:00",
+        "closed_at": "2014-08-20T23:04:09+00:00",
+        "updated_at": "2014-08-20T23:04:09+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 15.22
+      },
+      {
+        "number": 141,
+        "title": "due date and request date filters not inclusive of dates",
+        "state": "closed",
+        "author_login": "criscristina",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-08-05T17:48:26+00:00",
+        "closed_at": "2014-08-20T23:03:55+00:00",
+        "updated_at": "2014-08-20T23:03:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 15.22
+      },
+      {
+        "number": 146,
+        "title": "selected dept shows up as duplicate in filter area",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-08-25T17:57:14+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-25T17:57:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 147,
+        "title": "request table resizes for different filters",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-08-25T18:01:14+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-25T18:01:14+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 148,
+        "title": "landing page footer is missing background",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-08-25T18:02:36+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-25T18:02:36+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 149,
+        "title": "offline_request.html and new_request.html have redundant fields",
+        "state": "open",
+        "author_login": "criscristina",
+        "closed_by_login": null,
+        "created_at": "2014-08-25T18:06:23+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-25T18:06:23+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 150,
+        "title": "Manage request page - on select fields are blacked out",
+        "state": "closed",
+        "author_login": "richaagarwal",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-08-25T18:34:54+00:00",
+        "closed_at": "2015-09-16T06:53:21+00:00",
+        "updated_at": "2015-09-16T06:53:21+00:00",
+        "comment_count": 0,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": 386.51
+      },
+      {
+        "number": 151,
+        "title": "Manage request page - 'Name of record' input",
+        "state": "open",
+        "author_login": "richaagarwal",
+        "closed_by_login": null,
+        "created_at": "2014-08-25T18:36:20+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-25T18:36:20+00:00",
+        "comment_count": 0,
+        "labels": [
+          "IE"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 152,
+        "title": "Batch download of all records",
+        "state": "open",
+        "author_login": "richaagarwal",
+        "closed_by_login": null,
+        "created_at": "2014-08-25T20:31:04+00:00",
+        "closed_at": null,
+        "updated_at": "2014-08-25T20:31:04+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 158,
+        "title": "Unable to update users with db_users.py",
+        "state": "closed",
+        "author_login": "gsf",
+        "closed_by_login": "gsf",
+        "created_at": "2014-10-07T16:16:22+00:00",
+        "closed_at": "2014-10-07T21:21:50+00:00",
+        "updated_at": "2014-10-07T21:21:50+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 0.21
+      },
+      {
+        "number": 160,
+        "title": "Date Received UTC Time Conversion",
+        "state": "closed",
+        "author_login": "andyhull",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-10-30T18:01:39+00:00",
+        "closed_at": "2015-01-07T06:40:49+00:00",
+        "updated_at": "2015-01-07T06:40:49+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 68.53
+      },
+      {
+        "number": 161,
+        "title": "Date picker error on missing_email.html template",
+        "state": "closed",
+        "author_login": "andyhull",
+        "closed_by_login": "richaagarwal",
+        "created_at": "2014-10-30T18:07:27+00:00",
+        "closed_at": "2015-01-07T06:40:29+00:00",
+        "updated_at": "2015-01-07T06:40:29+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 68.52
+      },
+      {
+        "number": 162,
+        "title": "allow organizational changes through admin panel",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-02-17T19:19:23+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:56:01+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 163,
+        "title": "better support removing records that have been posted in error",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-02-17T19:24:32+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T22:01:15+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 164,
+        "title": "allow assignment of tasks to departments rather than individuals",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:03:08+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T01:03:49+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 165,
+        "title": "add filtering to reporting function",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:05:00+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:55:12+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 166,
+        "title": "add presentation options for reports",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:07:22+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:55:30+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 167,
+        "title": "automate email notifications of due & overdue records to responsible contact",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:12:06+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-05T05:14:41+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 168,
+        "title": "index posted documents to improve searches?",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:16:34+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-05T05:16:34+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 169,
+        "title": "add a feedback loop: did the requester get what they needed?",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:17:22+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-05T05:17:22+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 170,
+        "title": "helping requesters ask for what they need",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:36:18+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T00:48:55+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 171,
+        "title": "create a builder/setup helper app",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-05T05:38:59+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:59:10+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "frontend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 172,
+        "title": "add hour/minute timestamp to incoming requests",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T00:53:59+00:00",
+        "closed_at": null,
+        "updated_at": "2015-05-20T03:55:32+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 173,
+        "title": "add Export affordance to the admin interface",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T00:55:45+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:56:12+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 174,
+        "title": "add new status categories to support complex requests",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T00:59:51+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T22:00:18+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 175,
+        "title": "show more detailed status in main admin record requests table",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T01:02:23+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:54:39+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 176,
+        "title": "force responder to select a reason when submitting a letter of extension",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T01:05:58+00:00",
+        "closed_at": null,
+        "updated_at": "2015-05-20T03:58:15+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 177,
+        "title": "allow multiselect or offer consolidated categories in department selection dropdown",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T01:08:59+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:57:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 178,
+        "title": "don't allow postdating a manually entered \"date received\"",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T01:10:02+00:00",
+        "closed_at": null,
+        "updated_at": "2015-05-20T04:01:21+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 179,
+        "title": "better pagination in filtered & full request lists",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T01:11:28+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T21:54:13+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 180,
+        "title": "requests scanned & attached can't be searched by the system",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T01:13:09+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T01:13:09+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 181,
+        "title": "simple illustration of the records process for the public",
+        "state": "open",
+        "author_login": "cydharrell",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T01:14:38+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T01:14:38+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 182,
+        "title": "Improve contrast of top nav colors",
+        "state": "open",
+        "author_login": "jmadans",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T17:30:50+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T17:30:50+00:00",
+        "comment_count": 0,
+        "labels": [
+          "frontend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 183,
+        "title": "More obvious buttons to open individual records",
+        "state": "open",
+        "author_login": "jmadans",
+        "closed_by_login": null,
+        "created_at": "2015-03-16T17:42:01+00:00",
+        "closed_at": null,
+        "updated_at": "2015-03-16T17:42:01+00:00",
+        "comment_count": 0,
+        "labels": [
+          "frontend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 184,
+        "title": "Support posting Excel files (and other file types?)",
+        "state": "closed",
+        "author_login": "daguar",
+        "closed_by_login": "daguar",
+        "created_at": "2015-03-27T20:52:02+00:00",
+        "closed_at": "2015-03-27T21:10:43+00:00",
+        "updated_at": "2015-03-28T03:20:10+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 196,
+        "title": "'login failure: error' returned on every attempt to login",
+        "state": "open",
+        "author_login": "metrix78",
+        "closed_by_login": null,
+        "created_at": "2016-06-03T18:50:18+00:00",
+        "closed_at": null,
+        "updated_at": "2016-06-06T17:52:07+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 197,
+        "title": "Is persona still used?",
+        "state": "open",
+        "author_login": "mitchelljkotler",
+        "closed_by_login": null,
+        "created_at": "2016-07-08T15:41:06+00:00",
+        "closed_at": null,
+        "updated_at": "2016-07-11T10:13:55+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 149,
+    "open_issues": 65,
+    "closed_issues": 84,
+    "avg_comments_per_issue": 0.97,
+    "median_time_to_close_days": 26.45,
+    "unique_openers": 17,
+    "unique_closers": 6,
+    "top_openers": {
+      "SheilaLDugan": 68,
+      "criscristina": 35,
+      "cydharrell": 20,
+      "richaagarwal": 8,
+      "migurski": 3,
+      "spjika": 2,
+      "andyhull": 2,
+      "jmadans": 2,
+      "jpmckinney": 1,
+      "eddietejeda": 1,
+      "nneditch": 1,
+      "guelo": 1,
+      "yesezra": 1,
+      "gsf": 1,
+      "daguar": 1,
+      "metrix78": 1,
+      "mitchelljkotler": 1
+    },
+    "top_closers": {
+      "richaagarwal": 55,
+      "criscristina": 23,
+      "SheilaLDugan": 3,
+      "jpmckinney": 1,
+      "gsf": 1,
+      "daguar": 1
+    }
+  }
+}
