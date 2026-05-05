@@ -1,0 +1,104 @@
+github:
+  max_retries: 5
+  retry_delay: 3
+  rate_limit_buffer: 100
+
+repositories:
+  - "DemocracyClub/UK-Polling-Stations"
+  - "DemocracyClub/WhoCanIVoteFor"
+  - "fvialibre/edia"
+  - "luftdata/luftdata.se"
+  - "CodeForAfrica/PromiseTracker"
+  - "CodeForAfrica/academy.AFRICA"
+  - "CodeForAfrica/Dominion.AFRICA"
+  - "CodeForAfrica/GenderGap.AFRICA"
+  - "CodeForAfrica/openAFRICA"
+  - "CodeForAfrica/outbreak.AFRICA"
+  - "CodeForAfrica/ui"
+  - "CodeForAfrica/sensors.AFRICA"
+  - "codeforamerica/form-flow"
+  - "codeforamerica/vita-min"
+  - "codeforamerica/tofu-modules-aws-serverless-database"
+  - "codeforamerica/tax-benefits-backend"
+  - "codeforamerica/pya"
+  - "codeforamerica/honeycrisp-gem"
+  - "codeforamerica/asap_pdf"
+  - "codeforamerica/cmr-maryland-eligibility-determination"
+  - "codeforamerica/document-transfer-service"
+  - "markov-root/atlas"
+  - "fvialibre/heseia-sentence-bias-dataset"
+  - "codeforjapan/BirdXplorer"
+  - "meshtastic/Meshtastic-Android"
+  - "meshtastic/web"
+  - "meshtastic/firmware"
+  - "civiform/civiform"
+  - "iiab/iiab"
+  - "ForumMagnum/ForumMagnum"
+  - "mastodon/mastodon"
+  - "okfde/froide"
+  - "openplans/shareabouts"
+  - "codeforamerica/recordtrac"
+  - "CodeForAfrica/actNOW"
+  - "CitizensFoundation/your-priorities-app"
+  - "mysociety/ceuk-marking"
+
+output:
+  directory: "./output_n37"
+
+detection:
+  cloud_keywords:
+    topics:
+      - aws
+      - gcp
+      - azure
+      - cloud
+      - serverless
+      - kubernetes
+      - docker
+    languages:
+      - HCL
+      - Dockerfile
+    files:
+      - Dockerfile
+      - docker-compose.yml
+      - docker-compose.yaml
+      - cdk.json
+      - serverless.yml
+      - terraform.tf
+      - cloudbuild.yaml
+      - appspec.yml
+      - Procfile
+      - .buildpacks
+    dependencies:
+      - boto3
+      - google-cloud
+      - azure
+      - aws-cdk
+      - pulumi
+
+  ai_ml_keywords:
+    topics:
+      - machine-learning
+      - deep-learning
+      - ai
+      - nlp
+      - computer-vision
+      - artificial-intelligence
+    languages:
+      - Jupyter Notebook
+    files:
+      - "*.ipynb"
+    dependencies:
+      - tensorflow
+      - pytorch
+      - torch
+      - scikit-learn
+      - transformers
+      - keras
+      - xgboost
+      - lightgbm
+      - openai
+      - langchain
+      - huggingface
+      - spacy
+      - nltk
