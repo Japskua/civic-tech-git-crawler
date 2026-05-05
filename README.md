@@ -12,6 +12,7 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Output Files](#output-files)
+- [Example Datasets](#example-datasets)
 - [Metrics Reference](#metrics-reference)
   - [Repository Metrics](#repository-metrics)
   - [Contributor Metrics](#contributor-metrics)
@@ -290,7 +291,7 @@ uv run python -m civic_tech_crawler --config config.yaml
 
 All output files are written to the output directory (default: `./output/`). Both CSV and JSON formats are produced automatically.
 
-> **Want to see what the output looks like?** Browse the [`example_results/`](example_results/) directory for real output from a crawl of 29 civic tech repositories, including 12 statistical analysis CSVs and 165 visualisation PNGs.
+> **Want to see what the output looks like?** Browse the [`example_results/`](example_results/) directory for three full crawl snapshots: a **March 2026 baseline (n=29)**, an **April 2026 refresh (n=29)** with weekly LOC analysis, and a **May 2026 refresh (n=38)** that adds nine larger and older projects. The May refresh is organised one folder per repository so you can navigate to any single project's metrics, plots, and findings in one click — see [Example Datasets](#example-datasets) below.
 
 ### CSV files
 
@@ -376,6 +377,84 @@ All output files are written to the output directory (default: `./output/`). Bot
   }
 ]
 ```
+
+---
+
+## Example Datasets
+
+The [`example_results/`](example_results/) directory contains three full crawl snapshots. They share the same schema (so any analysis script in `scripts/` works on all of them), but each was collected at a different date with a slightly different configuration.
+
+### Snapshots at a glance
+
+| Snapshot | Repos | Crawl date | Total commits | Layout | Use when |
+|---|---:|---|---:|---|---|
+| [`example_results/`](example_results/) (March 2026 baseline) | 29 | 13 March 2026 | ~70k | Flat: one `<owner>_<repo>_data.json` per repo | Reproducing paper Sections 4.1–4.6 (bus factor, HHI, correlations, partial correlations, group comparisons) |
+| [`example_results/april_2026_refresh/`](example_results/april_2026_refresh/) | 29 | 20 April 2026 | 80,807 | Flat | Reproducing paper Section 4.7 (weekly elephant factor, churn ratio, effort Gini) — first snapshot with `lines_added` / `lines_removed` columns |
+| [`example_results/may_2026_refresh/`](example_results/may_2026_refresh/) | **38** | 4–5 May 2026 | 152,305 (CWA) / 186,490 (repo_metrics) | **One folder per repo** | Robustness checks against larger and older projects — adds AutoGPT (184k★), mastodon (50k★), ForumMagnum, okfde/froide (oldest project at 15 years), and 5 others |
+
+### Browsing the May 2026 refresh (n=38)
+
+This snapshot is organised so each repository has its own folder containing everything needed to understand that one project at a glance. For example:
+
+```
+example_results/may_2026_refresh/
+├── README.md                   ← dataset-level overview, file index, reproduction steps
+├── analysis_n38.md             ← academic writeup: cohort comparison vs n=29, robustness
+├── per_repo_findings.md        ← all 38 short findings in one document
+├── ForumMagnum_ForumMagnum/
+│   ├── repo_results.md         ← at-a-glance metadata + main finding + caveats
+│   ├── data.json               ← full crawler output for this repo
+│   ├── growth.png
+│   ├── lifecycle.png
+│   ├── new_contributors.png
+│   ├── top_contributors.png
+│   ├── weekly_activity.png
+│   └── issue_trends.png
+├── Significant-Gravitas_AutoGPT/
+│   └── …
+├── … 36 more repo folders …
+├── repo_metrics.csv            ← aggregate CSVs (one row per repo)
+├── chaoss_summary.csv
+├── contributor_weekly_activity.csv
+├── statistical_analysis/       ← 12 CSVs from scripts/statistical_analysis.py
+└── weekly_activity_analysis/   ← 3 CSVs + summary.md from scripts/weekly_activity_analysis.py
+```
+
+Each repository's `repo_results.md` contains:
+
+1. **At-a-glance**: language, stars/forks, age, commit count, cloud / AI-ML / OSI-license signals
+2. **Main findings**: a short paragraph picking out the most distinctive aspect of the project (e.g. AutoGPT's drive-by-celebrity profile, civiform's distributed weekly contribution, okfde/froide's 15-year founder dependency)
+3. **Key metrics**: bus factor, HHI, effort Gini, churn ratio, issue stats, response times
+4. **Things to note**: auto-detected caveats — e.g. mastodon's right-censored 5,000-issue cap, your-priorities-app's 10× commit-count discrepancy, markov-root's email-only top contributor, net-negative LOC trajectories
+5. **Files in this folder**: index of the JSON + plot files
+6. **See also**: links back to the dataset-level docs
+
+Three good entry points:
+
+- **Most popular project**: [`Significant-Gravitas_AutoGPT/repo_results.md`](example_results/may_2026_refresh/Significant-Gravitas_AutoGPT/repo_results.md) (184k★, but bus factor 1)
+- **Most distributed core**: [`ForumMagnum_ForumMagnum/repo_results.md`](example_results/may_2026_refresh/ForumMagnum_ForumMagnum/repo_results.md) (HHI 1,059 — lowest in the dataset)
+- **Most net-negative LOC**: [`DemocracyClub_UK-Polling-Stations/repo_results.md`](example_results/may_2026_refresh/DemocracyClub_UK-Polling-Stations/repo_results.md) (−3.4M cumulative line delta)
+
+The full 38-repo navigation table is in the snapshot's [`README.md`](example_results/may_2026_refresh/README.md).
+
+### Regenerating the per-repo layout
+
+```bash
+# Crawl + run analyses (writes flat structure to ./output/)
+uv run civic-tech-crawler --config config.example.yaml
+uv run python scripts/statistical_analysis.py output/
+uv run python scripts/weekly_activity_analysis.py
+uv run python scripts/visualize.py --output-dir output
+
+# Snapshot it
+mkdir -p example_results/<refresh-name>/
+cp -r output/* example_results/<refresh-name>/
+
+# Build the per-repo folders + repo_results.md files
+uv run python scripts/build_repo_folders.py
+```
+
+`scripts/build_repo_folders.py` is idempotent — it only moves files that haven't been moved yet, and rewrites the markdown each run from the latest CSVs.
 
 ---
 

@@ -1,30 +1,37 @@
 """Generate per-repository folders and repo_results.md files.
 
-Reads existing flat outputs in example_results/may_2026_refresh/ and produces:
-- example_results/may_2026_refresh/<owner>_<repo>/repo_results.md
-- example_results/may_2026_refresh/<owner>_<repo>/data.json (moved)
-- example_results/may_2026_refresh/<owner>_<repo>/<plotname>.png (moved)
+Reads existing flat outputs in <snapshot-dir>/ and produces:
+- <snapshot-dir>/<owner>_<repo>/repo_results.md
+- <snapshot-dir>/<owner>_<repo>/data.json (moved)
+- <snapshot-dir>/<owner>_<repo>/<plotname>.png (moved)
 
-Run once after the May 2026 refresh.
+Usage:
+    uv run python scripts/build_repo_folders.py [snapshot-dir]
+
+Default snapshot-dir is example_results/may_2026_refresh/. Idempotent:
+re-running only moves files that haven't already been moved, and always
+rewrites the markdown from the latest CSV state.
 """
 
 from __future__ import annotations
 
+import argparse
 import re
 import shutil
+import sys
 from pathlib import Path
 
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
-SNAPSHOT = ROOT / "example_results" / "may_2026_refresh"
-PLOTS = SNAPSHOT / "plots"
-FINDINGS = SNAPSHOT / "per_repo_findings.md"
+DEFAULT_SNAPSHOT = ROOT / "example_results" / "may_2026_refresh"
 
 
-def parse_findings_per_repo() -> dict[str, str]:
+def parse_findings_per_repo(findings_path: Path) -> dict[str, str]:
     """Pull per-repo paragraphs out of per_repo_findings.md keyed by 'owner/repo'."""
-    text = FINDINGS.read_text()
+    if not findings_path.exists():
+        return {}
+    text = findings_path.read_text()
     parts = re.split(r"\n## ", "\n" + text)  # leading \n so first split discards header
     out: dict[str, str] = {}
     for chunk in parts[1:]:
@@ -53,21 +60,21 @@ def fmt_num(v) -> str:
     return str(v)
 
 
-def collect_data() -> dict[str, dict]:
+def collect_data(snapshot: Path) -> dict[str, dict]:
     """Pull a per-repo merged dict of metrics from the snapshot CSVs."""
-    rm = pd.read_csv(SNAPSHOT / "repo_metrics.csv").rename(columns={"full_name": "repo"})
-    ch = pd.read_csv(SNAPSHOT / "chaoss_summary.csv").rename(columns={"repo_full_name": "repo"})
-    isum = pd.read_csv(SNAPSHOT / "issue_summary.csv").rename(columns={"repo_full_name": "repo"})
-    churn = pd.read_csv(SNAPSHOT / "weekly_activity_analysis" / "churn_ratio.csv").rename(
+    rm = pd.read_csv(snapshot / "repo_metrics.csv").rename(columns={"full_name": "repo"})
+    ch = pd.read_csv(snapshot / "chaoss_summary.csv").rename(columns={"repo_full_name": "repo"})
+    isum = pd.read_csv(snapshot / "issue_summary.csv").rename(columns={"repo_full_name": "repo"})
+    churn = pd.read_csv(snapshot / "weekly_activity_analysis" / "churn_ratio.csv").rename(
         columns={"repo_full_name": "repo"}
     )
-    gini = pd.read_csv(SNAPSHOT / "weekly_activity_analysis" / "effort_gini.csv").rename(
+    gini = pd.read_csv(snapshot / "weekly_activity_analysis" / "effort_gini.csv").rename(
         columns={"repo_full_name": "repo"}
     )
-    eleph = pd.read_csv(SNAPSHOT / "weekly_activity_analysis" / "weekly_elephant_factor.csv").rename(
+    eleph = pd.read_csv(snapshot / "weekly_activity_analysis" / "weekly_elephant_factor.csv").rename(
         columns={"repo_full_name": "repo"}
     )
-    cwa = pd.read_csv(SNAPSHOT / "contributor_weekly_activity.csv")
+    cwa = pd.read_csv(snapshot / "contributor_weekly_activity.csv")
     cwa_commits = cwa.groupby("repo_full_name")["commits"].sum().rename("cwa_commits")
 
     merged = (
@@ -256,10 +263,32 @@ def render(repo: str, d: dict, finding_paragraph: str, folder: Path) -> str:
 
 
 def main() -> int:
-    findings = parse_findings_per_repo()
-    metrics = collect_data()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "snapshot",
+        nargs="?",
+        default=str(DEFAULT_SNAPSHOT),
+        help=f"Snapshot directory (default: {DEFAULT_SNAPSHOT.relative_to(ROOT)})",
+    )
+    args = parser.parse_args()
 
-    if set(metrics.keys()) - set(findings.keys()):
+    snapshot = Path(args.snapshot).resolve()
+    if not snapshot.exists():
+        print(f"ERROR: snapshot directory '{snapshot}' does not exist", file=sys.stderr)
+        return 1
+
+    plots = snapshot / "plots"
+    findings_path = snapshot / "per_repo_findings.md"
+
+    findings = parse_findings_per_repo(findings_path)
+    metrics = collect_data(snapshot)
+
+    if not findings:
+        print(
+            f"NOTE: no per_repo_findings.md found at {findings_path} — repo_results.md "
+            "will be generated from metric tables only."
+        )
+    elif set(metrics.keys()) - set(findings.keys()):
         missing = set(metrics.keys()) - set(findings.keys())
         print(f"WARNING: {len(missing)} repos have no entry in per_repo_findings.md: {sorted(missing)}")
 
@@ -269,19 +298,19 @@ def main() -> int:
 
     for repo, d in metrics.items():
         slug = file_slug(repo)
-        folder = SNAPSHOT / slug
+        folder = snapshot / slug
         folder.mkdir(exist_ok=True)
 
         # Move data.json
-        src_json = SNAPSHOT / f"{slug}_data.json"
+        src_json = snapshot / f"{slug}_data.json"
         dst_json = folder / "data.json"
         if src_json.exists() and not dst_json.exists():
             shutil.move(src_json, dst_json)
             moved_jsons += 1
 
         # Move plots: <slug>_<kind>.png  →  <kind>.png
-        if PLOTS.exists():
-            for plot in sorted(PLOTS.glob(f"{slug}_*.png")):
+        if plots.exists():
+            for plot in sorted(plots.glob(f"{slug}_*.png")):
                 kind = plot.stem[len(slug) + 1 :]
                 dst_plot = folder / f"{kind}.png"
                 if not dst_plot.exists():
@@ -294,11 +323,12 @@ def main() -> int:
         written_md += 1
 
     # Clean up empty plots/ folder if all moved
-    if PLOTS.exists() and not any(PLOTS.iterdir()):
-        PLOTS.rmdir()
+    if plots.exists() and not any(plots.iterdir()):
+        plots.rmdir()
 
     print(
-        f"done — folders={len(metrics)} jsons_moved={moved_jsons} "
+        f"done — snapshot={snapshot.relative_to(ROOT) if snapshot.is_relative_to(ROOT) else snapshot} "
+        f"folders={len(metrics)} jsons_moved={moved_jsons} "
         f"plots_moved={moved_plots} md_written={written_md}"
     )
     return 0
