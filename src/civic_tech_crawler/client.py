@@ -90,12 +90,27 @@ class GitHubClient:
     def _get_stats_endpoint(self, slug: str, endpoint: str) -> list | None:
         """Fetch a /stats/{endpoint} JSON payload with iterative 202-retry.
 
-        GitHub returns 202 while computing stats. We retry with linear backoff
-        (3s, 6s, 9s, ...). Returns the parsed JSON list, or None if the endpoint
-        never finished computing or returned an error.
+        GitHub returns 202 while computing stats and the computation is async,
+        so the first request typically *triggers* the build rather than
+        returning data. For active repositories the build can take 30–180 s.
+        We retry with exponential backoff capped at 30 s per attempt, using a
+        budget of at least 10 attempts (≈ 225 s total at default retry_delay
+        = 3 s) regardless of the user-configured max_retries — that knob
+        governs general HTTP retry, not the longer stats build wait.
+
+        Returns the parsed JSON list, or None if the endpoint never finished
+        computing or returned an error.
         """
+        # Earlier versions used `delay = retry_delay * attempt` with the
+        # general max_retries (=5 by default), giving a 45 s budget that was
+        # too short on the May 2026 crawl: GitHub returned 202 for ≥45 s on
+        # 32 of 37 repos, so weekly_commits was cached as [] and burstiness
+        # could not be computed. The longer budget here restores the March
+        # 2026 baseline coverage (29/29 populated).
         url = f"/repos/{slug}/stats/{endpoint}"
-        for attempt in range(1, self._max_retries + 1):
+        attempts = max(self._max_retries, 10)
+        max_backoff = 30.0
+        for attempt in range(1, attempts + 1):
             self._rate_limiter.wait_if_needed()
             try:
                 resp = self._httpx.get(url)
@@ -105,10 +120,10 @@ class GitHubClient:
             if resp.status_code == 200:
                 return resp.json()
             if resp.status_code == 202:
-                delay = self._retry_delay * attempt
+                delay = min(self._retry_delay * (2 ** (attempt - 1)), max_backoff)
                 logger.info(
                     "stats/%s for %s computing (attempt %d/%d), waiting %.1fs...",
-                    endpoint, slug, attempt, self._max_retries, delay,
+                    endpoint, slug, attempt, attempts, delay,
                 )
                 time.sleep(delay)
                 continue
@@ -116,7 +131,7 @@ class GitHubClient:
                 "stats/%s for %s returned HTTP %d", endpoint, slug, resp.status_code
             )
             return None
-        logger.warning("stats/%s for %s still 202 after %d attempts", endpoint, slug, self._max_retries)
+        logger.warning("stats/%s for %s still 202 after %d attempts", endpoint, slug, attempts)
         return None
 
     def get_stats_contributors(
