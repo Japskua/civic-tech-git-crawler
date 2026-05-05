@@ -73,7 +73,58 @@ Use `repo_metrics.total_commits` when you want the canonical per-repo count; use
 | `issue_summary.csv` | 38 | Aggregated issue analytics |
 | `cross_project_overlap.csv` | 536 | Contributors active in multiple crawled repos |
 | `full_results.json` | — | Complete nested data for all 38 repositories (52 MB) |
-| `<repo>_data.json` × 38 | — | Per-repository cache files |
+| `<owner>_<repo>/data.json` × 38 | — | Per-repository cache file, inside the repo's own folder |
+
+### Per-repository folders (38)
+
+Each repository has its own folder named `<owner>_<repo>/` containing:
+
+- `repo_results.md` — at-a-glance metadata, key metrics table, main finding, and any caveats specific to that repo (e.g. mastodon's right-censored issue cap, your-priorities-app's commit-count discrepancy)
+- `data.json` — full crawler output for the repository
+- 5–6 PNG plots: `growth.png`, `weekly_activity.png`, `lifecycle.png`, `new_contributors.png`, `top_contributors.png`, plus `issue_trends.png` if the repo has issues
+
+To rebuild these folders from a freshly-crawled `output/` (or from the flat layout this folder was generated from), run `python scripts/build_repo_folders.py` after first having `cp -r output/* example_results/may_2026_refresh/` and the analysis scripts.
+
+| Folder | Stars | Commits | Bus factor | Top contributor |
+|---|---:|---:|---:|---|
+| [`CitizensFoundation_your-priorities-app/`](CitizensFoundation_your-priorities-app/repo_results.md) | 142 | 8,011 | 1 | `rbjarnason` |
+| [`CodeForAfrica_Dominion.AFRICA/`](CodeForAfrica_Dominion.AFRICA/repo_results.md) | 2 | 257 | 2 | `kilemensi` |
+| [`CodeForAfrica_GenderGap.AFRICA/`](CodeForAfrica_GenderGap.AFRICA/repo_results.md) | 9 | 207 | 3 | `DavidLemayian` |
+| [`CodeForAfrica_PromiseTracker/`](CodeForAfrica_PromiseTracker/repo_results.md) | 1 | 386 | 1 | `kelvinkipruto` |
+| [`CodeForAfrica_academy.AFRICA/`](CodeForAfrica_academy.AFRICA/repo_results.md) | 0 | 359 | 2 | `kelvinkipruto` |
+| [`CodeForAfrica_actNOW/`](CodeForAfrica_actNOW/repo_results.md) | 4 | 2,111 | 1 | `kilemensi` |
+| [`CodeForAfrica_openAFRICA/`](CodeForAfrica_openAFRICA/repo_results.md) | 32 | 134 | 2 | `thepsalmist` |
+| [`CodeForAfrica_outbreak.AFRICA/`](CodeForAfrica_outbreak.AFRICA/repo_results.md) | 1 | 246 | 2 | `kilemensi` |
+| [`CodeForAfrica_sensors.AFRICA/`](CodeForAfrica_sensors.AFRICA/repo_results.md) | 23 | 1,180 | 3 | `kilemensi` |
+| [`CodeForAfrica_ui/`](CodeForAfrica_ui/repo_results.md) | 2 | 10,966 | 2 | `kilemensi` |
+| [`DemocracyClub_UK-Polling-Stations/`](DemocracyClub_UK-Polling-Stations/repo_results.md) | 36 | 8,767 | 2 | `symroe` |
+| [`DemocracyClub_WhoCanIVoteFor/`](DemocracyClub_WhoCanIVoteFor/repo_results.md) | 44 | 3,521 | 2 | `symroe` |
+| [`ForumMagnum_ForumMagnum/`](ForumMagnum_ForumMagnum/repo_results.md) | 706 | 52,222 | 4 | `jimrandomh` |
+| [`Significant-Gravitas_AutoGPT/`](Significant-Gravitas_AutoGPT/repo_results.md) | 183,985 | 8,476 | 1 | `waynehamadi` |
+| [`civiform_civiform/`](civiform_civiform/repo_results.md) | 124 | 7,768 | 3 | `gwendolyngoetz` |
+| [`codeforamerica_asap_pdf/`](codeforamerica_asap_pdf/repo_results.md) | 46 | 1,024 | 1 | `lkacenja` |
+| [`codeforamerica_cmr-maryland-eligibility-determination/`](codeforamerica_cmr-maryland-eligibility-determination/repo_results.md) | 1 | 9 | 1 | `victorSauceda` |
+| [`codeforamerica_document-transfer-service/`](codeforamerica_document-transfer-service/repo_results.md) | 3 | 27 | 1 | `jamesiarmes` |
+| [`codeforamerica_form-flow/`](codeforamerica_form-flow/repo_results.md) | 4 | 661 | 1 | `cram-cfa` |
+| [`codeforamerica_honeycrisp-gem/`](codeforamerica_honeycrisp-gem/repo_results.md) | 7 | 1,108 | 4 | `hartsick` |
+| [`codeforamerica_pya/`](codeforamerica_pya/repo_results.md) | 2 | 110 | 2 | `DrewProebstel` |
+| [`codeforamerica_recordtrac/`](codeforamerica_recordtrac/repo_results.md) | 60 | 2,570 | 2 | `criscristina` |
+| [`codeforamerica_tax-benefits-backend/`](codeforamerica_tax-benefits-backend/repo_results.md) | 3 | 358 | 3 | `jamesiarmes` |
+| [`codeforamerica_tofu-modules-aws-serverless-database/`](codeforamerica_tofu-modules-aws-serverless-database/repo_results.md) | 0 | 67 | 1 | `jamesiarmes` |
+| [`codeforamerica_vita-min/`](codeforamerica_vita-min/repo_results.md) | 34 | 7,232 | 4 | `bytheway875` |
+| [`codeforjapan_BirdXplorer/`](codeforjapan_BirdXplorer/repo_results.md) | 11 | 754 | 2 | `yu23ki14` |
+| [`fvialibre_edia/`](fvialibre_edia/repo_results.md) | 6 | 60 | 1 | `LMartinezEXEX` |
+| [`fvialibre_heseia-sentence-bias-dataset/`](fvialibre_heseia-sentence-bias-dataset/repo_results.md) | 0 | 9 | 1 | `guidoivetta` |
+| [`iiab_iiab/`](iiab_iiab/repo_results.md) | 1,855 | 12,100 | 1 | `holta` |
+| [`luftdata_luftdata.se/`](luftdata_luftdata.se/repo_results.md) | 3 | 105 | 1 | `ebner` |
+| [`markov-root_atlas/`](markov-root_atlas/repo_results.md) | 9 | 110 | 1 | `git@xfe.li` |
+| [`mastodon_mastodon/`](mastodon_mastodon/repo_results.md) | 49,924 | 21,215 | 3 | `Gargron` |
+| [`meshtastic_Meshtastic-Android/`](meshtastic_Meshtastic-Android/repo_results.md) | 1,584 | 2,170 | 1 | `jamesarich` |
+| [`meshtastic_firmware/`](meshtastic_firmware/repo_results.md) | 7,411 | 7,768 | 3 | `Jorropo` |
+| [`meshtastic_web/`](meshtastic_web/repo_results.md) | 757 | 2,170 | 1 | `danditomaso` |
+| [`mysociety_ceuk-marking/`](mysociety_ceuk-marking/repo_results.md) | 0 | 674 | 1 | `struan` |
+| [`okfde_froide/`](okfde_froide/repo_results.md) | 409 | 7,888 | 2 | `stefanw` |
+| [`openplans_shareabouts/`](openplans_shareabouts/repo_results.md) | 283 | 1,956 | 1 | `mjumbewu` |
 
 ### Weekly activity analysis
 
@@ -107,14 +158,14 @@ Generated by `scripts/statistical_analysis.py output/`.
 
 ### Visualizations
 
-219 PNG plots in `plots/` — six per repository (where data exists):
+219 PNG plots, 5–6 per repository (where data exists), live inside each repo's folder:
 
-- `<repo>_growth.png` — cumulative commits + contributors over time
-- `<repo>_weekly_activity.png` — weekly commit volume
-- `<repo>_lifecycle.png` — contributor lifecycles (first→last commit per person)
-- `<repo>_new_contributors.png` — weekly new-contributor arrivals
-- `<repo>_issue_trends.png` — opens, closes, and backlog size over time (where issues exist)
-- `<repo>_top_contributors.png` — top 20 contributors by commit count
+- `<owner>_<repo>/growth.png` — cumulative commits + contributors over time
+- `<owner>_<repo>/weekly_activity.png` — weekly commit volume
+- `<owner>_<repo>/lifecycle.png` — contributor lifecycles (first→last commit per person)
+- `<owner>_<repo>/new_contributors.png` — weekly new-contributor arrivals
+- `<owner>_<repo>/issue_trends.png` — opens, closes, and backlog size over time (where issues exist)
+- `<owner>_<repo>/top_contributors.png` — top 20 contributors by commit count
 
 ---
 
