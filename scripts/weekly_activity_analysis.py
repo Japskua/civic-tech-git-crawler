@@ -232,28 +232,40 @@ def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame, 
 
 
 def main() -> int:
-    if not CSV_PATH.exists():
-        print(f"ERROR: {CSV_PATH} not found", file=sys.stderr)
-        return 1
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    import argparse
+    parser = argparse.ArgumentParser(description="Weekly activity analysis")
+    parser.add_argument(
+        "output_dir", nargs="?", default=str(REPO_ROOT / "output"),
+        help="Crawler output directory containing contributor_weekly_activity.csv",
+    )
+    args = parser.parse_args()
 
-    df = pd.read_csv(CSV_PATH)
-    print(f"Loaded {len(df):,} rows from {CSV_PATH}")
+    output_dir = Path(args.output_dir).resolve()
+    csv_path = output_dir / "contributor_weekly_activity.csv"
+    out_dir = output_dir / "weekly_activity_analysis"
+
+    if not csv_path.exists():
+        print(f"ERROR: {csv_path} not found", file=sys.stderr)
+        return 1
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    df = pd.read_csv(csv_path)
+    print(f"Loaded {len(df):,} rows from {csv_path}")
 
     print("Computing A: Weekly Elephant Factor...")
     elephant = weekly_elephant(df)
-    elephant.to_csv(OUT_DIR / "weekly_elephant_factor.csv", index=False)
+    elephant.to_csv(out_dir / "weekly_elephant_factor.csv", index=False)
 
     print("Computing B: Churn ratio...")
     churn = churn_ratio(df)
-    churn.to_csv(OUT_DIR / "churn_ratio.csv", index=False)
+    churn.to_csv(out_dir / "churn_ratio.csv", index=False)
 
     print("Computing D: Effort Gini...")
     gini_df = effort_gini(df)
-    gini_df.to_csv(OUT_DIR / "effort_gini.csv", index=False)
+    gini_df.to_csv(out_dir / "effort_gini.csv", index=False)
 
     print("Writing summary.md...")
-    (OUT_DIR / "summary.md").write_text(
+    (out_dir / "summary.md").write_text(
         summary(
             elephant, churn, gini_df,
             total_rows=len(df),
@@ -261,7 +273,7 @@ def main() -> int:
         )
     )
 
-    print(f"\nAll artifacts written to {OUT_DIR}")
+    print(f"\nAll artifacts written to {out_dir}")
     return 0
 
 
