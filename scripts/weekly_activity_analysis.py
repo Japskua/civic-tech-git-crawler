@@ -129,10 +129,14 @@ def effort_gini(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows).sort_values("effort_gini_lines", ascending=False)
 
 
-def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame) -> str:
+def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame, *, total_rows: int, total_contributors: int) -> str:
     lines: list[str] = []
+    n_repos = elephant["repo_full_name"].nunique()
     lines.append("# Weekly Activity Analysis — New Findings\n")
-    lines.append("Derived from `output/contributor_weekly_activity.csv` (12,449 rows, 29 repos, 893 contributors).\n")
+    lines.append(
+        f"Derived from `output/contributor_weekly_activity.csv` "
+        f"({total_rows:,} rows, {n_repos} repos, {total_contributors:,} contributors).\n"
+    )
 
     lines.append("## A. Weekly Elephant Factor (sustainability risk, time-resolved)\n")
     lines.append(
@@ -214,7 +218,7 @@ def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame) 
     lines.append(
         "\n**Lines-vs-commits Gini gap** (how much more unequal is effort than activity?):\n"
     )
-    lines.append(f"- Mean gap across 29 repos: {gap.mean():+.3f}\n")
+    lines.append(f"- Mean gap across {len(gini_df)} repos: {gap.mean():+.3f}\n")
     lines.append(f"- Max gap (effort much more concentrated than commits): "
                  f"`{gini_df.loc[gap.idxmax(), 'repo_full_name']}` at {gap.max():+.3f}\n")
     lines.append(f"- Min gap (commits more concentrated than effort): "
@@ -249,7 +253,13 @@ def main() -> int:
     gini_df.to_csv(OUT_DIR / "effort_gini.csv", index=False)
 
     print("Writing summary.md...")
-    (OUT_DIR / "summary.md").write_text(summary(elephant, churn, gini_df))
+    (OUT_DIR / "summary.md").write_text(
+        summary(
+            elephant, churn, gini_df,
+            total_rows=len(df),
+            total_contributors=df["contributor_id"].nunique(),
+        )
+    )
 
     print(f"\nAll artifacts written to {OUT_DIR}")
     return 0
