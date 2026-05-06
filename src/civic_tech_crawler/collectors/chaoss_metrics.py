@@ -554,8 +554,15 @@ def collect_chaoss_metrics(
     person_metrics: list[PersonMetrics],
     temporal_metrics: TemporalMetrics | None,
     repo_metrics: RepoMetrics | None = None,
+    commit_history=None,
 ) -> tuple[ChaossMetrics, list[CorePeripheryContributor]]:
-    """Collect CHAOSS framework metrics and core-periphery classification."""
+    """Collect CHAOSS framework metrics and core-periphery classification.
+
+    If commit_history is provided and GitHub's /stats/commit_activity endpoint
+    is unavailable (typical for active repos whose async build exceeds the
+    retry budget), weekly_commits falls back to the last 52 weekly_snapshots
+    from commit_history so burstiness_cv can still be computed.
+    """
     slug = repo.full_name
     logger.info("Collecting CHAOSS metrics for %s", slug)
 
@@ -570,6 +577,19 @@ def collect_chaoss_metrics(
                 "week_start": week_start,
                 "commits": week.total,
             })
+    elif commit_history is not None and getattr(commit_history, "weekly_snapshots", None):
+        # Fallback: derive trailing-52-week commit counts from commit_history's
+        # GraphQL-derived weekly snapshots. Same metric, more reliable source.
+        snaps = list(commit_history.weekly_snapshots)[-52:]
+        weekly_commits = [
+            {"week_start": s.week_start, "commits": int(s.total_commits)}
+            for s in snaps
+        ]
+        logger.info(
+            "%s: stats/commit_activity unavailable, derived %d weekly commit "
+            "buckets from commit_history fallback",
+            slug, len(weekly_commits),
+        )
 
     # --- Change Request Acceptance Ratio ---
     acceptance_ratio: float | None = None
