@@ -67422,7 +67422,7 @@
     "total_labels": 10,
     "release_frequency_per_month": 13.03,
     "fork_count": 14,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.84,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -67903,7 +67903,8 @@
         "author": "spompea-cfa",
         "reviewer": "tahsinaislam"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.77
   },
   "crawled_at": "2026-05-04T12:39:23.516551+00:00",
   "core_periphery_contributors": [

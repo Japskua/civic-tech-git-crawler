@@ -2987,7 +2987,7 @@
     "total_labels": 28,
     "release_frequency_per_month": null,
     "fork_count": 1,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.26,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -3297,7 +3297,8 @@
         "author": "anule",
         "reviewer": "hartsick"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.19
   },
   "crawled_at": "2026-05-04T13:00:05.203054+00:00",
   "core_periphery_contributors": [

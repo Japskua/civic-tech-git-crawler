@@ -4667,7 +4667,7 @@
     "total_labels": 15,
     "release_frequency_per_month": null,
     "fork_count": 0,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.91,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -5112,7 +5112,8 @@
         "author": "gertie-sheshe",
         "reviewer": "KhadijaMahanga"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.91
   },
   "crawled_at": "2026-05-04T08:49:09.448902+00:00",
   "core_periphery_contributors": [

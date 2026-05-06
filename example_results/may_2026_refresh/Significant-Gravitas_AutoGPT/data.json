@@ -72780,7 +72780,7 @@
     "total_labels": 153,
     "release_frequency_per_month": 2.79,
     "fork_count": 46243,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.55,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -79282,7 +79282,8 @@
         "author": "majdyz",
         "reviewer": "coderabbitai[bot]"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.66
   },
   "crawled_at": "2026-05-04T21:04:02.686224+00:00",
   "core_periphery_contributors": [

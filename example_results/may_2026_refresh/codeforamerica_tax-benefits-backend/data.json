@@ -2032,7 +2032,7 @@
     "total_labels": 10,
     "release_frequency_per_month": null,
     "fork_count": 0,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.71,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -2641,7 +2641,8 @@
         "author": "tahsinaislam",
         "reviewer": "anisharamnani"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.74
   },
   "crawled_at": "2026-05-04T12:47:01.273330+00:00",
   "core_periphery_contributors": [

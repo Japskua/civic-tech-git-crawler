@@ -1681,7 +1681,7 @@
     "total_labels": 13,
     "release_frequency_per_month": null,
     "fork_count": 3,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.89,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -1930,7 +1930,8 @@
         "author": "KhadijaMahanga",
         "reviewer": "kilemensi"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.64
   },
   "crawled_at": "2026-05-04T09:10:32.138933+00:00",
   "core_periphery_contributors": [

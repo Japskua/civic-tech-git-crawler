@@ -37707,7 +37707,7 @@
     "total_labels": 41,
     "release_frequency_per_month": 3.55,
     "fork_count": 451,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.58,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -39789,7 +39789,8 @@
         "author": "jamesarich",
         "reviewer": "copilot-swe-agent[bot]"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.58
   },
   "crawled_at": "2026-05-04T13:47:36.362889+00:00",
   "core_periphery_contributors": [

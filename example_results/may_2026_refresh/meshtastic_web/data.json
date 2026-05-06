@@ -6123,7 +6123,7 @@
     "total_labels": 21,
     "release_frequency_per_month": 0.75,
     "fork_count": 275,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.04,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -7217,7 +7217,8 @@
         "author": "github-actions[bot]",
         "reviewer": "philon-"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.17
   },
   "crawled_at": "2026-05-04T14:01:19.564122+00:00",
   "core_periphery_contributors": [

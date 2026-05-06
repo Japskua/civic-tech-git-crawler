@@ -3117,7 +3117,7 @@
     "total_labels": 15,
     "release_frequency_per_month": null,
     "fork_count": 10,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.22,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -3583,7 +3583,8 @@
         "author": "nerdlet",
         "reviewer": "kilemensi"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.39
   },
   "crawled_at": "2026-05-04T12:12:50.712048+00:00",
   "core_periphery_contributors": [

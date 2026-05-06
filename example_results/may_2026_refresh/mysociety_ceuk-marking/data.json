@@ -1233,7 +1233,7 @@
     "total_labels": 15,
     "release_frequency_per_month": null,
     "fork_count": 0,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.91,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -1423,7 +1423,8 @@
         "author": "struan",
         "reviewer": "zarino"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.09
   },
   "crawled_at": "2026-05-04T23:12:54.336367+00:00",
   "core_periphery_contributors": [

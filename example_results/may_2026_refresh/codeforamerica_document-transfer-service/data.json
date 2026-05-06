@@ -250,7 +250,7 @@
     "total_labels": 10,
     "release_frequency_per_month": null,
     "fork_count": 1,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.47,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -359,7 +359,8 @@
         "author": "jamesiarmes",
         "reviewer": "enyia21"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.47
   },
   "crawled_at": "2026-05-04T12:04:55.271490+00:00",
   "core_periphery_contributors": [

@@ -689,7 +689,7 @@
     "total_labels": 9,
     "release_frequency_per_month": null,
     "fork_count": 4,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.26,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -831,7 +831,8 @@
         "author": "nerdlet",
         "reviewer": "DavidLemayian"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.27
   },
   "crawled_at": "2026-05-04T09:01:36.791988+00:00",
   "core_periphery_contributors": [

@@ -220142,7 +220142,8 @@
         "author": "mjankowski",
         "reviewer": "ClearlyClaire"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.76
   },
   "crawled_at": "2026-05-04T22:19:05.842375+00:00",
   "core_periphery_contributors": [

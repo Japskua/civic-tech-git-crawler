@@ -7686,7 +7686,7 @@
     "total_labels": 19,
     "release_frequency_per_month": null,
     "fork_count": 99,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.56,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -7980,7 +7980,8 @@
         "author": "pajowu",
         "reviewer": "krmax44"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.21
   },
   "crawled_at": "2026-05-04T22:32:05.867347+00:00",
   "core_periphery_contributors": [

@@ -3525,7 +3525,7 @@
     "total_labels": 13,
     "release_frequency_per_month": 5.0,
     "fork_count": 0,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.95,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -3766,7 +3766,8 @@
         "author": "DrewProebstel",
         "reviewer": "mrotondo"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.95
   },
   "crawled_at": "2026-05-04T12:51:46.476313+00:00",
   "core_periphery_contributors": [

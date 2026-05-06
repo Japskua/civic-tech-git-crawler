@@ -3,7 +3,7 @@ total_commits,38,0.5401,0.0,False
 num_developers,38,0.51,0.0,False
 bus_factor,38,0.7692,3e-06,False
 bus_factor_no_bots,38,0.7932,8e-06,False
-burstiness_cv,5,0.9113,0.475709,True
+burstiness_cv,38,0.9702,0.397325,True
 herfindahl_hirschman_index,38,0.901,0.002723,False
 hhi_no_bots,38,0.8933,0.00166,False
 stale_issue_ratio,27,0.7376,1.4e-05,False

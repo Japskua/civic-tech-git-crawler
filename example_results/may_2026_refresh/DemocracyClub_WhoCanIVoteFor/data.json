@@ -17879,7 +17879,7 @@
     "total_labels": 23,
     "release_frequency_per_month": null,
     "fork_count": 35,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.05,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [
@@ -18409,7 +18409,8 @@
         "author": "awdem",
         "reviewer": "chris48s"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.16
   },
   "crawled_at": "2026-05-04T08:37:05.876783+00:00",
   "core_periphery_contributors": [

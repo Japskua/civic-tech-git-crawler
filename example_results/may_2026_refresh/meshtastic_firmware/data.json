@@ -61273,7 +61273,7 @@
     "total_labels": 38,
     "release_frequency_per_month": 3.5,
     "fork_count": 2309,
-    "burstiness_cv": 0.45,
+    "burstiness_cv": 0.4,
     "burstiness_mean": 61.52,
     "burstiness_std": 27.94,
     "defect_resolution_durations_days": [
@@ -63703,7 +63703,8 @@
         "author": "jp-bennett",
         "reviewer": "mverch67"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.4
   },
   "crawled_at": "2026-05-04T14:52:41.927699+00:00",
   "core_periphery_contributors": [

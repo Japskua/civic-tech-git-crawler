@@ -26742,7 +26742,7 @@
     "total_labels": 13,
     "release_frequency_per_month": 0.89,
     "fork_count": 131,
-    "burstiness_cv": 0.91,
+    "burstiness_cv": 0.89,
     "burstiness_mean": 29.87,
     "burstiness_std": 27.08,
     "defect_resolution_durations_days": [
@@ -29308,7 +29308,8 @@
         "author": "Ark74",
         "reviewer": "holta"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.22
   },
   "crawled_at": "2026-05-04T19:13:22.012921+00:00",
   "core_periphery_contributors": [

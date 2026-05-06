@@ -9476,7 +9476,7 @@
     "total_labels": 20,
     "release_frequency_per_month": null,
     "fork_count": 2,
-    "burstiness_cv": 1.2,
+    "burstiness_cv": 0.88,
     "burstiness_mean": 19.88,
     "burstiness_std": 23.96,
     "defect_resolution_durations_days": [
@@ -10354,7 +10354,8 @@
         "author": "koechkevin",
         "reviewer": "kelvinkipruto"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 2.74
   },
   "crawled_at": "2026-05-04T11:59:56.747471+00:00",
   "core_periphery_contributors": [

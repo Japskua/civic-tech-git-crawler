@@ -98978,7 +98978,7 @@
     "total_labels": 36,
     "release_frequency_per_month": 17.39,
     "fork_count": 151,
-    "burstiness_cv": 0.52,
+    "burstiness_cv": 0.47,
     "burstiness_mean": 104.77,
     "burstiness_std": 54.56,
     "defect_resolution_durations_days": [],
@@ -99195,7 +99195,8 @@
         "author": "b0b3rt",
         "reviewer": "Discordius"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.78
   },
   "crawled_at": "2026-05-04T20:05:59.315560+00:00",
   "core_periphery_contributors": [

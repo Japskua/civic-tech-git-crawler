@@ -1345,7 +1345,7 @@
     "total_labels": 10,
     "release_frequency_per_month": null,
     "fork_count": 4,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.09,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -1446,7 +1446,8 @@
         "author": "devin-ai-integration[bot]",
         "reviewer": "yu23ki14"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.13
   },
   "crawled_at": "2026-05-04T13:20:04.199451+00:00",
   "core_periphery_contributors": [

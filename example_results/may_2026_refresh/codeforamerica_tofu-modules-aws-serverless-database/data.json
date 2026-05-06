@@ -572,7 +572,7 @@
     "total_labels": 9,
     "release_frequency_per_month": 0.72,
     "fork_count": 0,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.82,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -709,7 +709,8 @@
         "author": "github-actions[bot]",
         "reviewer": "jamesiarmes"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.82
   },
   "crawled_at": "2026-05-04T12:42:37.126013+00:00",
   "core_periphery_contributors": [

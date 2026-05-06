@@ -50011,7 +50011,7 @@
     "total_labels": 32,
     "release_frequency_per_month": null,
     "fork_count": 29,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.08,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -50404,7 +50404,8 @@
         "author": "polling-bot-4000",
         "reviewer": "awdem"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 1.19
   },
   "crawled_at": "2026-05-04T08:22:29.651981+00:00",
   "core_periphery_contributors": [

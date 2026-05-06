@@ -171,7 +171,7 @@
     "total_labels": 9,
     "release_frequency_per_month": null,
     "fork_count": 0,
-    "burstiness_cv": null,
+    "burstiness_cv": 0.77,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -220,7 +220,8 @@
         "author": "Aplietexe",
         "reviewer": "guidoivetta"
       }
-    ]
+    ],
+    "burstiness_cv_full_history": 0.77
   },
   "crawled_at": "2026-05-04T08:39:43.670022+00:00",
   "core_periphery_contributors": [

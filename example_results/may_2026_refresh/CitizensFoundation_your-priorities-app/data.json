@@ -3124,7 +3124,7 @@
     "total_labels": 10,
     "release_frequency_per_month": 0.41,
     "fork_count": 38,
-    "burstiness_cv": null,
+    "burstiness_cv": 1.84,
     "burstiness_mean": null,
     "burstiness_std": null,
     "defect_resolution_durations_days": [],
@@ -3168,7 +3168,8 @@
     "core_periphery_ratio": null,
     "network_density": null,
     "avg_degree_centrality": null,
-    "pr_review_edges": []
+    "pr_review_edges": [],
+    "burstiness_cv_full_history": 1.64
   },
   "crawled_at": "2026-05-04T23:05:50.766644+00:00",
   "core_periphery_contributors": [],
