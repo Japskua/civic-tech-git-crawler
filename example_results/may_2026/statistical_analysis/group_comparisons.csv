@@ -9,7 +9,7 @@ Cloud vs No Cloud,total_commits,27,10,1352.0,334.5,170.0,0.238,0.2593,small
 Cloud vs No Cloud,num_developers,27,10,11.0,14.5,146.5,0.7064,0.0852,negligible
 Cloud vs No Cloud,bus_factor_no_bots,27,10,2.0,1.0,171.5,0.1875,0.2704,small
 Cloud vs No Cloud,health_percentage,27,10,50.0,46.0,151.5,0.576,0.1222,negligible
-Cloud vs No Cloud,hhi_no_bots,27,10,3979.4,5373.2,105.0,0.3125,-0.2222,small
+Cloud vs No Cloud,hhi_no_bots,27,10,3979.4,5373.2,104.0,0.2963,-0.2296,small
 AI/ML vs No AI/ML,num_developers,3,34,4.0,11.0,44.0,0.7172,-0.1373,negligible
 AI/ML vs No AI/ML,bus_factor_no_bots,3,34,1.0,2.0,48.0,0.8816,-0.0588,negligible
 AI/ML vs No AI/ML,health_percentage,3,34,37.0,50.0,31.0,0.2675,-0.3922,medium

@@ -34,9 +34,9 @@ A Reykjavík-based participatory democracy platform (HTML, started 2014). The cr
 | Mean weekly top-contributor share | 100.0% |
 | % weeks dominated by one contributor (≥50%) | 100.0% |
 | % solo weeks (≥99.9% from one person) | 100.0% |
-| Lines added / removed | 911,556 / 870,284 |
-| Net LOC delta | 41,272 |
-| Overall churn ratio | 0.49 |
+| Lines added / removed | 2,850,781 / 2,642,299 |
+| Net LOC delta | 208,482 |
+| Overall churn ratio | 0.48 |
 | Community profile (health %) | 37 |
 | Issues (total / open / closed) | 34 / 13 / 21 |
 | Median issue first response (h) | 24.80 |
@@ -47,7 +47,7 @@ A Reykjavík-based participatory democracy platform (HTML, started 2014). The cr
 
 ## Things to note
 
-- **Commit-count discrepancy.** `repo_metrics.total_commits` reports 8,018 but `contributor_weekly_activity` only attributes 600 commits to identifiable authors (a 13.4× gap). Likely cause: a large fraction of history lives on non-default branches or is squash-merged. Use `repo_metrics.total_commits` for population-level counts; use the CWA sum when contributor attribution matters.
+- **Commit-count discrepancy.** `repo_metrics.total_commits` reports 8,018 but `contributor_weekly_activity` only attributes 1,000 commits to identifiable authors (a 8.0× gap). Likely cause: a large fraction of history lives on non-default branches or is squash-merged. Use `repo_metrics.total_commits` for population-level counts; use the CWA sum when contributor attribution matters.
 - **Extreme effort concentration** (HHI 10,000 on a 0–10,000 scale, bus factor 1). Removing the top contributor would substantially halt activity.
 
 ## Files in this folder

@@ -1,12 +1,12 @@
 # Weekly Activity Analysis — New Findings
-Derived from `output/contributor_weekly_activity.csv` (22,333 rows, 36 repos, 2,340 contributors).
+Derived from `output/contributor_weekly_activity.csv` (22,486 rows, 37 repos, 2,344 contributors).
 ## A. Weekly Elephant Factor (sustainability risk, time-resolved)
 For each *week* a repo had any code change, we compute the share of lines added+removed that came from the single busiest contributor. 'Elephant weeks' are weeks where ≥50% of the LOC moved through one person. 'Single-contributor weeks' are weeks where ≥99.9% came from one person (effectively solo).
 **Most elephant-dominated repos** (highest share of weeks dominated by one contributor):
 - `CitizensFoundation/your-priorities-app`: mean top-share 100.0%, 100% of weeks ≥50%, 100% solo
+- `codeforamerica/document-transfer-service`: mean top-share 100.0%, 100% of weeks ≥50%, 100% solo
 - `fvialibre/heseia-sentence-bias-dataset`: mean top-share 100.0%, 100% of weeks ≥50%, 100% solo
 - `codeforamerica/cmr-maryland-eligibility-determination`: mean top-share 100.0%, 100% of weeks ≥50%, 100% solo
-- `codeforamerica/document-transfer-service`: mean top-share 100.0%, 100% of weeks ≥50%, 100% solo
 - `markov-root/atlas`: mean top-share 99.8%, 100% of weeks ≥50%, 88% solo
 
 **Most collaborative repos** (lowest top-share — effort spread across people):
@@ -30,7 +30,7 @@ For each *week* a repo had any code change, we compute the share of lines added+
 - `DemocracyClub/UK-Polling-Stations`: overall churn 0.61, 29% weeks deletion-heavy
 - `codeforamerica/recordtrac`: overall churn 0.52, 20% weeks deletion-heavy
 - `CodeForAfrica/sensors.AFRICA`: overall churn 0.51, 23% weeks deletion-heavy
-- `CitizensFoundation/your-priorities-app`: overall churn 0.49, 11% weeks deletion-heavy
+- `CitizensFoundation/your-priorities-app`: overall churn 0.48, 10% weeks deletion-heavy
 - `CodeForAfrica/GenderGap.AFRICA`: overall churn 0.48, 15% weeks deletion-heavy
 
 **Lowest-churn repos** (pure growth, little cleanup):
@@ -38,7 +38,7 @@ For each *week* a repo had any code change, we compute the share of lines added+
 - `codeforamerica/document-transfer-service`: overall churn 0.10, +7,810 / −838
 - `codeforamerica/tofu-modules-aws-serverless-database`: overall churn 0.13, +2,849 / −440
 - `codeforjapan/BirdXplorer`: overall churn 0.18, +87,107 / −19,743
-- `markov-root/atlas`: overall churn 0.21, +24,925 / −6,643
+- `mysociety/ceuk-marking`: overall churn 0.19, +62,746 / −14,454
 
 ## D. Effort Gini Coefficient (inequality of contribution)
 Gini of `lines_changed` per contributor per repo. 0 = everyone contributed equally. 1 = one person did everything. This is the **effort-weighted** complement to the existing count-based bus factor / Elephant Factor metrics.
@@ -57,7 +57,7 @@ Gini of `lines_changed` per contributor per repo. 0 = everyone contributed equal
 - `CodeForAfrica/openAFRICA`: Gini(lines) 0.63, 8 contributors, top1 share 46%
 
 **Lines-vs-commits Gini gap** (how much more unequal is effort than activity?):
-- Mean gap across 36 repos: +0.054
+- Mean gap across 37 repos: +0.052
 - Max gap (effort much more concentrated than commits): `codeforamerica/honeycrisp-gem` at +0.189
 - Min gap (commits more concentrated than effort): `CodeForAfrica/actNOW` at -0.084
 

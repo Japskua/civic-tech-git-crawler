@@ -3,8 +3,8 @@ Mature (≥6.3y) vs Young (<6.3y),num_developers,19,18,27.0,5.0,265.5,0.0042,0.5
 Mature (≥6.3y) vs Young (<6.3y),total_commits,19,18,3521.0,638.5,258.0,0.0086,0.5088,large
 Mature (≥6.3y) vs Young (<6.3y),bus_factor,19,18,2.0,1.0,233.0,0.0436,0.3626,medium
 Mature (≥6.3y) vs Young (<6.3y),bus_factor_no_bots,19,18,2.0,1.0,236.0,0.0359,0.3801,medium
-Mature (≥6.3y) vs Young (<6.3y),burstiness_cv,19,17,1.12,0.88,204.0,0.1831,0.2632,small
-Mature (≥6.3y) vs Young (<6.3y),hhi_no_bots,19,18,3185.6,5206.3,103.0,0.04,-0.3977,medium
+Mature (≥6.3y) vs Young (<6.3y),burstiness_cv,19,18,1.12,0.89,215.5,0.1811,0.2602,small
+Mature (≥6.3y) vs Young (<6.3y),hhi_no_bots,19,18,3185.6,5206.3,104.0,0.0431,-0.3918,medium
 Mature (≥6.3y) vs Young (<6.3y),stale_issue_ratio,16,10,0.9928,0.7496,107.5,0.1429,0.3438,medium
 Mature (≥6.3y) vs Young (<6.3y),health_percentage,19,18,50.0,46.0,221.0,0.1242,0.2924,small
 Mature (≥6.3y) vs Young (<6.3y),core_contributor_count,19,18,1.0,1.0,207.0,0.2687,0.2105,small

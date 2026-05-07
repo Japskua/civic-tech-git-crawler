@@ -2,7 +2,7 @@ repo_full_name,active_weeks,total_added,total_removed,net_loc_delta,overall_chur
 DemocracyClub/UK-Polling-Stations,415,6297063,9733304,-3436241,0.607,0.436,0.427,29.4
 codeforamerica/recordtrac,89,333219,366883,-33664,0.524,0.42,0.418,20.2
 CodeForAfrica/sensors.AFRICA,118,388122,403490,-15368,0.51,0.403,0.441,22.9
-CitizensFoundation/your-priorities-app,54,911556,870284,41272,0.488,0.396,0.467,11.1
+CitizensFoundation/your-priorities-app,71,2850781,2642299,208482,0.481,0.406,0.467,9.9
 CodeForAfrica/GenderGap.AFRICA,53,88041,80564,7477,0.478,0.384,0.44,15.1
 codeforamerica/asap_pdf,39,164890,149035,15855,0.475,0.355,0.353,15.4
 CodeForAfrica/Dominion.AFRICA,52,107875,89352,18523,0.453,0.454,0.5,19.2
@@ -31,6 +31,7 @@ CodeForAfrica/actNOW,207,15591,5284,10307,0.253,0.475,0.5,1.0
 codeforamerica/cmr-maryland-eligibility-determination,8,3621,1156,2465,0.242,0.294,0.348,0.0
 codeforamerica/tax-benefits-backend,61,10896,3176,7720,0.226,0.223,0.208,1.6
 markov-root/atlas,8,24925,6643,18282,0.21,0.309,0.337,12.5
+mysociety/ceuk-marking,109,62746,14454,48292,0.187,0.204,0.136,6.4
 codeforjapan/BirdXplorer,85,87107,19743,67364,0.185,0.194,0.149,4.7
 codeforamerica/tofu-modules-aws-serverless-database,15,2849,440,2409,0.134,0.2,0.239,6.7
 codeforamerica/document-transfer-service,9,7810,838,6972,0.097,0.146,0.103,0.0

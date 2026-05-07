@@ -390,7 +390,7 @@ The [`example_results/`](example_results/) directory contains three full crawl s
 |---|---:|---|---:|---|---|
 | [`example_results/`](example_results/) (March 2026 baseline) | 29 | 13 March 2026 | ~70k | Flat: one `<owner>_<repo>_data.json` per repo | Reproducing the prior n=29 analysis (preserved here for historical comparison; the canonical paper now uses the May 2026 dataset below) |
 | [`example_results/april_2026_refresh/`](example_results/april_2026_refresh/) | 29 | 20 April 2026 | 80,807 | Flat | Reproducing the prior n=29 weekly LOC analysis — first snapshot with `lines_added` / `lines_removed` columns |
-| [`example_results/may_2026/`](example_results/may_2026/) | **37** | 5–6 May 2026 | 178,099 (repo_metrics) / 160,959 (CWA) | **One folder per repo** | **Canonical dataset for `paper_draft.md`.** Adds 8 larger and older civic-tech projects (mastodon, ForumMagnum, okfde/froide at 15 years, openplans/shareabouts, codeforamerica/recordtrac, CodeForAfrica/actNOW, CitizensFoundation/your-priorities-app, mysociety/ceuk-marking) over the prior n=29 sample |
+| [`example_results/may_2026/`](example_results/may_2026/) | **37** | 5–6 May 2026 | 178,099 (repo_metrics) / 162,033 (CWA) | **One folder per repo** | **Canonical dataset for `paper_draft.md`.** Adds 8 larger and older civic-tech projects (mastodon, ForumMagnum, okfde/froide at 15 years, openplans/shareabouts, codeforamerica/recordtrac, CodeForAfrica/actNOW, CitizensFoundation/your-priorities-app, mysociety/ceuk-marking) over the prior n=29 sample |
 
 ### Browsing the May 2026 dataset (n=37)
 

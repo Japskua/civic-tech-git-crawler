@@ -31,11 +31,11 @@ Combined with the original 29 civic-tech projects this gives n=37 spanning 16 or
 total_repositories         : 37
 unique_organisations       : 16
 unique_primary_languages   : 16
-total_contributors         : 702
-  human_contributors       : 653
+total_contributors         : 703
+  human_contributors       : 654
   bot_contributors         : 49     (6.98% of population)
 total_commits (repo)       : 178,099
-total_commits (CWA)        : 160,959
+total_commits (CWA)        : 162,033
 total_stars                : 63,564
 total_forks                : 11,308
 repos_with_ci_cd           : 31 / 37   (84%)
@@ -82,14 +82,14 @@ This is the most important result of the n=37 expansion, both substantively and 
 
 That correlation was computed on n=17 — the only repos in the n=29 sample for which both metrics were populated. Burstiness coverage was limited because GitHub's `/stats/commit_activity` endpoint is asynchronously computed and frequently times out; only 17 of 29 repos returned in time. The 17 were not a random subset — they were the ones GitHub happened to have stats cached for, which correlates with project activity.
 
-In this snapshot we recompute burstiness from `weekly_snapshots.csv` (derived from a separate GraphQL bulk commit fetch), raising coverage to 36 of 37. Re-examining the burstiness ↔ stale-issue-ratio correlation:
+In this snapshot we recompute burstiness from `weekly_snapshots.csv` (derived from a separate GraphQL bulk commit fetch), raising coverage to 37 of 37. Re-examining the burstiness ↔ stale-issue-ratio correlation:
 
 | Sample | Coverage | n pairs | ρ (zero-order) | p | FDR? | ρ partial | p partial |
 |---|---:|---:|---:|---:|---|---:|---:|
 | n=29 paper | /stats endpoint | 17 | 0.685 | 0.002 | Yes | 0.553 | (paper) |
-| n=37 recomputed | weekly_snapshots | 25 | **0.439** | 0.028 | **No** | **0.380** | 0.061 |
+| n=37 recomputed | weekly_snapshots | 26 | **0.444** | 0.023 | **No** | **0.393** | 0.047 |
 
-The relationship persists in direction and remains significant under uncorrected α=0.05 testing, but **it does not survive Benjamini–Hochberg FDR correction at the wider sample, and the partial correlation borders on non-significance.** The 8 repositories that gained burstiness measurements through the recompute carry weaker burstiness↔stale signal than the original 17 — consistent with positive selection bias in the original paper: the repos GitHub had cached stats for were disproportionately those with the strongest burstiness↔stale relationship.
+The relationship persists in direction and remains significant under uncorrected α=0.05 testing, but **it does not survive Benjamini–Hochberg FDR correction at the wider sample, and the partial correlation is borderline at uncorrected α=0.05.** The 8 repositories that gained burstiness measurements through the recompute carry weaker burstiness↔stale signal than the original 17 — consistent with positive selection bias in the original paper: the repos GitHub had cached stats for were disproportionately those with the strongest burstiness↔stale relationship.
 
 This is not a refutation of the original finding. The relationship is real and moderate (ρ ≈ 0.44 is well above zero), and it survives partial-correlation controls without sign reversal. But the original ρ=0.685 should be interpreted as an upper bound conditional on a biased subset, not a population estimate.
 
@@ -151,7 +151,7 @@ Below ~5,000 commits the line-Gini distribution flattens out: the 5 most equal r
 
 ### 3.7 Weekly elephant factor: 83% of active weeks are dominated by one contributor
 
-Aggregated across 22,333 contributor-weeks at n=37:
+Aggregated across 22,486 contributor-weeks at n=37:
 
 > **83% of active weeks dataset-wide had a single contributor responsible for ≥50% of the code change.**
 
@@ -187,7 +187,7 @@ A second column, `burstiness_cv_full_history`, applies the same CV computation t
 
 ### 4.3 The two `total_commits` figures
 
-`repo_metrics.total_commits` (178,099) and the sum of `contributor_weekly_activity.commits` (160,959) differ by ~10% on this sample. Most of the gap is a single repo: `CitizensFoundation/your-priorities-app` reports 8,011 commits via repo_metrics but only 800 attributable in CWA. This 10× discrepancy suggests a non-trivial fraction of commits live on non-default branches and are squash-merged at unattributable points. For analyses where contributor attribution matters (effort Gini, weekly elephant factor, partial correlations on contributor-derived metrics), use the CWA-derived counts. For population-level commit volume, use `repo_metrics.total_commits`.
+`repo_metrics.total_commits` (178,099) and the sum of `contributor_weekly_activity.commits` (162,033) differ by ~9% on this sample. Most of the gap is a single repo: `CitizensFoundation/your-priorities-app` reports 8,018 commits via repo_metrics but only 1,000 attributable in CWA. This 8× discrepancy suggests a non-trivial fraction of commits live on non-default branches and are squash-merged at unattributable points. For analyses where contributor attribution matters (effort Gini, weekly elephant factor, partial correlations on contributor-derived metrics), use the CWA-derived counts. For population-level commit volume, use `repo_metrics.total_commits`.
 
 ### 4.4 Per-repository data freshness
 
@@ -208,13 +208,13 @@ The 37 repositories were chosen to represent civic technology, but several judgm
 Every metric is derived from GitHub's API. Projects that mirror to GitHub but develop primarily on Codeberg, GitLab, or self-hosted Forgejo would be misrepresented; their bus-factor and elephant-factor would look artificially extreme.
 
 ### 5.3 Bot detection is heuristic
-The `is_bot` flag is set by login-pattern matching against 49 of 702 contributors (7%). This catches the major automation services but will miss organisation-specific bots that don't follow the pattern, and may miscategorise human accounts whose username happens to match. The bot-impact analyses in §3.2 are robust to a few mis-classifications but per-repo claims should account for this.
+The `is_bot` flag is set by login-pattern matching against 49 of 703 contributors (7%). This catches the major automation services but will miss organisation-specific bots that don't follow the pattern, and may miscategorise human accounts whose username happens to match. The bot-impact analyses in §3.2 are robust to a few mis-classifications but per-repo claims should account for this.
 
 ### 5.4 Issue cap censors mastodon
 Mastodon's issue analytics is right-censored at 5,000 issues. Any per-repo analysis that uses `total_issues`, `closed_issues`, `unique_openers`, or `unique_closers` for mastodon should treat those values as lower bounds, not exact counts.
 
-### 5.5 The 178,099 ≠ 160,959 commit discrepancy
-The 10% gap between the two commit-count estimators is documented in §4.3. Most of the discrepancy is `CitizensFoundation/your-priorities-app` alone (8,011 vs 800). This is flagged but not investigated in this snapshot.
+### 5.5 The 178,099 ≠ 162,033 commit discrepancy
+The 10% gap between the two commit-count estimators is documented in §4.3. Most of the discrepancy is `CitizensFoundation/your-priorities-app` alone (8,018 vs 1,000). This is flagged but not investigated in this snapshot.
 
 ### 5.6 The burstiness recompute changes the metric, slightly
 Although the recomputed `burstiness_cv` agrees with the original `/stats/commit_activity`-derived metric within ±0.07 in 4 of 5 cases where both are available, the two are not strictly identical. Replication of the n=29 paper's burstiness numbers would require either the original `/stats` data (no longer reliably retrievable for the affected repositories) or accepting the small definitional difference as an additional source of uncertainty. The paper's substantive conclusion — that the burstiness↔stale-issue-ratio relationship attenuates at the wider sample — is robust to this uncertainty.

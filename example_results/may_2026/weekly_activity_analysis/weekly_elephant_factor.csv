@@ -1,10 +1,11 @@
 repo_full_name,weeks_with_activity,mean_top_share,median_top_share,elephant_weeks_pct,single_contributor_weeks_pct,solo_weeks_pct
-CitizensFoundation/your-priorities-app,54,1.0,1.0,100.0,100.0,100.0
+CitizensFoundation/your-priorities-app,71,1.0,1.0,100.0,100.0,100.0
+codeforamerica/document-transfer-service,9,1.0,1.0,100.0,100.0,100.0
 fvialibre/heseia-sentence-bias-dataset,3,1.0,1.0,100.0,100.0,100.0
 codeforamerica/cmr-maryland-eligibility-determination,8,1.0,1.0,100.0,100.0,100.0
-codeforamerica/document-transfer-service,9,1.0,1.0,100.0,100.0,100.0
 markov-root/atlas,8,0.998,1.0,100.0,87.5,75.0
 CodeForAfrica/openAFRICA,50,0.974,1.0,100.0,88.0,88.0
+mysociety/ceuk-marking,109,0.958,1.0,99.1,79.8,79.8
 CodeForAfrica/PromiseTracker,29,0.95,1.0,100.0,65.5,65.5
 fvialibre/edia,18,0.929,1.0,100.0,72.2,61.1
 luftdata/luftdata.se,42,0.922,1.0,97.6,81.0,81.0
