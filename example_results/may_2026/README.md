@@ -59,7 +59,7 @@ The eight other May additions (`ForumMagnum`, `mastodon`, `okfde/froide`, `openp
 | File | Rows | Notes |
 |---|---|---|
 | `repo_metrics.csv` | 37 | Repository-level metrics (stars, forks, languages, license, CI/CD, etc.) |
-| `person_metrics.csv` | 702 | Per-(repo, contributor) metrics; includes `is_bot` flag |
+| `person_metrics.csv` | 703 | Per-(repo, contributor) metrics; includes `is_bot` flag |
 | `temporal_summary.csv` | 37 | PR / tag / release counts |
 | `chaoss_summary.csv` | 37 | 45+ CHAOSS columns including `burstiness_cv` (recomputed from weekly_snapshots, 37/37 populated) and the new `burstiness_cv_full_history` column |
 | `pull_requests.csv` | 77,780 | Individual PR records |
@@ -70,7 +70,7 @@ The eight other May additions (`ForumMagnum`, `mastodon`, `okfde/froide`, `openp
 | `contributor_weekly_activity.csv` | 22,486 | Per-(contributor, ISO-week) commit + lines_added + lines_removed |
 | `issue_records.csv` | 23,951 | Individual issue records (capped at 5,000 per repo — only `mastodon/mastodon` hit the cap) |
 | `issue_summary.csv` | 37 | Aggregated issue analytics |
-| `cross_project_overlap.csv` | 510 | Contributors active in multiple crawled repos |
+| `cross_project_overlap.csv` | 511 | Contributors active in multiple crawled repos |
 | `full_results.json` | — | Complete nested data for all 37 repositories |
 
 ### Per-repository folders (37)
