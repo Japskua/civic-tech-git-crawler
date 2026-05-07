@@ -1,0 +1,4 @@
+comparison,metric_with_bots,metric_without_bots,n_repos,n_changed,mean_with,mean_without,median_with,median_without,mean_difference,median_difference,W_statistic,p_value,significant
+HHI with bots vs without bots,herfindahl_hirschman_index,hhi_no_bots,37,27,7042.61,5092.64,6343.8,4357.4,1949.96,856.7,2.0,7e-06,True
+Bus factor with bots vs without bots,bus_factor,bus_factor_no_bots,37,4,1.86,1.86,2.0,2.0,0.0,0.0,5.0,1.0,False
+Elephant factor with bots vs without bots,elephant_factor,elephant_factor_no_bots,37,0,1.16,1.16,1.0,1.0,0.0,0.0,,,

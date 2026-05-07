@@ -1,0 +1,601 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforamerica/document-transfer-service",
+    "name": "document-transfer-service",
+    "description": "Microservice to securely transfer documents.",
+    "num_developers": 1,
+    "total_commits": 13,
+    "languages": {
+      "Ruby": 122377,
+      "Dockerfile": 671
+    },
+    "primary_language": "Ruby",
+    "first_commit_date": "2024-05-07T15:36:24+00:00",
+    "last_commit_date": "2025-07-02T20:15:15+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": true,
+    "health_percentage": 62,
+    "stars": 3,
+    "watchers": 5,
+    "forks": 1,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:Dockerfile",
+      "file:Dockerfile",
+      "file:docker-compose.yaml"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Branch Checks",
+      "CodeQL",
+      "Deploy documentation",
+      "Main Checks",
+      "Pull Request Checks",
+      "Dependabot Updates"
+    ],
+    "deployments_count": 14,
+    "created_at": "2024-05-07T15:36:24+00:00",
+    "updated_at": "2026-01-10T23:13:30+00:00",
+    "pushed_at": "2025-07-02T20:15:17+00:00",
+    "size_kb": 104
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforamerica/document-transfer-service",
+      "login": "jamesiarmes",
+      "name": "James Armes (they/them)",
+      "num_commits": 12,
+      "additions": 7731,
+      "deletions": 838,
+      "avg_additions_per_commit": 644.25,
+      "avg_deletions_per_commit": 69.83,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/document-transfer-service",
+      "login": "jamesiarmes",
+      "name": "James Armes (they/them)",
+      "num_commits": 1,
+      "additions": 79,
+      "deletions": 0,
+      "avg_additions_per_commit": 79.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforamerica/document-transfer-service",
+    "pr_count_total": 16,
+    "pr_count_merged": 12,
+    "pr_count_open": 1,
+    "pr_count_closed_unmerged": 3,
+    "prs": [
+      {
+        "number": 1,
+        "title": "CCAP-132: Microservice skeleton with basic health check.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-05-07T17:45:43+00:00",
+        "merged_at": "2024-05-08T16:45:36+00:00",
+        "closed_at": "2024-05-08T16:45:36+00:00"
+      },
+      {
+        "number": 2,
+        "title": "CCAP-134-docker",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-05-08T18:05:44+00:00",
+        "merged_at": null,
+        "closed_at": "2024-05-08T21:02:15+00:00"
+      },
+      {
+        "number": 3,
+        "title": "CCAP-134: Dockerized the service",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-05-08T21:04:11+00:00",
+        "merged_at": "2024-05-09T16:02:12+00:00",
+        "closed_at": "2024-05-09T16:02:12+00:00"
+      },
+      {
+        "number": 4,
+        "title": "CCAP-138: Added OneDrive transfer support.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-06-06T19:34:35+00:00",
+        "merged_at": "2024-06-17T18:04:53+00:00",
+        "closed_at": "2024-06-17T18:04:54+00:00"
+      },
+      {
+        "number": 5,
+        "title": "CCAP-239: Add request logging and instrumentation",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-07-08T21:12:02+00:00",
+        "merged_at": "2024-07-10T14:46:20+00:00",
+        "closed_at": "2024-07-10T14:46:20+00:00"
+      },
+      {
+        "number": 6,
+        "title": "CCAP-142: Add an API key authentication mechanism to the microservice",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-07-15T19:19:50+00:00",
+        "merged_at": "2024-07-18T17:48:41+00:00",
+        "closed_at": "2024-07-18T17:48:41+00:00"
+      },
+      {
+        "number": 7,
+        "title": "CCAP-255: Skip the HEAD request for URL sources. ",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-07-18T15:06:32+00:00",
+        "merged_at": "2024-07-18T17:28:35+00:00",
+        "closed_at": "2024-07-18T17:28:35+00:00"
+      },
+      {
+        "number": 8,
+        "title": "CCAP-295: Updated how database credentials are read.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-08-05T16:32:57+00:00",
+        "merged_at": "2024-08-08T17:27:47+00:00",
+        "closed_at": "2024-08-08T17:27:47+00:00"
+      },
+      {
+        "number": 9,
+        "title": "CCAP-304: Add support for background jobs",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-08-20T20:33:18+00:00",
+        "merged_at": "2024-08-28T15:12:53+00:00",
+        "closed_at": "2024-08-28T15:12:53+00:00"
+      },
+      {
+        "number": 10,
+        "title": "Added documentation with mkdocs",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-09-06T16:34:27+00:00",
+        "merged_at": "2024-10-02T17:41:26+00:00",
+        "closed_at": "2024-10-02T17:41:27+00:00"
+      },
+      {
+        "number": 11,
+        "title": "Bump webrick from 1.8.1 to 1.8.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-01-30T17:11:26+00:00",
+        "merged_at": null,
+        "closed_at": "2025-01-30T17:12:36+00:00"
+      },
+      {
+        "number": 12,
+        "title": "Bump the bundler group across 1 directory with 4 updates",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-01-30T17:12:33+00:00",
+        "merged_at": null,
+        "closed_at": "2025-01-30T17:32:44+00:00"
+      },
+      {
+        "number": 13,
+        "title": "Updated dependencies.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-30T17:29:04+00:00",
+        "merged_at": "2025-01-30T17:31:47+00:00",
+        "closed_at": "2025-01-30T17:31:48+00:00"
+      },
+      {
+        "number": 14,
+        "title": "Bump rack from 3.1.8 to 3.1.10 in the bundler group across 1 directory",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-02-18T15:19:41+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 16,
+        "title": "ci: Updated docs workflow to push to the new bucket.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-07-02T19:56:34+00:00",
+        "merged_at": "2025-07-02T19:58:59+00:00",
+        "closed_at": "2025-07-02T19:58:59+00:00"
+      },
+      {
+        "number": 17,
+        "title": "ci: Removed branch trigger used for testing.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-07-02T20:08:13+00:00",
+        "merged_at": "2025-07-02T20:15:15+00:00",
+        "closed_at": "2025-07-02T20:15:15+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforamerica/document-transfer-service",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.75,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 13,
+      "pull_requests": 16,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "codeforamerica": 2
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 1,
+    "burstiness_cv": 0.47,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": 52.5,
+    "time_to_first_response_issues_sample_size": 1,
+    "time_to_first_response_prs_sample_size": 16,
+    "readme_last_updated": "2024-10-02T17:41:26+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 1.0,
+    "stale_issue_count": 1,
+    "open_issue_count": 1,
+    "median_pr_review_turnaround_hours": 47.0,
+    "avg_review_comments_per_pr": 0.5,
+    "herfindahl_hirschman_index": 10000.0,
+    "hhi_no_bots": 10000.0,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 0,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 2,
+      "unknown": 0
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 1,
+    "periphery_contributor_count": 4,
+    "core_periphery_ratio": 0.2,
+    "network_density": 0.4,
+    "avg_degree_centrality": 0.4,
+    "pr_review_edges": [
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cram-cfa"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cram-cfa"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cram-cfa"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cy-by"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cram-cfa"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cram-cfa"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cram-cfa"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "ShaynaCummings"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "ShaynaCummings"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "ShaynaCummings"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "ShaynaCummings"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cy-by"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "cy-by"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "ShaynaCummings"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "ShaynaCummings"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "enyia21"
+      }
+    ],
+    "burstiness_cv_full_history": 0.47
+  },
+  "crawled_at": "2026-05-05T19:57:40.232373+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "codeforamerica/document-transfer-service",
+      "login": "jamesiarmes",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 1.0,
+      "classification": "core",
+      "num_collaborators": 4
+    },
+    {
+      "repo_full_name": "codeforamerica/document-transfer-service",
+      "login": "cram-cfa",
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/document-transfer-service",
+      "login": "cy-by",
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/document-transfer-service",
+      "login": "ShaynaCummings",
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/document-transfer-service",
+      "login": "enyia21",
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "codeforamerica/document-transfer-service",
+    "weekly_snapshots": [
+      {
+        "week_start": "2024-05-06",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 3,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-06-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 4,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-07-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 5,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-07-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 7,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-08-05",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 8,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-08-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 9,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-09-30",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 10,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-01-27",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 11,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 13,
+        "cumulative_contributors": 1
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforamerica/document-transfer-service",
+        "contributor_id": "jamesiarmes",
+        "login": "jamesiarmes",
+        "name": "James Armes (they/them)",
+        "email": "jarmes@codeforamerica.org",
+        "first_commit_date": "2024-05-07T15:36:24+00:00",
+        "last_commit_date": "2025-07-02T20:15:15+00:00",
+        "duration_days": 421,
+        "total_commits": 13,
+        "active_weeks": 9,
+        "total_weeks_span": 60,
+        "activity_ratio": 0.15,
+        "status": "departed",
+        "departed_weeks_ago": 43,
+        "avg_commits_per_active_week": 1.44
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-05-06",
+        "commits": 3,
+        "lines_added": 765,
+        "lines_removed": 88
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-06-17",
+        "commits": 1,
+        "lines_added": 1435,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-07-08",
+        "commits": 1,
+        "lines_added": 567,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-07-15",
+        "commits": 2,
+        "lines_added": 1680,
+        "lines_removed": 79
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-08-05",
+        "commits": 1,
+        "lines_added": 146,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-08-26",
+        "commits": 1,
+        "lines_added": 2045,
+        "lines_removed": 173
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-09-30",
+        "commits": 1,
+        "lines_added": 1025,
+        "lines_removed": 292
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-01-27",
+        "commits": 1,
+        "lines_added": 115,
+        "lines_removed": 103
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-06-30",
+        "commits": 2,
+        "lines_added": 32,
+        "lines_removed": 6
+      }
+    ],
+    "total_weeks": 9,
+    "total_unique_contributors": 1,
+    "new_contributor_rate_per_month": 0.07
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforamerica/document-transfer-service",
+    "issues": [
+      {
+        "number": 15,
+        "title": "Transfers fail when the root filesystem is read-only.",
+        "state": "open",
+        "author_login": "jamesiarmes",
+        "closed_by_login": null,
+        "created_at": "2025-04-08T20:22:06+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-08T20:22:06+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "avg_comments_per_issue": 0,
+    "median_time_to_close_days": null,
+    "unique_openers": 1,
+    "unique_closers": 0,
+    "top_openers": {
+      "jamesiarmes": 1
+    },
+    "top_closers": {}
+  }
+}
