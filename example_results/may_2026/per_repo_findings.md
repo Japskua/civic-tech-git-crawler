@@ -6,7 +6,7 @@ Short descriptive findings for each of the 37 repositories in the May 2026 refre
 
 ## CitizensFoundation/your-priorities-app
 
-A Reykjavík-based participatory democracy platform (HTML, started 2014). The crawl finds 4 attributable contributors and an extreme effort profile: **Gini = 0.00 because 100% of every active week is `rbjarnason`** — the platform's lead developer. The repo has 1.8M lines added vs. 1.7M removed (churn 0.49), characteristic of a long-running balanced rewrite. Note the discrepancy flagged in `analysis_n38.md` §4.2: `repo_metrics.total_commits` reports 8,011 vs. 800 attributable in `contributor_weekly_activity` — most history is likely on non-default branches or squash-merged. **One-line summary**: a textbook single-maintainer civic platform with a decade of solo evolution.
+A Reykjavík-based participatory democracy platform (HTML, started 2014). The crawl finds 4 attributable contributors and an extreme effort profile: **Gini = 0.00 because 100% of every active week is `rbjarnason`** — the platform's lead developer. The repo has 1.8M lines added vs. 1.7M removed (churn 0.49), characteristic of a long-running balanced rewrite. Note the discrepancy flagged in `analysis_n37.md` §4.3: `repo_metrics.total_commits` reports 8,011 vs. 800 attributable in `contributor_weekly_activity` — most history is likely on non-default branches or squash-merged. **One-line summary**: a textbook single-maintainer civic platform with a decade of solo evolution.
 
 ## CodeForAfrica/Dominion.AFRICA
 

@@ -64,5 +64,5 @@ A new (May 2025) Ruby project, 9 developers in <1 year. Bus factor 2, HHI 3,877.
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n38.md`](../analysis_n38.md) — academic writeup of the n=38 sample
+- [`../analysis_n37.md`](../analysis_n37.md) — academic writeup of the n=37 sample
 - [`../per_repo_findings.md`](../per_repo_findings.md) — all 38 per-repo findings in one document

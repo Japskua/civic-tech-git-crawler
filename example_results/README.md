@@ -2,7 +2,13 @@
 
 These files are real output from the Civic Tech Git Crawler, included so you can browse the tool's output without running it yourself.
 
-The files in this directory correspond to the **March 13, 2026 snapshot** that backs the statistical analyses in Sections 4.1–4.6 of the paper. A subsequent **April 20, 2026 full re-crawl** — extending the dataset with per-(contributor, week) lines added/removed — is in [`april_2026_refresh/`](april_2026_refresh/) and backs Section 4.7 of the paper.
+The repository ships **three full crawl snapshots** in this directory:
+
+- **March 13, 2026 baseline** (the files in this top-level directory) — n=29, the prior version of the analysis.
+- **April 20, 2026 refresh** in [`april_2026_refresh/`](april_2026_refresh/) — n=29 with per-(contributor, week) `lines_added` / `lines_removed` columns added to `contributor_weekly_activity.csv`.
+- **May 2026 canonical dataset** in [`may_2026/`](may_2026/) — **n=37**, the dataset that backs the current `paper_draft.md`. Adds 8 larger and older civic-tech projects over the prior n=29 sample, organised one folder per repository for easy navigation.
+
+The current paper analyses live in `may_2026/`. The March and April snapshots are kept for historical comparison and for reproducing the prior n=29 analysis if needed.
 
 ---
 

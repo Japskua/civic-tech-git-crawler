@@ -14,7 +14,7 @@ counts), different (more reliable) source.
 Usage:
     uv run python scripts/recompute_burstiness.py [snapshot-dir]
 
-Default snapshot-dir is example_results/may_2026_refresh/. The script:
+Default snapshot-dir is example_results/may_2026/. The script:
   1. Reads weekly_snapshots.csv and chaoss_summary.csv
   2. Computes trailing-52-week CV per repo (matches existing metric)
   3. Computes full-history CV per repo (a richer alternative not
@@ -38,7 +38,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_SNAPSHOT = ROOT / "example_results" / "may_2026_refresh"
+DEFAULT_SNAPSHOT = ROOT / "example_results" / "may_2026"
 
 
 def cv(values) -> float | None:

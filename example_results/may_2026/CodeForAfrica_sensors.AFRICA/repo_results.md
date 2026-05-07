@@ -47,7 +47,7 @@ Air-quality sensor network (2018, 19 developers). One of the dataset's three **n
 
 ## Things to note
 
-- **Net-negative LOC trajectory.** Cumulative deletions (403,490) exceed cumulative additions (388,122) by 15,368 lines over the project's history — consistent with the maintenance phase signal in `analysis_n38.md` §3.9.
+- **Net-negative LOC trajectory.** Cumulative deletions (403,490) exceed cumulative additions (388,122) by 15,368 lines over the project's history — consistent with the maintenance phase signal in `analysis_n37.md` §3.8.
 
 ## Files in this folder
 
@@ -65,5 +65,5 @@ Air-quality sensor network (2018, 19 developers). One of the dataset's three **n
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n38.md`](../analysis_n38.md) — academic writeup of the n=38 sample
+- [`../analysis_n37.md`](../analysis_n37.md) — academic writeup of the n=37 sample
 - [`../per_repo_findings.md`](../per_repo_findings.md) — all 38 per-repo findings in one document

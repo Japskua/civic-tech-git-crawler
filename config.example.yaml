@@ -34,7 +34,6 @@ repositories:
   - "civiform/civiform"
   - "iiab/iiab"
   - "ForumMagnum/ForumMagnum"
-  - "Significant-Gravitas/AutoGPT"
   - "mastodon/mastodon"
   - "okfde/froide"
   - "openplans/shareabouts"

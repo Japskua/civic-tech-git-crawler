@@ -61,5 +61,5 @@ A young (Jan 2025) Ruby PDF accessibility tool. Bus factor 1, 5 developers, 4 is
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n38.md`](../analysis_n38.md) — academic writeup of the n=38 sample
+- [`../analysis_n37.md`](../analysis_n37.md) — academic writeup of the n=37 sample
 - [`../per_repo_findings.md`](../per_repo_findings.md) — all 38 per-repo findings in one document

@@ -47,7 +47,7 @@ A long-running (2015) Python data pipeline for UK polling-station data. **Larges
 
 ## Things to note
 
-- **Net-negative LOC trajectory.** Cumulative deletions (9,733,304) exceed cumulative additions (6,297,063) by 3,436,241 lines over the project's history — consistent with the maintenance phase signal in `analysis_n38.md` §3.9.
+- **Net-negative LOC trajectory.** Cumulative deletions (9,733,304) exceed cumulative additions (6,297,063) by 3,436,241 lines over the project's history — consistent with the maintenance phase signal in `analysis_n37.md` §3.8.
 
 ## Files in this folder
 
@@ -65,5 +65,5 @@ A long-running (2015) Python data pipeline for UK polling-station data. **Larges
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n38.md`](../analysis_n38.md) — academic writeup of the n=38 sample
+- [`../analysis_n37.md`](../analysis_n37.md) — academic writeup of the n=37 sample
 - [`../per_repo_findings.md`](../per_repo_findings.md) — all 38 per-repo findings in one document

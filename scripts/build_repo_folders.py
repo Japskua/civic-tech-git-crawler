@@ -8,7 +8,7 @@ Reads existing flat outputs in <snapshot-dir>/ and produces:
 Usage:
     uv run python scripts/build_repo_folders.py [snapshot-dir]
 
-Default snapshot-dir is example_results/may_2026_refresh/. Idempotent:
+Default snapshot-dir is example_results/may_2026/. Idempotent:
 re-running only moves files that haven't already been moved, and always
 rewrites the markdown from the latest CSV state.
 """
@@ -24,7 +24,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_SNAPSHOT = ROOT / "example_results" / "may_2026_refresh"
+DEFAULT_SNAPSHOT = ROOT / "example_results" / "may_2026"
 
 
 def parse_findings_per_repo(findings_path: Path) -> dict[str, str]:
@@ -125,7 +125,7 @@ def things_to_note(repo: str, d: dict) -> list[str]:
             f"**Net-negative LOC trajectory.** Cumulative deletions ({int(d['total_removed']):,}) "
             f"exceed cumulative additions ({int(d['total_added']):,}) by "
             f"{abs(int(d['net_loc_delta'])):,} lines over the project's history "
-            "— consistent with the maintenance phase signal in `analysis_n38.md` §3.9."
+            "— consistent with the maintenance phase signal in `analysis_n37.md` §3.8."
         )
 
     health = d.get("health_percentage")
@@ -257,7 +257,7 @@ def render(repo: str, d: dict, finding_paragraph: str, folder: Path) -> str:
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n38.md`](../analysis_n38.md) — academic writeup of the n=38 sample
+- [`../analysis_n37.md`](../analysis_n37.md) — academic writeup of the n=37 sample
 - [`../per_repo_findings.md`](../per_repo_findings.md) — all 38 per-repo findings in one document
 """
 
