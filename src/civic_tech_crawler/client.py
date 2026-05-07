@@ -324,26 +324,57 @@ class GitHubClient:
         self,
         query: str,
         variables: dict | None = None,
+        max_retries: int = 5,
     ) -> dict | None:
-        """Execute a GraphQL query. Returns the 'data' payload or None on error."""
+        """Execute a GraphQL query. Returns the 'data' payload or None on error.
+
+        Retries up to max_retries times on transient HTTP errors (502/503/504
+        Gateway Timeout / Service Unavailable, and 429 rate-limit). Earlier
+        versions returned None on the first transient error, which silently
+        truncated commit-history iterators when GitHub's GraphQL gateway had
+        a brief blip — the iter_commits_graphql caller stops on None.
+        """
         self._rate_limiter.wait_if_needed()
         payload: dict[str, Any] = {"query": query}
         if variables:
             payload["variables"] = variables
-        try:
-            resp = self._httpx.post("/graphql", json=payload)
-        except httpx.HTTPError as e:
-            logger.warning("GraphQL transport error: %s", e)
-            return None
-        if resp.status_code != 200:
+
+        for attempt in range(1, max_retries + 1):
+            try:
+                resp = self._httpx.post("/graphql", json=payload)
+            except httpx.HTTPError as e:
+                if attempt < max_retries:
+                    delay = min(2 ** (attempt - 1) * self._retry_delay, 30.0)
+                    logger.warning(
+                        "GraphQL transport error (attempt %d/%d): %s — retrying in %.1fs",
+                        attempt, max_retries, e, delay,
+                    )
+                    time.sleep(delay)
+                    continue
+                logger.warning("GraphQL transport error after %d attempts: %s", attempt, e)
+                return None
+
+            if resp.status_code == 200:
+                body = resp.json()
+                if body.get("errors"):
+                    logger.warning("GraphQL errors: %s", body["errors"])
+                return body.get("data")
+
+            if resp.status_code in (429, 502, 503, 504) and attempt < max_retries:
+                delay = min(2 ** (attempt - 1) * self._retry_delay, 30.0)
+                logger.warning(
+                    "GraphQL HTTP %d (attempt %d/%d): %s — retrying in %.1fs",
+                    resp.status_code, attempt, max_retries, resp.text[:200], delay,
+                )
+                time.sleep(delay)
+                continue
+
             logger.warning(
                 "GraphQL returned HTTP %d: %s", resp.status_code, resp.text[:200]
             )
             return None
-        body = resp.json()
-        if body.get("errors"):
-            logger.warning("GraphQL errors: %s", body["errors"])
-        return body.get("data")
+
+        return None
 
     def iter_commits_graphql(self, slug: str) -> Iterator[CommitRecord]:
         """Yield every commit on the default branch via GraphQL, 100 per API call.
