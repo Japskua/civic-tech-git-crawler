@@ -163,7 +163,16 @@ def crawl_repository(
         progress.update(task_id, description=f"[bold blue]{slug}[/] - temporal metrics")
         temporal_metrics = collect_temporal_metrics(client, repo)
 
-    # Step 5: CHAOSS metrics + Core-Periphery
+    # Step 5: Full commit history (weekly snapshots, contributor lifecycles).
+    # Runs BEFORE chaoss so its weekly_snapshots are available as a fallback
+    # when chaoss's /stats/commit_activity endpoint times out — see
+    # collect_chaoss_metrics(commit_history=...).
+    commit_history = None
+    if not config.skip_commit_history:
+        progress.update(task_id, description=f"[bold blue]{slug}[/] - commit history")
+        commit_history = collect_commit_history(client, repo)
+
+    # Step 6: CHAOSS metrics + Core-Periphery
     chaoss_metrics = None
     cp_contributors = []
     if not config.skip_chaoss:
@@ -174,13 +183,8 @@ def crawl_repository(
             person_metrics,
             temporal_metrics,
             repo_metrics=repo_metrics,
+            commit_history=commit_history,
         )
-
-    # Step 6: Full commit history (weekly snapshots, contributor lifecycles)
-    commit_history = None
-    if not config.skip_commit_history:
-        progress.update(task_id, description=f"[bold blue]{slug}[/] - commit history")
-        commit_history = collect_commit_history(client, repo)
 
     # Step 7: Issue analytics (per-issue records, opener/closer tracking)
     issue_analytics = None
@@ -253,6 +257,17 @@ def main() -> None:
         f"crawling {len(config.repositories)} repositories"
     )
     console.print(f"Rate limit remaining: {client.rate_limit_remaining}")
+
+    # Warm up GitHub's async /stats/* endpoints for any repo we will actually
+    # crawl (skip cache hits). Lets the per-repo stats builds proceed in
+    # parallel server-side while we do our sequential collection work, so most
+    # repos return 200 by the time chaoss_metrics needs them.
+    repos_to_warm = [
+        s for s in config.repositories
+        if args.force or not is_cached(s, output_dir)
+    ]
+    if repos_to_warm:
+        client.warm_stats_endpoints(repos_to_warm)
 
     all_data: list[RepositoryData] = []
     crawled_count = 0

@@ -12,6 +12,7 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Output Files](#output-files)
+- [Example Datasets](#example-datasets)
 - [Metrics Reference](#metrics-reference)
   - [Repository Metrics](#repository-metrics)
   - [Contributor Metrics](#contributor-metrics)
@@ -290,7 +291,7 @@ uv run python -m civic_tech_crawler --config config.yaml
 
 All output files are written to the output directory (default: `./output/`). Both CSV and JSON formats are produced automatically.
 
-> **Want to see what the output looks like?** Browse the [`example_results/`](example_results/) directory for real output from a crawl of 29 civic tech repositories, including 12 statistical analysis CSVs and 165 visualisation PNGs.
+> **Want to see what the output looks like?** Browse the [`example_results/`](example_results/) directory for three full crawl snapshots: a **March 2026 baseline (n=29)**, an **April 2026 refresh (n=29)** with weekly LOC analysis, and a **May 2026 canonical (n=37)** that adds eight larger and older projects. The May 2026 dataset is organised one folder per repository so you can navigate to any single project's metrics, plots, and findings in one click — see [Example Datasets](#example-datasets) below.
 
 ### CSV files
 
@@ -376,6 +377,90 @@ All output files are written to the output directory (default: `./output/`). Bot
   }
 ]
 ```
+
+---
+
+## Example Datasets
+
+The [`example_results/`](example_results/) directory contains three full crawl snapshots. They share the same schema (so any analysis script in `scripts/` works on all of them), but each was collected at a different date with a slightly different configuration.
+
+### Snapshots at a glance
+
+| Snapshot | Repos | Crawl date | Total commits | Layout | Use when |
+|---|---:|---|---:|---|---|
+| [`example_results/`](example_results/) (March 2026 baseline) | 29 | 13 March 2026 | ~70k | Flat: one `<owner>_<repo>_data.json` per repo | Reproducing the prior n=29 analysis (preserved here for historical comparison; the canonical paper now uses the May 2026 dataset below) |
+| [`example_results/april_2026_refresh/`](example_results/april_2026_refresh/) | 29 | 20 April 2026 | 80,807 | Flat | Reproducing the prior n=29 weekly LOC analysis — first snapshot with `lines_added` / `lines_removed` columns |
+| [`example_results/may_2026/`](example_results/may_2026/) | **37** | 5–6 May 2026 | 178,099 (repo_metrics) / 162,033 (CWA) | **One folder per repo** | **Canonical dataset for `paper_draft.md`.** Adds 8 larger and older civic-tech projects (mastodon, ForumMagnum, okfde/froide at 15 years, openplans/shareabouts, codeforamerica/recordtrac, CodeForAfrica/actNOW, CitizensFoundation/your-priorities-app, mysociety/ceuk-marking) over the prior n=29 sample |
+
+### Browsing the May 2026 dataset (n=37)
+
+This snapshot is organised so each repository has its own folder containing everything needed to understand that one project at a glance. For example:
+
+```
+example_results/may_2026/
+├── README.md                   ← dataset-level overview, file index, reproduction steps
+├── analysis_n37.md             ← academic writeup: headline findings, the burstiness coverage methodological story, threats to validity
+├── per_repo_findings.md        ← all 37 short findings in one document
+├── ForumMagnum_ForumMagnum/
+│   ├── repo_results.md         ← at-a-glance metadata + main finding + caveats
+│   ├── data.json               ← full crawler output for this repo
+│   ├── growth.png
+│   ├── lifecycle.png
+│   ├── new_contributors.png
+│   ├── top_contributors.png
+│   ├── weekly_activity.png
+│   └── issue_trends.png
+├── mastodon_mastodon/
+│   └── …
+├── … 35 more repo folders …
+├── repo_metrics.csv            ← aggregate CSVs (one row per repo)
+├── chaoss_summary.csv
+├── contributor_weekly_activity.csv
+├── statistical_analysis/       ← 12 CSVs from scripts/statistical_analysis.py
+└── weekly_activity_analysis/   ← 3 CSVs + summary.md from scripts/weekly_activity_analysis.py
+```
+
+Each repository's `repo_results.md` contains:
+
+1. **At-a-glance**: language, stars/forks, age, commit count, cloud / AI-ML / OSI-license signals
+2. **Main findings**: a short paragraph picking out the most distinctive aspect of the project (e.g. ForumMagnum's distributed core, civiform's distributed weekly contribution, okfde/froide's 15-year founder dependency)
+3. **Key metrics**: bus factor, HHI, effort Gini, churn ratio, issue stats, response times
+4. **Things to note**: auto-detected caveats — e.g. mastodon's right-censored 5,000-issue cap, your-priorities-app's 10× commit-count discrepancy, markov-root's email-only top contributor, net-negative LOC trajectories
+5. **Files in this folder**: index of the JSON + plot files
+6. **See also**: links back to the dataset-level docs
+
+Three good entry points:
+
+- **Largest commit count**: [`ForumMagnum_ForumMagnum/repo_results.md`](example_results/may_2026/ForumMagnum_ForumMagnum/repo_results.md) (52,222 commits, lowest HHI in the dataset)
+- **Largest contributor base**: [`mastodon_mastodon/repo_results.md`](example_results/may_2026/mastodon_mastodon/repo_results.md) (1,055 unique authors via GraphQL; only repo to hit the 5,000-issue cap)
+- **Most net-negative LOC**: [`DemocracyClub_UK-Polling-Stations/repo_results.md`](example_results/may_2026/DemocracyClub_UK-Polling-Stations/repo_results.md) (−3.4M cumulative line delta)
+
+The full 37-repo navigation table is in the snapshot's [`README.md`](example_results/may_2026/README.md). The academic writeup of the headline findings is in [`analysis_n37.md`](example_results/may_2026/analysis_n37.md).
+
+### Regenerating the per-repo layout
+
+```bash
+# Crawl + run analyses (writes flat structure to ./output/)
+setsid nohup env GITHUB_TOKEN="$GITHUB_TOKEN" \
+    scripts/run_with_respawn.sh config.example.yaml output 37 \
+    > crawl.log 2>&1 < /dev/null & disown
+uv run python scripts/statistical_analysis.py output/
+uv run python scripts/weekly_activity_analysis.py output/
+uv run python scripts/visualize.py --output-dir output
+
+# (Optional, only needed if crawling with an older crawler version where
+# burstiness coverage may be sparse — the current crawler self-heals.)
+uv run python scripts/recompute_burstiness.py output/
+
+# Snapshot
+mkdir -p example_results/<refresh-name>/
+cp -r output/* example_results/<refresh-name>/
+
+# Build the per-repo folders + repo_results.md files
+uv run python scripts/build_repo_folders.py example_results/<refresh-name>/
+```
+
+`scripts/run_with_respawn.sh` automatically relaunches the crawler if the process gets externally killed (e.g. by sandbox timeouts), and exits cleanly only when all expected per-repo cache files are present. `scripts/build_repo_folders.py` is idempotent — it only moves files that haven't been moved yet, and rewrites the markdown each run from the latest CSVs.
 
 ---
 
@@ -942,7 +1027,7 @@ Output files are saved to `{output-dir}/statistical_analysis/`.
 
 ### Statistical Methods
 
-**Why non-parametric?** The script first runs Shapiro-Wilk normality tests on all key metrics. In our n=29 dataset, 11 of 12 metrics are significantly non-normal (p < 0.05), justifying the exclusive use of non-parametric methods.
+**Why non-parametric?** The script first runs Shapiro-Wilk normality tests on all key metrics. In the canonical n=37 May 2026 dataset, 11 of 12 metrics are significantly non-normal (p < 0.05), justifying the exclusive use of non-parametric methods.
 
 | Method | Purpose | When Used |
 |--------|---------|-----------|
@@ -1392,7 +1477,7 @@ civic_tech_git_crawler/
 ├── pyproject.toml                  # Dependencies and project metadata
 ├── config.example.yaml             # Example configuration
 ├── config.yaml                     # Your configuration (gitignored)
-├── paper_draft.md                     # Research paper (n=29, publication-ready)
+├── paper_draft.md                     # Research paper (n=37, May 2026 canonical)
 ├── scripts/
 │   ├── visualize.py                    # Visualization script (6 chart types)
 │   ├── statistical_analysis.py         # Statistical testing (12 analysis types)
@@ -1421,7 +1506,7 @@ civic_tech_git_crawler/
 │           ├── rate_limiter.py     # API rate limit monitoring
 │           ├── retry.py            # 202 retry + backoff logic
 │           └── osi_licenses.py     # OSI-approved SPDX license list
-├── example_results/                    # Real output from n=29 crawl (tracked)
+├── example_results/                    # Three crawl snapshots: March (n=29), April (n=29), May 2026 (n=37 canonical)
 │   ├── *.csv                       # 13 crawl data CSVs
 │   ├── statistical_analysis/       # 12 statistical analysis CSVs
 │   └── plots/                      # 165 visualisation PNGs

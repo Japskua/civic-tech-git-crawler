@@ -1,6 +1,7 @@
 import logging
 
 from github import Repository
+from github.GithubException import GithubException
 
 from civic_tech_crawler.client import GitHubClient
 from civic_tech_crawler.models import RepoMetrics
@@ -94,7 +95,11 @@ def _detect_signals(
 ) -> list[str]:
     """Check multi-signal detection against keyword config."""
     signals: list[str] = []
-    topics = [t.lower() for t in repo.get_topics()]
+    try:
+        topics = [t.lower() for t in repo.get_topics()]
+    except GithubException as exc:
+        logger.warning("get_topics failed for %s, skipping topic signals: %s", repo.full_name, exc)
+        topics = []
 
     # Check topics
     for kw in keywords.get("topics", []):

@@ -129,10 +129,14 @@ def effort_gini(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows).sort_values("effort_gini_lines", ascending=False)
 
 
-def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame) -> str:
+def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame, *, total_rows: int, total_contributors: int) -> str:
     lines: list[str] = []
+    n_repos = elephant["repo_full_name"].nunique()
     lines.append("# Weekly Activity Analysis — New Findings\n")
-    lines.append("Derived from `output/contributor_weekly_activity.csv` (12,449 rows, 29 repos, 893 contributors).\n")
+    lines.append(
+        f"Derived from `output/contributor_weekly_activity.csv` "
+        f"({total_rows:,} rows, {n_repos} repos, {total_contributors:,} contributors).\n"
+    )
 
     lines.append("## A. Weekly Elephant Factor (sustainability risk, time-resolved)\n")
     lines.append(
@@ -214,7 +218,7 @@ def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame) 
     lines.append(
         "\n**Lines-vs-commits Gini gap** (how much more unequal is effort than activity?):\n"
     )
-    lines.append(f"- Mean gap across 29 repos: {gap.mean():+.3f}\n")
+    lines.append(f"- Mean gap across {len(gini_df)} repos: {gap.mean():+.3f}\n")
     lines.append(f"- Max gap (effort much more concentrated than commits): "
                  f"`{gini_df.loc[gap.idxmax(), 'repo_full_name']}` at {gap.max():+.3f}\n")
     lines.append(f"- Min gap (commits more concentrated than effort): "
@@ -228,30 +232,48 @@ def summary(elephant: pd.DataFrame, churn: pd.DataFrame, gini_df: pd.DataFrame) 
 
 
 def main() -> int:
-    if not CSV_PATH.exists():
-        print(f"ERROR: {CSV_PATH} not found", file=sys.stderr)
-        return 1
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    import argparse
+    parser = argparse.ArgumentParser(description="Weekly activity analysis")
+    parser.add_argument(
+        "output_dir", nargs="?", default=str(REPO_ROOT / "output"),
+        help="Crawler output directory containing contributor_weekly_activity.csv",
+    )
+    args = parser.parse_args()
 
-    df = pd.read_csv(CSV_PATH)
-    print(f"Loaded {len(df):,} rows from {CSV_PATH}")
+    output_dir = Path(args.output_dir).resolve()
+    csv_path = output_dir / "contributor_weekly_activity.csv"
+    out_dir = output_dir / "weekly_activity_analysis"
+
+    if not csv_path.exists():
+        print(f"ERROR: {csv_path} not found", file=sys.stderr)
+        return 1
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    df = pd.read_csv(csv_path)
+    print(f"Loaded {len(df):,} rows from {csv_path}")
 
     print("Computing A: Weekly Elephant Factor...")
     elephant = weekly_elephant(df)
-    elephant.to_csv(OUT_DIR / "weekly_elephant_factor.csv", index=False)
+    elephant.to_csv(out_dir / "weekly_elephant_factor.csv", index=False)
 
     print("Computing B: Churn ratio...")
     churn = churn_ratio(df)
-    churn.to_csv(OUT_DIR / "churn_ratio.csv", index=False)
+    churn.to_csv(out_dir / "churn_ratio.csv", index=False)
 
     print("Computing D: Effort Gini...")
     gini_df = effort_gini(df)
-    gini_df.to_csv(OUT_DIR / "effort_gini.csv", index=False)
+    gini_df.to_csv(out_dir / "effort_gini.csv", index=False)
 
     print("Writing summary.md...")
-    (OUT_DIR / "summary.md").write_text(summary(elephant, churn, gini_df))
+    (out_dir / "summary.md").write_text(
+        summary(
+            elephant, churn, gini_df,
+            total_rows=len(df),
+            total_contributors=df["contributor_id"].nunique(),
+        )
+    )
 
-    print(f"\nAll artifacts written to {OUT_DIR}")
+    print(f"\nAll artifacts written to {out_dir}")
     return 0
 
 

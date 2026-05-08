@@ -87,15 +87,57 @@ class GitHubClient:
         self._rate_limiter.wait_if_needed()
         return self._github.get_repo(slug)
 
+    def warm_stats_endpoints(self, slugs: list[str], endpoints: tuple[str, ...] = ("commit_activity", "contributors")) -> dict[str, int]:
+        """Fire one request per (slug, endpoint) to trigger GitHub's async stats build.
+
+        GitHub computes /stats/* asynchronously: the first request returns 202 and
+        starts the build, subsequent requests return 200 once it finishes. By
+        firing all requests up-front, the per-repo builds proceed in parallel
+        server-side while the crawler does its sequential work — so by the time
+        we actually need a repo's stats during chaoss_metrics collection, GitHub
+        has typically had several minutes to compute them.
+
+        Sequential, no retries, no body parsing. ~0.3 s per request, so 37 repos
+        × 2 endpoints ≈ 22 s of pre-pass. Returns a dict of HTTP status counts.
+        """
+        counts: dict[int, int] = {}
+        logger.info("Warming stats endpoints for %d repos × %d endpoints...", len(slugs), len(endpoints))
+        for slug in slugs:
+            for endpoint in endpoints:
+                self._rate_limiter.wait_if_needed()
+                try:
+                    resp = self._httpx.get(f"/repos/{slug}/stats/{endpoint}")
+                    counts[resp.status_code] = counts.get(resp.status_code, 0) + 1
+                except httpx.HTTPError:
+                    counts[-1] = counts.get(-1, 0) + 1
+        summary = ", ".join(f"{k}: {v}" for k, v in sorted(counts.items()))
+        logger.info("Stats warm-up complete: %s", summary)
+        return counts
+
     def _get_stats_endpoint(self, slug: str, endpoint: str) -> list | None:
         """Fetch a /stats/{endpoint} JSON payload with iterative 202-retry.
 
-        GitHub returns 202 while computing stats. We retry with linear backoff
-        (3s, 6s, 9s, ...). Returns the parsed JSON list, or None if the endpoint
-        never finished computing or returned an error.
+        GitHub returns 202 while computing stats and the computation is async,
+        so the first request typically *triggers* the build rather than
+        returning data. For active repositories the build can take 30–180 s.
+        We retry with exponential backoff capped at 30 s per attempt, using a
+        budget of at least 10 attempts (≈ 225 s total at default retry_delay
+        = 3 s) regardless of the user-configured max_retries — that knob
+        governs general HTTP retry, not the longer stats build wait.
+
+        Returns the parsed JSON list, or None if the endpoint never finished
+        computing or returned an error.
         """
+        # Earlier versions used `delay = retry_delay * attempt` with the
+        # general max_retries (=5 by default), giving a 45 s budget that was
+        # too short on the May 2026 crawl: GitHub returned 202 for ≥45 s on
+        # 32 of 37 repos, so weekly_commits was cached as [] and burstiness
+        # could not be computed. The longer budget here restores the March
+        # 2026 baseline coverage (29/29 populated).
         url = f"/repos/{slug}/stats/{endpoint}"
-        for attempt in range(1, self._max_retries + 1):
+        attempts = max(self._max_retries, 10)
+        max_backoff = 30.0
+        for attempt in range(1, attempts + 1):
             self._rate_limiter.wait_if_needed()
             try:
                 resp = self._httpx.get(url)
@@ -105,10 +147,10 @@ class GitHubClient:
             if resp.status_code == 200:
                 return resp.json()
             if resp.status_code == 202:
-                delay = self._retry_delay * attempt
+                delay = min(self._retry_delay * (2 ** (attempt - 1)), max_backoff)
                 logger.info(
                     "stats/%s for %s computing (attempt %d/%d), waiting %.1fs...",
-                    endpoint, slug, attempt, self._max_retries, delay,
+                    endpoint, slug, attempt, attempts, delay,
                 )
                 time.sleep(delay)
                 continue
@@ -116,7 +158,7 @@ class GitHubClient:
                 "stats/%s for %s returned HTTP %d", endpoint, slug, resp.status_code
             )
             return None
-        logger.warning("stats/%s for %s still 202 after %d attempts", endpoint, slug, self._max_retries)
+        logger.warning("stats/%s for %s still 202 after %d attempts", endpoint, slug, attempts)
         return None
 
     def get_stats_contributors(
@@ -282,26 +324,57 @@ class GitHubClient:
         self,
         query: str,
         variables: dict | None = None,
+        max_retries: int = 5,
     ) -> dict | None:
-        """Execute a GraphQL query. Returns the 'data' payload or None on error."""
+        """Execute a GraphQL query. Returns the 'data' payload or None on error.
+
+        Retries up to max_retries times on transient HTTP errors (502/503/504
+        Gateway Timeout / Service Unavailable, and 429 rate-limit). Earlier
+        versions returned None on the first transient error, which silently
+        truncated commit-history iterators when GitHub's GraphQL gateway had
+        a brief blip — the iter_commits_graphql caller stops on None.
+        """
         self._rate_limiter.wait_if_needed()
         payload: dict[str, Any] = {"query": query}
         if variables:
             payload["variables"] = variables
-        try:
-            resp = self._httpx.post("/graphql", json=payload)
-        except httpx.HTTPError as e:
-            logger.warning("GraphQL transport error: %s", e)
-            return None
-        if resp.status_code != 200:
+
+        for attempt in range(1, max_retries + 1):
+            try:
+                resp = self._httpx.post("/graphql", json=payload)
+            except httpx.HTTPError as e:
+                if attempt < max_retries:
+                    delay = min(2 ** (attempt - 1) * self._retry_delay, 30.0)
+                    logger.warning(
+                        "GraphQL transport error (attempt %d/%d): %s — retrying in %.1fs",
+                        attempt, max_retries, e, delay,
+                    )
+                    time.sleep(delay)
+                    continue
+                logger.warning("GraphQL transport error after %d attempts: %s", attempt, e)
+                return None
+
+            if resp.status_code == 200:
+                body = resp.json()
+                if body.get("errors"):
+                    logger.warning("GraphQL errors: %s", body["errors"])
+                return body.get("data")
+
+            if resp.status_code in (429, 502, 503, 504) and attempt < max_retries:
+                delay = min(2 ** (attempt - 1) * self._retry_delay, 30.0)
+                logger.warning(
+                    "GraphQL HTTP %d (attempt %d/%d): %s — retrying in %.1fs",
+                    resp.status_code, attempt, max_retries, resp.text[:200], delay,
+                )
+                time.sleep(delay)
+                continue
+
             logger.warning(
                 "GraphQL returned HTTP %d: %s", resp.status_code, resp.text[:200]
             )
             return None
-        body = resp.json()
-        if body.get("errors"):
-            logger.warning("GraphQL errors: %s", body["errors"])
-        return body.get("data")
+
+        return None
 
     def iter_commits_graphql(self, slug: str) -> Iterator[CommitRecord]:
         """Yield every commit on the default branch via GraphQL, 100 per API call.

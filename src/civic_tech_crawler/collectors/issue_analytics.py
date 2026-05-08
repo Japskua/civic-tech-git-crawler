@@ -20,6 +20,12 @@ logger = logging.getLogger(__name__)
 
 # Cap individual issue fetches (for closed_by) to limit API usage
 _CLOSED_BY_CAP = 2000
+# Hard cap on total issues processed per repo, to bound runtime/memory on
+# very large issue trackers (e.g. civiform/civiform has 7000+ issues, where
+# secondary rate limits made the run open-ended).
+_MAX_ISSUES = 5000
+# How often to emit a progress line during the silent PyGithub pagination
+_PROGRESS_EVERY = 250
 
 
 def collect_issue_analytics(client, repo) -> IssueAnalytics:
@@ -39,11 +45,35 @@ def collect_issue_analytics(client, repo) -> IssueAnalytics:
     close_times: list[float] = []
     comment_counts: list[int] = []
     closed_fetched = 0
+    seen = 0
+    capped = False
 
-    for issue in all_issues:
+    issue_iter = iter(all_issues)
+    while True:
+        try:
+            issue = next(issue_iter)
+        except StopIteration:
+            break
+        except GithubException as e:
+            logger.warning(
+                "%s: issue iteration aborted after %d records: %s", slug, len(records), e
+            )
+            break
+
         # Skip pull requests (GitHub treats them as issues too)
         if issue.pull_request is not None:
             continue
+
+        seen += 1
+        if seen % _PROGRESS_EVERY == 0:
+            logger.info("%s: processed %d issues so far (records=%d)", slug, seen, len(records))
+
+        if len(records) >= _MAX_ISSUES:
+            logger.warning(
+                "%s: hit issue cap (%d), stopping early to bound runtime", slug, _MAX_ISSUES
+            )
+            capped = True
+            break
 
         try:
             author_login = None
@@ -117,13 +147,14 @@ def collect_issue_analytics(client, repo) -> IssueAnalytics:
         median_close = round(statistics.median(close_times), 2)
 
     logger.info(
-        "%s: %d issues (%d open, %d closed), %d unique openers, %d unique closers",
+        "%s: %d issues (%d open, %d closed), %d unique openers, %d unique closers%s",
         slug,
         total,
         open_count,
         closed_count,
         len(openers),
         len(closers),
+        " [CAPPED]" if capped else "",
     )
 
     return IssueAnalytics(

@@ -11,9 +11,12 @@ wheels/
 
 # Output data
 output/
+output_*/
 
 # Crawl logs
 logs/
+*.log
+*.log.*
 
 # Config with secrets
 config.yaml
