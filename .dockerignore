@@ -1,0 +1,17 @@
+.git
+.gitignore
+.claude
+.python-version
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+uv.lock
+example_results
+output
+docs/history
+scripts
+paper_draft.md
+Dockerfile
+.dockerignore
