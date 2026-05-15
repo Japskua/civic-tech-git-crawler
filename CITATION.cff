@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "civic-tech-crawler"
+abstract: "A Python CLI tool that crawls GitHub repositories to collect repository-health, contributor, and temporal metrics for civic technology research. Implements CHAOSS metrics, bot detection, social network analysis of pull-request review collaboration, and DORA software delivery indicators."
+authors:
+  - given-names: Janne
+    family-names: Parkkila
+    email: japskua@gmail.com
+    affiliation: "LUT University"
+repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
+license: MIT
+version: "0.1.0"
+keywords:
+  - civic-technology
+  - software-engineering
+  - mining-software-repositories
+  - CHAOSS
+  - open-source-sustainability
+  - github-api
