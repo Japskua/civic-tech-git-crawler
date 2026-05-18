@@ -2,20 +2,26 @@
 
 Self-contained submission package for the ESEM 2026 Emerging Results, Vision, and Reflection Papers track. Track: **Emerging Results (10p + 2p)**. Status: **anonymous draft for double-anonymous review**.
 
+**Current title:** *Coverage-Biased Correlations in OSS Repository Health Studies: A Self-Correction from 37 Civic-Tech Projects*
+
+**Framing (round 2):** measurement-coverage bias is the lead methodological contribution; the 37-repository civic-tech panel is the case. Bus-factor↔HHI is demoted to a sanity check. The Wilcoxon paired-design results (bot-impact on HHI; line-Gini vs commit-Gini) are the well-powered headline findings.
+
 ## Contents
 
 ```
 paper_esem/
 ├── README.md                  (this file)
-├── paper_esem.md              prose draft (Markdown)
-├── paper_esem.tex             LIPIcs v2021 LaTeX source
-├── references.bib             BibTeX database (12 entries)
+├── paper_esem.md              prose draft (Markdown, mirrors paper_esem.tex)
+├── paper_esem.tex             LIPIcs v2021 LaTeX source (canonical)
+├── references.bib             BibTeX database
 └── figures/
-    ├── fig1_busfactor_vs_hhi.png       Figure 1 — bus factor vs HHI
-    ├── fig2_effort_gini.png            Figure 2 — line-Gini vs commit-Gini
-    ├── fig3_burstiness_vs_stale.png    Figure 3 — burstiness vs stale-issue ratio
-    └── fig4_maturity_split.png         Figure 3 in the LaTeX (mature vs young projects)
+    ├── fig1_busfactor_vs_hhi.png       Figure 3 in rendered LaTeX — bus factor vs HHI (sanity check)
+    ├── fig2_effort_gini.png            Figure 2 in rendered LaTeX — line-Gini vs commit-Gini (headline finding)
+    ├── fig3_burstiness_vs_stale.png    Figure 1 in rendered LaTeX — burstiness vs stale (self-correction)
+    └── fig4_maturity_split.png         Figure 4 in rendered LaTeX — maturity split
 ```
+
+File names follow topical naming `fig1..fig4`; LaTeX auto-numbers by document order, so `\ref{fig:bf-hhi}` may print as "Figure 3" even though the file is `fig1_...`.
 
 ## Building locally
 
@@ -34,13 +40,19 @@ This requires the LIPIcs v2021 class (`lipics-v2021.cls`), which is bundled with
 2. Upload `paper_esem.tex`, `references.bib`, and the `figures/` directory.
 3. Set the main document to `paper_esem.tex`. Build.
 
+## Open TODOs before submission (search the .tex for `TODO(author)`)
+
+1. **Recent references** — add 1–2 OSS-health/sustainability papers from 2023–2025 to address the reviewer's currency point. Currently nothing 2022+ in the bibliography.
+2. **Inter-rater reliability** — the dual-coder C1–C3 coding is currently a placeholder (`Cohen's κ = [TBD: see Data Availability]` in §3.2). Run the IRR before submission and substitute the actual κ value plus the agreement table in the artefact.
+3. **Figure 1 label collision** — the reviewer flagged overlapping repository labels at the top of the bus-factor vs HHI scatter (e.g. "Forum/MagicGisp-gem" appears glued to another label). Regenerate the figure with collision avoidance (matplotlib `adjustText` or similar) before camera-ready.
+4. **Anonymous mirror URL** — replace `[anonymous-url-redacted-for-double-blind-review]` in §Data Availability with the actual anonymous-Zenodo / anonymous-github.com link before submission; substitute persistent Zenodo DOI in camera-ready.
+5. **Author block / funding / acknowledgements** — currently say "Anonymised for double-anonymous review"; fill in for camera-ready only.
+
 ## Editing notes
 
-- The paper is anonymised throughout per the ESEM 2026 double-anonymous policy. Author block, funding, and acknowledgements all say "anonymised for double-anonymous review" — fill these in for the camera-ready version only.
-- The Data Availability statement points at `[anonymous-url-redacted-for-double-blind-review]`. Replace this with the actual anonymous-mirror URL (Zenodo deposit + anonymous-github.com link or similar) before submission; the persistent Zenodo DOI replaces it in the camera-ready.
-- Figures 1, 2, 3, and 4 in the rendered LaTeX correspond to (1) bus factor vs HHI, (2) burstiness vs stale, (3) maturity split, (4) effort Gini lines-vs-commits. File names follow the topical naming `fig1..fig4` and do not have to match document order. `fig4_cohort_boxplots.png` from the source repository is intentionally not included — it would only fit in a longer paper.
-- One open TODO is flagged in the LaTeX as a comment: add 1–2 recent (2023–2025) OSS-health references. Search for `TODO(author)` in `paper_esem.tex` to find it.
+- The paper is anonymised throughout per the ESEM 2026 double-anonymous policy.
 - The 10-page LIPIcs limit applies to main content (sections 1–7 + figures + tables). Data Availability and References live in the 2-page allowance on top.
+- Word count: body ~4,000 prose words, ~5–6 figures+tables ≈ 9–9.5 rendered LIPIcs pages. The first compile in Overleaf will give the definitive page count; if it overruns, cheapest cuts are the §4.5 maturity paragraph and the Table 1 row-set.
 
 ## Important dates
 

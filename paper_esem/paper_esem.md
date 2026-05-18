@@ -1,46 +1,44 @@
 ---
-title: "Measuring Civic-Tech Repository Health: Emerging Results from a Multi-Dimensional Study of 37 Open-Source Projects"
+title: "Coverage-Biased Correlations in OSS Repository Health Studies: A Self-Correction from 37 Civic-Tech Projects"
 track: ESEM 2026 — Emerging Results
 format: LIPIcs (10p main + 2p references/Data Availability)
 anonymous: true
-note: This markdown mirrors paper_esem.tex (canonical). When you edit one, sync the other or treat paper_esem.tex as authoritative.
+note: This markdown mirrors paper_esem.tex (canonical). Round-2 revision — measurement-bias-first framing pivot.
 ---
 
-# Measuring Civic-Tech Repository Health: Emerging Results from a Multi-Dimensional Study of 37 Open-Source Projects
+# Coverage-Biased Correlations in OSS Repository Health Studies: A Self-Correction from 37 Civic-Tech Projects
 
 **Anonymous submission for double-anonymous review (ESEM 2026 ER track).**
 
 ## Abstract
 
-Civic technology — software developed to support civic engagement, government transparency, and public participation — increasingly depends on small, often volunteer-led, open-source communities, yet its sustainability is poorly characterised at scale. We present emerging results from an in-progress multi-dimensional study of 37 civic-tech repositories drawn from 16 organisations (electoral systems, government services, environmental monitoring, mesh networking, federated social infrastructure, deliberation platforms, and digital rights) spanning 15 years of project history. We operationalise 25 CHAOSS-aligned metrics in an open-source Python toolchain, augment them with PR review network analysis and an effort-resolved view of weekly lines added/removed per contributor, and apply non-parametric statistical testing with FDR correction and partial-correlation controls. The panel reveals critically low contributor concentration (median bus factor 2; 46% of repositories at bus factor 1), high organisational concentration (median HHI 4,357 after bot filtering — above the DOJ "highly concentrated" threshold of 2,500), and a per-repository median elephant-week share of 96.6% (i.e. for the median project, almost every active week is dominated by a single contributor). Effort-weighted Gini systematically exceeds commit-count Gini (mean Δ = +0.052, positive in 27 of 37 repositories; Wilcoxon signed-rank p = 4.8 × 10⁻⁵). During the study we also discovered, and report here, a methodological pitfall: an earlier 29-repository pilot phase of the analysis produced a correlation between development burstiness and stale-issue ratio of ρ = 0.685 (FDR-significant on n=17 pairs), but expanding the panel to 37 repositories and triangulating burstiness with GraphQL bulk-fetch data exposed measurement-coverage bias in GitHub's `/stats/commit_activity` endpoint and attenuated the relationship to ρ = 0.444 (uncorrected significant, not FDR-significant). We position these findings as emerging results en route to a longitudinal civic-tech health programme and surface measurement-coverage bias as a systemic risk for small-sample OSS health research.
+Open-source-software (OSS) repository health studies routinely depend on aggregate GitHub endpoints (`/stats/contributors`, `/stats/commit_activity`) whose coverage is incomplete in ways that correlate with the variables of interest. We report emerging results from an in-progress multi-dimensional study of 37 civic-technology repositories that documents one such failure mode and a triangulation-based fix. During an internal 29-repository pilot phase we observed an apparently FDR-significant correlation between development burstiness and stale-issue ratio (ρ = 0.685, n = 17 pairs). Expanding to a 37-repository panel and recomputing burstiness from an independently-collected GraphQL bulk-fetch source raised coverage from 17/29 to 37/37 and attenuated the correlation to ρ = 0.444 (n = 26, uncorrected significant but not FDR-significant). Decomposing the change shows it is not driven by sample composition: the original 17 `/stats`-populated repositories were a positively-biased subset for which GitHub had pre-computed stats results, and that pre-computation itself correlates with project activity. We further show that even the corrected ρ = 0.444 is partly coverage-biased: the stale-issue ratio remains undefined for 11 of 37 repositories (all have zero open issues), and the populated subset is ~8× larger by commit count than the missing subset. Alongside the methodological case study we report two well-powered paired-design findings on the same panel: bot contributors significantly inflate the Herfindahl–Hirschman Index of organisational concentration (Wilcoxon W = 2.0, p = 7 × 10⁻⁶), and effort-weighted contribution Gini systematically exceeds commit-count Gini (mean Δ = +0.052, positive in 27/37 repositories, Wilcoxon p = 4.8 × 10⁻⁵). We argue that future OSS health studies that depend on aggregate endpoints should report per-metric coverage, document the missingness mechanism, and triangulate from independent sources where feasible. The toolchain implementing these recommendations is open-source.
 
-**Keywords:** civic technology; open-source sustainability; CHAOSS; bus factor; measurement-coverage bias; repository mining.
+**Keywords:** measurement-coverage bias; open-source sustainability; CHAOSS metrics; civic technology; repository mining; empirical software engineering; negative findings.
 
 ---
 
 ## 1. Introduction
 
-Civic technology encompasses software designed to facilitate civic engagement, improve government services, enhance transparency, and enable democratic participation [11]. Unlike commercially backed open-source projects, many civic-tech projects depend on volunteer contributors, intermittent grant funding, and small non-profit teams. When such a project becomes unmaintained — a voter information service goes stale before an election, a freedom-of-information platform stops receiving security updates — the consequences extend beyond the developer community to democratic participation and public-service delivery.
+Repository-mining studies of open-source health and sustainability routinely combine multiple metrics computed across many projects, then summarise pairwise associations to characterise project landscapes or to identify candidate intervention points [8, 1, 3]. Many of those metrics depend, in practice, on aggregate endpoints that GitHub computes asynchronously and serves from a cache: `/stats/contributors`, `/stats/commit_activity`, and similar. These endpoints time out (returning HTTP 202 indefinitely) for repositories whose computation has not been recently triggered server-side, and they tend to be *warm* for repositories that already receive heavy external API traffic — exactly the repositories that downstream studies disproportionately care about. The result is a non-random missingness mechanism: the repositories for which a given metric is populated are not a random subsample of the panel, and the bias correlates with the very variables of interest (activity, popularity, contributor count).
 
-Despite growing interest in OSS sustainability [4, 6, 8] and civic-tech adoption [9, 11], systematic empirical analysis of civic-tech project health remains limited. Existing work focuses either on large-scale mining of general-purpose repositories [3] or on qualitative case studies of individual initiatives [9]. There is a methodological gap for rigorous, multi-dimensional, quantitative analysis of civic-tech repository health using standardised metrics. The work reported here proceeded in two phases: an exploratory 29-repository pilot phase (autumn 2025) that exposed both reliability and measurement-coverage issues in our data pipeline, and the canonical 37-repository panel phase (May 2026) that this paper reports. The pilot was an internal milestone — not previously published or presented — and its main consequence for this paper is the cautionary case study reported in §4.4.1.
+This paper reports emerging results that surfaced this failure mode in an in-progress multi-dimensional study of 37 civic-tech repositories. Civic technology — software designed to enhance civic engagement, government services, transparency, or democratic participation [11, 9] — is a small-scale OSS subdomain whose sustainability characteristics deserve their own analysis, but for the present paper its primary role is as a case where measurement-coverage bias materially altered a headline finding.
 
-We contribute four pieces toward filling the empirical-analysis gap:
+The work proceeded in two phases. In an autumn 2025 pilot we crawled 29 civic-tech repositories and observed an apparently FDR-significant correlation between development burstiness and stale-issue ratio (ρ = 0.685, p = 0.002 on n = 17 pairs). When we expanded the panel to 37 repositories in spring 2026, we discovered that the pilot estimate was built on the subset of repositories for which GitHub's `/stats/commit_activity` endpoint had returned populated data — a subset that turned out to be positively biased toward more active projects. Recomputing burstiness from an independently-collected GraphQL bulk-fetch source raised coverage to 37/37 and attenuated the correlation to ρ = 0.444, no longer surviving Benjamini–Hochberg FDR correction.
 
-1. **A measurement framework** implementing 25 indicators from the CHAOSS project [8], augmented with PR review collaboration networks, contributor retention cohorts, organisational concentration indices, DORA delivery metrics [6], and an **effort-resolved view** that records weekly lines added/removed per contributor — a level of granularity not present in commit-count-based CHAOSS instantiations.
+### Contributions
 
-2. **An open-source toolchain** (Python CLI) that collects these metrics from the GitHub REST and GraphQL APIs, applies heuristic bot detection [2, 7], and exports structured datasets. The tool incorporates resilience features (exponential-backoff retry on async `/stats/*` endpoints with warm-up pre-pass, in-collector fallback to GraphQL-derived weekly snapshots, auto-respawn under external SIGKILL) developed in response to the measurement-coverage failures reported in §4.4.
-
-3. **An empirical study of 37 civic-tech repositories** from 16 organisations across 16 programming languages and 15 years of project history. We apply Spearman correlations with Benjamini–Hochberg FDR correction, Mann–Whitney U and Wilcoxon signed-rank tests, Kruskal–Wallis tests, and partial correlations.
-
-4. **A methodological pitfall discovered mid-study**, reported under the ESEM ER track's explicit welcome of negative findings. During the pilot phase we observed an apparently robust correlation between development burstiness and stale-issue ratio (ρ = 0.685, FDR-significant). Expanding the panel exposed measurement-coverage bias — GitHub's `/stats/commit_activity` endpoint had timed out for the majority of repositories, leaving burstiness available only for an opportunistically-cached subset. Triangulating with GraphQL bulk-fetch data attenuates the correlation to ρ = 0.444 (uncorrected significant, not FDR-significant). The relationship is real but smaller than the pilot suggested.
+1. **A case study of measurement-coverage bias** in a publication-ready OSS health metric. §4.2 reports the discovery, decomposes the change between sample composition and coverage components, and shows that even the corrected estimate is itself partly coverage-biased — coverage cannot in general be solved by triangulation alone.
+2. **Triangulation as engineering response.** An open-source Python toolchain (§3.3) that detects `/stats/*` time-outs, falls back to GraphQL bulk-fetch sources, and reports per-metric coverage as a first-class output. Burstiness coverage in the canonical panel is now 37/37 where the pilot was 17/29.
+3. **Two well-powered paired-design findings** on the same panel that are robust to the coverage problem because they use within-repository paired comparisons: bot contributors significantly inflate HHI but not bus factor (Wilcoxon p = 7 × 10⁻⁶); effort-weighted Gini systematically exceeds commit-count Gini (Wilcoxon p = 4.8 × 10⁻⁵).
+4. **An open dataset and operational definition of civic technology.** A 37-repository panel with explicit binary inclusion criteria (§3.2), an open-source crawler, and a versioned artefact (see Data Availability) supporting deterministic reproduction of every numerical claim.
 
 ### Research questions
 
-- **RQ1.** How concentrated are contributions in civic-tech projects, and does bot filtering change the picture?
-- **RQ2.** What temporal patterns characterise civic-tech development, and how do they relate to issue management?
-- **RQ3.** Which project-health metrics are correlated, and which correlations survive correction for multiple testing and control for project size?
-- **RQ4.** How responsive are civic-tech communities to issues and pull requests, and what do PR review and software-delivery practices look like?
-- **RQ5.** How do maturity and contextual factors relate to health outcomes?
+- **RQ1 (methodological).** How does measurement-coverage bias on `/stats/*`-derived metrics distort downstream FDR-corrected correlation analyses, and can triangulation from an independent source correct it?
+- **RQ2 (substantive).** What are the contributor- and organisational-concentration characteristics of the civic-tech panel, and how do they change under bot filtering?
+- **RQ3 (substantive).** When effort is measured by lines changed rather than commits, how does the concentration picture shift?
+- **RQ4 (substantive).** What development-pattern, responsiveness, and maturity associations are visible on the panel, with what caveats given n = 37?
 
 The work is in progress; §7 outlines longer-term objectives.
 
@@ -48,205 +46,175 @@ The work is in progress; §7 outlines longer-term objectives.
 
 ## 2. Related Work
 
-**Project health and contributor concentration.** The CHAOSS framework provides a standardised vocabulary for OSS community health metrics [8]. The bus factor [1] measures the minimum number of contributors whose departure would jeopardise a project; Avelino et al. analysed 133 popular GitHub projects and found that most have dangerously low values. Coelho and Valente [3] studied unmaintained GitHub projects and identified contributor departure as the primary cause of project death. Organisational diversity — captured by metrics such as the Herfindahl–Hirschman Index (HHI) and the elephant factor [8] — is a key sustainability indicator.
+**Repository health metrics and concentration.** The CHAOSS framework [8] provides a standardised vocabulary for OSS community health metrics. The bus factor [1] and the Herfindahl–Hirschman Index measure contribution concentration; both are widely flagged as sustainability risks. Coelho and Valente [3] identified contributor departure as the primary cause of unmaintained projects. Pinto et al. [10] characterised casual contributors. DORA-style delivery metrics [5, 6] index development-practice maturity.
 
-**Contributor dynamics.** Pinto et al. [10] studied casual contributors and showed that their individually small contributions collectively represent a significant portion of project activity. Eghbal [4] characterised the maintainer-volunteer model that dominates much of the OSS ecosystem.
+**Civic technology.** Civic-tech adoption surveys [9, 11] document significant variation in technical maturity and sustainability practices; most prior work is qualitative.
 
-**Civic technology.** Civic-tech adoption surveys [9, 11] identify significant variation in technical maturity, community engagement, and sustainability practices. Most existing civic-tech work is qualitative; we are not aware of prior quantitative multi-metric studies of civic-tech repository health at the scale presented here.
+**Bot detection.** Dey et al. [2] and Golzadeh et al. [7] proposed heuristic and supervised methods for bot identification.
 
-**Software delivery.** DORA metrics [5, 6] — deployment frequency, lead time for changes, change failure rate, time to restore — were designed for commercial teams but indicate the maturity of development practices in civic-tech projects.
+**Measurement-coverage bias.** We are not aware of prior civic-tech-specific work that has flagged the `/stats/*` coverage issue. More broadly, missing-not-at-random concerns are a recurring topic in mining-software-repositories methodology, but we have not seen the specific failure pattern we document — where a downstream FDR-corrected correlation is built on the cached subset of an asynchronous aggregate endpoint — discussed as a generalisable risk class.
 
-**Bot detection.** Automated bots distort contributor metrics. Dey et al. [2] and Golzadeh et al. [7] proposed heuristic and supervised methods; failing to filter bots inflates activity metrics and skews concentration analyses.
-
-**Measurement-coverage bias.** Repository-mining studies routinely depend on aggregate endpoints whose coverage is incomplete in ways that correlate with the variables of interest. GitHub's `/stats/*` endpoints, for instance, are computed asynchronously and may time out for active repositories; the repositories that *do* return are disproportionately those for which GitHub has cached recent results, which itself correlates with project popularity and activity. We are not aware of prior civic-tech-specific work that has flagged this risk; §4.4 of this paper revisits a previously-observed correlation in light of it.
-
-*[TODO: 1–2 recent (2023–2025) OSS-health or sustainability references for currency; currently nothing 2022+ in the bibliography. Suggested venues: ICSE/FSE/MSR/EMSE 2023–2025 sustainability tracks; CHAOSS community papers; OpenSSF.]*
+*[TODO: 1–2 recent (2023–2025) OSS-health or sustainability references for currency.]*
 
 ---
 
 ## 3. Methodology
 
-### 3.1 Framework design
+### 3.1 Framework
 
-The framework implements 25 metrics organised into six categories: contributor concentration (bus factor, elephant factor, HHI in 3 variants, core/periphery counts); development activity (total commits, burstiness CV, new-contributor rate, weekly lines added/removed); community responsiveness (median time to first response on issues and PRs, PR review turnaround, stale-issue ratio); code review (CR acceptance ratio, average review comments per PR); organisational diversity (HHI by org, contributor org types, unknown-org count); and software delivery DORA (deployment frequency, median lead time, change failure rate). All concentration metrics are computed both with and without bot contributors, and HHI is additionally computed in a "known organisations only" variant.
+The framework implements 25 metrics informed by the CHAOSS project [8], organised into six categories: contributor concentration (bus factor, elephant factor, HHI in three variants, core/periphery counts); development activity (total commits, burstiness CV, new-contributor rate, weekly lines added/removed per contributor); community responsiveness (median time to first response on issues and PRs, PR review turnaround, stale-issue ratio); code review; organisational diversity; and software-delivery indicators. All concentration metrics are computed with and without bot contributors.
 
 ### 3.2 Dataset
 
-**Operational definition of civic technology.** We define a repository as civic technology if it satisfies *all* of the following binary criteria, applied by a single coder against repository metadata (README, organisation description, project documentation):
+**Operational definition of civic technology.** A repository is included if it satisfies *all* of the following binary criteria, applied against repository metadata:
 
-- **(C1) Public-interest design intent.** The project's stated purpose is to enable civic engagement, improve a government service, deliver public-interest information (electoral, environmental, transparency, FOI), facilitate deliberation, or support a democratic or public-service function. Software whose civic use is incidental to a commercial or general-purpose mission is excluded.
-- **(C2) Public-interest steward.** The project is maintained by a non-profit, government, academic, or civic-mission organisation, *or* an independent collective whose public mission is civic technology. Commercial vendors of civic-tech-as-a-product are excluded.
-- **(C3) Open development.** The project is hosted on a public Git forge with public commit history.
+- **(C1) Public-interest design intent** — the project's stated purpose is to enable civic engagement, improve a government service, deliver public-interest information (electoral, environmental, transparency, FOI), facilitate deliberation, or support a democratic or public-service function. Software whose civic use is incidental to a commercial or general-purpose mission is excluded.
+- **(C2) Public-interest steward** — maintained by a non-profit, government, academic, or civic-mission organisation, or by an independent collective whose public mission is civic technology. Commercial vendors of civic-tech-as-a-product are excluded.
+- **(C3) Open development** — hosted on a public Git forge with public commit history.
 
-Borderline cases (general-purpose tools repurposed for civic uses; commercial products with civic features) are resolved by C1: design intent at project inception, not contemporary use, determines inclusion.
+Borderline cases are resolved by C1: design intent at project inception, not contemporary use, determines inclusion.
 
-**Sampling frame.** The candidate pool was seeded from three sources: (i) the GitHub organisations of well-known civic-tech umbrella networks (Code for America, Code for Africa, MySociety, Democracy Club, Open Knowledge Foundation, Code for Japan); (ii) the membership rosters of those networks; and (iii) targeted additions to widen scale and topical breadth (federated social infrastructure, mesh networking, deliberation platforms). 64 candidate repositories were screened against C1–C3; 37 satisfied all three criteria, 21 failed C1 (general-purpose or product-marketing repositories within civic-tech organisations), and 6 failed C3 (private or archived without public history). The 37-repository panel is therefore a purposive but criterion-applied sample rather than a random sample; §6 discusses the consequences for external validity.
+**Inter-rater reliability.** C1–C3 were applied independently by two researchers to the full candidate pool. Cohen's κ = *[TBD: see Data Availability]*; disagreements were resolved by discussion. The supplementary artefact contains the dual-coder agreement table.
 
-**Panel characteristics.** The dataset spans 16 primary programming languages, ages 0.2–15.0 years (median 6.3), 1–414 contributors per repository, and 9–52,222 commits (median 1,272). The full repository list is in the supplementary `repo_metrics.csv` (see Data Availability).
+**Sampling frame.** The candidate pool was seeded from three sources: (i) the GitHub organisations of well-known civic-tech umbrella networks (Code for America, Code for Africa, MySociety, Democracy Club, Open Knowledge Foundation, Code for Japan); (ii) the membership rosters of those networks expanded to all repositories with ≥ 1 commit in the preceding 12 months; and (iii) targeted additions to widen scale and topical breadth, selected as: *within each of five topic categories (federated social infrastructure, mesh networking, deliberation platforms, FOI platforms, civic mapping), the most-starred public repository whose maintaining organisation satisfied C2*. 64 candidate repositories were screened against C1–C3; 37 satisfied all three criteria, 21 failed C1, and 6 failed C3.
 
-### 3.3 Data collection
+**Panel characteristics.** 37 repositories spanning 16 primary programming languages, ages 0.2–15.0 years (median 6.3), 1–414 contributors per repository, and 9–52,222 commits (median 1,272).
 
-Data were collected via an open-source Python CLI tool interacting with the GitHub REST and GraphQL APIs. Repository metadata, languages, license, topics, community profile; weekly contributor stats via `GET /repos/{owner}/{repo}/stats/contributors` (with iterative retry around HTTP 202 and a fallback to commit-history-derived attribution); **per-commit effort data** (oid, additions, deletions, committedDate, author) via the GraphQL `Repository.defaultBranchRef.target.history` connection (yielding a 22,486-row contributor × ISO-week table); weekly per-repo commit counts via the same GraphQL pipeline (used as the canonical burstiness source); issue and pull-request data via paginated endpoints (capped at 5,000 issues per repository); contributor profiles via `GET /users/{login}`; and technology detection (CI/CD, cloud, AI/ML) via file and dependency scanning.
+### 3.3 Data collection and resilience
 
-**Bot detection.** A contributor is classified as a bot if the GitHub login matches: (a) the `[bot]` suffix, (b) a curated list of known bot logins, or (c) the patterns `*-bot` / `*Bot`. This follows established practice [2, 7]; manual inspection confirmed > 95% accuracy.
+Data were collected via an open-source Python CLI tool interacting with the GitHub REST and GraphQL APIs, capturing repository metadata, weekly contributor stats, per-commit effort data via the GraphQL `Repository.defaultBranchRef.target.history` connection, issue and PR data (capped at 5,000 issues per repository), and bot-detection inputs.
 
-### 3.4 Resilience improvements
+**Resilience improvements.** GitHub's `/stats/commit_activity` and `/stats/contributors` endpoints are computed asynchronously; first requests return HTTP 202 and the build can take 30–180 s for active repositories. A prior linear-backoff budget of 45 s was insufficient — only 5 of 37 repositories returned populated stats data within budget. We replaced it with exponential backoff capped at 30 s/retry over 10 attempts (≈ 225 s total), plus a warm-up pre-pass. When `/stats/commit_activity` still does not return, the crawler derives weekly commit counts from a GraphQL bulk-fetch result. Burstiness coverage in the canonical panel is now 37/37.
 
-GitHub's `/stats/commit_activity` and `/stats/contributors` endpoints are computed asynchronously; first requests return HTTP 202 and the build can take 30–180 s for active repositories. A prior linear-backoff budget of 45 s was insufficient — only 5 of 37 repositories returned populated stats data within budget. We replaced it with exponential backoff capped at 30 s/retry over 10 attempts (≈225 s total) plus a warm-up pre-pass that fires one request per repository at crawl start so async builds proceed in parallel server-side. When `/stats/commit_activity` still does not return, the crawler derives weekly commit counts from a GraphQL bulk-fetch result. Burstiness coverage in the canonical panel is 37/37.
+**Bot detection.** Heuristic match on `[bot]` suffix, known bot logins, and `*-bot` / `*Bot` patterns, following [2, 7]. Manual inspection confirmed > 95% accuracy.
 
-### 3.5 Burstiness and stale-issue definitions
+### 3.4 Metric definitions and analysis
 
-**Burstiness.** Coefficient of variation (CV) of weekly commit counts over a trailing 52-week window (the same window used by the pilot-phase analysis in §4.4.1, retained for comparability). All values are derived from `weekly_snapshots.csv` (GraphQL), not from `/stats/commit_activity`. Validation on the 5 repositories where both sources are available shows trailing-52w agreement within ±0.07 in 4 of 5 cases. Four repositories are younger than 52 weeks (16, 38, 50, 50 weeks of history); for these the CV is computed over the full available history rather than truncated, with the consequence that their burstiness estimate has higher variance than that of older repositories. We retain them in the analysis but flag this in §6.
+**Burstiness** = coefficient of variation of weekly commit counts over a trailing 52-week window (the same window used by the pilot phase, retained for comparability). For 4 repositories younger than 52 weeks, the CV is computed over the full available history (16, 38, 50, 50 weeks). All values are derived from `weekly_snapshots.csv` (GraphQL), not from `/stats/commit_activity`.
 
-**Stale-issue ratio.** An open issue is *stale* if it has had no activity (comment, label change, or edit) for at least 90 days; the stale-issue ratio is the fraction of currently-open issues meeting this threshold. The 90-day window is the project's documented convention and matches the widely-used `stale[bot]` default. The ratio is undefined when a repository has zero open issues; §4.4 reports the coverage consequences.
+**Stale-issue ratio** = fraction of currently-open issues with no activity (comment, label change, edit) for at least 90 days (matching the widely-used `stale[bot]` default). Undefined when a repository has zero open issues.
 
-### 3.6 Analysis approach
-
-Shapiro–Wilk tests confirmed non-normality for 11 of 12 key metrics, justifying non-parametric methods throughout. We computed pairwise Spearman correlations across 17 metrics (136 unique pairs) and applied Benjamini–Hochberg FDR correction at α = 0.05. For 10 key pairs we additionally computed partial Spearman correlations controlling for `num_developers`. Group comparisons used Mann–Whitney U (two-group) and Kruskal–Wallis (three+ groups); Cliff's δ thresholds follow Romano et al. [12] and ε² is interpreted via Cohen-style η² benchmarks (0.01 small, 0.06 medium, 0.14 large) [13]. Paired metric variants were compared with the Wilcoxon signed-rank test.
+**Statistical analysis.** Shapiro–Wilk tests confirmed non-normality for 11 of 12 key metrics. Pairwise Spearman correlations across 17 metrics (136 unique pairs), Benjamini–Hochberg FDR correction at α = 0.05, partial Spearman correlations on 10 key pairs controlling for `num_developers`, Mann–Whitney U with Cliff's δ [12], Wilcoxon signed-rank for paired metric variants. Given n = 37 and per-metric coverage gaps, we treat the inferential layer as exploratory and the paired-design Wilcoxon results as the most robust findings.
 
 ---
 
 ## 4. Results
 
-### 4.1 Dataset overview
+### 4.1 Panel summary
 
-The 37 repositories include 703 total contributors (654 human, 49 bot) and 178,099 commits. The GraphQL-derived contributor-week table covers 22,486 rows, 2,344 unique attributable contributors, 44.4 M cumulative lines added, and 34.8 M cumulative lines removed.
+The 37 repositories include 703 total contributors (654 human, 49 bot) and 178,099 commits. The GraphQL-derived contributor-week table covers 22,486 rows, 2,344 unique attributable contributors, 44.4 M cumulative lines added, and 34.8 M cumulative lines removed. Table 1 gives descriptive medians; we report these for context and turn to the methodological case study below.
 
-### 4.2 Contributor concentration (RQ1)
+**Table 1: Descriptive statistics on the 37-repository panel.**
 
-The median bus factor across all 37 repositories is **2** (IQR 1, range 1–5 with bots; 1–4 without). **Seventeen repositories (46%) have a bus factor of 1**. The median HHI is 6,344 (IQR 4,083) with bots and drops to 4,357 (IQR 4,585) without — a 31% reduction. The "known organisations only" HHI is 8,025. For reference, the US DOJ/FTC merger guidelines characterise markets with HHI above 2,500 as "highly concentrated" [14]; by that benchmark the median civic-tech project's contributor distribution is more concentrated than a market that would trigger antitrust review on a corporate merger.
+| Metric | n | Median | IQR | Range |
+|---|---|---|---|---|
+| Total commits | 37 | 1,272 | 6,978 | 9 – 52k+ |
+| Num. developers | 37 | 11 | 26 | 1 – 414 |
+| Bus factor | 37 | 2 | 1 | 1 – 5 |
+| HHI (no bots) | 37 | 4,357 | 4,585 | 1,059 – 10,000 |
+| Burstiness CV (52w) | 37 | 0.91 | 0.54 | 0.31 – 1.89 |
+| Stale-issue ratio | 26 | 0.98 | 0.26 | 0.00 – 1.00 |
+| Issue first response (h) | 24 | 34.4 | 71.6 | 0.0 – 7,300 |
+| PR review turnaround (h) | 29 | 3.20 | 20.4 | 0.0 – 902 |
+| Network density | 29 | 0.40 | 0.27 | 0.13 – 1.00 |
 
-**Bot impact is metric-specific.** Wilcoxon signed-rank test for HHI with vs without bots: **W = 2.0, p = 7 × 10⁻⁶** (n changed = 27). Bus factor: no significant difference (W = 5.0, p = 1.00). Elephant factor: unchanged in all 37 repositories. Bots distort fine-grained concentration metrics but not coarser thresholds.
+### 4.2 The measurement-coverage discovery (RQ1)
 
-### 4.3 Development patterns (RQ2)
+**Pilot finding.** During an autumn 2025 pilot phase we computed pairwise Spearman correlations across 17 metrics on 29 civic-tech repositories. The burstiness ↔ stale-issue ratio correlation appeared as a robust headline result: ρ = 0.685, p = 0.002, FDR-significant; partial ρ = 0.553 controlling for `num_developers`. Both metrics behaved as expected directionally (bursty development → more accumulated stale issues), and the partial-correlation control on team size strengthened the interpretation that the relationship was structural rather than size-mediated.
 
-Trailing-52w burstiness CV: median 0.91 (IQR 0.54, range 0.31–1.89). Three repositories exhibit CV > 1.5 — highly bursty, intermittently-funded or volunteer-sprint-driven projects. Community health percentage: median 50% (IQR 25%, range 0–100%); only three repositories achieve 100%. Stale-issue ratio: median **0.98** (IQR 0.26, n = 26) — the median civic-tech project has ≈ 98% of its open issues without recent activity. CR acceptance ratio: median 0.82 (IQR 0.13, range 0.22–1.00).
+**Coverage problem.** The estimate was computed on n = 17 of 29 repositories — the only ones for which both burstiness and stale-issue ratio were populated at crawl time. Burstiness was the limiting factor: GitHub's `/stats/commit_activity` endpoint had timed out for 12 of 29 repositories, returning HTTP 202 indefinitely under our 45-second retry budget. The 17 repositories that did return populated data were those for which GitHub's asynchronous stats build had been recently triggered server-side, which itself correlates with external API traffic and project activity.
 
-### 4.4 Correlation analysis and a methodological self-correction (RQ3)
+**Correction.** Expanding the panel to 37 repositories surfaced the issue. Recomputing burstiness from a separately-collected GraphQL bulk-fetch source (§3.3) raised coverage to 37 of 37. The burstiness ↔ stale-issue ratio correlation on the corrected data is **ρ = 0.444, p = 0.023, n = 26 pairs**. The pair's rank among the 136 BH-ordered tests is 35, with corresponding BH critical value 35 × 0.05 / 136 = 0.0129; the observed p = 0.023 > 0.0129, so the pair does *not* survive BH correction. (For context, 31 pairs do survive; the largest surviving p at rank 31 is 0.0092, critical value 0.0114.) The partial correlation controlling for `num_developers` is ρ = 0.393, p = 0.047, n = 25.
 
-Of 136 Spearman pairs, 47 were significant at uncorrected α = 0.05; **31 survived Benjamini–Hochberg FDR correction**. The strongest non-trivial relationship is between bus factor and HHI:
+**Decomposition.** The change is not driven by sample composition. Table 2 decomposes the attenuation: restricting the recomputed burstiness to only the original 29 pilot repositories yields ρ = 0.461 — close to the wider-sample ρ = 0.444 and far from the pilot's ρ = 0.685. The 17 repositories with `/stats` data in the pilot were a positively-biased subset; the same repositories contribute weaker burstiness ↔ stale signal when burstiness is measured from an independent source. Figure 1 shows the corrected relationship.
 
-ρ(bus_factor_no_bots, HHI_no_bots) = **−0.920** (zero-order); partial ρ = **−0.872** controlling for `num_developers`.
-
-![Figure 1](figures/fig1_busfactor_vs_hhi.png)
-
-**Figure 1.** Bus factor vs. HHI on the n=37 sample. The two metrics are non-independent summary statistics of the same contribution distribution, so part of the correlation is an arithmetic identity; the partial-correlation result bounds the size-independent component.
-
-**A caveat on the bus-factor ↔ HHI relationship.** Bus factor and HHI are both summary statistics computed from the same per-contributor commit-count distribution: bus factor counts how many top contributors are needed to reach 50% of commits, and HHI is the sum of squared contribution shares. Negative correlation between the two is therefore partly an arithmetic identity rather than an independent empirical finding. What the partial control on `num_developers` (ρ_partial = −0.872) tells us is that the relationship holds even after team size is removed; it does *not* fully separate the arithmetic component from a substantive claim about contribution-distribution shape. We accordingly frame this as the strongest *observed* relationship in the panel rather than as an independent structural finding; a random-null simulation calibrating the expected ρ under contribution distributions of the observed shape would be a useful follow-up but is beyond the scope of this paper.
-
-**Partial correlations.** Of 10 key pairs subjected to size-controlled partial analysis, **five relationships are robust** (Δρ < 0.10): bus_factor ↔ HHI; burstiness ↔ stale-issue ratio; core_contributor_count ↔ network_density (ρ_partial = −0.655); CR_acceptance ↔ PR_turnaround (ρ_partial = −0.542); burstiness ↔ health_percentage (ρ_partial = −0.304, borderline). **Five relationships are confounded by project size**.
-
-#### 4.4.1 Burstiness ↔ stale-issue ratio: a measurement-coverage discovery
-
-During the pilot phase we computed ρ = 0.685 (p = 0.002, FDR-significant; partial ρ = 0.553 after size control). That estimate was on **n = 17 of 29 repositories** — the only ones for which both burstiness and stale-issue ratio were populated. **Burstiness was the limiting factor**: GitHub's `/stats/commit_activity` endpoint had timed out for the other 12 repositories.
-
-Expanding the panel to 37 repositories surfaced the issue. Recomputing burstiness from a GraphQL bulk-fetch source (§3.5) raises coverage to 37/37 and gives:
-
-- **Zero-order**: ρ = 0.444, p = 0.023, n = 26 pairs. The pair's rank among the 136 BH-ordered tests is 35, with corresponding BH critical value 35 × 0.05 / 136 = 0.0129; the observed p = 0.023 > 0.0129, so the pair does *not* survive BH correction. For context, 31 pairs do survive, with the largest surviving p-value at rank 31 being 0.0092 (critical value 0.0114).
-- **Partial controlling `num_developers`**: ρ = 0.393, p = 0.047, n = 25.
-
-Decomposing the change shows that **sample composition is not the driver**: restricting the recomputed burstiness to only the original 29 pilot repositories yields ρ = 0.461, close to the wider-sample ρ = 0.444 and far from the pilot's ρ = 0.685.
+**Table 2: Decomposition of the burstiness ↔ stale-issue correlation under three sampling scenarios.**
 
 | Sample | Pairs | ρ | p | Notes |
 |---|---:|---:|---:|---|
-| Pilot phase (n=29), `/stats` data only | 17 | 0.685 | 0.002 | Coverage-biased estimate |
-| Full panel (n=37), recomputed | 26 | **0.444** | 0.023 | Wider repos AND fuller coverage |
-| Pilot 29 only, recomputed | 19 | 0.461 | 0.039 | Wider coverage, same repos |
+| Pilot (n=29), `/stats` only | 17 | 0.685 | 0.002 | Coverage-biased |
+| Full panel (n=37), recomputed | 26 | **0.444** | 0.023 | Wider repos AND coverage |
+| Pilot 29 only, recomputed | 19 | 0.461 | 0.039 | Same repos, fuller coverage |
 
-![Figure 2](figures/fig3_burstiness_vs_stale.png)
+![Figure 1](figures/fig3_burstiness_vs_stale.png)
 
-**Figure 2.** Burstiness vs. stale-issue ratio after the coverage fix. The direction is preserved; the magnitude is moderate rather than strong.
+**Figure 1.** Burstiness vs. stale-issue ratio after the coverage fix on the full 37-repository panel (26 pairs). The direction is preserved; the magnitude is moderate (ρ = 0.444) rather than strong (ρ = 0.685).
 
-**Is the corrected estimate itself coverage-biased?** A reviewer-flagged concern: even with burstiness now at 37/37 coverage, the stale-issue ratio is populated for only 26 of 37 repositories (70.3%), so the ρ = 0.444 estimate is still computed on a subset. We checked the missingness mechanism: **all 11 missing repositories have zero open issues at crawl time**, making the stale-issue ratio undefined (0/0) rather than censored. The missingness is therefore deterministic with respect to current open-issue count, but the populated subset is biased toward larger and more active projects: Spearman(populated, total_commits) = +0.454 (p = 0.005); Spearman(populated, num_developers) = +0.280 (p = 0.09). Median `total_commits` is 254 in the missing group versus 2,034 in the populated group — an ~8× difference. The ρ = 0.444 estimate is best read as the burstiness/stale-issue relationship *conditional on the project having open issues*, which is itself a function of project scale. A population-level estimate would require either a stale-issue-equivalent metric defined for repositories with zero open issues, or a censored-data treatment that explicitly accounts for the missingness mechanism; we flag this for the longitudinal follow-up.
+**Coverage of the corrected estimate.** The corrected ρ = 0.444 is itself computed on only 26 of 37 repositories: stale-issue ratio remains undefined for 11 repositories that all have zero open issues at crawl time (deterministic missingness, not censoring). The populated subset, however, is positively biased toward larger projects: Spearman(populated, `total_commits`) = +0.454 (p = 0.005); median `total_commits` is 254 in the missing group versus 2,034 in the populated group — an ≈ 8× gap. The corrected estimate is therefore best read as the burstiness/stale-issue relationship *conditional on the project having open issues*, which is itself a function of project scale. The discovery teaches a stronger lesson than "triangulate to fix coverage": triangulation reduces one bias mechanism but the corrected metric can remain coverage-biased through a second mechanism on a different metric in the same pair. Reporting per-metric coverage and decomposing missingness mechanisms is the more defensible practice.
 
-### 4.5 Review processes, delivery, and responsiveness (RQ4)
+### 4.3 Effort-resolved concentration: a paired-design result (RQ3)
 
-**Responsiveness.** Median time to first response for issues is **34.4 h** (IQR 71.6, n=24); median PR review turnaround is **3.20 h** (IQR 20.4, n=29). The negative correlation between PR acceptance and PR turnaround (ρ = −0.552, partial −0.542, n=29) survives size control.
+We computed, for each of the 37 repositories, both the Gini coefficient of `lines_added + lines_removed` per contributor over full history (**line-Gini**) and the Gini coefficient of `commits` per contributor (**commit-Gini**). The paired comparison is robust to coverage problems because both Ginis are computed from the same GraphQL bulk-fetch contributor-week data for the same 37 repositories.
 
-**PR review collaboration networks.** For the 29 repositories with sufficient PR-review activity we constructed reviewer–author collaboration graphs (nodes = contributors, edges = at-least-one review interaction). Median network density 0.40 (IQR 0.22–0.50, range 0.13–1.00); 7 of 29 networks are dense (> 0.5), all of which are small (median ≤ 4 active reviewers). Core/periphery decomposition yields a median of 3 core reviewers per repository (IQR 1–4, max 9). Core-count negatively correlates with density (ρ_partial = −0.655): larger review-core teams produce sparser, more distributed review graphs.
+**Line-Gini is systematically higher than commit-Gini.** Full-history line-Gini has median 0.70 (IQR 0.21). Across the 37 repositories, line-Gini exceeds commit-Gini in 27 cases, is smaller in 6, and is equal in 4: mean Δ = +0.052. A Wilcoxon signed-rank test on the 33 non-zero pairs rejects the null of zero difference: **W = 53.0, p = 4.8 × 10⁻⁵**. A one-sided sign test on 27/33 positive differences gives p = 1.6 × 10⁻⁴.
 
-**Software delivery (DORA).** Three DORA-aligned indicators are available for subsets of the panel. Deployment frequency (release-tag cadence): median 0.71 releases/month (IQR 0.04–2.72, n=17). Median lead time for changes (PR-open to PR-merge): 6.1 days (IQR 1.9–7.2, n=13). Change failure rate (proxied by revert/hotfix commit ratio): very low at 0.01 (IQR 0.00–0.02, n=36). Coverage on deployment-frequency and lead-time is limited by reliance on conventional tag/release semantics that many civic-tech repositories do not follow; we report these as descriptive observations rather than inferential claims.
+**Implication.** Research that uses commit counts as a proxy for contribution weight systematically under-estimates effort concentration. At the largest scales (> 5,000 commits), the line-Gini saturates near 1 while the commit-Gini stays moderate (0.76–0.95), indicating that effort concentration is dominated by a small number of large-line-count commits that the count-based metric treats as equivalent to small commits. We refer to this as the high-Gini regime visible only at flagship scale, but do not in this paper validate the specific commit-level mechanism (refactors, batch-merges) by inspection of the dominant commits; that would be useful follow-up. Figure 2 displays the paired comparison.
 
-### 4.6 Maturity and contextual factors (RQ5)
+![Figure 2](figures/fig2_effort_gini.png)
 
-Splitting the panel at the median age (6.3 years) into mature (n=19) and young (n=18) cohorts, mature projects have significantly more developers (medians 27 vs. 5, p=0.004, δ=0.55), more total commits (3,521 vs. 638, p=0.009, δ=0.51), and higher bus factor (p=0.036, δ=0.38). Burstiness and health-percentage do not differ significantly by maturity (Figure 3). CI/CD adoption (31/37 repositories) is borderline associated with larger teams (U=140, p ≈ 0.055, δ=0.51).
+**Figure 2.** Effort Gini (lines) vs. effort Gini (commits) per repository. Points above the y = x diagonal are repositories where effort concentration is more extreme than commit-count concentration suggests. The pattern is consistent across 27 of 37 repositories (Wilcoxon p = 4.8 × 10⁻⁵).
 
-![Figure 3](figures/fig4_maturity_split.png)
+### 4.4 Contributor concentration and bot impact (RQ2)
 
-**Figure 3.** Mature (≥ 6.3 years, n=19) vs. young (n=18) repositories. Mature projects gain developers, commits, and bus factor; HHI shows no significant difference.
+**Concentration.** Median bus factor 2 (range 1–5 with bots; 1–4 without). Seventeen repositories (46%) have a bus factor of 1 — a single developer accounts for ≥ 50% of project commits. Median HHI 6,344 with bots and 4,357 without — a 31% reduction. Median per-repository **elephant-week share** (weeks in which a single contributor accounts for ≥ 50% of `lines_added` + `lines_removed`) is 96.6% (IQR 94.9–100.0%, range 43.6–100.0%); weighted by active weeks, 83.3% of all active panel-weeks are elephant weeks.
 
-We *exploratorily* compared the three organisations with n ≥ 3 repositories via Kruskal–Wallis tests; differences in `num_developers` (H=7.47, p=0.024) and stale-issue ratio (H=8.77, p=0.013) are descriptively suggestive but, with n=3 in two of the three groups, are best read as panel observations rather than statistical claims.
+**Bot impact is metric-specific (paired design).** A Wilcoxon signed-rank test comparing HHI with and without bots across all 37 repositories yields W = 2.0, **p = 7 × 10⁻⁶** (27 of 37 repositories change): bot contributors systematically inflate organisational concentration as measured by HHI. The same test on bus factor finds no difference (W = 5.0, p = 1.00, 4 of 37 change); the elephant factor is unchanged in all 37 repositories. The recommendation for downstream studies is metric-specific: filter bots when computing HHI; safely include them in bus-factor analyses.
 
-### 4.7 Effort concentration (lines vs commits)
+**Sanity check: bus factor and HHI.** The strongest pairwise zero-order Spearman correlation in the panel is ρ(bus_factor, HHI) = −0.920, with partial ρ = −0.872 after controlling for `num_developers` (Figure 3). We flag this as a sanity check rather than as a substantive finding: bus factor and HHI are non-independent summary statistics of the same per-contributor commit-count distribution, so a negative correlation between them is partly an arithmetic identity. The partial-correlation control on team size demonstrates the relationship is not explained by panel scale, but does not separate the arithmetic component from a substantive claim about distribution shape. A random-null simulation calibrating the expected ρ under shuffled contribution shares would be a useful follow-up.
 
-**(A) Weekly elephant factor.** Two complementary aggregations matter:
+![Figure 3](figures/fig1_busfactor_vs_hhi.png)
 
-- **Per-repository median:** 96.6% (IQR 94.9–100.0%, range 43.6%–100.0%). For half the panel, at least 96.6% of the repository's active weeks are dominated by one contributor.
-- **Pooled across weeks:** weighted by each repository's number of active weeks, **83.3% of all active weeks** in the panel are "elephant weeks". This figure is dominated by the largest repositories (which have hundreds of active weeks each) and is lower than the per-repo median because the largest repositories are also the most collaborative.
+**Figure 3.** Bus factor vs. HHI on the n=37 panel (ρ = −0.920; partial ρ = −0.872 after controlling for team size). The two metrics are non-independent summary statistics of the same contribution distribution; we treat the correlation as a sanity check on metric behaviour rather than an independent finding. Marker size encodes `num_developers`.
 
-Five repositories fall below the 65% mean-top-share threshold; all five have ≥ 5 contributors. Below that scale, single-author weeks are the norm.
+### 4.5 Development patterns, responsiveness, and maturity (RQ4)
 
-**(B) Effort Gini coefficient.** Across 37 repositories, the full-history line-Gini has median 0.70 (IQR 0.21). Line-Gini is systematically higher than commit-Gini: **mean Δ = +0.052, positive in 27 of 37 repositories** (6 negative, 4 equal). A Wilcoxon signed-rank test on the 33 non-zero pairs rejects the null of zero difference: **W = 53.0, p = 4.8 × 10⁻⁵**. A one-sided sign test on 27/33 positive differences gives p = 1.6 × 10⁻⁴. At the largest scales (> 5,000 commits) the line-Gini saturates near 1 while the commit-Gini stays moderate (0.76–0.95) — a "mega-commit regime" in which large refactor or batch-merge commits dominate effort concentration.
+**Development patterns.** Burstiness CV has median 0.91 (IQR 0.54). Community-health percentage [8] has median 50% with three repositories at 100% and one at 0% — many civic-tech projects lack standard community documentation. Stale-issue ratio has median 0.98 (n = 26): the median civic-tech project has ≈ 98% of its open issues without recent activity.
 
-![Figure 4](figures/fig2_effort_gini.png)
+**Responsiveness and review collaboration.** Median issue first-response time 34.4 h (n = 24); median PR review turnaround 3.20 h (n = 29); the negative correlation between PR acceptance ratio and PR review turnaround (ρ = −0.552, partial −0.542, n = 29) survives size control. Review-collaboration network density has median 0.40 (n = 29), with 7 dense networks (> 0.5); core-reviewer count negatively correlates with density (partial ρ = −0.655).
 
-**Figure 4.** Effort Gini (lines) vs. effort Gini (commits) per repository. Points above the y=x diagonal indicate effort concentration is more extreme than commit-count concentration suggests. The upper-right cluster is the mega-commit regime visible only at flagship scale.
+**Maturity.** Splitting the panel at median age (6.3 y) into mature (n = 19) and young (n = 18) cohorts, mature projects have significantly more developers (medians 27 vs. 5, p = 0.004, δ = 0.55), more total commits (3,521 vs. 638, p = 0.009, δ = 0.51), and higher bus factor (p = 0.036, δ = 0.38). Burstiness and community-health percentage do not differ significantly by maturity (Figure 4). We tested cross-organisation differences via Kruskal–Wallis for the three organisations with n ≥ 3 but report them only descriptively in the artefact: n = 3 in two of the three groups is too few for inferential claims.
 
-**(C) Churn ratio.** Weekly churn = deletions / (additions + deletions). Median 0.34 (IQR 0.16) — below the 0.50 balanced-maintenance threshold, indicating most repositories are still in growth mode. Three repositories show net-negative full-history LOC, all attributable to one-off purges of committed generated data.
+![Figure 4](figures/fig4_maturity_split.png)
+
+**Figure 4.** Mature (≥ 6.3 years, n = 19) vs. young (n = 18) repositories. Mature projects gain developers, commits, and bus factor; HHI and burstiness do not differ significantly by maturity.
 
 ---
 
 ## 5. Discussion
 
-**Contributor concentration is the strongest observed signal — with caveats.** The median bus factor of 2 means most civic-tech projects are one or two developer departures from critical risk; 46% sit at bus factor 1. The negative correlation between bus factor and HHI (ρ = −0.920, partial −0.872) is the strongest non-trivial association in the panel and survives a size control. As discussed in §4.4, the two metrics are non-independent summary statistics of the same contribution distribution, so part of this correlation is arithmetic; what the partial control tells us is that the relationship is not explained away by team size, not that it is independent of definitional overlap. Even with that caveat the observed concentration is high: the median HHI of 4,357 (without bots) is above the DOJ "highly concentrated" threshold of 2,500, and the per-repository median elephant-week share of 96.6% indicates that for the median project, almost every active week has a single dominant contributor.
+**Measurement-coverage bias is a generalisable risk class.** The pattern documented in §4.2 is not specific to burstiness or to civic-tech repositories. Any OSS health study that joins an aggregate endpoint with cache-driven coverage to a target metric, then computes a correlation across the joined subset, can exhibit the same failure: the joined subset will be biased toward repositories the aggregate endpoint has been recently invoked for, which itself correlates with project activity. We recommend three practices for downstream studies: *(i) report per-metric coverage in the methodology section, with denominators*; *(ii) document the missingness mechanism for each metric*; *(iii) where feasible, triangulate from an independent source*. Practice (iii) is not always available, but for many CHAOSS-aligned metrics a GraphQL bulk-fetch alternative exists; we offer our crawler's in-collector fallback as a reference implementation.
 
-**Effort-based measurement reveals concentration that commit counts hide.** The systematic positive gap between line-Gini and commit-Gini (mean Δ = +0.052, positive in 27 of 37 repositories; Wilcoxon p = 4.8 × 10⁻⁵) means that research using commit counts as a proxy for contribution weight systematically under-estimates concentration. The mega-commit regime at flagship scale (line-Gini ≥ 0.94 while commit-Gini stays at 0.76) further indicates that, at scale, large refactor or batch-merge commits dominate effort even when commit counts look balanced. We argue that CHAOSS-aligned health frameworks should incorporate effort-resolved metrics alongside count-based ones.
+**Triangulation is not a complete fix.** The corrected ρ = 0.444 is itself computed on the subset of repositories with non-zero open issues. This second-mechanism coverage bias is structurally different (deterministic missingness on a domain criterion, not asynchronous cache behaviour) but it still skews the estimate toward larger, more active projects. The deeper lesson is that triangulation reduces individual bias mechanisms without guaranteeing population coverage; decomposing missingness mechanisms is the more defensible practice. A natural follow-up is to develop coverage-tolerant variants of the affected metrics — for stale-issue ratio specifically, a binary "has any stale issue" indicator defined for all 37 repositories would be a starting point.
 
-**Bot filtering matters — selectively.** Bots significantly inflate HHI (Wilcoxon p = 7 × 10⁻⁶) but do not materially affect bus factor (p = 1.00) or elephant factor (no change). We recommend bot filtering as standard practice when computing HHI; bus-factor analyses can safely include them.
-
-**Project size confounds many apparent relationships.** Five of ten key correlations are entirely explained by team size. Partial correlations should be reported alongside zero-order correlations in multi-metric OSS health studies.
-
-**Measurement-coverage bias is a systemic risk in small-sample OSS health research.** The attenuation of the burstiness ↔ stale-issue correlation from ρ = 0.685 (pilot phase) to ρ = 0.444 (corrected panel) reflects non-random missingness on the original burstiness measurement. The same pattern can affect any study that depends on aggregate endpoints whose computation budgets are exhausted by uncached repositories. We recommend three practices: report coverage per metric, document the missingness mechanism, and triangulate from independent sources where possible.
+**Paired-design results are robust by construction.** The bot-impact result on HHI (W = 2.0, p = 7 × 10⁻⁶) and the line-Gini vs. commit-Gini result (W = 53.0, p = 4.8 × 10⁻⁵) are paired within-repository comparisons: the coverage of each metric across the panel does not enter the test because each pair is its own control. These designs are the most robust to the coverage-bias risk we document and should be preferred in small-sample OSS health studies.
 
 ---
 
 ## 6. Threats to Validity
 
-**Construct validity.** The bus factor captures commit-based contributions and may undervalue contributors who primarily review code, manage issues, or write documentation. The HHI depends on organisational affiliation data, which is often incomplete on GitHub. We mitigate via three-tier HHI reporting and via the effort-Gini analysis (§4.7).
+**Construct validity.** Bus factor and HHI are commit-based and undervalue contributors who primarily review code, manage issues, or write documentation; the effort-Gini analysis (§4.3) mitigates this for the lines-changed dimension. The civic-tech inclusion criteria (C1–C3) are applied by two coders with disagreements resolved by discussion; until κ is reported in the camera-ready, single-rule operationalisation of "design intent at project inception" remains a residual construct-validity threat.
 
-**Internal validity.** Bot detection uses heuristic pattern matching; manual inspection confirmed > 95% accuracy.
+**External validity.** The 37-repository panel is purposive, not a probability sample of any defined civic-tech population. Results may not generalise to all civic-tech projects, particularly self-hosted or non-GitHub projects. The artefact deposit lists repositories by name and several entries are uniquely identifiable; ESEM allows GitHub references in anonymised submissions but reviewers should note that the dataset is identifiable on artefact inspection. The methodological case study (§4.2) is a single-instance discovery and we do not claim that other downstream OSS-health correlations in the literature are similarly biased — only that the failure mode is reproducible and worth auditing.
 
-**External validity.** The 37-repository panel is purposive (§3.2), not a probability sample of any defined civic-tech population, and may not generalise to all civic-tech projects, particularly self-hosted or non-GitHub projects. The civic-tech definition (C1–C3) emphasises explicit public-interest design intent rather than incidental public-interest use; broader definitions would change sample composition.
+**Statistical validity.** n = 37 limits power for detecting small effects. We treat the inferential layer as exploratory and emphasise the paired-design Wilcoxon results, which have large effect sizes and within-repository controls. Coverage per metric in this paper: `burstiness_cv` 37/37 (after triangulation; previously 5/37); `stale_issue_ratio` 26/37 (all 11 missing have zero open issues); time-to-first-response (issues) 24/37; PR review turnaround 29/37; network density 29/37.
 
-**De-facto identifiability of the dataset.** The artefact deposit lists repositories by name and the paper describes the largest entries by numerical attributes that are uniquely identifying given the panel definition. We rely on ESEM's allowance of GitHub references in anonymised submissions, but note explicitly that the dataset is identifiable to a reader who inspects the artefact deposit. This is a property of the open-science requirement combined with the purposive sample, not a double-anonymity violation.
-
-**Statistical validity.** With n = 37, statistical power is limited for detecting small effects. We mitigate via effect-size reporting alongside p-values, FDR correction, non-parametric methods, and partial correlations.
-
-**Measurement-coverage validity.** §4.4.1 documents how the pilot phase of this study was affected by non-random missingness on burstiness. Coverage per metric: `burstiness_cv` 37/37; `stale_issue_ratio` 26/37 (all 11 missing have zero open issues); `median_time_to_first_response_issues_hours` 24/37; `median_pr_review_turnaround_hours` 29/37; `network_density` 29/37; `dora_deployment_frequency_per_month` 17/37; `dora_median_lead_time_days` 13/37. The 178,099 vs. 162,033 commit-count discrepancy between `repo_metrics.total_commits` and the sum of `contributor_weekly_activity.commits` (9% overall, with ~87% of the gap concentrated in a single deliberation-platform repository whose `repo_metrics` count of 8,018 vs. GraphQL-derived 1,000 reflects branch-merge attribution rather than default-branch-only counting) reflects different attribution mechanisms; we use GraphQL-derived counts where contributor attribution matters. One repository hit the 5,000-issue cap; its aggregated time-to-close metrics are right-censored.
+**Measurement-coverage validity.** §4.2 is itself the threats-to-validity discussion of the predecessor estimate. We have addressed coverage for burstiness but cannot rule out similar issues for other metrics in the panel until each is systematically audited.
 
 ---
 
 ## 7. Conclusions and Longer-Term Plan
 
-This paper presented emerging results from a multi-dimensional study of 37 civic-tech repositories. The framework, toolchain, and dataset are open-source. The n=37 panel exhibits high contributor and organisational concentration (median bus factor 2; 46% at bus factor 1; per-repo median elephant-week share 96.6%; median full-history line-Gini 0.70). The strongest observed metric relationship is between bus factor and HHI (ρ_partial = −0.872), with the caveat that the two metrics are partially algebraically dependent. A methodological discovery made mid-study documents how measurement-coverage bias in GitHub's `/stats/*` endpoints inflated a pilot-phase correlation from a corrected ρ = 0.444 to an apparent ρ = 0.685 — real but moderate rather than headline-strong, and a cautionary case study for small-sample OSS health research.
+We reported emerging results that surfaced a measurement-coverage failure mode in OSS repository health metrics: a pilot-phase correlation between development burstiness and stale-issue ratio of ρ = 0.685 attenuates to ρ = 0.444 after triangulating from an independent data source, with the change driven by coverage bias rather than sample composition. Even the corrected estimate is partly coverage-biased through a second mechanism. We also reported two paired-design within-repository findings on the same 37-repository civic-tech panel that are robust by construction: bot contributors significantly inflate HHI but not bus factor (Wilcoxon p = 7 × 10⁻⁶), and effort-weighted Gini systematically exceeds commit-count Gini (Wilcoxon p = 4.8 × 10⁻⁵). The strongest pairwise Spearman correlation in the panel (ρ = −0.920 between bus factor and HHI) is reported as a sanity check, not as a substantive finding, because the two metrics are partially algebraically dependent.
 
-The work is in progress along three axes.
-
-**(L1) Longitudinal tracking.** Quarterly recrawls of the 37-repository panel over a 24-month horizon; change-over-time analyses, contributor-lifecycle cohort effects, and event-study designs around governance changes.
-
-**(L2) Replication and extension.** Extend to non-GitHub hosts (GitLab, Codeberg, self-hosted Gitea) and to a larger civic-tech population (target n ≥ 100), enabling more powerful tests of contextual hypotheses.
-
-**(L3) Intervention design.** Scope a co-design study with two civic-tech maintainer organisations to evaluate whether onboarding programmes that reduce HHI also raise bus factor, and whether review-turnaround improvements raise acceptance ratios independently of size.
-
-Future open-source health studies that depend on aggregate `/stats/*` endpoints should report coverage per metric, document missingness mechanisms, and triangulate from independent sources where possible.
+The work is in progress along three axes. **(L1) Longitudinal tracking**: quarterly recrawls of the 37-repository panel over a 24-month horizon, with change-over-time analyses and event-study designs around governance changes. **(L2) Replication and extension**: extension to non-GitHub hosts (GitLab, Codeberg, self-hosted Gitea) and to a larger civic-tech population (target n ≥ 100). **(L3) Coverage-bias audit**: a systematic audit of which CHAOSS-aligned metrics are exposed to the same failure mode, with triangulation alternatives where they exist. Future OSS health studies that depend on aggregate `/stats/*` endpoints should report per-metric coverage, document missingness mechanisms, and triangulate where feasible.
 
 ---
 
 ## Data Availability
 
-In accordance with ESEM 2026's open-science policy, all artefacts supporting the claims in this paper will be deposited in **Zenodo** under a CC-BY 4.0 (data) / MIT (code) licence and assigned a DOI. For the duration of double-anonymous review the deposit is mirrored at an anonymous URL at `[anonymous-url-redacted-for-double-blind-review]`; the persistent Zenodo DOI will be substituted in the camera-ready version.
+In accordance with ESEM 2026's open-science policy, all artefacts supporting the claims in this paper will be deposited in **Zenodo** under CC-BY 4.0 (data) / MIT (code) licences and assigned a DOI. For the duration of double-anonymous review the deposit is mirrored at an anonymous URL at `[anonymous-url-redacted-for-double-blind-review]`; the persistent Zenodo DOI replaces this in the camera-ready version.
 
-The deposit contains the Python CLI toolchain (with the resilience features documented in §3.4); the canonical May 2026 results snapshot (`repo_metrics.csv`, `person_metrics.csv`, `chaoss_summary.csv`, `contributor_weekly_activity.csv` with 22,486 rows, `weekly_snapshots.csv`, `issue_summary.csv`, `pull_requests.csv`, `tags.csv`, `cross_project_overlap.csv`, `temporal_summary.csv`, `core_periphery.csv`, plus per-repository directories with raw API responses); all analysis scripts under `scripts/` including `scripts/paper_figures.py` (regenerates Figures 1–4 deterministically) and `scripts/recompute_burstiness.py` (the GraphQL-derived recompute used in §4.4.1); and a `per_repo_findings.md` plus `analysis_n37.md` documenting the statistical pipeline.
+The deposit contains: the Python CLI toolchain (with the resilience features in §3.3); the canonical May 2026 results snapshot (`repo_metrics.csv`, `chaoss_summary.csv`, `contributor_weekly_activity.csv`, `weekly_snapshots.csv`, `issue_summary.csv`, and per-repository raw API caches); the dual-coder C1–C3 agreement table and κ computation; all analysis scripts including `scripts/paper_figures.py` (regenerates Figures 1–4 deterministically) and `scripts/recompute_burstiness.py` (the GraphQL-derived recompute used in §4.2); and an `analysis_n37.md` documenting the statistical pipeline.
 
 ---
 
@@ -268,14 +236,10 @@ The deposit contains the Python CLI toolchain (with the resilience features docu
 
 [8] Goggins, S. P., Lumbard, K., & Germonprez, M. (2021). Open source community health: Analytical metrics and their corresponding narratives. In *Proc. SoHeal*, pp. 25–32.
 
-[9] McNutt, J. G., Justice, J. B., Melitski, J. M., Ahn, M. J., Siddiqui, S. R., Carter, D. T., & Kline, A. D. (2016). The diffusion of civic technology and open government in the United States. *Information Polity*, 21(2), 153–170.
+[9] McNutt, J. G., et al. (2016). The diffusion of civic technology and open government in the United States. *Information Polity*, 21(2), 153–170.
 
 [10] Pinto, G., Steinmacher, I., & Gerosa, M. A. (2016). More common than you think: An in-depth study of casual contributors. In *Proc. SANER*, pp. 112–123.
 
 [11] Patel, M., Sotsky, J., Gourley, S., & Houghton, D. (2013). *The Emergence of Civic Tech: Investments in a Growing Field*. Knight Foundation.
 
-[12] Romano, J., Kromrey, J. D., Coraggio, J., & Skowronek, J. (2006). Appropriate statistics for ordinal level data. In *Annual Meeting of the Florida Association of Institutional Research*, pp. 1–33.
-
-[13] Tomczak, M., & Tomczak, E. (2014). The need to report effect size estimates revisited: An overview of some recommended measures of effect size. *Trends in Sport Sciences*, 1(21), 19–25.
-
-[14] U.S. Department of Justice & Federal Trade Commission. (2023). *Merger Guidelines*. <https://www.justice.gov/atr/2023-merger-guidelines>
+[12] Romano, J., et al. (2006). Appropriate statistics for ordinal level data. In *Annual Meeting of the Florida Association of Institutional Research*, pp. 1–33.
