@@ -14,7 +14,7 @@ note: This markdown mirrors paper_esem.tex (canonical). Round-4 revision — nov
 
 Civic technology — open-source software for government services, electoral information, transparency, environmental monitoring, deliberation, and democratic participation — is increasingly delivered through small, often volunteer-led repositories whose sustainability characteristics are poorly understood at scale. We present a multi-dimensional empirical landscape analysis of 37 civic-tech repositories from 16 organisations across six continents, spanning 15 years of project history (2011–2026), 178,099 commits, 2,506 contributor records, and 22,486 contributor-weeks of effort-resolved activity. We organise findings around six sustainability challenges.
 
-**Novel contributions of this paper:** (3) *effort concentration systematically exceeds activity concentration* — effort-weighted Gini exceeds commit-count Gini in 27 of 37 repositories (Wilcoxon W = 53, p = 4.8 × 10⁻⁵, rank-biserial r = +0.81); we introduce the *elephant-week* metric, with a per-repository median 96.6% of active weeks dominated by a single contributor; and (6) the *cross-project ecosystem is umbrella-bounded* — 12.3% of contributors are panel-cross-project, but 90.3% of *those* stay within a single umbrella organisation, so only ~0.5% of all panel contributors are genuinely cross-organisational.
+**Novel contributions of this paper:** (3) *effort concentration systematically exceeds activity concentration* — effort-weighted Gini exceeds commit-count Gini in 27 of 37 repositories (Wilcoxon W = 53, p = 4.8 × 10⁻⁵, rank-biserial r = +0.81, large effect); we introduce the *elephant-week* metric, with a per-repository median 96.6% of active weeks dominated by a single contributor; and (6) the *cross-project ecosystem is umbrella-bounded* — 5.5% of unique panel humans (112 of 2,055) are active in ≥ 2 panel repositories, but only 8.9% of *those* (10 of 112) span ≥ 2 stewarding organisations, leaving ≈ 0.5% of all panel humans genuinely cross-organisational.
 
 **Confirming prior findings on small-team OSS** [Pinto 2016, Avelino 2016]: (1) drive-by contribution dominates — 52% of human contributor records make a single commit and never return; (2) cores are dangerously thin — median bus factor 2, 46% of repositories at bus factor 1.
 
@@ -32,23 +32,16 @@ This paper reports emerging results from an in-progress study designed to fill t
 
 ### Contributions
 
-We frame the contributions by what is genuinely novel in this paper vs what confirms and extends prior OSS-health findings.
+We frame the contributions by what is genuinely novel in this paper vs what extends prior OSS-health findings into the civic-tech domain.
 
 **Novel:**
 
-1. A paired-design within-repository result showing that effort-weighted contribution concentration systematically exceeds activity-weighted concentration (line-Gini vs commit-Gini, Wilcoxon p = 4.8 × 10⁻⁵, rank-biserial r = +0.81). The implication for CHAOSS-aligned health frameworks is that lines-changed per contributor should accompany count-based concentration metrics.
-2. The **elephant-week metric** — a per-week extension of the CHAOSS elephant factor measuring the share of weekly `lines_added + lines_removed` contributed by the busiest single author. Per-repository median: 96.6%.
-3. A sensitivity-aware characterisation of the cross-project contributor ecosystem: of the 12.3% of contributors active in ≥ 2 panel projects, 90.3% stay within a single umbrella organisation, leaving only ~0.5% of all panel contributors as genuinely cross-organisational.
+1. A paired-design within-repository result showing that effort-weighted contribution concentration systematically exceeds activity-weighted concentration (line-Gini vs commit-Gini, Wilcoxon p = 4.8 × 10⁻⁵, rank-biserial r = +0.81); we introduce the **elephant-week metric** (§3.3) as the per-week effort-resolved extension of the CHAOSS elephant factor, with a per-repository median of 96.6%.
+2. A sensitivity-aware characterisation of the cross-project contributor ecosystem: 5.5% of unique panel humans are active in ≥ 2 panel repositories, but only 8.9% of *those* span ≥ 2 stewarding organisations, leaving ≈ 0.5% of all panel humans as genuinely cross-organisational.
 
-**Confirming and extending prior findings on small-team OSS:**
+**Confirming established small-team-OSS patterns in a new domain:** drive-by contributor dominance [10] (52% of human contributor records make a single commit and never return) and low truck-factor distributions [1] (median bus factor 2, 46% of repositories at bus factor 1).
 
-4. A landscape-scale confirmation of drive-by contributor dominance [Pinto 2016] in a new domain: 52% of human contributor records make a single commit and never return.
-5. A landscape-scale confirmation of low truck-factor distributions [Avelino 2016] in a new domain: median bus factor 2, 46% of repositories at bus factor 1.
-
-**Supporting infrastructure:**
-
-6. An operational definition of civic technology (§3.1) with three binary inclusion criteria applied independently by two coders.
-7. An open-source Python toolchain, the canonical May 2026 dataset (37 repositories, 22,486 contributor-weeks), the dual-coder agreement table, and deterministic figure-regeneration scripts.
+**Supporting infrastructure:** an operational definition of civic technology (§3.1) applied by two coders, an open-source Python toolchain, and the canonical May 2026 dataset with deterministic figure-regeneration scripts.
 
 ### Research questions
 
@@ -61,17 +54,11 @@ We frame the contributions by what is genuinely novel in this paper vs what conf
 
 ## 2. Related Work
 
-**Repository health and contributor concentration.** The CHAOSS framework [8] provides a standardised vocabulary for OSS community health. The bus factor [1] and the Herfindahl–Hirschman Index measure concentration; both have been flagged as sustainability risks across general-purpose OSS. Coelho and Valente [3] identified contributor departure as the primary cause of unmaintained projects on GitHub. Pinto et al. [10] characterised casual contributors at large scale and argued that their cumulative contribution is significant despite individual brevity.
-
-**Contributor lifecycles.** Contributor onboarding, retention, and abandonment have been studied at the level of large flagship projects [4]. The literature emphasises the rarity of long-term contributors and the high rate of casual or one-time contributions.
-
-**Software delivery and release discipline.** DORA-style indicators [5, 6] were designed for commercial teams; their applicability to civic-tech projects has not been systematically characterised.
-
-**Bot detection.** Dey et al. [2] and Golzadeh et al. [7] proposed heuristic and supervised methods for identifying bot contributors.
+**OSS health and contributor dynamics.** The CHAOSS framework [8] standardises OSS community-health metrics including the bus factor [1] and the HHI, both flagged as sustainability risks across general-purpose OSS. Coelho and Valente [3] identified contributor departure as the primary cause of unmaintained projects on GitHub. Pinto et al. [10] characterised casual contributors at scale and argued that their cumulative contribution is significant despite individual brevity. Eghbal [4] characterised maintainer-volunteer dynamics in the long tail of OSS. DORA-style delivery indicators [5, 6] were designed for commercial teams and have not been systematically characterised for civic-tech. Dey et al. [2] and Golzadeh et al. [7] proposed heuristic and supervised methods for bot identification; bot filtering matters because automated accounts inflate organisational concentration metrics without sustaining the project.
 
 **Civic technology.** Adoption surveys [11, 9] document significant variation in civic-tech maturity, community engagement, and sustainability practices. The existing literature is predominantly qualitative; quantitative repository-mining studies of civic-tech specifically are rare. Our work begins to fill that gap.
 
-*[TODO: 1–2 recent (2023–2025) OSS-health / sustainability / civic-tech references; candidate list in the .tex `% TODO(author)` comment.]*
+*[TODO: reviewer suggested Schrock, Saldivar et al., post-2013 Knight Foundation work. See `paper_esem.tex` TODO comment for the full candidate list with integration suggestions.]*
 
 ---
 
@@ -141,7 +128,7 @@ Across the 2,506 human contributor records, **1,300 (52%) made a single commit a
 
 *The bus-factor and HHI findings extend established small-team-OSS patterns [1, 8] to civic-tech; the elephant-week analysis below is novel.*
 
-Median bus factor is 2 (range 1–5 with bots; 1–4 without). **Seventeen repositories (46%) have a bus factor of 1**. Median HHI 6,344 with bots → 4,357 without — a 31% reduction (Wilcoxon signed-rank with vs without bots: **W = 2.0, p = 7 × 10⁻⁶, rank-biserial r = +0.99** very large; 27 of 37 repositories change). The paired Wilcoxon on bus factor finds no significant change (W = 5.0, p = 1.00, 4 of 37 change) — bots distort fine-grained concentration metrics but not coarser thresholds.
+Median bus factor is 2 (range 1–5 with bots; 1–4 without). **Seventeen repositories (46%) have a bus factor of 1**. Median HHI 6,344 with bots → 4,357 without — a 31% reduction (Wilcoxon signed-rank with vs without bots: **W = 2.0, p = 7 × 10⁻⁶, rank-biserial r = +0.99**, large effect; 27 of 37 repositories change). The paired Wilcoxon on bus factor finds no significant change (W = 5.0, p = 1.00, 4 of 37 change) — bots distort fine-grained concentration metrics but not coarser thresholds.
 
 **Week-by-week concentration (novel metric).** The per-repository median elephant-week share is **96.6%** (IQR 94.9–100.0%, range 43.6–100.0%). Pooled across all panel-weeks weighted by activity, 83.3% of active weeks are elephant weeks.
 
@@ -149,7 +136,7 @@ Median bus factor is 2 (range 1–5 with bots; 1–4 without). **Seventeen repos
 
 *This is a novel finding. We are not aware of prior literature reporting a paired within-repository comparison of effort-weighted vs commit-count Gini across an OSS-domain panel.*
 
-The paired comparison of effort-Gini and commit-Gini within each repository yields a within-repository design robust to per-metric coverage gaps. Full-history line-Gini median 0.70 (IQR 0.21). Line-Gini exceeds commit-Gini in 27 of 37 repositories, smaller in 6, equal in 4; mean Δ = +0.052. Wilcoxon signed-rank on the 33 non-zero pairs: **W = 53.0, p = 4.8 × 10⁻⁵, rank-biserial r = +0.81** (very large). One-sided sign test on 27/33 positive: p = 1.6 × 10⁻⁴. At the largest scales (> 5,000 commits) the line-Gini saturates near 1 while the commit-Gini stays at 0.76–0.95.
+The paired comparison of effort-Gini and commit-Gini within each repository yields a within-repository design robust to per-metric coverage gaps. Full-history line-Gini median 0.70 (IQR 0.21). Line-Gini exceeds commit-Gini in 27 of 37 repositories, smaller in 6, equal in 4; mean Δ = +0.052. Wilcoxon signed-rank on the 33 non-zero pairs: **W = 53.0, p = 4.8 × 10⁻⁵, rank-biserial r = +0.81** (large effect). One-sided sign test on 27/33 positive: p = 1.6 × 10⁻⁴. At the largest scales (> 5,000 commits) the line-Gini saturates near 1 while the commit-Gini stays at 0.76–0.95.
 
 ![Figure 3](figures/fig_effort_gini_clean.png)
 
@@ -179,15 +166,15 @@ A naive intuition predicts decay with age. The panel shows the opposite within s
 
 *The sensitivity-aware version of this finding is novel; it sharpens the headline-rate claim by controlling for the umbrella-network composition of our sampling frame.*
 
-The 37 repositories share 511 unique contributor logins overall (498 human). **Only 12.3% of contributors are active in more than one panel project** (63 of 511; 59 of 498 humans). The most cross-project bot is `dependabot[bot]` in 23 of 37 repositories; the most cross-project human, `kilemensi`, contributes to 13 repositories all under Code for Africa.
+**Contributor counts and denominators.** We work from the contributor-lifecycle table (per-repository attribution), which yields **2,055 unique human contributor logins** across the 37-repository panel after bot filtering. (An alternative panel-wide deduplication, `cross_project_overlap.csv`, uses a stricter GraphQL-author key and yields 511 unique logins of which 498 are human; for the sensitivity check below we need per-repository attribution, so the lifecycle table is the primary source throughout this subsection.) Of the 2,055 unique humans, **112 (5.5%) are active in ≥ 2 panel repositories**. The most cross-project human, `kilemensi`, contributes to 8 panel repositories all under Code for Africa; the most cross-project bot, `dependabot[bot]`, contributes to 23 repositories.
 
-**Sensitivity check (sampling-frame bias).** A reviewer's concern: our sampling frame seeded heavily from umbrella networks, so an "umbrella-shaped ecosystem" finding could be an artefact. We address by re-running the cross-project analysis at the **organisation** level: of the 113 human contributors active in ≥ 2 panel repositories, only **11 (9.7%) span ≥ 2 distinct stewarding organisations**. The remaining 102 (90.3%) of cross-project humans stay within a single organisation — most often Code for Africa, secondarily Code for America. Translating to the all-contributor denominator: of the 2,056 unique humans on the panel, ≈ 5.5% are panel-cross-project and ≈ 0.5% are cross-organisational. The umbrella-shaped pattern is not a sampling artefact: it survives at the organisation level, where umbrella over-representation cannot inflate the cross-project rate.
+**Sensitivity check (sampling-frame bias).** A reviewer's concern: our sampling frame seeded heavily from umbrella networks (Code for America, Code for Africa, MySociety, Democracy Club, OKF, Code for Japan), so an "umbrella-shaped ecosystem" finding could be an artefact. We address by re-running the analysis at the **organisation** level: of the 112 multi-repo humans, only **10 (8.9%) span ≥ 2 distinct stewarding organisations**. The remaining 102 (91.1%) stay within a single organisation — most often Code for Africa, secondarily Code for America. Translating to the all-contributor denominator: of the 2,055 unique humans, ≈ 5.5% are panel-cross-project and ≈ 0.5% are cross-organisational. The umbrella-bounded pattern is not a sampling artefact: it survives at the organisation level, where umbrella over-representation cannot inflate the cross-project rate.
 
 ![Figure 5](figures/fig_cross_project_v2.png)
 
-**Figure 5.** Top-15 human cross-project contributors. Teal: stays within one organisation. Amber: spans ≥ 2 organisations. 90.3% of cross-project humans are teal.
+**Figure 5.** Top-15 human cross-project contributors (by panel-repo count). Teal: stays within one organisation. Amber: spans ≥ 2 organisations. 91.1% of cross-project humans are teal.
 
-**Implication.** The civic-tech cross-project contributor pool is not just small (5.5%); it is umbrella-bounded (0.5% cross-organisational). The most-mobile contributors clustered around two "targeted-additions" repositories (`mastodon/mastodon`, `meshtastic/firmware`), suggesting flagship-scale technically-distinctive projects attract the rare cross-network contributor.
+**Implication.** The civic-tech cross-project contributor pool is not just small (5.5%); it is umbrella-bounded (0.5% cross-organisational). The 10 cross-organisational humans cluster around two "targeted-additions" repositories (`mastodon/mastodon`, `meshtastic/firmware`), suggesting flagship-scale technically-distinctive projects attract the rare cross-network contributor.
 
 ---
 
@@ -199,7 +186,7 @@ The 37 repositories share 511 unique contributor logins overall (498 human). **O
 
 **Effort-based measurement matters.** The systematic positive gap between line-Gini and commit-Gini (mean Δ = +0.052, 27 of 37 positive, Wilcoxon p = 4.8 × 10⁻⁵, r = +0.81) demonstrates that commit-count concentration under-estimates effort concentration. CHAOSS-aligned health frameworks should incorporate effort-resolved metrics alongside count-based ones.
 
-**The cross-project ecosystem is umbrella-shaped — and that pattern survives sensitivity checks.** Even after recomputing at the organisation level (which is invariant to umbrella over-representation), 90.3% of cross-project humans stay within a single organisation. Sustainability interventions that aim to grow a cross-cutting civic-tech contributor class would need cross-umbrella programming explicitly.
+**The cross-project ecosystem is umbrella-bounded, and the pattern survives sensitivity checks.** Recomputing at the organisation level (§4.6), only 8.9% of multi-repo humans span ≥ 2 stewarding organisations, leaving ≈ 0.5% of all panel humans genuinely cross-organisational. This is invariant to umbrella over-representation in our sampling frame: increasing or decreasing the umbrella share would shift the cross-project rate but not the within-organisational concentration of the multi-repo activity. The dominant umbrella in the cross-project pool is Code for Africa; the small cross-organisational tail (10 humans) clusters around two "targeted-additions" repositories (`mastodon/mastodon`, `meshtastic/firmware`). Sustainability interventions that aim to grow a broader cross-cutting civic-tech contributor class would need cross-umbrella programming explicitly.
 
 **Survivor bias bounds what we can claim about evolution.** The age-vs-activity pattern (Challenge 5) is informative about survivors but not about cohorts.
 
@@ -209,7 +196,7 @@ The 37 repositories share 511 unique contributor logins overall (498 human). **O
 
 **Construct validity.** Bus factor, HHI, and the elephant factor are commit-based; the effort-Gini analysis (§4.3) mitigates this for the lines-changed dimension. Inclusion criteria C1–C3 applied by two coders with disagreements resolved by discussion; until κ is reported in the camera-ready, the single-rule operationalisation of "design intent at project inception" remains a residual construct-validity threat. We computed Cliff's δ for Mann–Whitney comparisons and rank-biserial r for paired Wilcoxon tests; all reported effect sizes are large.
 
-**External validity and sampling-frame selection.** The 37-repository panel is purposive, not a probability sample. The sampling frame seeded heavily from umbrella networks (six umbrella organisations supply 24 of 37 panel repos), so the panel over-represents umbrella-affiliated civic-tech projects relative to independent ones. This affects Challenge 6 most directly: cross-project rates within umbrella-network repos (27.1% of contributors) are higher than within non-umbrella repos (3.1%), so the panel's headline 12.3% cross-project rate is partly an artefact of which repos we sampled. The organisation-level sensitivity check in §4.6 (only 9.7% of cross-project humans span ≥ 2 stewarding organisations) addresses this concern by recomputing at the level of cross-organisational mobility. We retain "umbrella-bounded" as the defensible characterisation; the absolute panel-cross-project rate would change under a different sampling frame. The artefact deposit lists repositories by name and several are uniquely identifiable on inspection; ESEM allows this for anonymised submissions.
+**External validity and sampling-frame selection.** The 37-repository panel is purposive, not a probability sample. The sampling frame seeded heavily from umbrella networks (six umbrella organisations supply 24 of 37 panel repos), so the panel over-represents umbrella-affiliated civic-tech projects relative to independent ones. This affects Challenge 6 most directly: cross-project rates within umbrella-network repos are systematically higher than within non-umbrella repos, so the panel's headline cross-project rate (5.5% of unique humans) is partly an artefact of which repos we sampled. The organisation-level sensitivity check in §4.6 (only 8.9% of cross-project humans span ≥ 2 stewarding organisations) addresses this concern by recomputing at the level of cross-organisational mobility. We retain "umbrella-bounded" as the defensible characterisation; the absolute panel-cross-project rate would change under a different sampling frame. The artefact deposit lists repositories by name and several are uniquely identifiable on inspection; ESEM allows this for anonymised submissions.
 
 **Statistical validity.** n = 37 limits power for detecting small effects in inferential tests; we treat the inferential layer as exploratory and emphasise the paired-design Wilcoxon results. Per-metric coverage is summarised below.
 
@@ -229,7 +216,7 @@ The 37 repositories share 511 unique contributor logins overall (498 human). **O
 
 ## 7. Conclusions and Longer-Term Plan
 
-We presented emerging results from a multi-dimensional landscape analysis of 37 civic-tech repositories. Six sustainability challenges emerge: drive-by contribution dominates (52% single-commit), cores are highly concentrated (median bus factor 2; 46% at bus factor 1; per-repo median 96.6% elephant weeks), effort concentration systematically exceeds activity concentration (Wilcoxon p = 4.8 × 10⁻⁵, r = +0.81), stale-issue backlogs are pervasive (median ratio 0.98), release discipline is largely absent (54%), and the cross-project contributor ecosystem is thin (12.3%) and umbrella-bounded (only 0.5% cross-organisational). A counter-pattern — surviving older projects intensify rather than decay — characterises survivors only.
+We presented emerging results from a multi-dimensional landscape analysis of 37 civic-tech repositories. Six sustainability challenges emerge: drive-by contribution dominates (52% single-commit), cores are highly concentrated (median bus factor 2; 46% at bus factor 1; per-repo median 96.6% elephant weeks), effort concentration systematically exceeds activity concentration (Wilcoxon p = 4.8 × 10⁻⁵, r = +0.81), stale-issue backlogs are pervasive (median ratio 0.98), release discipline is largely absent (54%), and the cross-project contributor ecosystem is thin (5.5% of unique panel humans) and umbrella-bounded (only 0.5% cross-organisational). A counter-pattern — surviving older projects intensify rather than decay — characterises survivors only.
 
 Work in progress along four axes:
 

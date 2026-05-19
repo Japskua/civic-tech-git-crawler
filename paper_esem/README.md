@@ -4,7 +4,20 @@ Self-contained submission package for the ESEM 2026 Emerging Results, Vision, an
 
 **Current title:** *The Civic-Tech Open-Source Landscape: Sustainability Challenges Across 37 Projects*
 
-**Round-4 revision (responding to second peer review).** The paper is organised around six sustainability challenges. Round 4 made these specific changes per the second reviewer's punch list:
+**Round-5 revision (responding to third peer review — reviewer moved recommendation to ACCEPT).** The paper is organised around six sustainability challenges. Round 5 addressed the remaining accept-conditional concerns:
+
+- Reconciled the 113-vs-59 cross-project number inconsistency the reviewer caught. The two prior figures came from two CSVs with different contributor-dedup conventions (`cross_project_overlap.csv` uses a stricter GraphQL-author key, 511 logins; `contributor_lifecycles.csv` uses per-repo attribution, 2,055 humans). The paper now uses `contributor_lifecycles.csv` throughout for internal consistency. Updated abstract, §1, §4.6, §5, §6 to all use the same denominator (2,055 humans → 5.5% cross-project → 8.9% of those cross-organisational → 0.5% of all panel humans).
+- Rewrote §5's discussion paragraph on the ecosystem finding to match the sharpened §4.6 framing ("umbrella-bounded" with explicit sensitivity-survival reasoning rather than the looser "umbrella-shaped, not panel-shaped").
+- Compressed §1 contribution list (was 7 items: 3 novel + 2 confirmatory + 2 infra; now 2 novel bullets + 1 confirmatory sentence + 1 infrastructure sentence).
+- Compressed §2 Related Work (was 5 paragraphs by topic; now 2 dense paragraphs: OSS-health-and-contributor-dynamics + civic-technology).
+- Compressed Challenge 1 "Are they coming back" + "Implication" into one paragraph.
+- Downgraded "very large effect" → "large effect" (reviewer flagged this invites a pedantic threshold-table reviewer).
+- Sharpened the recent-refs TODO comment to call out the reviewer's specific suggestions (Schrock, Saldivar et al., post-2013 Knight Foundation).
+- Verified all cross-references resolve correctly.
+
+**Previous rounds:**
+
+**Round-4 revision (responding to second peer review).**
 
 - Abstract and §1 reweighted to lead with **novel contributions** (effort-Gini paired comparison, elephant-week metric, sensitivity-aware cross-project ecosystem). Confirmatory findings (drive-by, low bus factor) are marked as confirming prior small-team-OSS literature.
 - §4.6 expanded with a **sensitivity check** addressing umbrella-network sampling bias: of 113 cross-project humans, only 11 (9.7%) span ≥ 2 stewarding organisations. The "umbrella-bounded" pattern survives the sensitivity check.
