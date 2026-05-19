@@ -26,3 +26,4 @@ config.yaml
 .idea/
 .vscode/
 *.swp
+paper_esem/.DS_Store
