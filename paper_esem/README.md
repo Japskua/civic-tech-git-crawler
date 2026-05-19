@@ -2,26 +2,43 @@
 
 Self-contained submission package for the ESEM 2026 Emerging Results, Vision, and Reflection Papers track. Track: **Emerging Results (10p + 2p)**. Status: **anonymous draft for double-anonymous review**.
 
-**Current title:** *Coverage-Biased Correlations in OSS Repository Health Studies: A Self-Correction from 37 Civic-Tech Projects*
+**Current title:** *The Civic-Tech Open-Source Landscape: Sustainability Challenges Across 37 Projects*
 
-**Framing (round 2):** measurement-coverage bias is the lead methodological contribution; the 37-repository civic-tech panel is the case. Bus-factor↔HHI is demoted to a sanity check. The Wilcoxon paired-design results (bot-impact on HHI; line-Gini vs commit-Gini) are the well-powered headline findings.
+**Framing (round 3):** civic-tech landscape, challenges-first. The paper is organised around six sustainability challenges that emerge from the data:
+
+1. Drive-by contribution dominates (52% single-commit contributors)
+2. High-concentration cores (median bus factor 2; 46% at bus factor 1; median per-repo elephant-week share 96.6%)
+3. Effort concentration exceeds activity concentration (Wilcoxon p = 4.8 × 10⁻⁵)
+4. Stale-issue backlogs (median ratio 0.98) and missing release discipline (54% with zero releases)
+5. Activity-vs-age survivor paradox (surviving projects intensify, not decay)
+6. Thin cross-project ecosystem (only 12.3% of contributors work on multiple panel projects)
+
+The measurement-bias / pilot-self-correction story from earlier rounds has been **cut entirely** — the corrected burstiness numbers stand on their own, and the paper no longer talks about how we got there.
 
 ## Contents
 
 ```
 paper_esem/
-├── README.md                  (this file)
-├── paper_esem.md              prose draft (Markdown, mirrors paper_esem.tex)
-├── paper_esem.tex             LIPIcs v2021 LaTeX source (canonical)
-├── references.bib             BibTeX database
+├── README.md                          (this file)
+├── paper_esem.md                      prose draft (Markdown, mirrors .tex)
+├── paper_esem.tex                     LIPIcs v2021 LaTeX source (canonical)
+├── references.bib                     BibTeX database
+├── slides/
+│   ├── build_slides.js                pptxgenjs script
+│   └── colleague_briefing.pptx        8-slide briefing for colleagues
+│                                      (still based on the round-2 framing;
+│                                      regenerate if needed for round-3 talks)
 └── figures/
-    ├── fig1_busfactor_vs_hhi.png       Figure 3 in rendered LaTeX — bus factor vs HHI (sanity check)
-    ├── fig2_effort_gini.png            Figure 2 in rendered LaTeX — line-Gini vs commit-Gini (headline finding)
-    ├── fig3_burstiness_vs_stale.png    Figure 1 in rendered LaTeX — burstiness vs stale (self-correction)
-    └── fig4_maturity_split.png         Figure 4 in rendered LaTeX — maturity split
+    ├── fig_challenges_dashboard.png   Figure 1 — 4-panel challenges overview
+    ├── fig_contributor_duration.png   Figure 2 — contributor engagement histogram (52% single-commit)
+    ├── fig2_effort_gini.png           Figure 3 — line-Gini vs commit-Gini paired
+    ├── fig_activity_vs_age.png        Figure 4 — weekly commits vs project age
+    ├── fig_cross_project.png          Figure 5 — top-12 cross-project humans
+    └── (unused but kept)
+        ├── fig1_busfactor_vs_hhi.png  (was used in round 1/2; not in round 3)
+        ├── fig3_burstiness_vs_stale.png (was used in round 1/2; cut with measurement-bias story)
+        └── fig4_maturity_split.png    (was used in round 1/2; cut for length)
 ```
-
-File names follow topical naming `fig1..fig4`; LaTeX auto-numbers by document order, so `\ref{fig:bf-hhi}` may print as "Figure 3" even though the file is `fig1_...`.
 
 ## Building locally
 
@@ -32,27 +49,38 @@ pdflatex paper_esem
 pdflatex paper_esem
 ```
 
-This requires the LIPIcs v2021 class (`lipics-v2021.cls`), which is bundled with the Overleaf LIPIcs template. If building outside Overleaf, download the class from <https://submission.dagstuhl.de/styles/>.
+Requires the LIPIcs v2021 class (`lipics-v2021.cls`), bundled with the Overleaf LIPIcs template.
 
 ## Moving to Overleaf
 
-1. Create a new project from the **LIPIcs 2021** template.
+1. New project from the **LIPIcs 2021** template.
 2. Upload `paper_esem.tex`, `references.bib`, and the `figures/` directory.
 3. Set the main document to `paper_esem.tex`. Build.
 
-## Open TODOs before submission (search the .tex for `TODO(author)`)
+## Regenerating figures
 
-1. **Recent references** — add 1–2 OSS-health/sustainability papers from 2023–2025 to address the reviewer's currency point. Currently nothing 2022+ in the bibliography.
-2. **Inter-rater reliability** — the dual-coder C1–C3 coding is currently a placeholder (`Cohen's κ = [TBD: see Data Availability]` in §3.2). Run the IRR before submission and substitute the actual κ value plus the agreement table in the artefact.
-3. **Figure 1 label collision** — the reviewer flagged overlapping repository labels at the top of the bus-factor vs HHI scatter (e.g. "Forum/MagicGisp-gem" appears glued to another label). Regenerate the figure with collision avoidance (matplotlib `adjustText` or similar) before camera-ready.
-4. **Anonymous mirror URL** — replace `[anonymous-url-redacted-for-double-blind-review]` in §Data Availability with the actual anonymous-Zenodo / anonymous-github.com link before submission; substitute persistent Zenodo DOI in camera-ready.
-5. **Author block / funding / acknowledgements** — currently say "Anonymised for double-anonymous review"; fill in for camera-ready only.
+```bash
+# from repo root
+uv run python scripts/paper_figures.py    # (to be added; current figures regenerated by inline analysis)
+```
+
+The four new figures (`fig_challenges_dashboard`, `fig_contributor_duration`, `fig_activity_vs_age`, `fig_cross_project`) were generated from `example_results/may_2026/{contributor_lifecycles,cross_project_overlap,weekly_snapshots,repo_metrics,chaoss_summary}.csv` via the analysis blocks documented in `analysis_n37.md` (artefact). `fig2_effort_gini.png` is unchanged from earlier rounds.
+
+## Open TODOs before submission
+
+Search the `.tex` for `TODO(author)`:
+
+1. **Recent references** — 1–2 OSS-health/sustainability papers from 2023–2025 to address the currency point. Currently nothing 2022+ in the bibliography.
+2. **Inter-rater reliability** — dual-coder C1–C3 coding placeholder (`Cohen's κ = [TBD]` in §3.1). Run the IRR before submission and substitute.
+3. **Anonymous mirror URL** — replace `[anonymous-url-redacted-for-double-blind-review]` in §Data Availability with the actual anonymous-Zenodo / anonymous-github.com link before submission; substitute persistent Zenodo DOI in camera-ready.
+4. **Author block / funding / acknowledgements** — fill in for camera-ready only.
 
 ## Editing notes
 
 - The paper is anonymised throughout per the ESEM 2026 double-anonymous policy.
-- The 10-page LIPIcs limit applies to main content (sections 1–7 + figures + tables). Data Availability and References live in the 2-page allowance on top.
-- Word count: body ~4,000 prose words, ~5–6 figures+tables ≈ 9–9.5 rendered LIPIcs pages. The first compile in Overleaf will give the definitive page count; if it overruns, cheapest cuts are the §4.5 maturity paragraph and the Table 1 row-set.
+- The 10-page LIPIcs limit applies to main content (sections 1–7 + figures). Data Availability and References live in the 2-page allowance.
+- Word count: body ~3,600 prose words, 5 figures, no tables ≈ 8.5 rendered LIPIcs pages. Comfortably under the 10p limit. The first Overleaf compile will give the definitive page count.
+- The colleague briefing slides under `slides/` are from the round-2 framing and reference the measurement-bias story heavily. Regenerate them via `node build_slides.js` if you give the talk under round-3 framing — the script will need a substantive rewrite (different narrative arc).
 
 ## Important dates
 
