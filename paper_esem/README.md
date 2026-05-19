@@ -38,7 +38,7 @@ paper_esem/
 ├── README.md                          (this file)
 ├── paper_esem.md                      prose draft (Markdown, mirrors .tex)
 ├── paper_esem.tex                     LIPIcs v2021 LaTeX source (canonical)
-├── references.bib                     BibTeX database (13 entries)
+├── references.bib                     BibTeX database (19 entries)
 ├── slides/
 │   ├── build_slides.js                pptxgenjs script (round-3 framing)
 │   └── colleague_briefing.pptx        9-slide briefing for colleagues
@@ -63,10 +63,7 @@ paper_esem/
 1. **Inter-rater reliability — RUN THE ACTUAL DUAL-CODING.** §3.1 commits to a dual-coder pass on the 64-candidate pool. Recruit a colleague (estimated 2–3 hours of work). Substitute the κ value in §3.1 before the May 22 abstract deadline. The supplementary artefact also needs the dual-coder decision table.
 
 ### Important
-2. **Recent (2023–2025) references.** Reviewer flagged the civic-tech literature as thin. The `.tex` has a `% TODO(author)` comment block in §2 listing candidate refs by topic that I refused to add unverified. Please pick 2–3 that you actually have read and add them to `references.bib`. Candidates:
-   - *Civic-tech / digital democracy:* Schrock book, Gordon & Walter "Meaningful Inefficiencies" (2019), Engagement Lab @ Emerson, Hartzog & Selinger
-   - *OSS sustainability empirical:* recent Geiger, Vasilescu, or Wachs work (MSR / ICSE 2023–25); OpenSSF reports
-   - *Contributor lifecycle / onboarding:* recent Steinmacher & Gerosa SANER/ICSE papers
+2. ~~Recent (2023–2025) references.~~ **DONE in round-6** — added 5 verified refs: Knutas2023 (ICSE-SEIS), Saldivar2019 (CSCW), Schrock2019 (Emerald chapter), Knight2017 (Knight Foundation sustainability report), Lumbard2024 (Information Systems Journal). See `recent_refs_candidates.md` for the rationale per cite.
 3. **Anonymous mirror URL** — replace `[anonymous-url-redacted-for-double-blind-review]` in the Data Availability statement with the actual anonymous-Zenodo / anonymous-github.com link before submission.
 4. **Author block / funding / acknowledgements** — currently anonymised; fill in for camera-ready only.
 

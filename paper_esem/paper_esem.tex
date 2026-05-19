@@ -62,7 +62,7 @@ Civic technology --- open-source software for government services, electoral inf
 % =====================================================================
 \section{Introduction}\label{sec:intro}
 
-Civic technology --- software designed to enhance civic engagement, government services, transparency, public participation, or democratic processes~\cite{Patel2013,McNutt2016} --- has emerged as a distinct subdomain of open-source software with a public-interest mandate. Unlike commercially backed projects with dedicated engineering teams, many civic-tech repositories depend on volunteer contributors, intermittent grant funding, and small non-profit teams. The consequences of project failure differ correspondingly: when a voter information service goes stale before an election or a freedom-of-information platform stops receiving security updates, the costs are borne by democratic participation and public service delivery, not by private customers.
+Civic technology --- software designed to enhance civic engagement, government services, transparency, public participation, or democratic processes~\cite{Patel2013,McNutt2016,Schrock2019} --- has emerged as a distinct subdomain of open-source software with a public-interest mandate. The sustainability challenges facing the field have been the subject of practitioner and funder reflection~\cite{Knight2017} but limited quantitative investigation. Unlike commercially backed projects with dedicated engineering teams, many civic-tech repositories depend on volunteer contributors, intermittent grant funding, and small non-profit teams. The consequences of project failure differ correspondingly: when a voter information service goes stale before an election or a freedom-of-information platform stops receiving security updates, the costs are borne by democratic participation and public service delivery, not by private customers.
 
 Despite growing interest in open-source sustainability~\cite{Eghbal2020,Goggins2021} and civic-technology adoption~\cite{Patel2013,McNutt2016}, the sustainability characteristics of the civic-tech ecosystem at scale remain poorly understood. Existing civic-tech work is largely qualitative; existing OSS-health work focuses on commercially backed flagship projects~\cite{Avelino2016,Coelho2017} or on whole-ecosystem mining where civic-tech repositories are statistical noise. There is a gap for rigorous multi-dimensional quantitative characterisation of the civic-tech landscape: \emph{what is the shape of contributor engagement, what is the shape of project lifecycle, and what specific sustainability challenges does the data reveal?}
 
@@ -93,40 +93,11 @@ We frame the contributions by what is genuinely novel in this paper vs.\ what ex
 \section{Related Work}\label{sec:related}
 
 \paragraph{OSS health and contributor dynamics.}
-The CHAOSS framework~\cite{Goggins2021} standardises OSS community-health metrics including the bus factor~\cite{Avelino2016} and the HHI, both flagged as sustainability risks across general-purpose OSS. Coelho and Valente~\cite{Coelho2017} identified contributor departure as the primary cause of unmaintained projects on GitHub. Pinto et al.~\cite{Pinto2016} characterised casual contributors at scale and argued that their cumulative contribution is significant despite individual brevity. Eghbal~\cite{Eghbal2020} characterised maintainer-volunteer dynamics in the long tail of OSS. DORA-style delivery indicators~\cite{Forsgren2018,Forsgren2021} were designed for commercial teams and have not been systematically characterised for civic-tech. Dey et al.~\cite{Dey2020} and Golzadeh et al.~\cite{Golzadeh2021} proposed heuristic and supervised methods for bot identification; bot filtering matters because automated accounts inflate organisational concentration metrics without sustaining the project.
+The CHAOSS framework~\cite{Goggins2021} standardises OSS community-health metrics including the bus factor~\cite{Avelino2016} and the HHI, both flagged as sustainability risks across general-purpose OSS; recent work in this tradition has shown how OSS communities use these metrics for self-comparison and social calibration~\cite{Lumbard2024}. Coelho and Valente~\cite{Coelho2017} identified contributor departure as the primary cause of unmaintained projects on GitHub. Pinto et al.~\cite{Pinto2016} characterised casual contributors at scale and argued that their cumulative contribution is significant despite individual brevity. Eghbal~\cite{Eghbal2020} characterised maintainer-volunteer dynamics in the long tail of OSS. DORA-style delivery indicators~\cite{Forsgren2018,Forsgren2021} were designed for commercial teams and have not been systematically characterised for civic-tech. Dey et al.~\cite{Dey2020} and Golzadeh et al.~\cite{Golzadeh2021} proposed heuristic and supervised methods for bot identification; bot filtering matters because automated accounts inflate organisational concentration metrics without sustaining the project.
 
 \paragraph{Civic technology.}
-Adoption surveys~\cite{Patel2013,McNutt2016} document significant variation in civic-tech maturity, community engagement, and sustainability practices. The existing literature is predominantly qualitative; quantitative repository-mining studies of civic-tech specifically are rare. Our work begins to fill that gap.
+Civic-tech adoption and investment surveys~\cite{Patel2013,McNutt2016,Knight2017} document significant variation in technical maturity, community engagement, and sustainability practices; the 2017 Knight/Rita Allen successor to~\cite{Patel2013} explicitly documents scaling and sustainability challenges among civic-tech startups and non-profits. Schrock~\cite{Schrock2019} frames civic tech as a ``practice of technical pluralism,'' usefully distinguishing umbrella definitions from bucket definitions. Saldivar et al.~\cite{Saldivar2019} provided an empirical CSCW-journal investigation of civic technology for social innovation, the most comparable prior quantitative civic-tech study to ours. Knutas et al.~\cite{Knutas2023} present an activity-theory case study of a grassroots civic-tech software group, the most recent peer-reviewed empirical civic-tech-software paper we are aware of. The existing literature remains predominantly qualitative or case-based; quantitative landscape-scale repository-mining studies of civic-tech specifically are rare. Our work begins to fill that gap.
 
-% TODO(author): The second reviewer flagged the civic-tech literature as
-% still lean (refs [9, 10] are 2013/2016). They named specific candidates:
-%
-%   "There is more recent work — Schrock on civic tech and open data,
-%    Saldivar et al. on civic technology participation, the work coming
-%    out of the Knight Foundation since the 2013 report — that would
-%    shore up the 'we're complementing a qualitative literature' framing."
-%
-% Suggested 2023-25 candidates to verify and add (3-5 needed):
-%
-%   - Schrock, A.R. — "What is civic tech? Defining a practice of
-%     technology, policy, and design" or the 2018 book "Civic Tech:
-%     Making Technology Work for People". Confirm year + venue before adding.
-%   - Saldivar, J. et al. — civic technology participation work; the
-%     reviewer flagged this without specifics so the exact paper needs
-%     finding. Possible candidates include their work on civic innovation
-%     networks (recent IS / CHI venues).
-%   - Knight Foundation — they have published successor reports to Patel
-%     2013, including 2018+ updates on civic-tech investment. Specific
-%     report name and year needed.
-%   - Gordon, E. & Walter, S. (2019) "Meaningful Inefficiencies: Civic
-%     Design in an Age of Digital Expediency" — book.
-%
-% Where to cite:
-%   - 2-3 of these in §2 "Civic technology" paragraph to update the [9, 10] coverage
-%   - Optionally 1 in §1 paragraph 2 alongside [Patel2013, McNutt2016]
-%
-% Without these, the reviewer signals "weak accept" rather than the
-% "accept" they otherwise recommend, so this is high-value to land.
 
 % =====================================================================
 \section{Methodology}\label{sec:methodology}
