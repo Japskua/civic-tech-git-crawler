@@ -489,7 +489,7 @@ async function build() {
   );
 
   // RIGHT — figure
-  s6.addImage({ path: FIG_DIR + "fig2_effort_gini.png", x: 6.6, y: 2.4, w: 6.2, h: 4.0 });
+  s6.addImage({ path: FIG_DIR + "fig_effort_gini_clean.png", x: 6.6, y: 2.4, w: 6.2, h: 4.0 });
   s6.addText(
     "At flagship scale the line-Gini saturates near 1 while the commit-Gini stays at 0.76–0.95 — large refactor commits dominate effort even when commit counts look balanced.",
     {
@@ -590,51 +590,56 @@ async function build() {
   s8.background = { color: C.bg };
   addChrome(s8, 8, TOTAL, "Cross-project ecosystem");
   addChallengeBadge(s8, 6);
-  s8.addText("Cross-project work happens inside umbrella networks.", {
+  s8.addText("The civic-tech ecosystem is thin and umbrella-bounded.", {
     x: 0.7, y: 1.55, w: W - 1.4, h: 0.7,
     fontFace: FONT.header, fontSize: 28, color: C.text, bold: true,
     align: "left", valign: "top", margin: 0,
   });
 
-  // LEFT — stat + context
-  s8.addText("12.3%", {
-    x: 0.7, y: 2.5, w: 5.5, h: 1.4,
-    fontFace: FONT.header, fontSize: 110, color: C.amber, bold: true,
+  // LEFT — stat chain: 5.5% → 8.9% → 0.5%
+  s8.addText("5.5%", {
+    x: 0.7, y: 2.4, w: 5.5, h: 1.3,
+    fontFace: FONT.header, fontSize: 90, color: C.amber, bold: true,
     align: "left", valign: "top", margin: 0,
   });
-  s8.addText("of contributors are active in ≥ 2 of our 37 repositories.", {
-    x: 0.7, y: 4.0, w: 5.5, h: 0.45,
-    fontFace: FONT.body, fontSize: 15, color: C.text, bold: true,
+  s8.addText("of unique humans contribute to ≥ 2 of our 37 repositories.", {
+    x: 0.7, y: 3.7, w: 5.5, h: 0.5,
+    fontFace: FONT.body, fontSize: 14, color: C.text, bold: true,
     align: "left", valign: "top", margin: 0,
   });
-  s8.addText("63 of 511 total contributors (59 of 498 humans).", {
-    x: 0.7, y: 4.45, w: 5.5, h: 0.4,
-    fontFace: FONT.body, fontSize: 12, color: C.textMuted, italic: true,
+  s8.addText("112 of 2,055 humans, after bot filtering.", {
+    x: 0.7, y: 4.15, w: 5.5, h: 0.35,
+    fontFace: FONT.body, fontSize: 11, color: C.textMuted, italic: true,
     align: "left", valign: "top", margin: 0,
   });
 
+  // Sensitivity-check chain
   s8.addShape("rect", {
-    x: 0.7, y: 5.1, w: 5.5, h: 1.9,
+    x: 0.7, y: 4.7, w: 5.5, h: 2.3,
     fill: { color: C.tealPale }, line: { color: C.teal, width: 1 },
   });
-  s8.addText("WHO THE CIVIC-TECH CONTRIBUTOR CLASS IS", {
-    x: 0.9, y: 5.25, w: 5.1, h: 0.3,
+  s8.addText("THE SENSITIVITY CHECK", {
+    x: 0.9, y: 4.85, w: 5.1, h: 0.3,
     fontFace: FONT.body, fontSize: 10, color: "065F46", bold: true,
     charSpacing: 4, align: "left", valign: "top", margin: 0,
   });
-  s8.addText(
-    "Code for Africa supplies the four most-cross-project humans. Code for America and Democracy Club contribute others. The ecosystem that exists is organisational, not topic-wide.",
-    {
-      x: 0.9, y: 5.6, w: 5.1, h: 1.3,
-      fontFace: FONT.body, fontSize: 12, color: "065F46",
-      align: "left", valign: "top", margin: 0,
-    }
-  );
+  s8.addText([
+    { text: "of those 112 multi-repo humans, only ", options: { fontFace: FONT.body, fontSize: 12, color: "065F46" } },
+    { text: "8.9% (10)", options: { fontFace: FONT.header, fontSize: 14, color: "047857", bold: true } },
+    { text: " span ≥ 2 distinct organisations.", options: { fontFace: FONT.body, fontSize: 12, color: "065F46", breakLine: true } },
+    { text: " ", options: { breakLine: true } },
+    { text: "Across the whole sample that leaves ", options: { fontFace: FONT.body, fontSize: 12, color: "065F46" } },
+    { text: "≈ 0.5%", options: { fontFace: FONT.header, fontSize: 14, color: "047857", bold: true } },
+    { text: " of all humans across the 37 repositories as genuinely cross-organisational. Invariant to umbrella over-representation in our frame.", options: { fontFace: FONT.body, fontSize: 12, color: "065F46" } },
+  ], {
+    x: 0.9, y: 5.2, w: 5.1, h: 1.7,
+    align: "left", valign: "top", margin: 0,
+  });
 
   // RIGHT — figure
-  s8.addImage({ path: FIG_DIR + "fig_cross_project.png", x: 6.6, y: 2.4, w: 6.2, h: 4.5 });
+  s8.addImage({ path: FIG_DIR + "fig_cross_project_v2.png", x: 6.6, y: 2.4, w: 6.2, h: 4.5 });
   s8.addText(
-    "Implication: sustainability programmes that aim to grow a broader cross-cutting contributor class need to provide cross-umbrella programming explicitly — there isn't one already.",
+    "Implication: the cross-project contributor pool is small AND umbrella-bounded. Sustainability interventions assuming cross-cutting volunteer flow don't have that flow to work with.",
     {
       x: 6.6, y: 6.95, w: 6.2, h: 0.4,
       fontFace: FONT.body, fontSize: 11, color: C.textMuted, italic: true,
