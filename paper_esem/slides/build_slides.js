@@ -241,7 +241,7 @@ async function build() {
   const s3 = pres.addSlide();
   s3.background = { color: C.bg };
   addChrome(s3, 3, TOTAL, "What we have");
-  s3.addText("A purposive panel covering scale, age, and topic.", {
+  s3.addText("A purposive sample covering scale, age, and topic.", {
     x: 0.7, y: 1.0, w: W - 1.4, h: 0.7,
     fontFace: FONT.header, fontSize: 28, color: C.text, bold: true,
     align: "left", valign: "top", margin: 0,
@@ -310,7 +310,7 @@ async function build() {
 
   // Bottom band — funnel
   s3.addShape("rect", { x: 0.7, y: 6.55, w: W - 1.4, h: 0.6, fill: { color: C.dark }, line: { type: "none" } });
-  s3.addText("64 candidate repositories  →  21 failed C1  ·  6 failed C3  →  37 in panel", {
+  s3.addText("64 candidate repositories  →  21 failed C1  ·  6 failed C3  →  37 in sample", {
     x: 0.7, y: 6.55, w: W - 1.4, h: 0.6,
     fontFace: FONT.body, fontSize: 14, color: C.white, bold: true,
     align: "center", valign: "middle", margin: 0,
@@ -428,7 +428,7 @@ async function build() {
   });
 
   s5.addText(
-    "For half the panel, almost every active week is dominated by a single contributor.",
+    "For half the 37 repositories, almost every active week is dominated by a single contributor.",
     {
       x: 0.7, y: 6.6, w: W - 1.4, h: 0.5,
       fontFace: FONT.header, fontSize: 16, color: C.text, italic: true,
@@ -602,7 +602,7 @@ async function build() {
     fontFace: FONT.header, fontSize: 110, color: C.amber, bold: true,
     align: "left", valign: "top", margin: 0,
   });
-  s8.addText("of contributors are active in ≥ 2 panel projects.", {
+  s8.addText("of contributors are active in ≥ 2 of our 37 repositories.", {
     x: 0.7, y: 4.0, w: 5.5, h: 0.45,
     fontFace: FONT.body, fontSize: 15, color: C.text, bold: true,
     align: "left", valign: "top", margin: 0,
@@ -674,7 +674,7 @@ async function build() {
     {
       tag: "L1",
       title: "Longitudinal tracking",
-      body: "Quarterly recrawls of the 37-repo panel over 24 months. Change-over-time on the six challenges. Event-study designs around governance changes.",
+      body: "Quarterly recrawls of the 37 repositories over 24 months. Change-over-time on the six challenges. Event-study designs around governance changes.",
     },
     {
       tag: "L2",
@@ -684,7 +684,7 @@ async function build() {
     {
       tag: "L3",
       title: "Failed-projects comparison",
-      body: "Parallel panel of civic-tech repositories that ceased activity. Convert survivor observations into causal claims about lifecycle.",
+      body: "Parallel sample of civic-tech repositories that ceased activity. Convert survivor observations into causal claims about lifecycle.",
     },
   ];
   axes.forEach((a, i) => {
