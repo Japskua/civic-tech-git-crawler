@@ -3,11 +3,18 @@ github:
   retry_delay: 3
   rate_limit_buffer: 100
 
+# Canonical civic-tech corpus — 2026-05 refresh (n = 38).
+# 33 repos retained from the prior n=37 set, MINUS 4 removed
+# (codeforamerica/recordtrac, markov-root/atlas, fvialibre/edia,
+# luftdata/luftdata.se — tiny/archived/inactive), PLUS 5 added
+# (g0v + Code for Japan + Computational Democracy participation &
+# transparency tools). Full selection rationale, including the
+# borderline g0v dictionary projects, is in datasets/2026_05/README.md.
 repositories:
+  # DemocracyClub (UK elections)
   - "DemocracyClub/UK-Polling-Stations"
   - "DemocracyClub/WhoCanIVoteFor"
-  - "fvialibre/edia"
-  - "luftdata/luftdata.se"
+  # Code for Africa
   - "CodeForAfrica/PromiseTracker"
   - "CodeForAfrica/academy.AFRICA"
   - "CodeForAfrica/Dominion.AFRICA"
@@ -16,6 +23,8 @@ repositories:
   - "CodeForAfrica/outbreak.AFRICA"
   - "CodeForAfrica/ui"
   - "CodeForAfrica/sensors.AFRICA"
+  - "CodeForAfrica/actNOW"
+  # Code for America
   - "codeforamerica/form-flow"
   - "codeforamerica/vita-min"
   - "codeforamerica/tofu-modules-aws-serverless-database"
@@ -25,25 +34,33 @@ repositories:
   - "codeforamerica/asap_pdf"
   - "codeforamerica/cmr-maryland-eligibility-determination"
   - "codeforamerica/document-transfer-service"
-  - "markov-root/atlas"
-  - "fvialibre/heseia-sentence-bias-dataset"
+  # Code for Japan
   - "codeforjapan/BirdXplorer"
+  - "codeforjapan/decidim-cfj"                  # added 2026-05 (Decidim participation platform)
+  # g0v (Taiwan) — added 2026-05
+  - "g0v/moedict.tw"                            # added 2026-05 (open-knowledge / dictionary — borderline)
+  - "g0v/amis-moedict"                          # added 2026-05 (Amis-language dictionary — borderline)
+  - "g0v/tw-rental-house-data"                  # added 2026-05 (housing-market transparency)
+  # Deliberation / participation platforms
+  - "CitizensFoundation/your-priorities-app"
+  - "compdemocracy/polis"                       # added 2026-05 (Polis deliberation tool)
+  - "ForumMagnum/ForumMagnum"
+  # Transparency / FOI / civic services
+  - "okfde/froide"
+  - "mysociety/ceuk-marking"
+  - "openplans/shareabouts"
+  - "civiform/civiform"
+  # Networked / decentralised civic infrastructure
+  - "mastodon/mastodon"
+  - "meshtastic/firmware"
   - "meshtastic/Meshtastic-Android"
   - "meshtastic/web"
-  - "meshtastic/firmware"
-  - "civiform/civiform"
   - "iiab/iiab"
-  - "ForumMagnum/ForumMagnum"
-  - "mastodon/mastodon"
-  - "okfde/froide"
-  - "openplans/shareabouts"
-  - "codeforamerica/recordtrac"
-  - "CodeForAfrica/actNOW"
-  - "CitizensFoundation/your-priorities-app"
-  - "mysociety/ceuk-marking"
+  # NLP bias dataset (borderline civic — see rationale)
+  - "fvialibre/heseia-sentence-bias-dataset"
 
 output:
-  directory: "./output"
+  directory: "./datasets/2026_05"
 
 detection:
   cloud_keywords:

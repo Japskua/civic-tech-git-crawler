@@ -1,9 +1,0 @@
-metric,organisations,org_details,n_groups,n_total,H_statistic,p_value,epsilon_squared,significant
-bus_factor_no_bots,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=10,med=1.5); CodeForAfrica(n=9,med=2.0); meshtastic(n=3,med=1.0)",3,22,0.5476,0.7605,0.0,False
-hhi_no_bots,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=10,med=5228.15); CodeForAfrica(n=9,med=3663.1); meshtastic(n=3,med=5330.4)",3,22,0.2195,0.8961,0.0,False
-health_percentage,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=10,med=43.5); CodeForAfrica(n=9,med=50.0); meshtastic(n=3,med=100.0)",3,22,4.8833,0.087,0.1518,False
-num_developers,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=10,med=10.0); CodeForAfrica(n=9,med=7.0); meshtastic(n=3,med=107.0)",3,22,7.4735,0.0238,0.2881,True
-total_commits,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=10,med=336.5); CodeForAfrica(n=9,med=702.0); meshtastic(n=3,med=6506.0)",3,22,5.6374,0.0597,0.1914,False
-burstiness_cv,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=10,med=0.895); CodeForAfrica(n=9,med=0.91); meshtastic(n=3,med=0.52)",3,22,2.7694,0.2504,0.0405,False
-stale_issue_ratio,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=4,med=1.0); CodeForAfrica(n=6,med=0.9); meshtastic(n=3,med=0.359)",3,13,8.7662,0.0125,0.6766,True
-core_contributor_count,"codeforamerica, CodeForAfrica, meshtastic","codeforamerica(n=10,med=1.0); CodeForAfrica(n=9,med=3.0); meshtastic(n=3,med=3.0)",3,22,0.692,0.7075,0.0,False
