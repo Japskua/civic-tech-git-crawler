@@ -120,22 +120,25 @@ class GitHubClient:
         GitHub returns 202 while computing stats and the computation is async,
         so the first request typically *triggers* the build rather than
         returning data. For active repositories the build can take 30–180 s.
-        We retry with exponential backoff capped at 30 s per attempt, using a
-        budget of at least 10 attempts (≈ 225 s total at default retry_delay
-        = 3 s) regardless of the user-configured max_retries — that knob
-        governs general HTTP retry, not the longer stats build wait.
+        We retry with exponential backoff capped at 30 s per attempt over a
+        moderate 5-attempt budget (3+6+12+24 s ≈ 45 s/endpoint; no sleep after
+        the final attempt). When GitHub never finishes within that window the
+        caller falls back to commit_history weekly_snapshots (see
+        chaoss_metrics), so a longer wait yields no extra coverage while GitHub
+        is persistently returning 202.
 
         Returns the parsed JSON list, or None if the endpoint never finished
         computing or returned an error.
         """
-        # Earlier versions used `delay = retry_delay * attempt` with the
-        # general max_retries (=5 by default), giving a 45 s budget that was
-        # too short on the May 2026 crawl: GitHub returned 202 for ≥45 s on
-        # 32 of 37 repos, so weekly_commits was cached as [] and burstiness
-        # could not be computed. The longer budget here restores the March
-        # 2026 baseline coverage (29/29 populated).
+        # NOTE: the budget here is deliberately decoupled from the
+        # user-configured max_retries (which governs general HTTP retry). An
+        # earlier 10-attempt (~225 s) budget was used to maximise GitHub-stats
+        # coverage, but on crawls where GitHub returns 202 for the entire
+        # window (even tiny repos) it just multiplied per-repo cost with no
+        # data gain — burstiness/weekly data is recoverable from the
+        # commit_history fallback regardless.
         url = f"/repos/{slug}/stats/{endpoint}"
-        attempts = max(self._max_retries, 10)
+        attempts = 5
         max_backoff = 30.0
         for attempt in range(1, attempts + 1):
             self._rate_limiter.wait_if_needed()
@@ -147,6 +150,8 @@ class GitHubClient:
             if resp.status_code == 200:
                 return resp.json()
             if resp.status_code == 202:
+                if attempt == attempts:
+                    break  # final attempt still computing — give up without an extra sleep
                 delay = min(self._retry_delay * (2 ** (attempt - 1)), max_backoff)
                 logger.info(
                     "stats/%s for %s computing (attempt %d/%d), waiting %.1fs...",
