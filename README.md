@@ -47,14 +47,14 @@ uv sync
 # 3. Set your GitHub token
 export GITHUB_TOKEN="ghp_your_token_here"
 
-# 4. Crawl the canonical civic-tech corpus (38 repos — long-running)
+# 4. Crawl the canonical civic-tech corpus (57 repos — long-running)
 uv run civic-tech-crawler --config config.example.yaml
 
 # 5. Find results in ./datasets/2026_05/
 ls datasets/2026_05/
 ```
 
-> A full 38-repo crawl takes several hours and is best run through the
+> A full 57-repo crawl takes several hours and is best run through the
 > resumable, auto-respawning wrapper — see
 > [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery). To try
 > the tool quickly, copy `config.example.yaml` to `config.yaml` and trim the
@@ -151,7 +151,7 @@ github:
   rate_limit_buffer: 100    # Pause when this many API calls remain
 
 # Repositories to crawl (owner/repo format).
-# config.example.yaml ships with the full canonical 38-repo civic-tech
+# config.example.yaml ships with the full canonical 57-repo civic-tech
 # corpus (2026-05 refresh). See datasets/2026_05/README.md for the manifest
 # and selection rationale.
 repositories:
@@ -301,7 +301,7 @@ uv run python -m civic_tech_crawler --config config.yaml
 
 All output files are written to the output directory (default: `./output/`). Both CSV and JSON formats are produced automatically.
 
-> **Want to see what the output looks like?** Browse the [`datasets/2026_05/`](datasets/2026_05/) directory — the canonical **n=38 civic-tech corpus**. After the analysis pass it is organised one folder per repository, so you can navigate to any single project's metrics, plots, and findings in one click — see [Dataset](#dataset) below.
+> **Want to see what the output looks like?** Browse the [`datasets/2026_05/`](datasets/2026_05/) directory — the canonical **n=57 civic-tech corpus**. After the analysis pass it is organised one folder per repository, so you can navigate to any single project's metrics, plots, and findings in one click — see [Dataset](#dataset) below.
 
 ### CSV files
 
@@ -393,18 +393,18 @@ All output files are written to the output directory (default: `./output/`). Bot
 ## Dataset
 
 The canonical dataset lives in [`datasets/2026_05/`](datasets/2026_05/) — the
-**n=38 civic-tech corpus** (2026-05 refresh). It supersedes all earlier
+**n=57 civic-tech corpus** (2026-05 refresh). It supersedes all earlier
 exploratory and example runs, which have been removed from the repository. Its
-[`README.md`](datasets/2026_05/README.md) holds the full repository manifest,
-the selection rationale (4 repos removed, 5 added vs. the prior n=37 set,
-including the borderline g0v dictionary projects), the methodology, and the
-output-file index.
+[`README.md`](datasets/2026_05/README.md) holds the full repository manifest
+(grouped by community/region), the selection rationale, the data-quality caveats
+(forks, placeholder repos, scale outliers), the methodology, and the output-file
+index.
 
 | | |
 |---|---|
 | **Location** | [`datasets/2026_05/`](datasets/2026_05/) |
-| **Repositories** | 38 |
-| **Selection** | 33 retained from the prior n=37 set, − 4 removed, + 5 added |
+| **Repositories** | 57 |
+| **Organisations** | 24 (US, Canada, Africa, Japan, Taiwan, Germany, UK) |
 | **Schema** | identical to every prior run, so any `scripts/` analysis works unchanged |
 
 After the analysis pass, the dataset is organised so each repository has its own
@@ -441,7 +441,7 @@ export GITHUB_TOKEN=$(gh auth token)
 
 # Full crawl with auto-respawn (resumable; writes to datasets/2026_05/)
 setsid nohup env GITHUB_TOKEN="$GITHUB_TOKEN" \
-    scripts/run_with_respawn.sh config.yaml datasets/2026_05 38 \
+    scripts/run_with_respawn.sh config.yaml datasets/2026_05 57 \
     > crawl.log 2>&1 < /dev/null & disown
 
 # Analysis pass
@@ -457,7 +457,7 @@ uv run python scripts/recompute_burstiness.py datasets/2026_05/
 uv run python scripts/build_repo_folders.py datasets/2026_05/
 ```
 
-`scripts/run_with_respawn.sh` automatically relaunches the crawler if the process gets externally killed (e.g. by sandbox timeouts), and exits cleanly only when all 38 per-repo cache files are present **and** `full_results.json` has been written. `scripts/build_repo_folders.py` is idempotent — it only moves files that haven't been moved yet, and rewrites the markdown each run from the latest CSVs.
+`scripts/run_with_respawn.sh` automatically relaunches the crawler if the process gets externally killed (e.g. by sandbox timeouts), and exits cleanly only when all 57 per-repo cache files are present **and** `full_results.json` has been written. `scripts/build_repo_folders.py` is idempotent — it only moves files that haven't been moved yet, and rewrites the markdown each run from the latest CSVs.
 
 ---
 
@@ -1024,7 +1024,7 @@ Output files are saved to `{output-dir}/statistical_analysis/`.
 
 ### Statistical Methods
 
-**Why non-parametric?** The script first runs Shapiro-Wilk normality tests on all key metrics. In the canonical 2026-05 dataset (n=38), most key metrics are significantly non-normal (p < 0.05), justifying the exclusive use of non-parametric methods.
+**Why non-parametric?** The script first runs Shapiro-Wilk normality tests on all key metrics. In the canonical 2026-05 dataset (n=57), most key metrics are significantly non-normal (p < 0.05), justifying the exclusive use of non-parametric methods.
 
 | Method | Purpose | When Used |
 |--------|---------|-----------|
@@ -1506,7 +1506,7 @@ civic_tech_git_crawler/
 │           ├── retry.py            # 202 retry + backoff logic
 │           └── osi_licenses.py     # OSI-approved SPDX license list
 ├── datasets/
-│   └── 2026_05/                    # Canonical n=38 civic-tech corpus (version-controlled)
+│   └── 2026_05/                    # Canonical n=57 civic-tech corpus (version-controlled)
 │       ├── README.md               # Manifest, selection rationale, methodology, file index
 │       ├── *.csv                   # 14 crawl data CSVs
 │       ├── <owner>_<repo>/         # One folder per repo (data.json, repo_results.md, plots)

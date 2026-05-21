@@ -3,59 +3,83 @@ github:
   retry_delay: 3
   rate_limit_buffer: 100
 
-# Canonical civic-tech corpus — 2026-05 refresh (n = 38).
-# 33 repos retained from the prior n=37 set, MINUS 4 removed
-# (codeforamerica/recordtrac, markov-root/atlas, fvialibre/edia,
-# luftdata/luftdata.se — tiny/archived/inactive), PLUS 5 added
-# (g0v + Code for Japan + Computational Democracy participation &
-# transparency tools). Full selection rationale, including the
-# borderline g0v dictionary projects, is in datasets/2026_05/README.md.
+# Canonical civic-tech corpus — 2026-05 refresh (n = 57).
+# Authoritative roster of open-source civic-tech projects spanning North America
+# (Code for America, CivicTechWR / Canada), Africa (Code for Africa), Japan
+# (Code for Japan), Taiwan (g0v), and a large German "Code for"/OK-Lab cluster
+# (Bielefeld, Münster, Berlin, Flensburg, Cologne, Leipzig, Magdeburg,
+# OpenLegalData), plus participation/deliberation tools (Decidim, VoteIT,
+# DigiDemLab). See datasets/2026_05/README.md for the manifest and rationale.
+#
+# Note: 3 entries are forks (CivicTechWR/connectedkw,
+# CodeforLeipzig/weihnachtsmarktkarte, CodeforLeipzig/leipziggiesst) — their
+# contributor/commit metrics inherit upstream history; see dataset caveats.
 repositories:
-  # DemocracyClub (UK elections)
-  - "DemocracyClub/UK-Polling-Stations"
-  - "DemocracyClub/WhoCanIVoteFor"
-  # Code for Africa
-  - "CodeForAfrica/PromiseTracker"
+  # Canada — Toronto / Waterloo Region civic tech
+  - "bikespace/bikespace"
+  - "bikespace/parking-map-data"
+  - "choruslabs/chorus"
+  - "civic-dashboard/civic-dashboard-web"
+  - "CivicTechWR/accessible-housing-portal"
+  - "CivicTechWR/connectedkw"                   # fork
+  - "CivicTechWR/go-train-group-pass"
+  - "CivicTechWR/project-pech"
+  - "CivicTechWR/WRVotesPlaceholder"
+  # USA — Code for America / CiviForm
+  - "civiform/civiform"
+  - "codeforamerica/asap_pdf"
+  - "codeforamerica/cmr-maryland-eligibility-determination"
+  - "codeforamerica/document-transfer-service"
+  - "codeforamerica/efiler-api"
+  - "codeforamerica/form-flow"
+  - "codeforamerica/pya"
+  - "codeforamerica/tax-benefits-backend"
+  - "codeforamerica/vita-min"
+  # Africa — Code for Africa
   - "CodeForAfrica/academy.AFRICA"
+  - "CodeForAfrica/actNOW"
   - "CodeForAfrica/Dominion.AFRICA"
   - "CodeForAfrica/GenderGap.AFRICA"
   - "CodeForAfrica/openAFRICA"
   - "CodeForAfrica/outbreak.AFRICA"
-  - "CodeForAfrica/ui"
+  - "CodeForAfrica/PromiseTracker"
   - "CodeForAfrica/sensors.AFRICA"
-  - "CodeForAfrica/actNOW"
-  # Code for America
-  - "codeforamerica/form-flow"
-  - "codeforamerica/vita-min"
-  - "codeforamerica/tofu-modules-aws-serverless-database"
-  - "codeforamerica/tax-benefits-backend"
-  - "codeforamerica/pya"
-  - "codeforamerica/honeycrisp-gem"
-  - "codeforamerica/asap_pdf"
-  - "codeforamerica/cmr-maryland-eligibility-determination"
-  - "codeforamerica/document-transfer-service"
-  # Code for Japan
+  - "CodeForAfrica/ui"
+  # Japan — Code for Japan
   - "codeforjapan/BirdXplorer"
-  - "codeforjapan/decidim-cfj"                  # added 2026-05 (Decidim participation platform)
-  # g0v (Taiwan) — added 2026-05
-  - "g0v/moedict.tw"                            # added 2026-05 (open-knowledge / dictionary — borderline)
-  - "g0v/amis-moedict"                          # added 2026-05 (Amis-language dictionary — borderline)
-  - "g0v/tw-rental-house-data"                  # added 2026-05 (housing-market transparency)
-  # Deliberation / participation platforms
-  - "CitizensFoundation/your-priorities-app"
-  - "compdemocracy/polis"                       # added 2026-05 (Polis deliberation tool)
-  - "ForumMagnum/ForumMagnum"
-  # Transparency / FOI / civic services
-  - "okfde/froide"
-  - "mysociety/ceuk-marking"
-  - "openplans/shareabouts"
-  - "civiform/civiform"
+  - "codeforjapan/decidim-cfj"
+  # Taiwan — g0v
+  - "g0v/tw-rental-house-data"
+  # Germany — Code for / OK Lab network
+  - "codeforbielefeld/baumbie"
+  - "codeforbielefeld/losdb"
+  - "codeformuenster/klimawatch"
+  - "codeforberlin/we-count"
+  - "openlegaldata/oldp"
+  - "oklabflensburg/open-emergency-map"
+  - "oklabflensburg/oddfl"
+  - "oklabflensburg/open-parcel-map"
+  - "oklabflensburg/open-biotope-map"
+  - "oklabflensburg/open-school-map"
+  - "oklabflensburg/open-data-api"
+  - "oklabflensburg/open-recycling-map"
+  - "oklabflensburg/open-trees-map"
+  - "oklabflensburg/open-monuments-map"
+  - "codeforcologne/Denkmal-4D-Koeln"
+  - "CodeforLeipzig/weihnachtsmarktkarte"        # fork
+  - "CodeforLeipzig/leipziggiesst"               # fork
+  - "code-for-magdeburg/StadtratWatch-web"
+  # Participation / deliberation platforms
+  - "VoteIT/voteit_frontend"
+  - "digidemlab/decidim-census"
   # Networked / decentralised civic infrastructure
-  - "mastodon/mastodon"
   - "meshtastic/firmware"
   - "meshtastic/Meshtastic-Android"
   - "meshtastic/web"
   - "iiab/iiab"
+  # Transparency / scoring / other
+  - "mysociety/ceuk-marking"
+  - "ton-An/station_reach"
   # NLP bias dataset (borderline civic — see rationale)
   - "fvialibre/heseia-sentence-bias-dataset"
 
