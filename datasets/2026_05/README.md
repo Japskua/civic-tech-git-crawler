@@ -1,4 +1,4 @@
-# Civic-Tech Corpus — 2026-05 Refresh (n = 57)
+# Civic-Tech Corpus — 2026-05 Refresh (n = 58)
 
 This is the **canonical dataset** for the Civic Tech Git Crawler. It supersedes
 all earlier exploratory and example runs (the previous `output/` and
@@ -8,7 +8,7 @@ paper writeup — is generated against this folder.
 
 | | |
 |---|---|
-| **Repositories** | 57 |
+| **Repositories** | 58 |
 | **Organisations** | 24 |
 | **Regions** | North America (US + Canada), Africa, Japan, Taiwan, Europe (Germany, UK, Sweden) |
 | **Crawl tool** | `civic-tech-crawler` via `scripts/run_with_respawn.sh` |
@@ -40,15 +40,16 @@ Lab** cluster and the **Canadian CivicTechWR / Toronto** community).
 
 ---
 
-## The 57 repositories
+## The 58 repositories
 
 Grouped by community / region (same grouping as `config.yaml`):
 
-### Canada — Toronto / Waterloo Region (9)
+### Canada — Toronto / Waterloo Region (10)
 - `bikespace/bikespace`
 - `bikespace/parking-map-data`
 - `choruslabs/chorus`
 - `civic-dashboard/civic-dashboard-web`
+- `CivicTechWR/affordable-housing-portal`
 - `CivicTechWR/accessible-housing-portal`
 - `CivicTechWR/connectedkw` *(fork)*
 - `CivicTechWR/go-train-group-pass`
@@ -121,7 +122,7 @@ Grouped by community / region (same grouping as `config.yaml`):
 ### NLP / open-knowledge (1, borderline)
 - `fvialibre/heseia-sentence-bias-dataset`
 
-> Section subtotals: 9 + 9 + 9 + 2 + 1 + 18 + 2 + 4 + 2 + 1 = **57**.
+> Section subtotals: 10 + 9 + 9 + 2 + 1 + 18 + 2 + 4 + 2 + 1 = **58**.
 
 ---
 
@@ -173,7 +174,7 @@ The crawl is run through `scripts/run_with_respawn.sh`, which:
   (idempotent, resumable);
 - **auto-respawns** if the crawler is SIGKILLed (e.g. sandbox OOM, exit 137) or
   exits non-zero, sleeping 10 s between attempts;
-- exits only once all 57 per-repo caches exist **and** `full_results.json` has been
+- exits only once all 58 per-repo caches exist **and** `full_results.json` has been
   written.
 
 Inside the crawler, `retry_on_none` handles GitHub's HTTP 202 "computing"
@@ -201,7 +202,7 @@ exponential backoff.
 | `issue_records.csv` | Individual issue records (≤5,000/repo) |
 | `issue_summary.csv` | Aggregated issue analytics |
 | `cross_project_overlap.csv` | Contributors active in multiple crawled repos |
-| `full_results.json` | Complete nested data for all 57 repos |
+| `full_results.json` | Complete nested data for all 58 repos |
 | `<owner>_<repo>_data.json` | Per-repo cache (one per repository) |
 
 The three **bold** files are the weekly-activity outputs verified present for this run.
@@ -212,7 +213,7 @@ The three **bold** files are the weekly-activity outputs verified present for th
 - `figures/` — outputs of `scripts/paper_figures.py`
 - `weekly_activity_analysis/` — outputs of `scripts/weekly_activity_analysis.py`
 - `<owner>_<repo>/repo_results.md` — per-repo folders from `scripts/build_repo_folders.py`
-- `analysis_n57.md` — academic-style writeup of findings, methodology, threats to validity
+- `analysis_n58.md` — academic-style writeup of findings, methodology, threats to validity
 
 ---
 
@@ -223,7 +224,7 @@ The three **bold** files are the weekly-activity outputs verified present for th
 export GITHUB_TOKEN=$(gh auth token)
 
 # Full crawl with auto-respawn (resumable; output -> datasets/2026_05/)
-scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
+scripts/run_with_respawn.sh config.yaml datasets/2026_05 58
 
 # Then the analysis pass (see scripts/ and the "Generated after the crawl" list)
 ```

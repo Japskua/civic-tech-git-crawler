@@ -3,7 +3,7 @@ github:
   retry_delay: 3
   rate_limit_buffer: 100
 
-# Canonical civic-tech corpus — 2026-05 refresh (n = 57).
+# Canonical civic-tech corpus — 2026-05 refresh (n = 58).
 # Authoritative roster of open-source civic-tech projects spanning North America
 # (Code for America, CivicTechWR / Canada), Africa (Code for Africa), Japan
 # (Code for Japan), Taiwan (g0v), and a large German "Code for"/OK-Lab cluster
@@ -20,6 +20,7 @@ repositories:
   - "bikespace/parking-map-data"
   - "choruslabs/chorus"
   - "civic-dashboard/civic-dashboard-web"
+  - "CivicTechWR/affordable-housing-portal"
   - "CivicTechWR/accessible-housing-portal"
   - "CivicTechWR/connectedkw"                   # fork
   - "CivicTechWR/go-train-group-pass"
