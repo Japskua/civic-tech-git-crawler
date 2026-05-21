@@ -30,7 +30,7 @@ start_ts=$(date -u +%s)
 while true; do
     attempt=$((attempt + 1))
     echo "============================================================"
-    echo "[respawn-wrapper] attempt $attempt at $(date -u -Is)"
+    echo "[respawn-wrapper] attempt $attempt at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
     echo "============================================================"
 
     # Run the crawler; tee its output so the parent log gets everything
