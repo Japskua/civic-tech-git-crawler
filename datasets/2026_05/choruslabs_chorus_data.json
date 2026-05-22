@@ -1,0 +1,2589 @@
+{
+  "repo_metrics": {
+    "full_name": "choruslabs/chorus",
+    "name": "chorus",
+    "description": "open-source app for large-scale deliberation",
+    "num_developers": 11,
+    "total_commits": 373,
+    "languages": {
+      "Python": 168608,
+      "TypeScript": 158314,
+      "CSS": 22696,
+      "MDX": 11371,
+      "JavaScript": 9190,
+      "Dockerfile": 1467,
+      "HTML": 898,
+      "Mako": 635,
+      "Shell": 123
+    },
+    "primary_language": "Python",
+    "first_commit_date": "2024-11-27T11:29:20+00:00",
+    "last_commit_date": "2026-04-29T00:28:06+00:00",
+    "license_spdx": "AGPL-3.0",
+    "license_name": "GNU Affero General Public License v3.0",
+    "is_osi_approved": false,
+    "topics": [
+      "discussion-platform",
+      "polis"
+    ],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 50,
+    "stars": 9,
+    "watchers": 1,
+    "forks": 7,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:Dockerfile",
+      "file:docker-compose.yml"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "API server test",
+      "Frontend build test",
+      "CodeQL Advanced",
+      "Build and Publish to GitHub Pages",
+      "Engine test",
+      "Copilot code review",
+      "Copilot coding agent",
+      "pages-build-deployment"
+    ],
+    "deployments_count": 1,
+    "created_at": "2025-10-19T19:49:21+00:00",
+    "updated_at": "2026-04-29T00:28:10+00:00",
+    "pushed_at": "2026-04-29T00:28:06+00:00",
+    "size_kb": 4589
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "MaanasArora",
+      "name": "Maanas Arora",
+      "num_commits": 280,
+      "additions": 149076,
+      "deletions": 60455,
+      "avg_additions_per_commit": 532.41,
+      "avg_deletions_per_commit": 215.91,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "dentropy",
+      "name": "Paul Mullins",
+      "num_commits": 1,
+      "additions": 44,
+      "deletions": 0,
+      "avg_additions_per_commit": 44.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "thomassth",
+      "name": "Thomas Kam",
+      "num_commits": 73,
+      "additions": 31613,
+      "deletions": 24451,
+      "avg_additions_per_commit": 433.05,
+      "avg_deletions_per_commit": 334.95,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "aryasadawrate19",
+      "name": "Arya Sadawrate",
+      "num_commits": 1,
+      "additions": 3,
+      "deletions": 1,
+      "avg_additions_per_commit": 3.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "cplkake",
+      "name": "Vinesh",
+      "num_commits": 3,
+      "additions": 835,
+      "deletions": 73,
+      "avg_additions_per_commit": 278.33,
+      "avg_deletions_per_commit": 24.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "victorfbrito",
+      "name": "Victor Brito",
+      "num_commits": 1,
+      "additions": 205,
+      "deletions": 7,
+      "avg_additions_per_commit": 205.0,
+      "avg_deletions_per_commit": 7.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "Latte17",
+      "name": "Latte17",
+      "num_commits": 1,
+      "additions": 60,
+      "deletions": 11,
+      "avg_additions_per_commit": 60.0,
+      "avg_deletions_per_commit": 11.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "aminechm",
+      "name": "Amine",
+      "num_commits": 1,
+      "additions": 68,
+      "deletions": 11,
+      "avg_additions_per_commit": 68.0,
+      "avg_deletions_per_commit": 11.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "amotaouakkil123",
+      "name": "Adam",
+      "num_commits": 2,
+      "additions": 125,
+      "deletions": 52,
+      "avg_additions_per_commit": 62.5,
+      "avg_deletions_per_commit": 26.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "NewJerseyStyle",
+      "name": "David H.",
+      "num_commits": 7,
+      "additions": 37,
+      "deletions": 12,
+      "avg_additions_per_commit": 5.29,
+      "avg_deletions_per_commit": 1.71,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "nicobao",
+      "name": "Nicolas Gimenez",
+      "num_commits": 3,
+      "additions": 25,
+      "deletions": 0,
+      "avg_additions_per_commit": 8.33,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "choruslabs/chorus",
+    "pr_count_total": 64,
+    "pr_count_merged": 62,
+    "pr_count_open": 1,
+    "pr_count_closed_unmerged": 1,
+    "prs": [
+      {
+        "number": 5,
+        "title": "Replace 'convergent' engine wheel file with 'chorus' engine wheel file",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-11-01T02:33:17+00:00",
+        "merged_at": "2025-11-01T02:39:37+00:00",
+        "closed_at": "2025-11-01T02:39:37+00:00"
+      },
+      {
+        "number": 7,
+        "title": "Conversation deletion cascades through associated data",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-11-01T03:16:31+00:00",
+        "merged_at": "2025-11-01T03:28:22+00:00",
+        "closed_at": "2025-11-01T03:28:22+00:00"
+      },
+      {
+        "number": 8,
+        "title": "Enhance ConversationConfig layout with improved spacing and styling",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-11-01T03:29:25+00:00",
+        "merged_at": "2025-11-01T03:29:51+00:00",
+        "closed_at": "2025-11-01T03:29:51+00:00"
+      },
+      {
+        "number": 9,
+        "title": "Update AppBar component to adjust child container width",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-11-01T03:38:00+00:00",
+        "merged_at": "2025-11-01T03:38:06+00:00",
+        "closed_at": "2025-11-01T03:38:06+00:00"
+      },
+      {
+        "number": 13,
+        "title": "basic stack bar",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2025-11-01T04:47:23+00:00",
+        "merged_at": "2025-11-03T00:34:33+00:00",
+        "closed_at": "2025-11-03T00:34:33+00:00"
+      },
+      {
+        "number": 14,
+        "title": "add storybook page + mock data",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2025-11-03T07:55:19+00:00",
+        "merged_at": "2025-11-04T14:54:48+00:00",
+        "closed_at": "2025-11-04T14:54:48+00:00"
+      },
+      {
+        "number": 16,
+        "title": "bug: unmoderated comments",
+        "state": "closed",
+        "author_login": "Latte17",
+        "created_at": "2025-11-04T19:24:42+00:00",
+        "merged_at": "2025-11-05T23:57:16+00:00",
+        "closed_at": "2025-11-05T23:57:17+00:00"
+      },
+      {
+        "number": 18,
+        "title": "feat(ui): add notification system and feedback for comment submission",
+        "state": "closed",
+        "author_login": "victorfbrito",
+        "created_at": "2025-11-07T04:06:07+00:00",
+        "merged_at": "2025-11-11T04:45:34+00:00",
+        "closed_at": "2025-11-11T04:45:35+00:00"
+      },
+      {
+        "number": 19,
+        "title": "mock success comment submissions in storybook",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2025-11-08T08:01:28+00:00",
+        "merged_at": "2025-11-08T20:20:17+00:00",
+        "closed_at": "2025-11-08T20:20:17+00:00"
+      },
+      {
+        "number": 20,
+        "title": "report modules",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2025-11-09T08:00:43+00:00",
+        "merged_at": "2025-11-10T00:27:04+00:00",
+        "closed_at": "2025-11-10T00:27:04+00:00"
+      },
+      {
+        "number": 21,
+        "title": "chore: remove Python version file",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-11-11T04:47:18+00:00",
+        "merged_at": "2025-11-11T04:47:24+00:00",
+        "closed_at": "2025-11-11T04:47:24+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Add storybook link to README",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-11-25T23:52:06+00:00",
+        "merged_at": "2025-11-25T23:52:31+00:00",
+        "closed_at": "2025-11-25T23:52:31+00:00"
+      },
+      {
+        "number": 27,
+        "title": "BUG: Fix conversation distribution link on admin side",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-04T03:36:34+00:00",
+        "merged_at": "2025-12-04T03:36:41+00:00",
+        "closed_at": "2025-12-04T03:36:41+00:00"
+      },
+      {
+        "number": 28,
+        "title": "BUG: Fix conversation distribution link on admin side",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-07T01:23:30+00:00",
+        "merged_at": "2025-12-07T01:24:02+00:00",
+        "closed_at": "2025-12-07T01:24:02+00:00"
+      },
+      {
+        "number": 29,
+        "title": "fix(ui): update labels for clarity in ConversationConfig component",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-07T01:26:24+00:00",
+        "merged_at": "2025-12-07T01:26:31+00:00",
+        "closed_at": "2025-12-07T01:26:31+00:00"
+      },
+      {
+        "number": 30,
+        "title": "refactor(ui): clean up imports and improve formatting in various components",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-07T01:39:56+00:00",
+        "merged_at": "2025-12-07T01:40:03+00:00",
+        "closed_at": "2025-12-07T01:40:03+00:00"
+      },
+      {
+        "number": 31,
+        "title": "resolve merge conflict",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-07T01:40:54+00:00",
+        "merged_at": "2025-12-07T01:41:00+00:00",
+        "closed_at": "2025-12-07T01:41:00+00:00"
+      },
+      {
+        "number": 32,
+        "title": "fix(ui): correct wording and add distribution link in ManageDistribute",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-07T01:43:30+00:00",
+        "merged_at": "2025-12-07T01:43:37+00:00",
+        "closed_at": "2025-12-07T01:43:37+00:00"
+      },
+      {
+        "number": 33,
+        "title": "fix(ui): update logo component to use a circle shape",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-07T01:46:31+00:00",
+        "merged_at": "2025-12-07T01:46:38+00:00",
+        "closed_at": "2025-12-07T01:46:38+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Allow enabling and disabling commenting and voting from admin side",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-09T00:28:03+00:00",
+        "merged_at": "2025-12-09T00:40:07+00:00",
+        "closed_at": "2025-12-09T00:40:07+00:00"
+      },
+      {
+        "number": 35,
+        "title": "Deployment: December 8, 2025",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-09T00:41:31+00:00",
+        "merged_at": "2025-12-09T00:41:55+00:00",
+        "closed_at": "2025-12-09T00:41:56+00:00"
+      },
+      {
+        "number": 36,
+        "title": "feat: disable commenting (participant side)",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-09T00:55:54+00:00",
+        "merged_at": "2025-12-09T00:56:54+00:00",
+        "closed_at": "2025-12-09T00:56:54+00:00"
+      },
+      {
+        "number": 41,
+        "title": "feat(auth): add support for anonymous users",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-12T04:19:27+00:00",
+        "merged_at": "2025-12-12T22:22:59+00:00",
+        "closed_at": "2025-12-12T22:22:59+00:00"
+      },
+      {
+        "number": 43,
+        "title": "fix(types): add TypeScript annotations for Story argument",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-12T21:58:38+00:00",
+        "merged_at": "2025-12-12T22:00:00+00:00",
+        "closed_at": "2025-12-12T22:00:00+00:00"
+      },
+      {
+        "number": 44,
+        "title": "feat: disable voting buttons on conversation page and setup testing",
+        "state": "closed",
+        "author_login": "cplkake",
+        "created_at": "2025-12-12T22:35:00+00:00",
+        "merged_at": "2025-12-14T03:55:35+00:00",
+        "closed_at": "2025-12-14T03:55:35+00:00"
+      },
+      {
+        "number": 46,
+        "title": "fix: use secure HttpOnly cookies for auth tokens",
+        "state": "closed",
+        "author_login": "cplkake",
+        "created_at": "2025-12-15T02:04:47+00:00",
+        "merged_at": "2025-12-15T23:43:56+00:00",
+        "closed_at": "2025-12-15T23:43:56+00:00"
+      },
+      {
+        "number": 47,
+        "title": "basic knowledge base fix",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2025-12-16T22:26:07+00:00",
+        "merged_at": "2026-01-26T05:16:14+00:00",
+        "closed_at": "2026-01-26T05:16:14+00:00"
+      },
+      {
+        "number": 49,
+        "title": "feat: not found page for conversation participation",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-24T09:48:40+00:00",
+        "merged_at": "2025-12-24T09:48:49+00:00",
+        "closed_at": "2025-12-24T09:48:49+00:00"
+      },
+      {
+        "number": 50,
+        "title": "fix: disable participating in inactive conversations",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-24T09:55:26+00:00",
+        "merged_at": "2025-12-24T09:55:38+00:00",
+        "closed_at": "2025-12-24T09:55:38+00:00"
+      },
+      {
+        "number": 51,
+        "title": "UI makeover for conversation settings",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-30T18:33:40+00:00",
+        "merged_at": "2025-12-30T18:40:13+00:00",
+        "closed_at": "2025-12-30T18:40:13+00:00"
+      },
+      {
+        "number": 52,
+        "title": "Improved admin UI layout and unmoderated comments option",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2025-12-30T21:05:56+00:00",
+        "merged_at": "2025-12-30T21:13:59+00:00",
+        "closed_at": "2025-12-30T21:13:59+00:00"
+      },
+      {
+        "number": 53,
+        "title": "Add conversation customization for admin",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-06T04:24:48+00:00",
+        "merged_at": "2026-01-08T03:56:19+00:00",
+        "closed_at": "2026-01-08T03:56:19+00:00"
+      },
+      {
+        "number": 54,
+        "title": "Apply theme color and header name customization",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-08T04:33:54+00:00",
+        "merged_at": "2026-01-08T04:34:29+00:00",
+        "closed_at": "2026-01-08T04:34:29+00:00"
+      },
+      {
+        "number": 55,
+        "title": "refactor: remove unused imports and comment out logo component",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-08T04:43:18+00:00",
+        "merged_at": "2026-01-08T04:45:38+00:00",
+        "closed_at": "2026-01-08T04:45:38+00:00"
+      },
+      {
+        "number": 56,
+        "title": "Add Conversation About page with markdown support for participants",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-09T03:39:30+00:00",
+        "merged_at": "2026-01-09T03:41:03+00:00",
+        "closed_at": "2026-01-09T03:41:04+00:00"
+      },
+      {
+        "number": 57,
+        "title": "Allow conversation participation as anonymous client",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-10T05:21:26+00:00",
+        "merged_at": "2026-01-10T05:22:47+00:00",
+        "closed_at": "2026-01-10T05:22:47+00:00"
+      },
+      {
+        "number": 58,
+        "title": "Handle anonymous user redirect in base screen",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-11T01:31:22+00:00",
+        "merged_at": "2026-01-11T01:51:32+00:00",
+        "closed_at": "2026-01-11T01:51:32+00:00"
+      },
+      {
+        "number": 59,
+        "title": "Fix: synchronize customization state with fetched data on load",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-11T20:01:10+00:00",
+        "merged_at": "2026-01-11T20:02:56+00:00",
+        "closed_at": "2026-01-11T20:02:56+00:00"
+      },
+      {
+        "number": 60,
+        "title": "chore: black formatting",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-11T20:04:30+00:00",
+        "merged_at": "2026-01-11T20:07:47+00:00",
+        "closed_at": "2026-01-11T20:07:47+00:00"
+      },
+      {
+        "number": 61,
+        "title": "Better README.md",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-11T20:44:54+00:00",
+        "merged_at": "2026-01-11T20:49:31+00:00",
+        "closed_at": "2026-01-11T20:49:31+00:00"
+      },
+      {
+        "number": 62,
+        "title": "[WIP] Address feedback on README.md improvements",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-11T20:48:20+00:00",
+        "merged_at": null,
+        "closed_at": "2026-01-11T20:48:36+00:00"
+      },
+      {
+        "number": 63,
+        "title": "Fix: display loading state while fetching conversation data",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-11T23:45:02+00:00",
+        "merged_at": "2026-01-11T23:47:31+00:00",
+        "closed_at": "2026-01-11T23:47:32+00:00"
+      },
+      {
+        "number": 64,
+        "title": "Fix: improve loading state handling for conversation data",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-12T00:54:45+00:00",
+        "merged_at": "2026-01-12T00:56:40+00:00",
+        "closed_at": "2026-01-12T00:56:40+00:00"
+      },
+      {
+        "number": 68,
+        "title": "Fix error handling in API calls with custom ApiError class",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-17T19:03:22+00:00",
+        "merged_at": "2026-01-17T19:05:26+00:00",
+        "closed_at": "2026-01-17T19:05:26+00:00"
+      },
+      {
+        "number": 69,
+        "title": "Fix: improve user status check before logging in as anonymous",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-17T19:07:40+00:00",
+        "merged_at": "2026-01-17T19:07:46+00:00",
+        "closed_at": "2026-01-17T19:07:46+00:00"
+      },
+      {
+        "number": 70,
+        "title": "Temporarily hide user registration and login buttons in app bar",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-01-18T23:09:08+00:00",
+        "merged_at": "2026-01-18T23:19:51+00:00",
+        "closed_at": "2026-01-18T23:19:51+00:00"
+      },
+      {
+        "number": 73,
+        "title": "FIX docker implementations",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2026-01-26T01:57:24+00:00",
+        "merged_at": "2026-01-26T05:17:30+00:00",
+        "closed_at": "2026-01-26T05:17:30+00:00"
+      },
+      {
+        "number": 74,
+        "title": "client package update",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2026-01-26T01:58:55+00:00",
+        "merged_at": "2026-01-26T02:04:15+00:00",
+        "closed_at": "2026-01-26T02:04:15+00:00"
+      },
+      {
+        "number": 75,
+        "title": "Comment out knowledge base button",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-02-03T22:52:30+00:00",
+        "merged_at": "2026-02-03T22:53:54+00:00",
+        "closed_at": "2026-02-03T22:53:54+00:00"
+      },
+      {
+        "number": 76,
+        "title": "Add spinners to voting buttons when loading",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-02-03T23:19:07+00:00",
+        "merged_at": "2026-02-03T23:22:11+00:00",
+        "closed_at": "2026-02-03T23:22:11+00:00"
+      },
+      {
+        "number": 77,
+        "title": "Move skip button to right",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-02-04T00:06:23+00:00",
+        "merged_at": "2026-02-04T00:07:49+00:00",
+        "closed_at": "2026-02-04T00:07:49+00:00"
+      },
+      {
+        "number": 80,
+        "title": "Add success indicator when saving customization changes",
+        "state": "closed",
+        "author_login": "aryasadawrate19",
+        "created_at": "2026-02-09T05:24:00+00:00",
+        "merged_at": "2026-02-10T03:42:43+00:00",
+        "closed_at": "2026-02-10T03:42:43+00:00"
+      },
+      {
+        "number": 81,
+        "title": "devcontainers",
+        "state": "closed",
+        "author_login": "thomassth",
+        "created_at": "2026-02-23T03:20:57+00:00",
+        "merged_at": "2026-02-25T00:19:16+00:00",
+        "closed_at": "2026-02-25T00:19:16+00:00"
+      },
+      {
+        "number": 83,
+        "title": "Fix bullet list rendering in markdown content",
+        "state": "open",
+        "author_login": "aryasadawrate19",
+        "created_at": "2026-03-14T13:08:21+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 84,
+        "title": "Dockerize the Frontend",
+        "state": "closed",
+        "author_login": "dentropy",
+        "created_at": "2026-04-08T01:04:53+00:00",
+        "merged_at": "2026-04-09T22:50:51+00:00",
+        "closed_at": "2026-04-09T22:50:51+00:00"
+      },
+      {
+        "number": 85,
+        "title": "Docusaurus setup + overview/install guides",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-19T05:55:36+00:00",
+        "merged_at": "2026-04-19T05:55:43+00:00",
+        "closed_at": "2026-04-19T05:55:43+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Docusaurus on GH Pages",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-19T06:12:17+00:00",
+        "merged_at": "2026-04-19T06:12:47+00:00",
+        "closed_at": "2026-04-19T06:12:47+00:00"
+      },
+      {
+        "number": 87,
+        "title": "Remove storybook link",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-19T06:15:07+00:00",
+        "merged_at": "2026-04-19T06:15:16+00:00",
+        "closed_at": "2026-04-19T06:15:16+00:00"
+      },
+      {
+        "number": 88,
+        "title": "Remove Storybook link from the navbar in Docusaurus configuration",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-19T06:16:44+00:00",
+        "merged_at": "2026-04-19T06:16:53+00:00",
+        "closed_at": "2026-04-19T06:16:53+00:00"
+      },
+      {
+        "number": 89,
+        "title": "Remove Storybook link from the navbar in Docusaurus configuration",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-19T06:19:03+00:00",
+        "merged_at": "2026-04-19T06:19:10+00:00",
+        "closed_at": "2026-04-19T06:19:10+00:00"
+      },
+      {
+        "number": 90,
+        "title": "Persist PostgreSQL in volume",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-27T07:12:06+00:00",
+        "merged_at": "2026-04-27T07:12:13+00:00",
+        "closed_at": "2026-04-27T07:12:13+00:00"
+      },
+      {
+        "number": 91,
+        "title": "Rename \"Comment\" to \"Statement\" in UX",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-27T07:13:38+00:00",
+        "merged_at": "2026-04-27T07:14:27+00:00",
+        "closed_at": "2026-04-27T07:14:27+00:00"
+      },
+      {
+        "number": 92,
+        "title": "Rename \"Skip\" button label to \"Unsure\"",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-27T07:17:21+00:00",
+        "merged_at": "2026-04-27T07:17:32+00:00",
+        "closed_at": "2026-04-27T07:17:32+00:00"
+      },
+      {
+        "number": 93,
+        "title": "Replace add comment button with input section on participant UI",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "created_at": "2026-04-27T07:59:01+00:00",
+        "merged_at": "2026-04-29T00:28:06+00:00",
+        "closed_at": "2026-04-29T00:28:06+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "choruslabs/chorus",
+    "weekly_commits": [
+      {
+        "week_start": "2024-11-25",
+        "commits": 17
+      },
+      {
+        "week_start": "2025-01-20",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-03-17",
+        "commits": 15
+      },
+      {
+        "week_start": "2025-04-07",
+        "commits": 13
+      },
+      {
+        "week_start": "2025-04-14",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-05-19",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-06-02",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-06-09",
+        "commits": 12
+      },
+      {
+        "week_start": "2025-06-16",
+        "commits": 10
+      },
+      {
+        "week_start": "2025-06-23",
+        "commits": 13
+      },
+      {
+        "week_start": "2025-06-30",
+        "commits": 63
+      },
+      {
+        "week_start": "2025-07-07",
+        "commits": 52
+      },
+      {
+        "week_start": "2025-07-14",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-07-21",
+        "commits": 30
+      },
+      {
+        "week_start": "2025-07-28",
+        "commits": 13
+      },
+      {
+        "week_start": "2025-08-04",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-08-25",
+        "commits": 16
+      },
+      {
+        "week_start": "2025-09-01",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-09-08",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-09-15",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-09-29",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-10-06",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-10-13",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-10-27",
+        "commits": 15
+      },
+      {
+        "week_start": "2025-11-03",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-11-10",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-11-24",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-12-01",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-12-08",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-12-15",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-12-22",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-12-29",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-01-05",
+        "commits": 10
+      },
+      {
+        "week_start": "2026-01-12",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-01-26",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-02-02",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-02-09",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-02-23",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-04-06",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-04-13",
+        "commits": 5
+      },
+      {
+        "week_start": "2026-04-27",
+        "commits": 4
+      }
+    ],
+    "change_request_acceptance_ratio": 0.9688,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 373,
+      "pull_requests": 64,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 10,
+      "Co-Founder & CTO @zkorum": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 11,
+    "release_frequency_per_month": null,
+    "fork_count": 7,
+    "burstiness_cv": 1.38,
+    "burstiness_mean": 9.1,
+    "burstiness_std": 12.52,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 48,
+        "days_to_close": 0.0
+      },
+      {
+        "issue_number": 45,
+        "days_to_close": 1.8
+      },
+      {
+        "issue_number": 42,
+        "days_to_close": 0.0
+      },
+      {
+        "issue_number": 26,
+        "days_to_close": 0.0
+      },
+      {
+        "issue_number": 15,
+        "days_to_close": 22.6
+      },
+      {
+        "issue_number": 2,
+        "days_to_close": 5.0
+      }
+    ],
+    "median_defect_resolution_days": 0.9,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 142.5,
+    "median_time_to_first_response_prs_hours": 0.7,
+    "time_to_first_response_issues_sample_size": 28,
+    "time_to_first_response_prs_sample_size": 64,
+    "readme_last_updated": "2026-01-11T20:49:31+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 0.8571,
+    "stale_issue_count": 12,
+    "open_issue_count": 14,
+    "median_pr_review_turnaround_hours": 16.7,
+    "avg_review_comments_per_pr": 0.23,
+    "herfindahl_hirschman_index": 9840.4,
+    "hhi_no_bots": 6023.5,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 10,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 7,
+      "unknown": 4
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 4,
+    "periphery_contributor_count": 4,
+    "core_periphery_ratio": 0.5,
+    "network_density": 0.3214,
+    "avg_degree_centrality": 0.3214,
+    "pr_review_edges": [
+      {
+        "author": "dentropy",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "aryasadawrate19",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "aryasadawrate19",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "aryasadawrate19",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "thomassth",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "thomassth",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "thomassth",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "MaanasArora",
+        "reviewer": "copilot-pull-request-reviewer[bot]"
+      },
+      {
+        "author": "cplkake",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "cplkake",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "cplkake",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "cplkake",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "victorfbrito",
+        "reviewer": "copilot-pull-request-reviewer[bot]"
+      },
+      {
+        "author": "victorfbrito",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "victorfbrito",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "victorfbrito",
+        "reviewer": "thomassth"
+      },
+      {
+        "author": "victorfbrito",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "thomassth",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "thomassth",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "thomassth",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "thomassth",
+        "reviewer": "MaanasArora"
+      },
+      {
+        "author": "Latte17",
+        "reviewer": "MaanasArora"
+      }
+    ]
+  },
+  "crawled_at": "2026-05-21T18:57:29.631351+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "dentropy",
+      "degree_centrality": 0.1429,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "MaanasArora",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.881,
+      "classification": "core",
+      "num_collaborators": 7
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "aryasadawrate19",
+      "degree_centrality": 0.1429,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "thomassth",
+      "degree_centrality": 0.2857,
+      "betweenness_centrality": 0.0,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "copilot-pull-request-reviewer[bot]",
+      "degree_centrality": 0.2857,
+      "betweenness_centrality": 0.0,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "cplkake",
+      "degree_centrality": 0.1429,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "victorfbrito",
+      "degree_centrality": 0.4286,
+      "betweenness_centrality": 0.0238,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "choruslabs/chorus",
+      "login": "Latte17",
+      "degree_centrality": 0.1429,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "choruslabs/chorus",
+    "weekly_snapshots": [
+      {
+        "week_start": "2024-11-25",
+        "total_commits": 17,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 17,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-01-20",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 22,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-17",
+        "total_commits": 15,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 37,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-04-07",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 50,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-04-14",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 55,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 62,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 65,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-06-09",
+        "total_commits": 12,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 77,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-16",
+        "total_commits": 10,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 87,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-23",
+        "total_commits": 13,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 100,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 63,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 163,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-07",
+        "total_commits": 52,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 215,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-14",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 218,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-21",
+        "total_commits": 30,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 248,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-28",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 261,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-08-04",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 265,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-08-25",
+        "total_commits": 16,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 281,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-09-01",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 282,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-09-08",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 284,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-09-15",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 285,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2025-09-29",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 289,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2025-10-06",
+        "total_commits": 5,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 294,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 297,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-10-27",
+        "total_commits": 15,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 312,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-11-03",
+        "total_commits": 5,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 317,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 3,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 320,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-11-24",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 321,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 328,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 6,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 334,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-15",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 335,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-22",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 337,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-29",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 339,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-01-05",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 349,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 353,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 357,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-02",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 360,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 361,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2026-02-23",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 363,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 364,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2026-04-13",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 369,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2026-04-27",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 373,
+        "cumulative_contributors": 11
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "MaanasArora",
+        "login": "MaanasArora",
+        "name": "Maanas Arora",
+        "email": "maanasarora23@gmail.com",
+        "first_commit_date": "2024-11-27T11:29:20+00:00",
+        "last_commit_date": "2026-04-29T00:28:06+00:00",
+        "duration_days": 517,
+        "total_commits": 280,
+        "active_weeks": 35,
+        "total_weeks_span": 73,
+        "activity_ratio": 0.4795,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 8.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "thomassth",
+        "login": "thomassth",
+        "name": "Thomas Kam",
+        "email": "thomassth@users.noreply.github.com",
+        "first_commit_date": "2025-06-12T07:47:42+00:00",
+        "last_commit_date": "2026-02-25T00:19:16+00:00",
+        "duration_days": 257,
+        "total_commits": 73,
+        "active_weeks": 12,
+        "total_weeks_span": 36,
+        "activity_ratio": 0.3333,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 6.08
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "NewJerseyStyle",
+        "login": "NewJerseyStyle",
+        "name": "David H.",
+        "email": "22520563+NewJerseyStyle@users.noreply.github.com",
+        "first_commit_date": "2025-03-20T02:19:51+00:00",
+        "last_commit_date": "2025-03-20T02:55:24+00:00",
+        "duration_days": 0,
+        "total_commits": 7,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 61,
+        "avg_commits_per_active_week": 7.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "cplkake",
+        "login": "cplkake",
+        "name": "Vinesh",
+        "email": "42398320+cplkake@users.noreply.github.com",
+        "first_commit_date": "2025-08-09T06:09:03+00:00",
+        "last_commit_date": "2025-12-15T23:43:56+00:00",
+        "duration_days": 128,
+        "total_commits": 3,
+        "active_weeks": 3,
+        "total_weeks_span": 18,
+        "activity_ratio": 0.1667,
+        "status": "departed",
+        "departed_weeks_ago": 22,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "nicobao",
+        "login": "nicobao",
+        "name": "Nicolas Gimenez",
+        "email": "46368291+nicobao@users.noreply.github.com",
+        "first_commit_date": "2025-01-21T23:05:14+00:00",
+        "last_commit_date": "2025-01-21T23:06:34+00:00",
+        "duration_days": 0,
+        "total_commits": 3,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 69,
+        "avg_commits_per_active_week": 3.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "amotaouakkil123",
+        "login": "amotaouakkil123",
+        "name": "Adam",
+        "email": "74212024+amotaouakkil123@users.noreply.github.com",
+        "first_commit_date": "2025-09-16T04:13:45+00:00",
+        "last_commit_date": "2025-10-10T02:28:51+00:00",
+        "duration_days": 23,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 3,
+        "activity_ratio": 0.6667,
+        "status": "departed",
+        "departed_weeks_ago": 31,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "dentropy",
+        "login": "dentropy",
+        "name": "Paul Mullins",
+        "email": "8509074+dentropy@users.noreply.github.com",
+        "first_commit_date": "2026-04-09T22:50:51+00:00",
+        "last_commit_date": "2026-04-09T22:50:51+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "aryasadawrate19",
+        "login": "aryasadawrate19",
+        "name": "Arya Sadawrate",
+        "email": "86820886+aryasadawrate19@users.noreply.github.com",
+        "first_commit_date": "2026-02-10T03:42:43+00:00",
+        "last_commit_date": "2026-02-10T03:42:43+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 14,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "victorfbrito",
+        "login": "victorfbrito",
+        "name": "Victor Brito",
+        "email": "victor.brito@mail.usf.edu.br",
+        "first_commit_date": "2025-11-11T04:45:34+00:00",
+        "last_commit_date": "2025-11-11T04:45:34+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 27,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "Latte17",
+        "login": "Latte17",
+        "name": "Latte17",
+        "email": "153994326+Latte17@users.noreply.github.com",
+        "first_commit_date": "2025-11-05T23:57:16+00:00",
+        "last_commit_date": "2025-11-05T23:57:16+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 28,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "choruslabs/chorus",
+        "contributor_id": "aminechm",
+        "login": "aminechm",
+        "name": "Amine",
+        "email": "117687927+aminechm@users.noreply.github.com",
+        "first_commit_date": "2025-10-12T11:53:25+00:00",
+        "last_commit_date": "2025-10-12T11:53:25+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 31,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2024-11-25",
+        "commits": 17,
+        "lines_added": 10359,
+        "lines_removed": 421
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-01-20",
+        "commits": 2,
+        "lines_added": 23,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-03-17",
+        "commits": 8,
+        "lines_added": 209,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-04-07",
+        "commits": 13,
+        "lines_added": 812,
+        "lines_removed": 1041
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-04-14",
+        "commits": 5,
+        "lines_added": 587,
+        "lines_removed": 78
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-05-19",
+        "commits": 7,
+        "lines_added": 222,
+        "lines_removed": 166
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-06-02",
+        "commits": 3,
+        "lines_added": 225,
+        "lines_removed": 405
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-06-09",
+        "commits": 11,
+        "lines_added": 913,
+        "lines_removed": 1095
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-06-16",
+        "commits": 5,
+        "lines_added": 8518,
+        "lines_removed": 8206
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-06-23",
+        "commits": 12,
+        "lines_added": 26449,
+        "lines_removed": 25979
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-06-30",
+        "commits": 37,
+        "lines_added": 29268,
+        "lines_removed": 17315
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-07-07",
+        "commits": 37,
+        "lines_added": 4199,
+        "lines_removed": 1132
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-07-14",
+        "commits": 2,
+        "lines_added": 4,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-07-21",
+        "commits": 17,
+        "lines_added": 676,
+        "lines_removed": 1743
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-07-28",
+        "commits": 13,
+        "lines_added": 215,
+        "lines_removed": 81
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-08-04",
+        "commits": 3,
+        "lines_added": 27,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-08-25",
+        "commits": 16,
+        "lines_added": 1242,
+        "lines_removed": 193
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-09-01",
+        "commits": 1,
+        "lines_added": 2811,
+        "lines_removed": 348
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-09-08",
+        "commits": 2,
+        "lines_added": 51,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-09-29",
+        "commits": 4,
+        "lines_added": 366,
+        "lines_removed": 207
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-10-06",
+        "commits": 3,
+        "lines_added": 505,
+        "lines_removed": 56
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-10-13",
+        "commits": 3,
+        "lines_added": 1227,
+        "lines_removed": 195
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-10-27",
+        "commits": 15,
+        "lines_added": 21907,
+        "lines_removed": 154
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-11-03",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-11-24",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-12-01",
+        "commits": 7,
+        "lines_added": 110,
+        "lines_removed": 79
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-12-08",
+        "commits": 4,
+        "lines_added": 436,
+        "lines_removed": 99
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-12-22",
+        "commits": 2,
+        "lines_added": 100,
+        "lines_removed": 76
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2025-12-29",
+        "commits": 2,
+        "lines_added": 361,
+        "lines_removed": 123
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2026-01-05",
+        "commits": 10,
+        "lines_added": 4990,
+        "lines_removed": 1075
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2026-01-12",
+        "commits": 4,
+        "lines_added": 37,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2026-02-02",
+        "commits": 3,
+        "lines_added": 137,
+        "lines_removed": 38
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2026-04-13",
+        "commits": 5,
+        "lines_added": 31895,
+        "lines_removed": 23
+      },
+      {
+        "contributor_id": "MaanasArora",
+        "week_start": "2026-04-27",
+        "commits": 4,
+        "lines_added": 188,
+        "lines_removed": 80
+      },
+      {
+        "contributor_id": "dentropy",
+        "week_start": "2026-04-06",
+        "commits": 1,
+        "lines_added": 44,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-06-09",
+        "commits": 1,
+        "lines_added": 794,
+        "lines_removed": 1078
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-06-16",
+        "commits": 5,
+        "lines_added": 8651,
+        "lines_removed": 8283
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-06-23",
+        "commits": 1,
+        "lines_added": 317,
+        "lines_removed": 192
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-06-30",
+        "commits": 26,
+        "lines_added": 13391,
+        "lines_removed": 8665
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-07-07",
+        "commits": 15,
+        "lines_added": 1404,
+        "lines_removed": 655
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-07-14",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-07-21",
+        "commits": 13,
+        "lines_added": 676,
+        "lines_removed": 1799
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-11-03",
+        "commits": 3,
+        "lines_added": 3299,
+        "lines_removed": 1767
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 588,
+        "lines_removed": 490
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2025-12-08",
+        "commits": 1,
+        "lines_added": 216,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2026-01-26",
+        "commits": 4,
+        "lines_added": 2237,
+        "lines_removed": 1471
+      },
+      {
+        "contributor_id": "thomassth",
+        "week_start": "2026-02-23",
+        "commits": 2,
+        "lines_added": 39,
+        "lines_removed": 41
+      },
+      {
+        "contributor_id": "aryasadawrate19",
+        "week_start": "2026-02-09",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "cplkake",
+        "week_start": "2025-08-04",
+        "commits": 1,
+        "lines_added": 25,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "cplkake",
+        "week_start": "2025-12-08",
+        "commits": 1,
+        "lines_added": 758,
+        "lines_removed": 17
+      },
+      {
+        "contributor_id": "cplkake",
+        "week_start": "2025-12-15",
+        "commits": 1,
+        "lines_added": 52,
+        "lines_removed": 49
+      },
+      {
+        "contributor_id": "victorfbrito",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 205,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "Latte17",
+        "week_start": "2025-11-03",
+        "commits": 1,
+        "lines_added": 60,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "aminechm",
+        "week_start": "2025-10-06",
+        "commits": 1,
+        "lines_added": 68,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "amotaouakkil123",
+        "week_start": "2025-09-15",
+        "commits": 1,
+        "lines_added": 46,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "amotaouakkil123",
+        "week_start": "2025-10-06",
+        "commits": 1,
+        "lines_added": 79,
+        "lines_removed": 43
+      },
+      {
+        "contributor_id": "NewJerseyStyle",
+        "week_start": "2025-03-17",
+        "commits": 7,
+        "lines_added": 37,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "nicobao",
+        "week_start": "2025-01-20",
+        "commits": 3,
+        "lines_added": 25,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 41,
+    "total_unique_contributors": 11,
+    "new_contributor_rate_per_month": 0.65
+  },
+  "issue_analytics": {
+    "repo_full_name": "choruslabs/chorus",
+    "issues": [
+      {
+        "number": 1,
+        "title": "Add frontend functionality to allow importing Pol.is conversation archives",
+        "state": "open",
+        "author_login": "MaanasArora",
+        "closed_by_login": null,
+        "created_at": "2025-10-31T22:44:42+00:00",
+        "closed_at": null,
+        "updated_at": "2025-11-16T21:49:25+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement",
+          "react"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 2,
+        "title": "Unmoderated comments are not visible even if display_unmoderated is true",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-10-31T22:46:57+00:00",
+        "closed_at": "2025-11-05T23:57:18+00:00",
+        "updated_at": "2025-11-05T23:57:18+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug",
+          "good first issue",
+          "python"
+        ],
+        "time_to_close_days": 5.05
+      },
+      {
+        "number": 3,
+        "title": "Disable clicking on vote again until the next comment shows",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-10-31T22:48:16+00:00",
+        "closed_at": "2025-12-14T03:55:36+00:00",
+        "updated_at": "2025-12-14T03:55:36+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "good first issue",
+          "react"
+        ],
+        "time_to_close_days": 43.21
+      },
+      {
+        "number": 4,
+        "title": "Progress indicators for processing",
+        "state": "open",
+        "author_login": "MaanasArora",
+        "closed_by_login": null,
+        "created_at": "2025-10-31T22:49:59+00:00",
+        "closed_at": null,
+        "updated_at": "2025-11-01T03:59:28+00:00",
+        "comment_count": 0,
+        "labels": [
+          "react"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 6,
+        "title": "Passkeys as login",
+        "state": "open",
+        "author_login": "MaanasArora",
+        "closed_by_login": null,
+        "created_at": "2025-11-01T03:05:47+00:00",
+        "closed_at": null,
+        "updated_at": "2025-11-01T03:59:22+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "react",
+          "python"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 10,
+        "title": "Enhance conversation analysis schema",
+        "state": "open",
+        "author_login": "MaanasArora",
+        "closed_by_login": null,
+        "created_at": "2025-11-01T03:55:39+00:00",
+        "closed_at": null,
+        "updated_at": "2025-11-01T03:55:47+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "python"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 11,
+        "title": "Investigate using Orval for frontend API generation",
+        "state": "open",
+        "author_login": "MaanasArora",
+        "closed_by_login": null,
+        "created_at": "2025-11-01T03:59:01+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:40:57+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "react",
+          "python"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 12,
+        "title": "Confirmation for Submitted Comments",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-11-01T04:04:54+00:00",
+        "closed_at": "2025-11-12T01:43:30+00:00",
+        "updated_at": "2025-11-12T01:43:30+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement",
+          "good first issue",
+          "react"
+        ],
+        "time_to_close_days": 10.9
+      },
+      {
+        "number": 15,
+        "title": "GitHub pages are not enabled in this repo",
+        "state": "closed",
+        "author_login": "thomassth",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-11-03T08:49:48+00:00",
+        "closed_at": "2025-11-25T23:52:32+00:00",
+        "updated_at": "2025-11-25T23:52:32+00:00",
+        "comment_count": 6,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 22.63
+      },
+      {
+        "number": 23,
+        "title": "Conversation knowledge base",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-04T03:01:13+00:00",
+        "closed_at": "2026-01-09T03:41:04+00:00",
+        "updated_at": "2026-01-09T03:41:05+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "react",
+          "python"
+        ],
+        "time_to_close_days": 36.03
+      },
+      {
+        "number": 24,
+        "title": "Allow users to participate in conversations without logging in",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-04T03:07:04+00:00",
+        "closed_at": "2026-01-10T05:22:48+00:00",
+        "updated_at": "2026-01-10T05:22:49+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 37.09
+      },
+      {
+        "number": 25,
+        "title": "Turn off commenting feature",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-04T03:12:07+00:00",
+        "closed_at": "2025-12-09T00:40:08+00:00",
+        "updated_at": "2025-12-09T00:40:08+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 4.89
+      },
+      {
+        "number": 26,
+        "title": "BUG: Fix broken conversation link if no friendly link in admin",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-04T03:36:04+00:00",
+        "closed_at": "2025-12-04T03:37:52+00:00",
+        "updated_at": "2025-12-04T03:38:18+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug",
+          "react"
+        ],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 37,
+        "title": "accordion for new comment",
+        "state": "open",
+        "author_login": "thomassth",
+        "closed_by_login": null,
+        "created_at": "2025-12-10T01:34:58+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-12T03:55:36+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "react"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 38,
+        "title": "Conversation knowledge base",
+        "state": "closed",
+        "author_login": "thomassth",
+        "closed_by_login": "thomassth",
+        "created_at": "2025-12-10T01:36:26+00:00",
+        "closed_at": "2025-12-10T01:37:32+00:00",
+        "updated_at": "2025-12-10T01:37:32+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 39,
+        "title": "Rules for commenting",
+        "state": "open",
+        "author_login": "thomassth",
+        "closed_by_login": null,
+        "created_at": "2025-12-10T01:39:30+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-12T03:55:19+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "react"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 40,
+        "title": "Conversation control",
+        "state": "closed",
+        "author_login": "thomassth",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-10T02:00:04+00:00",
+        "closed_at": "2026-01-11T20:06:43+00:00",
+        "updated_at": "2026-01-11T20:06:43+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement",
+          "react"
+        ],
+        "time_to_close_days": 32.75
+      },
+      {
+        "number": 42,
+        "title": "Frontend build failure",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-12T21:56:02+00:00",
+        "closed_at": "2025-12-12T22:00:01+00:00",
+        "updated_at": "2025-12-12T22:00:01+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 45,
+        "title": "Do not send token in the HTTP body",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-14T03:59:19+00:00",
+        "closed_at": "2025-12-15T23:43:57+00:00",
+        "updated_at": "2025-12-15T23:43:57+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug",
+          "python"
+        ],
+        "time_to_close_days": 1.82
+      },
+      {
+        "number": 48,
+        "title": "Not Found participant page",
+        "state": "closed",
+        "author_login": "MaanasArora",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2025-12-24T09:42:01+00:00",
+        "closed_at": "2025-12-24T09:48:50+00:00",
+        "updated_at": "2025-12-24T09:48:50+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug",
+          "react"
+        ],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 65,
+        "title": "Turn off SIGN UP before going public",
+        "state": "open",
+        "author_login": "thomassth",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T01:34:43+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-21T00:56:11+00:00",
+        "comment_count": 6,
+        "labels": [
+          "bug",
+          "good first issue",
+          "react"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 66,
+        "title": "Navigation guards to unsaved settings",
+        "state": "open",
+        "author_login": "thomassth",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T01:39:08+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-20T02:50:36+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "react"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 67,
+        "title": "Nav improvements",
+        "state": "open",
+        "author_login": "thomassth",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T01:57:02+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-20T02:50:49+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "react"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 71,
+        "title": "Metrics for placement probability",
+        "state": "open",
+        "author_login": "MaanasArora",
+        "closed_by_login": null,
+        "created_at": "2026-01-21T01:54:24+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-21T01:54:24+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "python"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 72,
+        "title": "Iterate on statement card/stack design",
+        "state": "open",
+        "author_login": "MaanasArora",
+        "closed_by_login": null,
+        "created_at": "2026-01-21T01:55:08+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-09T23:00:46+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 78,
+        "title": "Show save confirmation in Customize tab on facilitator side",
+        "state": "closed",
+        "author_login": "SebastianRuan",
+        "closed_by_login": "MaanasArora",
+        "created_at": "2026-02-09T00:53:02+00:00",
+        "closed_at": "2026-02-10T03:42:44+00:00",
+        "updated_at": "2026-02-10T03:42:44+00:00",
+        "comment_count": 0,
+        "labels": [
+          "good first issue",
+          "react"
+        ],
+        "time_to_close_days": 1.12
+      },
+      {
+        "number": 79,
+        "title": "Bullet point rendering issue",
+        "state": "open",
+        "author_login": "SebastianRuan",
+        "closed_by_login": null,
+        "created_at": "2026-02-09T01:04:57+00:00",
+        "closed_at": null,
+        "updated_at": "2026-02-09T01:05:12+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 82,
+        "title": "Post UX research discussion 2026-02-24",
+        "state": "open",
+        "author_login": "thomassth",
+        "closed_by_login": null,
+        "created_at": "2026-02-25T02:35:06+00:00",
+        "closed_at": null,
+        "updated_at": "2026-02-25T02:36:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 28,
+    "open_issues": 14,
+    "closed_issues": 14,
+    "avg_comments_per_issue": 0.82,
+    "median_time_to_close_days": 4.97,
+    "unique_openers": 3,
+    "unique_closers": 2,
+    "top_openers": {
+      "MaanasArora": 17,
+      "thomassth": 9,
+      "SebastianRuan": 2
+    },
+    "top_closers": {
+      "MaanasArora": 13,
+      "thomassth": 1
+    }
+  }
+}

@@ -1,0 +1,2386 @@
+{
+  "repo_metrics": {
+    "full_name": "CodeForAfrica/openAFRICA",
+    "name": "openAFRICA",
+    "description": "openAFRICA aims to be largest independent repository of open data on the African continent. This repo contains the primary deployment scripts and files. Accessible at https://open.africa",
+    "num_developers": 6,
+    "total_commits": 154,
+    "languages": {
+      "Dockerfile": 6239,
+      "Shell": 4112,
+      "Makefile": 1946,
+      "Procfile": 265
+    },
+    "primary_language": "Dockerfile",
+    "first_commit_date": "2017-08-30T14:06:00+00:00",
+    "last_commit_date": "2025-10-16T10:27:31+00:00",
+    "license_spdx": "GPL-3.0",
+    "license_name": "GNU General Public License v3.0",
+    "is_osi_approved": false,
+    "topics": [
+      "ckan",
+      "openafrica",
+      "open-africa",
+      "dokku",
+      "docker",
+      "deployment",
+      "data-portal",
+      "ckanext-openafrica",
+      "docker-image",
+      "open-data",
+      "ckanext-socialite",
+      "redis",
+      "solr",
+      "rabbitmq",
+      "africa",
+      "kenya",
+      "south-africa",
+      "nigeria",
+      "tanzania"
+    ],
+    "has_contributing": true,
+    "has_code_of_conduct": true,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": true,
+    "has_pr_template": true,
+    "health_percentage": 75,
+    "stars": 33,
+    "watchers": 16,
+    "forks": 12,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "topic:docker",
+      "language:Dockerfile",
+      "file:Dockerfile",
+      "file:docker-compose.yml",
+      "file:Procfile"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": false,
+    "ci_cd_workflows": [],
+    "deployments_count": 0,
+    "created_at": "2017-08-30T14:06:00+00:00",
+    "updated_at": "2026-05-15T20:19:48+00:00",
+    "pushed_at": "2025-10-16T10:27:31+00:00",
+    "size_kb": 162
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "Arame93",
+      "name": "Arame Thiam",
+      "num_commits": 4,
+      "additions": 133,
+      "deletions": 5,
+      "avg_additions_per_commit": 33.25,
+      "avg_deletions_per_commit": 1.25,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "thepsalmist",
+      "name": "Xavier Frankline Odhiambo",
+      "num_commits": 13,
+      "additions": 1031,
+      "deletions": 1077,
+      "avg_additions_per_commit": 79.31,
+      "avg_deletions_per_commit": 82.85,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "thepsalmist",
+      "name": "Xavier Frankline",
+      "num_commits": 46,
+      "additions": 1121,
+      "deletions": 1167,
+      "avg_additions_per_commit": 24.37,
+      "avg_deletions_per_commit": 25.37,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": null,
+      "name": "=xavierfrank4",
+      "num_commits": 2,
+      "additions": 26,
+      "deletions": 151,
+      "avg_additions_per_commit": 13.0,
+      "avg_deletions_per_commit": 75.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "esirK",
+      "name": "esir",
+      "num_commits": 6,
+      "additions": 965,
+      "deletions": 813,
+      "avg_additions_per_commit": 160.83,
+      "avg_deletions_per_commit": 135.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "esirK",
+      "name": "Isaiah King'ori",
+      "num_commits": 2,
+      "additions": 4,
+      "deletions": 4,
+      "avg_additions_per_commit": 2.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "DavidLemayian",
+      "name": "David Lemayian",
+      "num_commits": 57,
+      "additions": 2180,
+      "deletions": 428,
+      "avg_additions_per_commit": 38.25,
+      "avg_deletions_per_commit": 7.51,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "phillipahereza",
+      "name": "Phillip Ahereza",
+      "num_commits": 15,
+      "additions": 270,
+      "deletions": 48,
+      "avg_additions_per_commit": 18.0,
+      "avg_deletions_per_commit": 3.2,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "WNjihia",
+      "name": "WNjihia",
+      "num_commits": 1,
+      "additions": 47,
+      "deletions": 10,
+      "avg_additions_per_commit": 47.0,
+      "avg_deletions_per_commit": 10.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": null,
+      "name": "Mercy-Muchai",
+      "num_commits": 8,
+      "additions": 62,
+      "deletions": 22,
+      "avg_additions_per_commit": 7.75,
+      "avg_deletions_per_commit": 2.75,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "CodeForAfrica/openAFRICA",
+    "pr_count_total": 17,
+    "pr_count_merged": 15,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 2,
+    "prs": [
+      {
+        "number": 9,
+        "title": "Add openAfrica extension",
+        "state": "closed",
+        "author_login": "RayNjeri",
+        "created_at": "2017-09-19T07:00:19+00:00",
+        "merged_at": null,
+        "closed_at": "2017-09-19T12:03:36+00:00"
+      },
+      {
+        "number": 10,
+        "title": "Add Dockerfile for simple CKAN deployment",
+        "state": "closed",
+        "author_login": "muchai-mercy",
+        "created_at": "2017-09-20T08:50:14+00:00",
+        "merged_at": "2017-09-27T16:52:44+00:00",
+        "closed_at": "2017-09-27T16:52:44+00:00"
+      },
+      {
+        "number": 11,
+        "title": "Test deployment",
+        "state": "closed",
+        "author_login": "WNjihia",
+        "created_at": "2017-09-20T09:29:36+00:00",
+        "merged_at": "2017-09-28T10:41:03+00:00",
+        "closed_at": "2017-09-28T10:41:03+00:00"
+      },
+      {
+        "number": 16,
+        "title": "Update to CKAN 2.6.5",
+        "state": "closed",
+        "author_login": "phillipahereza",
+        "created_at": "2018-03-20T09:15:19+00:00",
+        "merged_at": "2018-03-23T08:31:38+00:00",
+        "closed_at": "2018-03-23T08:31:38+00:00"
+      },
+      {
+        "number": 17,
+        "title": "[FIX] Datapusher",
+        "state": "closed",
+        "author_login": "phillipahereza",
+        "created_at": "2018-03-23T12:05:44+00:00",
+        "merged_at": "2018-03-25T11:05:31+00:00",
+        "closed_at": "2018-03-25T11:05:31+00:00"
+      },
+      {
+        "number": 20,
+        "title": "GitHub Templates",
+        "state": "closed",
+        "author_login": "phillipahereza",
+        "created_at": "2018-04-05T10:45:24+00:00",
+        "merged_at": "2018-04-05T13:00:19+00:00",
+        "closed_at": "2018-04-05T13:00:19+00:00"
+      },
+      {
+        "number": 27,
+        "title": "Improve docker",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "created_at": "2018-10-24T15:02:40+00:00",
+        "merged_at": "2018-10-25T12:07:55+00:00",
+        "closed_at": "2018-10-25T12:07:55+00:00"
+      },
+      {
+        "number": 28,
+        "title": "[#164862573] Set Up Supervisor",
+        "state": "closed",
+        "author_login": "phillipahereza",
+        "created_at": "2019-03-27T07:48:37+00:00",
+        "merged_at": null,
+        "closed_at": "2019-07-08T13:37:55+00:00"
+      },
+      {
+        "number": 29,
+        "title": "Update README.md",
+        "state": "closed",
+        "author_login": "esirK",
+        "created_at": "2022-09-26T12:58:53+00:00",
+        "merged_at": "2024-04-05T08:22:09+00:00",
+        "closed_at": "2024-04-05T08:22:09+00:00"
+      },
+      {
+        "number": 30,
+        "title": "Chore upgrade to ckan 2.8",
+        "state": "closed",
+        "author_login": "esirK",
+        "created_at": "2022-10-24T06:14:35+00:00",
+        "merged_at": "2023-07-28T12:38:47+00:00",
+        "closed_at": "2023-07-28T12:38:47+00:00"
+      },
+      {
+        "number": 31,
+        "title": "Chore upgrade to ckan 2.9",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2023-07-28T12:40:51+00:00",
+        "merged_at": "2024-04-05T08:21:48+00:00",
+        "closed_at": "2024-04-05T08:21:48+00:00"
+      },
+      {
+        "number": 33,
+        "title": "Chore upgrade to ckan 2.10",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2024-04-05T08:38:03+00:00",
+        "merged_at": "2024-05-28T05:24:23+00:00",
+        "closed_at": "2024-05-28T05:24:23+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Fix/user action permissions",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2024-05-28T06:26:12+00:00",
+        "merged_at": "2024-06-11T14:28:39+00:00",
+        "closed_at": "2024-06-11T14:28:39+00:00"
+      },
+      {
+        "number": 38,
+        "title": "Fix CKAN request timeout",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2024-10-23T09:00:47+00:00",
+        "merged_at": "2025-02-24T11:24:18+00:00",
+        "closed_at": "2025-02-24T11:24:18+00:00"
+      },
+      {
+        "number": 42,
+        "title": "Update to CKAN 2.10.7 patch",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2025-02-21T12:17:26+00:00",
+        "merged_at": "2025-02-21T16:59:22+00:00",
+        "closed_at": "2025-02-21T16:59:22+00:00"
+      },
+      {
+        "number": 46,
+        "title": "Upgrade to ckan 2.10.8",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2025-05-29T10:23:21+00:00",
+        "merged_at": "2025-06-03T13:25:51+00:00",
+        "closed_at": "2025-06-03T13:25:51+00:00"
+      },
+      {
+        "number": 50,
+        "title": "Update to CKAN 2.11, CKAN_SOLR 2.11-solr9",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2025-07-14T07:30:26+00:00",
+        "merged_at": "2025-07-15T11:52:23+00:00",
+        "closed_at": "2025-07-15T11:52:23+00:00"
+      }
+    ],
+    "tag_count": 3,
+    "tags": [
+      {
+        "name": "v0.1.2",
+        "commit_sha": "07d8cbca56c4dc9af4d0c0fd2096938054d2ed78",
+        "date": "2019-08-19T17:30:45+00:00"
+      },
+      {
+        "name": "v0.1.1",
+        "commit_sha": "75afddc89e4d2285cad090724ef2b6ba5eab33ad",
+        "date": "2019-08-19T17:29:57+00:00"
+      },
+      {
+        "name": "v0.1",
+        "commit_sha": "2cf3ccd81a4d51e89714d78e682b9f4081c87657",
+        "date": "2019-03-26T06:41:01+00:00"
+      }
+    ],
+    "release_count": 1,
+    "releases": [
+      {
+        "tag_name": "v0.1",
+        "name": "Beta Release",
+        "created_at": "2019-03-26T06:41:01+00:00",
+        "is_prerelease": false
+      }
+    ]
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "CodeForAfrica/openAFRICA",
+    "weekly_commits": [
+      {
+        "week_start": "2017-08-28",
+        "commits": 6
+      },
+      {
+        "week_start": "2017-09-04",
+        "commits": 3
+      },
+      {
+        "week_start": "2017-09-11",
+        "commits": 2
+      },
+      {
+        "week_start": "2017-09-18",
+        "commits": 4
+      },
+      {
+        "week_start": "2017-09-25",
+        "commits": 5
+      },
+      {
+        "week_start": "2017-10-23",
+        "commits": 8
+      },
+      {
+        "week_start": "2018-02-05",
+        "commits": 3
+      },
+      {
+        "week_start": "2018-02-12",
+        "commits": 3
+      },
+      {
+        "week_start": "2018-02-19",
+        "commits": 1
+      },
+      {
+        "week_start": "2018-03-19",
+        "commits": 3
+      },
+      {
+        "week_start": "2018-03-26",
+        "commits": 2
+      },
+      {
+        "week_start": "2018-04-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2018-04-16",
+        "commits": 1
+      },
+      {
+        "week_start": "2018-05-28",
+        "commits": 1
+      },
+      {
+        "week_start": "2018-06-04",
+        "commits": 3
+      },
+      {
+        "week_start": "2018-06-11",
+        "commits": 2
+      },
+      {
+        "week_start": "2018-10-15",
+        "commits": 2
+      },
+      {
+        "week_start": "2018-10-22",
+        "commits": 3
+      },
+      {
+        "week_start": "2019-03-25",
+        "commits": 5
+      },
+      {
+        "week_start": "2019-08-12",
+        "commits": 4
+      },
+      {
+        "week_start": "2019-08-19",
+        "commits": 12
+      },
+      {
+        "week_start": "2019-09-02",
+        "commits": 3
+      },
+      {
+        "week_start": "2020-01-27",
+        "commits": 4
+      },
+      {
+        "week_start": "2022-09-26",
+        "commits": 2
+      },
+      {
+        "week_start": "2022-10-24",
+        "commits": 5
+      },
+      {
+        "week_start": "2022-11-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-02-27",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-03-20",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-04-03",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-04-10",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-04-17",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-06-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-07-24",
+        "commits": 5
+      },
+      {
+        "week_start": "2023-07-31",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-08-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-01-29",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-02-05",
+        "commits": 7
+      },
+      {
+        "week_start": "2024-03-18",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-04-01",
+        "commits": 6
+      },
+      {
+        "week_start": "2024-04-22",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-05-27",
+        "commits": 6
+      },
+      {
+        "week_start": "2024-06-03",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-06-10",
+        "commits": 4
+      },
+      {
+        "week_start": "2024-10-21",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-02-17",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-02-24",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-05-26",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-06-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-07-14",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-10-13",
+        "commits": 4
+      }
+    ],
+    "change_request_acceptance_ratio": 0.8824,
+    "bus_factor": 2,
+    "contribution_types": {
+      "code_commits": 154,
+      "pull_requests": 17,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 5,
+      "Code for Africa": 2,
+      "TeneryResearch": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 12,
+    "burstiness_cv": 0.72,
+    "burstiness_mean": 3.08,
+    "burstiness_std": 2.23,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 41,
+        "days_to_close": 71.8
+      },
+      {
+        "issue_number": 40,
+        "days_to_close": 17.8
+      },
+      {
+        "issue_number": 37,
+        "days_to_close": 124.1
+      }
+    ],
+    "median_defect_resolution_days": 71.8,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 2,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 2,
+    "elephant_factor_no_bots": 2,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 183.1,
+    "median_time_to_first_response_prs_hours": 12.7,
+    "time_to_first_response_issues_sample_size": 40,
+    "time_to_first_response_prs_sample_size": 17,
+    "readme_last_updated": "2024-04-05T08:22:09+00:00",
+    "contributing_last_updated": "2018-04-05T13:00:19+00:00",
+    "stale_issue_ratio": 0.8,
+    "stale_issue_count": 12,
+    "open_issue_count": 15,
+    "median_pr_review_turnaround_hours": 16.2,
+    "avg_review_comments_per_pr": 0.87,
+    "herfindahl_hirschman_index": 3623.6,
+    "hhi_no_bots": 3663.1,
+    "hhi_known_orgs_only": 5001.5,
+    "unknown_org_contributor_count": 5,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 4,
+      "unknown": 6
+    },
+    "dora_deployment_frequency_per_month": 0.01,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0667,
+    "core_contributor_count": 5,
+    "periphery_contributor_count": 5,
+    "core_periphery_ratio": 0.5,
+    "network_density": 0.2,
+    "avg_degree_centrality": 0.2,
+    "pr_review_edges": [
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "koechkevin"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "VinneyJ"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "esirK",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "thepsalmist",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "esirK",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "esirK",
+        "reviewer": "thepsalmist"
+      },
+      {
+        "author": "DavidLemayian",
+        "reviewer": "phillipahereza"
+      },
+      {
+        "author": "phillipahereza",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "phillipahereza",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "phillipahereza",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "phillipahereza",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "WNjihia",
+        "reviewer": "dmkitui"
+      },
+      {
+        "author": "WNjihia",
+        "reviewer": "dmkitui"
+      },
+      {
+        "author": "WNjihia",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "muchai-mercy",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "muchai-mercy",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "muchai-mercy",
+        "reviewer": "DavidLemayian"
+      }
+    ]
+  },
+  "crawled_at": "2026-05-22T01:18:33.400989+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "thepsalmist",
+      "degree_centrality": 0.4444,
+      "betweenness_centrality": 0.1389,
+      "classification": "core",
+      "num_collaborators": 4
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "kilemensi",
+      "degree_centrality": 0.2222,
+      "betweenness_centrality": 0.0,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "koechkevin",
+      "degree_centrality": 0.1111,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "VinneyJ",
+      "degree_centrality": 0.1111,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "esirK",
+      "degree_centrality": 0.2222,
+      "betweenness_centrality": 0.0,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "DavidLemayian",
+      "degree_centrality": 0.3333,
+      "betweenness_centrality": 0.1389,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "phillipahereza",
+      "degree_centrality": 0.1111,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "WNjihia",
+      "degree_centrality": 0.2222,
+      "betweenness_centrality": 0.0833,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "dmkitui",
+      "degree_centrality": 0.1111,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/openAFRICA",
+      "login": "muchai-mercy",
+      "degree_centrality": 0.1111,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "CodeForAfrica/openAFRICA",
+    "weekly_snapshots": [
+      {
+        "week_start": "2017-08-28",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 6,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2017-09-04",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 9,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-09-11",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 11,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-09-18",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 15,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-09-25",
+        "total_commits": 5,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 20,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-10-23",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 28,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2018-02-05",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 31,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2018-02-12",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 34,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-02-19",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 35,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-03-19",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 38,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-03-26",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 40,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-04-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 41,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-04-16",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 42,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-05-28",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 43,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-06-04",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 46,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-06-11",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 48,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-10-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 50,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-10-22",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 53,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2019-03-25",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 58,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2019-08-12",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 62,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2019-08-19",
+        "total_commits": 12,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 74,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2019-09-02",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 77,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2020-01-27",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 81,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2022-09-26",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 83,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2022-10-24",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 88,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2022-11-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 89,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-02-27",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 90,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-03-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 91,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-04-03",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 93,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-04-10",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 95,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-04-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 96,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-06-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 97,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-07-24",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 102,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-07-31",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 103,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2023-08-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 104,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-01-29",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 105,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-02-05",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 112,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-03-18",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 113,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-04-01",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 119,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-04-22",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 120,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-05-27",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 126,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-06-03",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 128,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-06-10",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 132,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-10-21",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 135,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-02-17",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 141,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-02-24",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 143,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-05-26",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 146,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 147,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-07-14",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 150,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 154,
+        "cumulative_contributors": 8
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "thepsalmist",
+        "login": "thepsalmist",
+        "name": "Xavier Frankline Odhiambo",
+        "email": "49587182+thepsalmist@users.noreply.github.com",
+        "first_commit_date": "2023-03-03T12:43:53+00:00",
+        "last_commit_date": "2025-07-15T11:52:22+00:00",
+        "duration_days": 864,
+        "total_commits": 59,
+        "active_weeks": 21,
+        "total_weeks_span": 123,
+        "activity_ratio": 0.1707,
+        "status": "departed",
+        "departed_weeks_ago": 44,
+        "avg_commits_per_active_week": 2.81
+      },
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "DavidLemayian",
+        "login": "DavidLemayian",
+        "name": "David Lemayian",
+        "email": "dlemayian@gmail.com",
+        "first_commit_date": "2017-08-30T14:06:00+00:00",
+        "last_commit_date": "2020-01-31T13:28:19+00:00",
+        "duration_days": 883,
+        "total_commits": 57,
+        "active_weeks": 16,
+        "total_weeks_span": 126,
+        "activity_ratio": 0.127,
+        "status": "departed",
+        "departed_weeks_ago": 328,
+        "avg_commits_per_active_week": 3.56
+      },
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "phillipahereza",
+        "login": "phillipahereza",
+        "name": "Phillip Ahereza",
+        "email": "pahereza@gmail.com",
+        "first_commit_date": "2018-02-16T07:39:38+00:00",
+        "last_commit_date": "2019-03-26T06:41:01+00:00",
+        "duration_days": 402,
+        "total_commits": 15,
+        "active_weeks": 10,
+        "total_weeks_span": 57,
+        "activity_ratio": 0.1754,
+        "status": "departed",
+        "departed_weeks_ago": 373,
+        "avg_commits_per_active_week": 1.5
+      },
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "esirK",
+        "login": "esirK",
+        "name": "esir",
+        "email": "esirkings@gmail.com",
+        "first_commit_date": "2022-09-26T12:57:46+00:00",
+        "last_commit_date": "2022-11-07T12:16:02+00:00",
+        "duration_days": 41,
+        "total_commits": 8,
+        "active_weeks": 3,
+        "total_weeks_span": 5,
+        "activity_ratio": 0.6,
+        "status": "departed",
+        "departed_weeks_ago": 184,
+        "avg_commits_per_active_week": 2.67
+      },
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "mercy.muchai@andela.com",
+        "login": null,
+        "name": "Mercy-Muchai",
+        "email": "mercy.muchai@andela.com",
+        "first_commit_date": "2017-09-05T07:26:57+00:00",
+        "last_commit_date": "2017-09-26T11:53:50+00:00",
+        "duration_days": 21,
+        "total_commits": 8,
+        "active_weeks": 3,
+        "total_weeks_span": 3,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 451,
+        "avg_commits_per_active_week": 2.67
+      },
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "Arame93",
+        "login": "Arame93",
+        "name": "Arame Thiam",
+        "email": "60295234+Arame93@users.noreply.github.com",
+        "first_commit_date": "2025-10-16T10:19:04+00:00",
+        "last_commit_date": "2025-10-16T10:27:31+00:00",
+        "duration_days": 0,
+        "total_commits": 4,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 31,
+        "avg_commits_per_active_week": 4.0
+      },
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "=",
+        "login": null,
+        "name": "=xavierfrank4",
+        "email": "=",
+        "first_commit_date": "2023-08-03T12:25:50+00:00",
+        "last_commit_date": "2023-08-07T13:43:01+00:00",
+        "duration_days": 4,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 145,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CodeForAfrica/openAFRICA",
+        "contributor_id": "WNjihia",
+        "login": "WNjihia",
+        "name": "WNjihia",
+        "email": "dorisn172@gmail.com",
+        "first_commit_date": "2017-09-28T10:41:03+00:00",
+        "last_commit_date": "2017-09-28T10:41:03+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 451,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "Arame93",
+        "week_start": "2025-10-13",
+        "commits": 4,
+        "lines_added": 133,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-02-27",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-03-20",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-04-03",
+        "commits": 2,
+        "lines_added": 22,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-04-10",
+        "commits": 2,
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-04-17",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-06-12",
+        "commits": 1,
+        "lines_added": 17,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-07-24",
+        "commits": 5,
+        "lines_added": 206,
+        "lines_removed": 54
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-01-29",
+        "commits": 1,
+        "lines_added": 120,
+        "lines_removed": 40
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-02-05",
+        "commits": 7,
+        "lines_added": 156,
+        "lines_removed": 124
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-03-18",
+        "commits": 1,
+        "lines_added": 85,
+        "lines_removed": 98
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-04-01",
+        "commits": 6,
+        "lines_added": 669,
+        "lines_removed": 305
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-04-22",
+        "commits": 1,
+        "lines_added": 13,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-05-27",
+        "commits": 6,
+        "lines_added": 613,
+        "lines_removed": 266
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-06-03",
+        "commits": 2,
+        "lines_added": 18,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-06-10",
+        "commits": 4,
+        "lines_added": 70,
+        "lines_removed": 100
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2024-10-21",
+        "commits": 3,
+        "lines_added": 13,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2025-02-17",
+        "commits": 6,
+        "lines_added": 30,
+        "lines_removed": 1120
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2025-02-24",
+        "commits": 2,
+        "lines_added": 11,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2025-05-26",
+        "commits": 3,
+        "lines_added": 49,
+        "lines_removed": 35
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2025-06-02",
+        "commits": 1,
+        "lines_added": 40,
+        "lines_removed": 26
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2025-07-14",
+        "commits": 3,
+        "lines_added": 5,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "=",
+        "week_start": "2023-07-31",
+        "commits": 1,
+        "lines_added": 23,
+        "lines_removed": 151
+      },
+      {
+        "contributor_id": "=",
+        "week_start": "2023-08-07",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "esirK",
+        "week_start": "2022-09-26",
+        "commits": 2,
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "esirK",
+        "week_start": "2022-10-24",
+        "commits": 5,
+        "lines_added": 815,
+        "lines_removed": 812
+      },
+      {
+        "contributor_id": "esirK",
+        "week_start": "2022-11-07",
+        "commits": 1,
+        "lines_added": 150,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-08-28",
+        "commits": 6,
+        "lines_added": 290,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-09-04",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-09-11",
+        "commits": 2,
+        "lines_added": 8,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-09-25",
+        "commits": 2,
+        "lines_added": 90,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-10-23",
+        "commits": 8,
+        "lines_added": 420,
+        "lines_removed": 133
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-02-05",
+        "commits": 3,
+        "lines_added": 35,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-02-12",
+        "commits": 1,
+        "lines_added": 147,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-03-19",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-03-26",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-10-15",
+        "commits": 2,
+        "lines_added": 648,
+        "lines_removed": 49
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-10-22",
+        "commits": 3,
+        "lines_added": 207,
+        "lines_removed": 52
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-03-25",
+        "commits": 4,
+        "lines_added": 16,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-08-12",
+        "commits": 4,
+        "lines_added": 34,
+        "lines_removed": 23
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-08-19",
+        "commits": 12,
+        "lines_added": 173,
+        "lines_removed": 69
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-09-02",
+        "commits": 3,
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2020-01-27",
+        "commits": 4,
+        "lines_added": 101,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-02-12",
+        "commits": 2,
+        "lines_added": 15,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-02-19",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-03-19",
+        "commits": 2,
+        "lines_added": 68,
+        "lines_removed": 29
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-03-26",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-04-02",
+        "commits": 1,
+        "lines_added": 157,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-04-16",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-05-28",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-06-04",
+        "commits": 3,
+        "lines_added": 8,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2018-06-11",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "phillipahereza",
+        "week_start": "2019-03-25",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "WNjihia",
+        "week_start": "2017-09-25",
+        "commits": 1,
+        "lines_added": 47,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "mercy.muchai@andela.com",
+        "week_start": "2017-09-04",
+        "commits": 2,
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "mercy.muchai@andela.com",
+        "week_start": "2017-09-18",
+        "commits": 4,
+        "lines_added": 44,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "mercy.muchai@andela.com",
+        "week_start": "2017-09-25",
+        "commits": 2,
+        "lines_added": 6,
+        "lines_removed": 10
+      }
+    ],
+    "total_weeks": 50,
+    "total_unique_contributors": 8,
+    "new_contributor_rate_per_month": 0.08
+  },
+  "issue_analytics": {
+    "repo_full_name": "CodeForAfrica/openAFRICA",
+    "issues": [
+      {
+        "number": 1,
+        "title": "Add Dockerfile for simple CKAN deployment.",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-08-30T14:08:35+00:00",
+        "closed_at": "2017-09-27T16:52:44+00:00",
+        "updated_at": "2018-05-19T13:53:31+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 28.11
+      },
+      {
+        "number": 2,
+        "title": "Add openAFRICA extension",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-08-30T14:12:51+00:00",
+        "closed_at": "2018-04-25T18:05:04+00:00",
+        "updated_at": "2018-05-19T13:53:31+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 238.16
+      },
+      {
+        "number": 3,
+        "title": "Add deployment tests",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-08-31T13:50:46+00:00",
+        "closed_at": "2018-10-22T09:58:44+00:00",
+        "updated_at": "2018-10-22T09:58:44+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 416.84
+      },
+      {
+        "number": 4,
+        "title": "Integrate with Travis CI",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-08-31T13:51:52+00:00",
+        "closed_at": "2018-10-22T09:59:08+00:00",
+        "updated_at": "2018-10-22T09:59:08+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 416.84
+      },
+      {
+        "number": 5,
+        "title": "Add feature to allow registration through existing social media and email accounts",
+        "state": "closed",
+        "author_login": "Andretalik",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-09-06T07:06:03+00:00",
+        "closed_at": "2018-10-22T10:01:33+00:00",
+        "updated_at": "2018-10-22T10:01:35+00:00",
+        "comment_count": 7,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 411.12
+      },
+      {
+        "number": 6,
+        "title": "Add Data Request button on openafrica home page.",
+        "state": "closed",
+        "author_login": "andela-onnenanya",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-09-08T13:55:35+00:00",
+        "closed_at": "2017-09-19T12:03:56+00:00",
+        "updated_at": "2018-05-19T13:53:31+00:00",
+        "comment_count": 3,
+        "labels": [],
+        "time_to_close_days": 10.92
+      },
+      {
+        "number": 7,
+        "title": "Add feature to enable users favourite datasets so they can easily find them",
+        "state": "closed",
+        "author_login": "ignatiusukwuoma",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-09-13T15:17:32+00:00",
+        "closed_at": "2017-09-14T09:39:00+00:00",
+        "updated_at": "2018-05-19T13:53:31+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 0.76
+      },
+      {
+        "number": 8,
+        "title": "Add feature to remind registered organizations via email to upload new datasets",
+        "state": "closed",
+        "author_login": "ignatiusukwuoma",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-09-13T19:25:34+00:00",
+        "closed_at": "2018-10-22T09:58:18+00:00",
+        "updated_at": "2018-10-22T09:58:20+00:00",
+        "comment_count": 4,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 403.61
+      },
+      {
+        "number": 12,
+        "title": "Add followy",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-10-12T12:56:08+00:00",
+        "closed_at": "2018-10-22T09:57:07+00:00",
+        "updated_at": "2018-10-22T09:57:09+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement",
+          "help wanted",
+          "good first issue"
+        ],
+        "time_to_close_days": 374.88
+      },
+      {
+        "number": 13,
+        "title": "Add ckanext-showcase",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-10-26T12:01:47+00:00",
+        "closed_at": "2018-04-25T18:04:22+00:00",
+        "updated_at": "2018-05-19T13:53:32+00:00",
+        "comment_count": 0,
+        "labels": [
+          "help wanted",
+          "good first issue"
+        ],
+        "time_to_close_days": 181.25
+      },
+      {
+        "number": 14,
+        "title": "Add cron jobs to deployment process",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-03-18T12:12:49+00:00",
+        "closed_at": "2018-04-25T18:03:13+00:00",
+        "updated_at": "2018-04-25T18:03:13+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 38.24
+      },
+      {
+        "number": 15,
+        "title": "Document s3 folders",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-03-18T12:28:25+00:00",
+        "closed_at": "2018-10-22T08:45:16+00:00",
+        "updated_at": "2018-10-22T08:45:34+00:00",
+        "comment_count": 0,
+        "labels": [
+          "wontfix"
+        ],
+        "time_to_close_days": 217.85
+      },
+      {
+        "number": 18,
+        "title": "Log server errors to Slack",
+        "state": "closed",
+        "author_login": "phillipahereza",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-03-28T09:08:10+00:00",
+        "closed_at": "2018-10-22T08:18:37+00:00",
+        "updated_at": "2018-10-22T08:18:39+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 207.97
+      },
+      {
+        "number": 19,
+        "title": "Add Github templates",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-03-30T12:58:39+00:00",
+        "closed_at": "2018-04-25T17:51:24+00:00",
+        "updated_at": "2018-04-25T17:51:24+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 26.2
+      },
+      {
+        "number": 21,
+        "title": "Add Discourse to openAFRICA",
+        "state": "closed",
+        "author_login": "phillipahereza",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-05-18T08:14:34+00:00",
+        "closed_at": "2018-10-22T10:02:13+00:00",
+        "updated_at": "2018-10-22T10:02:15+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 157.07
+      },
+      {
+        "number": 22,
+        "title": "Use improve Github issues templates",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-05-19T13:49:53+00:00",
+        "closed_at": "2018-10-22T08:35:12+00:00",
+        "updated_at": "2018-10-22T08:35:12+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 155.78
+      },
+      {
+        "number": 23,
+        "title": "Publish releases aligned with Docker image versions",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-05-19T13:59:49+00:00",
+        "closed_at": "2018-10-22T08:16:42+00:00",
+        "updated_at": "2018-10-22T08:32:29+00:00",
+        "comment_count": 0,
+        "labels": [
+          "wontfix"
+        ],
+        "time_to_close_days": 155.76
+      },
+      {
+        "number": 24,
+        "title": "Add ckanext-harvest extension",
+        "state": "closed",
+        "author_login": "tebajanga",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-08-07T13:10:18+00:00",
+        "closed_at": "2019-08-17T18:53:44+00:00",
+        "updated_at": "2019-08-17T18:53:44+00:00",
+        "comment_count": 1,
+        "labels": [
+          "more-info-needed"
+        ],
+        "time_to_close_days": 375.24
+      },
+      {
+        "number": 25,
+        "title": "[DATA REQUESTS] Unable to delete spam data",
+        "state": "open",
+        "author_login": "tebajanga",
+        "closed_by_login": null,
+        "created_at": "2018-08-07T13:44:33+00:00",
+        "closed_at": null,
+        "updated_at": "2018-10-22T10:03:14+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 26,
+        "title": "Harvest Election Information from ACE Project",
+        "state": "open",
+        "author_login": "phillipahereza",
+        "closed_by_login": null,
+        "created_at": "2018-09-06T12:04:28+00:00",
+        "closed_at": null,
+        "updated_at": "2018-09-06T12:07:58+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "help wanted"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 32,
+        "title": "Add an issue to track why & if we can upgrade when we get to 2.10",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2023-08-03T10:14:52+00:00",
+        "closed_at": null,
+        "updated_at": "2023-08-03T10:14:52+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 35,
+        "title": "Add Dockerfile Multistage Build",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2024-06-11T13:49:19+00:00",
+        "closed_at": null,
+        "updated_at": "2024-08-21T10:39:35+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 36,
+        "title": "Datastore: Could not connect to Datapusher error",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2024-08-21T10:44:53+00:00",
+        "closed_at": null,
+        "updated_at": "2024-08-21T10:44:54+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 37,
+        "title": "CKAN timeout error when reading large datasets",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "closed_by_login": "thepsalmist",
+        "created_at": "2024-10-23T08:59:02+00:00",
+        "closed_at": "2025-02-24T11:24:19+00:00",
+        "updated_at": "2025-02-24T11:24:19+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 124.1
+      },
+      {
+        "number": 39,
+        "title": "Enable `CKAN stats` extension plugin",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2024-10-30T10:34:28+00:00",
+        "closed_at": null,
+        "updated_at": "2024-10-30T10:36:22+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 40,
+        "title": "Error on API Token create",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "closed_by_login": "thepsalmist",
+        "created_at": "2025-02-05T14:11:32+00:00",
+        "closed_at": "2025-02-23T09:45:07+00:00",
+        "updated_at": "2025-02-23T09:45:08+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 17.81
+      },
+      {
+        "number": 41,
+        "title": "OSError: write error Bug",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "closed_by_login": "kilemensi",
+        "created_at": "2025-02-10T13:27:45+00:00",
+        "closed_at": "2025-04-23T09:47:44+00:00",
+        "updated_at": "2025-04-23T10:04:00+00:00",
+        "comment_count": 4,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 71.85
+      },
+      {
+        "number": 43,
+        "title": "Missing Headers > Clickjacking vulnerability",
+        "state": "open",
+        "author_login": "jonesbaraza",
+        "closed_by_login": null,
+        "created_at": "2025-02-28T08:14:11+00:00",
+        "closed_at": null,
+        "updated_at": "2025-02-28T09:17:01+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 44,
+        "title": "Bug: ValueError: not enough values to unpack (expected 2, got 1)",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2025-05-22T06:13:58+00:00",
+        "closed_at": null,
+        "updated_at": "2025-05-23T08:01:38+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 45,
+        "title": "Upgrade to CKAN v2.10.8",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "closed_by_login": "thepsalmist",
+        "created_at": "2025-05-23T08:05:05+00:00",
+        "closed_at": "2025-06-03T13:25:52+00:00",
+        "updated_at": "2025-06-03T13:25:52+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 11.22
+      },
+      {
+        "number": 47,
+        "title": "Upgrade to CKAN 2.11",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "closed_by_login": "thepsalmist",
+        "created_at": "2025-06-03T13:27:20+00:00",
+        "closed_at": "2025-07-15T11:52:24+00:00",
+        "updated_at": "2025-07-15T11:52:24+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 41.93
+      },
+      {
+        "number": 48,
+        "title": "Fix issues with Datasets preview",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2025-06-05T09:00:43+00:00",
+        "closed_at": null,
+        "updated_at": "2025-06-18T08:47:00+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 49,
+        "title": "Upgrade the datastore extension",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2025-06-05T09:02:02+00:00",
+        "closed_at": null,
+        "updated_at": "2025-06-18T08:43:29+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 51,
+        "title": "`openafrica.net` should redirect to `open.africa`",
+        "state": "closed",
+        "author_login": "kilemensi",
+        "closed_by_login": "thepsalmist",
+        "created_at": "2025-08-05T06:21:50+00:00",
+        "closed_at": "2025-09-10T11:00:02+00:00",
+        "updated_at": "2025-09-10T11:00:02+00:00",
+        "comment_count": 5,
+        "labels": [],
+        "time_to_close_days": 36.19
+      },
+      {
+        "number": 52,
+        "title": "Strengthen your project with a Code of Conduct",
+        "state": "closed",
+        "author_login": "Maryblessing",
+        "closed_by_login": "kilemensi",
+        "created_at": "2025-08-27T20:49:40+00:00",
+        "closed_at": "2025-10-16T11:23:32+00:00",
+        "updated_at": "2025-10-16T11:23:32+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 49.61
+      },
+      {
+        "number": 53,
+        "title": "Upgrade to CKAN 2.10.9 patch",
+        "state": "open",
+        "author_login": "thepsalmist",
+        "closed_by_login": null,
+        "created_at": "2025-10-16T06:18:54+00:00",
+        "closed_at": null,
+        "updated_at": "2025-10-16T07:53:20+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 54,
+        "title": "OpenAfrica API Token display issue",
+        "state": "open",
+        "author_login": "VinneyJ",
+        "closed_by_login": null,
+        "created_at": "2026-01-20T09:58:03+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-20T10:01:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 55,
+        "title": "Listing: Kenya civic decision tools \u2014 parliamentary, budget, water, crop data",
+        "state": "open",
+        "author_login": "gabrielmahia",
+        "closed_by_login": null,
+        "created_at": "2026-04-01T03:53:26+00:00",
+        "closed_at": null,
+        "updated_at": "2026-05-19T11:14:44+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 56,
+        "title": "Community tool: TaarifaAI \u2014 AI-powered civic briefing tool for Kenya journalists",
+        "state": "open",
+        "author_login": "gabrielmahia",
+        "closed_by_login": null,
+        "created_at": "2026-04-22T09:40:02+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-22T09:40:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 57,
+        "title": "Add: AfyaAI + DiasporaAI \u2014 Kenya health AI and US-Kenya diaspora navigator",
+        "state": "open",
+        "author_login": "gabrielmahia",
+        "closed_by_login": null,
+        "created_at": "2026-04-27T22:06:50+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-27T22:06:50+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 40,
+    "open_issues": 15,
+    "closed_issues": 25,
+    "avg_comments_per_issue": 1.18,
+    "median_time_to_close_days": 155.76,
+    "unique_openers": 12,
+    "unique_closers": 3,
+    "top_openers": {
+      "thepsalmist": 13,
+      "DavidLemayian": 11,
+      "phillipahereza": 3,
+      "gabrielmahia": 3,
+      "ignatiusukwuoma": 2,
+      "tebajanga": 2,
+      "Andretalik": 1,
+      "andela-onnenanya": 1,
+      "jonesbaraza": 1,
+      "kilemensi": 1,
+      "Maryblessing": 1,
+      "VinneyJ": 1
+    },
+    "top_closers": {
+      "DavidLemayian": 18,
+      "thepsalmist": 5,
+      "kilemensi": 2
+    }
+  }
+}
