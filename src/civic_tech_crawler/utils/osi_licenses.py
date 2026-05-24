@@ -21,6 +21,14 @@ OSI_APPROVED_SPDX_IDS: frozenset[str] = frozenset({
     "SISSL", "Sleepycat", "SPL-1.0", "UCL-1.0", "Unicode-DFS-2016",
     "Unlicense", "UPL-1.0", "VSL-1.0", "W3C", "Watcom-1.0",
     "Xnet", "Zlib", "ZPL-2.0", "ZPL-2.1",
+
+    # Deprecated SPDX short identifiers still emitted by the GitHub Licenses API.
+    # GitHub returns e.g. "GPL-3.0" rather than the modern, disambiguated
+    # "GPL-3.0-only" / "GPL-3.0-or-later". The canonical forms above are all
+    # OSI-approved, so these legacy aliases must be treated as OSI-approved too.
+    # Without them, GPL/AGPL/LGPL repositories were incorrectly flagged
+    # is_osi_approved=False.
+    "AGPL-3.0", "GPL-2.0", "GPL-3.0", "LGPL-2.0", "LGPL-2.1", "LGPL-3.0",
 })
 
 
