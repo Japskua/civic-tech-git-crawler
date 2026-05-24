@@ -19,7 +19,7 @@
     "last_commit_date": "2026-05-20T11:37:14+00:00",
     "license_spdx": "AGPL-3.0",
     "license_name": "GNU Affero General Public License v3.0",
-    "is_osi_approved": false,
+    "is_osi_approved": true,
     "topics": [],
     "has_contributing": false,
     "has_code_of_conduct": false,
@@ -1420,7 +1420,7 @@
       }
     ],
     "median_defect_resolution_days": 4.8,
-    "osi_approved_license": false,
+    "osi_approved_license": true,
     "bus_factor_no_bots": 1,
     "bot_contributor_count": 1,
     "bot_commit_count": 1,

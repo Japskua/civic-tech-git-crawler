@@ -29,7 +29,7 @@ manifest and selection rationale.
 | Total commits | 90,178 |
 | Stars / forks | 12,765 / 3,611 |
 | Repos with CI/CD | 48 / 57 |
-| Repos with OSI-approved license | 20 / 57 |
+| Repos with OSI-approved license | 34 / 57 |
 | Median project age | ~3 years |
 | Weekly-activity records | 15,346 (56 repos, 1,093 contributors) |
 | PR records | 37,220 |

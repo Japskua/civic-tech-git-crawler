@@ -14,7 +14,7 @@
     "last_commit_date": "2025-09-17T08:44:36+00:00",
     "license_spdx": "GPL-3.0",
     "license_name": "GNU General Public License v3.0",
-    "is_osi_approved": false,
+    "is_osi_approved": true,
     "topics": [
       "africa",
       "dominion",
@@ -1467,7 +1467,7 @@
     "burstiness_std": 14.68,
     "defect_resolution_durations_days": [],
     "median_defect_resolution_days": null,
-    "osi_approved_license": false,
+    "osi_approved_license": true,
     "bus_factor_no_bots": 2,
     "bot_contributor_count": 1,
     "bot_commit_count": 29,

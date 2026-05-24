@@ -16,7 +16,7 @@
     "last_commit_date": "2025-10-16T10:27:31+00:00",
     "license_spdx": "GPL-3.0",
     "license_name": "GNU General Public License v3.0",
-    "is_osi_approved": false,
+    "is_osi_approved": true,
     "topics": [
       "ckan",
       "openafrica",
@@ -608,7 +608,7 @@
       }
     ],
     "median_defect_resolution_days": 71.8,
-    "osi_approved_license": false,
+    "osi_approved_license": true,
     "bus_factor_no_bots": 2,
     "bot_contributor_count": 0,
     "bot_commit_count": 0,

@@ -243,7 +243,7 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
 | **Repos with CI/CD** | 48 / 57 |
 | **Repos w/ cloud signals** | 29 / 57 |
 | **Repos w/ AI/ML signals** | 6 / 57 |
-| **Repos w/ OSI license** | 20 / 57 |
+| **Repos w/ OSI license** | 34 / 57 |
 | **Median project age** | 3.1 years |
 | **Weekly activity rows** | 15,346 (56 repos, 1,093 contributors) |
 | **PR records** | 37,220 |
