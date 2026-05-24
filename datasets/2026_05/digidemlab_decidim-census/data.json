@@ -15,7 +15,7 @@
     "last_commit_date": "2026-05-23T05:10:30+00:00",
     "license_spdx": "AGPL-3.0",
     "license_name": "GNU Affero General Public License v3.0",
-    "is_osi_approved": false,
+    "is_osi_approved": true,
     "topics": [
       "decidim"
     ],
@@ -358,7 +358,7 @@
     "burstiness_std": 0.3,
     "defect_resolution_durations_days": [],
     "median_defect_resolution_days": null,
-    "osi_approved_license": false,
+    "osi_approved_license": true,
     "bus_factor_no_bots": 1,
     "bot_contributor_count": 0,
     "bot_commit_count": 0,

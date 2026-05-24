@@ -16,7 +16,7 @@
     "last_commit_date": "2026-05-05T01:02:41+00:00",
     "license_spdx": "GPL-3.0",
     "license_name": "GNU General Public License v3.0",
-    "is_osi_approved": false,
+    "is_osi_approved": true,
     "topics": [
       "meshtastic",
       "mesh",
@@ -7105,7 +7105,7 @@
       }
     ],
     "median_defect_resolution_days": 11.9,
-    "osi_approved_license": false,
+    "osi_approved_license": true,
     "bus_factor_no_bots": 1,
     "bot_contributor_count": 2,
     "bot_commit_count": 33,

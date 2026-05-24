@@ -14,7 +14,7 @@
 | **Total commits (repo_metrics)** | 154 |
 | **Attributable contributors (CWA)** | 8 |
 | **Cloud / AI-ML signals** | yes / no |
-| **OSI-approved license** | no |
+| **OSI-approved license** | yes |
 
 
 ## Main findings

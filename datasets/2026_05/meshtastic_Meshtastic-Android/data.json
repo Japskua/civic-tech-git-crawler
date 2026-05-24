@@ -21,7 +21,7 @@
     "last_commit_date": "2026-05-23T22:39:02+00:00",
     "license_spdx": "GPL-3.0",
     "license_name": "GNU General Public License v3.0",
-    "is_osi_approved": false,
+    "is_osi_approved": true,
     "topics": [
       "gps",
       "lora",
@@ -42099,7 +42099,7 @@
       }
     ],
     "median_defect_resolution_days": 2.2,
-    "osi_approved_license": false,
+    "osi_approved_license": true,
     "bus_factor_no_bots": 1,
     "bot_contributor_count": 2,
     "bot_commit_count": 193,
