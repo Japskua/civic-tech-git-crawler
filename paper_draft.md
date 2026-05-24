@@ -24,9 +24,11 @@ concentrated than commit counts suggest (lines-Gini ≥ commits-Gini in 41 of 56
 repositories), and 89% of all active project-weeks are dominated by a single
 contributor. Most importantly, **concentration does not resolve with age**:
 mature projects accumulate significantly more developers and commits than young
-ones (p < 0.01) but show no significant improvement in bus factor or
-concentration. The projects that escape single-maintainer dependence are a small
-minority with sustained institutional backing. We conclude that civic-tech
+ones (p < 0.01) and even spread effort across more hands (concentration falls,
+p < 0.01) — yet their **bus factor does not improve** (p > 0.05): the typical
+project still rests on a single irreplaceable contributor regardless of age. The
+projects that escape single-maintainer dependence are a small minority with
+sustained institutional backing. We conclude that civic-tech
 sustainability is not an emergent property of time or popularity and must be
 deliberately engineered.
 
@@ -198,19 +200,50 @@ bus factor is **1** and the median HHI is **5,374** (Fig. 4). The typical
 civic-tech project would lose its working knowledge with the departure of one
 person.
 
+![Figure 1: bus factor vs. HHI](datasets/2026_05/figures/fig1_busfactor_vs_hhi.png)
+
+*__Figure 1.__ Bus factor vs. HHI (humans only) across the n=56 repositories with
+computable concentration metrics; marker size encodes `num_developers`. As effort
+concentrates in fewer hands (higher HHI), the bus factor falls (Spearman
+ρ = −0.757, p = 1.5 × 10⁻¹¹).*
+
+![Figure 4: corpus metric distributions](datasets/2026_05/figures/fig4_corpus_distributions.png)
+
+*__Figure 4.__ Distribution of the four headline metrics across the n=57 corpus
+(bus factor, HHI, developers, age). The corpus is dominated by highly concentrated
+projects — median bus factor 1, median HHI 5,374 — with a long tail of larger,
+more collaborative repositories.*
+
 ### 4.2 Effort concentration exceeds commit-count concentration (Fig. 2)
 
 The Gini coefficient of lines-changed per contributor is ≥ the Gini of commits
 per contributor in 41 of 56 repositories (mean gap +0.059). Commit counts
 *understate* how concentrated the substantive work is.
 
-### 4.3 Scale grows with age; sustainability does not (Fig. 5)
+![Figure 2: effort Gini, lines vs. commits](datasets/2026_05/figures/fig2_effort_gini.png)
 
-Split at the corpus median age, mature projects have far more developers (median
-11 vs 3.5, p = 0.002) and commits (1,274 vs 193, p < 0.001) than young ones — but
-their bus factor is statistically indistinguishable (p > 0.05 at every reasonable
-threshold) and their concentration does not improve. Age buys scale, not
-resilience.
+*__Figure 2.__ Effort Gini on lines-changed vs. commits per contributor (n=56).
+Points above the y = x line — 41 of 56 repositories — concentrate effort more
+than commit counts alone reveal (mean gap +0.059).*
+
+### 4.3 Scale grows with age; the bus factor does not (Fig. 5)
+
+Split at the corpus median age (3.4 years; 29 mature, 28 young), mature projects
+have far more developers (median 15 vs 3.5, p < 0.001) and commits (1,352 vs 189,
+p < 0.001), and they are significantly **less concentrated** (HHI, no bots, 4,374
+vs 7,575, p = 0.008) — effort does spread as projects age. Yet their **bus factor
+is statistically indistinguishable** from young projects (median 1 vs 1,
+p ≈ 0.07–0.09): the number of contributors who could leave before the project
+stalls does not improve. Age buys scale and some deconcentration, but not
+bus-factor resilience — the single-maintainer dependency persists even in larger,
+older, less-concentrated projects.
+
+![Figure 5: maturity split](datasets/2026_05/figures/fig5_maturity_split.png)
+
+*__Figure 5.__ Mature vs. young projects split at the corpus median age (3.4 y;
+mature n=29, young n=28). Developers and commits separate the groups strongly
+(p < 0.001) and HHI falls with age (p = 0.008), but the bus factor does not
+(p = 0.07–0.09).*
 
 ### 4.4 Most weeks run through one person (weekly elephant factor)
 
@@ -235,14 +268,21 @@ Development burstiness shows no significant association with the stale-issue rat
 (ρ = 0.161, p = 0.362, n = 34). Bursty development does not predict issue neglect
 in this corpus.
 
+![Figure 3: burstiness vs. stale-issue ratio](datasets/2026_05/figures/fig3_burstiness_vs_stale.png)
+
+*__Figure 3.__ Development burstiness (CV of weekly commit counts) vs. stale-issue
+ratio across the n=34 repositories where both are computable. No significant
+association (Spearman ρ = 0.161, p = 0.362).*
+
 ## 5. Discussion
 
 The consistent finding across repository-level, effort-weighted, and
 weekly-resolved analyses is that civic-tech contribution is concentrated and stays
 concentrated. The movement's "sustainability through openness" narrative is not
 borne out at the level of contributor distribution: openness has not, by itself,
-distributed the work. Because concentration does not improve with age, waiting for
-projects to mature is not a sustainability strategy. The projects that achieve
+distributed the work. Because the bus factor does not improve with age — even
+though projects grow and their effort deconcentrates — waiting for projects to
+mature is not a sustainability strategy. The projects that achieve
 distributed maintenance share an institutional sponsor (a civic-tech non-profit or
 a well-funded infrastructure project), which points to organisational investment —
 not community size or longevity — as the operative lever.
