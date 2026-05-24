@@ -186,11 +186,13 @@ def compute_correlations(
     """
     merged = _merge_repo_chaoss(repo_metrics, chaoss)
 
-    # Compute project age in years
-    if "created_at" in merged.columns:
+    # Compute project age in years from the first commit (how long the project
+    # has existed as code), measured to the crawl date for reproducibility.
+    # This matches scripts/paper_figures.py so figures and statistics agree.
+    if "first_commit_date" in merged.columns:
         merged["age_years"] = (
-            pd.to_datetime("now", utc=True)
-            - pd.to_datetime(merged["created_at"], utc=True)
+            pd.Timestamp("2026-05-24", tz="UTC")
+            - pd.to_datetime(merged["first_commit_date"], utc=True)
         ).dt.days / 365.25
 
     correlation_vars = [
@@ -461,12 +463,13 @@ def compute_maturity_analysis(
     """Compare metrics between mature and young projects (median age split)."""
     merged = _merge_repo_chaoss(repo_metrics, chaoss)
 
-    if "created_at" not in merged.columns:
+    if "first_commit_date" not in merged.columns:
         return pd.DataFrame()
 
+    # Age = years since first commit, to the crawl date (matches paper_figures.py).
     merged["age_years"] = (
-        pd.to_datetime("now", utc=True)
-        - pd.to_datetime(merged["created_at"], utc=True)
+        pd.Timestamp("2026-05-24", tz="UTC")
+        - pd.to_datetime(merged["first_commit_date"], utc=True)
     ).dt.days / 365.25
 
     median_age = merged["age_years"].median()
@@ -730,8 +733,8 @@ def compute_dataset_summary(
         "repos_with_osi_license": int(repo_metrics["is_osi_approved"].sum()),
         "median_age_years": round(
             (
-                pd.to_datetime("now", utc=True)
-                - pd.to_datetime(repo_metrics["created_at"], utc=True)
+                pd.Timestamp("2026-05-24", tz="UTC")
+                - pd.to_datetime(repo_metrics["first_commit_date"], utc=True)
             ).dt.days.median() / 365.25,
             1,
         ),

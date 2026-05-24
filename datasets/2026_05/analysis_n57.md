@@ -30,7 +30,7 @@ manifest and selection rationale.
 | Stars / forks | 12,765 / 3,611 |
 | Repos with CI/CD | 48 / 57 |
 | Repos with OSI-approved license | 34 / 57 |
-| Median project age | ~3 years |
+| Median project age | 3.4 years (since first commit) |
 | Weekly-activity records | 15,346 (56 repos, 1,093 contributors) |
 | PR records | 37,220 |
 
@@ -84,16 +84,18 @@ repositories (mean gap +0.059). A contributor who makes few but very large
 commits (a lead architect, a vendored-dependency bump) concentrates effort more
 than a commit count reveals.
 
-### 2.3 Scale grows with age; sustainability does not (Figure 5)
+### 2.3 Scale grows with age; the bus factor does not (Figure 5)
 
-Splitting the corpus at its median age, mature projects have dramatically more
-**developers** (median 11 vs 3.5, Mann–Whitney p = 0.002, large effect) and more
-**commits** (median 1,274 vs 193, p < 0.001, large effect). But their **bus
-factor is not significantly different** from young projects (p > 0.05 at every
-reasonable threshold; `maturity_analysis.csv` reports p = 0.34 at a 3.1-year
-split, the figure reports p = 0.068 at the 3.4-year median split — both
-non-significant), and concentration (HHI) likewise does not improve. **Civic-tech
-projects accumulate scale as they age without reducing single-maintainer risk.**
+Splitting the corpus at its median age (3.4 years; 29 mature, 28 young), mature
+projects have dramatically more **developers** (median 15 vs 3.5, Mann–Whitney
+p < 0.001, large effect) and more **commits** (median 1,352 vs 189, p < 0.001,
+large effect), and they are significantly **less concentrated** (HHI no-bots
+4,374 vs 7,575, p = 0.008, medium effect) — effort does spread as projects age.
+Yet their **bus factor is not significantly different** from young projects
+(median 1 vs 1, p ≈ 0.07–0.09): the number of contributors who could leave before
+the project stalls does not improve. **Civic-tech projects accumulate scale and
+deconcentrate as they age without reducing the underlying single-maintainer
+risk.**
 
 ### 2.4 Most weeks are solo-dominated (weekly elephant factor)
 

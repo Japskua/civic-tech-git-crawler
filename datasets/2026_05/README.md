@@ -244,7 +244,7 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
 | **Repos w/ cloud signals** | 29 / 57 |
 | **Repos w/ AI/ML signals** | 6 / 57 |
 | **Repos w/ OSI license** | 34 / 57 |
-| **Median project age** | 3.1 years |
+| **Median project age** | 3.4 years |
 | **Weekly activity rows** | 15,346 (56 repos, 1,093 contributors) |
 | **PR records** | 37,220 |
 | **Issue records** | (see `issue_records.csv`) |
@@ -255,10 +255,11 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
   HHI (ρ ≈ −0.72 for `hhi_no_bots`, FDR-significant) and with team size
   (`num_developers` vs `hhi_no_bots` ρ = −0.77): larger teams spread effort, but
   most projects remain highly concentrated.
-- **Sustainability doesn't come with age.** Mature projects (≥3.1 yr) have
-  significantly more developers (median 11 vs 3.5, p=0.002) and commits (1,274 vs
-  193, p<0.001), but their **bus factor is no different** from young projects
-  (median 1 vs 1, p=0.34) — scale grows, single-maintainer risk does not shrink.
+- **Sustainability doesn't come with age.** Mature projects (≥3.4 yr) have
+  significantly more developers (median 15 vs 3.5, p<0.001) and commits (1,352 vs
+  189, p<0.001), and are less concentrated (HHI 4,374 vs 7,575, p=0.008) — but
+  their **bus factor is no different** from young projects (median 1 vs 1,
+  p≈0.07–0.09): scale and deconcentration grow, single-maintainer risk does not.
 - **Solo-dominated weeks are the norm.** Weighted by active weeks, **89%** of
   weeks had one contributor responsible for ≥50% of lines changed. The most
   collaborative repos are `civiform/civiform` (50.6% top-share) and
