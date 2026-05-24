@@ -413,7 +413,7 @@ folder containing everything needed to understand that one project at a glance:
 ```
 datasets/2026_05/
 ├── README.md                   ← manifest, selection rationale, methodology, file index
-├── analysis_n38.md             ← academic writeup: headline findings, methodology, threats to validity
+├── analysis_n57.md             ← academic writeup: headline findings, methodology, threats to validity
 ├── <owner>_<repo>/             ← one folder per repository (38 total)
 │   ├── repo_results.md         ← at-a-glance metadata + main finding + caveats
 │   ├── data.json               ← full crawler output for this repo
@@ -1473,6 +1473,7 @@ civic_tech_git_crawler/
 ├── pyproject.toml                  # Dependencies and project metadata
 ├── config.example.yaml             # Example configuration
 ├── config.yaml                     # Your configuration (gitignored)
+├── paper_draft.md                  # Research paper draft (n=57, 2026-05 corpus)
 ├── scripts/
 │   ├── run_with_respawn.sh             # Resumable, auto-respawning crawl wrapper
 │   ├── visualize.py                    # Visualization script (6 chart types)

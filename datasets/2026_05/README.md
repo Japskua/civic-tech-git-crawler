@@ -13,8 +13,8 @@ paper writeup — is generated against this folder.
 | **Regions** | North America (US + Canada), Africa, Japan, Taiwan, Europe (Germany, UK, Sweden) |
 | **Crawl tool** | `civic-tech-crawler` via `scripts/run_with_respawn.sh` |
 | **Crawl config** | repository list in `config.yaml` / `config.example.yaml` |
-| **Crawl date** | _populated after the crawl completes_ |
-| **Summary stats** | _see "Dataset summary" below — populated after the crawl_ |
+| **Crawl date** | 2026-05-21 → 2026-05-24 (single logical run; paused/resumed across sessions, per-repo cache) |
+| **Summary stats** | see "Dataset summary" below |
 
 ---
 
@@ -232,5 +232,38 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
 
 ## Dataset summary
 
-_This section is populated after the crawl + analysis pass completes (repo counts,
-contributor counts, commit totals, date range, etc.)._
+| | |
+|---|---|
+| **Repositories** | 57 |
+| **Organisations** | 24 |
+| **Primary languages** | 17 (C++, Dart, Dockerfile, Elixir, HCL, HTML, Java, JavaScript, Jinja, Jupyter Notebook, Kotlin, PHP, Python, Ruby, Svelte, TypeScript, Vue) |
+| **Contributors** | 659 (605 human, 54 bot) |
+| **Total commits** | 90,178 |
+| **Stars / forks** | 12,765 / 3,611 |
+| **Repos with CI/CD** | 48 / 57 |
+| **Repos w/ cloud signals** | 29 / 57 |
+| **Repos w/ AI/ML signals** | 6 / 57 |
+| **Repos w/ OSI license** | 20 / 57 |
+| **Median project age** | 3.1 years |
+| **Weekly activity rows** | 15,346 (56 repos, 1,093 contributors) |
+| **PR records** | 37,220 |
+| **Issue records** | (see `issue_records.csv`) |
+
+### Headline findings (from `statistical_analysis/` + `weekly_activity_analysis/`)
+
+- **Concentration of effort.** Bus factor is strongly negatively correlated with
+  HHI (ρ ≈ −0.72 for `hhi_no_bots`, FDR-significant) and with team size
+  (`num_developers` vs `hhi_no_bots` ρ = −0.77): larger teams spread effort, but
+  most projects remain highly concentrated.
+- **Sustainability doesn't come with age.** Mature projects (≥3.1 yr) have
+  significantly more developers (median 11 vs 3.5, p=0.002) and commits (1,274 vs
+  193, p<0.001), but their **bus factor is no different** from young projects
+  (median 1 vs 1, p=0.34) — scale grows, single-maintainer risk does not shrink.
+- **Solo-dominated weeks are the norm.** Weighted by active weeks, **89%** of
+  weeks had one contributor responsible for ≥50% of lines changed. The most
+  collaborative repos are `civiform/civiform` (50.6% top-share) and
+  `codeforamerica/vita-min` (55.8%); many small repos are 100% solo.
+- **Two repos are net-negative LOC** over their history (more cumulative
+  deletions than additions), led by `CodeforLeipzig/leipziggiesst`.
+
+See `analysis_n57.md` for the full writeup, methodology, and threats to validity.
