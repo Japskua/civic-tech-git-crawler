@@ -26,11 +26,14 @@ fi
 CRAWLER="$(cd "$(dirname "$0")/.." && pwd)/.venv/bin/civic-tech-crawler"
 attempt=0
 start_ts=$(date -u +%s)
+prev_saved=-1
+backoff=10
+BACKOFF_MAX=120   # cap respawn backoff at 2 min during outages
 
 while true; do
     attempt=$((attempt + 1))
     echo "============================================================"
-    echo "[respawn-wrapper] attempt $attempt at $(date -u -Is)"
+    echo "[respawn-wrapper] attempt $attempt at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
     echo "============================================================"
 
     # Run the crawler; tee its output so the parent log gets everything
@@ -48,7 +51,18 @@ while true; do
         exit 0
     fi
 
-    # Otherwise loop. Brief sleep so we don't hammer GitHub if the death is API-related.
-    echo "[respawn-wrapper] not done — sleeping 10s before respawn"
-    sleep 10
+    # Adaptive backoff: retry promptly after an attempt that made progress; if an
+    # attempt made NO progress (e.g. a DNS/network outage crashing the crawler at
+    # startup), back off geometrically up to BACKOFF_MAX so we don't spin in a
+    # tight loop — but keep retrying forever so the crawl auto-resumes once
+    # connectivity returns. Per-repo cache means no work is ever repeated.
+    if [[ "$saved" -gt "$prev_saved" ]]; then
+        backoff=10
+    else
+        backoff=$(( backoff * 2 ))
+        [[ "$backoff" -gt "$BACKOFF_MAX" ]] && backoff=$BACKOFF_MAX
+    fi
+    prev_saved=$saved
+    echo "[respawn-wrapper] not done — sleeping ${backoff}s before respawn (no-progress backoff)"
+    sleep "$backoff"
 done

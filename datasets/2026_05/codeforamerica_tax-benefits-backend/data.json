@@ -1,0 +1,4469 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforamerica/tax-benefits-backend",
+    "name": "tax-benefits-backend",
+    "description": "Infrastructure configuration for the Tax Benefits backend.",
+    "num_developers": 11,
+    "total_commits": 194,
+    "languages": {
+      "HCL": 121475,
+      "Dockerfile": 299
+    },
+    "primary_language": "HCL",
+    "first_commit_date": "2024-04-12T19:06:39+00:00",
+    "last_commit_date": "2026-05-13T22:05:25+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [
+      "tax-benefits"
+    ],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 37,
+    "stars": 3,
+    "watchers": 7,
+    "forks": 0,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:HCL",
+      "language:Dockerfile",
+      "file:Dockerfile",
+      "file:docker-compose.yaml"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Branch Checks",
+      "CodeQL",
+      "Deploy infrastructure",
+      "Deploy documentation",
+      "Main Checks",
+      "Plan infrastructure changes",
+      "Redeploy bastion"
+    ],
+    "deployments_count": 1305,
+    "created_at": "2024-04-12T19:06:38+00:00",
+    "updated_at": "2026-05-13T22:05:30+00:00",
+    "pushed_at": "2026-05-18T19:49:32+00:00",
+    "size_kb": 1042
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "nickedwards109",
+      "name": "Nick Edwards",
+      "num_commits": 3,
+      "additions": 40,
+      "deletions": 9,
+      "avg_additions_per_commit": 13.33,
+      "avg_deletions_per_commit": 3.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "mrotondo",
+      "name": "Mike Rotondo",
+      "num_commits": 45,
+      "additions": 1604,
+      "deletions": 276,
+      "avg_additions_per_commit": 35.64,
+      "avg_deletions_per_commit": 6.13,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "DrewProebstel",
+      "name": "Drew Proebstel",
+      "num_commits": 16,
+      "additions": 552,
+      "deletions": 138,
+      "avg_additions_per_commit": 34.5,
+      "avg_deletions_per_commit": 8.62,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "tahsinaislam",
+      "name": "Tahsina Islam",
+      "num_commits": 15,
+      "additions": 274,
+      "deletions": 49,
+      "avg_additions_per_commit": 18.27,
+      "avg_deletions_per_commit": 3.27,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "dfl",
+      "name": "David L\u00f6wenfels",
+      "num_commits": 1,
+      "additions": 173,
+      "deletions": 175,
+      "avg_additions_per_commit": 173.0,
+      "avg_deletions_per_commit": 175.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "powersurge360",
+      "name": "Kevin Diale",
+      "num_commits": 10,
+      "additions": 298,
+      "deletions": 74,
+      "avg_additions_per_commit": 29.8,
+      "avg_deletions_per_commit": 7.4,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "jamesiarmes",
+      "name": "James Armes (they/them)",
+      "num_commits": 45,
+      "additions": 5747,
+      "deletions": 1898,
+      "avg_additions_per_commit": 127.71,
+      "avg_deletions_per_commit": 42.18,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "robdiciuccio",
+      "name": "Rob DiCiuccio",
+      "num_commits": 6,
+      "additions": 387,
+      "deletions": 26,
+      "avg_additions_per_commit": 64.5,
+      "avg_deletions_per_commit": 4.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "anisharamnani",
+      "name": "Anisha Ramnani",
+      "num_commits": 13,
+      "additions": 501,
+      "deletions": 319,
+      "avg_additions_per_commit": 38.54,
+      "avg_deletions_per_commit": 24.54,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "jenny-heath",
+      "name": "jenny-heath",
+      "num_commits": 12,
+      "additions": 203,
+      "deletions": 57,
+      "avg_additions_per_commit": 16.92,
+      "avg_deletions_per_commit": 4.75,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "arinchoi03",
+      "name": "Yejee Arin Choi",
+      "num_commits": 26,
+      "additions": 1098,
+      "deletions": 153,
+      "avg_additions_per_commit": 42.23,
+      "avg_deletions_per_commit": 5.88,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "anisharamnani",
+      "name": "Anisha Ramnani",
+      "num_commits": 1,
+      "additions": 32,
+      "deletions": 12,
+      "avg_additions_per_commit": 32.0,
+      "avg_deletions_per_commit": 12.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "jamesiarmes",
+      "name": "James Armes (they/them)",
+      "num_commits": 1,
+      "additions": 36,
+      "deletions": 0,
+      "avg_additions_per_commit": 36.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforamerica/tax-benefits-backend",
+    "pr_count_total": 207,
+    "pr_count_merged": 191,
+    "pr_count_open": 1,
+    "pr_count_closed_unmerged": 15,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Added GitHub Actions",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-04-17T21:44:41+00:00",
+        "merged_at": "2024-04-22T16:56:55+00:00",
+        "closed_at": "2024-04-22T16:56:55+00:00"
+      },
+      {
+        "number": 2,
+        "title": "Added GitHub Actions to plan & deploy configurations.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-04-22T17:27:13+00:00",
+        "merged_at": "2024-04-24T15:56:32+00:00",
+        "closed_at": "2024-04-24T15:56:32+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Update CODEOWNERS to reference the new name for the tax-benefits teams.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-05-08T18:13:10+00:00",
+        "merged_at": "2024-05-09T17:08:29+00:00",
+        "closed_at": "2024-05-09T17:08:29+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Added logging for the WAF.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-09-12T17:22:53+00:00",
+        "merged_at": "2024-09-23T18:04:39+00:00",
+        "closed_at": "2024-09-23T18:04:39+00:00"
+      },
+      {
+        "number": 5,
+        "title": "Manage the origin endpoint in Aptible.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-10-02T20:40:59+00:00",
+        "merged_at": "2024-10-02T20:44:33+00:00",
+        "closed_at": "2024-10-02T20:44:33+00:00"
+      },
+      {
+        "number": 6,
+        "title": "DEV-7: Added WAF rule to allow security scanners.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-10-03T16:14:13+00:00",
+        "merged_at": "2024-10-03T16:26:23+00:00",
+        "closed_at": "2024-10-03T16:26:23+00:00"
+      },
+      {
+        "number": 7,
+        "title": "fix: Updated module sources to be pinned to the current latest version.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-10-11T20:23:31+00:00",
+        "merged_at": "2024-10-16T22:28:13+00:00",
+        "closed_at": "2024-10-16T22:28:13+00:00"
+      },
+      {
+        "number": 8,
+        "title": "feat: Deploy WAF to remaining demo and staging environments. (TBE-123)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-10-29T17:55:16+00:00",
+        "merged_at": "2024-11-12T18:22:05+00:00",
+        "closed_at": "2024-11-12T18:22:05+00:00"
+      },
+      {
+        "number": 9,
+        "title": "docs: Added documentation. (TBE-126)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-11-12T18:46:19+00:00",
+        "merged_at": "2024-11-15T20:19:26+00:00",
+        "closed_at": "2024-11-15T20:19:26+00:00"
+      },
+      {
+        "number": 10,
+        "title": "feat: Exclude GYR upload paths from size restrictions.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-11-15T20:11:10+00:00",
+        "merged_at": "2024-11-15T20:15:24+00:00",
+        "closed_at": "2024-11-15T20:15:24+00:00"
+      },
+      {
+        "number": 11,
+        "title": "feat: Added origin token header for origin verification. (DEV-12)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-11-20T16:50:29+00:00",
+        "merged_at": "2024-11-20T16:54:41+00:00",
+        "closed_at": "2024-11-20T16:54:41+00:00"
+      },
+      {
+        "number": 12,
+        "title": "feat: Added datadog config with WAF dashboard. (DEV-9)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-11-26T17:10:31+00:00",
+        "merged_at": "2024-11-26T17:13:04+00:00",
+        "closed_at": "2024-11-26T17:13:04+00:00"
+      },
+      {
+        "number": 13,
+        "title": "fix: Updated `aws/cloudfront_waf` module to address file uploads caught by WAF rules. (TBE-130)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-11-27T19:21:51+00:00",
+        "merged_at": "2024-11-27T19:41:29+00:00",
+        "closed_at": "2024-11-27T19:41:29+00:00"
+      },
+      {
+        "number": 14,
+        "title": "fix: Updated request policy to forward all headers. (GYR1-621)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-12-04T22:27:00+00:00",
+        "merged_at": "2024-12-04T22:28:38+00:00",
+        "closed_at": "2024-12-04T22:28:38+00:00"
+      },
+      {
+        "number": 15,
+        "title": "feat: Added configurations for production. (TBE-125)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2024-12-12T21:13:31+00:00",
+        "merged_at": "2024-12-17T16:34:26+00:00",
+        "closed_at": "2024-12-17T16:34:26+00:00"
+      },
+      {
+        "number": 16,
+        "title": "fix!: Updated CloudFront distribution to disable caching entirely. (FYST-1527)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-08T20:38:41+00:00",
+        "merged_at": "2025-01-08T20:43:09+00:00",
+        "closed_at": "2025-01-08T20:43:09+00:00"
+      },
+      {
+        "number": 17,
+        "title": "ci: Fixed displaying plan breaks with certain characters.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-08T21:07:07+00:00",
+        "merged_at": "2025-01-08T21:14:42+00:00",
+        "closed_at": "2025-01-08T21:14:42+00:00"
+      },
+      {
+        "number": 18,
+        "title": "fix: Allow security scanners to be run against prod. (TBE-1237)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-08T22:11:42+00:00",
+        "merged_at": "2025-01-08T22:14:13+00:00",
+        "closed_at": "2025-01-08T22:14:13+00:00"
+      },
+      {
+        "number": 19,
+        "title": "ci: Updated names of plan & deploy jobs to make it clearer what config and environment were used.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-09T18:17:53+00:00",
+        "merged_at": "2025-01-09T19:00:28+00:00",
+        "closed_at": "2025-01-09T19:00:28+00:00"
+      },
+      {
+        "number": 20,
+        "title": "feat: Added rules to allow webhook traffic. (TBE-137)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-13T18:59:11+00:00",
+        "merged_at": "2025-01-13T21:39:10+00:00",
+        "closed_at": "2025-01-13T21:39:10+00:00"
+      },
+      {
+        "number": 21,
+        "title": "fix: Removed omniauth from webhooks.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-14T17:16:50+00:00",
+        "merged_at": "2025-01-14T17:22:15+00:00",
+        "closed_at": "2025-01-14T17:22:15+00:00"
+      },
+      {
+        "number": 22,
+        "title": "docs: Updated origin verification with steps to update",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-14T17:54:47+00:00",
+        "merged_at": "2025-01-14T17:57:16+00:00",
+        "closed_at": "2025-01-14T17:57:16+00:00"
+      },
+      {
+        "number": 23,
+        "title": "feat: Set WAF to active in production. (TBE-137)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-22T17:48:38+00:00",
+        "merged_at": "2025-01-22T17:50:52+00:00",
+        "closed_at": "2025-01-22T17:50:52+00:00"
+      },
+      {
+        "number": 24,
+        "title": "feat: Added support for imported ACM certificates. (FYST-1232)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-23T20:08:40+00:00",
+        "merged_at": "2025-01-23T20:09:15+00:00",
+        "closed_at": "2025-01-23T20:09:15+00:00"
+      },
+      {
+        "number": 25,
+        "title": "fix: Increase rate limit on GYR to accommodate hub users.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-23T20:24:11+00:00",
+        "merged_at": "2025-01-23T20:24:23+00:00",
+        "closed_at": "2025-01-23T20:24:23+00:00"
+      },
+      {
+        "number": 26,
+        "title": "fix: Update upload paths for GYR. (GYR1-656)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-29T22:40:22+00:00",
+        "merged_at": "2025-01-30T17:37:32+00:00",
+        "closed_at": "2025-01-30T17:37:32+00:00"
+      },
+      {
+        "number": 27,
+        "title": "fix: Added ``*/portal/upload-documents` to upload paths. (GYR1-658)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-01-31T17:23:45+00:00",
+        "merged_at": "2025-01-31T19:14:29+00:00",
+        "closed_at": "2025-01-31T19:14:29+00:00"
+      },
+      {
+        "number": 28,
+        "title": "fix: Added additional upload paths for the hub. (GYR1-668)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-02-04T17:04:43+00:00",
+        "merged_at": "2025-02-04T18:25:33+00:00",
+        "closed_at": "2025-02-04T18:25:33+00:00"
+      },
+      {
+        "number": 29,
+        "title": "fix: Added hub invitation path to uploads. (TBE-137)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-03-10T17:57:31+00:00",
+        "merged_at": "2025-03-10T17:58:06+00:00",
+        "closed_at": "2025-03-10T17:58:06+00:00"
+      },
+      {
+        "number": 30,
+        "title": "fix: Updated dependencies.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-03-20T17:12:42+00:00",
+        "merged_at": "2025-03-20T17:28:47+00:00",
+        "closed_at": "2025-03-20T17:28:47+00:00"
+      },
+      {
+        "number": 31,
+        "title": "ci: Added CodeQL and updated other workflows to reflect latest templates.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-04-02T21:07:22+00:00",
+        "merged_at": "2025-04-02T21:47:23+00:00",
+        "closed_at": "2025-04-02T21:47:23+00:00"
+      },
+      {
+        "number": 32,
+        "title": "[TBE-175] Spike: PYA \"staging\" setup",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-05-27T20:58:57+00:00",
+        "merged_at": "2025-06-05T20:28:46+00:00",
+        "closed_at": "2025-06-05T20:28:46+00:00"
+      },
+      {
+        "number": 33,
+        "title": "Create pya module",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-03T23:11:58+00:00",
+        "merged_at": "2025-06-12T18:54:44+00:00",
+        "closed_at": "2025-06-12T18:54:44+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Dp/pya infra",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-06-04T21:51:53+00:00",
+        "merged_at": "2025-06-05T21:09:58+00:00",
+        "closed_at": "2025-06-05T21:09:58+00:00"
+      },
+      {
+        "number": 35,
+        "title": "Try to fix main check",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-05T21:10:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-24T20:32:23+00:00"
+      },
+      {
+        "number": 36,
+        "title": "Dp/deploy action",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-06-06T22:11:07+00:00",
+        "merged_at": "2025-06-10T16:23:12+00:00",
+        "closed_at": "2025-06-10T16:23:12+00:00"
+      },
+      {
+        "number": 37,
+        "title": "[FYST-2125] Utilize payload configurations in tax-benefits-backend deploy",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-10T18:16:14+00:00",
+        "merged_at": "2025-06-10T18:58:25+00:00",
+        "closed_at": "2025-06-10T18:58:26+00:00"
+      },
+      {
+        "number": 38,
+        "title": "[FYST-2125] Use secrets module to store secret_key_base",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-10T20:40:58+00:00",
+        "merged_at": "2025-06-10T21:52:10+00:00",
+        "closed_at": "2025-06-10T21:52:10+00:00"
+      },
+      {
+        "number": 39,
+        "title": "fix: Added hub FAQ path to body size exemptions.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-06-12T16:46:49+00:00",
+        "merged_at": "2025-06-12T17:04:40+00:00",
+        "closed_at": "2025-06-12T17:04:40+00:00"
+      },
+      {
+        "number": 40,
+        "title": "Add production for PYA",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-06-12T20:00:48+00:00",
+        "merged_at": "2025-06-13T21:18:38+00:00",
+        "closed_at": "2025-06-13T21:18:38+00:00"
+      },
+      {
+        "number": 41,
+        "title": "Add READMEs to staging.pya folder + the shared pya module",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-12T21:44:41+00:00",
+        "merged_at": "2025-06-16T19:44:37+00:00",
+        "closed_at": "2025-06-16T19:44:38+00:00"
+      },
+      {
+        "number": 42,
+        "title": "Block concurrent deploys",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-13T23:21:55+00:00",
+        "merged_at": "2025-06-16T19:44:26+00:00",
+        "closed_at": "2025-06-16T19:44:26+00:00"
+      },
+      {
+        "number": 43,
+        "title": "[FYST-2134] Define ENV variables to be used in PYA",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-16T22:24:15+00:00",
+        "merged_at": "2025-06-17T20:13:38+00:00",
+        "closed_at": "2025-06-17T20:13:38+00:00"
+      },
+      {
+        "number": 44,
+        "title": "[FYST-2140] Update pya module to create a s3 bucket for storing submission pdfs",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-17T05:22:24+00:00",
+        "merged_at": "2025-06-24T22:02:37+00:00",
+        "closed_at": "2025-06-24T22:02:37+00:00"
+      },
+      {
+        "number": 45,
+        "title": "[FYST-2134] Name the cluster endpoint as the DATABASE_HOST not DATABASE_URL",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-24T18:31:59+00:00",
+        "merged_at": "2025-06-24T20:56:24+00:00",
+        "closed_at": "2025-06-24T20:56:24+00:00"
+      },
+      {
+        "number": 46,
+        "title": "[FYST-2154] Add heroku folder to add s3 bucket to use from review apps",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-25T18:18:43+00:00",
+        "merged_at": "2025-06-25T20:49:33+00:00",
+        "closed_at": "2025-06-25T20:49:33+00:00"
+      },
+      {
+        "number": 47,
+        "title": "Add heroku pya to list of deployable configurations",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-25T20:52:19+00:00",
+        "merged_at": "2025-06-25T20:52:43+00:00",
+        "closed_at": "2025-06-25T20:52:43+00:00"
+      },
+      {
+        "number": 48,
+        "title": "[FYST-2156] Add s3 policy for fargate role",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-26T17:54:43+00:00",
+        "merged_at": "2025-06-26T18:44:47+00:00",
+        "closed_at": "2025-06-26T18:44:47+00:00"
+      },
+      {
+        "number": 49,
+        "title": "[FYST-2147] Add S3_BUCKET and make sure workers have access to the same variables/secrets",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-06-26T20:04:14+00:00",
+        "merged_at": "2025-06-27T16:11:35+00:00",
+        "closed_at": "2025-06-27T16:11:35+00:00"
+      },
+      {
+        "number": 50,
+        "title": "wip - move and extract textract + document-extractor-poc modules",
+        "state": "closed",
+        "author_login": "squanto",
+        "created_at": "2025-07-01T17:08:23+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-03T20:11:44+00:00"
+      },
+      {
+        "number": 51,
+        "title": "[FYST-2164] Initialize the secret SSN_HASHING_KEY for staging/prod",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-01T18:23:51+00:00",
+        "merged_at": "2025-07-01T20:12:45+00:00",
+        "closed_at": "2025-07-01T20:12:45+00:00"
+      },
+      {
+        "number": 52,
+        "title": "[FYST-2167] Add review_app / REVIEW_APP variable for pya module (staging needs to be designated as review app)",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-01T23:18:04+00:00",
+        "merged_at": "2025-07-02T22:20:56+00:00",
+        "closed_at": "2025-07-02T22:20:56+00:00"
+      },
+      {
+        "number": 53,
+        "title": "ci: Updated documentation deployment workflow to use the new bucket.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-07-02T20:26:56+00:00",
+        "merged_at": "2025-07-03T19:24:41+00:00",
+        "closed_at": "2025-07-03T19:24:41+00:00"
+      },
+      {
+        "number": 54,
+        "title": "[FYST-2169] Add policy for KMS key to add seeds submission_pdf to S3",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-03T16:41:34+00:00",
+        "merged_at": "2025-07-03T17:13:40+00:00",
+        "closed_at": "2025-07-03T17:13:40+00:00"
+      },
+      {
+        "number": 55,
+        "title": "Updated policy for KMS key",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-03T19:08:24+00:00",
+        "merged_at": "2025-07-03T19:11:11+00:00",
+        "closed_at": "2025-07-03T19:11:11+00:00"
+      },
+      {
+        "number": 56,
+        "title": "Extract textract module",
+        "state": "closed",
+        "author_login": "squanto",
+        "created_at": "2025-07-03T20:13:30+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-12T21:34:31+00:00"
+      },
+      {
+        "number": 57,
+        "title": "[FYST-2169] Pass in the environment instead of using wildcards",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-03T21:12:37+00:00",
+        "merged_at": "2025-07-03T21:15:02+00:00",
+        "closed_at": "2025-07-03T21:15:02+00:00"
+      },
+      {
+        "number": 58,
+        "title": "[FYST-2169] Pass on the policy to the web/worker task policies",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-03T21:29:54+00:00",
+        "merged_at": "2025-07-03T22:00:09+00:00",
+        "closed_at": "2025-07-03T22:00:09+00:00"
+      },
+      {
+        "number": 59,
+        "title": "Fyst 2171 look into adding bastion module to allow ssh access for devs",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-10T22:57:04+00:00",
+        "merged_at": "2025-07-11T18:04:10+00:00",
+        "closed_at": "2025-07-11T18:04:10+00:00"
+      },
+      {
+        "number": 60,
+        "title": "[FYST-2179] Enable execute_command so we can rails console deployed environments from dev environment fix bastion key-pair reference",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-14T18:24:27+00:00",
+        "merged_at": "2025-07-15T22:54:31+00:00",
+        "closed_at": "2025-07-15T22:54:31+00:00"
+      },
+      {
+        "number": 61,
+        "title": "[FYST-2183] Reduce capacity to reduce idle db cost",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-07-16T04:51:32+00:00",
+        "merged_at": "2025-07-16T15:12:38+00:00",
+        "closed_at": "2025-07-16T15:12:38+00:00"
+      },
+      {
+        "number": 62,
+        "title": "Add in text credentials for PYA",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-07-23T22:20:12+00:00",
+        "merged_at": "2025-07-24T18:06:52+00:00",
+        "closed_at": "2025-07-24T18:06:52+00:00"
+      },
+      {
+        "number": 63,
+        "title": "ci: Added CodeQL scanning.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-07-24T20:22:30+00:00",
+        "merged_at": "2025-07-24T20:31:18+00:00",
+        "closed_at": "2025-07-24T20:31:18+00:00"
+      },
+      {
+        "number": 64,
+        "title": "Add s3 backend for efiler-api project",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-07-24T21:32:30+00:00",
+        "merged_at": "2025-07-25T17:47:15+00:00",
+        "closed_at": "2025-07-25T17:47:15+00:00"
+      },
+      {
+        "number": 65,
+        "title": "Adding mailgun credentials for PYA",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-07-24T21:55:42+00:00",
+        "merged_at": "2025-07-25T18:57:18+00:00",
+        "closed_at": "2025-07-25T18:57:18+00:00"
+      },
+      {
+        "number": 66,
+        "title": "fix: Re-enable IAM database authentication.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-07-24T22:11:53+00:00",
+        "merged_at": "2025-07-24T22:35:09+00:00",
+        "closed_at": "2025-07-24T22:35:09+00:00"
+      },
+      {
+        "number": 67,
+        "title": "[TBE-191] Efiler API host a demo application VPC",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-07-25T21:09:39+00:00",
+        "merged_at": "2025-07-25T21:34:48+00:00",
+        "closed_at": "2025-07-25T21:34:48+00:00"
+      },
+      {
+        "number": 68,
+        "title": "Change e-filer environment to demo",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-07-28T21:01:07+00:00",
+        "merged_at": "2025-07-28T21:10:09+00:00",
+        "closed_at": "2025-07-28T21:10:09+00:00"
+      },
+      {
+        "number": 69,
+        "title": "[TBE-191] E-Filer API host a Fargate Service",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-07-29T22:18:37+00:00",
+        "merged_at": "2025-07-29T22:25:27+00:00",
+        "closed_at": "2025-07-29T22:25:27+00:00"
+      },
+      {
+        "number": 70,
+        "title": "update the deploy script",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-07-29T22:38:02+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-29T23:00:52+00:00"
+      },
+      {
+        "number": 71,
+        "title": "TBE-191 Add additional fargate inputs",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-07-30T20:32:21+00:00",
+        "merged_at": "2025-07-30T20:36:59+00:00",
+        "closed_at": "2025-07-30T20:36:59+00:00"
+      },
+      {
+        "number": 72,
+        "title": "TBE-191 Downgrade Fargate version",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-07-30T20:59:07+00:00",
+        "merged_at": "2025-07-30T21:02:04+00:00",
+        "closed_at": "2025-07-30T21:02:04+00:00"
+      },
+      {
+        "number": 73,
+        "title": "Add aws secrets module",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-07-30T22:44:53+00:00",
+        "merged_at": "2025-07-30T22:46:59+00:00",
+        "closed_at": "2025-07-30T22:46:59+00:00"
+      },
+      {
+        "number": 74,
+        "title": "Efiler API: name secret keys instead of using default name",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-07-30T23:02:39+00:00",
+        "merged_at": "2025-07-30T23:05:17+00:00",
+        "closed_at": "2025-07-30T23:05:17+00:00"
+      },
+      {
+        "number": 75,
+        "title": "feat: Allow Tenable IP ranges through the WAF on demo FYST.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-07-31T20:01:22+00:00",
+        "merged_at": "2025-07-31T20:22:31+00:00",
+        "closed_at": "2025-07-31T20:22:31+00:00"
+      },
+      {
+        "number": 76,
+        "title": "Efiler API: remove secrets",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-07-31T20:45:21+00:00",
+        "merged_at": "2025-07-31T21:30:43+00:00",
+        "closed_at": "2025-07-31T21:30:43+00:00"
+      },
+      {
+        "number": 77,
+        "title": "Add worker commands for PYA",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-04T21:49:25+00:00",
+        "merged_at": "2025-08-04T22:15:09+00:00",
+        "closed_at": "2025-08-04T22:15:09+00:00"
+      },
+      {
+        "number": 78,
+        "title": "[FYST-2149] Add aptible vpc peer for pya staging/production",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-04T22:47:56+00:00",
+        "merged_at": "2025-08-08T21:09:10+00:00",
+        "closed_at": "2025-08-08T21:09:10+00:00"
+      },
+      {
+        "number": 79,
+        "title": "[FYST-2222] Update fargate module to 1.5.0 to ensure we don't create ECR repository for worker module",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-05T04:21:35+00:00",
+        "merged_at": "2025-08-05T16:19:48+00:00",
+        "closed_at": "2025-08-05T16:19:48+00:00"
+      },
+      {
+        "number": 80,
+        "title": "[FYST-2222] Downgrade to 1.2.1 which fixes the output issue but doesn't have for_each problem",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-05T17:17:24+00:00",
+        "merged_at": "2025-08-05T18:16:58+00:00",
+        "closed_at": "2025-08-05T18:16:59+00:00"
+      },
+      {
+        "number": 81,
+        "title": "[TBE-191] Add Bastion Module to demo efiler-api",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-08-05T19:01:27+00:00",
+        "merged_at": "2025-08-05T19:05:19+00:00",
+        "closed_at": "2025-08-05T19:05:19+00:00"
+      },
+      {
+        "number": 82,
+        "title": "Update fargate version to 1.5.1 for PYA",
+        "state": "closed",
+        "author_login": "arinchoi03",
+        "created_at": "2025-08-05T19:57:36+00:00",
+        "merged_at": "2025-08-05T20:06:21+00:00",
+        "closed_at": "2025-08-05T20:06:21+00:00"
+      },
+      {
+        "number": 83,
+        "title": "TBE-191 Add AWS region env variable to efiler api",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-06T18:59:11+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-06T19:10:36+00:00"
+      },
+      {
+        "number": 84,
+        "title": "Add AWS region env variable to efiler api",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-06T19:05:21+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-06T19:08:32+00:00"
+      },
+      {
+        "number": 85,
+        "title": "[TBE-191] Add AWS region env variable to efiler api",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-06T19:09:03+00:00",
+        "merged_at": "2025-08-06T19:11:54+00:00",
+        "closed_at": "2025-08-06T19:11:54+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Efiler API: Add secrets access policy to web module",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-08-07T19:32:30+00:00",
+        "merged_at": "2025-08-07T19:34:44+00:00",
+        "closed_at": "2025-08-07T19:34:45+00:00"
+      },
+      {
+        "number": 87,
+        "title": "Take out unnecessary region env variable for efiler-api",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-07T21:26:02+00:00",
+        "merged_at": "2025-08-07T21:28:43+00:00",
+        "closed_at": "2025-08-07T21:28:43+00:00"
+      },
+      {
+        "number": 88,
+        "title": "add execution policies to efiler api to attempt giving the docker build the same permissions as the task",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-08T19:19:49+00:00",
+        "merged_at": "2025-08-08T19:24:03+00:00",
+        "closed_at": "2025-08-08T19:24:03+00:00"
+      },
+      {
+        "number": 89,
+        "title": "remove execution policies from efiler api since they aren't the right approach",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-08T19:35:46+00:00",
+        "merged_at": "2025-08-08T21:49:28+00:00",
+        "closed_at": "2025-08-08T21:49:28+00:00"
+      },
+      {
+        "number": 90,
+        "title": "Efiler API: Set RACK_ENV environment variable to 'demo' on the demo deployment",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-11T20:11:05+00:00",
+        "merged_at": "2025-08-12T17:30:39+00:00",
+        "closed_at": "2025-08-12T17:30:39+00:00"
+      },
+      {
+        "number": 91,
+        "title": "add aws secrets",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-08-13T23:41:53+00:00",
+        "merged_at": null,
+        "closed_at": "2025-08-18T17:18:43+00:00"
+      },
+      {
+        "number": 92,
+        "title": "Add secret key base & switch to rails port from sinatra's",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-14T23:02:33+00:00",
+        "merged_at": "2025-08-14T23:06:01+00:00",
+        "closed_at": "2025-08-14T23:06:01+00:00"
+      },
+      {
+        "number": 93,
+        "title": "Add the new flag to the efiler API web module so that its ALB will use the port suffix in its name",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-15T17:52:39+00:00",
+        "merged_at": "2025-08-15T17:57:48+00:00",
+        "closed_at": "2025-08-15T17:57:48+00:00"
+      },
+      {
+        "number": 94,
+        "title": "FYST-2170 Add AWS lambda function call for PYA datadog logs",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-15T18:56:17+00:00",
+        "merged_at": "2025-08-15T19:02:48+00:00",
+        "closed_at": "2025-08-15T19:02:48+00:00"
+      },
+      {
+        "number": 95,
+        "title": "FYST-2170 Add call for AWS lambda function for PYA datadog logs",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-08-15T19:22:48+00:00",
+        "merged_at": "2025-08-15T19:32:44+00:00",
+        "closed_at": "2025-08-15T19:32:44+00:00"
+      },
+      {
+        "number": 96,
+        "title": "Efiler API: remove :key from ARN in environment secrets",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-15T19:53:12+00:00",
+        "merged_at": "2025-08-15T20:01:20+00:00",
+        "closed_at": "2025-08-15T20:01:20+00:00"
+      },
+      {
+        "number": 97,
+        "title": "Efiler API: restore :key to env secret ARN, now that we've structured the secret to have a single key named key",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-15T21:28:00+00:00",
+        "merged_at": "2025-08-15T21:31:49+00:00",
+        "closed_at": "2025-08-15T21:31:49+00:00"
+      },
+      {
+        "number": 98,
+        "title": "Efiler API: Add a database and secrets module, and pass relevant details to env vars & secrets",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-18T20:47:16+00:00",
+        "merged_at": "2025-08-18T20:51:14+00:00",
+        "closed_at": "2025-08-18T20:51:14+00:00"
+      },
+      {
+        "number": 99,
+        "title": "EFiler API: Switch container port from 80 to 8080",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-08-19T01:46:18+00:00",
+        "merged_at": "2025-08-19T01:48:34+00:00",
+        "closed_at": "2025-08-19T01:48:34+00:00"
+      },
+      {
+        "number": 100,
+        "title": "[TBE-200] modularize demo efiler app",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-08-20T21:56:58+00:00",
+        "merged_at": "2025-08-25T21:14:45+00:00",
+        "closed_at": "2025-08-25T21:14:45+00:00"
+      },
+      {
+        "number": 101,
+        "title": "Tbe 200 modularize demo app",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-09-03T20:09:29+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-03T22:04:20+00:00"
+      },
+      {
+        "number": 102,
+        "title": "TBE-200 rename demo folder",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-09-04T20:16:10+00:00",
+        "merged_at": "2025-09-04T20:45:40+00:00",
+        "closed_at": "2025-09-04T20:45:40+00:00"
+      },
+      {
+        "number": 103,
+        "title": "TBE-200 efiler-api host a production application",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-09-04T20:53:38+00:00",
+        "merged_at": "2025-09-05T17:01:42+00:00",
+        "closed_at": "2025-09-05T17:01:42+00:00"
+      },
+      {
+        "number": 104,
+        "title": "add efiler-api prod to gh deploy workflow",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-09-05T17:09:41+00:00",
+        "merged_at": "2025-09-05T17:14:15+00:00",
+        "closed_at": "2025-09-05T17:14:15+00:00"
+      },
+      {
+        "number": 105,
+        "title": "TBE-200 Add efiler-api production infrastructure",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-09-05T19:37:56+00:00",
+        "merged_at": "2025-09-05T21:02:26+00:00",
+        "closed_at": "2025-09-05T21:02:26+00:00"
+      },
+      {
+        "number": 106,
+        "title": "add bulk csv upload path to gyr upload paths in tf",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-08T18:38:22+00:00",
+        "merged_at": "2025-09-09T17:23:57+00:00",
+        "closed_at": "2025-09-09T17:23:57+00:00"
+      },
+      {
+        "number": 107,
+        "title": "efiler-api: add secret keys to efiler_api module",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-09-08T19:41:21+00:00",
+        "merged_at": "2025-09-08T19:48:02+00:00",
+        "closed_at": "2025-09-08T19:48:02+00:00"
+      },
+      {
+        "number": 108,
+        "title": "E-filer: Remove previously manually created mef credentials policy and add rails secret key base to secrets module",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-09-08T20:01:08+00:00",
+        "merged_at": "2025-09-08T20:11:15+00:00",
+        "closed_at": "2025-09-08T20:11:15+00:00"
+      },
+      {
+        "number": 109,
+        "title": "increase rule capacity for gyr upload paths",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-09T20:00:04+00:00",
+        "merged_at": "2025-09-09T20:06:58+00:00",
+        "closed_at": "2025-09-09T20:06:58+00:00"
+      },
+      {
+        "number": 110,
+        "title": "TBE-200 Add providers.tf to demo.efiler-api.fileyourstatetaxes.org",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-09-09T21:32:49+00:00",
+        "merged_at": "2025-09-09T23:31:38+00:00",
+        "closed_at": "2025-09-09T23:31:38+00:00"
+      },
+      {
+        "number": 111,
+        "title": "move api client names to env config, dynamically create their secrets and dynamically add them to environment_secrets so that they'll be added to the permissions policy",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-10T22:56:52+00:00",
+        "merged_at": "2025-09-10T23:05:19+00:00",
+        "closed_at": "2025-09-10T23:05:19+00:00"
+      },
+      {
+        "number": 112,
+        "title": "move secret variables into locals and fix secret arn specification so that it generates a properly restrictive access policy",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-11T00:14:26+00:00",
+        "merged_at": "2025-09-11T00:15:39+00:00",
+        "closed_at": "2025-09-11T00:15:39+00:00"
+      },
+      {
+        "number": 113,
+        "title": "create flowlogs",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-17T20:59:59+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-19T17:03:24+00:00"
+      },
+      {
+        "number": 114,
+        "title": "TEF-3: set up gyraffe staging infrastructure",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-17T23:53:33+00:00",
+        "merged_at": "2025-09-18T18:45:07+00:00",
+        "closed_at": "2025-09-18T18:45:07+00:00"
+      },
+      {
+        "number": 115,
+        "title": "add intance_profile = null to gyraffe bastion module",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-18T19:43:01+00:00",
+        "merged_at": "2025-09-18T19:46:12+00:00",
+        "closed_at": "2025-09-18T19:46:12+00:00"
+      },
+      {
+        "number": 116,
+        "title": "remove reference to worker task from key policy, since we aren't creating it yet due to a circular dependency with the web module",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-18T19:50:03+00:00",
+        "merged_at": "2025-09-18T19:56:55+00:00",
+        "closed_at": "2025-09-18T19:56:55+00:00"
+      },
+      {
+        "number": 117,
+        "title": "reenable worker module, re-add worker to key policy and correct container command",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-09-18T20:35:58+00:00",
+        "merged_at": "2025-09-18T23:53:33+00:00",
+        "closed_at": "2025-09-18T23:53:33+00:00"
+      },
+      {
+        "number": 118,
+        "title": "FYST-2202 Add WAF to PYA infrastructure",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-09-19T19:34:05+00:00",
+        "merged_at": "2025-09-24T15:29:23+00:00",
+        "closed_at": "2025-09-24T15:29:23+00:00"
+      },
+      {
+        "number": 119,
+        "title": "Include format changes and change to logging bucket name for staging pya waf",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-09-24T15:38:22+00:00",
+        "merged_at": "2025-09-24T15:41:09+00:00",
+        "closed_at": "2025-09-24T15:41:10+00:00"
+      },
+      {
+        "number": 120,
+        "title": "FYST-2267-we-need-a-database-backup-strategy-with-cross-region-replication",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-09-30T21:35:21+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-30T21:35:30+00:00"
+      },
+      {
+        "number": 121,
+        "title": "fix: Update PYA WAF to properly handle an ALB origin. (FYST-2202)",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-10-08T18:44:23+00:00",
+        "merged_at": "2025-10-16T19:56:00+00:00",
+        "closed_at": "2025-10-16T19:56:00+00:00"
+      },
+      {
+        "number": 122,
+        "title": "Add sentry dsn as a secret and an environment variable",
+        "state": "closed",
+        "author_login": "jenny-heath",
+        "created_at": "2025-10-17T21:32:11+00:00",
+        "merged_at": "2025-10-21T20:33:11+00:00",
+        "closed_at": "2025-10-21T20:33:11+00:00"
+      },
+      {
+        "number": 123,
+        "title": "Fyst 2270/ensure opentofu buckets",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-10-29T19:26:52+00:00",
+        "merged_at": "2025-10-31T17:52:17+00:00",
+        "closed_at": "2025-10-31T17:52:17+00:00"
+      },
+      {
+        "number": 124,
+        "title": "FYST-2202 feat: Use VPC for CloudFront to ALB communication.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-10-30T20:15:14+00:00",
+        "merged_at": "2025-10-30T21:22:43+00:00",
+        "closed_at": "2025-10-30T21:22:43+00:00"
+      },
+      {
+        "number": 125,
+        "title": "FYST-2202 fix: Address issue updating existing VPC origin configs.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2025-10-30T22:24:49+00:00",
+        "merged_at": "2025-10-31T14:21:35+00:00",
+        "closed_at": "2025-10-31T14:21:35+00:00"
+      },
+      {
+        "number": 126,
+        "title": "TEF-105 - migrate gyraffe to new s3 module and add a schemas bucket",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-11-13T01:41:04+00:00",
+        "merged_at": "2025-11-20T22:45:32+00:00",
+        "closed_at": "2025-11-20T22:45:32+00:00"
+      },
+      {
+        "number": 127,
+        "title": "FYST-2202 Add load balancer config for staging",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2025-11-13T21:38:47+00:00",
+        "merged_at": "2025-11-14T22:41:15+00:00",
+        "closed_at": "2025-11-14T22:41:15+00:00"
+      },
+      {
+        "number": 128,
+        "title": "[FYST-2202] Format tofu files and configured WAF",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-11-17T17:07:13+00:00",
+        "merged_at": "2025-11-17T17:11:27+00:00",
+        "closed_at": "2025-11-17T17:11:27+00:00"
+      },
+      {
+        "number": 129,
+        "title": "Add PYA to Data Dog",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-11-17T17:23:28+00:00",
+        "merged_at": "2025-11-19T21:35:54+00:00",
+        "closed_at": "2025-11-19T21:35:55+00:00"
+      },
+      {
+        "number": 130,
+        "title": "add variables to scale pya and turn cpu and memory up for prod",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-11-18T23:59:25+00:00",
+        "merged_at": "2025-11-19T00:10:09+00:00",
+        "closed_at": "2025-11-19T00:10:09+00:00"
+      },
+      {
+        "number": 131,
+        "title": "FYST-2321 create datadog dashboard for pya waf",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-11-19T21:21:38+00:00",
+        "merged_at": "2025-11-19T21:25:44+00:00",
+        "closed_at": "2025-11-19T21:25:44+00:00"
+      },
+      {
+        "number": 132,
+        "title": "[FYST-2321] add datadog variables to deploy GHA",
+        "state": "closed",
+        "author_login": "anisharamnani",
+        "created_at": "2025-11-19T21:32:20+00:00",
+        "merged_at": "2025-11-19T21:34:16+00:00",
+        "closed_at": "2025-11-19T21:34:16+00:00"
+      },
+      {
+        "number": 133,
+        "title": "use schemas bucket id in schemas bucket policy",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2025-11-20T23:49:51+00:00",
+        "merged_at": "2025-11-20T23:53:15+00:00",
+        "closed_at": "2025-11-20T23:53:15+00:00"
+      },
+      {
+        "number": 134,
+        "title": "Pya intercom variables",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-01T23:06:18+00:00",
+        "merged_at": "2025-12-03T00:29:09+00:00",
+        "closed_at": "2025-12-03T00:29:09+00:00"
+      },
+      {
+        "number": 135,
+        "title": "Define Environment Secrets PYA",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-08T20:44:56+00:00",
+        "merged_at": "2025-12-08T20:57:47+00:00",
+        "closed_at": "2025-12-08T20:57:47+00:00"
+      },
+      {
+        "number": 136,
+        "title": "remove intercom secrets",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-09T00:21:10+00:00",
+        "merged_at": "2025-12-09T00:29:21+00:00",
+        "closed_at": "2025-12-09T00:29:21+00:00"
+      },
+      {
+        "number": 137,
+        "title": "put back intercom variables",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-09T00:44:53+00:00",
+        "merged_at": "2025-12-09T00:46:17+00:00",
+        "closed_at": "2025-12-09T00:46:17+00:00"
+      },
+      {
+        "number": 138,
+        "title": "db back up module",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-10T23:30:30+00:00",
+        "merged_at": "2025-12-11T22:08:28+00:00",
+        "closed_at": "2025-12-11T22:08:28+00:00"
+      },
+      {
+        "number": 139,
+        "title": "ignore labels as tags",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-11T23:52:28+00:00",
+        "merged_at": "2025-12-12T18:14:21+00:00",
+        "closed_at": "2025-12-12T18:14:21+00:00"
+      },
+      {
+        "number": 140,
+        "title": "no tags",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2025-12-12T20:50:10+00:00",
+        "merged_at": "2025-12-12T21:16:06+00:00",
+        "closed_at": "2025-12-12T21:16:07+00:00"
+      },
+      {
+        "number": 141,
+        "title": "Adds a new policy to PYA and sets up for IAM based database auth",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-12-15T19:31:00+00:00",
+        "merged_at": "2025-12-15T19:38:15+00:00",
+        "closed_at": "2025-12-15T19:38:15+00:00"
+      },
+      {
+        "number": 142,
+        "title": "Disable password rotation temporarily",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2025-12-19T19:35:23+00:00",
+        "merged_at": "2025-12-19T19:39:48+00:00",
+        "closed_at": "2025-12-19T19:39:48+00:00"
+      },
+      {
+        "number": 143,
+        "title": "Fyst 2276/automate bastion rotation",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-01-09T20:49:13+00:00",
+        "merged_at": "2026-01-12T20:33:47+00:00",
+        "closed_at": "2026-01-12T20:33:47+00:00"
+      },
+      {
+        "number": 144,
+        "title": "remove peering",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-01-13T20:44:37+00:00",
+        "merged_at": "2026-01-15T20:12:44+00:00",
+        "closed_at": "2026-01-15T20:12:44+00:00"
+      },
+      {
+        "number": 145,
+        "title": "Fyst 2327/rotate database creds",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-01-20T21:35:06+00:00",
+        "merged_at": "2026-01-20T21:38:48+00:00",
+        "closed_at": "2026-01-20T21:38:48+00:00"
+      },
+      {
+        "number": 146,
+        "title": "Adjust the role arn",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-01-20T22:53:49+00:00",
+        "merged_at": "2026-01-20T23:54:00+00:00",
+        "closed_at": "2026-01-20T23:54:00+00:00"
+      },
+      {
+        "number": 147,
+        "title": "Changes a user to be what is expected",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-01-21T16:53:50+00:00",
+        "merged_at": "2026-01-21T16:56:08+00:00",
+        "closed_at": "2026-01-21T16:56:08+00:00"
+      },
+      {
+        "number": 148,
+        "title": "Re enable password rotation and set default database user",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-01-22T17:17:21+00:00",
+        "merged_at": "2026-01-22T18:22:04+00:00",
+        "closed_at": "2026-01-22T18:22:04+00:00"
+      },
+      {
+        "number": 149,
+        "title": "switch from hardcoded DATABASE_USER pointing at a staging env user to the local that's used by the web task",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-01-26T19:50:50+00:00",
+        "merged_at": "2026-01-26T19:52:48+00:00",
+        "closed_at": "2026-01-26T19:52:48+00:00"
+      },
+      {
+        "number": 150,
+        "title": "chore: Add forced ECS deployment to PYA deploy workflow",
+        "state": "closed",
+        "author_login": "robdiciuccio",
+        "created_at": "2026-01-30T18:41:10+00:00",
+        "merged_at": "2026-02-12T18:06:09+00:00",
+        "closed_at": "2026-02-12T18:06:09+00:00"
+      },
+      {
+        "number": 151,
+        "title": "pya-fargate-retention-policy",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-02-05T19:02:59+00:00",
+        "merged_at": "2026-02-05T21:47:34+00:00",
+        "closed_at": "2026-02-05T21:47:34+00:00"
+      },
+      {
+        "number": 152,
+        "title": "create gyraffe prod",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-02-06T22:23:24+00:00",
+        "merged_at": "2026-02-11T23:18:07+00:00",
+        "closed_at": "2026-02-11T23:18:07+00:00"
+      },
+      {
+        "number": 153,
+        "title": "add gyraffe to backend actions",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-02-09T19:28:14+00:00",
+        "merged_at": "2026-02-09T20:22:32+00:00",
+        "closed_at": "2026-02-09T20:22:32+00:00"
+      },
+      {
+        "number": 154,
+        "title": "Adds distinct id to github workflow for deploy",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-02-10T20:44:24+00:00",
+        "merged_at": "2026-02-10T20:46:20+00:00",
+        "closed_at": "2026-02-10T20:46:21+00:00"
+      },
+      {
+        "number": 155,
+        "title": "Add bastion to gyraffe prod",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-02-12T00:50:17+00:00",
+        "merged_at": null,
+        "closed_at": "2026-02-12T21:00:29+00:00"
+      },
+      {
+        "number": 156,
+        "title": "set database password rotation frequency to 90 days",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-02-20T00:35:55+00:00",
+        "merged_at": "2026-02-20T21:57:12+00:00",
+        "closed_at": "2026-02-20T21:57:12+00:00"
+      },
+      {
+        "number": 157,
+        "title": "feat: Add sensitive log archive for datadog.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2026-02-20T19:47:30+00:00",
+        "merged_at": "2026-02-20T23:08:50+00:00",
+        "closed_at": "2026-02-20T23:08:50+00:00"
+      },
+      {
+        "number": 158,
+        "title": "update fargate-service tofu module dep",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-02-20T23:12:55+00:00",
+        "merged_at": "2026-02-21T00:10:50+00:00",
+        "closed_at": "2026-02-21T00:10:50+00:00"
+      },
+      {
+        "number": 159,
+        "title": "feat: Configure Athena in GYR prod.",
+        "state": "closed",
+        "author_login": "robdiciuccio",
+        "created_at": "2026-02-20T23:32:29+00:00",
+        "merged_at": "2026-02-23T22:20:16+00:00",
+        "closed_at": "2026-02-23T22:20:16+00:00"
+      },
+      {
+        "number": 160,
+        "title": "fix: Bucket name used for access logging.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2026-02-23T22:45:04+00:00",
+        "merged_at": "2026-02-23T22:50:19+00:00",
+        "closed_at": "2026-02-23T22:50:19+00:00"
+      },
+      {
+        "number": 161,
+        "title": "Revert fargate service module update",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-02-24T00:00:44+00:00",
+        "merged_at": "2026-02-24T00:58:43+00:00",
+        "closed_at": "2026-02-24T00:58:43+00:00"
+      },
+      {
+        "number": 162,
+        "title": "Add sentry DSN secret for gyraffe",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-02-24T20:01:01+00:00",
+        "merged_at": "2026-02-26T17:46:50+00:00",
+        "closed_at": "2026-02-26T17:46:50+00:00"
+      },
+      {
+        "number": 163,
+        "title": "feat: Update fargate service module in Gyraffe to use the latest TLS policy on our ALBs.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2026-02-26T22:29:03+00:00",
+        "merged_at": "2026-02-26T22:31:32+00:00",
+        "closed_at": "2026-02-26T22:31:32+00:00"
+      },
+      {
+        "number": 164,
+        "title": "update remaining fargate-service dependencies to 1.11.1",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-02-26T23:05:32+00:00",
+        "merged_at": "2026-03-03T20:56:53+00:00",
+        "closed_at": "2026-03-03T20:56:53+00:00"
+      },
+      {
+        "number": 165,
+        "title": "feat: add Datadog Sensitive Data Scanner config",
+        "state": "closed",
+        "author_login": "robdiciuccio",
+        "created_at": "2026-02-27T23:19:55+00:00",
+        "merged_at": "2026-03-03T21:05:40+00:00",
+        "closed_at": "2026-03-03T21:05:40+00:00"
+      },
+      {
+        "number": 166,
+        "title": "chore: update datadog scanner version",
+        "state": "closed",
+        "author_login": "robdiciuccio",
+        "created_at": "2026-03-04T00:26:12+00:00",
+        "merged_at": "2026-03-05T01:51:46+00:00",
+        "closed_at": "2026-03-05T01:51:46+00:00"
+      },
+      {
+        "number": 167,
+        "title": "chore: update fargate module and enable force deployment",
+        "state": "closed",
+        "author_login": "robdiciuccio",
+        "created_at": "2026-03-04T23:29:26+00:00",
+        "merged_at": "2026-03-05T01:55:25+00:00",
+        "closed_at": "2026-03-05T01:55:25+00:00"
+      },
+      {
+        "number": 168,
+        "title": "change pya container port from 3000 (the default rails port) to 8080 (the new thruster port)",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-05T20:12:45+00:00",
+        "merged_at": "2026-03-05T20:26:44+00:00",
+        "closed_at": "2026-03-05T20:26:44+00:00"
+      },
+      {
+        "number": 169,
+        "title": "set up data science vpc peer",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-06T00:58:57+00:00",
+        "merged_at": "2026-03-10T17:03:34+00:00",
+        "closed_at": "2026-03-10T17:03:34+00:00"
+      },
+      {
+        "number": 170,
+        "title": "Add Datadog Sensitive Data Scanner monitors",
+        "state": "closed",
+        "author_login": "robdiciuccio",
+        "created_at": "2026-03-06T18:51:55+00:00",
+        "merged_at": "2026-03-06T21:11:24+00:00",
+        "closed_at": "2026-03-06T21:11:24+00:00"
+      },
+      {
+        "number": 171,
+        "title": "Add fargate service module updates for PYA",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-03-09T22:35:56+00:00",
+        "merged_at": "2026-03-10T21:45:44+00:00",
+        "closed_at": "2026-03-10T21:45:44+00:00"
+      },
+      {
+        "number": 172,
+        "title": "include the gyraffe module output 'vpc_peer_ids' in the non-prod and prod gyraffe configs' output",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-10T18:16:18+00:00",
+        "merged_at": "2026-03-10T18:23:56+00:00",
+        "closed_at": "2026-03-10T18:23:56+00:00"
+      },
+      {
+        "number": 173,
+        "title": "Test failure for PYA deployment",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-03-10T21:56:47+00:00",
+        "merged_at": null,
+        "closed_at": "2026-03-12T17:01:08+00:00"
+      },
+      {
+        "number": 174,
+        "title": "TEF-192 Automate bastion replacement",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-03-17T19:33:14+00:00",
+        "merged_at": "2026-03-17T19:57:50+00:00",
+        "closed_at": "2026-03-17T19:57:51+00:00"
+      },
+      {
+        "number": 175,
+        "title": "fix: Update trivy action to known good version to address vulnerability.",
+        "state": "closed",
+        "author_login": "jamesiarmes",
+        "created_at": "2026-03-21T20:28:57+00:00",
+        "merged_at": "2026-03-21T20:45:16+00:00",
+        "closed_at": "2026-03-21T20:45:16+00:00"
+      },
+      {
+        "number": 176,
+        "title": "Add doppler to gyraffe & update AWS module dep version",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-23T21:30:58+00:00",
+        "merged_at": "2026-03-23T21:32:33+00:00",
+        "closed_at": "2026-03-23T21:32:33+00:00"
+      },
+      {
+        "number": 177,
+        "title": "fix gyraffe's doppler config",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-23T21:41:29+00:00",
+        "merged_at": "2026-03-23T21:43:25+00:00",
+        "closed_at": "2026-03-23T21:43:25+00:00"
+      },
+      {
+        "number": 178,
+        "title": "try to get doppler sync working",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-23T22:02:41+00:00",
+        "merged_at": "2026-03-24T20:06:47+00:00",
+        "closed_at": "2026-03-24T20:06:47+00:00"
+      },
+      {
+        "number": 179,
+        "title": "run tofu init -upgrade in prod gyraffe to get doppler dep and update aws dep version",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-24T20:26:12+00:00",
+        "merged_at": "2026-03-24T20:27:38+00:00",
+        "closed_at": "2026-03-24T20:27:38+00:00"
+      },
+      {
+        "number": 180,
+        "title": "WAF + Tenable configuration",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-25T00:51:07+00:00",
+        "merged_at": "2026-03-26T17:13:03+00:00",
+        "closed_at": "2026-03-26T17:13:04+00:00"
+      },
+      {
+        "number": 181,
+        "title": "Tef 274/connect demo gyraffe to demo efiler",
+        "state": "closed",
+        "author_login": "powersurge360",
+        "created_at": "2026-03-26T21:18:17+00:00",
+        "merged_at": "2026-03-26T21:27:43+00:00",
+        "closed_at": "2026-03-26T21:27:43+00:00"
+      },
+      {
+        "number": 182,
+        "title": "Creates an IAM user and access key that will allow heroku review apps to read schema zips from s3",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-03-31T02:18:37+00:00",
+        "merged_at": "2026-04-06T20:39:02+00:00",
+        "closed_at": "2026-04-06T20:39:02+00:00"
+      },
+      {
+        "number": 183,
+        "title": "TEF-472 Set rails env for gyraffe, pya and efiler-api",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-03-31T21:23:06+00:00",
+        "merged_at": "2026-04-01T22:18:30+00:00",
+        "closed_at": "2026-04-01T22:18:30+00:00"
+      },
+      {
+        "number": 184,
+        "title": "Update fargate for gyraffe and efiler-api",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-04-02T19:42:22+00:00",
+        "merged_at": "2026-04-02T23:03:02+00:00",
+        "closed_at": "2026-04-02T23:03:02+00:00"
+      },
+      {
+        "number": 185,
+        "title": "wip",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-04-03T21:54:40+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-03T21:56:00+00:00"
+      },
+      {
+        "number": 186,
+        "title": "Tef 373 add read only database user for data science",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-04-03T22:09:49+00:00",
+        "merged_at": "2026-04-07T16:25:13+00:00",
+        "closed_at": "2026-04-07T16:25:13+00:00"
+      },
+      {
+        "number": 187,
+        "title": "add heroku.gyraffe.getyourrefund.org to environments in plan and deploy gh workflows",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-06T23:13:18+00:00",
+        "merged_at": "2026-04-06T23:14:32+00:00",
+        "closed_at": "2026-04-06T23:14:32+00:00"
+      },
+      {
+        "number": 188,
+        "title": "fix s3 access for gyraffe heroku review apps",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-07T01:45:01+00:00",
+        "merged_at": "2026-04-07T16:26:59+00:00",
+        "closed_at": "2026-04-07T16:26:59+00:00"
+      },
+      {
+        "number": 189,
+        "title": "Tef 373 add read only database user for data science",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-04-07T16:57:16+00:00",
+        "merged_at": null,
+        "closed_at": "2026-04-07T17:03:58+00:00"
+      },
+      {
+        "number": 190,
+        "title": "Move github actions dir to .github so that it can be found by the github action runner",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-07T17:22:58+00:00",
+        "merged_at": "2026-04-07T17:30:13+00:00",
+        "closed_at": "2026-04-07T17:30:13+00:00"
+      },
+      {
+        "number": 191,
+        "title": "update tofu-modules-aws-secrets dep to catch resource move that was causing deploy failures",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-07T19:27:46+00:00",
+        "merged_at": "2026-04-07T19:51:47+00:00",
+        "closed_at": "2026-04-07T19:51:47+00:00"
+      },
+      {
+        "number": 192,
+        "title": "fix prod gyraffe db access for data science",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-08T18:55:20+00:00",
+        "merged_at": "2026-04-08T19:12:02+00:00",
+        "closed_at": "2026-04-08T19:12:02+00:00"
+      },
+      {
+        "number": 193,
+        "title": "TEF-380: add a worker ecs service to the efiler api",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-09T02:04:33+00:00",
+        "merged_at": "2026-04-09T23:02:01+00:00",
+        "closed_at": "2026-04-09T23:02:01+00:00"
+      },
+      {
+        "number": 194,
+        "title": "TEF-342: Define additional efiler api secrets and add them to environment secrets for web and worker",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-14T21:46:53+00:00",
+        "merged_at": "2026-04-24T19:46:23+00:00",
+        "closed_at": "2026-04-24T19:46:23+00:00"
+      },
+      {
+        "number": 195,
+        "title": "Add IRS EFIN, ETIN, and Software ID to secrets",
+        "state": "closed",
+        "author_login": "nickedwards109",
+        "created_at": "2026-04-22T18:55:17+00:00",
+        "merged_at": "2026-04-22T20:26:04+00:00",
+        "closed_at": "2026-04-22T20:26:04+00:00"
+      },
+      {
+        "number": 196,
+        "title": "TEF-449 Add mixpanel token secret to simplefile/gyraffe",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-04-22T21:38:26+00:00",
+        "merged_at": "2026-04-22T21:46:28+00:00",
+        "closed_at": "2026-04-22T21:46:28+00:00"
+      },
+      {
+        "number": 197,
+        "title": "Add webhook waf bypass for EFiler API submit callback",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-24T22:57:20+00:00",
+        "merged_at": "2026-04-25T01:32:00+00:00",
+        "closed_at": "2026-04-25T01:32:00+00:00"
+      },
+      {
+        "number": 198,
+        "title": "TEF-343: add submissions status and acks callback paths to webhooks bypass",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-29T00:01:54+00:00",
+        "merged_at": "2026-04-29T22:11:06+00:00",
+        "closed_at": "2026-04-29T22:11:06+00:00"
+      },
+      {
+        "number": 199,
+        "title": "double waf rate limit",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-04-29T23:41:33+00:00",
+        "merged_at": "2026-04-30T03:12:40+00:00",
+        "closed_at": "2026-04-30T03:12:40+00:00"
+      },
+      {
+        "number": 200,
+        "title": "TEF-595: Rename gyraffe infrastructure to simplefile",
+        "state": "closed",
+        "author_login": "dfl",
+        "created_at": "2026-04-30T17:58:40+00:00",
+        "merged_at": "2026-04-30T21:37:52+00:00",
+        "closed_at": "2026-04-30T21:37:52+00:00"
+      },
+      {
+        "number": 201,
+        "title": "Add ev cert for gyraffe prod",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-05-04T17:44:06+00:00",
+        "merged_at": "2026-05-04T18:19:00+00:00",
+        "closed_at": "2026-05-04T18:19:00+00:00"
+      },
+      {
+        "number": 202,
+        "title": "add intercom varriables",
+        "state": "closed",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-05-06T20:29:38+00:00",
+        "merged_at": "2026-05-06T22:01:32+00:00",
+        "closed_at": "2026-05-06T22:01:32+00:00"
+      },
+      {
+        "number": 203,
+        "title": "TEF-615 authenticate efiler api callbacks",
+        "state": "closed",
+        "author_login": "nickedwards109",
+        "created_at": "2026-05-07T23:09:02+00:00",
+        "merged_at": "2026-05-13T22:05:26+00:00",
+        "closed_at": "2026-05-13T22:05:26+00:00"
+      },
+      {
+        "number": 204,
+        "title": "Correct a Twilio variable",
+        "state": "closed",
+        "author_login": "nickedwards109",
+        "created_at": "2026-05-08T19:08:01+00:00",
+        "merged_at": "2026-05-08T19:55:01+00:00",
+        "closed_at": "2026-05-08T19:55:01+00:00"
+      },
+      {
+        "number": 205,
+        "title": "default simplefile and efiler api to 1vCPU and 4GB RAM",
+        "state": "closed",
+        "author_login": "mrotondo",
+        "created_at": "2026-05-11T20:31:59+00:00",
+        "merged_at": "2026-05-11T20:59:38+00:00",
+        "closed_at": "2026-05-11T20:59:38+00:00"
+      },
+      {
+        "number": 206,
+        "title": "TEF-653 Move gyraffe to IAM database auth",
+        "state": "closed",
+        "author_login": "tahsinaislam",
+        "created_at": "2026-05-13T21:40:26+00:00",
+        "merged_at": null,
+        "closed_at": "2026-05-14T19:11:28+00:00"
+      },
+      {
+        "number": 207,
+        "title": "Prevent AWS/Amazon IPs from being used as client IP",
+        "state": "open",
+        "author_login": "DrewProebstel",
+        "created_at": "2026-05-18T20:18:20+00:00",
+        "merged_at": null,
+        "closed_at": null
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforamerica/tax-benefits-backend",
+    "weekly_commits": [
+      {
+        "week_start": "2024-12-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-12-16",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-01-06",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-01-13",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-01-20",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-01-27",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-02-03",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-03-10",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-03-17",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-03-31",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-06-02",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-06-09",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-06-16",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-06-23",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-06-30",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-07-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-07-14",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-07-21",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-07-28",
+        "commits": 8
+      },
+      {
+        "week_start": "2025-08-04",
+        "commits": 11
+      },
+      {
+        "week_start": "2025-08-11",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-08-18",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-08-25",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-09-01",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-09-08",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-09-15",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-09-22",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-10-13",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-10-20",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-10-27",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-11-10",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-11-17",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-12-01",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-12-08",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-12-15",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-01-12",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-01-19",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-01-26",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-02-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-02-09",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-02-16",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-02-23",
+        "commits": 5
+      },
+      {
+        "week_start": "2026-03-02",
+        "commits": 6
+      },
+      {
+        "week_start": "2026-03-09",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-03-16",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-03-23",
+        "commits": 6
+      },
+      {
+        "week_start": "2026-03-30",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-04-06",
+        "commits": 8
+      },
+      {
+        "week_start": "2026-04-20",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-04-27",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-05-04",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-05-11",
+        "commits": 2
+      }
+    ],
+    "change_request_acceptance_ratio": 0.9227,
+    "bus_factor": 3,
+    "contribution_types": {
+      "code_commits": 194,
+      "pull_requests": 207,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 11,
+      "codeforamerica": 2
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 0,
+    "burstiness_cv": 0.7,
+    "burstiness_mean": 3.42,
+    "burstiness_std": 2.4,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 3,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": 9.2,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 100,
+    "readme_last_updated": "2025-01-08T20:43:09+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": 0.5,
+    "avg_review_comments_per_pr": 0.43,
+    "herfindahl_hirschman_index": 6382.2,
+    "hhi_no_bots": 1706.0,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 11,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 1,
+      "company": 6,
+      "unknown": 6
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0052,
+    "core_contributor_count": 6,
+    "periphery_contributor_count": 8,
+    "core_periphery_ratio": 0.4286,
+    "network_density": 0.3626,
+    "avg_degree_centrality": 0.3626,
+    "pr_review_edges": [
+      {
+        "author": "nickedwards109",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "nickedwards109",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "nickedwards109",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "nickedwards109",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "dfl"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "nickedwards109",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "nickedwards109",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "dfl",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "dfl",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "KathrynmHansen"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "nickedwards109"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "dfl"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "nickedwards109",
+        "reviewer": "dfl"
+      },
+      {
+        "author": "nickedwards109",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "dfl"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "KathrynmHansen"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "jnf"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "martha-brandt"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "robdiciuccio"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "robdiciuccio",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "martha-brandt"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "mrotondo"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "DrewProebstel",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "powersurge360"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "powersurge360",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "tahsinaislam",
+        "reviewer": "DrewProebstel"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jamesiarmes",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "tahsinaislam"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jnf"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "jenny-heath"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jnf"
+      },
+      {
+        "author": "mrotondo",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "anisharamnani"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "jenny-heath",
+        "reviewer": "jamesiarmes"
+      },
+      {
+        "author": "anisharamnani",
+        "reviewer": "DrewProebstel"
+      }
+    ]
+  },
+  "crawled_at": "2026-05-21T23:34:50.266559+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "nickedwards109",
+      "degree_centrality": 0.3077,
+      "betweenness_centrality": 0.0053,
+      "classification": "periphery",
+      "num_collaborators": 4
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "DrewProebstel",
+      "degree_centrality": 0.5385,
+      "betweenness_centrality": 0.1223,
+      "classification": "core",
+      "num_collaborators": 7
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "mrotondo",
+      "degree_centrality": 0.7692,
+      "betweenness_centrality": 0.2291,
+      "classification": "core",
+      "num_collaborators": 10
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "dfl",
+      "degree_centrality": 0.3077,
+      "betweenness_centrality": 0.005,
+      "classification": "periphery",
+      "num_collaborators": 4
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "jamesiarmes",
+      "degree_centrality": 0.6923,
+      "betweenness_centrality": 0.2039,
+      "classification": "core",
+      "num_collaborators": 9
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "tahsinaislam",
+      "degree_centrality": 0.6154,
+      "betweenness_centrality": 0.0998,
+      "classification": "core",
+      "num_collaborators": 8
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "KathrynmHansen",
+      "degree_centrality": 0.1538,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "powersurge360",
+      "degree_centrality": 0.4615,
+      "betweenness_centrality": 0.1613,
+      "classification": "core",
+      "num_collaborators": 6
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "anisharamnani",
+      "degree_centrality": 0.3846,
+      "betweenness_centrality": 0.0354,
+      "classification": "core",
+      "num_collaborators": 5
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "jnf",
+      "degree_centrality": 0.1538,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "robdiciuccio",
+      "degree_centrality": 0.3077,
+      "betweenness_centrality": 0.0449,
+      "classification": "periphery",
+      "num_collaborators": 4
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "martha-brandt",
+      "degree_centrality": 0.1538,
+      "betweenness_centrality": 0.0032,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "github-advanced-security[bot]",
+      "degree_centrality": 0.0769,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforamerica/tax-benefits-backend",
+      "login": "jenny-heath",
+      "degree_centrality": 0.1538,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "codeforamerica/tax-benefits-backend",
+    "weekly_snapshots": [
+      {
+        "week_start": "2024-04-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 1,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-04-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 3,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-04-22",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 5,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-05-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 6,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-09-23",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 7,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-09-30",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 9,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-10-14",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 10,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-11-11",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 13,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-11-18",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 14,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-11-25",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 16,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-12-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 17,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-12-16",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 18,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-01-06",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 22,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-01-13",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 25,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-01-20",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 28,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-01-27",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-02-03",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 31,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-03-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 32,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-03-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 33,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-03-31",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 34,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 2,
+        "cumulative_commits": 36,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-06-09",
+        "total_commits": 6,
+        "unique_contributors": 4,
+        "new_contributors": 1,
+        "cumulative_commits": 42,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-16",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 45,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-23",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 51,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 58,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 59,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-14",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 61,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-21",
+        "total_commits": 6,
+        "unique_contributors": 5,
+        "new_contributors": 2,
+        "cumulative_commits": 67,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2025-07-28",
+        "total_commits": 8,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 75,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2025-08-04",
+        "total_commits": 11,
+        "unique_contributors": 5,
+        "new_contributors": 1,
+        "cumulative_commits": 86,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-08-11",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 93,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-08-18",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 95,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-08-25",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 96,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-09-01",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 100,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-09-08",
+        "total_commits": 7,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 107,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-09-15",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 111,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-09-22",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 113,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 114,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 115,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-10-27",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 118,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 119,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-17",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 126,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 127,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 133,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 135,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 137,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-19",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 141,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 142,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-02-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 143,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2026-02-09",
+        "total_commits": 4,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 147,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-16",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 150,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-02-23",
+        "total_commits": 5,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 155,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 6,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 161,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-09",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 164,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-16",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 166,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-23",
+        "total_commits": 6,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 172,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-30",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 174,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 8,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 182,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-20",
+        "total_commits": 4,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 186,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2026-04-27",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 189,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2026-05-04",
+        "total_commits": 3,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 192,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2026-05-11",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 194,
+        "cumulative_contributors": 11
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "jamesiarmes",
+        "login": "jamesiarmes",
+        "name": "James Armes (they/them)",
+        "email": "jarmes@codeforamerica.org",
+        "first_commit_date": "2024-04-12T19:06:39+00:00",
+        "last_commit_date": "2026-03-21T20:45:15+00:00",
+        "duration_days": 708,
+        "total_commits": 46,
+        "active_weeks": 29,
+        "total_weeks_span": 101,
+        "activity_ratio": 0.2871,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.59
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "mrotondo",
+        "login": "mrotondo",
+        "name": "Mike Rotondo",
+        "email": "mrotondo@codeforamerica.org",
+        "first_commit_date": "2025-08-08T19:24:03+00:00",
+        "last_commit_date": "2026-05-11T20:59:37+00:00",
+        "duration_days": 276,
+        "total_commits": 45,
+        "active_weeks": 16,
+        "total_weeks_span": 39,
+        "activity_ratio": 0.4103,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 2.81
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "arinchoi03",
+        "login": "arinchoi03",
+        "name": "Yejee Arin Choi",
+        "email": "yej.arin.choi@gmail.com",
+        "first_commit_date": "2025-06-05T20:28:45+00:00",
+        "last_commit_date": "2025-08-08T21:09:10+00:00",
+        "duration_days": 64,
+        "total_commits": 26,
+        "active_weeks": 8,
+        "total_weeks_span": 9,
+        "activity_ratio": 0.8889,
+        "status": "departed",
+        "departed_weeks_ago": 40,
+        "avg_commits_per_active_week": 3.25
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "DrewProebstel",
+        "login": "DrewProebstel",
+        "name": "Drew Proebstel",
+        "email": "d.proebstel@gmail.com",
+        "first_commit_date": "2025-06-05T21:09:58+00:00",
+        "last_commit_date": "2026-05-06T22:01:31+00:00",
+        "duration_days": 335,
+        "total_commits": 16,
+        "active_weeks": 10,
+        "total_weeks_span": 47,
+        "activity_ratio": 0.2128,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.6
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "tahsinaislam",
+        "login": "tahsinaislam",
+        "name": "Tahsina Islam",
+        "email": "79296603+tahsinaislam@users.noreply.github.com",
+        "first_commit_date": "2025-06-13T21:18:38+00:00",
+        "last_commit_date": "2026-05-04T18:18:59+00:00",
+        "duration_days": 324,
+        "total_commits": 15,
+        "active_weeks": 11,
+        "total_weeks_span": 46,
+        "activity_ratio": 0.2391,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.36
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "anisharamnani",
+        "login": "anisharamnani",
+        "name": "Anisha Ramnani",
+        "email": "aramnani@codeforamerica.org",
+        "first_commit_date": "2025-07-25T21:34:47+00:00",
+        "last_commit_date": "2025-11-19T21:35:54+00:00",
+        "duration_days": 117,
+        "total_commits": 14,
+        "active_weeks": 7,
+        "total_weeks_span": 16,
+        "activity_ratio": 0.4375,
+        "status": "departed",
+        "departed_weeks_ago": 26,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "jenny-heath",
+        "login": "jenny-heath",
+        "name": "jenny-heath",
+        "email": "43800769+jenny-heath@users.noreply.github.com",
+        "first_commit_date": "2025-07-25T17:47:14+00:00",
+        "last_commit_date": "2025-10-21T20:33:10+00:00",
+        "duration_days": 88,
+        "total_commits": 12,
+        "active_weeks": 6,
+        "total_weeks_span": 12,
+        "activity_ratio": 0.5,
+        "status": "departed",
+        "departed_weeks_ago": 30,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "powersurge360",
+        "login": "powersurge360",
+        "name": "Kevin Diale",
+        "email": "powersurge360@gmail.com",
+        "first_commit_date": "2025-10-31T17:52:17+00:00",
+        "last_commit_date": "2026-03-26T21:27:43+00:00",
+        "duration_days": 146,
+        "total_commits": 10,
+        "active_weeks": 6,
+        "total_weeks_span": 20,
+        "activity_ratio": 0.3,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.67
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "robdiciuccio",
+        "login": "robdiciuccio",
+        "name": "Rob DiCiuccio",
+        "email": "rdiciuccio@codeforamerica.org",
+        "first_commit_date": "2026-02-12T18:06:09+00:00",
+        "last_commit_date": "2026-03-06T21:11:24+00:00",
+        "duration_days": 22,
+        "total_commits": 6,
+        "active_weeks": 3,
+        "total_weeks_span": 3,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "nickedwards109",
+        "login": "nickedwards109",
+        "name": "Nick Edwards",
+        "email": "nickedwards109@users.noreply.github.com",
+        "first_commit_date": "2026-04-22T20:26:03+00:00",
+        "last_commit_date": "2026-05-13T22:05:25+00:00",
+        "duration_days": 21,
+        "total_commits": 3,
+        "active_weeks": 3,
+        "total_weeks_span": 3,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeforamerica/tax-benefits-backend",
+        "contributor_id": "dfl",
+        "login": "dfl",
+        "name": "David L\u00f6wenfels",
+        "email": "282+dfl@users.noreply.github.com",
+        "first_commit_date": "2026-04-30T21:37:51+00:00",
+        "last_commit_date": "2026-04-30T21:37:51+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "nickedwards109",
+        "week_start": "2026-04-20",
+        "commits": 1,
+        "lines_added": 15,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "nickedwards109",
+        "week_start": "2026-05-04",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "nickedwards109",
+        "week_start": "2026-05-11",
+        "commits": 1,
+        "lines_added": 22,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2025-08-04",
+        "commits": 2,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2025-08-11",
+        "commits": 5,
+        "lines_added": 15,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2025-08-18",
+        "commits": 2,
+        "lines_added": 35,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2025-09-08",
+        "commits": 4,
+        "lines_added": 72,
+        "lines_removed": 53
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2025-09-15",
+        "commits": 4,
+        "lines_added": 779,
+        "lines_removed": 47
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2025-11-17",
+        "commits": 3,
+        "lines_added": 184,
+        "lines_removed": 60
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-01-26",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-02-16",
+        "commits": 2,
+        "lines_added": 7,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-02-23",
+        "commits": 1,
+        "lines_added": 5,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-03-02",
+        "commits": 2,
+        "lines_added": 7,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-03-09",
+        "commits": 2,
+        "lines_added": 38,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-03-23",
+        "commits": 5,
+        "lines_added": 234,
+        "lines_removed": 85
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-04-06",
+        "commits": 7,
+        "lines_added": 179,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-04-20",
+        "commits": 2,
+        "lines_added": 32,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-04-27",
+        "commits": 2,
+        "lines_added": 3,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "mrotondo",
+        "week_start": "2026-05-11",
+        "commits": 1,
+        "lines_added": 12,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-06-02",
+        "commits": 1,
+        "lines_added": 53,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-06-09",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 53
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-07-21",
+        "commits": 1,
+        "lines_added": 36,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-12-01",
+        "commits": 1,
+        "lines_added": 19,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2025-12-08",
+        "commits": 6,
+        "lines_added": 165,
+        "lines_removed": 29
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2026-01-12",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2026-02-02",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2026-02-09",
+        "commits": 2,
+        "lines_added": 109,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2026-04-06",
+        "commits": 1,
+        "lines_added": 150,
+        "lines_removed": 39
+      },
+      {
+        "contributor_id": "DrewProebstel",
+        "week_start": "2026-05-04",
+        "commits": 1,
+        "lines_added": 12,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-06-09",
+        "commits": 1,
+        "lines_added": 107,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-07-21",
+        "commits": 1,
+        "lines_added": 24,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-08-04",
+        "commits": 3,
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-08-11",
+        "commits": 2,
+        "lines_added": 25,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 16,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2026-02-23",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2026-03-09",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2026-03-16",
+        "commits": 1,
+        "lines_added": 48,
+        "lines_removed": 27
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2026-03-30",
+        "commits": 2,
+        "lines_added": 21,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2026-04-20",
+        "commits": 1,
+        "lines_added": 5,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "tahsinaislam",
+        "week_start": "2026-05-04",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "dfl",
+        "week_start": "2026-04-27",
+        "commits": 1,
+        "lines_added": 173,
+        "lines_removed": 175
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2025-10-27",
+        "commits": 1,
+        "lines_added": 102,
+        "lines_removed": 57
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2025-12-15",
+        "commits": 2,
+        "lines_added": 23,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2026-01-12",
+        "commits": 1,
+        "lines_added": 122,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2026-01-19",
+        "commits": 4,
+        "lines_added": 21,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2026-02-09",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "powersurge360",
+        "week_start": "2026-03-23",
+        "commits": 1,
+        "lines_added": 22,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-04-08",
+        "commits": 1,
+        "lines_added": 36,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-04-15",
+        "commits": 2,
+        "lines_added": 137,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-04-22",
+        "commits": 2,
+        "lines_added": 477,
+        "lines_removed": 28
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-05-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-09-23",
+        "commits": 1,
+        "lines_added": 26,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-09-30",
+        "commits": 2,
+        "lines_added": 179,
+        "lines_removed": 45
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-10-14",
+        "commits": 1,
+        "lines_added": 61,
+        "lines_removed": 49
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-11-11",
+        "commits": 3,
+        "lines_added": 1549,
+        "lines_removed": 142
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-11-18",
+        "commits": 1,
+        "lines_added": 396,
+        "lines_removed": 39
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-11-25",
+        "commits": 2,
+        "lines_added": 225,
+        "lines_removed": 50
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-12-02",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2024-12-16",
+        "commits": 1,
+        "lines_added": 547,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-01-06",
+        "commits": 4,
+        "lines_added": 379,
+        "lines_removed": 381
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-01-13",
+        "commits": 3,
+        "lines_added": 325,
+        "lines_removed": 182
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-01-20",
+        "commits": 3,
+        "lines_added": 194,
+        "lines_removed": 75
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-01-27",
+        "commits": 2,
+        "lines_added": 114,
+        "lines_removed": 89
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-02-03",
+        "commits": 1,
+        "lines_added": 18,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-03-10",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-03-17",
+        "commits": 1,
+        "lines_added": 490,
+        "lines_removed": 490
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-03-31",
+        "commits": 1,
+        "lines_added": 173,
+        "lines_removed": 159
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-06-09",
+        "commits": 1,
+        "lines_added": 44,
+        "lines_removed": 40
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-06-30",
+        "commits": 1,
+        "lines_added": 25,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-07-21",
+        "commits": 2,
+        "lines_added": 47,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-07-28",
+        "commits": 1,
+        "lines_added": 22,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-10-13",
+        "commits": 1,
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2025-10-27",
+        "commits": 2,
+        "lines_added": 16,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2026-02-16",
+        "commits": 1,
+        "lines_added": 267,
+        "lines_removed": 41
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2026-02-23",
+        "commits": 2,
+        "lines_added": 15,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "jamesiarmes",
+        "week_start": "2026-03-16",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "robdiciuccio",
+        "week_start": "2026-02-09",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "robdiciuccio",
+        "week_start": "2026-02-23",
+        "commits": 1,
+        "lines_added": 313,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robdiciuccio",
+        "week_start": "2026-03-02",
+        "commits": 4,
+        "lines_added": 70,
+        "lines_removed": 24
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-07-21",
+        "commits": 1,
+        "lines_added": 32,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-07-28",
+        "commits": 4,
+        "lines_added": 44,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-08-04",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-08-25",
+        "commits": 1,
+        "lines_added": 139,
+        "lines_removed": 95
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-09-08",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-09-22",
+        "commits": 2,
+        "lines_added": 194,
+        "lines_removed": 193
+      },
+      {
+        "contributor_id": "anisharamnani",
+        "week_start": "2025-11-17",
+        "commits": 4,
+        "lines_added": 104,
+        "lines_removed": 27
+      },
+      {
+        "contributor_id": "jenny-heath",
+        "week_start": "2025-07-21",
+        "commits": 1,
+        "lines_added": 45,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "jenny-heath",
+        "week_start": "2025-07-28",
+        "commits": 3,
+        "lines_added": 32,
+        "lines_removed": 32
+      },
+      {
+        "contributor_id": "jenny-heath",
+        "week_start": "2025-08-04",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "jenny-heath",
+        "week_start": "2025-09-01",
+        "commits": 4,
+        "lines_added": 86,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "jenny-heath",
+        "week_start": "2025-09-08",
+        "commits": 2,
+        "lines_added": 30,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "jenny-heath",
+        "week_start": "2025-10-20",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-02",
+        "commits": 1,
+        "lines_added": 213,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-09",
+        "commits": 3,
+        "lines_added": 202,
+        "lines_removed": 124
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-16",
+        "commits": 3,
+        "lines_added": 125,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-23",
+        "commits": 6,
+        "lines_added": 472,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-06-30",
+        "commits": 6,
+        "lines_added": 55,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-07-07",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-07-14",
+        "commits": 2,
+        "lines_added": 5,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "arinchoi03",
+        "week_start": "2025-08-04",
+        "commits": 4,
+        "lines_added": 16,
+        "lines_removed": 6
+      }
+    ],
+    "total_weeks": 62,
+    "total_unique_contributors": 11,
+    "new_contributor_rate_per_month": 0.44
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforamerica/tax-benefits-backend",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "repo_metrics": {
+    "full_name": "oklabflensburg/open-recycling-map",
+    "name": "open-recycling-map",
+    "description": "Standorte der Recycling Container f\u00fcr Altkleidung und Altglas vom Technisches Betriebszentrum Flensburg",
+    "num_developers": 1,
+    "total_commits": 36,
+    "languages": {
+      "HTML": 44439,
+      "JavaScript": 6396,
+      "Python": 4631,
+      "CSS": 2030
+    },
+    "primary_language": "HTML",
+    "first_commit_date": "2023-07-25T07:59:43+00:00",
+    "last_commit_date": "2026-04-05T14:05:14+00:00",
+    "license_spdx": "CC0-1.0",
+    "license_name": "Creative Commons Zero v1.0 Universal",
+    "is_osi_approved": false,
+    "topics": [
+      "mapping",
+      "opendata",
+      "python",
+      "waste",
+      "recycling",
+      "hacktoberfest"
+    ],
+    "has_contributing": true,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 62,
+    "stars": 1,
+    "watchers": 3,
+    "forks": 2,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "CodeQL",
+      "Lighthouse CI"
+    ],
+    "deployments_count": 0,
+    "created_at": "2023-07-25T07:59:42+00:00",
+    "updated_at": "2026-04-05T14:05:31+00:00",
+    "pushed_at": "2026-04-05T14:05:27+00:00",
+    "size_kb": 1948
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "oklabflensburg/open-recycling-map",
+      "login": "p3t3r67x0",
+      "name": "Aurelius Wendelken",
+      "num_commits": 35,
+      "additions": 10934,
+      "deletions": 9619,
+      "avg_additions_per_commit": 312.4,
+      "avg_deletions_per_commit": 274.83,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-recycling-map",
+      "login": "p3t3r67x0",
+      "name": "Open Data Coder",
+      "num_commits": 1,
+      "additions": 123,
+      "deletions": 0,
+      "avg_additions_per_commit": 123.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "oklabflensburg/open-recycling-map",
+    "pr_count_total": 0,
+    "pr_count_merged": 0,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 0,
+    "prs": [],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "oklabflensburg/open-recycling-map",
+    "weekly_commits": [
+      {
+        "week_start": "2023-07-24",
+        "commits": 14
+      },
+      {
+        "week_start": "2023-08-07",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-08-28",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-09-04",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-01-08",
+        "commits": 12
+      },
+      {
+        "week_start": "2024-07-29",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-10-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-10-14",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-12-09",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": null,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 36,
+      "pull_requests": 0,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "oklabflensburg": 2
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 2,
+    "burstiness_cv": 1.32,
+    "burstiness_mean": 3.6,
+    "burstiness_std": 4.74,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 0,
+    "readme_last_updated": "2024-12-11T15:47:02+00:00",
+    "contributing_last_updated": "2024-12-11T15:47:02+00:00",
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": null,
+    "herfindahl_hirschman_index": 10000.0,
+    "hhi_no_bots": 10000.0,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 0,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 2,
+      "unknown": 0
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": null,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-05-23T17:08:48.796637+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "oklabflensburg/open-recycling-map",
+    "weekly_snapshots": [
+      {
+        "week_start": "2023-07-24",
+        "total_commits": 14,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 14,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-08-07",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 16,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-08-28",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 17,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-09-04",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 18,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-01-08",
+        "total_commits": 12,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-07-29",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 32,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-10-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 33,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-10-14",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 34,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2024-12-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 35,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 36,
+        "cumulative_contributors": 1
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "oklabflensburg/open-recycling-map",
+        "contributor_id": "p3t3r67x0",
+        "login": "p3t3r67x0",
+        "name": "Aurelius Wendelken",
+        "email": "webtobesocial@gmail.com",
+        "first_commit_date": "2023-07-25T07:59:43+00:00",
+        "last_commit_date": "2026-04-05T14:05:14+00:00",
+        "duration_days": 985,
+        "total_commits": 36,
+        "active_weeks": 10,
+        "total_weeks_span": 140,
+        "activity_ratio": 0.0714,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 3.6
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-07-24",
+        "commits": 14,
+        "lines_added": 8637,
+        "lines_removed": 324
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-08-07",
+        "commits": 2,
+        "lines_added": 9,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-08-28",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-09-04",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-01-08",
+        "commits": 12,
+        "lines_added": 2043,
+        "lines_removed": 9114
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-07-29",
+        "commits": 2,
+        "lines_added": 57,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-10-07",
+        "commits": 1,
+        "lines_added": 134,
+        "lines_removed": 153
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-10-14",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-12-09",
+        "commits": 1,
+        "lines_added": 170,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2026-03-30",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      }
+    ],
+    "total_weeks": 10,
+    "total_unique_contributors": 1,
+    "new_contributor_rate_per_month": 0.03
+  },
+  "issue_analytics": {
+    "repo_full_name": "oklabflensburg/open-recycling-map",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  }
+}

@@ -1,0 +1,3741 @@
+{
+  "repo_metrics": {
+    "full_name": "digidemlab/decidim-census",
+    "name": "decidim-census",
+    "description": "A mapping of Decidim instances",
+    "num_developers": 2,
+    "total_commits": 1473,
+    "languages": {
+      "HTML": 12611,
+      "Python": 11077,
+      "Ruby": 474
+    },
+    "primary_language": "HTML",
+    "first_commit_date": "2021-07-05T08:27:36+00:00",
+    "last_commit_date": "2026-05-23T05:10:30+00:00",
+    "license_spdx": "AGPL-3.0",
+    "license_name": "GNU Affero General Public License v3.0",
+    "is_osi_approved": false,
+    "topics": [
+      "decidim"
+    ],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 37,
+    "stars": 6,
+    "watchers": 3,
+    "forks": 6,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Fetch data",
+      "pages-build-deployment"
+    ],
+    "deployments_count": 1379,
+    "created_at": "2021-07-05T09:15:02+00:00",
+    "updated_at": "2026-05-23T05:10:34+00:00",
+    "pushed_at": "2026-05-23T05:10:31+00:00",
+    "size_kb": 12367
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "digidemlab/decidim-census",
+      "login": "PierreMesure",
+      "name": "Pierre Mesure (Github Actions)",
+      "num_commits": 500,
+      "additions": 61261,
+      "deletions": 38970,
+      "avg_additions_per_commit": 122.52,
+      "avg_deletions_per_commit": 77.94,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "digidemlab/decidim-census",
+    "pr_count_total": 6,
+    "pr_count_merged": 1,
+    "pr_count_open": 4,
+    "pr_count_closed_unmerged": 1,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Update instances.csv",
+        "state": "closed",
+        "author_login": "simonaszilinskas",
+        "created_at": "2022-11-29T14:11:44+00:00",
+        "merged_at": "2022-12-07T13:28:09+00:00",
+        "closed_at": "2022-12-07T13:28:09+00:00"
+      },
+      {
+        "number": 2,
+        "title": "Add French initiatives platforms",
+        "state": "closed",
+        "author_login": "armandfardeau",
+        "created_at": "2022-12-07T14:12:55+00:00",
+        "merged_at": null,
+        "closed_at": "2022-12-08T15:26:11+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Add Austrian decidim instances",
+        "state": "open",
+        "author_login": "arusa",
+        "created_at": "2023-07-04T08:13:37+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 4,
+        "title": "Add missing source to existing instances",
+        "state": "open",
+        "author_login": "fblupi",
+        "created_at": "2023-11-22T15:28:24+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 6,
+        "title": "Added first pass at instance country codes",
+        "state": "open",
+        "author_login": "patcon",
+        "created_at": "2025-06-01T23:16:57+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 7,
+        "title": "Allow auto-updates to show as non-human user",
+        "state": "open",
+        "author_login": "patcon",
+        "created_at": "2025-06-01T23:34:36+00:00",
+        "merged_at": null,
+        "closed_at": null
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "digidemlab/decidim-census",
+    "weekly_commits": [
+      {
+        "week_start": "2025-05-26",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-06-02",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-06-09",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-06-16",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-06-23",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-06-30",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-07-07",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-07-14",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-07-21",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-07-28",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-08-04",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-08-11",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-08-18",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-08-25",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-09-01",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-09-08",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-09-15",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-09-22",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-09-29",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-10-06",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-10-13",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-10-20",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-10-27",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-11-03",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-11-10",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-11-17",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-11-24",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-12-01",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-12-08",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-12-15",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-12-22",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-12-29",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-01-05",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-01-12",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-01-19",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-01-26",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-02-02",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-02-09",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-02-16",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-02-23",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-03-02",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-03-09",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-03-16",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-03-23",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-03-30",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-04-06",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-04-13",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-04-20",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-04-27",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-05-04",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-05-11",
+        "commits": 7
+      },
+      {
+        "week_start": "2026-05-18",
+        "commits": 6
+      }
+    ],
+    "change_request_acceptance_ratio": 0.1667,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 500,
+      "pull_requests": 6,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Statskontoretdatalabb & @civictechsweden": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 6,
+    "burstiness_cv": 0.04,
+    "burstiness_mean": 6.94,
+    "burstiness_std": 0.3,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 1,
+    "time_to_first_response_prs_sample_size": 6,
+    "readme_last_updated": null,
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 1.0,
+    "stale_issue_count": 1,
+    "open_issue_count": 1,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": 10000.0,
+    "hhi_no_bots": 10000.0,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 0,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 1,
+      "unknown": 0
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-05-23T19:06:58.103104+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "digidemlab/decidim-census",
+    "weekly_snapshots": [
+      {
+        "week_start": "2021-07-05",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 13,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-07-12",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 20,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-07-19",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 27,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-07-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 34,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-08-02",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 42,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-08-09",
+        "total_commits": 15,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 57,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-08-16",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 67,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-08-23",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 74,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-08-30",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 81,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-09-06",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 88,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-09-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 95,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-09-20",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 97,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-11-22",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 98,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-05-02",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 102,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-05-09",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 109,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-05-16",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 116,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-05-23",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 123,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-05-30",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 130,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-06-06",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 137,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-06-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 144,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-06-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 151,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-06-27",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 158,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-07-04",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 165,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-07-11",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 172,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-07-18",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 179,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-07-25",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 186,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-08-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 193,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-08-08",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 199,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-08-15",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 206,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-08-22",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 213,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-08-29",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 220,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-09-05",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 227,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-09-12",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 234,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-09-19",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 239,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-09-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 246,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-10-03",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 253,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-10-10",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 260,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-10-17",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 267,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-10-24",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 274,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-10-31",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 281,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-11-07",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 288,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-11-14",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 295,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-11-21",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 302,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2022-11-28",
+        "total_commits": 8,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 310,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2022-12-05",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 314,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-02-06",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 319,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-02-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 326,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-02-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 333,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-02-27",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 340,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-03-06",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 347,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-03-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 354,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-03-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 361,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-03-27",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 368,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-04-03",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 375,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-04-10",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 382,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-04-17",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 389,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-04-24",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 396,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-05-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 403,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-05-08",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 410,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-05-15",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 417,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-05-22",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 424,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-05-29",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 431,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-06-05",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 438,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-06-12",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 445,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-06-19",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 452,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-06-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 459,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-07-03",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 466,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-07-10",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 473,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-07-17",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 480,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-07-24",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 487,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-07-31",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 494,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-08-07",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 501,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-08-14",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 508,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-08-21",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 515,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-08-28",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 522,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-09-04",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 529,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-09-11",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 536,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-09-18",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 543,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-09-25",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 550,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-02",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 557,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-09",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 564,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-16",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 571,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-23",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 578,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-30",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 584,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-11-06",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 589,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-11-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 596,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-11-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 603,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-11-27",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 608,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-12-04",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 610,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-12-11",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 617,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-12-18",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 622,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-12-25",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 629,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-01",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 635,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-08",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 640,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-15",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 646,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-22",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 650,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-29",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 655,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-02-05",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 661,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-02-12",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 668,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-02-19",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 675,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-02-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 682,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-03-04",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 689,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-03-11",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 696,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-03-18",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 703,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-03-25",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 710,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-04-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 717,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-04-08",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 724,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-04-15",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 731,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-04-22",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 738,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-04-29",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 745,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-05-06",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 752,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-05-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 759,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-05-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 766,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-05-27",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 773,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-06-03",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 780,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-06-10",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 787,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-06-17",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 794,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-06-24",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 801,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-07-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 808,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-07-08",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 815,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-07-15",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 822,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-07-22",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 829,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-07-29",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 836,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-08-05",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 843,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-08-12",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 849,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-08-19",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 856,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-08-26",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 861,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-09-02",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 865,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-09-09",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 871,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-09-16",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 878,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-09-23",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 885,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-09-30",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 892,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-10-07",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 899,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-10-14",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 906,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-10-21",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 913,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-10-28",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 920,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-04",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 925,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-11",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 931,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-18",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 938,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-25",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 945,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-02",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 952,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-09",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 959,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-16",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 966,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-23",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 972,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-30",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 979,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-01-06",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 986,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-01-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 993,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-01-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1000,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-01-27",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1006,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-03",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1013,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-10",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1020,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-17",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1026,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-24",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1033,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-03",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1040,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-10",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1046,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-17",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1053,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-24",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1060,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-31",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1066,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-04-07",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1072,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-04-14",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1079,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-04-21",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1086,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-04-28",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1091,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-05-05",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1098,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-05-12",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1105,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1112,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-05-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1119,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1126,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-06-09",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1133,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-06-16",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1140,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-06-23",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1147,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1154,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-07-07",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1161,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-07-14",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1168,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-07-21",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1175,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-07-28",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1182,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-08-04",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1189,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-08-11",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1196,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-08-18",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1203,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-08-25",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1210,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-09-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1217,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-09-08",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1224,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-09-15",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1231,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-09-22",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1238,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-09-29",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1243,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-10-06",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1250,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1257,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1264,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-10-27",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1271,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-11-03",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1278,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1285,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-11-17",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1292,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-11-24",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1299,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1306,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1313,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-12-15",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1320,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-12-22",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1327,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-12-29",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1334,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-01-05",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1341,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1348,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-01-19",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1355,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1362,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-02-02",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1369,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-02-09",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1376,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-02-16",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1383,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-02-23",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1390,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1397,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-03-09",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1404,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-03-16",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1411,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-03-23",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1418,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-03-30",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1425,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1432,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-04-13",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1439,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-04-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1446,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-04-27",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1453,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-05-04",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1460,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-05-11",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1467,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2026-05-18",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1473,
+        "cumulative_contributors": 2
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "digidemlab/decidim-census",
+        "contributor_id": "PierreMesure",
+        "login": "PierreMesure",
+        "name": "Pierre Mesure (Github Actions)",
+        "email": "pierre@mesu.re",
+        "first_commit_date": "2021-07-05T08:27:36+00:00",
+        "last_commit_date": "2026-05-23T05:10:30+00:00",
+        "duration_days": 1782,
+        "total_commits": 1472,
+        "active_weeks": 217,
+        "total_weeks_span": 254,
+        "activity_ratio": 0.8543,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 6.78
+      },
+      {
+        "repo_full_name": "digidemlab/decidim-census",
+        "contributor_id": "simonaszilinskas",
+        "login": "simonaszilinskas",
+        "name": "Simonas",
+        "email": "zilinskassimonas@gmail.com",
+        "first_commit_date": "2022-11-29T14:11:06+00:00",
+        "last_commit_date": "2022-11-29T14:11:06+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 181,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-07-05",
+        "commits": 13,
+        "lines_added": 1716,
+        "lines_removed": 590
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-07-12",
+        "commits": 7,
+        "lines_added": 474,
+        "lines_removed": 475
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-07-19",
+        "commits": 7,
+        "lines_added": 446,
+        "lines_removed": 444
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-07-26",
+        "commits": 7,
+        "lines_added": 475,
+        "lines_removed": 476
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-08-02",
+        "commits": 8,
+        "lines_added": 481,
+        "lines_removed": 478
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-08-09",
+        "commits": 15,
+        "lines_added": 107458,
+        "lines_removed": 1379
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-08-16",
+        "commits": 10,
+        "lines_added": 13127,
+        "lines_removed": 14017
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-08-23",
+        "commits": 7,
+        "lines_added": 2096,
+        "lines_removed": 1188
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-08-30",
+        "commits": 7,
+        "lines_added": 2191,
+        "lines_removed": 1275
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-09-06",
+        "commits": 7,
+        "lines_added": 2216,
+        "lines_removed": 1296
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-09-13",
+        "commits": 7,
+        "lines_added": 2287,
+        "lines_removed": 1366
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-09-20",
+        "commits": 2,
+        "lines_added": 621,
+        "lines_removed": 358
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2021-11-22",
+        "commits": 1,
+        "lines_added": 3598,
+        "lines_removed": 4501
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-05-02",
+        "commits": 4,
+        "lines_added": 1680,
+        "lines_removed": 102643
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-05-09",
+        "commits": 7,
+        "lines_added": 1891,
+        "lines_removed": 1166
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-05-16",
+        "commits": 7,
+        "lines_added": 1934,
+        "lines_removed": 1213
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-05-23",
+        "commits": 7,
+        "lines_added": 1934,
+        "lines_removed": 1204
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-05-30",
+        "commits": 7,
+        "lines_added": 1927,
+        "lines_removed": 1198
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-06-06",
+        "commits": 7,
+        "lines_added": 1963,
+        "lines_removed": 1239
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-06-13",
+        "commits": 7,
+        "lines_added": 1955,
+        "lines_removed": 1236
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-06-20",
+        "commits": 7,
+        "lines_added": 1918,
+        "lines_removed": 1205
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-06-27",
+        "commits": 7,
+        "lines_added": 1862,
+        "lines_removed": 1158
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-07-04",
+        "commits": 7,
+        "lines_added": 1861,
+        "lines_removed": 1157
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-07-11",
+        "commits": 7,
+        "lines_added": 1845,
+        "lines_removed": 1149
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-07-18",
+        "commits": 7,
+        "lines_added": 1845,
+        "lines_removed": 1146
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-07-25",
+        "commits": 7,
+        "lines_added": 1809,
+        "lines_removed": 1122
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-08-01",
+        "commits": 7,
+        "lines_added": 1840,
+        "lines_removed": 1157
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-08-08",
+        "commits": 6,
+        "lines_added": 1529,
+        "lines_removed": 951
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-08-15",
+        "commits": 7,
+        "lines_added": 1784,
+        "lines_removed": 1099
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-08-22",
+        "commits": 7,
+        "lines_added": 1833,
+        "lines_removed": 1139
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-08-29",
+        "commits": 7,
+        "lines_added": 1807,
+        "lines_removed": 1126
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-09-05",
+        "commits": 7,
+        "lines_added": 1847,
+        "lines_removed": 1179
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-09-12",
+        "commits": 7,
+        "lines_added": 1839,
+        "lines_removed": 1171
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-09-19",
+        "commits": 5,
+        "lines_added": 1304,
+        "lines_removed": 831
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-09-26",
+        "commits": 7,
+        "lines_added": 1812,
+        "lines_removed": 1141
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-10-03",
+        "commits": 7,
+        "lines_added": 1799,
+        "lines_removed": 1133
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-10-10",
+        "commits": 7,
+        "lines_added": 1821,
+        "lines_removed": 1167
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-10-17",
+        "commits": 7,
+        "lines_added": 1816,
+        "lines_removed": 1154
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-10-24",
+        "commits": 7,
+        "lines_added": 1797,
+        "lines_removed": 1135
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-10-31",
+        "commits": 7,
+        "lines_added": 1826,
+        "lines_removed": 1162
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-11-07",
+        "commits": 7,
+        "lines_added": 1826,
+        "lines_removed": 1155
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-11-14",
+        "commits": 7,
+        "lines_added": 1838,
+        "lines_removed": 1169
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-11-21",
+        "commits": 7,
+        "lines_added": 1779,
+        "lines_removed": 1110
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-11-28",
+        "commits": 7,
+        "lines_added": 1804,
+        "lines_removed": 1143
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2022-12-05",
+        "commits": 4,
+        "lines_added": 809,
+        "lines_removed": 490
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-02-06",
+        "commits": 5,
+        "lines_added": 545,
+        "lines_removed": 318
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-02-13",
+        "commits": 7,
+        "lines_added": 2310,
+        "lines_removed": 1410
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-02-20",
+        "commits": 7,
+        "lines_added": 2351,
+        "lines_removed": 1425
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-02-27",
+        "commits": 7,
+        "lines_added": 2335,
+        "lines_removed": 1425
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-03-06",
+        "commits": 7,
+        "lines_added": 2303,
+        "lines_removed": 1393
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-03-13",
+        "commits": 7,
+        "lines_added": 2318,
+        "lines_removed": 1401
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-03-20",
+        "commits": 7,
+        "lines_added": 2332,
+        "lines_removed": 1423
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-03-27",
+        "commits": 7,
+        "lines_added": 2348,
+        "lines_removed": 1438
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-04-03",
+        "commits": 7,
+        "lines_added": 2322,
+        "lines_removed": 1434
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-04-10",
+        "commits": 7,
+        "lines_added": 2341,
+        "lines_removed": 1455
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-04-17",
+        "commits": 7,
+        "lines_added": 2329,
+        "lines_removed": 1436
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-04-24",
+        "commits": 7,
+        "lines_added": 2329,
+        "lines_removed": 1443
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-05-01",
+        "commits": 7,
+        "lines_added": 2333,
+        "lines_removed": 1445
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-05-08",
+        "commits": 7,
+        "lines_added": 2336,
+        "lines_removed": 1462
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-05-15",
+        "commits": 7,
+        "lines_added": 2287,
+        "lines_removed": 1424
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-05-22",
+        "commits": 7,
+        "lines_added": 2235,
+        "lines_removed": 1375
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-05-29",
+        "commits": 7,
+        "lines_added": 2236,
+        "lines_removed": 1379
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-06-05",
+        "commits": 7,
+        "lines_added": 2199,
+        "lines_removed": 1348
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-06-12",
+        "commits": 7,
+        "lines_added": 2236,
+        "lines_removed": 1395
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-06-19",
+        "commits": 7,
+        "lines_added": 2051,
+        "lines_removed": 1279
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-06-26",
+        "commits": 7,
+        "lines_added": 2021,
+        "lines_removed": 1241
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-07-03",
+        "commits": 7,
+        "lines_added": 2010,
+        "lines_removed": 1222
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-07-10",
+        "commits": 7,
+        "lines_added": 2021,
+        "lines_removed": 1246
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-07-17",
+        "commits": 7,
+        "lines_added": 1966,
+        "lines_removed": 1184
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-07-24",
+        "commits": 7,
+        "lines_added": 2039,
+        "lines_removed": 1241
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-07-31",
+        "commits": 7,
+        "lines_added": 2035,
+        "lines_removed": 1240
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-08-07",
+        "commits": 7,
+        "lines_added": 2014,
+        "lines_removed": 1224
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-08-14",
+        "commits": 7,
+        "lines_added": 1953,
+        "lines_removed": 1179
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-08-21",
+        "commits": 7,
+        "lines_added": 2010,
+        "lines_removed": 1264
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-08-28",
+        "commits": 7,
+        "lines_added": 1890,
+        "lines_removed": 1149
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-09-04",
+        "commits": 7,
+        "lines_added": 1878,
+        "lines_removed": 1141
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-09-11",
+        "commits": 7,
+        "lines_added": 1870,
+        "lines_removed": 1157
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-09-18",
+        "commits": 7,
+        "lines_added": 1939,
+        "lines_removed": 1203
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-09-25",
+        "commits": 7,
+        "lines_added": 1933,
+        "lines_removed": 1195
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-10-02",
+        "commits": 7,
+        "lines_added": 1923,
+        "lines_removed": 1194
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-10-09",
+        "commits": 7,
+        "lines_added": 1938,
+        "lines_removed": 1212
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-10-16",
+        "commits": 7,
+        "lines_added": 1939,
+        "lines_removed": 1212
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-10-23",
+        "commits": 7,
+        "lines_added": 1874,
+        "lines_removed": 1182
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-10-30",
+        "commits": 6,
+        "lines_added": 1565,
+        "lines_removed": 965
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-11-06",
+        "commits": 5,
+        "lines_added": 1343,
+        "lines_removed": 839
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-11-13",
+        "commits": 7,
+        "lines_added": 1865,
+        "lines_removed": 1153
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-11-20",
+        "commits": 7,
+        "lines_added": 1897,
+        "lines_removed": 1185
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-11-27",
+        "commits": 5,
+        "lines_added": 1345,
+        "lines_removed": 836
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-12-04",
+        "commits": 2,
+        "lines_added": 574,
+        "lines_removed": 373
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-12-11",
+        "commits": 7,
+        "lines_added": 1859,
+        "lines_removed": 1144
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-12-18",
+        "commits": 5,
+        "lines_added": 1333,
+        "lines_removed": 829
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2023-12-25",
+        "commits": 7,
+        "lines_added": 1777,
+        "lines_removed": 1070
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-01-01",
+        "commits": 6,
+        "lines_added": 1574,
+        "lines_removed": 983
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-01-08",
+        "commits": 5,
+        "lines_added": 1332,
+        "lines_removed": 837
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-01-15",
+        "commits": 6,
+        "lines_added": 1608,
+        "lines_removed": 1011
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-01-22",
+        "commits": 4,
+        "lines_added": 1097,
+        "lines_removed": 686
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-01-29",
+        "commits": 5,
+        "lines_added": 1373,
+        "lines_removed": 865
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-02-05",
+        "commits": 6,
+        "lines_added": 1586,
+        "lines_removed": 983
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-02-12",
+        "commits": 7,
+        "lines_added": 1831,
+        "lines_removed": 1118
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-02-19",
+        "commits": 7,
+        "lines_added": 1903,
+        "lines_removed": 1191
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-02-26",
+        "commits": 7,
+        "lines_added": 1906,
+        "lines_removed": 1192
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-03-04",
+        "commits": 7,
+        "lines_added": 1933,
+        "lines_removed": 1227
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-03-11",
+        "commits": 7,
+        "lines_added": 1932,
+        "lines_removed": 1220
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-03-18",
+        "commits": 7,
+        "lines_added": 1835,
+        "lines_removed": 1135
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-03-25",
+        "commits": 7,
+        "lines_added": 1846,
+        "lines_removed": 1146
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-04-01",
+        "commits": 7,
+        "lines_added": 1835,
+        "lines_removed": 1134
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-04-08",
+        "commits": 7,
+        "lines_added": 1880,
+        "lines_removed": 1192
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-04-15",
+        "commits": 7,
+        "lines_added": 1852,
+        "lines_removed": 1166
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-04-22",
+        "commits": 7,
+        "lines_added": 1825,
+        "lines_removed": 1146
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-04-29",
+        "commits": 7,
+        "lines_added": 1842,
+        "lines_removed": 1179
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-05-06",
+        "commits": 7,
+        "lines_added": 1752,
+        "lines_removed": 1102
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-05-13",
+        "commits": 7,
+        "lines_added": 1770,
+        "lines_removed": 1112
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-05-20",
+        "commits": 7,
+        "lines_added": 1792,
+        "lines_removed": 1131
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-05-27",
+        "commits": 7,
+        "lines_added": 1780,
+        "lines_removed": 1113
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-06-03",
+        "commits": 7,
+        "lines_added": 1781,
+        "lines_removed": 1121
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-06-10",
+        "commits": 7,
+        "lines_added": 1810,
+        "lines_removed": 1154
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-06-17",
+        "commits": 7,
+        "lines_added": 1785,
+        "lines_removed": 1139
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-06-24",
+        "commits": 7,
+        "lines_added": 1749,
+        "lines_removed": 1107
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-07-01",
+        "commits": 7,
+        "lines_added": 1760,
+        "lines_removed": 1116
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-07-08",
+        "commits": 7,
+        "lines_added": 1738,
+        "lines_removed": 1113
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-07-15",
+        "commits": 7,
+        "lines_added": 1730,
+        "lines_removed": 1077
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-07-22",
+        "commits": 7,
+        "lines_added": 1658,
+        "lines_removed": 1032
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-07-29",
+        "commits": 7,
+        "lines_added": 1592,
+        "lines_removed": 966
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-08-05",
+        "commits": 7,
+        "lines_added": 1561,
+        "lines_removed": 929
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-08-12",
+        "commits": 6,
+        "lines_added": 1351,
+        "lines_removed": 820
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-08-19",
+        "commits": 7,
+        "lines_added": 1561,
+        "lines_removed": 946
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-08-26",
+        "commits": 5,
+        "lines_added": 1125,
+        "lines_removed": 690
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-09-02",
+        "commits": 4,
+        "lines_added": 940,
+        "lines_removed": 584
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-09-09",
+        "commits": 6,
+        "lines_added": 1396,
+        "lines_removed": 873
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-09-16",
+        "commits": 7,
+        "lines_added": 1590,
+        "lines_removed": 985
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-09-23",
+        "commits": 7,
+        "lines_added": 1568,
+        "lines_removed": 960
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-09-30",
+        "commits": 7,
+        "lines_added": 1609,
+        "lines_removed": 994
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-10-07",
+        "commits": 7,
+        "lines_added": 1579,
+        "lines_removed": 971
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-10-14",
+        "commits": 7,
+        "lines_added": 1599,
+        "lines_removed": 991
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-10-21",
+        "commits": 7,
+        "lines_added": 1542,
+        "lines_removed": 933
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-10-28",
+        "commits": 7,
+        "lines_added": 1596,
+        "lines_removed": 989
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-11-04",
+        "commits": 5,
+        "lines_added": 1126,
+        "lines_removed": 692
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-11-11",
+        "commits": 6,
+        "lines_added": 1416,
+        "lines_removed": 893
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-11-18",
+        "commits": 7,
+        "lines_added": 1615,
+        "lines_removed": 1010
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-11-25",
+        "commits": 7,
+        "lines_added": 1590,
+        "lines_removed": 981
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-12-02",
+        "commits": 7,
+        "lines_added": 1597,
+        "lines_removed": 993
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-12-09",
+        "commits": 7,
+        "lines_added": 1579,
+        "lines_removed": 980
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-12-16",
+        "commits": 7,
+        "lines_added": 1550,
+        "lines_removed": 956
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-12-23",
+        "commits": 6,
+        "lines_added": 1289,
+        "lines_removed": 780
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2024-12-30",
+        "commits": 7,
+        "lines_added": 1521,
+        "lines_removed": 931
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-01-06",
+        "commits": 7,
+        "lines_added": 1576,
+        "lines_removed": 981
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-01-13",
+        "commits": 7,
+        "lines_added": 1546,
+        "lines_removed": 961
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-01-20",
+        "commits": 7,
+        "lines_added": 1433,
+        "lines_removed": 873
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-01-27",
+        "commits": 6,
+        "lines_added": 1180,
+        "lines_removed": 711
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-02-03",
+        "commits": 7,
+        "lines_added": 1445,
+        "lines_removed": 901
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-02-10",
+        "commits": 7,
+        "lines_added": 1428,
+        "lines_removed": 880
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-02-17",
+        "commits": 6,
+        "lines_added": 1215,
+        "lines_removed": 739
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-02-24",
+        "commits": 7,
+        "lines_added": 1401,
+        "lines_removed": 845
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-03-03",
+        "commits": 7,
+        "lines_added": 1443,
+        "lines_removed": 896
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-03-10",
+        "commits": 6,
+        "lines_added": 1239,
+        "lines_removed": 766
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-03-17",
+        "commits": 7,
+        "lines_added": 1402,
+        "lines_removed": 860
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-03-24",
+        "commits": 7,
+        "lines_added": 1360,
+        "lines_removed": 818
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-03-31",
+        "commits": 6,
+        "lines_added": 1192,
+        "lines_removed": 737
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-04-07",
+        "commits": 6,
+        "lines_added": 1196,
+        "lines_removed": 735
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-04-14",
+        "commits": 7,
+        "lines_added": 1406,
+        "lines_removed": 880
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-04-21",
+        "commits": 7,
+        "lines_added": 1318,
+        "lines_removed": 804
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-04-28",
+        "commits": 5,
+        "lines_added": 946,
+        "lines_removed": 591
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-05-05",
+        "commits": 7,
+        "lines_added": 1295,
+        "lines_removed": 804
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-05-12",
+        "commits": 7,
+        "lines_added": 1284,
+        "lines_removed": 816
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-05-19",
+        "commits": 7,
+        "lines_added": 1264,
+        "lines_removed": 812
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-05-26",
+        "commits": 7,
+        "lines_added": 1233,
+        "lines_removed": 786
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-06-02",
+        "commits": 7,
+        "lines_added": 1187,
+        "lines_removed": 755
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-06-09",
+        "commits": 7,
+        "lines_added": 1143,
+        "lines_removed": 738
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-06-16",
+        "commits": 7,
+        "lines_added": 1141,
+        "lines_removed": 732
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-06-23",
+        "commits": 7,
+        "lines_added": 1107,
+        "lines_removed": 719
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-06-30",
+        "commits": 7,
+        "lines_added": 1091,
+        "lines_removed": 711
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-07-07",
+        "commits": 7,
+        "lines_added": 1033,
+        "lines_removed": 669
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-07-14",
+        "commits": 7,
+        "lines_added": 975,
+        "lines_removed": 630
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-07-21",
+        "commits": 7,
+        "lines_added": 932,
+        "lines_removed": 599
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-07-28",
+        "commits": 7,
+        "lines_added": 899,
+        "lines_removed": 581
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-08-04",
+        "commits": 7,
+        "lines_added": 915,
+        "lines_removed": 586
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-08-11",
+        "commits": 7,
+        "lines_added": 892,
+        "lines_removed": 565
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-08-18",
+        "commits": 7,
+        "lines_added": 891,
+        "lines_removed": 570
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-08-25",
+        "commits": 7,
+        "lines_added": 868,
+        "lines_removed": 586
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-09-01",
+        "commits": 7,
+        "lines_added": 779,
+        "lines_removed": 505
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-09-08",
+        "commits": 7,
+        "lines_added": 766,
+        "lines_removed": 503
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-09-15",
+        "commits": 7,
+        "lines_added": 724,
+        "lines_removed": 469
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-09-22",
+        "commits": 7,
+        "lines_added": 688,
+        "lines_removed": 446
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-09-29",
+        "commits": 5,
+        "lines_added": 497,
+        "lines_removed": 332
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-10-06",
+        "commits": 7,
+        "lines_added": 653,
+        "lines_removed": 429
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-10-13",
+        "commits": 7,
+        "lines_added": 649,
+        "lines_removed": 418
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-10-20",
+        "commits": 7,
+        "lines_added": 648,
+        "lines_removed": 421
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-10-27",
+        "commits": 7,
+        "lines_added": 622,
+        "lines_removed": 398
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-11-03",
+        "commits": 7,
+        "lines_added": 598,
+        "lines_removed": 396
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-11-10",
+        "commits": 7,
+        "lines_added": 588,
+        "lines_removed": 390
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-11-17",
+        "commits": 7,
+        "lines_added": 559,
+        "lines_removed": 364
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-11-24",
+        "commits": 7,
+        "lines_added": 571,
+        "lines_removed": 373
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-12-01",
+        "commits": 7,
+        "lines_added": 565,
+        "lines_removed": 370
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-12-08",
+        "commits": 7,
+        "lines_added": 571,
+        "lines_removed": 374
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-12-15",
+        "commits": 7,
+        "lines_added": 543,
+        "lines_removed": 347
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-12-22",
+        "commits": 7,
+        "lines_added": 526,
+        "lines_removed": 331
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2025-12-29",
+        "commits": 7,
+        "lines_added": 528,
+        "lines_removed": 333
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-01-05",
+        "commits": 7,
+        "lines_added": 529,
+        "lines_removed": 333
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-01-12",
+        "commits": 7,
+        "lines_added": 533,
+        "lines_removed": 340
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-01-19",
+        "commits": 7,
+        "lines_added": 535,
+        "lines_removed": 346
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-01-26",
+        "commits": 7,
+        "lines_added": 515,
+        "lines_removed": 340
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-02-02",
+        "commits": 7,
+        "lines_added": 471,
+        "lines_removed": 317
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-02-09",
+        "commits": 7,
+        "lines_added": 442,
+        "lines_removed": 303
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-02-16",
+        "commits": 7,
+        "lines_added": 431,
+        "lines_removed": 272
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-02-23",
+        "commits": 7,
+        "lines_added": 401,
+        "lines_removed": 264
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-03-02",
+        "commits": 7,
+        "lines_added": 399,
+        "lines_removed": 274
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-03-09",
+        "commits": 7,
+        "lines_added": 366,
+        "lines_removed": 245
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-03-16",
+        "commits": 7,
+        "lines_added": 381,
+        "lines_removed": 267
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-03-23",
+        "commits": 7,
+        "lines_added": 350,
+        "lines_removed": 246
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-03-30",
+        "commits": 7,
+        "lines_added": 344,
+        "lines_removed": 220
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-04-06",
+        "commits": 7,
+        "lines_added": 336,
+        "lines_removed": 222
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-04-13",
+        "commits": 7,
+        "lines_added": 338,
+        "lines_removed": 227
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-04-20",
+        "commits": 7,
+        "lines_added": 350,
+        "lines_removed": 242
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-04-27",
+        "commits": 7,
+        "lines_added": 308,
+        "lines_removed": 212
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-05-04",
+        "commits": 7,
+        "lines_added": 349,
+        "lines_removed": 238
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-05-11",
+        "commits": 7,
+        "lines_added": 325,
+        "lines_removed": 220
+      },
+      {
+        "contributor_id": "PierreMesure",
+        "week_start": "2026-05-18",
+        "commits": 6,
+        "lines_added": 284,
+        "lines_removed": 188
+      },
+      {
+        "contributor_id": "simonaszilinskas",
+        "week_start": "2022-11-28",
+        "commits": 1,
+        "lines_added": 33,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 217,
+    "total_unique_contributors": 2,
+    "new_contributor_rate_per_month": 0.03
+  },
+  "issue_analytics": {
+    "repo_full_name": "digidemlab/decidim-census",
+    "issues": [
+      {
+        "number": 5,
+        "title": "Add country column to instances.csv",
+        "state": "open",
+        "author_login": "patcon",
+        "closed_by_login": null,
+        "created_at": "2025-06-01T23:00:02+00:00",
+        "closed_at": null,
+        "updated_at": "2025-06-01T23:00:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "avg_comments_per_issue": 0,
+    "median_time_to_close_days": null,
+    "unique_openers": 1,
+    "unique_closers": 0,
+    "top_openers": {
+      "patcon": 1
+    },
+    "top_closers": {}
+  }
+}

@@ -1,0 +1,4220 @@
+{
+  "repo_metrics": {
+    "full_name": "g0v/tw-rental-house-data",
+    "name": "tw-rental-house-data",
+    "description": "Collection of Taiwan Rental House Data from Public Website",
+    "num_developers": 9,
+    "total_commits": 383,
+    "languages": {
+      "Python": 314161,
+      "Vue": 89818,
+      "HTML": 31130,
+      "Shell": 9983,
+      "JavaScript": 4555,
+      "SCSS": 235
+    },
+    "primary_language": "Python",
+    "first_commit_date": "2018-05-14T13:50:38+00:00",
+    "last_commit_date": "2026-05-03T09:05:04+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 50,
+    "stars": 168,
+    "watchers": 46,
+    "forks": 32,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "ui-deploy",
+      "ui-pull-request",
+      "pages-build-deployment"
+    ],
+    "deployments_count": 139,
+    "created_at": "2018-05-14T13:50:37+00:00",
+    "updated_at": "2026-05-03T09:05:09+00:00",
+    "pushed_at": "2026-05-03T09:06:09+00:00",
+    "size_kb": 28810
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "ddio",
+      "name": "ddio",
+      "num_commits": 369,
+      "additions": 153394,
+      "deletions": 52747,
+      "avg_additions_per_commit": 415.7,
+      "avg_deletions_per_commit": 142.95,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "TedLin1993",
+      "name": "Ted",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "Lee-W",
+      "name": "Wei Lee",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "tan-i-ham",
+      "name": "Yi-Han Chen",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "tim5ji6",
+      "name": "Eating\u5353",
+      "num_commits": 2,
+      "additions": 268,
+      "deletions": 0,
+      "avg_additions_per_commit": 134.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "chunyenHuang",
+      "name": "John Huang",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "num_commits": 5,
+      "additions": 68,
+      "deletions": 37,
+      "avg_additions_per_commit": 13.6,
+      "avg_deletions_per_commit": 7.4,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "eala",
+      "name": "eala",
+      "num_commits": 1,
+      "additions": 0,
+      "deletions": 1,
+      "avg_additions_per_commit": 0.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "yellowsoar",
+      "name": "yellowsoar",
+      "num_commits": 2,
+      "additions": 552,
+      "deletions": 1,
+      "avg_additions_per_commit": 276.0,
+      "avg_deletions_per_commit": 0.5,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "g0v/tw-rental-house-data",
+    "pr_count_total": 149,
+    "pr_count_merged": 55,
+    "pr_count_open": 18,
+    "pr_count_closed_unmerged": 76,
+    "prs": [
+      {
+        "number": 32,
+        "title": "\u65b0\u589epipfile",
+        "state": "closed",
+        "author_login": "yellowsoar",
+        "created_at": "2019-06-12T16:49:15+00:00",
+        "merged_at": "2019-06-13T15:10:19+00:00",
+        "closed_at": "2019-06-13T15:10:19+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Update psycopg2-binary to 2.7.5, update README to reveal latest statu\u2026",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2019-07-01T03:17:02+00:00",
+        "merged_at": "2019-08-16T08:13:05+00:00",
+        "closed_at": "2019-08-16T08:13:05+00:00"
+      },
+      {
+        "number": 36,
+        "title": "#33, Upgrade Scrapy to 1.6 so to run it on python 3.7. ",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2019-08-16T15:38:49+00:00",
+        "merged_at": "2019-08-16T15:39:23+00:00",
+        "closed_at": "2019-08-16T15:39:24+00:00"
+      },
+      {
+        "number": 37,
+        "title": "Phase I - HouseTS, #35",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2019-08-16T16:04:21+00:00",
+        "merged_at": "2019-08-16T16:04:33+00:00",
+        "closed_at": "2019-08-16T16:04:33+00:00"
+      },
+      {
+        "number": 38,
+        "title": "Add pagination to lower memory usage, #35",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2019-08-16T16:21:38+00:00",
+        "merged_at": "2019-08-16T16:21:47+00:00",
+        "closed_at": "2019-08-16T16:21:48+00:00"
+      },
+      {
+        "number": 39,
+        "title": "Fix wrong cursor usage and add tgz packaging to reduce file size, #35",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2019-08-17T12:34:08+00:00",
+        "merged_at": "2019-08-17T12:34:17+00:00",
+        "closed_at": "2019-08-17T12:34:18+00:00"
+      },
+      {
+        "number": 41,
+        "title": "Bump eslint-utils from 1.3.1 to 1.4.3 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-11-02T00:13:16+00:00",
+        "merged_at": "2019-11-02T14:50:18+00:00",
+        "closed_at": "2019-11-02T14:50:19+00:00"
+      },
+      {
+        "number": 42,
+        "title": "Bump lodash from 4.17.11 to 4.17.13 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-11-02T14:56:12+00:00",
+        "merged_at": "2020-01-19T07:11:20+00:00",
+        "closed_at": "2020-01-19T07:11:20+00:00"
+      },
+      {
+        "number": 43,
+        "title": "Bump twisted from 17.9.0 to 19.7.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-11-02T14:57:06+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:24:21+00:00"
+      },
+      {
+        "number": 44,
+        "title": "Bump django from 2.1.7 to 2.1.11",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-11-02T14:57:10+00:00",
+        "merged_at": null,
+        "closed_at": "2020-01-12T04:41:54+00:00"
+      },
+      {
+        "number": 45,
+        "title": "Bump twisted from 19.2.1 to 19.7.0 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-11-02T14:59:43+00:00",
+        "merged_at": "2020-01-19T07:10:41+00:00",
+        "closed_at": "2020-01-19T07:10:42+00:00"
+      },
+      {
+        "number": 46,
+        "title": "Bump mixin-deep from 1.3.1 to 1.3.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-11-02T15:03:17+00:00",
+        "merged_at": "2020-01-19T07:10:02+00:00",
+        "closed_at": "2020-01-19T07:10:03+00:00"
+      },
+      {
+        "number": 48,
+        "title": "remove pkg-resources==0.0.0",
+        "state": "closed",
+        "author_login": "eala",
+        "created_at": "2020-01-11T08:28:47+00:00",
+        "merged_at": "2020-01-12T04:40:22+00:00",
+        "closed_at": "2020-01-12T04:40:22+00:00"
+      },
+      {
+        "number": 49,
+        "title": "Bump django from 2.1.7 to 2.1.15",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-01-12T04:41:51+00:00",
+        "merged_at": "2020-01-19T07:10:15+00:00",
+        "closed_at": "2020-01-19T07:10:16+00:00"
+      },
+      {
+        "number": 50,
+        "title": "Add 2019 Dec, Q4, and annual data",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2020-01-19T07:09:28+00:00",
+        "merged_at": "2020-01-19T07:09:36+00:00",
+        "closed_at": "2020-01-19T07:09:36+00:00"
+      },
+      {
+        "number": 51,
+        "title": "Bump lodash.template from 4.4.0 to 4.5.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-01-19T07:11:26+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:35+00:00"
+      },
+      {
+        "number": 52,
+        "title": "Bump lodash.mergewith from 4.6.1 to 4.6.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-01-19T07:12:03+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:36+00:00"
+      },
+      {
+        "number": 53,
+        "title": "Bump django from 2.1.15 to 2.2.10",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-02-11T23:05:50+00:00",
+        "merged_at": null,
+        "closed_at": "2020-06-05T18:37:44+00:00"
+      },
+      {
+        "number": 54,
+        "title": "Bump bleach from 3.1.0 to 3.1.1 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-02-24T19:17:20+00:00",
+        "merged_at": null,
+        "closed_at": "2020-03-24T17:12:51+00:00"
+      },
+      {
+        "number": 55,
+        "title": "Bump bleach from 3.1.0 to 3.1.2 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-03-24T17:12:49+00:00",
+        "merged_at": null,
+        "closed_at": "2020-03-31T03:47:47+00:00"
+      },
+      {
+        "number": 56,
+        "title": "Bump bleach from 3.1.0 to 3.1.4 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-03-31T03:47:44+00:00",
+        "merged_at": null,
+        "closed_at": "2021-02-02T22:02:28+00:00"
+      },
+      {
+        "number": 57,
+        "title": "Fix invalid json format",
+        "state": "closed",
+        "author_login": "chunyenHuang",
+        "created_at": "2020-04-25T00:43:15+00:00",
+        "merged_at": "2020-04-25T12:41:31+00:00",
+        "closed_at": "2020-04-25T12:41:31+00:00"
+      },
+      {
+        "number": 58,
+        "title": "Bump django from 2.1.15 to 2.2.13",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-06-05T18:37:42+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:31:16+00:00"
+      },
+      {
+        "number": 59,
+        "title": "Bump lodash from 4.17.13 to 4.17.19 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-07-16T22:55:42+00:00",
+        "merged_at": null,
+        "closed_at": "2021-05-08T14:27:19+00:00"
+      },
+      {
+        "number": 60,
+        "title": "Bump elliptic from 6.4.1 to 6.5.3 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-07-30T14:13:02+00:00",
+        "merged_at": null,
+        "closed_at": "2021-03-09T02:44:04+00:00"
+      },
+      {
+        "number": 61,
+        "title": "Bump node-sass from 4.11.0 to 4.13.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-09-04T10:44:24+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:36+00:00"
+      },
+      {
+        "number": 62,
+        "title": "Bump node-fetch from 2.3.0 to 2.6.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-09-11T13:30:58+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:37+00:00"
+      },
+      {
+        "number": 63,
+        "title": "Bump cryptography from 2.3 to 3.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-10-27T21:18:32+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:23:38+00:00"
+      },
+      {
+        "number": 64,
+        "title": "Bump cryptography from 2.7 to 3.2 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-10-27T21:47:19+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:24:52+00:00"
+      },
+      {
+        "number": 65,
+        "title": "Bump highlight.js from 9.15.6 to 9.18.5 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-11-24T23:50:53+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:37+00:00"
+      },
+      {
+        "number": 66,
+        "title": "Bump lxml from 4.2.0 to 4.6.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-01-07T22:30:07+00:00",
+        "merged_at": null,
+        "closed_at": "2021-03-31T18:55:31+00:00"
+      },
+      {
+        "number": 67,
+        "title": "Bump lxml from 4.3.3 to 4.6.2 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-01-07T22:58:06+00:00",
+        "merged_at": null,
+        "closed_at": "2021-03-31T19:04:06+00:00"
+      },
+      {
+        "number": 68,
+        "title": "Bump bleach from 3.1.0 to 3.3.0 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-02-02T22:02:26+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:24:58+00:00"
+      },
+      {
+        "number": 69,
+        "title": "Bump pug-code-gen from 2.0.1 to 2.0.3 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-03T02:40:48+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:37+00:00"
+      },
+      {
+        "number": 70,
+        "title": "Bump pug from 2.0.3 to 3.0.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-03T03:05:57+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:38+00:00"
+      },
+      {
+        "number": 71,
+        "title": "Bump elliptic from 6.4.1 to 6.5.4 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-09T02:44:02+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:38+00:00"
+      },
+      {
+        "number": 72,
+        "title": "Bump pygments from 2.4.2 to 2.7.4 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-29T19:47:04+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:24:19+00:00"
+      },
+      {
+        "number": 73,
+        "title": "Bump y18n from 3.2.1 to 3.2.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-30T15:34:59+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:39+00:00"
+      },
+      {
+        "number": 74,
+        "title": "Bump lxml from 4.2.0 to 4.6.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-31T18:55:29+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:23:33+00:00"
+      },
+      {
+        "number": 75,
+        "title": "Bump lxml from 4.3.3 to 4.6.3 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-31T19:04:04+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:24:10+00:00"
+      },
+      {
+        "number": 76,
+        "title": "Bump ssri from 6.0.1 to 6.0.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-04-19T23:42:03+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:39+00:00"
+      },
+      {
+        "number": 77,
+        "title": "Bump urllib3 from 1.25.3 to 1.25.8 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-04-30T20:51:35+00:00",
+        "merged_at": null,
+        "closed_at": "2021-06-01T23:59:04+00:00"
+      },
+      {
+        "number": 78,
+        "title": "Bump ua-parser-js from 0.7.19 to 0.7.28 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-05-06T22:57:13+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:39+00:00"
+      },
+      {
+        "number": 79,
+        "title": "Bump lodash from 4.17.13 to 4.17.21 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-05-08T14:27:17+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:40+00:00"
+      },
+      {
+        "number": 80,
+        "title": "Bump hosted-git-info from 2.7.1 to 2.8.9 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-05-10T06:38:55+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:40+00:00"
+      },
+      {
+        "number": 81,
+        "title": "Bump browserslist from 4.5.5 to 4.16.6 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-05-25T02:30:25+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:41+00:00"
+      },
+      {
+        "number": 82,
+        "title": "Bump urllib3 from 1.25.3 to 1.26.5 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-06-01T23:59:01+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:24:52+00:00"
+      },
+      {
+        "number": 83,
+        "title": "Bump ws from 6.2.1 to 6.2.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-06-05T00:50:32+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:41+00:00"
+      },
+      {
+        "number": 84,
+        "title": "Bump postcss from 7.0.14 to 7.0.36 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-06-15T21:44:30+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:41+00:00"
+      },
+      {
+        "number": 85,
+        "title": "Bump path-parse from 1.0.6 to 1.0.7 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-08-10T23:37:44+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:42+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Bump tmpl from 1.0.4 to 1.0.5 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-09-21T02:37:01+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:42+00:00"
+      },
+      {
+        "number": 88,
+        "title": "Bump scrapy from 1.6.0 to 1.8.1 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-10-06T23:12:14+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T16:24:10+00:00"
+      },
+      {
+        "number": 90,
+        "title": "New 591 layout",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2021-10-25T15:18:21+00:00",
+        "merged_at": "2021-10-25T15:18:40+00:00",
+        "closed_at": "2021-10-25T15:18:40+00:00"
+      },
+      {
+        "number": 91,
+        "title": "Bump color-string from 1.5.3 to 1.6.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-10-25T15:19:45+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-28T14:28:43+00:00"
+      },
+      {
+        "number": 93,
+        "title": "Apply scrapy package",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2021-10-27T16:21:56+00:00",
+        "merged_at": "2021-10-27T16:22:07+00:00",
+        "closed_at": "2021-10-27T16:22:08+00:00"
+      },
+      {
+        "number": 94,
+        "title": "build(deps): bump django from 2.1.15 to 2.2.24",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-10-27T16:31:12+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:55:41+00:00"
+      },
+      {
+        "number": 95,
+        "title": "bug: remove persist detail request once its done",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2021-10-28T13:53:51+00:00",
+        "merged_at": "2021-10-28T13:53:58+00:00",
+        "closed_at": "2021-10-28T13:53:58+00:00"
+      },
+      {
+        "number": 96,
+        "title": "Practical update from field",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2021-10-28T14:28:07+00:00",
+        "merged_at": "2021-10-28T14:28:14+00:00",
+        "closed_at": "2021-10-28T14:28:14+00:00"
+      },
+      {
+        "number": 97,
+        "title": "build(deps): bump lxml from 4.6.3 to 4.6.5",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-12-13T20:02:42+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-06T20:11:35+00:00"
+      },
+      {
+        "number": 98,
+        "title": "build(deps): bump lxml from 4.6.3 to 4.6.5 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-12-13T21:01:38+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-06T21:15:44+00:00"
+      },
+      {
+        "number": 99,
+        "title": "build(deps): bump markdown-it from 8.4.2 to 12.3.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-01-12T22:48:05+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:54:35+00:00"
+      },
+      {
+        "number": 100,
+        "title": "build(deps): bump node-fetch from 2.3.0 to 2.6.7 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-01-22T04:31:35+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:54:22+00:00"
+      },
+      {
+        "number": 101,
+        "title": "build(deps): bump undefsafe from 2.0.2 to 2.0.5 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-02-10T01:18:02+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:54:23+00:00"
+      },
+      {
+        "number": 102,
+        "title": "build(deps-dev): bump node-sass from 4.11.0 to 7.0.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-02-10T17:24:34+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:54:21+00:00"
+      },
+      {
+        "number": 103,
+        "title": "build(deps): bump twisted from 21.7.0 to 22.1.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-02-11T03:44:30+00:00",
+        "merged_at": null,
+        "closed_at": "2022-03-03T21:52:25+00:00"
+      },
+      {
+        "number": 104,
+        "title": "build(deps): bump twisted from 21.7.0 to 22.1.0 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-02-11T03:55:59+00:00",
+        "merged_at": null,
+        "closed_at": "2022-03-03T21:58:40+00:00"
+      },
+      {
+        "number": 105,
+        "title": "build(deps): bump ajv from 6.10.0 to 6.12.6 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-02-11T19:50:56+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:54:24+00:00"
+      },
+      {
+        "number": 106,
+        "title": "build(deps): bump scrapy from 2.5.1 to 2.6.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-03-02T14:54:54+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-29T22:31:11+00:00"
+      },
+      {
+        "number": 107,
+        "title": "build(deps): bump twisted from 21.7.0 to 22.2.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-03-03T21:52:22+00:00",
+        "merged_at": null,
+        "closed_at": "2022-05-26T21:15:05+00:00"
+      },
+      {
+        "number": 108,
+        "title": "build(deps): bump twisted from 21.7.0 to 22.2.0 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-03-03T21:58:37+00:00",
+        "merged_at": null,
+        "closed_at": "2022-05-26T21:36:31+00:00"
+      },
+      {
+        "number": 109,
+        "title": "build(deps): bump async from 2.6.2 to 2.6.4 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-04-28T19:53:30+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:54:21+00:00"
+      },
+      {
+        "number": 110,
+        "title": "build(deps): bump twisted from 21.7.0 to 22.4.0",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-05-26T21:15:00+00:00",
+        "merged_at": null,
+        "closed_at": "2022-11-04T19:51:51+00:00"
+      },
+      {
+        "number": 111,
+        "title": "build(deps): bump twisted from 21.7.0 to 22.4.0 in /scrapy-package",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-05-26T21:36:27+00:00",
+        "merged_at": null,
+        "closed_at": "2022-11-04T19:55:23+00:00"
+      },
+      {
+        "number": 112,
+        "title": "build(deps): bump shell-quote from 1.6.1 to 1.7.3 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-06-22T05:51:49+00:00",
+        "merged_at": null,
+        "closed_at": "2022-07-26T06:54:30+00:00"
+      },
+      {
+        "number": 113,
+        "title": "build(deps): bump lxml from 4.6.3 to 4.9.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-06T20:11:32+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 114,
+        "title": "build(deps): bump lxml from 4.6.3 to 4.9.1 in /scrapy-package",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-06T21:15:42+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 118,
+        "title": "Upgrade nuxt and cicd",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-07-26T06:53:24+00:00",
+        "merged_at": "2022-07-26T06:53:34+00:00",
+        "closed_at": "2022-07-26T06:53:34+00:00"
+      },
+      {
+        "number": 119,
+        "title": "chore(deps-dev): bump eslint-plugin-vue from 8.7.1 to 9.3.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-26T06:54:25+00:00",
+        "merged_at": null,
+        "closed_at": "2022-08-24T00:05:10+00:00"
+      },
+      {
+        "number": 120,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.0.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-26T06:55:26+00:00",
+        "merged_at": null,
+        "closed_at": "2022-09-08T00:04:50+00:00"
+      },
+      {
+        "number": 121,
+        "title": "build(deps): bump django from 2.1.15 to 2.2.28",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-26T06:55:38+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 122,
+        "title": "fix(deps): bump vue-disqus from 3.0.5 to 4.0.1 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-26T06:55:46+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 123,
+        "title": "fix(deps): bump filesize from 3.6.1 to 9.0.11 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-26T06:56:03+00:00",
+        "merged_at": null,
+        "closed_at": "2022-09-29T00:04:45+00:00"
+      },
+      {
+        "number": 124,
+        "title": "fix(deps): bump vue-observe-visibility from 0.4.6 to 1.0.0 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-26T06:56:22+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 125,
+        "title": "build(deps): bump scrapy from 2.5.1 to 2.6.2",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-07-29T22:31:08+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 126,
+        "title": "Doc/resurrection",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-08-16T06:43:15+00:00",
+        "merged_at": "2022-08-16T06:43:23+00:00",
+        "closed_at": "2022-08-16T06:43:23+00:00"
+      },
+      {
+        "number": 127,
+        "title": "chore(deps-dev): bump eslint-plugin-vue from 8.7.1 to 9.4.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-08-24T00:05:06+00:00",
+        "merged_at": null,
+        "closed_at": "2022-09-19T00:08:54+00:00"
+      },
+      {
+        "number": 128,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.1.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-09-08T00:04:45+00:00",
+        "merged_at": null,
+        "closed_at": "2022-09-16T00:05:49+00:00"
+      },
+      {
+        "number": 130,
+        "title": "doc: add data-issue-2021-01",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-09-11T15:39:44+00:00",
+        "merged_at": "2022-09-11T15:39:50+00:00",
+        "closed_at": "2022-09-11T15:39:50+00:00"
+      },
+      {
+        "number": 131,
+        "title": "bug: fix lint error",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-09-11T15:43:16+00:00",
+        "merged_at": "2022-09-11T15:43:21+00:00",
+        "closed_at": "2022-09-11T15:43:21+00:00"
+      },
+      {
+        "number": 132,
+        "title": "Data/2021 monthly n quarterly",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-09-13T06:32:01+00:00",
+        "merged_at": "2022-09-13T06:32:08+00:00",
+        "closed_at": "2022-09-13T06:32:08+00:00"
+      },
+      {
+        "number": 133,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.1.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-09-16T00:05:46+00:00",
+        "merged_at": null,
+        "closed_at": "2022-10-20T00:04:16+00:00"
+      },
+      {
+        "number": 134,
+        "title": "chore(deps-dev): bump eslint-plugin-vue from 8.7.1 to 9.5.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-09-19T00:08:51+00:00",
+        "merged_at": null,
+        "closed_at": "2022-10-05T00:03:09+00:00"
+      },
+      {
+        "number": 135,
+        "title": "data: add 2021 analysis and 2022 data",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-09-19T03:46:45+00:00",
+        "merged_at": "2022-09-19T03:46:53+00:00",
+        "closed_at": "2022-09-19T03:46:53+00:00"
+      },
+      {
+        "number": 136,
+        "title": "feat: better S3 path logic",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-09-19T03:50:55+00:00",
+        "merged_at": "2022-09-19T03:51:00+00:00",
+        "closed_at": "2022-09-19T03:51:00+00:00"
+      },
+      {
+        "number": 138,
+        "title": "fix(deps): bump filesize from 3.6.1 to 10.0.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-09-29T00:04:41+00:00",
+        "merged_at": null,
+        "closed_at": "2022-09-30T00:01:43+00:00"
+      },
+      {
+        "number": 139,
+        "title": "fix(deps): bump filesize from 3.6.1 to 10.0.5 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-09-30T00:01:39+00:00",
+        "merged_at": null,
+        "closed_at": "2022-12-13T00:06:11+00:00"
+      },
+      {
+        "number": 140,
+        "title": "bug: use is operator to check boolean value, #137",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-10-02T03:14:47+00:00",
+        "merged_at": "2022-10-02T03:14:52+00:00",
+        "closed_at": "2022-10-02T03:14:52+00:00"
+      },
+      {
+        "number": 141,
+        "title": "chore(deps-dev): bump eslint-plugin-vue from 8.7.1 to 9.6.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-10-05T00:03:05+00:00",
+        "merged_at": null,
+        "closed_at": "2022-11-01T00:03:08+00:00"
+      },
+      {
+        "number": 142,
+        "title": "Landing page",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2022-10-16T08:31:23+00:00",
+        "merged_at": "2022-10-16T08:31:30+00:00",
+        "closed_at": "2022-10-16T08:31:30+00:00"
+      },
+      {
+        "number": 143,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.2.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-10-20T00:04:12+00:00",
+        "merged_at": null,
+        "closed_at": "2022-10-28T00:03:47+00:00"
+      },
+      {
+        "number": 144,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.2.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-10-28T00:03:43+00:00",
+        "merged_at": null,
+        "closed_at": "2022-11-16T01:05:25+00:00"
+      },
+      {
+        "number": 145,
+        "title": "chore(deps-dev): bump eslint-plugin-vue from 8.7.1 to 9.7.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-01T00:03:04+00:00",
+        "merged_at": null,
+        "closed_at": "2022-11-25T00:03:37+00:00"
+      },
+      {
+        "number": 146,
+        "title": "chore(deps): bump twisted from 21.7.0 to 22.10.0",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-04T19:51:48+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 147,
+        "title": "chore(deps): bump twisted from 21.7.0 to 22.10.0 in /scrapy-package",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-04T19:55:20+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 148,
+        "title": "fix(deps): bump loader-utils from 1.4.0 to 1.4.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-09T12:16:00+00:00",
+        "merged_at": null,
+        "closed_at": "2022-11-17T09:56:15+00:00"
+      },
+      {
+        "number": 149,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.2.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-16T01:05:19+00:00",
+        "merged_at": null,
+        "closed_at": "2022-12-16T00:09:00+00:00"
+      },
+      {
+        "number": 150,
+        "title": "fix(deps): bump loader-utils from 1.4.0 to 1.4.2 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-17T09:56:10+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 151,
+        "title": "chore(deps-dev): bump eslint-plugin-vue from 8.7.1 to 9.8.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-25T00:03:33+00:00",
+        "merged_at": null,
+        "closed_at": "2023-01-13T00:34:47+00:00"
+      },
+      {
+        "number": 152,
+        "title": "fix(deps): bump decode-uri-component from 0.2.0 to 0.2.2 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-12-03T06:16:00+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 153,
+        "title": "chore(deps): bump certifi from 2021.10.8 to 2022.12.7 in /scrapy-package",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-12-08T12:53:06+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 154,
+        "title": "fix(deps): bump filesize from 3.6.1 to 10.0.6 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-12-13T00:06:06+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 155,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.3.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-12-16T00:08:56+00:00",
+        "merged_at": null,
+        "closed_at": "2023-01-26T00:02:03+00:00"
+      },
+      {
+        "number": 156,
+        "title": "fix(deps): bump json5 from 1.0.1 to 1.0.2 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-01-09T02:22:28+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 157,
+        "title": "chore(deps-dev): bump eslint-plugin-vue from 8.7.1 to 9.9.0 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-01-13T00:34:41+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 158,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.4.0 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-01-26T00:01:56+00:00",
+        "merged_at": null,
+        "closed_at": "2023-01-27T00:07:10+00:00"
+      },
+      {
+        "number": 159,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.4.1 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-01-27T00:07:04+00:00",
+        "merged_at": null,
+        "closed_at": "2023-01-30T00:03:25+00:00"
+      },
+      {
+        "number": 160,
+        "title": "fix(deps): bump ua-parser-js from 0.7.31 to 0.7.33 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-01-27T13:58:44+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 161,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.4.2 in /ui",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-01-30T00:03:19+00:00",
+        "merged_at": null,
+        "closed_at": "2023-02-01T00:04:13+00:00"
+      },
+      {
+        "number": 162,
+        "title": "fix(deps): bump @nuxt/content from 1.15.1 to 2.4.3 in /ui",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-02-01T00:04:08+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 163,
+        "title": "chore(deps): bump cryptography from 35.0.0 to 39.0.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-02-08T02:13:23+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 164,
+        "title": "chore(deps): bump cryptography from 35.0.0 to 39.0.1 in /scrapy-package",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-02-08T02:16:36+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 167,
+        "title": "Upgrade scrapy package #116",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2023-12-30T06:33:43+00:00",
+        "merged_at": "2023-12-30T06:33:53+00:00",
+        "closed_at": "2023-12-30T06:33:53+00:00"
+      },
+      {
+        "number": 168,
+        "title": "Upgrade db n django #116",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2023-12-30T15:16:03+00:00",
+        "merged_at": "2023-12-30T15:16:13+00:00",
+        "closed_at": "2023-12-30T15:16:13+00:00"
+      },
+      {
+        "number": 169,
+        "title": "feat: add mtn script",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2023-12-31T03:54:54+00:00",
+        "merged_at": "2023-12-31T03:55:00+00:00",
+        "closed_at": "2023-12-31T03:55:00+00:00"
+      },
+      {
+        "number": 170,
+        "title": "feat: add 2023 data and move 2020~2022 data to new place",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-01-01T13:41:36+00:00",
+        "merged_at": "2024-01-01T13:41:41+00:00",
+        "closed_at": "2024-01-01T13:41:41+00:00"
+      },
+      {
+        "number": 171,
+        "title": "Bug no comment in landing",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-01-01T14:17:30+00:00",
+        "merged_at": "2024-01-01T14:17:36+00:00",
+        "closed_at": "2024-01-01T14:17:36+00:00"
+      },
+      {
+        "number": 173,
+        "title": "fix: Fix ui source code link",
+        "state": "closed",
+        "author_login": "tan-i-ham",
+        "created_at": "2024-01-12T08:49:28+00:00",
+        "merged_at": "2024-01-15T02:40:09+00:00",
+        "closed_at": "2024-01-15T02:40:10+00:00"
+      },
+      {
+        "number": 174,
+        "title": "Remove monthly json and dedub",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-01-31T09:16:20+00:00",
+        "merged_at": "2024-01-31T09:16:26+00:00",
+        "closed_at": "2024-01-31T09:16:26+00:00"
+      },
+      {
+        "number": 175,
+        "title": "data: add 202401 & 02 data",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-02-29T14:34:38+00:00",
+        "merged_at": "2024-02-29T14:34:44+00:00",
+        "closed_at": "2024-02-29T14:34:44+00:00"
+      },
+      {
+        "number": 177,
+        "title": "2024 591 api #176",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-09-07T16:43:40+00:00",
+        "merged_at": "2024-09-07T16:44:07+00:00",
+        "closed_at": "2024-09-07T16:44:07+00:00"
+      },
+      {
+        "number": 178,
+        "title": "2024 591 api enhance",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-09-08T07:26:15+00:00",
+        "merged_at": "2024-09-08T07:26:22+00:00",
+        "closed_at": "2024-09-08T07:26:22+00:00"
+      },
+      {
+        "number": 179,
+        "title": "feat: allow typo \u65b0\u7af9\u7e23\u5ce8\u5d4b\u9109",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-09-09T14:24:16+00:00",
+        "merged_at": "2024-09-09T14:24:22+00:00",
+        "closed_at": "2024-09-09T14:24:22+00:00"
+      },
+      {
+        "number": 180,
+        "title": "build(pyproject.toml): fix error repository link",
+        "state": "closed",
+        "author_login": "Lee-W",
+        "created_at": "2024-09-12T05:34:51+00:00",
+        "merged_at": "2024-09-12T14:04:05+00:00",
+        "closed_at": "2024-09-12T14:04:05+00:00"
+      },
+      {
+        "number": 182,
+        "title": "Adapt to str obfuscation",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-09-23T15:05:39+00:00",
+        "merged_at": "2024-09-23T15:05:45+00:00",
+        "closed_at": "2024-09-23T15:05:45+00:00"
+      },
+      {
+        "number": 183,
+        "title": "More str obfuscation",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-09-26T15:43:24+00:00",
+        "merged_at": "2024-09-26T15:43:31+00:00",
+        "closed_at": "2024-09-26T15:43:31+00:00"
+      },
+      {
+        "number": 184,
+        "title": "More robust parser",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-10-28T16:18:00+00:00",
+        "merged_at": "2024-10-28T16:18:07+00:00",
+        "closed_at": "2024-10-28T16:18:07+00:00"
+      },
+      {
+        "number": 185,
+        "title": "bug: remove comman inside string in NUXT hydration",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-10-29T07:16:53+00:00",
+        "merged_at": "2024-10-29T07:16:59+00:00",
+        "closed_at": "2024-10-29T07:16:59+00:00"
+      },
+      {
+        "number": 186,
+        "title": "chore: update to latest parser",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-10-29T07:19:49+00:00",
+        "merged_at": "2024-10-29T07:19:55+00:00",
+        "closed_at": "2024-10-29T07:19:55+00:00"
+      },
+      {
+        "number": 187,
+        "title": "doc/add-2024-09-data-and-blog-post",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2024-11-09T07:39:08+00:00",
+        "merged_at": "2024-11-09T07:39:15+00:00",
+        "closed_at": "2024-11-09T07:39:15+00:00"
+      },
+      {
+        "number": 188,
+        "title": "Feat/591 v202502",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2025-03-27T14:47:06+00:00",
+        "merged_at": "2025-03-27T14:47:16+00:00",
+        "closed_at": "2025-03-27T14:47:16+00:00"
+      },
+      {
+        "number": 189,
+        "title": "Feat/591 v202502",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2025-04-06T14:49:54+00:00",
+        "merged_at": "2025-04-06T14:50:54+00:00",
+        "closed_at": "2025-04-06T14:50:54+00:00"
+      },
+      {
+        "number": 196,
+        "title": "\u65b0\u589e\u722c\u87f2\u88ab\u963b\u64cb\u7684\u60c5\u5883",
+        "state": "closed",
+        "author_login": "TedLin1993",
+        "created_at": "2025-05-14T15:28:23+00:00",
+        "merged_at": "2025-11-15T17:09:31+00:00",
+        "closed_at": "2025-11-15T17:09:32+00:00"
+      },
+      {
+        "number": 197,
+        "title": "Feat/crawl performance tuning",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2025-10-23T03:10:51+00:00",
+        "merged_at": "2025-10-23T03:10:59+00:00",
+        "closed_at": "2025-10-23T03:10:59+00:00"
+      },
+      {
+        "number": 198,
+        "title": "Feat/upgrade twrh dataset version",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2025-10-23T08:40:15+00:00",
+        "merged_at": "2025-10-23T08:40:23+00:00",
+        "closed_at": "2025-10-23T08:40:23+00:00"
+      },
+      {
+        "number": 199,
+        "title": "Feat/ensure single shot available",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2025-10-27T02:57:36+00:00",
+        "merged_at": "2025-10-27T03:30:39+00:00",
+        "closed_at": "2025-10-27T03:30:39+00:00"
+      },
+      {
+        "number": 200,
+        "title": "Feat/better daily stats",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2026-03-07T09:28:38+00:00",
+        "merged_at": "2026-03-07T09:30:08+00:00",
+        "closed_at": "2026-03-07T09:30:08+00:00"
+      },
+      {
+        "number": 201,
+        "title": "fix: reduce Playwright memory leak and fix house ID parsing",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2026-03-07T11:24:53+00:00",
+        "merged_at": "2026-03-07T11:25:25+00:00",
+        "closed_at": "2026-03-07T11:25:26+00:00"
+      },
+      {
+        "number": 202,
+        "title": "fix: batch-restart detail spider to prevent Playwright memory leak",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2026-03-21T07:51:00+00:00",
+        "merged_at": "2026-03-21T07:51:25+00:00",
+        "closed_at": "2026-03-21T07:51:25+00:00"
+      },
+      {
+        "number": 203,
+        "title": "data: add 2026 03 & 04 data",
+        "state": "closed",
+        "author_login": "ddio",
+        "created_at": "2026-05-03T09:04:30+00:00",
+        "merged_at": "2026-05-03T09:05:04+00:00",
+        "closed_at": "2026-05-03T09:05:04+00:00"
+      }
+    ],
+    "tag_count": 4,
+    "tags": [
+      {
+        "name": "v1.1.2",
+        "commit_sha": "82c6c492c1fcfe8e024bbcbc7e73f2034f2d998d",
+        "date": "2021-10-27T16:22:07+00:00"
+      },
+      {
+        "name": "v0.1.1",
+        "commit_sha": "aa56381a96e9fe49255271094296e50b15b15ea0",
+        "date": "2018-08-02T08:46:12+00:00"
+      },
+      {
+        "name": "v0.1",
+        "commit_sha": "4b1ddac2d100c9b18290d3f2495dd8f878a7f179",
+        "date": "2018-07-31T10:37:10+00:00"
+      },
+      {
+        "name": "0.2",
+        "commit_sha": "317e71441fe7ff2894d4894e42b968a5f7b6d6cd",
+        "date": "2018-08-31T13:12:13+00:00"
+      }
+    ],
+    "release_count": 4,
+    "releases": [
+      {
+        "tag_name": "v1.1.2",
+        "name": "Support missing house",
+        "created_at": "2021-10-27T16:22:07+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "0.2",
+        "name": "\u8a66\u71df\u904b 0.2 \u7248",
+        "created_at": "2018-08-31T13:15:12+00:00",
+        "is_prerelease": true
+      },
+      {
+        "tag_name": "v0.1.1",
+        "name": "\u8a66\u71df\u904b 0.1.1 \u7248",
+        "created_at": "2018-08-02T08:46:12+00:00",
+        "is_prerelease": true
+      },
+      {
+        "tag_name": "v0.1",
+        "name": "\u8a66\u71df\u904b 0.1 \u7248",
+        "created_at": "2018-07-31T10:37:10+00:00",
+        "is_prerelease": true
+      }
+    ]
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "g0v/tw-rental-house-data",
+    "weekly_commits": [
+      {
+        "week_start": "2020-11-09",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-12-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-01-04",
+        "commits": 4
+      },
+      {
+        "week_start": "2021-02-15",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-03-29",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-05-31",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-10-18",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-10-25",
+        "commits": 15
+      },
+      {
+        "week_start": "2022-07-25",
+        "commits": 4
+      },
+      {
+        "week_start": "2022-08-15",
+        "commits": 3
+      },
+      {
+        "week_start": "2022-09-05",
+        "commits": 4
+      },
+      {
+        "week_start": "2022-09-12",
+        "commits": 3
+      },
+      {
+        "week_start": "2022-09-19",
+        "commits": 4
+      },
+      {
+        "week_start": "2022-09-26",
+        "commits": 2
+      },
+      {
+        "week_start": "2022-10-10",
+        "commits": 5
+      },
+      {
+        "week_start": "2022-12-05",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-01-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-03-06",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-08-14",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-08-21",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-11-27",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-12-11",
+        "commits": 4
+      },
+      {
+        "week_start": "2023-12-25",
+        "commits": 10
+      },
+      {
+        "week_start": "2024-01-01",
+        "commits": 5
+      },
+      {
+        "week_start": "2024-01-08",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-01-15",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-01-29",
+        "commits": 4
+      },
+      {
+        "week_start": "2024-02-26",
+        "commits": 3
+      },
+      {
+        "week_start": "2024-03-04",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-03-25",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-08-26",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-09-02",
+        "commits": 16
+      },
+      {
+        "week_start": "2024-09-09",
+        "commits": 4
+      },
+      {
+        "week_start": "2024-09-23",
+        "commits": 6
+      },
+      {
+        "week_start": "2024-10-28",
+        "commits": 7
+      },
+      {
+        "week_start": "2024-11-04",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-03-03",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-03-10",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-03-17",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-03-24",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-03-31",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-04-07",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-05-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-10-20",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-10-27",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-11-03",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-11-10",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-12-08",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-12-15",
+        "commits": 9
+      },
+      {
+        "week_start": "2026-03-02",
+        "commits": 9
+      },
+      {
+        "week_start": "2026-03-16",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-04-27",
+        "commits": 2
+      }
+    ],
+    "change_request_acceptance_ratio": 0.3691,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 383,
+      "pull_requests": 149,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 7,
+      "transurbantech @silver-gate  @silver-lining-esg @goldax-llc": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 15,
+    "release_frequency_per_month": 0.1,
+    "fork_count": 32,
+    "burstiness_cv": 0.89,
+    "burstiness_mean": 3.69,
+    "burstiness_std": 3.3,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 15,
+        "days_to_close": 9.0
+      }
+    ],
+    "median_defect_resolution_days": 9.0,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 1,
+    "bot_commit_count": 5,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 30.1,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 54,
+    "time_to_first_response_prs_sample_size": 100,
+    "readme_last_updated": "2024-01-12T08:48:49+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 1.0,
+    "stale_issue_count": 23,
+    "open_issue_count": 23,
+    "median_pr_review_turnaround_hours": 731.7,
+    "avg_review_comments_per_pr": 0.02,
+    "herfindahl_hirschman_index": 9947.2,
+    "hhi_no_bots": 9530.4,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 7,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 3,
+      "unknown": 5
+    },
+    "dora_deployment_frequency_per_month": 0.04,
+    "dora_median_lead_time_days": 29.2,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 2,
+    "core_periphery_ratio": 0.0,
+    "network_density": 1.0,
+    "avg_degree_centrality": 1.0,
+    "pr_review_edges": [
+      {
+        "author": "ddio",
+        "reviewer": "yellowsoar"
+      }
+    ]
+  },
+  "crawled_at": "2026-05-23T14:33:14.590868+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "ddio",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "g0v/tw-rental-house-data",
+      "login": "yellowsoar",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "g0v/tw-rental-house-data",
+    "weekly_snapshots": [
+      {
+        "week_start": "2018-05-14",
+        "total_commits": 11,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 11,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-05-21",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 13,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-05-28",
+        "total_commits": 18,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 31,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-06-04",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 39,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-07-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 40,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-07-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 41,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-07-16",
+        "total_commits": 18,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 59,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-07-23",
+        "total_commits": 12,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 71,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-07-30",
+        "total_commits": 14,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 85,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-08-06",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 88,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-08-20",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 96,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-08-27",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 104,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-09-03",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 108,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-09-24",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 109,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-10-01",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 115,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-10-08",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 118,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-10-22",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 119,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-10-29",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 120,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-11-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 121,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-12-03",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 122,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-12-31",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 124,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-01-28",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 125,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-02-25",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 126,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-03-18",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 129,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-04-01",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 131,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-04-15",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 139,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-04-29",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 141,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-05-06",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 143,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-05-27",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 144,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-06-03",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 145,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2019-06-10",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 154,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2019-07-01",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 156,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2019-08-12",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 166,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2019-10-28",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 171,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2019-11-04",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 175,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2019-12-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 176,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2020-01-06",
+        "total_commits": 3,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 179,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2020-01-13",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 185,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2020-01-27",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 187,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2020-04-20",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 189,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2020-08-31",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 191,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2020-11-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 192,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2020-12-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 193,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2021-01-04",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 197,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2021-02-15",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 198,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2021-03-29",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 200,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2021-05-31",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 201,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2021-10-18",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 202,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2021-10-25",
+        "total_commits": 15,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 217,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-07-25",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 221,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-08-15",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 224,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-09-05",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 228,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-09-12",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 231,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-09-19",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 235,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-09-26",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 237,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-10-10",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 242,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2022-12-05",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 243,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-01-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 244,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-03-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 245,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-08-14",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 246,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-08-21",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 247,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-11-27",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 249,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-12-11",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 253,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2023-12-25",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 263,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2024-01-01",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 268,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2024-01-08",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 270,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-01-15",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 271,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-01-29",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 275,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-02-26",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 278,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-03-04",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 280,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-03-25",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 282,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-08-26",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 284,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-09-02",
+        "total_commits": 16,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 300,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2024-09-09",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 304,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2024-09-23",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 310,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2024-10-28",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 317,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2024-11-04",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 321,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-03-03",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 322,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-03-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 323,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-03-17",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 326,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-03-24",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 329,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-03-31",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 335,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-04-07",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 340,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-05-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 341,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 348,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-10-27",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 355,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-11-03",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 357,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 358,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 360,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-15",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 369,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 378,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-03-16",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 381,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-04-27",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 383,
+        "cumulative_contributors": 9
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "ddio",
+        "login": "ddio",
+        "name": "ddio",
+        "email": "ddioibb@gmail.com",
+        "first_commit_date": "2018-05-14T13:50:38+00:00",
+        "last_commit_date": "2026-05-03T09:05:04+00:00",
+        "duration_days": 2910,
+        "total_commits": 369,
+        "active_weeks": 90,
+        "total_weeks_span": 415,
+        "activity_ratio": 0.2169,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 4.1
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "dependabot[bot]",
+        "login": "dependabot[bot]",
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "first_commit_date": "2019-11-02T00:13:15+00:00",
+        "last_commit_date": "2020-01-12T04:41:52+00:00",
+        "duration_days": 71,
+        "total_commits": 5,
+        "active_weeks": 2,
+        "total_weeks_span": 10,
+        "activity_ratio": 0.2,
+        "status": "departed",
+        "departed_weeks_ago": 331,
+        "avg_commits_per_active_week": 2.5
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "tim5ji6",
+        "login": "tim5ji6",
+        "name": "Eating\u5353",
+        "email": "32831064+tim5ji6@users.noreply.github.com",
+        "first_commit_date": "2020-11-13T03:40:32+00:00",
+        "last_commit_date": "2021-02-19T07:53:00+00:00",
+        "duration_days": 98,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 14,
+        "activity_ratio": 0.1429,
+        "status": "departed",
+        "departed_weeks_ago": 274,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "yellowsoar",
+        "login": "yellowsoar",
+        "name": "yellowsoar",
+        "email": "yellowsoar@gmail.com",
+        "first_commit_date": "2019-06-13T13:19:30+00:00",
+        "last_commit_date": "2019-06-13T13:19:50+00:00",
+        "duration_days": 0,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 362,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "TedLin1993",
+        "login": "TedLin1993",
+        "name": "Ted",
+        "email": "xup6y3ru04@gmail.com",
+        "first_commit_date": "2025-05-14T15:26:34+00:00",
+        "last_commit_date": "2025-05-14T15:26:34+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 53,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "Lee-W",
+        "login": "Lee-W",
+        "name": "Wei Lee",
+        "email": "weilee.rx@gmail.com",
+        "first_commit_date": "2024-09-12T05:34:33+00:00",
+        "last_commit_date": "2024-09-12T05:34:33+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 88,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "tan-i-ham",
+        "login": "tan-i-ham",
+        "name": "Yi-Han Chen",
+        "email": "hannah51125@gmail.com",
+        "first_commit_date": "2024-01-12T08:48:49+00:00",
+        "last_commit_date": "2024-01-12T08:48:49+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 123,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "chunyenHuang",
+        "login": "chunyenHuang",
+        "name": "John Huang",
+        "email": "little78926@gmail.com",
+        "first_commit_date": "2020-04-25T00:43:07+00:00",
+        "last_commit_date": "2020-04-25T00:43:07+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 317,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "g0v/tw-rental-house-data",
+        "contributor_id": "eala",
+        "login": "eala",
+        "name": "eala",
+        "email": "eala0113@gmail.com",
+        "first_commit_date": "2020-01-11T08:21:32+00:00",
+        "last_commit_date": "2020-01-11T08:21:32+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 332,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-05-14",
+        "commits": 11,
+        "lines_added": 4424,
+        "lines_removed": 39
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-05-21",
+        "commits": 2,
+        "lines_added": 61,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-05-28",
+        "commits": 18,
+        "lines_added": 13267,
+        "lines_removed": 574
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-06-04",
+        "commits": 8,
+        "lines_added": 125,
+        "lines_removed": 39
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-07-02",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-07-09",
+        "commits": 1,
+        "lines_added": 54,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-07-16",
+        "commits": 18,
+        "lines_added": 1692,
+        "lines_removed": 1132
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-07-23",
+        "commits": 12,
+        "lines_added": 714,
+        "lines_removed": 104
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-07-30",
+        "commits": 14,
+        "lines_added": 632,
+        "lines_removed": 178
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-08-06",
+        "commits": 3,
+        "lines_added": 181,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-08-20",
+        "commits": 8,
+        "lines_added": 1341,
+        "lines_removed": 373
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-08-27",
+        "commits": 8,
+        "lines_added": 597,
+        "lines_removed": 80
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-09-03",
+        "commits": 4,
+        "lines_added": 102,
+        "lines_removed": 22
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-09-24",
+        "commits": 1,
+        "lines_added": 66,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-10-01",
+        "commits": 6,
+        "lines_added": 199,
+        "lines_removed": 33
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-10-08",
+        "commits": 3,
+        "lines_added": 142,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-10-22",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-10-29",
+        "commits": 1,
+        "lines_added": 30,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-11-26",
+        "commits": 1,
+        "lines_added": 30,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-12-03",
+        "commits": 1,
+        "lines_added": 9,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2018-12-31",
+        "commits": 2,
+        "lines_added": 98,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-01-28",
+        "commits": 1,
+        "lines_added": 39,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-02-25",
+        "commits": 1,
+        "lines_added": 30,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-03-18",
+        "commits": 3,
+        "lines_added": 149,
+        "lines_removed": 77
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-04-01",
+        "commits": 2,
+        "lines_added": 8366,
+        "lines_removed": 8458
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-04-15",
+        "commits": 8,
+        "lines_added": 1972,
+        "lines_removed": 621
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-04-29",
+        "commits": 2,
+        "lines_added": 79,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-05-06",
+        "commits": 2,
+        "lines_added": 68,
+        "lines_removed": 46
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-05-27",
+        "commits": 1,
+        "lines_added": 49,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-06-03",
+        "commits": 1,
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-06-10",
+        "commits": 7,
+        "lines_added": 2624,
+        "lines_removed": 205
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-07-01",
+        "commits": 2,
+        "lines_added": 142,
+        "lines_removed": 62
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-08-12",
+        "commits": 10,
+        "lines_added": 477,
+        "lines_removed": 113
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-10-28",
+        "commits": 1,
+        "lines_added": 45,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-11-04",
+        "commits": 4,
+        "lines_added": 186,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2019-12-09",
+        "commits": 1,
+        "lines_added": 51,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2020-01-06",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2020-01-13",
+        "commits": 6,
+        "lines_added": 205,
+        "lines_removed": 26
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2020-01-27",
+        "commits": 2,
+        "lines_added": 42,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2020-04-20",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2020-08-31",
+        "commits": 2,
+        "lines_added": 308,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2020-12-07",
+        "commits": 1,
+        "lines_added": 118,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2021-01-04",
+        "commits": 4,
+        "lines_added": 129,
+        "lines_removed": 40
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2021-03-29",
+        "commits": 2,
+        "lines_added": 98,
+        "lines_removed": 130
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2021-05-31",
+        "commits": 1,
+        "lines_added": 60,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2021-10-18",
+        "commits": 1,
+        "lines_added": 201,
+        "lines_removed": 201
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2021-10-25",
+        "commits": 15,
+        "lines_added": 3835,
+        "lines_removed": 4761
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-07-25",
+        "commits": 4,
+        "lines_added": 64590,
+        "lines_removed": 20864
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-08-15",
+        "commits": 3,
+        "lines_added": 110,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-09-05",
+        "commits": 4,
+        "lines_added": 388,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-09-12",
+        "commits": 3,
+        "lines_added": 632,
+        "lines_removed": 22
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-09-19",
+        "commits": 4,
+        "lines_added": 768,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-09-26",
+        "commits": 2,
+        "lines_added": 8,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-10-10",
+        "commits": 5,
+        "lines_added": 713,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2022-12-05",
+        "commits": 1,
+        "lines_added": 60,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2023-01-02",
+        "commits": 1,
+        "lines_added": 90,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2023-03-06",
+        "commits": 1,
+        "lines_added": 75,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2023-08-14",
+        "commits": 1,
+        "lines_added": 206,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2023-08-21",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2023-11-27",
+        "commits": 2,
+        "lines_added": 526,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2023-12-11",
+        "commits": 4,
+        "lines_added": 1068,
+        "lines_removed": 442
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2023-12-25",
+        "commits": 10,
+        "lines_added": 6624,
+        "lines_removed": 3380
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-01-01",
+        "commits": 5,
+        "lines_added": 610,
+        "lines_removed": 408
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-01-08",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-01-15",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-01-29",
+        "commits": 4,
+        "lines_added": 1148,
+        "lines_removed": 174
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-02-26",
+        "commits": 3,
+        "lines_added": 142,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-03-04",
+        "commits": 2,
+        "lines_added": 87,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-03-25",
+        "commits": 2,
+        "lines_added": 59,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-08-26",
+        "commits": 2,
+        "lines_added": 16,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-09-02",
+        "commits": 16,
+        "lines_added": 4996,
+        "lines_removed": 544
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-09-09",
+        "commits": 3,
+        "lines_added": 25,
+        "lines_removed": 17
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-09-23",
+        "commits": 6,
+        "lines_added": 156,
+        "lines_removed": 150
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-10-28",
+        "commits": 7,
+        "lines_added": 432,
+        "lines_removed": 84
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2024-11-04",
+        "commits": 4,
+        "lines_added": 161,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-03-03",
+        "commits": 1,
+        "lines_added": 432,
+        "lines_removed": 136
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-03-10",
+        "commits": 1,
+        "lines_added": 20,
+        "lines_removed": 33
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-03-17",
+        "commits": 3,
+        "lines_added": 2402,
+        "lines_removed": 481
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-03-24",
+        "commits": 3,
+        "lines_added": 2846,
+        "lines_removed": 618
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-03-31",
+        "commits": 6,
+        "lines_added": 356,
+        "lines_removed": 108
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-04-07",
+        "commits": 5,
+        "lines_added": 2039,
+        "lines_removed": 51
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-10-20",
+        "commits": 7,
+        "lines_added": 6089,
+        "lines_removed": 194
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-10-27",
+        "commits": 7,
+        "lines_added": 2115,
+        "lines_removed": 108
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-11-03",
+        "commits": 2,
+        "lines_added": 90,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-12-08",
+        "commits": 2,
+        "lines_added": 63,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2025-12-15",
+        "commits": 9,
+        "lines_added": 4321,
+        "lines_removed": 3603
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2026-03-02",
+        "commits": 9,
+        "lines_added": 5068,
+        "lines_removed": 3697
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2026-03-16",
+        "commits": 3,
+        "lines_added": 530,
+        "lines_removed": 73
+      },
+      {
+        "contributor_id": "ddio",
+        "week_start": "2026-04-27",
+        "commits": 2,
+        "lines_added": 270,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "TedLin1993",
+        "week_start": "2025-05-12",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "Lee-W",
+        "week_start": "2024-09-09",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "tan-i-ham",
+        "week_start": "2024-01-08",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "tim5ji6",
+        "week_start": "2020-11-09",
+        "commits": 1,
+        "lines_added": 88,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "tim5ji6",
+        "week_start": "2021-02-15",
+        "commits": 1,
+        "lines_added": 180,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "chunyenHuang",
+        "week_start": "2020-04-20",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2019-10-28",
+        "commits": 4,
+        "lines_added": 53,
+        "lines_removed": 23
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2020-01-06",
+        "commits": 1,
+        "lines_added": 15,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "eala",
+        "week_start": "2020-01-06",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "yellowsoar",
+        "week_start": "2019-06-10",
+        "commits": 2,
+        "lines_added": 552,
+        "lines_removed": 1
+      }
+    ],
+    "total_weeks": 93,
+    "total_unique_contributors": 9,
+    "new_contributor_rate_per_month": 0.09
+  },
+  "issue_analytics": {
+    "repo_full_name": "g0v/tw-rental-house-data",
+    "issues": [
+      {
+        "number": 1,
+        "title": "\u91cd\u8907\u623f\u5c4b\u5075\u6e2c",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-06-07T02:19:53+00:00",
+        "closed_at": null,
+        "updated_at": "2018-07-29T06:47:55+00:00",
+        "comment_count": 2,
+        "labels": [
+          "data-correctness"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 2,
+        "title": "TOC in /about-data-set is not rendered when page load",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-06-07T02:24:14+00:00",
+        "closed_at": null,
+        "updated_at": "2024-01-11T06:00:29+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug",
+          "good first issue"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 3,
+        "title": "All <a> to internal anchor should not use `target=_blank`",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-06-07T02:26:55+00:00",
+        "closed_at": null,
+        "updated_at": "2018-06-07T02:26:55+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug",
+          "good first issue"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 4,
+        "title": "Migrate backend to Django",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-12T13:13:29+00:00",
+        "closed_at": "2018-07-20T08:25:51+00:00",
+        "updated_at": "2018-08-20T06:35:29+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 7.8
+      },
+      {
+        "number": 5,
+        "title": "Automate data export process",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-12T13:20:51+00:00",
+        "closed_at": "2018-08-23T08:22:13+00:00",
+        "updated_at": "2018-08-23T08:22:13+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 41.79
+      },
+      {
+        "number": 6,
+        "title": "Setup crawler alarm",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-12T13:25:08+00:00",
+        "closed_at": "2018-08-24T16:30:19+00:00",
+        "updated_at": "2018-08-24T16:39:49+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 43.13
+      },
+      {
+        "number": 7,
+        "title": "Author coding",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-12T13:30:36+00:00",
+        "closed_at": "2018-07-28T15:36:28+00:00",
+        "updated_at": "2018-07-28T15:36:29+00:00",
+        "comment_count": 1,
+        "labels": [
+          "new field"
+        ],
+        "time_to_close_days": 16.09
+      },
+      {
+        "number": 8,
+        "title": "Rough GPS",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-12T13:33:11+00:00",
+        "closed_at": "2018-08-28T04:30:13+00:00",
+        "updated_at": "2018-08-28T04:31:27+00:00",
+        "comment_count": 0,
+        "labels": [
+          "new field"
+        ],
+        "time_to_close_days": 46.62
+      },
+      {
+        "number": 9,
+        "title": "n_day_deal could be wrong is the house appear in search result after getting deal",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-20T06:27:14+00:00",
+        "closed_at": "2018-07-20T06:52:33+00:00",
+        "updated_at": "2018-07-20T06:52:33+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.02
+      },
+      {
+        "number": 10,
+        "title": "House.updated \u5305\u542b\u4e86\u591a\u9918\u4e00\u500b\uff0c\u800c\u4e14\u4e92\u76f8\u885d\u7a81\u7684\u610f\u7fa9",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-24T03:36:03+00:00",
+        "closed_at": "2018-07-30T06:06:42+00:00",
+        "updated_at": "2018-07-30T06:06:43+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 6.1
+      },
+      {
+        "number": 11,
+        "title": "\u6709\u6642\u5019\u6574\u68df\u7269\u4ef6\u7684\u6a13\u5c64\u6703\u986f\u793a\u70ba 99 \u6a13...",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-26T15:30:52+00:00",
+        "closed_at": "2018-08-28T15:34:49+00:00",
+        "updated_at": "2018-08-28T15:34:49+00:00",
+        "comment_count": 2,
+        "labels": [
+          "data-591"
+        ],
+        "time_to_close_days": 33.0
+      },
+      {
+        "number": 12,
+        "title": "\u8b93\u8cc7\u6599\u532f\u51fa\u652f\u63f4 json + T/F",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-30T06:26:47+00:00",
+        "closed_at": "2018-07-31T10:42:24+00:00",
+        "updated_at": "2018-07-31T10:42:25+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 1.18
+      },
+      {
+        "number": 13,
+        "title": "\u8b93\u7db2\u7ad9\u986f\u793a\u6b77\u53f2\u8cc7\u6599\u7248\u672c",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-07-31T07:24:26+00:00",
+        "closed_at": "2018-07-31T10:43:01+00:00",
+        "updated_at": "2018-07-31T10:43:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.14
+      },
+      {
+        "number": 14,
+        "title": "\u95dc\u6389\u7684\u623f\u5b50\u6709\u53ef\u80fd\u6703\u958b\u56de\u4f86...",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-08-03T14:40:29+00:00",
+        "closed_at": null,
+        "updated_at": "2018-09-03T14:30:42+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug",
+          "data-591"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 15,
+        "title": "\u8cc7\u6599\u5eab\u88e1\u7684\u6210\u4ea4\u6642\u9593\u662f\u932f\u7684",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-08-03T14:47:20+00:00",
+        "closed_at": "2018-08-12T14:02:28+00:00",
+        "updated_at": "2018-08-12T14:02:28+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug",
+          "data-591"
+        ],
+        "time_to_close_days": 8.97
+      },
+      {
+        "number": 16,
+        "title": "\u7f3a\u5c11\u722c\u87f2\u8cc7\u6599\u5eab\u7684\u7bc4\u4f8b\u8a2d\u5b9a\u6a94",
+        "state": "closed",
+        "author_login": "AJua",
+        "closed_by_login": "ddio",
+        "created_at": "2018-08-04T03:10:55+00:00",
+        "closed_at": "2018-08-04T03:50:11+00:00",
+        "updated_at": "2018-08-04T03:50:11+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.03
+      },
+      {
+        "number": 17,
+        "title": "\u532f\u51fa\u66f4\u6709\u4ee3\u8868\u6027\u7684\u79df\u91d1",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-08-17T14:36:14+00:00",
+        "closed_at": null,
+        "updated_at": "2018-08-17T14:36:14+00:00",
+        "comment_count": 0,
+        "labels": [
+          "data-correctness"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 18,
+        "title": "\u652f\u63f4\u5404\u8cc7\u6599\u5eab\u7684 JSON Field",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-08-28T03:59:53+00:00",
+        "closed_at": null,
+        "updated_at": "2018-08-28T03:59:53+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 19,
+        "title": "GPS get 404 somtimes",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-08-29T09:28:28+00:00",
+        "closed_at": "2018-08-29T09:30:32+00:00",
+        "updated_at": "2018-08-29T09:30:32+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 20,
+        "title": "591 \u6524\u4f4d\u7269\u4ef6\u7684\u7e23\u5e02\u884c\u653f\u5340\u7d50\u69cb\u548c\u5176\u4ed6\u7269\u4ef6\u4e0d\u540c",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-09-03T02:01:21+00:00",
+        "closed_at": "2018-09-03T02:02:49+00:00",
+        "updated_at": "2018-09-03T02:02:49+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 21,
+        "title": "591 \u51fa\u73fe\u65b0\u7684\u722c\u87f2\u6df7\u6dc6\u5668",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-09-07T08:02:31+00:00",
+        "closed_at": "2019-12-09T11:52:03+00:00",
+        "updated_at": "2019-12-09T11:52:03+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 458.16
+      },
+      {
+        "number": 22,
+        "title": "Unknown property: __UNKNOWN__/TopRegionType in house 6782510",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-09-11T01:40:40+00:00",
+        "closed_at": null,
+        "updated_at": "2018-09-11T01:40:40+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 23,
+        "title": "\u7121\u6cd5\u89e3\u58d3\u7e2e 2018Q3 / 201809 \u7684\u4efb\u4f55\u6a94\u6848",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-10-15T11:09:25+00:00",
+        "closed_at": "2018-10-28T15:03:47+00:00",
+        "updated_at": "2018-10-28T15:03:47+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 13.16
+      },
+      {
+        "number": 24,
+        "title": "Excel \u6253\u958b csv \u6703\u662f\u4e82\u78bc",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2018-10-18T03:19:34+00:00",
+        "closed_at": null,
+        "updated_at": "2018-10-18T03:24:01+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 25,
+        "title": "\u6b04\u4f4d\"\u6700\u5f8c\u51fa\u79df\u6642\u9593\"\u7591\u4f3c\u6709\u8aa4",
+        "state": "open",
+        "author_login": "swilly0906",
+        "closed_by_login": null,
+        "created_at": "2018-10-18T16:06:49+00:00",
+        "closed_at": null,
+        "updated_at": "2018-10-18T16:11:27+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 26,
+        "title": "\u722c\u87f2\u722c\u8d85\u904e 24 \u5c0f\u6642\u5f8c\uff0c\u6703\u767c\u751f\u9748\u7570\u4e8b\u4ef6",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2018-12-09T07:05:28+00:00",
+        "closed_at": "2025-04-25T06:49:47+00:00",
+        "updated_at": "2025-04-25T06:49:47+00:00",
+        "comment_count": 4,
+        "labels": [],
+        "time_to_close_days": 2328.99
+      },
+      {
+        "number": 27,
+        "title": "591 API \u66f4\u65b0\u5566\uff5e\uff5e",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2019-03-17T15:10:24+00:00",
+        "closed_at": "2019-03-18T03:40:19+00:00",
+        "updated_at": "2019-03-18T03:40:19+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.52
+      },
+      {
+        "number": 28,
+        "title": "\u4e86\u89e3\u5c0d\u8cc7\u6599\u6709\u8208\u8da3\u7684\u662f\u90a3\u985e\u4eba",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2019-03-18T03:56:04+00:00",
+        "closed_at": null,
+        "updated_at": "2019-03-18T03:56:04+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 29,
+        "title": "\u65b0\u589e\u8cc7\u6599\u4f86\u6e90-\u81fa\u5317\u5e02\u653f\u5e9c\u5b89\u5fc3\u6a02\u79df\u7db2",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2019-03-21T02:16:27+00:00",
+        "closed_at": null,
+        "updated_at": "2019-03-21T02:16:27+00:00",
+        "comment_count": 0,
+        "labels": [
+          "data-source"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 30,
+        "title": "591 \u79df\u5c4b\u7db2\u8a73\u7d30\u8cc7\u6599\u66f4\u65b0\u5931\u6557",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2019-05-10T11:48:05+00:00",
+        "closed_at": "2019-05-10T16:01:32+00:00",
+        "updated_at": "2019-05-10T16:01:32+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.18
+      },
+      {
+        "number": 31,
+        "title": "\u66f4\u65b9\u4fbf\u7d44\u88dd\u7684\u722c\u87f2",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2019-06-09T06:10:54+00:00",
+        "closed_at": "2021-10-27T16:22:08+00:00",
+        "updated_at": "2021-10-27T16:22:08+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 871.42
+      },
+      {
+        "number": 33,
+        "title": "\u5b8c\u5584\u958b\u767c\u74b0\u5883\u7684\u6587\u4ef6",
+        "state": "open",
+        "author_login": "yellowsoar",
+        "closed_by_login": null,
+        "created_at": "2019-06-18T04:35:14+00:00",
+        "closed_at": null,
+        "updated_at": "2021-07-26T15:51:54+00:00",
+        "comment_count": 11,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 35,
+        "title": "\u6e1b\u5c11\u4e0d\u5fc5\u8981\u7684\u8cc7\u6599\u5eab\u7a7a\u9593\u6d88\u8017",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2019-07-01T10:57:02+00:00",
+        "closed_at": null,
+        "updated_at": "2022-07-25T09:01:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 40,
+        "title": "\u65b0\u589e\u8cc7\u6599\u4f86\u6e90-My Room Abroad",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2019-10-08T16:45:40+00:00",
+        "closed_at": null,
+        "updated_at": "2019-10-08T16:45:40+00:00",
+        "comment_count": 0,
+        "labels": [
+          "data-source"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 47,
+        "title": "\u5168\u81ea\u52d5\u5316\u7684\u532f\u51fa\u7a0b\u5f0f",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2019-12-09T11:53:46+00:00",
+        "closed_at": null,
+        "updated_at": "2022-07-25T09:01:12+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 87,
+        "title": "\u652f\u63f4\u65b0\u7684 591 \u79df\u91d1\u683c\u5f0f",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2021-09-27T13:53:44+00:00",
+        "closed_at": "2022-07-25T08:07:07+00:00",
+        "updated_at": "2022-07-25T08:07:07+00:00",
+        "comment_count": 4,
+        "labels": [],
+        "time_to_close_days": 300.76
+      },
+      {
+        "number": 89,
+        "title": "\u652f\u63f4 591 \u7684\u65b0\u7db2\u9801\u683c\u5f0f",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2021-10-24T02:00:49+00:00",
+        "closed_at": "2021-10-27T16:23:39+00:00",
+        "updated_at": "2021-10-27T16:23:39+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 3.6
+      },
+      {
+        "number": 92,
+        "title": "\u5efa\u7acb\u57fa\u672c\u7684\u5404\u7a2e\u7269\u4ef6\u7684\u81ea\u52d5\u5316\u6e2c\u8a66",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2021-10-25T15:22:28+00:00",
+        "closed_at": null,
+        "updated_at": "2021-10-25T15:22:28+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 115,
+        "title": "\u5347\u7d1a nuxt & \u7c21\u5316\u7db2\u9801\u5efa\u7f6e\u6b65\u9a5f",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2022-07-25T08:04:03+00:00",
+        "closed_at": "2022-07-26T07:15:29+00:00",
+        "updated_at": "2022-07-26T07:15:29+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.97
+      },
+      {
+        "number": 116,
+        "title": "\u5347\u7d1a postgres",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2022-07-25T09:02:52+00:00",
+        "closed_at": "2024-04-04T08:04:48+00:00",
+        "updated_at": "2024-04-04T08:04:48+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 618.96
+      },
+      {
+        "number": 117,
+        "title": "\u66f4\u7701\u9322\u7684 AWS \u4f7f\u7528\u65b9\u5f0f",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2022-07-25T09:04:41+00:00",
+        "closed_at": null,
+        "updated_at": "2022-07-25T09:04:41+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 129,
+        "title": "\u78ba\u8a8d 2021-06 ~ 2021-09 \u8cc7\u6599\u96c6\u7684\u4ee3\u8868\u6027",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2022-09-11T14:34:03+00:00",
+        "closed_at": "2025-04-25T03:51:26+00:00",
+        "updated_at": "2025-04-25T03:51:27+00:00",
+        "comment_count": 2,
+        "labels": [
+          "data-591"
+        ],
+        "time_to_close_days": 956.55
+      },
+      {
+        "number": 137,
+        "title": "\u5b9a\u671f\u532f\u51fa\u8cc7\u6599\u7684\u90e8\u4efd\u6b04\u4f4d\u6578\u503c\u932f\u8aa4",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2022-09-28T08:18:58+00:00",
+        "closed_at": "2024-04-04T08:04:39+00:00",
+        "updated_at": "2024-04-04T08:04:39+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 553.99
+      },
+      {
+        "number": 165,
+        "title": "\u8cc7\u6599\u76f8\u95dc\u7591\u554f",
+        "state": "closed",
+        "author_login": "sushi3085",
+        "closed_by_login": "sushi3085",
+        "created_at": "2023-02-12T06:56:45+00:00",
+        "closed_at": "2023-02-12T15:05:20+00:00",
+        "updated_at": "2023-02-12T15:05:21+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 0.34
+      },
+      {
+        "number": 166,
+        "title": "\u5f9e\u55ae\u6708\u8cc7\u6599\uff0c\u5408\u4f75\u51fa\u6bcf\u5b63\u3001\u6bcf\u5e74\u8cc7\u6599",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2023-07-12T15:59:42+00:00",
+        "closed_at": "2024-04-04T08:04:16+00:00",
+        "updated_at": "2024-04-04T08:04:16+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 266.67
+      },
+      {
+        "number": 172,
+        "title": "[Doc] Improvement of UI's source code link",
+        "state": "closed",
+        "author_login": "tan-i-ham",
+        "closed_by_login": "ddio",
+        "created_at": "2024-01-11T05:51:29+00:00",
+        "closed_at": "2024-01-15T02:40:10+00:00",
+        "updated_at": "2024-01-15T02:40:10+00:00",
+        "comment_count": 2,
+        "labels": [
+          "good first issue"
+        ],
+        "time_to_close_days": 3.87
+      },
+      {
+        "number": 176,
+        "title": "591 \u8cc7\u6599\u754c\u9762\u8abf\u6574\uff0c\u5c0e\u81f4\u722c\u87f2\u7121\u6cd5\u57f7\u884c",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2024-08-29T09:00:59+00:00",
+        "closed_at": "2024-09-23T13:43:48+00:00",
+        "updated_at": "2024-09-23T13:43:48+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 25.2
+      },
+      {
+        "number": 181,
+        "title": "2024.09.23 \u65b0\u7248 HTML \u6df7\u6dc6\u5668",
+        "state": "closed",
+        "author_login": "ddio",
+        "closed_by_login": "ddio",
+        "created_at": "2024-09-23T13:46:26+00:00",
+        "closed_at": "2024-09-23T15:05:46+00:00",
+        "updated_at": "2024-09-23T15:05:46+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.06
+      },
+      {
+        "number": 190,
+        "title": "List crawler w/ headless browser `SP: 2`",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2025-04-25T03:54:34+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-25T04:08:12+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 191,
+        "title": "Upgrade Django task for lastest TWRH crawler `SP: 5`",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2025-04-25T03:59:39+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-25T04:08:13+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 192,
+        "title": "Job logger and notified `SP: 2`",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2025-04-25T04:02:29+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-25T04:08:13+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 193,
+        "title": "Reduce computation cost `SP: 2`",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2025-04-25T04:04:16+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-25T04:08:13+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 194,
+        "title": "Deploy new crawler `SP: 2`",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2025-04-25T04:05:19+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-25T04:08:14+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 195,
+        "title": "Support parsing address field `SP:3`",
+        "state": "open",
+        "author_login": "ddio",
+        "closed_by_login": null,
+        "created_at": "2025-04-25T04:06:09+00:00",
+        "closed_at": null,
+        "updated_at": "2025-04-25T04:08:14+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 54,
+    "open_issues": 23,
+    "closed_issues": 31,
+    "avg_comments_per_issue": 0.85,
+    "median_time_to_close_days": 8.97,
+    "unique_openers": 6,
+    "unique_closers": 2,
+    "top_openers": {
+      "ddio": 49,
+      "AJua": 1,
+      "swilly0906": 1,
+      "yellowsoar": 1,
+      "sushi3085": 1,
+      "tan-i-ham": 1
+    },
+    "top_closers": {
+      "ddio": 30,
+      "sushi3085": 1
+    }
+  }
+}

@@ -1,0 +1,2284 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforberlin/we-count",
+    "name": "we-count",
+    "description": "data and documentation for the \"we count\" project with ADFC",
+    "num_developers": 4,
+    "total_commits": 538,
+    "languages": {
+      "Python": 208533,
+      "Shell": 3496,
+      "CSS": 3159,
+      "HTML": 2972,
+      "JavaScript": 1573
+    },
+    "primary_language": "Python",
+    "first_commit_date": "2021-11-30T07:44:00+00:00",
+    "last_commit_date": "2026-05-22T17:06:56+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 37,
+    "stars": 5,
+    "watchers": 3,
+    "forks": 2,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": false,
+    "ci_cd_workflows": [],
+    "deployments_count": 0,
+    "created_at": "2021-11-30T07:43:59+00:00",
+    "updated_at": "2026-05-22T17:07:04+00:00",
+    "pushed_at": "2026-05-22T17:07:00+00:00",
+    "size_kb": 21189
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforberlin/we-count",
+      "login": "elklaassen",
+      "name": "elklaassen",
+      "num_commits": 261,
+      "additions": 36382,
+      "deletions": 46950,
+      "avg_additions_per_commit": 139.39,
+      "avg_deletions_per_commit": 179.89,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforberlin/we-count",
+      "login": "behrisch",
+      "name": "Michael Behrisch",
+      "num_commits": 224,
+      "additions": 38928,
+      "deletions": 39311,
+      "avg_additions_per_commit": 173.79,
+      "avg_deletions_per_commit": 175.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforberlin/we-count",
+      "login": "behrisch",
+      "name": "Michael Behrisch",
+      "num_commits": 1,
+      "additions": 0,
+      "deletions": 0,
+      "avg_additions_per_commit": 0.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforberlin/we-count",
+      "login": "elklaassen",
+      "name": "elklaassen",
+      "num_commits": 11,
+      "additions": 23653,
+      "deletions": 4,
+      "avg_additions_per_commit": 2150.27,
+      "avg_deletions_per_commit": 0.36,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforberlin/we-count",
+      "login": "kshitij10496",
+      "name": "Kshitij Saraogi",
+      "num_commits": 3,
+      "additions": 39,
+      "deletions": 1,
+      "avg_additions_per_commit": 13.0,
+      "avg_deletions_per_commit": 0.33,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforberlin/we-count",
+    "pr_count_total": 1,
+    "pr_count_merged": 1,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 0,
+    "prs": [
+      {
+        "number": 3,
+        "title": "Add instructions for local development",
+        "state": "closed",
+        "author_login": "kshitij10496",
+        "created_at": "2025-01-14T10:17:19+00:00",
+        "merged_at": "2025-01-16T15:58:40+00:00",
+        "closed_at": "2025-01-16T15:58:40+00:00"
+      }
+    ],
+    "tag_count": 1,
+    "tags": [
+      {
+        "name": "1.0.0",
+        "commit_sha": "b44a495ed2fa09b898f40a9f6588447dfd3acdd5",
+        "date": "2025-12-25T10:32:17+00:00"
+      }
+    ],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforberlin/we-count",
+    "weekly_commits": [
+      {
+        "week_start": "2024-09-23",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-11-18",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-01-06",
+        "commits": 23
+      },
+      {
+        "week_start": "2025-01-13",
+        "commits": 17
+      },
+      {
+        "week_start": "2025-01-20",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-01-27",
+        "commits": 19
+      },
+      {
+        "week_start": "2025-02-03",
+        "commits": 8
+      },
+      {
+        "week_start": "2025-02-17",
+        "commits": 8
+      },
+      {
+        "week_start": "2025-03-03",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-03-10",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-03-17",
+        "commits": 9
+      },
+      {
+        "week_start": "2025-03-24",
+        "commits": 17
+      },
+      {
+        "week_start": "2025-03-31",
+        "commits": 10
+      },
+      {
+        "week_start": "2025-04-07",
+        "commits": 14
+      },
+      {
+        "week_start": "2025-04-14",
+        "commits": 10
+      },
+      {
+        "week_start": "2025-04-21",
+        "commits": 13
+      },
+      {
+        "week_start": "2025-05-12",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-05-19",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-05-26",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-06-02",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-06-23",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-07-14",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-07-21",
+        "commits": 11
+      },
+      {
+        "week_start": "2025-09-08",
+        "commits": 7
+      },
+      {
+        "week_start": "2025-09-15",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-09-22",
+        "commits": 13
+      },
+      {
+        "week_start": "2025-09-29",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-10-06",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-10-20",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-11-03",
+        "commits": 9
+      },
+      {
+        "week_start": "2025-11-10",
+        "commits": 16
+      },
+      {
+        "week_start": "2025-11-17",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-11-24",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-12-01",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-12-22",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-12-29",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-01-05",
+        "commits": 5
+      },
+      {
+        "week_start": "2026-01-12",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-01-19",
+        "commits": 10
+      },
+      {
+        "week_start": "2026-01-26",
+        "commits": 25
+      },
+      {
+        "week_start": "2026-02-02",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-02-16",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-02-23",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-03-02",
+        "commits": 58
+      },
+      {
+        "week_start": "2026-03-09",
+        "commits": 6
+      },
+      {
+        "week_start": "2026-03-16",
+        "commits": 10
+      },
+      {
+        "week_start": "2026-03-23",
+        "commits": 21
+      },
+      {
+        "week_start": "2026-03-30",
+        "commits": 6
+      },
+      {
+        "week_start": "2026-04-06",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-04-13",
+        "commits": 6
+      },
+      {
+        "week_start": "2026-04-20",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-05-18",
+        "commits": 6
+      }
+    ],
+    "change_request_acceptance_ratio": 1.0,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 500,
+      "pull_requests": 1,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 5
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 2,
+    "burstiness_cv": 1.09,
+    "burstiness_mean": 8.44,
+    "burstiness_std": 9.16,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 25,
+        "days_to_close": 122.1
+      },
+      {
+        "issue_number": 7,
+        "days_to_close": 43.7
+      }
+    ],
+    "median_defect_resolution_days": 82.9,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 1275.9,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 37,
+    "time_to_first_response_prs_sample_size": 1,
+    "readme_last_updated": "2026-03-20T18:14:51+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 0.6667,
+    "stale_issue_count": 4,
+    "open_issue_count": 6,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": 10000.0,
+    "hhi_no_bots": 5822.2,
+    "hhi_known_orgs_only": null,
+    "unknown_org_contributor_count": 5,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 1,
+      "unknown": 4
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-05-23T15:30:00.424761+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "codeforberlin/we-count",
+    "weekly_snapshots": [
+      {
+        "week_start": "2021-11-29",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 2,
+        "cumulative_commits": 4,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2021-12-13",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 7,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2022-01-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 8,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2022-02-07",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 11,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2022-02-14",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 12,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2022-12-19",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 13,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-01-02",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 16,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-01-09",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 18,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-01-30",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 20,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-02-06",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 22,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-03-06",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 24,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-11-20",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 37,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-11-27",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 41,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-12-11",
+        "total_commits": 17,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 58,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-12-18",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 61,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-01",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 67,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-08",
+        "total_commits": 12,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 79,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-15",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 88,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-22",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 91,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-01-29",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 94,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-02-05",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 96,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-02-19",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 97,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-07-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 99,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-09-23",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 100,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-18",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 104,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-01-06",
+        "total_commits": 23,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 127,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-01-13",
+        "total_commits": 17,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 144,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-01-20",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 151,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-01-27",
+        "total_commits": 19,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 170,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-02-03",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 178,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-02-17",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 186,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-03",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 189,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-10",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 195,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-17",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 204,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-24",
+        "total_commits": 17,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 221,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-03-31",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 231,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-04-07",
+        "total_commits": 14,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 245,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-04-14",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 255,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-04-21",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 268,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-05-12",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 274,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 280,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-05-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 281,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 283,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-06-23",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 284,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-14",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 290,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-21",
+        "total_commits": 11,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 301,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-08",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 308,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-15",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 309,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-22",
+        "total_commits": 13,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 322,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-09-29",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 325,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 326,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 327,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-11-03",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 336,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 16,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 352,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-11-17",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 354,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-11-24",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 356,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 358,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-12-22",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 364,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-12-29",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 365,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-01-05",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 370,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 373,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-01-19",
+        "total_commits": 10,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 383,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 25,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 408,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-02-02",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 411,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-02-16",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 415,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-02-23",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 419,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 58,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 477,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-03-09",
+        "total_commits": 6,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 483,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-03-16",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 493,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-03-23",
+        "total_commits": 21,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 514,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-03-30",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 520,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 522,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-04-13",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 528,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-04-20",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 532,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-05-18",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 538,
+        "cumulative_contributors": 4
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforberlin/we-count",
+        "contributor_id": "elklaassen",
+        "login": "elklaassen",
+        "name": "elklaassen",
+        "email": "egbert.l.klaassen@gmail.com",
+        "first_commit_date": "2025-01-07T08:39:16+00:00",
+        "last_commit_date": "2026-05-22T17:06:56+00:00",
+        "duration_days": 500,
+        "total_commits": 272,
+        "active_weeks": 45,
+        "total_weeks_span": 71,
+        "activity_ratio": 0.6338,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 6.04
+      },
+      {
+        "repo_full_name": "codeforberlin/we-count",
+        "contributor_id": "behrisch",
+        "login": "behrisch",
+        "name": "Michael Behrisch",
+        "email": "oss@behrisch.de",
+        "first_commit_date": "2021-11-30T07:44:00+00:00",
+        "last_commit_date": "2026-04-26T06:37:33+00:00",
+        "duration_days": 1607,
+        "total_commits": 252,
+        "active_weeks": 42,
+        "total_weeks_span": 229,
+        "activity_ratio": 0.1834,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 6.0
+      },
+      {
+        "repo_full_name": "codeforberlin/we-count",
+        "contributor_id": "PaulineHartwig",
+        "login": "PaulineHartwig",
+        "name": "PaulineHartwig",
+        "email": "80676652+PaulineHartwig@users.noreply.github.com",
+        "first_commit_date": "2021-11-30T10:51:01+00:00",
+        "last_commit_date": "2022-02-20T15:28:07+00:00",
+        "duration_days": 82,
+        "total_commits": 11,
+        "active_weeks": 5,
+        "total_weeks_span": 11,
+        "activity_ratio": 0.4545,
+        "status": "departed",
+        "departed_weeks_ago": 221,
+        "avg_commits_per_active_week": 2.2
+      },
+      {
+        "repo_full_name": "codeforberlin/we-count",
+        "contributor_id": "kshitij10496",
+        "login": "kshitij10496",
+        "name": "Kshitij Saraogi",
+        "email": "kshitij.saraogi@gmail.com",
+        "first_commit_date": "2025-01-16T15:58:39+00:00",
+        "last_commit_date": "2025-01-16T15:58:39+00:00",
+        "duration_days": 0,
+        "total_commits": 3,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 70,
+        "avg_commits_per_active_week": 3.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-01-06",
+        "commits": 19,
+        "lines_added": 24368,
+        "lines_removed": 696
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-01-13",
+        "commits": 4,
+        "lines_added": 228,
+        "lines_removed": 128
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-01-20",
+        "commits": 2,
+        "lines_added": 235,
+        "lines_removed": 135
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-01-27",
+        "commits": 13,
+        "lines_added": 1201,
+        "lines_removed": 23614
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-02-03",
+        "commits": 8,
+        "lines_added": 401,
+        "lines_removed": 176
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-02-17",
+        "commits": 8,
+        "lines_added": 225,
+        "lines_removed": 165
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-03-03",
+        "commits": 2,
+        "lines_added": 303,
+        "lines_removed": 87
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-03-10",
+        "commits": 6,
+        "lines_added": 161,
+        "lines_removed": 104
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-03-17",
+        "commits": 9,
+        "lines_added": 309,
+        "lines_removed": 185
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-03-24",
+        "commits": 17,
+        "lines_added": 247,
+        "lines_removed": 205
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-03-31",
+        "commits": 10,
+        "lines_added": 311,
+        "lines_removed": 226
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-04-07",
+        "commits": 13,
+        "lines_added": 710,
+        "lines_removed": 674
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-04-14",
+        "commits": 10,
+        "lines_added": 148,
+        "lines_removed": 145
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-04-21",
+        "commits": 13,
+        "lines_added": 710,
+        "lines_removed": 541
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-05-12",
+        "commits": 6,
+        "lines_added": 167,
+        "lines_removed": 17380
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-05-19",
+        "commits": 6,
+        "lines_added": 26905,
+        "lines_removed": 109
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-05-26",
+        "commits": 1,
+        "lines_added": 66,
+        "lines_removed": 34
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-06-02",
+        "commits": 2,
+        "lines_added": 107,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-07-21",
+        "commits": 4,
+        "lines_added": 22,
+        "lines_removed": 41
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-09-08",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-09-22",
+        "commits": 8,
+        "lines_added": 120,
+        "lines_removed": 73
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-09-29",
+        "commits": 1,
+        "lines_added": 51,
+        "lines_removed": 78
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-10-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-10-20",
+        "commits": 1,
+        "lines_added": 254,
+        "lines_removed": 145
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-11-03",
+        "commits": 9,
+        "lines_added": 140,
+        "lines_removed": 112
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-11-10",
+        "commits": 16,
+        "lines_added": 187,
+        "lines_removed": 163
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-11-17",
+        "commits": 2,
+        "lines_added": 13,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-11-24",
+        "commits": 2,
+        "lines_added": 230,
+        "lines_removed": 151
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-12-01",
+        "commits": 2,
+        "lines_added": 14,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2025-12-29",
+        "commits": 1,
+        "lines_added": 358,
+        "lines_removed": 439
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-01-05",
+        "commits": 3,
+        "lines_added": 231,
+        "lines_removed": 130
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-01-12",
+        "commits": 3,
+        "lines_added": 75,
+        "lines_removed": 58
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-01-19",
+        "commits": 2,
+        "lines_added": 37,
+        "lines_removed": 38
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-01-26",
+        "commits": 25,
+        "lines_added": 404,
+        "lines_removed": 249
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-02-02",
+        "commits": 3,
+        "lines_added": 19,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-02-16",
+        "commits": 4,
+        "lines_added": 205,
+        "lines_removed": 75
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-02-23",
+        "commits": 4,
+        "lines_added": 59,
+        "lines_removed": 32
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-03-02",
+        "commits": 2,
+        "lines_added": 61,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-03-09",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-03-23",
+        "commits": 6,
+        "lines_added": 255,
+        "lines_removed": 210
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-03-30",
+        "commits": 6,
+        "lines_added": 184,
+        "lines_removed": 87
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-04-06",
+        "commits": 2,
+        "lines_added": 18,
+        "lines_removed": 24
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-04-13",
+        "commits": 6,
+        "lines_added": 28,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-04-20",
+        "commits": 2,
+        "lines_added": 13,
+        "lines_removed": 21
+      },
+      {
+        "contributor_id": "elklaassen",
+        "week_start": "2026-05-18",
+        "commits": 6,
+        "lines_added": 239,
+        "lines_removed": 76
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2021-11-29",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2022-12-19",
+        "commits": 1,
+        "lines_added": 902,
+        "lines_removed": 1729
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-01-02",
+        "commits": 3,
+        "lines_added": 163,
+        "lines_removed": 24
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-01-09",
+        "commits": 2,
+        "lines_added": 127,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-01-30",
+        "commits": 2,
+        "lines_added": 115,
+        "lines_removed": 55
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-02-06",
+        "commits": 2,
+        "lines_added": 167,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-03-06",
+        "commits": 2,
+        "lines_added": 37,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-11-20",
+        "commits": 13,
+        "lines_added": 268,
+        "lines_removed": 236
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-11-27",
+        "commits": 4,
+        "lines_added": 71,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-12-11",
+        "commits": 17,
+        "lines_added": 780,
+        "lines_removed": 180
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2023-12-18",
+        "commits": 3,
+        "lines_added": 51,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-01-01",
+        "commits": 6,
+        "lines_added": 176,
+        "lines_removed": 50
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-01-08",
+        "commits": 12,
+        "lines_added": 413,
+        "lines_removed": 160
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-01-15",
+        "commits": 9,
+        "lines_added": 18625,
+        "lines_removed": 1092
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-01-22",
+        "commits": 3,
+        "lines_added": 29,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-01-29",
+        "commits": 3,
+        "lines_added": 15,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-02-05",
+        "commits": 2,
+        "lines_added": 11,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-02-19",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-07-15",
+        "commits": 2,
+        "lines_added": 5,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-09-23",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2024-11-18",
+        "commits": 4,
+        "lines_added": 209,
+        "lines_removed": 92
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-01-06",
+        "commits": 4,
+        "lines_added": 732,
+        "lines_removed": 695
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-01-13",
+        "commits": 10,
+        "lines_added": 253,
+        "lines_removed": 252
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-01-20",
+        "commits": 5,
+        "lines_added": 120,
+        "lines_removed": 75
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-01-27",
+        "commits": 6,
+        "lines_added": 19,
+        "lines_removed": 22976
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-03-03",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-04-07",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-06-23",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-07-14",
+        "commits": 6,
+        "lines_added": 1033,
+        "lines_removed": 1002
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-07-21",
+        "commits": 7,
+        "lines_added": 50,
+        "lines_removed": 41
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-09-08",
+        "commits": 6,
+        "lines_added": 52,
+        "lines_removed": 72
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-09-15",
+        "commits": 1,
+        "lines_added": 12413,
+        "lines_removed": 9917
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-09-22",
+        "commits": 5,
+        "lines_added": 36,
+        "lines_removed": 17
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-09-29",
+        "commits": 2,
+        "lines_added": 11,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2025-12-22",
+        "commits": 6,
+        "lines_added": 541,
+        "lines_removed": 746
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2026-01-05",
+        "commits": 2,
+        "lines_added": 3,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2026-01-19",
+        "commits": 8,
+        "lines_added": 13,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2026-03-02",
+        "commits": 56,
+        "lines_added": 2252,
+        "lines_removed": 1597
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2026-03-09",
+        "commits": 5,
+        "lines_added": 33,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2026-03-16",
+        "commits": 10,
+        "lines_added": 839,
+        "lines_removed": 102
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2026-03-23",
+        "commits": 15,
+        "lines_added": 158,
+        "lines_removed": 103
+      },
+      {
+        "contributor_id": "behrisch",
+        "week_start": "2026-04-20",
+        "commits": 2,
+        "lines_added": 9,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "kshitij10496",
+        "week_start": "2025-01-13",
+        "commits": 3,
+        "lines_added": 39,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "PaulineHartwig",
+        "week_start": "2021-11-29",
+        "commits": 3,
+        "lines_added": 11985,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "PaulineHartwig",
+        "week_start": "2021-12-13",
+        "commits": 3,
+        "lines_added": 106512,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "PaulineHartwig",
+        "week_start": "2022-01-17",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "PaulineHartwig",
+        "week_start": "2022-02-07",
+        "commits": 3,
+        "lines_added": 3116,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "PaulineHartwig",
+        "week_start": "2022-02-14",
+        "commits": 1,
+        "lines_added": 974,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 75,
+    "total_unique_contributors": 4,
+    "new_contributor_rate_per_month": 0.07
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforberlin/we-count",
+    "issues": [
+      {
+        "number": 1,
+        "title": "Stra\u00dfensegmente je nach Anteil von Fu\u00dfg\u00e4ngern und Fahrr\u00e4dern gr\u00fcn f\u00e4rben",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2023-02-03T17:41:19+00:00",
+        "closed_at": "2025-02-21T19:43:46+00:00",
+        "updated_at": "2025-02-21T19:43:46+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 749.09
+      },
+      {
+        "number": 2,
+        "title": "Geschwindigkeiten f\u00fcr 30 km/h Segmente anzeigen",
+        "state": "open",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": null,
+        "created_at": "2023-03-24T19:32:11+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-01T09:44:24+00:00",
+        "comment_count": 4,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 4,
+        "title": "Checkbox f\u00fcr Parameter Uptime erg\u00e4nzen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-01-16T16:07:55+00:00",
+        "closed_at": "2025-02-02T14:48:18+00:00",
+        "updated_at": "2025-02-21T19:34:33+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 16.94
+      },
+      {
+        "number": 5,
+        "title": "Code auf osmnx 2.0 migrieren",
+        "state": "open",
+        "author_login": "behrisch",
+        "closed_by_login": null,
+        "created_at": "2025-01-17T06:05:15+00:00",
+        "closed_at": null,
+        "updated_at": "2025-01-17T06:05:15+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 6,
+        "title": "Street map revision",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-02-02T14:55:28+00:00",
+        "closed_at": "2025-02-21T09:47:10+00:00",
+        "updated_at": "2025-02-21T19:33:54+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 18.79
+      },
+      {
+        "number": 7,
+        "title": "Implement translation (DE)",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-02-02T14:58:08+00:00",
+        "closed_at": "2025-03-18T08:35:33+00:00",
+        "updated_at": "2025-03-18T08:35:33+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 43.73
+      },
+      {
+        "number": 8,
+        "title": "Add comparison graph",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-02-02T15:00:44+00:00",
+        "closed_at": "2025-03-04T08:45:55+00:00",
+        "updated_at": "2025-03-04T08:45:55+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 29.74
+      },
+      {
+        "number": 9,
+        "title": "Add v85 graph",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-02-02T15:01:21+00:00",
+        "closed_at": "2025-02-21T08:21:18+00:00",
+        "updated_at": "2025-02-21T19:30:48+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 18.72
+      },
+      {
+        "number": 10,
+        "title": "Add sources and references",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-02-02T15:05:47+00:00",
+        "closed_at": "2025-07-20T06:38:25+00:00",
+        "updated_at": "2025-07-20T06:38:25+00:00",
+        "comment_count": 3,
+        "labels": [
+          "help wanted"
+        ],
+        "time_to_close_days": 167.65
+      },
+      {
+        "number": 11,
+        "title": "Add feedback option",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-02-02T15:08:12+00:00",
+        "closed_at": "2025-04-04T18:35:28+00:00",
+        "updated_at": "2025-04-04T18:35:28+00:00",
+        "comment_count": 1,
+        "labels": [
+          "help wanted"
+        ],
+        "time_to_close_days": 61.14
+      },
+      {
+        "number": 12,
+        "title": "Remove weekday and month name conversion from bzm_get_data.py",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-02-21T10:00:37+00:00",
+        "closed_at": "2025-03-10T07:56:48+00:00",
+        "updated_at": "2025-03-10T07:56:48+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 16.91
+      },
+      {
+        "number": 13,
+        "title": "Improve performance",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-03-03T15:19:38+00:00",
+        "closed_at": "2025-07-20T06:39:19+00:00",
+        "updated_at": "2025-07-20T06:39:19+00:00",
+        "comment_count": 5,
+        "labels": [
+          "good first issue"
+        ],
+        "time_to_close_days": 138.64
+      },
+      {
+        "number": 14,
+        "title": "Add additional clarifications and information",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-03-18T08:41:29+00:00",
+        "closed_at": "2025-07-20T06:39:42+00:00",
+        "updated_at": "2025-07-20T06:39:42+00:00",
+        "comment_count": 1,
+        "labels": [
+          "documentation"
+        ],
+        "time_to_close_days": 123.92
+      },
+      {
+        "number": 15,
+        "title": "Share your results",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-03-23T08:49:16+00:00",
+        "closed_at": "2025-09-28T15:03:18+00:00",
+        "updated_at": "2025-09-28T15:03:18+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement",
+          "question"
+        ],
+        "time_to_close_days": 189.26
+      },
+      {
+        "number": 16,
+        "title": "Add legal boilerplate info",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-03-23T14:58:18+00:00",
+        "closed_at": "2025-04-14T06:39:58+00:00",
+        "updated_at": "2025-04-14T06:39:59+00:00",
+        "comment_count": 1,
+        "labels": [
+          "documentation",
+          "help wanted"
+        ],
+        "time_to_close_days": 21.65
+      },
+      {
+        "number": 17,
+        "title": "Optimize for different devices",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-04-14T11:30:47+00:00",
+        "closed_at": "2026-03-27T11:31:09+00:00",
+        "updated_at": "2026-03-27T11:31:09+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 347.0
+      },
+      {
+        "number": 18,
+        "title": "Schalter Inaktiv in der Karte funktioniert nicht, Default \u00e4ndern",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-07-19T14:07:19+00:00",
+        "closed_at": "2025-11-13T08:18:33+00:00",
+        "updated_at": "2025-11-13T08:18:33+00:00",
+        "comment_count": 3,
+        "labels": [],
+        "time_to_close_days": 116.76
+      },
+      {
+        "number": 19,
+        "title": "Infobox zum Segment wird bei Crome und Android OS auf S9-Tablet nicht angezeigt",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-07-19T14:10:41+00:00",
+        "closed_at": "2026-03-27T11:29:43+00:00",
+        "updated_at": "2026-03-27T11:29:43+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 250.89
+      },
+      {
+        "number": 20,
+        "title": "Repository-Link fehlt im Dashboard",
+        "state": "open",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": null,
+        "created_at": "2025-07-19T14:12:21+00:00",
+        "closed_at": null,
+        "updated_at": "2025-07-20T08:08:46+00:00",
+        "comment_count": 1,
+        "labels": [
+          "documentation"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 21,
+        "title": "Farbe der Segmente dynamisch f\u00fcr den Datumsbereich anpassen",
+        "state": "open",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": null,
+        "created_at": "2025-07-19T14:16:10+00:00",
+        "closed_at": null,
+        "updated_at": "2025-07-19T14:16:10+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 22,
+        "title": "Zoom zum Segment funktioniert nicht bei Firefox, Segment wird nicht hervorgehoben",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-07-19T14:21:13+00:00",
+        "closed_at": "2026-03-27T11:49:13+00:00",
+        "updated_at": "2026-04-01T09:45:51+00:00",
+        "comment_count": 4,
+        "labels": [],
+        "time_to_close_days": 250.89
+      },
+      {
+        "number": 23,
+        "title": "Enddatum bei Datumswahl anpassen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-07-19T14:25:54+00:00",
+        "closed_at": "2025-07-20T06:49:47+00:00",
+        "updated_at": "2025-07-20T06:49:47+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.68
+      },
+      {
+        "number": 24,
+        "title": "Beschriftung f\u00fcr Autogeschwindigkeit vereinheitlichen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-07-19T14:27:36+00:00",
+        "closed_at": "2025-07-22T09:08:20+00:00",
+        "updated_at": "2025-07-22T09:08:20+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 2.78
+      },
+      {
+        "number": 25,
+        "title": "Error on ranking graph upon certain sequences of date selection, Date Picker suspect.",
+        "state": "closed",
+        "author_login": "elklaassen",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-07-20T06:42:02+00:00",
+        "closed_at": "2025-11-19T09:06:47+00:00",
+        "updated_at": "2025-11-19T09:06:47+00:00",
+        "comment_count": 1,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 122.1
+      },
+      {
+        "number": 26,
+        "title": "Auflistung aller Z\u00e4hler mit schlechter Datenqualit\u00e4t",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T08:49:15+00:00",
+        "closed_at": "2026-03-27T11:51:21+00:00",
+        "updated_at": "2026-03-27T11:51:22+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 233.13
+      },
+      {
+        "number": 27,
+        "title": "Datumsangabe im Dashboard nicht auf einen Tag beschr\u00e4nkbar",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T09:54:59+00:00",
+        "closed_at": "2025-09-14T14:07:36+00:00",
+        "updated_at": "2025-09-14T14:07:36+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 39.18
+      },
+      {
+        "number": 28,
+        "title": "Farben der Geschwindigkeiten besser separieren",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T10:12:41+00:00",
+        "closed_at": "2025-09-28T15:05:27+00:00",
+        "updated_at": "2025-09-28T15:05:27+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 53.2
+      },
+      {
+        "number": 29,
+        "title": "fehlende Links f\u00fcr Open Data Berlin und mit:forschen erg\u00e4nzen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T12:07:32+00:00",
+        "closed_at": "2025-09-28T15:07:25+00:00",
+        "updated_at": "2025-09-28T15:07:25+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 53.12
+      },
+      {
+        "number": 30,
+        "title": "Anzahl der aktuellen Sensoren im Dashboard anzeigen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T12:34:42+00:00",
+        "closed_at": "2025-11-13T08:15:20+00:00",
+        "updated_at": "2025-11-13T08:15:20+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 98.82
+      },
+      {
+        "number": 31,
+        "title": "Segmente werden mit mehren Linien angezeigt",
+        "state": "open",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": null,
+        "created_at": "2025-08-06T12:54:20+00:00",
+        "closed_at": null,
+        "updated_at": "2025-11-19T09:45:54+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 32,
+        "title": "Segmentnummer im Dashboard kann nicht kopiert werden",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T12:58:31+00:00",
+        "closed_at": "2025-09-14T13:05:32+00:00",
+        "updated_at": "2025-09-14T13:05:32+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 39.0
+      },
+      {
+        "number": 33,
+        "title": "Reset View in der Karte zeigt nicht alle Z\u00e4hler an",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T13:10:15+00:00",
+        "closed_at": "2026-03-27T12:28:20+00:00",
+        "updated_at": "2026-03-27T12:28:20+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 232.97
+      },
+      {
+        "number": 34,
+        "title": "Datum aus Meldung \u00fcbernehmen, wenn Daten nicht im aktuellen Zeitbereich sind",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T13:16:58+00:00",
+        "closed_at": "2025-09-14T13:18:49+00:00",
+        "updated_at": "2025-09-14T13:18:50+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 39.0
+      },
+      {
+        "number": 35,
+        "title": "\u00fcberfl\u00fcssige Men\u00fcpunkte in den Charts entfernen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T13:23:42+00:00",
+        "closed_at": "2025-09-28T15:39:30+00:00",
+        "updated_at": "2025-09-28T15:39:30+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 53.09
+      },
+      {
+        "number": 36,
+        "title": "Datumsbereichanpassung mit Zoom im Chart Gesamtverkehr wird im anderen Fenster nicht \u00fcbernommen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T13:35:02+00:00",
+        "closed_at": "2026-03-27T12:18:09+00:00",
+        "updated_at": "2026-03-27T12:18:09+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 232.95
+      },
+      {
+        "number": 37,
+        "title": "Beschreibung f\u00fcr Verf\u00fcgbarkeitsfilter anpassen - Instanz gegen Z\u00e4hlger\u00e4t ersetzen",
+        "state": "closed",
+        "author_login": "CargoBikoMeter",
+        "closed_by_login": "elklaassen",
+        "created_at": "2025-08-06T13:41:53+00:00",
+        "closed_at": "2025-09-14T07:55:54+00:00",
+        "updated_at": "2025-09-14T07:55:54+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 38.76
+      },
+      {
+        "number": 38,
+        "title": "Admin function - Quality report",
+        "state": "open",
+        "author_login": "elklaassen",
+        "closed_by_login": null,
+        "created_at": "2026-03-27T11:57:57+00:00",
+        "closed_at": null,
+        "updated_at": "2026-03-27T11:57:57+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "good first issue"
+        ],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 37,
+    "open_issues": 6,
+    "closed_issues": 31,
+    "avg_comments_per_issue": 1.41,
+    "median_time_to_close_days": 53.2,
+    "unique_openers": 3,
+    "unique_closers": 1,
+    "top_openers": {
+      "CargoBikoMeter": 22,
+      "elklaassen": 14,
+      "behrisch": 1
+    },
+    "top_closers": {
+      "elklaassen": 31
+    }
+  }
+}
