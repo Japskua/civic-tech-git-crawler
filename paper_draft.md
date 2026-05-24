@@ -14,7 +14,11 @@ promoted as a sustainable, community-owned alternative to proprietary govtech.
 We test that premise empirically. We crawl 57 civic-tech repositories from 24
 organisations across five continents and compute repository, contributor, and
 CHAOSS sustainability metrics, including a time-resolved weekly contribution
-analysis. We find that **contribution is overwhelmingly concentrated**: the
+analysis. The landscape is heterogeneous and long-tailed: the median project has
+7 developers, 389 commits, and 4 stars, yet four infrastructure projects supply
+39% of all commits and 93% of all stars; 12 of 57 repositories carry no
+open-source license and none publishes a governance document. Against that
+backdrop we find that **contribution is overwhelmingly concentrated**: the
 median project has a bus factor of 1, effort measured in lines changed is more
 concentrated than commit counts suggest (lines-Gini ≥ commits-Gini in 41 of 56
 repositories), and 89% of all active project-weeks are dominated by a single
@@ -47,11 +51,14 @@ maintenance.
 Our contributions are:
 
 1. A reproducible, multi-community civic-tech dataset (57 repositories, 24
-   organisations, 659 contributors, 90k commits) with per-contributor *weekly*
+   organisations, 659 contributors, 90,178 commits) with per-contributor *weekly*
    contribution resolution, released alongside the crawler that produced it.
-2. Evidence that contribution concentration — not size, popularity, or activity —
+2. A quantitative description of the open-source civic-tech landscape — its
+   composition by region and language, its scale distribution, and its licensing
+   and engineering-practice norms — across five continents.
+3. Evidence that contribution concentration — not size, popularity, or activity —
    is the dominant structural feature of civic-tech projects.
-3. The finding that concentration does **not** attenuate with project age, which
+4. The finding that concentration does **not** attenuate with project age, which
    challenges the "sustainability through longevity" intuition.
 
 ## 2. Related work (stub)
@@ -90,7 +97,73 @@ are not artefacts of a single project scale. Three repositories are forks and on
 (`fvialibre/heseia-sentence-bias-dataset`) is a borderline NLP-fairness member;
 both are flagged in the threats to validity.
 
-### 3.2 Data collection
+### 3.2 The civic-tech landscape
+
+The corpus is heterogeneous on every axis, and describing that heterogeneity is
+itself a contribution: there is no single "typical" civic-tech project.
+
+**Scale is heavily right-skewed.** The median repository has 389 commits, 7
+developers, 4 stars, and 2 forks, but the means (1,582 commits, 21 developers, 224
+stars) are pulled up by a few large infrastructure projects. The four
+infrastructure repositories — Meshtastic (firmware/Android/web) and IIAB — alone
+account for **34,823 of the corpus's 90,178 commits (39%) and 11,916 of its 12,765
+stars (93%)**; `meshtastic/firmware` by itself has 414 developers, 7,632 stars,
+and 11,910 commits. At the other end, a quarter of repositories have ≤1 star and
+≤154 commits, and 11 are essentially single-developer efforts. Civic tech is thus
+a long tail of small projects under a few large ones, and any unweighted mean is
+misleading — we report medians throughout.
+
+**Age** spans 0.6–9.2 years (median 3.4). The oldest projects are
+`CodeForAfrica/GenderGap.AFRICA` (9.2 y), `iiab/iiab` (9.0 y), and
+`CodeForAfrica/openAFRICA` (8.7 y); the youngest are recent CivicTechWR tools and
+single-contributor prototypes.
+
+**Geography.** The corpus spans five continents and 24 organisations. The German
+"Code for"/OK-Lab cluster contributes the most repositories (18) but they are
+individually small — many are single-purpose open-data maps — whereas the
+international infrastructure projects are few but vastly larger:
+
+| Region / cluster | Repos | Total commits | Median devs | Total stars |
+|---|---:|---:|---:|---:|
+| Germany (Code for / OK Lab) | 18 | 4,787 | 3.5 | 227 |
+| Africa (Code for Africa) | 9 | 17,854 | 7 | 76 |
+| USA (Code for America, CiviForm) | 9 | 17,726 | 10 | 223 |
+| Canada (CivicTechWR / Toronto) | 9 | 7,461 | 15 | 76 |
+| Intl. infrastructure (Meshtastic, IIAB) | 4 | 34,823 | 91 | 11,916 |
+| Japan, Taiwan, UK, Sweden, others | 8 | 7,527 | — | 247 |
+
+Notably, the Canadian CivicTechWR projects have the **highest median team size**
+(15) of any regional cluster despite modest commit volumes — a community-driven,
+many-hands pattern — while the US and African projects are the most
+commit-dense among the non-infrastructure clusters.
+
+**Languages** reflect civic tech's web-and-data orientation. Web-stack languages
+(HTML, TypeScript, JavaScript, Vue, Svelte) are the *primary* language of **29 of
+57** repositories; Python (10) and Ruby (6) dominate the backends, with a long
+polyglot tail (Java, C++, Kotlin, Dart, Elixir, Jinja, HCL, Jupyter, PHP, Dart).
+
+**Licensing is inconsistent — a governance risk for public-interest software.**
+**12 of 57 repositories carry no detectable license at all**, leaving their legal
+reusability ambiguous. Among the 45 that do: permissive licenses lead (MIT 16,
+Apache-2.0 3, BSD 1 = 20), copyleft is well represented (GPL-3.0 9, AGPL-3.0 4,
+GPL-2.0 1 = 14), and **9 repositories — almost all open-data projects — use the
+CC0 public-domain dedication**, a signature of the open-data wing of the movement.
+
+**Engineering practice is mature on the surface but thin underneath.** CI/CD is
+near-ubiquitous (48/57, 84%) and READMEs are almost universal (54/57), but the
+deeper community-health scaffolding that supports *distributed* maintenance is
+sparse: CONTRIBUTING guides 20/57, codes of conduct 8/57, issue templates 4/57,
+and **explicit governance documents 0/57**. Only **23 of 57** repositories have
+ever cut a tagged release. The median GitHub community-health score is 50%. Cloud-
+deployment signals appear in 29/57 repositories; AI/ML signals in just 6/57.
+
+In aggregate the corpus comprises 659 contributors (605 human, 54 bots) producing
+90,178 commits, 37,220 pull requests (85% merged), 14,032 issues (85% closed), and
+1,979 releases. This is the backdrop against which the concentration findings
+below should be read: a movement that has adopted modern tooling (CI, PRs) but not
+the governance and contributor-distribution practices that sustain it.
+
+### 3.3 Data collection
 
 For each repository we collect, via the GitHub REST and GraphQL APIs:
 repository-level metrics (languages, license and OSI status, community-health
@@ -104,7 +177,7 @@ auto-respawning, per-repository-cached wrapper; one transient network outage and
 two read-timeouts on the largest repositories were absorbed by automatic retries
 with no data loss.
 
-### 3.3 Statistics
+### 3.4 Statistics
 
 Shapiro–Wilk tests reject normality for most metrics, so all hypothesis tests are
 non-parametric: Spearman rank correlation (with Benjamini–Hochberg FDR control on
