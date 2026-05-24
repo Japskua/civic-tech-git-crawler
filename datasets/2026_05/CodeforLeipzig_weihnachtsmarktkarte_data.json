@@ -1,0 +1,1818 @@
+{
+  "repo_metrics": {
+    "full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+    "name": "weihnachtsmarktkarte",
+    "description": "A map of christmas markets in Leipzig based on Open Data",
+    "num_developers": 9,
+    "total_commits": 454,
+    "languages": {
+      "TypeScript": 429206,
+      "JavaScript": 87931,
+      "CSS": 7802
+    },
+    "primary_language": "TypeScript",
+    "first_commit_date": "2022-11-09T12:12:08+00:00",
+    "last_commit_date": "2025-12-17T18:46:37+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": false,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 0,
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "CheckForChanges",
+      "Say something"
+    ],
+    "deployments_count": 0,
+    "created_at": "2022-11-20T16:50:16+00:00",
+    "updated_at": "2025-12-17T18:46:55+00:00",
+    "pushed_at": "2026-05-22T18:56:11+00:00",
+    "size_kb": 27627
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "joergreichert",
+      "name": "J\u00f6rg Reichert",
+      "num_commits": 80,
+      "additions": 172564,
+      "deletions": 172934,
+      "avg_additions_per_commit": 2157.05,
+      "avg_deletions_per_commit": 2161.68,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "renovate[bot]",
+      "name": "renovate[bot]",
+      "num_commits": 13,
+      "additions": 267,
+      "deletions": 159,
+      "avg_additions_per_commit": 20.54,
+      "avg_deletions_per_commit": 12.23,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "joergreichert",
+      "name": "J\u00f6rg Reichert",
+      "num_commits": 102,
+      "additions": 196452,
+      "deletions": 61956,
+      "avg_additions_per_commit": 1926.0,
+      "avg_deletions_per_commit": 607.41,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "hanshack",
+      "name": "Hans Hack",
+      "num_commits": 24,
+      "additions": 822,
+      "deletions": 1218,
+      "avg_additions_per_commit": 34.25,
+      "avg_deletions_per_commit": 50.75,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "hanshack",
+      "name": "hhack",
+      "num_commits": 81,
+      "additions": 16003,
+      "deletions": 2800,
+      "avg_additions_per_commit": 197.57,
+      "avg_deletions_per_commit": 34.57,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "KlemensM",
+      "name": "Klemens",
+      "num_commits": 24,
+      "additions": 726,
+      "deletions": 518,
+      "avg_additions_per_commit": 30.25,
+      "avg_deletions_per_commit": 21.58,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "Lisa-Stubert",
+      "name": "Lisa-Stubert",
+      "num_commits": 25,
+      "additions": 1532,
+      "deletions": 1041,
+      "avg_additions_per_commit": 61.28,
+      "avg_deletions_per_commit": 41.64,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "Lisa-Stubert",
+      "name": "Lisa-Stubert",
+      "num_commits": 55,
+      "additions": 2264,
+      "deletions": 1401,
+      "avg_additions_per_commit": 41.16,
+      "avg_deletions_per_commit": 25.47,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "annameide",
+      "name": "anna",
+      "num_commits": 13,
+      "additions": 8,
+      "deletions": 0,
+      "avg_additions_per_commit": 0.62,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "ester-t-s",
+      "name": "Ester",
+      "num_commits": 24,
+      "additions": 1152,
+      "deletions": 449,
+      "avg_additions_per_commit": 48.0,
+      "avg_deletions_per_commit": 18.71,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "dnsos",
+      "name": "Dennis Ostendorf",
+      "num_commits": 1,
+      "additions": 0,
+      "deletions": 4,
+      "avg_additions_per_commit": 0.0,
+      "avg_deletions_per_commit": 4.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+      "login": "allcontributors[bot]",
+      "name": "allcontributors[bot]",
+      "num_commits": 12,
+      "additions": 80,
+      "deletions": 12,
+      "avg_additions_per_commit": 6.67,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": true
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+    "pr_count_total": 75,
+    "pr_count_merged": 13,
+    "pr_count_open": 10,
+    "pr_count_closed_unmerged": 52,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Update dependency @headlessui/react to v1.7.17 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:20:08+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:27+00:00"
+      },
+      {
+        "number": 2,
+        "title": "Update dependency autoprefixer to v10.4.16 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:20:15+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:21+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Update dependency postcss to v8.4.32 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:04+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:35+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Update dependency use-debounce to v9.0.4 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:12+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:50+00:00"
+      },
+      {
+        "number": 5,
+        "title": "Update dependency eslint to v8.57.0 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:21+00:00",
+        "merged_at": null,
+        "closed_at": "2024-05-09T20:46:41+00:00"
+      },
+      {
+        "number": 6,
+        "title": "Update dependency eslint-config-prettier to v8.10.0 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:27+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:24+00:00"
+      },
+      {
+        "number": 7,
+        "title": "Update dependency node to v18.19.0 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:36+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T14:25:40+00:00"
+      },
+      {
+        "number": 8,
+        "title": "Update dependency papaparse to v5.4.1 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:43+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:34+00:00"
+      },
+      {
+        "number": 9,
+        "title": "Update dependency react-day-picker to v8.9.1 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:50+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:37+00:00"
+      },
+      {
+        "number": 10,
+        "title": "Update dependency react-icons to v4.12.0 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:27:57+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:39+00:00"
+      },
+      {
+        "number": 11,
+        "title": "Update dependency react-map-gl to v7.1.6 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:28:06+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:40+00:00"
+      },
+      {
+        "number": 12,
+        "title": "Update dependency tailwindcss to v3.3.6 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:28:14+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:43+00:00"
+      },
+      {
+        "number": 13,
+        "title": "Update dependency typescript to v4.9.5 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:28:22+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:45+00:00"
+      },
+      {
+        "number": 14,
+        "title": "Update nextjs monorepo to v13.5.6 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:28:51+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:32+00:00"
+      },
+      {
+        "number": 15,
+        "title": "Update dependency @types/react to v18.2.43",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:28:57+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T15:12:05+00:00"
+      },
+      {
+        "number": 16,
+        "title": "Update actions/checkout action to v4 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:29:01+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T15:00:26+00:00"
+      },
+      {
+        "number": 17,
+        "title": "Update actions/setup-node action to v4 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:29:04+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T15:00:27+00:00"
+      },
+      {
+        "number": 18,
+        "title": "Update dependency eslint-config-prettier to v9 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:29:10+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:25+00:00"
+      },
+      {
+        "number": 19,
+        "title": "Update dependency maplibre-gl to v3 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:29:19+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:30+00:00"
+      },
+      {
+        "number": 20,
+        "title": "Update dependency node to v20 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:29:34+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T14:25:42+00:00"
+      },
+      {
+        "number": 21,
+        "title": "Update dependency typescript to v5 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:29:40+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:47+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Update dependency use-debounce to v10 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:29:46+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:49+00:00"
+      },
+      {
+        "number": 23,
+        "title": "Update nextjs monorepo to v14 (major) - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-09T11:30:09+00:00",
+        "merged_at": null,
+        "closed_at": "2023-12-09T13:09:28+00:00"
+      },
+      {
+        "number": 24,
+        "title": "Update react monorepo - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-13T05:41:57+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-16T14:30:56+00:00"
+      },
+      {
+        "number": 25,
+        "title": "Update actions/upload-artifact action to v4 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-15T05:10:10+00:00",
+        "merged_at": null,
+        "closed_at": "2024-02-18T05:57:15+00:00"
+      },
+      {
+        "number": 26,
+        "title": "Update Node.js to v20.18.3 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-18T02:32:56+00:00",
+        "merged_at": null,
+        "closed_at": "2025-02-19T18:48:44+00:00"
+      },
+      {
+        "number": 27,
+        "title": "Update dependency react-map-gl to v7.1.7 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-19T02:28:18+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-16T14:30:55+00:00"
+      },
+      {
+        "number": 28,
+        "title": "Update dependency tailwindcss to v3.4.15",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-19T02:28:27+00:00",
+        "merged_at": "2024-11-17T16:19:10+00:00",
+        "closed_at": "2024-11-17T16:19:10+00:00"
+      },
+      {
+        "number": 29,
+        "title": "Update dependency date-fns to v3 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-20T05:24:05+00:00",
+        "merged_at": null,
+        "closed_at": "2024-09-16T02:38:04+00:00"
+      },
+      {
+        "number": 30,
+        "title": "Update dependency react-day-picker to v8.10.1 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-24T02:56:42+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-16T14:30:53+00:00"
+      },
+      {
+        "number": 31,
+        "title": "Update dependency classnames to v2.5.1 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2023-12-26T02:19:37+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-16T14:30:49+00:00"
+      },
+      {
+        "number": 32,
+        "title": "Update dependency postcss to v8.4.49",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-01-05T14:57:17+00:00",
+        "merged_at": "2024-11-17T16:23:32+00:00",
+        "closed_at": "2024-11-17T16:23:32+00:00"
+      },
+      {
+        "number": 33,
+        "title": "Update dependency @headlessui/react to v1.7.19 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-02-18T05:57:14+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-16T14:30:51+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Update dependency autoprefixer to v10.4.20 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-05-09T20:46:27+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-16T14:30:47+00:00"
+      },
+      {
+        "number": 35,
+        "title": "Update dependency cheerio to v1.0.0 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-09-16T02:38:02+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-16T14:30:48+00:00"
+      },
+      {
+        "number": 36,
+        "title": "Update dependency next to v15.0.3",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-16T14:30:28+00:00",
+        "merged_at": "2024-11-17T16:21:27+00:00",
+        "closed_at": "2024-11-17T16:21:27+00:00"
+      },
+      {
+        "number": 37,
+        "title": "Update dependency eslint to v9.15.0",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-16T14:30:46+00:00",
+        "merged_at": "2024-11-17T16:21:06+00:00",
+        "closed_at": "2024-11-17T16:21:06+00:00"
+      },
+      {
+        "number": 38,
+        "title": "Update dependency mapbox-gl to v3.8.0",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-16T15:24:10+00:00",
+        "merged_at": "2024-11-17T16:20:42+00:00",
+        "closed_at": "2024-11-17T16:20:43+00:00"
+      },
+      {
+        "number": 39,
+        "title": "Update dependency react-day-picker to v9.3.1",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-16T15:24:22+00:00",
+        "merged_at": "2024-11-17T16:20:09+00:00",
+        "closed_at": "2024-11-17T16:20:09+00:00"
+      },
+      {
+        "number": 40,
+        "title": "Update Node.js to v22",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-17T02:59:00+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-17T16:24:17+00:00"
+      },
+      {
+        "number": 41,
+        "title": "Update actions/upload-artifact action to v4",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-17T02:59:03+00:00",
+        "merged_at": "2024-11-17T16:17:47+00:00",
+        "closed_at": "2024-11-17T16:17:47+00:00"
+      },
+      {
+        "number": 57,
+        "title": "Update dependency react-day-picker to v9.14.0",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-18T13:32:19+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 58,
+        "title": "Update dependency react-day-picker to v9.3.2 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-18T21:01:32+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-23T15:53:34+00:00"
+      },
+      {
+        "number": 59,
+        "title": "Update dependency typescript to v5.7.2 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-22T18:58:36+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-30T16:27:01+00:00"
+      },
+      {
+        "number": 60,
+        "title": "Update dependency eslint to v9.16.0 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-11-29T22:53:48+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-30T16:26:59+00:00"
+      },
+      {
+        "number": 62,
+        "title": "Update dependency react-icons to v5.5.0 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-03T11:59:53+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-29T22:22:08+00:00"
+      },
+      {
+        "number": 63,
+        "title": "Update dependency tailwindcss to v3.4.17 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-03T23:07:30+00:00",
+        "merged_at": null,
+        "closed_at": "2025-01-30T18:56:22+00:00"
+      },
+      {
+        "number": 64,
+        "title": "Update react monorepo to v19.2.1",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-04T17:14:02+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-03T18:11:58+00:00"
+      },
+      {
+        "number": 65,
+        "title": "Update nextjs monorepo to v16.0.7",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-07T02:35:43+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-03T18:12:19+00:00"
+      },
+      {
+        "number": 66,
+        "title": "Update react monorepo to v19 (major) - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-07T02:35:55+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-29T22:22:03+00:00"
+      },
+      {
+        "number": 67,
+        "title": "Update dependency eslint to v9.39.1 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-14T01:17:16+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-29T22:22:02+00:00"
+      },
+      {
+        "number": 69,
+        "title": "Update dependency mapbox-gl to v3.17.0",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-18T13:03:33+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-03T18:15:47+00:00"
+      },
+      {
+        "number": 70,
+        "title": "Update dependency react-map-gl to v7.1.9 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2024-12-19T22:32:05+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-29T22:22:10+00:00"
+      },
+      {
+        "number": 71,
+        "title": "Update dependency tailwindcss to v3.4.18 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-01-30T18:56:14+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-29T22:22:12+00:00"
+      },
+      {
+        "number": 72,
+        "title": "Update Node.js to v20.18.3 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-02-19T18:48:42+00:00",
+        "merged_at": null,
+        "closed_at": "2025-03-03T16:46:18+00:00"
+      },
+      {
+        "number": 73,
+        "title": "Update Node.js to v20.19.6",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-03-03T16:46:08+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-03T18:12:34+00:00"
+      },
+      {
+        "number": 75,
+        "title": "Update actions/checkout action to v6",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-11-29T22:21:57+00:00",
+        "merged_at": "2025-12-03T18:14:54+00:00",
+        "closed_at": "2025-12-03T18:14:54+00:00"
+      },
+      {
+        "number": 76,
+        "title": "Update actions/setup-node action to v6",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-11-29T22:22:00+00:00",
+        "merged_at": "2025-12-03T18:14:34+00:00",
+        "closed_at": "2025-12-03T18:14:34+00:00"
+      },
+      {
+        "number": 77,
+        "title": "Update actions/upload-artifact action to v5",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-11-29T23:47:13+00:00",
+        "merged_at": "2025-12-03T18:15:08+00:00",
+        "closed_at": "2025-12-03T18:15:08+00:00"
+      },
+      {
+        "number": 78,
+        "title": "Update Node.js to v24",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-11-29T23:47:32+00:00",
+        "merged_at": "2025-12-03T18:14:13+00:00",
+        "closed_at": "2025-12-03T18:14:13+00:00"
+      },
+      {
+        "number": 79,
+        "title": "Update dependency maplibre-gl to v5.14.0",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-03T12:37:29+00:00",
+        "merged_at": "2025-12-03T18:16:02+00:00",
+        "closed_at": "2025-12-03T18:16:02+00:00"
+      },
+      {
+        "number": 80,
+        "title": "Update dependency baseline-browser-mapping to v2.9.0",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-03T17:50:10+00:00",
+        "merged_at": "2025-12-03T18:15:23+00:00",
+        "closed_at": "2025-12-03T18:15:23+00:00"
+      },
+      {
+        "number": 82,
+        "title": "Update dependency baseline-browser-mapping to v2.10.32",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-04T17:27:40+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 83,
+        "title": "Update Node.js to v24.16.0",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-09T03:58:29+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 84,
+        "title": "Update nextjs monorepo to v16.2.6",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-09T03:58:43+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 85,
+        "title": "Update react monorepo to v19.2.3 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-11T20:27:45+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-15T20:44:02+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Update tailwindcss monorepo to v4.1.18 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-11T20:27:53+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-15T20:44:04+00:00"
+      },
+      {
+        "number": 87,
+        "title": "Update actions/upload-artifact action to v7",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-12T21:57:59+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 88,
+        "title": "Update dependency eslint to v9.39.2 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-13T02:37:01+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-15T20:43:58+00:00"
+      },
+      {
+        "number": 89,
+        "title": "Update dependency autoprefixer to v10.4.23 - autoclosed",
+        "state": "closed",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-14T17:45:06+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-15T20:43:55+00:00"
+      },
+      {
+        "number": 90,
+        "title": "Update dependency @types/node to v25.9.1",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-17T00:05:06+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 91,
+        "title": "Update dependency maplibre-gl to v5.24.0",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2025-12-17T09:14:48+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 92,
+        "title": "Update dependency use-debounce to v10.1.1",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2026-01-08T23:25:40+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 93,
+        "title": "Update react monorepo",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2026-01-10T12:25:44+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 94,
+        "title": "Update dependency mapbox-gl to v3.24.0",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "created_at": "2026-01-14T14:51:15+00:00",
+        "merged_at": null,
+        "closed_at": null
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+    "weekly_commits": [
+      {
+        "week_start": "2022-11-07",
+        "commits": 30
+      },
+      {
+        "week_start": "2022-11-14",
+        "commits": 107
+      },
+      {
+        "week_start": "2022-11-21",
+        "commits": 107
+      },
+      {
+        "week_start": "2022-11-28",
+        "commits": 41
+      },
+      {
+        "week_start": "2022-12-05",
+        "commits": 3
+      },
+      {
+        "week_start": "2022-12-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-11-20",
+        "commits": 5
+      },
+      {
+        "week_start": "2023-11-27",
+        "commits": 26
+      },
+      {
+        "week_start": "2023-12-04",
+        "commits": 13
+      },
+      {
+        "week_start": "2023-12-11",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-11-11",
+        "commits": 26
+      },
+      {
+        "week_start": "2024-11-18",
+        "commits": 22
+      },
+      {
+        "week_start": "2024-11-25",
+        "commits": 14
+      },
+      {
+        "week_start": "2024-12-02",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-11-24",
+        "commits": 22
+      },
+      {
+        "week_start": "2025-12-01",
+        "commits": 26
+      },
+      {
+        "week_start": "2025-12-08",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-12-15",
+        "commits": 4
+      }
+    ],
+    "change_request_acceptance_ratio": 0.1733,
+    "bus_factor": 3,
+    "contribution_types": {
+      "code_commits": 454,
+      "pull_requests": 75,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "sst it GmbH": 2,
+      "Unknown": 7,
+      "Technologiestiftung Berlin": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 0,
+    "burstiness_cv": 1.23,
+    "burstiness_mean": 25.22,
+    "burstiness_std": 31.15,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 3,
+    "bot_contributor_count": 2,
+    "bot_commit_count": 25,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 18,
+    "time_to_first_response_prs_sample_size": 75,
+    "readme_last_updated": "2025-11-29T22:20:43+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 0.8889,
+    "stale_issue_count": 8,
+    "open_issue_count": 9,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": 4784.2,
+    "hhi_no_bots": 3049.3,
+    "hhi_known_orgs_only": 8755.6,
+    "unknown_org_contributor_count": 7,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 5,
+      "unknown": 5
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-05-23T17:58:44.962467+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+    "weekly_snapshots": [
+      {
+        "week_start": "2022-11-07",
+        "total_commits": 30,
+        "unique_contributors": 5,
+        "new_contributors": 5,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2022-11-14",
+        "total_commits": 107,
+        "unique_contributors": 5,
+        "new_contributors": 2,
+        "cumulative_commits": 137,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2022-11-21",
+        "total_commits": 107,
+        "unique_contributors": 5,
+        "new_contributors": 0,
+        "cumulative_commits": 244,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2022-11-28",
+        "total_commits": 41,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 285,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2022-12-05",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 288,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2022-12-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 289,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2023-11-20",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 294,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2023-11-27",
+        "total_commits": 26,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 320,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2023-12-04",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 333,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2023-12-11",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 335,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2024-11-11",
+        "total_commits": 26,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 361,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2024-11-18",
+        "total_commits": 22,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 383,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2024-11-25",
+        "total_commits": 14,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 397,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2024-12-02",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 401,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-11-24",
+        "total_commits": 22,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 423,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 26,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 449,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 450,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-15",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 454,
+        "cumulative_contributors": 9
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "joergreichert",
+        "login": "joergreichert",
+        "name": "J\u00f6rg Reichert",
+        "email": "joergreichert@users.noreply.github.com",
+        "first_commit_date": "2022-12-01T16:29:54+00:00",
+        "last_commit_date": "2025-12-17T18:46:37+00:00",
+        "duration_days": 1112,
+        "total_commits": 182,
+        "active_weeks": 15,
+        "total_weeks_span": 158,
+        "activity_ratio": 0.0949,
+        "status": "departed",
+        "departed_weeks_ago": 22,
+        "avg_commits_per_active_week": 12.13
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "hanshack",
+        "login": "hanshack",
+        "name": "Hans Hack",
+        "email": "hanshack@users.noreply.github.com",
+        "first_commit_date": "2022-11-10T16:52:48+00:00",
+        "last_commit_date": "2022-12-01T11:04:40+00:00",
+        "duration_days": 20,
+        "total_commits": 105,
+        "active_weeks": 4,
+        "total_weeks_span": 2,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 181,
+        "avg_commits_per_active_week": 26.25
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "Lisa-Stubert",
+        "login": "Lisa-Stubert",
+        "name": "Lisa-Stubert",
+        "email": "61182572+Lisa-Stubert@users.noreply.github.com",
+        "first_commit_date": "2022-11-19T11:03:10+00:00",
+        "last_commit_date": "2022-11-26T09:17:07+00:00",
+        "duration_days": 6,
+        "total_commits": 80,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 182,
+        "avg_commits_per_active_week": 40.0
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "KlemensM",
+        "login": "KlemensM",
+        "name": "Klemens",
+        "email": "98896505+KlemensM@users.noreply.github.com",
+        "first_commit_date": "2022-11-09T13:56:18+00:00",
+        "last_commit_date": "2022-11-29T15:39:56+00:00",
+        "duration_days": 20,
+        "total_commits": 24,
+        "active_weeks": 4,
+        "total_weeks_span": 2,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 181,
+        "avg_commits_per_active_week": 6.0
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "ester-t-s",
+        "login": "ester-t-s",
+        "name": "Ester",
+        "email": "91192024+ester-t-s@users.noreply.github.com",
+        "first_commit_date": "2022-11-09T12:12:08+00:00",
+        "last_commit_date": "2022-11-21T08:11:28+00:00",
+        "duration_days": 11,
+        "total_commits": 24,
+        "active_weeks": 3,
+        "total_weeks_span": 1,
+        "activity_ratio": 3.0,
+        "status": "departed",
+        "departed_weeks_ago": 182,
+        "avg_commits_per_active_week": 8.0
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "renovate[bot]",
+        "login": "renovate[bot]",
+        "name": "renovate[bot]",
+        "email": "29139614+renovate[bot]@users.noreply.github.com",
+        "first_commit_date": "2024-11-16T14:30:27+00:00",
+        "last_commit_date": "2025-12-03T17:50:08+00:00",
+        "duration_days": 382,
+        "total_commits": 13,
+        "active_weeks": 3,
+        "total_weeks_span": 54,
+        "activity_ratio": 0.0556,
+        "status": "departed",
+        "departed_weeks_ago": 24,
+        "avg_commits_per_active_week": 4.33
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "annameide",
+        "login": "annameide",
+        "name": "anna",
+        "email": "46717848+annameide@users.noreply.github.com",
+        "first_commit_date": "2022-11-16T11:42:12+00:00",
+        "last_commit_date": "2022-11-24T09:38:00+00:00",
+        "duration_days": 7,
+        "total_commits": 13,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 182,
+        "avg_commits_per_active_week": 6.5
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "allcontributors[bot]",
+        "login": "allcontributors[bot]",
+        "name": "allcontributors[bot]",
+        "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+        "first_commit_date": "2022-11-09T12:25:54+00:00",
+        "last_commit_date": "2022-11-09T13:16:56+00:00",
+        "duration_days": 0,
+        "total_commits": 12,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 184,
+        "avg_commits_per_active_week": 12.0
+      },
+      {
+        "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+        "contributor_id": "dnsos",
+        "login": "dnsos",
+        "name": "Dennis Ostendorf",
+        "email": "15640196+dnsos@users.noreply.github.com",
+        "first_commit_date": "2022-11-09T15:32:01+00:00",
+        "last_commit_date": "2022-11-09T15:32:01+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 184,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2022-11-28",
+        "commits": 26,
+        "lines_added": 28685,
+        "lines_removed": 5776
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2022-12-05",
+        "commits": 3,
+        "lines_added": 3947,
+        "lines_removed": 2511
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2022-12-12",
+        "commits": 1,
+        "lines_added": 96,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2023-11-20",
+        "commits": 5,
+        "lines_added": 13109,
+        "lines_removed": 11254
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2023-11-27",
+        "commits": 26,
+        "lines_added": 12802,
+        "lines_removed": 6547
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2023-12-04",
+        "commits": 13,
+        "lines_added": 12219,
+        "lines_removed": 18049
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2023-12-11",
+        "commits": 2,
+        "lines_added": 449,
+        "lines_removed": 751
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2024-11-11",
+        "commits": 19,
+        "lines_added": 19780,
+        "lines_removed": 5249
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2024-11-18",
+        "commits": 22,
+        "lines_added": 15319,
+        "lines_removed": 22226
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2024-11-25",
+        "commits": 14,
+        "lines_added": 102010,
+        "lines_removed": 10643
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2024-12-02",
+        "commits": 4,
+        "lines_added": 464,
+        "lines_removed": 339
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2025-11-24",
+        "commits": 18,
+        "lines_added": 17675,
+        "lines_removed": 112979
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2025-12-01",
+        "commits": 24,
+        "lines_added": 32108,
+        "lines_removed": 30721
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2025-12-08",
+        "commits": 1,
+        "lines_added": 933,
+        "lines_removed": 828
+      },
+      {
+        "contributor_id": "joergreichert",
+        "week_start": "2025-12-15",
+        "commits": 4,
+        "lines_added": 109420,
+        "lines_removed": 7008
+      },
+      {
+        "contributor_id": "renovate[bot]",
+        "week_start": "2024-11-11",
+        "commits": 7,
+        "lines_added": 131,
+        "lines_removed": 109
+      },
+      {
+        "contributor_id": "renovate[bot]",
+        "week_start": "2025-11-24",
+        "commits": 4,
+        "lines_added": 7,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "renovate[bot]",
+        "week_start": "2025-12-01",
+        "commits": 2,
+        "lines_added": 129,
+        "lines_removed": 43
+      },
+      {
+        "contributor_id": "hanshack",
+        "week_start": "2022-11-07",
+        "commits": 2,
+        "lines_added": 10052,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "hanshack",
+        "week_start": "2022-11-14",
+        "commits": 49,
+        "lines_added": 4602,
+        "lines_removed": 1115
+      },
+      {
+        "contributor_id": "hanshack",
+        "week_start": "2022-11-21",
+        "commits": 41,
+        "lines_added": 1785,
+        "lines_removed": 1068
+      },
+      {
+        "contributor_id": "hanshack",
+        "week_start": "2022-11-28",
+        "commits": 13,
+        "lines_added": 386,
+        "lines_removed": 1831
+      },
+      {
+        "contributor_id": "KlemensM",
+        "week_start": "2022-11-07",
+        "commits": 3,
+        "lines_added": 35,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "KlemensM",
+        "week_start": "2022-11-14",
+        "commits": 13,
+        "lines_added": 429,
+        "lines_removed": 262
+      },
+      {
+        "contributor_id": "KlemensM",
+        "week_start": "2022-11-21",
+        "commits": 6,
+        "lines_added": 259,
+        "lines_removed": 247
+      },
+      {
+        "contributor_id": "KlemensM",
+        "week_start": "2022-11-28",
+        "commits": 2,
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "Lisa-Stubert",
+        "week_start": "2022-11-14",
+        "commits": 23,
+        "lines_added": 449,
+        "lines_removed": 378
+      },
+      {
+        "contributor_id": "Lisa-Stubert",
+        "week_start": "2022-11-21",
+        "commits": 57,
+        "lines_added": 3347,
+        "lines_removed": 2064
+      },
+      {
+        "contributor_id": "annameide",
+        "week_start": "2022-11-14",
+        "commits": 11,
+        "lines_added": 8,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "annameide",
+        "week_start": "2022-11-21",
+        "commits": 2,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ester-t-s",
+        "week_start": "2022-11-07",
+        "commits": 12,
+        "lines_added": 703,
+        "lines_removed": 21
+      },
+      {
+        "contributor_id": "ester-t-s",
+        "week_start": "2022-11-14",
+        "commits": 11,
+        "lines_added": 395,
+        "lines_removed": 374
+      },
+      {
+        "contributor_id": "ester-t-s",
+        "week_start": "2022-11-21",
+        "commits": 1,
+        "lines_added": 54,
+        "lines_removed": 54
+      },
+      {
+        "contributor_id": "dnsos",
+        "week_start": "2022-11-07",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "allcontributors[bot]",
+        "week_start": "2022-11-07",
+        "commits": 12,
+        "lines_added": 80,
+        "lines_removed": 12
+      }
+    ],
+    "total_weeks": 18,
+    "total_unique_contributors": 9,
+    "new_contributor_rate_per_month": 0.24
+  },
+  "issue_analytics": {
+    "repo_full_name": "CodeforLeipzig/weihnachtsmarktkarte",
+    "issues": [
+      {
+        "number": 43,
+        "title": "Link directly to mobility provider platform",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T16:38:03+00:00",
+        "closed_at": "2024-11-23T15:53:32+00:00",
+        "updated_at": "2024-11-23T15:53:32+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 5.97
+      },
+      {
+        "number": 44,
+        "title": "Show marker of location of selected market in augmented reality",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2024-11-17T16:44:08+00:00",
+        "closed_at": null,
+        "updated_at": "2024-11-17T16:44:08+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 45,
+        "title": "Set expo dev project",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T16:44:40+00:00",
+        "closed_at": "2024-11-28T19:42:41+00:00",
+        "updated_at": "2024-11-28T19:42:41+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 11.12
+      },
+      {
+        "number": 46,
+        "title": "Provide app entry in Google Play store",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T16:45:16+00:00",
+        "closed_at": "2024-11-28T19:43:24+00:00",
+        "updated_at": "2024-11-28T19:43:25+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 11.12
+      },
+      {
+        "number": 47,
+        "title": "Provide app entry in iOS store",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T16:45:36+00:00",
+        "closed_at": "2024-11-28T19:43:52+00:00",
+        "updated_at": "2024-11-28T19:43:52+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 11.12
+      },
+      {
+        "number": 48,
+        "title": "Provide app entry in F-droid store",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2024-11-17T16:45:57+00:00",
+        "closed_at": null,
+        "updated_at": "2024-11-17T16:50:15+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 49,
+        "title": "Advent calendar feature",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2024-11-17T16:49:13+00:00",
+        "closed_at": null,
+        "updated_at": "2024-11-17T16:49:13+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 50,
+        "title": "Review and update data scraped from leipzig.de",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T16:51:53+00:00",
+        "closed_at": "2024-11-30T19:59:35+00:00",
+        "updated_at": "2024-11-30T19:59:35+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 13.13
+      },
+      {
+        "number": 51,
+        "title": "Get inner city market data from Geo office",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T16:56:21+00:00",
+        "closed_at": "2024-11-23T22:47:02+00:00",
+        "updated_at": "2024-11-23T22:47:02+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 6.24
+      },
+      {
+        "number": 52,
+        "title": "Link ical entry",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T16:59:44+00:00",
+        "closed_at": "2024-11-23T16:48:00+00:00",
+        "updated_at": "2024-11-23T16:48:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 5.99
+      },
+      {
+        "number": 53,
+        "title": "Switch the leipzig.de market scraper to get the ical links instead of parsing the text from html",
+        "state": "closed",
+        "author_login": "joergreichert",
+        "closed_by_login": "joergreichert",
+        "created_at": "2024-11-17T17:01:53+00:00",
+        "closed_at": "2024-11-23T22:46:09+00:00",
+        "updated_at": "2024-11-23T22:46:09+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 6.24
+      },
+      {
+        "number": 54,
+        "title": "Collect photos of market (locations)",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2024-11-17T17:05:11+00:00",
+        "closed_at": null,
+        "updated_at": "2024-12-07T10:27:04+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 55,
+        "title": "Price comparison",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2024-11-17T17:13:15+00:00",
+        "closed_at": null,
+        "updated_at": "2024-11-17T17:13:15+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 56,
+        "title": "Dependency Dashboard",
+        "state": "open",
+        "author_login": "renovate[bot]",
+        "closed_by_login": null,
+        "created_at": "2024-11-17T19:54:42+00:00",
+        "closed_at": null,
+        "updated_at": "2026-05-23T17:40:52+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 61,
+        "title": "Add filter 'vegan market'",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2024-11-30T20:52:55+00:00",
+        "closed_at": null,
+        "updated_at": "2024-11-30T20:52:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 68,
+        "title": "Add some easter eggs",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2024-12-15T10:41:58+00:00",
+        "closed_at": null,
+        "updated_at": "2024-12-15T10:41:58+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 74,
+        "title": "Data Update for christmas markets 2025",
+        "state": "closed",
+        "author_login": "tifa365",
+        "closed_by_login": "joergreichert",
+        "created_at": "2025-11-07T08:10:13+00:00",
+        "closed_at": "2025-12-03T18:16:55+00:00",
+        "updated_at": "2025-12-03T18:16:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 26.42
+      },
+      {
+        "number": 81,
+        "title": "Notifications",
+        "state": "open",
+        "author_login": "joergreichert",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T18:18:35+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T18:18:35+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 18,
+    "open_issues": 9,
+    "closed_issues": 9,
+    "avg_comments_per_issue": 0.5,
+    "median_time_to_close_days": 11.12,
+    "unique_openers": 3,
+    "unique_closers": 1,
+    "top_openers": {
+      "joergreichert": 16,
+      "renovate[bot]": 1,
+      "tifa365": 1
+    },
+    "top_closers": {
+      "joergreichert": 9
+    }
+  }
+}

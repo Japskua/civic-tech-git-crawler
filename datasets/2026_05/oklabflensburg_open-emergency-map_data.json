@@ -1,0 +1,247 @@
+{
+  "repo_metrics": {
+    "full_name": "oklabflensburg/open-emergency-map",
+    "name": "open-emergency-map",
+    "description": "Interaktive Karte mit Standorten und Kontaktdaten der Polizeidienststellen in Schleswig-Holstein.",
+    "num_developers": 1,
+    "total_commits": 9,
+    "languages": {
+      "HTML": 46084,
+      "JavaScript": 28768,
+      "Python": 4770,
+      "CSS": 3777
+    },
+    "primary_language": "HTML",
+    "first_commit_date": "2025-06-01T15:47:39+00:00",
+    "last_commit_date": "2026-04-11T09:07:23+00:00",
+    "license_spdx": "CC0-1.0",
+    "license_name": "Creative Commons Zero v1.0 Universal",
+    "is_osi_approved": false,
+    "topics": [],
+    "has_contributing": true,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 62,
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": false,
+    "ci_cd_workflows": [],
+    "deployments_count": 0,
+    "created_at": "2025-06-01T15:47:39+00:00",
+    "updated_at": "2026-04-11T09:07:32+00:00",
+    "pushed_at": "2026-04-11T09:07:28+00:00",
+    "size_kb": 1002
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "oklabflensburg/open-emergency-map",
+      "login": "p3t3r67x0",
+      "name": "Aurelius Wendelken",
+      "num_commits": 7,
+      "additions": 6467,
+      "deletions": 17,
+      "avg_additions_per_commit": 923.86,
+      "avg_deletions_per_commit": 2.43,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-emergency-map",
+      "login": "p3t3r67x0",
+      "name": "Open Data Coder",
+      "num_commits": 2,
+      "additions": 123,
+      "deletions": 1,
+      "avg_additions_per_commit": 61.5,
+      "avg_deletions_per_commit": 0.5,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "oklabflensburg/open-emergency-map",
+    "pr_count_total": 0,
+    "pr_count_merged": 0,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 0,
+    "prs": [],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "oklabflensburg/open-emergency-map",
+    "weekly_commits": [
+      {
+        "week_start": "2025-05-26",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-06-02",
+        "commits": 3
+      },
+      {
+        "week_start": "2026-04-06",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": null,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 9,
+      "pull_requests": 0,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "oklabflensburg": 2
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 0,
+    "burstiness_cv": 0.54,
+    "burstiness_mean": 3.0,
+    "burstiness_std": 1.63,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 0,
+    "readme_last_updated": "2025-06-02T14:09:33+00:00",
+    "contributing_last_updated": "2025-06-02T12:14:43+00:00",
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": null,
+    "herfindahl_hirschman_index": 10000.0,
+    "hhi_no_bots": 10000.0,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 0,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 2,
+      "unknown": 0
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": null,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-05-23T15:57:44.596978+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "oklabflensburg/open-emergency-map",
+    "weekly_snapshots": [
+      {
+        "week_start": "2025-05-26",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 5,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 8,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 9,
+        "cumulative_contributors": 1
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "oklabflensburg/open-emergency-map",
+        "contributor_id": "p3t3r67x0",
+        "login": "p3t3r67x0",
+        "name": "Aurelius Wendelken",
+        "email": "webtobesocial@gmail.com",
+        "first_commit_date": "2025-06-01T15:47:39+00:00",
+        "last_commit_date": "2026-04-11T09:07:23+00:00",
+        "duration_days": 313,
+        "total_commits": 9,
+        "active_weeks": 3,
+        "total_weeks_span": 44,
+        "activity_ratio": 0.0682,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 3.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-05-26",
+        "commits": 5,
+        "lines_added": 610,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-06-02",
+        "commits": 3,
+        "lines_added": 5979,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2026-04-06",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      }
+    ],
+    "total_weeks": 3,
+    "total_unique_contributors": 1,
+    "new_contributor_rate_per_month": null
+  },
+  "issue_analytics": {
+    "repo_full_name": "oklabflensburg/open-emergency-map",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  }
+}
