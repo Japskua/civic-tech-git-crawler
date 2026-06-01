@@ -612,7 +612,6 @@ def _partial_spearman(
     # Residuals of rx ~ rz and ry ~ rz (simple OLS residuals)
     # rx_resid = rx - (a + b*rz)
     def _residuals(target: np.ndarray, predictor: np.ndarray) -> np.ndarray:
-        n = len(target)
         x_mean = predictor.mean()
         y_mean = target.mean()
         b = np.sum((predictor - x_mean) * (target - y_mean)) / np.sum(

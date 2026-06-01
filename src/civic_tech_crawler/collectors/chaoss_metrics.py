@@ -7,7 +7,6 @@ import networkx as nx
 from github import GithubException, Repository
 
 from civic_tech_crawler.client import GitHubClient
-from civic_tech_crawler.collectors.person_metrics import is_bot_account
 from civic_tech_crawler.models import (
     ChaossMetrics,
     CorePeripheryContributor,

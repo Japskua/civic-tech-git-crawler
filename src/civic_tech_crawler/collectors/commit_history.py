@@ -27,8 +27,6 @@ _DEPARTURE_THRESHOLD_DAYS = 90
 
 def _iso_week_start(dt: datetime) -> str:
     """Return the Monday of the ISO week containing *dt* as 'YYYY-MM-DD'."""
-    iso = dt.isocalendar()
-    # Monday of that ISO week
     from datetime import timedelta
 
     monday = dt.date() - timedelta(days=dt.weekday())
