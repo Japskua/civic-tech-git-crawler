@@ -60,6 +60,20 @@ ls datasets/2026_05/
 > the tool quickly, copy `config.example.yaml` to `config.yaml` and trim the
 > `repositories:` list to one or two entries first.
 
+### Run with Docker
+
+A `Dockerfile` is included for reproducible runs without managing a local Python
+environment:
+
+```bash
+docker build -t civic-tech-crawler .
+docker run --rm \
+    -e GITHUB_TOKEN="$(gh auth token)" \
+    -v "$PWD/config.yaml:/config/config.yaml:ro" \
+    -v "$PWD/datasets/2026_05:/output" \
+    civic-tech-crawler --config /config/config.yaml --output-dir /output
+```
+
 ---
 
 ## Installation
@@ -1520,19 +1534,42 @@ civic_tech_git_crawler/
 
 ---
 
-## Citing This Tool
+## Citing This Tool and the Dataset
 
-If you use this tool in academic research, please cite it as:
+If you use this tool or the bundled dataset in academic research, please cite
+both — the **tool** itself and the **2026-05 dataset** it produced. Machine-
+readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
+[`datasets/2026_05/CITATION.cff`](datasets/2026_05/CITATION.cff) (dataset).
+
+**Tool:**
 
 ```bibtex
 @software{civic_tech_crawler,
-  title = {Civic Tech Git Crawler: GitHub Repository Metrics for Open Source Research},
+  title  = {Civic Tech Git Crawler: GitHub Repository Metrics for Open Source Research},
   author = {Parkkila, Janne},
-  year = {2026},
-  url = {https://github.com/your-username/civic_tech_git_crawler},
-  note = {Implements CHAOSS framework metrics for civic technology research}
+  year   = {2026},
+  url    = {https://github.com/Japskua/civic-tech-git-crawler},
+  note   = {Implements CHAOSS framework metrics for civic technology research}
 }
 ```
+
+**Dataset (n = 57, 2026-05):**
+
+```bibtex
+@dataset{civic_tech_corpus_2026_05,
+  title     = {Civic-Tech Corpus — 2026-05 Refresh (n = 57)},
+  author    = {Parkkila, Janne},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {2026.05},
+  doi       = {10.5281/zenodo.20493288}
+}
+```
+
+The dataset is archived on Zenodo:
+[**doi.org/10.5281/zenodo.20493288**](https://doi.org/10.5281/zenodo.20493288).
+The source files also live in this repository at
+[`datasets/2026_05/`](datasets/2026_05/).
 
 ### Related frameworks and standards
 
@@ -1544,4 +1581,13 @@ If you use this tool in academic research, please cite it as:
 
 ## License
 
-This project is open source. See the LICENSE file for details.
+- **Source code:** MIT — see [`LICENSE.txt`](LICENSE.txt).
+- **Bundled dataset** (`datasets/2026_05/`): Creative Commons Attribution 4.0
+  International (CC-BY-4.0) — see [`datasets/2026_05/LICENSE`](datasets/2026_05/LICENSE).
+
+## Community
+
+- Contributing: [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- Code of conduct: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+- Security policy: [`SECURITY.md`](SECURITY.md)
+- Changelog: [`CHANGELOG.md`](CHANGELOG.md)

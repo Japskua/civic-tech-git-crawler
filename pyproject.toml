@@ -1,12 +1,31 @@
 [project]
 name = "civic-tech-crawler"
 version = "0.1.0"
-description = "GitHub repository metrics crawler for civic tech research"
+description = "GitHub repository metrics crawler for civic-tech research (CHAOSS metrics, weekly activity, contributor concentration)"
 readme = "README.md"
+license = { file = "LICENSE.txt" }
 authors = [
     { name = "Janne Parkkila", email = "japskua@gmail.com" }
 ]
 requires-python = ">=3.13"
+keywords = [
+    "civic-technology",
+    "software-engineering",
+    "mining-software-repositories",
+    "CHAOSS",
+    "open-source-sustainability",
+    "github-api",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 dependencies = [
     "PyGithub>=2.5.0",
     "httpx>=0.28.0",
@@ -18,6 +37,12 @@ dependencies = [
     "rich>=13.0",
     "scipy>=1.12",
 ]
+
+[project.urls]
+Repository    = "https://github.com/Japskua/civic-tech-git-crawler"
+Issues        = "https://github.com/Japskua/civic-tech-git-crawler/issues"
+Documentation = "https://github.com/Japskua/civic-tech-git-crawler#readme"
+Dataset       = "https://doi.org/10.5281/zenodo.20493288"
 
 [project.scripts]
 civic-tech-crawler = "civic_tech_crawler.cli:main"
