@@ -1,17 +1,39 @@
+# Version control & local tooling
 .git
 .gitignore
+.github
 .claude
-.python-version
-.venv
+
+# Python build / cache
 __pycache__
 *.pyc
+*.pyo
 .pytest_cache
 .ruff_cache
-uv.lock
-example_results
+.python-version
+.venv
+build
+dist
+*.egg-info
+
+# Project artifacts that should never go into the image
+datasets
 output
+output_*
+example_results
+paper_esem
+crawl*.log
+*.log
+*.log.*
+
+# Local-only secrets
+config.yaml
+!config.example.yaml
+
+# Docs / paper / community files not needed at runtime
 docs/history
-scripts
 paper_draft.md
+
+# Dockerfile itself (avoid self-inclusion)
 Dockerfile
 .dockerignore

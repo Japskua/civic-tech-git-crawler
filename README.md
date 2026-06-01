@@ -63,16 +63,34 @@ ls datasets/2026_05/
 ### Run with Docker
 
 A `Dockerfile` is included for reproducible runs without managing a local Python
-environment:
+environment. The image is built from the same `pyproject.toml`, ships the
+crawler CLI plus the resumable wrapper at `scripts/run_with_respawn.sh`, and
+reads `/config/config.yaml` writing to `/output` by default.
 
 ```bash
+# 1. Build the image (~1 min, ~800 MB)
 docker build -t civic-tech-crawler .
+
+# 2. Single-pass crawl — uses the image's default ENTRYPOINT
 docker run --rm \
     -e GITHUB_TOKEN="$(gh auth token)" \
     -v "$PWD/config.yaml:/config/config.yaml:ro" \
     -v "$PWD/datasets/2026_05:/output" \
-    civic-tech-crawler --config /config/config.yaml --output-dir /output
+    civic-tech-crawler
+
+# 3. Or — long, multi-hour crawl via the auto-respawning wrapper
+docker run --rm \
+    -e GITHUB_TOKEN="$(gh auth token)" \
+    -v "$PWD/config.yaml:/config/config.yaml:ro" \
+    -v "$PWD/datasets/2026_05:/output" \
+    --entrypoint /app/scripts/run_with_respawn.sh \
+    civic-tech-crawler /config/config.yaml /output 57
+
+# 4. Inspect the CLI without mounting anything
+docker run --rm civic-tech-crawler --help
 ```
+
+The image is verified on every CI run (see `.github/workflows/ci.yml`).
 
 ---
 
