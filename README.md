@@ -1580,14 +1580,16 @@ readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},
-  doi       = {10.5281/zenodo.20493288}
+  doi       = {10.5281/zenodo.20493287}
 }
 ```
 
-The dataset is archived on Zenodo:
-[**doi.org/10.5281/zenodo.20493288**](https://doi.org/10.5281/zenodo.20493288).
-The source files also live in this repository at
-[`datasets/2026_05/`](datasets/2026_05/).
+The dataset is archived on Zenodo. Cite the **Concept DOI** in new work — it
+always resolves to the latest version:
+[**doi.org/10.5281/zenodo.20493287**](https://doi.org/10.5281/zenodo.20493287).
+For exact v1.0 (2026-05) reproduction, pin the **Version DOI**:
+[10.5281/zenodo.20493288](https://doi.org/10.5281/zenodo.20493288). The source
+files also live in this repository at [`datasets/2026_05/`](datasets/2026_05/).
 
 ### Related frameworks and standards
 

@@ -42,7 +42,7 @@ dependencies = [
 Repository    = "https://github.com/Japskua/civic-tech-git-crawler"
 Issues        = "https://github.com/Japskua/civic-tech-git-crawler/issues"
 Documentation = "https://github.com/Japskua/civic-tech-git-crawler#readme"
-Dataset       = "https://doi.org/10.5281/zenodo.20493288"
+Dataset       = "https://doi.org/10.5281/zenodo.20493287"
 
 [project.scripts]
 civic-tech-crawler = "civic_tech_crawler.cli:main"

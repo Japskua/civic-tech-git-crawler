@@ -11,6 +11,14 @@ authors:
 repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
 license: MIT
 version: "0.1.0"
+doi: "10.5281/zenodo.20493287"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20493287"
+    description: "Concept DOI on Zenodo (always resolves to the latest version)"
+  - type: doi
+    value: "10.5281/zenodo.20493288"
+    description: "Version DOI pinned to v1.0"
 keywords:
   - civic-technology
   - software-engineering

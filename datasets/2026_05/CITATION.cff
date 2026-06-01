@@ -32,11 +32,14 @@ keywords:
   - software-engineering
   - GitHub
   - dataset
-doi: "10.5281/zenodo.20493288"
+doi: "10.5281/zenodo.20493287"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.20493287"
+    description: "Concept DOI on Zenodo (always resolves to the latest version)"
+  - type: doi
     value: "10.5281/zenodo.20493288"
-    description: "Concept DOI for the dataset on Zenodo (always resolves to the latest version)"
+    description: "Version DOI pinned to v1.0 (2026-05 snapshot)"
   - type: url
     value: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05"
     description: "Source location of this dataset in the project repository"

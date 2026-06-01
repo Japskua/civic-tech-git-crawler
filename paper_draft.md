@@ -309,8 +309,10 @@ open-source process will resolve on its own.
 
 **Data and code availability.** The n=57 dataset, including per-repository
 caches, aggregate CSVs, statistical analyses, and the figures referenced in
-this paper, is archived on Zenodo:
-[doi.org/10.5281/zenodo.20493288](https://doi.org/10.5281/zenodo.20493288)
-(CC-BY-4.0) and mirrored in the project repository at `datasets/2026_05/`.
-The crawler, analysis pipeline, and full methodology are at
+this paper, is archived on Zenodo under the Concept DOI
+[10.5281/zenodo.20493287](https://doi.org/10.5281/zenodo.20493287) (CC-BY-4.0),
+with the exact v1.0 snapshot pinned at
+[10.5281/zenodo.20493288](https://doi.org/10.5281/zenodo.20493288). The dataset
+is mirrored in the project repository at `datasets/2026_05/`. The crawler,
+analysis pipeline, and full methodology are at
 <https://github.com/Japskua/civic-tech-git-crawler> (MIT).
