@@ -29,7 +29,7 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
 - [Visualization](#visualization)
 - [Examples](#examples)
 - [Extending the Tool](#extending-the-tool)
-- [Citing This Tool](#citing-this-tool)
+- [Citing This Tool and the Dataset](#citing-this-tool-and-the-dataset)
 - [License](#license)
 
 ---

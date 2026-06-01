@@ -125,7 +125,7 @@ def things_to_note(repo: str, d: dict) -> list[str]:
             f"**Net-negative LOC trajectory.** Cumulative deletions ({int(d['total_removed']):,}) "
             f"exceed cumulative additions ({int(d['total_added']):,}) by "
             f"{abs(int(d['net_loc_delta'])):,} lines over the project's history "
-            "— consistent with the maintenance phase signal in `analysis_n37.md` §3.8."
+            "— consistent with the maintenance-phase signal discussed in `../analysis_n57.md` §2.7."
         )
 
     health = d.get("health_percentage")
@@ -257,8 +257,7 @@ def render(repo: str, d: dict, finding_paragraph: str, folder: Path) -> str:
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n37.md`](../analysis_n37.md) — academic writeup of the n=37 sample
-- [`../per_repo_findings.md`](../per_repo_findings.md) — all 38 per-repo findings in one document
+- [`../analysis_n57.md`](../analysis_n57.md) — academic writeup of the n=57 corpus
 """
 
 
@@ -318,7 +317,12 @@ def main() -> int:
                     moved_plots += 1
 
         # Write repo_results.md
-        finding = findings.get(repo, "_(No findings paragraph found in `per_repo_findings.md`. Refer to the metric tables above.)_")
+        finding = findings.get(
+            repo,
+            "_Per-repository narrative findings are not bundled with this snapshot. "
+            "See [`../analysis_n57.md`](../analysis_n57.md) for cross-cutting findings; "
+            "the per-repository quantitative metrics are in the **Key metrics** table below._",
+        )
         (folder / "repo_results.md").write_text(render(repo, d, finding, folder))
         written_md += 1
 
