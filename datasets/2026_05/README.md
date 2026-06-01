@@ -14,6 +14,10 @@ paper writeup — is generated against this folder.
 | **Crawl tool** | `civic-tech-crawler` via `scripts/run_with_respawn.sh` |
 | **Crawl config** | repository list in `config.yaml` / `config.example.yaml` |
 | **Crawl date** | 2026-05-21 → 2026-05-24 (single logical run; paused/resumed across sessions, per-repo cache) |
+| **Version** | 2026.05 |
+| **License** | CC-BY-4.0 (see [`LICENSE`](LICENSE)) |
+| **Maintainer** | Janne Parkkila — japskua@gmail.com |
+| **Citation** | see [`CITATION.cff`](CITATION.cff) and the *License, citation, and versioning* section below |
 | **Summary stats** | see "Dataset summary" below |
 
 ---
@@ -268,3 +272,47 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
   deletions than additions), led by `CodeforLeipzig/leipziggiesst`.
 
 See `analysis_n57.md` for the full writeup, methodology, and threats to validity.
+
+---
+
+## License, citation, and versioning
+
+**License.** This dataset is released under the **Creative Commons Attribution
+4.0 International** license (CC-BY-4.0). Full text: [`LICENSE`](LICENSE). You
+are free to share and adapt the data for any purpose, including commercially,
+provided you give appropriate credit and indicate changes.
+
+**Versioning.** This is version **2026.05** of the corpus. Future refreshes
+(e.g. `2027.05`) will be deposited as new Zenodo versions under the same
+Concept DOI, so a citation to the Concept DOI resolves to the latest version
+while a version DOI pins this specific snapshot.
+
+**How to cite.** Please cite both the dataset and the crawler that produced it.
+
+```bibtex
+@dataset{civic_tech_corpus_2026_05,
+  title     = {Civic-Tech Corpus — 2026-05 Refresh (n = 57)},
+  author    = {Parkkila, Janne},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {2026.05},
+  doi       = {10.5281/zenodo.XXXXXXX}
+}
+
+@software{civic_tech_crawler,
+  title  = {Civic Tech Git Crawler: GitHub Repository Metrics for Open Source Research},
+  author = {Parkkila, Janne},
+  year   = {2026},
+  url    = {https://github.com/Japskua/civic-tech-git-crawler}
+}
+```
+
+The dataset Zenodo DOI is minted on the first GitHub release; until then the
+canonical location is
+<https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05>.
+Machine-readable metadata is in [`CITATION.cff`](CITATION.cff) (citation) and
+[`.zenodo.json`](.zenodo.json) (Zenodo deposit fields).
+
+**Contact.** Issues, corrections, or questions: open an issue at
+<https://github.com/Japskua/civic-tech-git-crawler/issues> or email
+japskua@gmail.com.

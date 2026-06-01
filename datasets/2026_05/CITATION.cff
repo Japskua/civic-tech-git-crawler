@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, please cite both the dataset and the tool that
+  produced it (see CITATION.cff at the repository root).
+type: dataset
+title: "Civic-Tech Corpus — 2026-05 Refresh (n = 57)"
+abstract: >-
+  A curated corpus of 57 open-source civic-technology repositories from 24
+  organisations across five continents (North America, Africa, Japan, Taiwan,
+  Europe), crawled 2026-05-21 to 2026-05-24. Each repository carries
+  repository-level metrics, per-(repository, contributor) commit counts with a
+  heuristic bot flag, PR and tag/release cadence, full-history weekly snapshots,
+  per-(contributor, ISO-week) activity (commits + lines added/removed), 45+
+  CHAOSS metrics including bus factor, elephant factor, HHI, and burstiness,
+  and issue analytics. Companion analyses (statistical_analysis/,
+  weekly_activity_analysis/) and synthesis figures are included.
+authors:
+  - family-names: Parkkila
+    given-names: Janne
+    email: japskua@gmail.com
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+date-released: "2026-05-24"
+version: "2026.05"
+license: CC-BY-4.0
+repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
+url: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05"
+keywords:
+  - civic-technology
+  - open-source-sustainability
+  - mining-software-repositories
+  - CHAOSS
+  - software-engineering
+  - GitHub
+  - dataset
+# Add the Zenodo concept-DOI here after the first deposit:
+# doi: 10.5281/zenodo.XXXXXXX
+identifiers:
+  - type: url
+    value: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05"
+    description: "Source location of this dataset in the project repository"
+references:
+  - type: software
+    title: "Civic Tech Git Crawler"
+    authors:
+      - family-names: Parkkila
+        given-names: Janne
+    repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
+    notes: "The crawler that produced this dataset; see CITATION.cff at the repo root."
