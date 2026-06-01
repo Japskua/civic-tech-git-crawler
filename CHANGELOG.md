@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `.github/` issue and PR templates, GitHub Actions CI workflow, `Dockerfile`.
 - Zenodo deposit metadata for the bundled dataset
   (`datasets/2026_05/LICENSE` (CC-BY-4.0), `datasets/2026_05/CITATION.cff`,
-  `datasets/2026_05/.zenodo.json`).
+  `datasets/2026_05/.zenodo.json`). Dataset Concept DOI:
+  [10.5281/zenodo.20493288](https://doi.org/10.5281/zenodo.20493288).
 - Unit tests for `bot_detection`, `rate_limiter`, and `retry` utilities
   (joining the existing `test_osi_licenses`); 83 tests in total.
 

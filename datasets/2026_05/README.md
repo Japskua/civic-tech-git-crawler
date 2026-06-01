@@ -296,7 +296,7 @@ while a version DOI pins this specific snapshot.
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},
-  doi       = {10.5281/zenodo.XXXXXXX}
+  doi       = {10.5281/zenodo.20493288}
 }
 
 @software{civic_tech_crawler,
@@ -307,8 +307,9 @@ while a version DOI pins this specific snapshot.
 }
 ```
 
-The dataset Zenodo DOI is minted on the first GitHub release; until then the
-canonical location is
+The dataset is archived on Zenodo:
+[**doi.org/10.5281/zenodo.20493288**](https://doi.org/10.5281/zenodo.20493288).
+The source files also live in this repository at
 <https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05>.
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff) (citation) and
 [`.zenodo.json`](.zenodo.json) (Zenodo deposit fields).

@@ -1562,12 +1562,13 @@ readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},
-  doi       = {10.5281/zenodo.XXXXXXX}
+  doi       = {10.5281/zenodo.20493288}
 }
 ```
 
-The dataset DOI is minted via Zenodo's GitHub integration on the first tagged
-release; until then the dataset is available in this repository at
+The dataset is archived on Zenodo:
+[**doi.org/10.5281/zenodo.20493288**](https://doi.org/10.5281/zenodo.20493288).
+The source files also live in this repository at
 [`datasets/2026_05/`](datasets/2026_05/).
 
 ### Related frameworks and standards

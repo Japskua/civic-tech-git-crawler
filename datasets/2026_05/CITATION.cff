@@ -32,9 +32,11 @@ keywords:
   - software-engineering
   - GitHub
   - dataset
-# Add the Zenodo concept-DOI here after the first deposit:
-# doi: 10.5281/zenodo.XXXXXXX
+doi: "10.5281/zenodo.20493288"
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20493288"
+    description: "Concept DOI for the dataset on Zenodo (always resolves to the latest version)"
   - type: url
     value: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05"
     description: "Source location of this dataset in the project repository"

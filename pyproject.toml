@@ -42,8 +42,7 @@ dependencies = [
 Repository    = "https://github.com/Japskua/civic-tech-git-crawler"
 Issues        = "https://github.com/Japskua/civic-tech-git-crawler/issues"
 Documentation = "https://github.com/Japskua/civic-tech-git-crawler#readme"
-# Dataset DOI is filled in after the Zenodo deposit (see CHANGELOG / CITATION.cff).
-Dataset       = "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05"
+Dataset       = "https://doi.org/10.5281/zenodo.20493288"
 
 [project.scripts]
 civic-tech-crawler = "civic_tech_crawler.cli:main"
