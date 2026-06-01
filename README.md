@@ -1575,17 +1575,17 @@ readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
 
 ```bibtex
 @dataset{civic_tech_corpus_2026_05,
-  title     = {Civic-Tech Corpus — 2026-05 Refresh (n = 57)},
+  title     = {Civic-Tech Corpus — 2026-05 (n = 57)},
   author    = {Parkkila, Janne},
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},
-  doi       = {10.5281/zenodo.20493288}
+  doi       = {10.5281/zenodo.20497015}
 }
 ```
 
 The dataset is archived on Zenodo:
-[**doi.org/10.5281/zenodo.20493288**](https://doi.org/10.5281/zenodo.20493288).
+[**doi.org/10.5281/zenodo.20497015**](https://doi.org/10.5281/zenodo.20497015).
 The source files also live in this repository at
 [`datasets/2026_05/`](datasets/2026_05/).
 
