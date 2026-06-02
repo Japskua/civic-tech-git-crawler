@@ -112,17 +112,17 @@ uv sync
 
 This installs the following dependencies:
 
-| Package | Purpose |
-|---------|---------|
-| [PyGithub](https://github.com/PyGithub/PyGithub) | GitHub API v3 client with typed objects and automatic pagination |
-| [httpx](https://www.python-httpx.org/) | HTTP client for API endpoints not covered by PyGithub |
-| [NetworkX](https://networkx.org/) | Graph analysis library for core-periphery network metrics |
-| [PyYAML](https://pyyaml.org/) | YAML configuration file parsing |
-| [Matplotlib](https://matplotlib.org/) | Chart generation for the visualization script |
-| [Pandas](https://pandas.pydata.org/) | Data loading and manipulation for the visualization script |
-| [SciPy](https://scipy.org/) | Statistical testing (Spearman, Mann-Whitney U, Wilcoxon, Kruskal-Wallis, Shapiro-Wilk) |
-| [NumPy](https://numpy.org/) | Numerical computation for statistical analysis |
-| [Rich](https://rich.readthedocs.io/) | Terminal progress bars and formatted output |
+| Package                                          | Purpose                                                                                |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| [PyGithub](https://github.com/PyGithub/PyGithub) | GitHub API v3 client with typed objects and automatic pagination                       |
+| [httpx](https://www.python-httpx.org/)           | HTTP client for API endpoints not covered by PyGithub                                  |
+| [NetworkX](https://networkx.org/)                | Graph analysis library for core-periphery network metrics                              |
+| [PyYAML](https://pyyaml.org/)                    | YAML configuration file parsing                                                        |
+| [Matplotlib](https://matplotlib.org/)            | Chart generation for the visualization script                                          |
+| [Pandas](https://pandas.pydata.org/)             | Data loading and manipulation for the visualization script                             |
+| [SciPy](https://scipy.org/)                      | Statistical testing (Spearman, Mann-Whitney U, Wilcoxon, Kruskal-Wallis, Shapiro-Wilk) |
+| [NumPy](https://numpy.org/)                      | Numerical computation for statistical analysis                                         |
+| [Rich](https://rich.readthedocs.io/)             | Terminal progress bars and formatted output                                            |
 
 ---
 
@@ -178,9 +178,9 @@ cp config.example.yaml config.yaml
 ```yaml
 # GitHub API settings
 github:
-  max_retries: 5            # Retry attempts for stats endpoints returning 202
-  retry_delay: 3            # Base delay in seconds between retries (linear backoff)
-  rate_limit_buffer: 100    # Pause when this many API calls remain
+  max_retries: 5 # Retry attempts for stats endpoints returning 202
+  retry_delay: 3 # Base delay in seconds between retries (linear backoff)
+  rate_limit_buffer: 100 # Pause when this many API calls remain
 
 # Repositories to crawl (owner/repo format).
 # config.example.yaml ships with the full canonical 57-repo civic-tech
@@ -194,12 +194,12 @@ repositories:
 
 # Output settings
 output:
-  directory: "./datasets/2026_05"   # Where to write CSV and JSON files
+  directory: "./datasets/2026_05" # Where to write CSV and JSON files
 
 # Technology detection keywords (fully customizable)
 detection:
   cloud_keywords:
-    topics:                 # GitHub topics that indicate cloud usage
+    topics: # GitHub topics that indicate cloud usage
       - aws
       - gcp
       - azure
@@ -207,10 +207,10 @@ detection:
       - serverless
       - kubernetes
       - docker
-    languages:              # Programming languages that indicate cloud
+    languages: # Programming languages that indicate cloud
       - HCL
       - Dockerfile
-    files:                  # Files in the repository root that indicate cloud
+    files: # Files in the repository root that indicate cloud
       - Dockerfile
       - docker-compose.yml
       - docker-compose.yaml
@@ -221,7 +221,7 @@ detection:
       - appspec.yml
       - Procfile
       - .buildpacks
-    dependencies:           # Package dependencies that indicate cloud
+    dependencies: # Package dependencies that indicate cloud
       - boto3
       - google-cloud
       - azure
@@ -229,18 +229,18 @@ detection:
       - pulumi
 
   ai_ml_keywords:
-    topics:                 # GitHub topics that indicate AI/ML
+    topics: # GitHub topics that indicate AI/ML
       - machine-learning
       - deep-learning
       - ai
       - nlp
       - computer-vision
       - artificial-intelligence
-    languages:              # Languages that indicate AI/ML
+    languages: # Languages that indicate AI/ML
       - Jupyter Notebook
-    files:                  # File patterns (wildcards supported)
+    files: # File patterns (wildcards supported)
       - "*.ipynb"
-    dependencies:           # Package dependencies that indicate AI/ML
+    dependencies: # Package dependencies that indicate AI/ML
       - tensorflow
       - pytorch
       - torch
@@ -306,20 +306,20 @@ options:
 
 ### Flag details
 
-| Flag | Effect |
-|------|--------|
-| `--config` | Specifies the YAML configuration file. Defaults to `config.yaml` in the working directory. |
-| `--token` | Overrides the `GITHUB_TOKEN` environment variable. Useful for one-off runs. |
-| `--repos` | Overrides the repository list from the config file. Comma-separated, no spaces. |
-| `--output-dir` | Overrides the output directory. Created automatically if it does not exist. |
-| `--skip-chaoss` | Skips CHAOSS metric collection (bus factor, burstiness, defect resolution, etc.). Saves significant API calls. |
-| `--skip-temporal` | Skips pulling all PRs, tags, and releases. Useful when only repository-level metrics are needed. Also disables CHAOSS metrics that depend on PR data (acceptance ratio, release frequency). |
-| `--skip-detection` | Skips cloud and AI/ML technology detection. Saves a few API calls per repository. |
-| `--skip-commit-history` | Skips full commit history parsing (weekly snapshots, contributor lifecycles). Saves ~N/100 API calls per repo where N is the total number of commits. |
-| `--skip-issue-analytics` | Skips detailed issue analytics (per-issue records, closer tracking). Saves significant API calls for repos with many closed issues (up to ~2000 calls for the `closed_by` field). |
-| `--verbose` | Shows detailed debug output including every HTTP request and response. |
-| `--force` | Re-crawl all repositories even if cached results exist in the output directory. Overwrites existing cache files. |
-| `--export-only` | Skip crawling entirely. Regenerates all CSV and JSON output files from the existing cached per-repo JSON files in the output directory. Useful for rebuilding exports after manual edits or for merging results from multiple runs. |
+| Flag                     | Effect                                                                                                                                                                                                                              |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--config`               | Specifies the YAML configuration file. Defaults to `config.yaml` in the working directory.                                                                                                                                          |
+| `--token`                | Overrides the `GITHUB_TOKEN` environment variable. Useful for one-off runs.                                                                                                                                                         |
+| `--repos`                | Overrides the repository list from the config file. Comma-separated, no spaces.                                                                                                                                                     |
+| `--output-dir`           | Overrides the output directory. Created automatically if it does not exist.                                                                                                                                                         |
+| `--skip-chaoss`          | Skips CHAOSS metric collection (bus factor, burstiness, defect resolution, etc.). Saves significant API calls.                                                                                                                      |
+| `--skip-temporal`        | Skips pulling all PRs, tags, and releases. Useful when only repository-level metrics are needed. Also disables CHAOSS metrics that depend on PR data (acceptance ratio, release frequency).                                         |
+| `--skip-detection`       | Skips cloud and AI/ML technology detection. Saves a few API calls per repository.                                                                                                                                                   |
+| `--skip-commit-history`  | Skips full commit history parsing (weekly snapshots, contributor lifecycles). Saves ~N/100 API calls per repo where N is the total number of commits.                                                                               |
+| `--skip-issue-analytics` | Skips detailed issue analytics (per-issue records, closer tracking). Saves significant API calls for repos with many closed issues (up to ~2000 calls for the `closed_by` field).                                                   |
+| `--verbose`              | Shows detailed debug output including every HTTP request and response.                                                                                                                                                              |
+| `--force`                | Re-crawl all repositories even if cached results exist in the output directory. Overwrites existing cache files.                                                                                                                    |
+| `--export-only`          | Skip crawling entirely. Regenerates all CSV and JSON output files from the existing cached per-repo JSON files in the output directory. Useful for rebuilding exports after manual edits or for merging results from multiple runs. |
 
 ### Running with `python -m`
 
@@ -337,27 +337,27 @@ All output files are written to the output directory (default: `./output/`). Bot
 
 ### CSV files
 
-| File | Rows | Description |
-|------|------|-------------|
-| `repo_metrics.csv` | 1 per repository | Repository-level metrics (stars, forks, languages, license, CI/CD, etc.) |
-| `person_metrics.csv` | 1 per repository-contributor pair | Contributor commit counts, code additions/deletions, averages |
-| `temporal_summary.csv` | 1 per repository | PR counts (total, merged, open, closed), tag and release counts |
-| `chaoss_summary.csv` | 1 per repository | CHAOSS framework metrics (bus factor, burstiness, acceptance ratio, etc.) |
-| `pull_requests.csv` | 1 per pull request | Individual PR records with timestamps and authors |
-| `tags.csv` | 1 per tag | Git tags with commit SHAs and dates |
-| `core_periphery.csv` | 1 per contributor in review network | Core-periphery network analysis (centrality, classification) per contributor |
-| `weekly_snapshots.csv` | 1 per repository-week | Weekly commit/contributor counts with cumulative totals |
-| `contributor_lifecycles.csv` | 1 per repository-contributor pair | Contributor lifecycle: first/last commit, duration, activity ratio, active/departed status |
-| `contributor_weekly_activity.csv` | 1 per contributor-week pair | Per-person weekly commit counts with lines added / removed |
-| `issue_records.csv` | 1 per issue | Individual issue records: author, closer, comments, labels, time-to-close |
-| `issue_summary.csv` | 1 per repository | Aggregated issue analytics: counts, averages, top openers/closers |
-| `cross_project_overlap.csv` | 1 per unique contributor | Cross-project contributor overlap (login, number of repos contributed to) |
+| File                              | Rows                                | Description                                                                                |
+| --------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------ |
+| `repo_metrics.csv`                | 1 per repository                    | Repository-level metrics (stars, forks, languages, license, CI/CD, etc.)                   |
+| `person_metrics.csv`              | 1 per repository-contributor pair   | Contributor commit counts, code additions/deletions, averages                              |
+| `temporal_summary.csv`            | 1 per repository                    | PR counts (total, merged, open, closed), tag and release counts                            |
+| `chaoss_summary.csv`              | 1 per repository                    | CHAOSS framework metrics (bus factor, burstiness, acceptance ratio, etc.)                  |
+| `pull_requests.csv`               | 1 per pull request                  | Individual PR records with timestamps and authors                                          |
+| `tags.csv`                        | 1 per tag                           | Git tags with commit SHAs and dates                                                        |
+| `core_periphery.csv`              | 1 per contributor in review network | Core-periphery network analysis (centrality, classification) per contributor               |
+| `weekly_snapshots.csv`            | 1 per repository-week               | Weekly commit/contributor counts with cumulative totals                                    |
+| `contributor_lifecycles.csv`      | 1 per repository-contributor pair   | Contributor lifecycle: first/last commit, duration, activity ratio, active/departed status |
+| `contributor_weekly_activity.csv` | 1 per contributor-week pair         | Per-person weekly commit counts with lines added / removed                                 |
+| `issue_records.csv`               | 1 per issue                         | Individual issue records: author, closer, comments, labels, time-to-close                  |
+| `issue_summary.csv`               | 1 per repository                    | Aggregated issue analytics: counts, averages, top openers/closers                          |
+| `cross_project_overlap.csv`       | 1 per unique contributor            | Cross-project contributor overlap (login, number of repos contributed to)                  |
 
 ### JSON files
 
-| File | Description |
-|------|-------------|
-| `full_results.json` | Complete nested data for all repositories in a single file |
+| File                       | Description                                                                                                                                                                                                               |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `full_results.json`        | Complete nested data for all repositories in a single file                                                                                                                                                                |
 | `{Owner}_{Repo}_data.json` | Per-repository cache file with all collected metrics. These files serve as the **persistent cache** for incremental runs and crash recovery (see [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery)). |
 
 ### CSV formatting conventions
@@ -432,12 +432,12 @@ exploratory and example runs, which have been removed from the repository. Its
 (forks, placeholder repos, scale outliers), the methodology, and the output-file
 index.
 
-| | |
-|---|---|
-| **Location** | [`datasets/2026_05/`](datasets/2026_05/) |
-| **Repositories** | 57 |
-| **Organisations** | 24 (US, Canada, Africa, Japan, Taiwan, Germany, UK) |
-| **Schema** | identical to every prior run, so any `scripts/` analysis works unchanged |
+|                   |                                                                          |
+| ----------------- | ------------------------------------------------------------------------ |
+| **Location**      | [`datasets/2026_05/`](datasets/2026_05/)                                 |
+| **Repositories**  | 57                                                                       |
+| **Organisations** | 24 (US, Canada, Africa, Japan, Taiwan, Germany, UK)                      |
+| **Schema**        | identical to every prior run, so any `scripts/` analysis works unchanged |
 
 After the analysis pass, the dataset is organised so each repository has its own
 folder containing everything needed to understand that one project at a glance:
@@ -499,41 +499,41 @@ uv run python scripts/build_repo_folders.py datasets/2026_05/
 
 These are collected for each repository and exported to `repo_metrics.csv`.
 
-| Metric | Column | Type | Description |
-|--------|--------|------|-------------|
-| Repository name | `full_name` | string | Full `owner/repo` identifier |
-| Description | `description` | string | Repository description |
-| Developers | `num_developers` | integer | Total number of unique contributors (falls back to `anon=true` for repos with unlinked commit authors) |
-| Commits | `total_commits` | integer | Total commit count across all branches |
-| Languages | `languages` | dict | Programming languages with byte counts (e.g., `Python=1715697;HTML=102611`) |
-| Primary language | `primary_language` | string | Most-used programming language |
-| First commit | `first_commit_date` | datetime | Timestamp of the earliest commit |
-| Last commit | `last_commit_date` | datetime | Timestamp of the most recent commit |
-| License (SPDX) | `license_spdx` | string | SPDX license identifier (e.g., `MIT`, `GPL-3.0-only`) |
-| License (name) | `license_name` | string | Human-readable license name |
-| OSI approved | `is_osi_approved` | boolean | Whether the license is [OSI-approved](https://opensource.org/licenses/) |
-| Topics | `topics` | list | GitHub repository topics |
-| Contributing guide | `has_contributing` | boolean | CONTRIBUTING file present |
-| Code of conduct | `has_code_of_conduct` | boolean | CODE_OF_CONDUCT file present |
-| Governance | `has_governance` | boolean | GOVERNANCE.md file present |
-| README | `has_readme` | boolean | README file present |
-| Issue template | `has_issue_template` | boolean | Issue template present |
-| PR template | `has_pr_template` | boolean | Pull request template present |
-| Community health | `health_percentage` | integer | GitHub community health score (0-100) |
-| Stars | `stars` | integer | GitHub star count |
-| Watchers | `watchers` | integer | GitHub watcher count (users receiving notifications) |
-| Forks | `forks` | integer | Fork count |
-| Cloud detected | `cloud_detected` | boolean | Cloud infrastructure technology detected |
-| Cloud signals | `cloud_signals` | list | Specific signals that triggered cloud detection |
-| AI/ML detected | `ai_ml_detected` | boolean | AI/ML technology detected |
-| AI/ML signals | `ai_ml_signals` | list | Specific signals that triggered AI/ML detection |
-| CI/CD | `has_ci_cd` | boolean | GitHub Actions workflows present |
-| CI/CD workflows | `ci_cd_workflows` | list | Names of CI/CD workflows |
-| Deployments | `deployments_count` | integer | Number of GitHub deployments |
-| Created | `created_at` | datetime | Repository creation date |
-| Updated | `updated_at` | datetime | Last update date (any activity: issues, PRs, settings) |
-| Pushed | `pushed_at` | datetime | Last code push date (more accurate for activity filtering than `updated_at`) |
-| Size | `size_kb` | integer | Repository size in kilobytes |
+| Metric             | Column                | Type     | Description                                                                                            |
+| ------------------ | --------------------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| Repository name    | `full_name`           | string   | Full `owner/repo` identifier                                                                           |
+| Description        | `description`         | string   | Repository description                                                                                 |
+| Developers         | `num_developers`      | integer  | Total number of unique contributors (falls back to `anon=true` for repos with unlinked commit authors) |
+| Commits            | `total_commits`       | integer  | Total commit count across all branches                                                                 |
+| Languages          | `languages`           | dict     | Programming languages with byte counts (e.g., `Python=1715697;HTML=102611`)                            |
+| Primary language   | `primary_language`    | string   | Most-used programming language                                                                         |
+| First commit       | `first_commit_date`   | datetime | Timestamp of the earliest commit                                                                       |
+| Last commit        | `last_commit_date`    | datetime | Timestamp of the most recent commit                                                                    |
+| License (SPDX)     | `license_spdx`        | string   | SPDX license identifier (e.g., `MIT`, `GPL-3.0-only`)                                                  |
+| License (name)     | `license_name`        | string   | Human-readable license name                                                                            |
+| OSI approved       | `is_osi_approved`     | boolean  | Whether the license is [OSI-approved](https://opensource.org/licenses/)                                |
+| Topics             | `topics`              | list     | GitHub repository topics                                                                               |
+| Contributing guide | `has_contributing`    | boolean  | CONTRIBUTING file present                                                                              |
+| Code of conduct    | `has_code_of_conduct` | boolean  | CODE_OF_CONDUCT file present                                                                           |
+| Governance         | `has_governance`      | boolean  | GOVERNANCE.md file present                                                                             |
+| README             | `has_readme`          | boolean  | README file present                                                                                    |
+| Issue template     | `has_issue_template`  | boolean  | Issue template present                                                                                 |
+| PR template        | `has_pr_template`     | boolean  | Pull request template present                                                                          |
+| Community health   | `health_percentage`   | integer  | GitHub community health score (0-100)                                                                  |
+| Stars              | `stars`               | integer  | GitHub star count                                                                                      |
+| Watchers           | `watchers`            | integer  | GitHub watcher count (users receiving notifications)                                                   |
+| Forks              | `forks`               | integer  | Fork count                                                                                             |
+| Cloud detected     | `cloud_detected`      | boolean  | Cloud infrastructure technology detected                                                               |
+| Cloud signals      | `cloud_signals`       | list     | Specific signals that triggered cloud detection                                                        |
+| AI/ML detected     | `ai_ml_detected`      | boolean  | AI/ML technology detected                                                                              |
+| AI/ML signals      | `ai_ml_signals`       | list     | Specific signals that triggered AI/ML detection                                                        |
+| CI/CD              | `has_ci_cd`           | boolean  | GitHub Actions workflows present                                                                       |
+| CI/CD workflows    | `ci_cd_workflows`     | list     | Names of CI/CD workflows                                                                               |
+| Deployments        | `deployments_count`   | integer  | Number of GitHub deployments                                                                           |
+| Created            | `created_at`          | datetime | Repository creation date                                                                               |
+| Updated            | `updated_at`          | datetime | Last update date (any activity: issues, PRs, settings)                                                 |
+| Pushed             | `pushed_at`           | datetime | Last code push date (more accurate for activity filtering than `updated_at`)                           |
+| Size               | `size_kb`             | integer  | Repository size in kilobytes                                                                           |
 
 **Note on stars vs. watchers:** The GitHub API has a historical naming inconsistency. This tool uses `stargazers_count` for stars and `subscribers_count` for watchers, which are the correct current mappings.
 
@@ -543,17 +543,17 @@ These are collected for each repository and exported to `repo_metrics.csv`.
 
 Per-person metrics are exported to `person_metrics.csv`. One row per (repository, contributor) pair.
 
-| Metric | Column | Type | Description |
-|--------|--------|------|-------------|
-| Repository | `repo_full_name` | string | Repository identifier |
-| Username | `login` | string | GitHub username |
-| Name | `name` | string | Real name from GitHub profile |
-| Bot flag | `is_bot` | boolean | Whether this contributor is detected as a bot |
-| Commits | `num_commits` | integer | Total commits by this contributor |
-| Additions | `additions` | integer | Total lines of code added |
-| Deletions | `deletions` | integer | Total lines of code deleted |
-| Avg additions/commit | `avg_additions_per_commit` | float | Mean lines added per commit |
-| Avg deletions/commit | `avg_deletions_per_commit` | float | Mean lines deleted per commit |
+| Metric               | Column                     | Type    | Description                                   |
+| -------------------- | -------------------------- | ------- | --------------------------------------------- |
+| Repository           | `repo_full_name`           | string  | Repository identifier                         |
+| Username             | `login`                    | string  | GitHub username                               |
+| Name                 | `name`                     | string  | Real name from GitHub profile                 |
+| Bot flag             | `is_bot`                   | boolean | Whether this contributor is detected as a bot |
+| Commits              | `num_commits`              | integer | Total commits by this contributor             |
+| Additions            | `additions`                | integer | Total lines of code added                     |
+| Deletions            | `deletions`                | integer | Total lines of code deleted                   |
+| Avg additions/commit | `avg_additions_per_commit` | float   | Mean lines added per commit                   |
+| Avg deletions/commit | `avg_deletions_per_commit` | float   | Mean lines deleted per commit                 |
 
 #### Bot Detection
 
@@ -575,36 +575,36 @@ Temporal metrics are exported to `temporal_summary.csv` (summary), `pull_request
 
 #### Summary (`temporal_summary.csv`)
 
-| Metric | Column | Type | Description |
-|--------|--------|------|-------------|
-| Total PRs | `pr_count_total` | integer | Total pull requests (all states) |
-| Merged PRs | `pr_count_merged` | integer | Successfully merged pull requests |
-| Open PRs | `pr_count_open` | integer | Currently open pull requests |
-| Closed (unmerged) | `pr_count_closed_unmerged` | integer | Closed without merging |
-| Tags | `tag_count` | integer | Total git tags |
-| Releases | `release_count` | integer | Total GitHub releases |
+| Metric            | Column                     | Type    | Description                       |
+| ----------------- | -------------------------- | ------- | --------------------------------- |
+| Total PRs         | `pr_count_total`           | integer | Total pull requests (all states)  |
+| Merged PRs        | `pr_count_merged`          | integer | Successfully merged pull requests |
+| Open PRs          | `pr_count_open`            | integer | Currently open pull requests      |
+| Closed (unmerged) | `pr_count_closed_unmerged` | integer | Closed without merging            |
+| Tags              | `tag_count`                | integer | Total git tags                    |
+| Releases          | `release_count`            | integer | Total GitHub releases             |
 
 #### Individual PR records (`pull_requests.csv`)
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `repo_full_name` | string | Repository identifier |
-| `number` | integer | PR number |
-| `title` | string | PR title |
-| `state` | string | `open` or `closed` |
-| `author_login` | string | PR author's GitHub username |
-| `created_at` | datetime | When the PR was opened |
-| `merged_at` | datetime | When the PR was merged (empty if not merged) |
-| `closed_at` | datetime | When the PR was closed (empty if still open) |
+| Column           | Type     | Description                                  |
+| ---------------- | -------- | -------------------------------------------- |
+| `repo_full_name` | string   | Repository identifier                        |
+| `number`         | integer  | PR number                                    |
+| `title`          | string   | PR title                                     |
+| `state`          | string   | `open` or `closed`                           |
+| `author_login`   | string   | PR author's GitHub username                  |
+| `created_at`     | datetime | When the PR was opened                       |
+| `merged_at`      | datetime | When the PR was merged (empty if not merged) |
+| `closed_at`      | datetime | When the PR was closed (empty if still open) |
 
 #### Individual tag records (`tags.csv`)
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `repo_full_name` | string | Repository identifier |
-| `name` | string | Tag name (e.g., `v1.2.3`) |
-| `commit_sha` | string | Associated commit SHA |
-| `date` | datetime | Commit date |
+| Column           | Type     | Description               |
+| ---------------- | -------- | ------------------------- |
+| `repo_full_name` | string   | Repository identifier     |
+| `name`           | string   | Tag name (e.g., `v1.2.3`) |
+| `commit_sha`     | string   | Associated commit SHA     |
+| `date`           | datetime | Commit date               |
 
 ---
 
@@ -616,77 +616,78 @@ These are exported to `chaoss_summary.csv` (one row per repository) and in full 
 
 #### Common Metrics
 
-| Metric | Column | CHAOSS Definition | Calculation |
-|--------|--------|-------------------|-------------|
-| Code Changes | `weekly_commits` (JSON only) | [Code Changes Commits](https://chaoss.community/kb/metric-code-changes-commits/) | Weekly commit counts for the past year, from GitHub's commit activity statistics API |
-| Acceptance Ratio | `change_request_acceptance_ratio` | [Change Request Acceptance Ratio](https://chaoss.community/kb/metric-change-request-acceptance-ratio/) | `merged_PRs / total_PRs` |
-| Bus Factor | `bus_factor` | [Contributor Absence Factor](https://chaoss.community/kb/metric-contributor-absence-factor/) | Minimum number of contributors whose combined commits account for 50% of total commits. Contributors are sorted by commit count in descending order, and counted until the running sum reaches 50%. |
-| Contribution Types | `contribution_types` | [Types of Contributions](https://chaoss.community/kb/metric-types-of-contributions/) | Counts of code commits, pull requests, and issues |
+| Metric             | Column                            | CHAOSS Definition                                                                                      | Calculation                                                                                                                                                                                         |
+| ------------------ | --------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Code Changes       | `weekly_commits` (JSON only)      | [Code Changes Commits](https://chaoss.community/kb/metric-code-changes-commits/)                       | Weekly commit counts for the past year, from GitHub's commit activity statistics API                                                                                                                |
+| Acceptance Ratio   | `change_request_acceptance_ratio` | [Change Request Acceptance Ratio](https://chaoss.community/kb/metric-change-request-acceptance-ratio/) | `merged_PRs / total_PRs`                                                                                                                                                                            |
+| Bus Factor         | `bus_factor`                      | [Contributor Absence Factor](https://chaoss.community/kb/metric-contributor-absence-factor/)           | Minimum number of contributors whose combined commits account for 50% of total commits. Contributors are sorted by commit count in descending order, and counted until the running sum reaches 50%. |
+| Contribution Types | `contribution_types`              | [Types of Contributions](https://chaoss.community/kb/metric-types-of-contributions/)                   | Counts of code commits, pull requests, and issues                                                                                                                                                   |
 
 #### Diversity, Equity & Inclusion Metrics
 
-| Metric | Column | CHAOSS Definition | Calculation |
-|--------|--------|-------------------|-------------|
-| Org Diversity | `organizational_diversity` | [Organizational Diversity](https://chaoss.community/kb/metric-organizational-diversity/) | Groups contributors by the `company` field from their GitHub profile. Shows how many contributors belong to each organization. |
-| Label Inclusivity | `newcomer_friendly_labels` | [Issue Label Inclusivity](https://chaoss.community/kb/metric-issue-label-inclusivity/) | Counts issue labels matching newcomer-friendly patterns: `good first issue`, `help wanted`, `beginner`, `easy`, `first-timers-only`, `newcomer`, `starter`, `low-hanging-fruit`, `up-for-grabs` |
+| Metric            | Column                     | CHAOSS Definition                                                                        | Calculation                                                                                                                                                                                     |
+| ----------------- | -------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Org Diversity     | `organizational_diversity` | [Organizational Diversity](https://chaoss.community/kb/metric-organizational-diversity/) | Groups contributors by the `company` field from their GitHub profile. Shows how many contributors belong to each organization.                                                                  |
+| Label Inclusivity | `newcomer_friendly_labels` | [Issue Label Inclusivity](https://chaoss.community/kb/metric-issue-label-inclusivity/)   | Counts issue labels matching newcomer-friendly patterns: `good first issue`, `help wanted`, `beginner`, `easy`, `first-timers-only`, `newcomer`, `starter`, `low-hanging-fruit`, `up-for-grabs` |
 
 #### Evolution Metrics
 
-| Metric | Column | CHAOSS Definition | Calculation |
-|--------|--------|-------------------|-------------|
-| Release Frequency | `release_frequency_per_month` | [Release Frequency](https://chaoss.community/kb/metric-release-frequency/) | `total_releases / months_between_first_and_last_release` (requires at least 2 releases) |
-| Technical Fork | `fork_count` | [Technical Fork](https://chaoss.community/kb/metric-technical-fork/) | Total fork count from GitHub API |
-| Burstiness | `burstiness_cv`, `burstiness_mean`, `burstiness_std` | [Burstiness](https://chaoss.community/kb/metric-burstiness/) | Statistical analysis of weekly commit counts. **CV (Coefficient of Variation)** = standard deviation / mean. Higher CV indicates more irregular (bursty) development patterns. |
+| Metric            | Column                                               | CHAOSS Definition                                                          | Calculation                                                                                                                                                                    |
+| ----------------- | ---------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Release Frequency | `release_frequency_per_month`                        | [Release Frequency](https://chaoss.community/kb/metric-release-frequency/) | `total_releases / months_between_first_and_last_release` (requires at least 2 releases)                                                                                        |
+| Technical Fork    | `fork_count`                                         | [Technical Fork](https://chaoss.community/kb/metric-technical-fork/)       | Total fork count from GitHub API                                                                                                                                               |
+| Burstiness        | `burstiness_cv`, `burstiness_mean`, `burstiness_std` | [Burstiness](https://chaoss.community/kb/metric-burstiness/)               | Statistical analysis of weekly commit counts. **CV (Coefficient of Variation)** = standard deviation / mean. Higher CV indicates more irregular (bursty) development patterns. |
 
 **Interpreting burstiness:** A `burstiness_cv` close to 0 indicates steady, consistent development. A value above 1.0 indicates highly variable activity with bursts of development followed by quiet periods.
 
 #### Risk Metrics
 
-| Metric | Column | CHAOSS Definition | Calculation |
-|--------|--------|-------------------|-------------|
+| Metric            | Column                          | CHAOSS Definition                                                                     | Calculation                                                                                                         |
+| ----------------- | ------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Defect Resolution | `median_defect_resolution_days` | [Defect Resolution Duration](https://chaoss.community/kb/defect-resolution-duration/) | Median number of days from issue creation to closure for issues labeled `bug`. Fetches up to 500 closed bug issues. |
-| OSI License | `osi_approved_license` | [OSI Approved Licenses](https://chaoss.community/kb/metric-osi-approved-licenses/) | Checks the repository's SPDX license identifier against a set of 98 OSI-approved licenses |
+| OSI License       | `osi_approved_license`          | [OSI Approved Licenses](https://chaoss.community/kb/metric-osi-approved-licenses/)    | Checks the repository's SPDX license identifier against a set of 98 OSI-approved licenses                           |
 
 #### Extended Community Health Metrics
 
 These metrics extend the core CHAOSS framework with additional indicators recommended by academic literature on open-source sustainability.
 
-| Metric | Column | Description | Calculation |
-|--------|--------|-------------|-------------|
-| Elephant Factor | `elephant_factor` | Organizational-level bus factor (Goggins et al., 2021) | Minimum number of organizations whose contributors account for 50% of commits. Same algorithm as bus factor, applied at org level. |
-| Contributor Retention | `contributor_new_count`, `contributor_casual_count`, `contributor_regular_count` | Contributor cohort analysis (Zhou & Mockus, 2012) | Classifies contributors by active weeks: **new** (1 week), **casual** (2-12 weeks), **regular** (13+ weeks). |
-| Time to First Response (Issues) | `median_time_to_first_response_issues_hours` | CHAOSS: Time to First Response | Median hours from issue creation to first non-author comment. Sampled from last 100 issues. |
-| Time to First Response (PRs) | `median_time_to_first_response_prs_hours` | CHAOSS: Time to First Response | Median hours from PR creation to first non-author comment. Sampled from last 100 PRs. |
-| Documentation Freshness | `readme_last_updated`, `contributing_last_updated` | Documentation quality signal (Prana et al., 2019) | Date of the most recent commit touching README.md and CONTRIBUTING.md. |
-| Stale Issue Ratio | `stale_issue_ratio`, `stale_issue_count`, `open_issue_count` | Issue responsiveness indicator | Percentage of open issues with no activity for 90+ days. |
-| PR Review Turnaround | `median_pr_review_turnaround_hours` | Code review quality (Rigby & Bird, 2013) | Median hours from PR creation to first formal review. Sampled from last 100 merged PRs. |
-| PR Review Depth | `avg_review_comments_per_pr` | Code review quality (Bosu et al., 2017) | Average number of review comments per PR. Sampled from last 100 merged PRs. |
-| HHI (Org Concentration) | `herfindahl_hirschman_index` | Market concentration index (Rhoades, 1993) | Herfindahl-Hirschman Index computed on organizational commit shares. Ranges from 0 (perfectly diverse) to 10,000 (single-org monopoly). |
-| Institutional Classification | `contributor_org_types` | Institutional diversity (Schweik & English, 2012) | Classifies contributors into government, academic, nonprofit, company, or unknown based on GitHub profile company field pattern matching. |
-| DORA Deployment Frequency | `dora_deployment_frequency_per_month` | DORA / Accelerate (Forsgren et al., 2018) | Number of releases per month over the repository's lifetime. |
-| DORA Lead Time | `dora_median_lead_time_days` | DORA / Accelerate (Forsgren et al., 2018) | Median days between consecutive releases (proxy for time from code change to production). |
-| DORA Change Failure Rate | `dora_change_failure_rate` | DORA / Accelerate (Forsgren et al., 2018) | Ratio of revert/hotfix/bugfix PRs to total merged PRs (heuristic from PR title patterns). |
-| Core Contributors | `core_contributor_count` | Core-periphery structure (Crowston & Howison, 2006) | Number of contributors classified as "core" in the PR review collaboration network. Uses degree centrality above the median threshold. |
-| Periphery Contributors | `periphery_contributor_count` | Core-periphery structure (Crowston & Howison, 2006) | Number of contributors classified as "periphery" in the PR review collaboration network. |
-| Core-Periphery Ratio | `core_periphery_ratio` | Core-periphery structure (Crowston & Howison, 2006) | Proportion of core contributors: `core / (core + periphery)`. |
-| Network Density | `network_density` | Social network analysis | Ratio of actual edges to possible edges in the PR review collaboration graph. Higher density = more interconnected reviews. |
-| Avg Degree Centrality | `avg_degree_centrality` | Social network analysis | Average number of unique collaborators per person (normalized). Higher values indicate broader collaboration patterns. |
+| Metric                          | Column                                                                           | Description                                            | Calculation                                                                                                                               |
+| ------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Elephant Factor                 | `elephant_factor`                                                                | Organizational-level bus factor (Goggins et al., 2021) | Minimum number of organizations whose contributors account for 50% of commits. Same algorithm as bus factor, applied at org level.        |
+| Contributor Retention           | `contributor_new_count`, `contributor_casual_count`, `contributor_regular_count` | Contributor cohort analysis (Zhou & Mockus, 2012)      | Classifies contributors by active weeks: **new** (1 week), **casual** (2-12 weeks), **regular** (13+ weeks).                              |
+| Time to First Response (Issues) | `median_time_to_first_response_issues_hours`                                     | CHAOSS: Time to First Response                         | Median hours from issue creation to first non-author comment. Sampled from last 100 issues.                                               |
+| Time to First Response (PRs)    | `median_time_to_first_response_prs_hours`                                        | CHAOSS: Time to First Response                         | Median hours from PR creation to first non-author comment. Sampled from last 100 PRs.                                                     |
+| Documentation Freshness         | `readme_last_updated`, `contributing_last_updated`                               | Documentation quality signal (Prana et al., 2019)      | Date of the most recent commit touching README.md and CONTRIBUTING.md.                                                                    |
+| Stale Issue Ratio               | `stale_issue_ratio`, `stale_issue_count`, `open_issue_count`                     | Issue responsiveness indicator                         | Percentage of open issues with no activity for 90+ days.                                                                                  |
+| PR Review Turnaround            | `median_pr_review_turnaround_hours`                                              | Code review quality (Rigby & Bird, 2013)               | Median hours from PR creation to first formal review. Sampled from last 100 merged PRs.                                                   |
+| PR Review Depth                 | `avg_review_comments_per_pr`                                                     | Code review quality (Bosu et al., 2017)                | Average number of review comments per PR. Sampled from last 100 merged PRs.                                                               |
+| HHI (Org Concentration)         | `herfindahl_hirschman_index`                                                     | Market concentration index (Rhoades, 1993)             | Herfindahl-Hirschman Index computed on organizational commit shares. Ranges from 0 (perfectly diverse) to 10,000 (single-org monopoly).   |
+| Institutional Classification    | `contributor_org_types`                                                          | Institutional diversity (Schweik & English, 2012)      | Classifies contributors into government, academic, nonprofit, company, or unknown based on GitHub profile company field pattern matching. |
+| DORA Deployment Frequency       | `dora_deployment_frequency_per_month`                                            | DORA / Accelerate (Forsgren et al., 2018)              | Number of releases per month over the repository's lifetime.                                                                              |
+| DORA Lead Time                  | `dora_median_lead_time_days`                                                     | DORA / Accelerate (Forsgren et al., 2018)              | Median days between consecutive releases (proxy for time from code change to production).                                                 |
+| DORA Change Failure Rate        | `dora_change_failure_rate`                                                       | DORA / Accelerate (Forsgren et al., 2018)              | Ratio of revert/hotfix/bugfix PRs to total merged PRs (heuristic from PR title patterns).                                                 |
+| Core Contributors               | `core_contributor_count`                                                         | Core-periphery structure (Crowston & Howison, 2006)    | Number of contributors classified as "core" in the PR review collaboration network. Uses degree centrality above the median threshold.    |
+| Periphery Contributors          | `periphery_contributor_count`                                                    | Core-periphery structure (Crowston & Howison, 2006)    | Number of contributors classified as "periphery" in the PR review collaboration network.                                                  |
+| Core-Periphery Ratio            | `core_periphery_ratio`                                                           | Core-periphery structure (Crowston & Howison, 2006)    | Proportion of core contributors: `core / (core + periphery)`.                                                                             |
+| Network Density                 | `network_density`                                                                | Social network analysis                                | Ratio of actual edges to possible edges in the PR review collaboration graph. Higher density = more interconnected reviews.               |
+| Avg Degree Centrality           | `avg_degree_centrality`                                                          | Social network analysis                                | Average number of unique collaborators per person (normalized). Higher values indicate broader collaboration patterns.                    |
 
 #### Bot-Filtered Metrics
 
 All concentration metrics are computed in dual mode — with and without bot contributors — to assess the impact of automated accounts on project health indicators. The following additional columns are present in `chaoss_summary.csv`:
 
-| Metric | Column | Description |
-|--------|--------|-------------|
-| Bus Factor (no bots) | `bus_factor_no_bots` | Bus factor computed excluding bot contributors |
-| Elephant Factor (no bots) | `elephant_factor_no_bots` | Elephant factor computed excluding bot contributors |
-| HHI (no bots) | `hhi_no_bots` | HHI where each unknown-affiliation contributor is treated as their own org (not lumped into "Unknown") and bots are excluded |
-| HHI (known orgs only) | `hhi_known_orgs_only` | HHI computed using only contributors with known organisational affiliation |
-| Bot contributor count | `bot_contributor_count` | Number of bot contributors detected in this repository |
-| Bot commit count | `bot_commit_count` | Total commits by bot contributors |
-| Unknown org contributors | `unknown_org_contributor_count` | Number of contributors with unknown organisational affiliation |
+| Metric                    | Column                          | Description                                                                                                                  |
+| ------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Bus Factor (no bots)      | `bus_factor_no_bots`            | Bus factor computed excluding bot contributors                                                                               |
+| Elephant Factor (no bots) | `elephant_factor_no_bots`       | Elephant factor computed excluding bot contributors                                                                          |
+| HHI (no bots)             | `hhi_no_bots`                   | HHI where each unknown-affiliation contributor is treated as their own org (not lumped into "Unknown") and bots are excluded |
+| HHI (known orgs only)     | `hhi_known_orgs_only`           | HHI computed using only contributors with known organisational affiliation                                                   |
+| Bot contributor count     | `bot_contributor_count`         | Number of bot contributors detected in this repository                                                                       |
+| Bot commit count          | `bot_commit_count`              | Total commits by bot contributors                                                                                            |
+| Unknown org contributors  | `unknown_org_contributor_count` | Number of contributors with unknown organisational affiliation                                                               |
 
 **Interpreting the three HHI variants:**
+
 - `herfindahl_hirschman_index`: Original HHI — all unknown-affiliation contributors lumped into one "Unknown" org. Can inflate concentration artificially.
 - `hhi_no_bots`: Improved HHI — bots excluded, each unknown contributor treated as their own org. Better reflects true organisational diversity.
 - `hhi_known_orgs_only`: Strictest HHI — only contributors with identified organisations. Most accurate but smallest sample.
@@ -697,14 +698,14 @@ In antitrust economics, HHI < 1,500 = unconcentrated, 1,500–2,500 = moderately
 
 A separate CSV file (`core_periphery.csv`) provides per-contributor network analysis:
 
-| Column | Description |
-|--------|-------------|
-| `repo_full_name` | Repository identifier |
-| `login` | GitHub username |
-| `degree_centrality` | Normalized count of unique collaborators (0-1) |
-| `betweenness_centrality` | How often this person bridges between other collaborators (0-1) |
-| `classification` | `core` or `periphery` based on degree centrality above/below median |
-| `num_collaborators` | Raw number of unique people this contributor has reviewed or been reviewed by |
+| Column                   | Description                                                                   |
+| ------------------------ | ----------------------------------------------------------------------------- |
+| `repo_full_name`         | Repository identifier                                                         |
+| `login`                  | GitHub username                                                               |
+| `degree_centrality`      | Normalized count of unique collaborators (0-1)                                |
+| `betweenness_centrality` | How often this person bridges between other collaborators (0-1)               |
+| `classification`         | `core` or `periphery` based on degree centrality above/below median           |
+| `num_collaborators`      | Raw number of unique people this contributor has reviewed or been reviewed by |
 
 The collaboration graph is built from PR author↔reviewer pairs extracted during the PR review metrics pass (last 100 merged PRs). Zero additional API calls required.
 
@@ -712,9 +713,9 @@ The collaboration graph is built from PR author↔reviewer pairs extracted durin
 
 A separate CSV file (`cross_project_overlap.csv`) is exported with contributor-level overlap data:
 
-| Column | Description |
-|--------|-------------|
-| `login` | GitHub username |
+| Column                 | Description                                                |
+| ---------------------- | ---------------------------------------------------------- |
+| `login`                | GitHub username                                            |
 | `repos_contributed_to` | Number of crawled repositories this contributor appears in |
 
 Summary statistics (total unique contributors, multi-repo count, multi-repo ratio) are printed to the console after each run.
@@ -742,43 +743,43 @@ The commit history collector parses the **full commit history** of each reposito
 
 **Data source:** The GitHub GraphQL API — `Repository.defaultBranchRef.target.history(first: 100, after: $cursor)` — fetches 100 commits per API call and returns `oid`, `additions`, `deletions`, `committedDate`, author email/name, and author GitHub login in a single payload. This is roughly **35× faster** than the previous per-commit REST pattern (benchmarked on an 8,700-commit repo: ~3 minutes vs. ~50 minutes at the 5 000/hour rate limit) and gives us line-level effort data "for free" as part of the same request. **API cost:** ~1 call per 100 commits (i.e. `ceil(N / 100)` where N is the commit count).
 
-> **Implementation note on PyGithub.** The collector previously used PyGithub's `Commit.stats` lazy-load for per-commit additions/deletions. PyGithub's `Requester.__requestRaw` retries HTTP 202 responses *recursively* ([Requester.py:1238](https://github.com/PyGithub/PyGithub/blob/main/github/Requester.py)); for GitHub's stats endpoints that take minutes to compute, the retries accumulate Python stack frames until `RecursionError` is raised. The GraphQL rewrite bypasses that code path entirely. The companion httpx-based `GitHubClient.get_stats_contributors` and `get_stats_commit_activity` methods do the same for the REST stats endpoints with an iterative (for-loop) retry.
+> **Implementation note on PyGithub.** The collector previously used PyGithub's `Commit.stats` lazy-load for per-commit additions/deletions. PyGithub's `Requester.__requestRaw` retries HTTP 202 responses _recursively_ ([Requester.py:1238](https://github.com/PyGithub/PyGithub/blob/main/github/Requester.py)); for GitHub's stats endpoints that take minutes to compute, the retries accumulate Python stack frames until `RecursionError` is raised. The GraphQL rewrite bypasses that code path entirely. The companion httpx-based `GitHubClient.get_stats_contributors` and `get_stats_commit_activity` methods do the same for the REST stats endpoints with an iterative (for-loop) retry.
 
 #### Weekly Snapshots (`weekly_snapshots.csv`)
 
 One row per (repository, ISO week) pair. Weeks are aligned to Monday start dates.
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `repo_full_name` | string | Repository identifier |
-| `week_start` | date | Monday of the ISO week (e.g., `2024-01-08`) |
-| `total_commits` | integer | Number of commits in this week |
-| `unique_contributors` | integer | Number of distinct contributors in this week |
-| `new_contributors` | integer | Number of contributors making their first-ever commit in this week |
-| `cumulative_commits` | integer | Running total of commits up to and including this week |
+| Column                    | Type    | Description                                                        |
+| ------------------------- | ------- | ------------------------------------------------------------------ |
+| `repo_full_name`          | string  | Repository identifier                                              |
+| `week_start`              | date    | Monday of the ISO week (e.g., `2024-01-08`)                        |
+| `total_commits`           | integer | Number of commits in this week                                     |
+| `unique_contributors`     | integer | Number of distinct contributors in this week                       |
+| `new_contributors`        | integer | Number of contributors making their first-ever commit in this week |
+| `cumulative_commits`      | integer | Running total of commits up to and including this week             |
 | `cumulative_contributors` | integer | Running total of unique contributors up to and including this week |
 
 #### Contributor Lifecycles (`contributor_lifecycles.csv`)
 
 One row per (repository, contributor) pair. Provides lifecycle analysis for each contributor.
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `repo_full_name` | string | Repository identifier |
-| `contributor_id` | string | Unique identifier: GitHub login if linked, else author email |
-| `login` | string | GitHub username (empty if commit author has no linked account) |
-| `name` | string | Name from commit metadata |
-| `email` | string | Email from commit metadata |
-| `first_commit_date` | datetime | Timestamp of this contributor's first commit |
-| `last_commit_date` | datetime | Timestamp of this contributor's most recent commit |
-| `duration_days` | integer | Days between first and last commit |
-| `total_commits` | integer | Total number of commits by this contributor |
-| `active_weeks` | integer | Number of ISO weeks with at least one commit |
-| `total_weeks_span` | integer | Total ISO weeks from first to last commit |
-| `activity_ratio` | float | `active_weeks / total_weeks_span` — measures engagement density (1.0 = committed every week) |
-| `status` | string | `active` if last commit within 90 days, `departed` otherwise |
-| `departed_weeks_ago` | integer | Weeks since last commit (only for departed contributors) |
-| `avg_commits_per_active_week` | float | `total_commits / active_weeks` |
+| Column                        | Type     | Description                                                                                  |
+| ----------------------------- | -------- | -------------------------------------------------------------------------------------------- |
+| `repo_full_name`              | string   | Repository identifier                                                                        |
+| `contributor_id`              | string   | Unique identifier: GitHub login if linked, else author email                                 |
+| `login`                       | string   | GitHub username (empty if commit author has no linked account)                               |
+| `name`                        | string   | Name from commit metadata                                                                    |
+| `email`                       | string   | Email from commit metadata                                                                   |
+| `first_commit_date`           | datetime | Timestamp of this contributor's first commit                                                 |
+| `last_commit_date`            | datetime | Timestamp of this contributor's most recent commit                                           |
+| `duration_days`               | integer  | Days between first and last commit                                                           |
+| `total_commits`               | integer  | Total number of commits by this contributor                                                  |
+| `active_weeks`                | integer  | Number of ISO weeks with at least one commit                                                 |
+| `total_weeks_span`            | integer  | Total ISO weeks from first to last commit                                                    |
+| `activity_ratio`              | float    | `active_weeks / total_weeks_span` — measures engagement density (1.0 = committed every week) |
+| `status`                      | string   | `active` if last commit within 90 days, `departed` otherwise                                 |
+| `departed_weeks_ago`          | integer  | Weeks since last commit (only for departed contributors)                                     |
+| `avg_commits_per_active_week` | float    | `total_commits / active_weeks`                                                               |
 
 **Contributor identification:** Uses the GitHub login associated with the commit author if available. Falls back to the commit author email for unlinked accounts. This is consistent with the person metrics collector.
 
@@ -788,14 +789,14 @@ One row per (repository, contributor) pair. Provides lifecycle analysis for each
 
 One row per (repository, contributor, ISO week) triple. Only weeks where the contributor made at least one commit are included. The `lines_added` and `lines_removed` columns come from the same GraphQL commit-history query that produces the weekly snapshots — there is no extra API cost.
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `repo_full_name` | string | Repository identifier |
-| `contributor_id` | string | Unique identifier (login or email) |
-| `week_start` | date | Monday of the ISO week |
-| `commits` | integer | Number of commits by this contributor in this week |
-| `lines_added` | integer | Sum of `additions` across this contributor's commits in this week (non-negative) |
-| `lines_removed` | integer | Sum of `deletions` across this contributor's commits in this week (non-negative) |
+| Column           | Type    | Description                                                                      |
+| ---------------- | ------- | -------------------------------------------------------------------------------- |
+| `repo_full_name` | string  | Repository identifier                                                            |
+| `contributor_id` | string  | Unique identifier (login or email)                                               |
+| `week_start`     | date    | Monday of the ISO week                                                           |
+| `commits`        | integer | Number of commits by this contributor in this week                               |
+| `lines_added`    | integer | Sum of `additions` across this contributor's commits in this week (non-negative) |
+| `lines_removed`  | integer | Sum of `deletions` across this contributor's commits in this week (non-negative) |
 
 **Interpretation of line counts.** GitHub reports per-commit `additions` and `deletions` as non-negative integers computed as the diff against the commit's first parent. Every row is therefore non-negative, but summing `lines_added − lines_removed` across a repository's entire default-branch history can be negative — this happens when the traversed history contains large deletions not offset by equally large earlier additions (e.g. repositories where bulk data files are replaced with smaller versions over many commits, or where vendored directories that predate the current default branch are later purged). Two repositories in the example dataset exhibit this pattern (`DemocracyClub/UK-Polling-Stations` and `CodeForAfrica/sensors.AFRICA`). The crawler therefore reports `lines_added` and `lines_removed` separately rather than a signed delta.
 
@@ -811,37 +812,37 @@ The issue analytics collector retrieves **all issues** (excluding pull requests)
 
 One row per issue (excluding pull requests).
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `repo_full_name` | string | Repository identifier |
-| `number` | integer | Issue number |
-| `title` | string | Issue title |
-| `state` | string | `open` or `closed` |
-| `author_login` | string | GitHub username of the issue author |
-| `closed_by_login` | string | GitHub username of the person who closed the issue (empty if open) |
-| `created_at` | datetime | When the issue was created |
-| `closed_at` | datetime | When the issue was closed (empty if open) |
-| `updated_at` | datetime | When the issue was last updated |
-| `comment_count` | integer | Number of comments on the issue |
-| `labels` | list | Semicolon-separated label names |
-| `time_to_close_days` | float | Days from creation to closure (empty if open) |
+| Column               | Type     | Description                                                        |
+| -------------------- | -------- | ------------------------------------------------------------------ |
+| `repo_full_name`     | string   | Repository identifier                                              |
+| `number`             | integer  | Issue number                                                       |
+| `title`              | string   | Issue title                                                        |
+| `state`              | string   | `open` or `closed`                                                 |
+| `author_login`       | string   | GitHub username of the issue author                                |
+| `closed_by_login`    | string   | GitHub username of the person who closed the issue (empty if open) |
+| `created_at`         | datetime | When the issue was created                                         |
+| `closed_at`          | datetime | When the issue was closed (empty if open)                          |
+| `updated_at`         | datetime | When the issue was last updated                                    |
+| `comment_count`      | integer  | Number of comments on the issue                                    |
+| `labels`             | list     | Semicolon-separated label names                                    |
+| `time_to_close_days` | float    | Days from creation to closure (empty if open)                      |
 
 #### Issue Summary (`issue_summary.csv`)
 
 One row per repository with aggregated issue analytics.
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `repo_full_name` | string | Repository identifier |
-| `total_issues` | integer | Total number of issues (excluding PRs) |
-| `open_issues` | integer | Currently open issues |
-| `closed_issues` | integer | Closed issues |
-| `avg_comments_per_issue` | float | Mean number of comments across all issues |
-| `median_time_to_close_days` | float | Median days from creation to closure for closed issues |
-| `unique_openers` | integer | Number of distinct users who opened issues |
-| `unique_closers` | integer | Number of distinct users who closed issues |
-| `top_openers` | dict | Semicolon-separated `login=count` pairs for most frequent issue openers |
-| `top_closers` | dict | Semicolon-separated `login=count` pairs for most frequent issue closers |
+| Column                      | Type    | Description                                                             |
+| --------------------------- | ------- | ----------------------------------------------------------------------- |
+| `repo_full_name`            | string  | Repository identifier                                                   |
+| `total_issues`              | integer | Total number of issues (excluding PRs)                                  |
+| `open_issues`               | integer | Currently open issues                                                   |
+| `closed_issues`             | integer | Closed issues                                                           |
+| `avg_comments_per_issue`    | float   | Mean number of comments across all issues                               |
+| `median_time_to_close_days` | float   | Median days from creation to closure for closed issues                  |
+| `unique_openers`            | integer | Number of distinct users who opened issues                              |
+| `unique_closers`            | integer | Number of distinct users who closed issues                              |
+| `top_openers`               | dict    | Semicolon-separated `login=count` pairs for most frequent issue openers |
+| `top_closers`               | dict    | Semicolon-separated `login=count` pairs for most frequent issue closers |
 
 ---
 
@@ -857,14 +858,14 @@ At export time, all per-repo cache files in the output directory are loaded and 
 
 ### Scenarios
 
-| Scenario | What happens |
-|----------|-------------|
-| First run with 10 repos | Crawls all 10, saves 10 JSON cache files, exports CSV/JSON |
-| Second run with same 10 repos | Loads all 10 from cache (zero API calls), re-exports CSV/JSON |
-| Second run with 5 *new* repos | Crawls only the 5 new repos. Export merges all 15 repos into CSV/JSON. |
-| Crash at repo #6 of 10 | Repos 1–5 are already saved to disk. Re-run loads 1–5 from cache, crawls 6–10. |
-| `--force` with 10 repos | Re-crawls all 10 regardless of cache, overwrites cache files |
-| `--export-only` | No crawling. Rebuilds CSV/JSON from all cached per-repo files in the output directory |
+| Scenario                      | What happens                                                                          |
+| ----------------------------- | ------------------------------------------------------------------------------------- |
+| First run with 10 repos       | Crawls all 10, saves 10 JSON cache files, exports CSV/JSON                            |
+| Second run with same 10 repos | Loads all 10 from cache (zero API calls), re-exports CSV/JSON                         |
+| Second run with 5 _new_ repos | Crawls only the 5 new repos. Export merges all 15 repos into CSV/JSON.                |
+| Crash at repo #6 of 10        | Repos 1–5 are already saved to disk. Re-run loads 1–5 from cache, crawls 6–10.        |
+| `--force` with 10 repos       | Re-crawls all 10 regardless of cache, overwrites cache files                          |
+| `--export-only`               | No crawling. Rebuilds CSV/JSON from all cached per-repo files in the output directory |
 
 ### Example: Multi-session workflow
 
@@ -1039,36 +1040,36 @@ Output files are saved to `{output-dir}/statistical_analysis/`.
 
 ### Analyses Performed
 
-| Analysis | Output File | Description |
-|----------|-------------|-------------|
-| Dataset summary | `dataset_summary.csv` | High-level overview: repo count, org count, language count, contributor totals (human vs. bot) |
-| Descriptive statistics | `descriptive_statistics.csv` | Count, mean, std, min, Q1, median, Q3, max, IQR for 25+ metrics |
-| Normality tests | `normality_tests.csv` | Shapiro-Wilk tests for key metrics (justifies non-parametric methods) |
-| Correlation matrix | `spearman_correlations.csv` | 17x17 Spearman rank correlation matrix |
-| P-value matrix | `spearman_p_values.csv` | 17x17 p-value matrix for correlations |
-| FDR-corrected pairs | `correlation_pairs_fdr.csv` | All pairwise correlations with Benjamini-Hochberg FDR correction |
-| Partial correlations | `partial_correlations.csv` | Partial Spearman correlations controlling for num_developers (disentangles size effects) |
-| Group comparisons | `group_comparisons.csv` | Mann-Whitney U tests (CI/CD, cloud, AI/ML, license) with Cliff's delta effect sizes |
-| Bot impact | `bot_impact.csv` | Per-repo bot counts and metric comparisons (with/without bots) |
-| Bot impact tests | `wilcoxon_bot_impact.csv` | Wilcoxon signed-rank paired tests for bot impact on HHI, bus factor, elephant factor |
-| Maturity analysis | `maturity_analysis.csv` | Mature vs. young project comparison (median age split) with Mann-Whitney U |
-| Organisation comparison | `org_kruskal_wallis.csv` | Kruskal-Wallis H tests comparing metrics across organisations (≥3 repos each) |
+| Analysis                | Output File                  | Description                                                                                    |
+| ----------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------- |
+| Dataset summary         | `dataset_summary.csv`        | High-level overview: repo count, org count, language count, contributor totals (human vs. bot) |
+| Descriptive statistics  | `descriptive_statistics.csv` | Count, mean, std, min, Q1, median, Q3, max, IQR for 25+ metrics                                |
+| Normality tests         | `normality_tests.csv`        | Shapiro-Wilk tests for key metrics (justifies non-parametric methods)                          |
+| Correlation matrix      | `spearman_correlations.csv`  | 17x17 Spearman rank correlation matrix                                                         |
+| P-value matrix          | `spearman_p_values.csv`      | 17x17 p-value matrix for correlations                                                          |
+| FDR-corrected pairs     | `correlation_pairs_fdr.csv`  | All pairwise correlations with Benjamini-Hochberg FDR correction                               |
+| Partial correlations    | `partial_correlations.csv`   | Partial Spearman correlations controlling for num_developers (disentangles size effects)       |
+| Group comparisons       | `group_comparisons.csv`      | Mann-Whitney U tests (CI/CD, cloud, AI/ML, license) with Cliff's delta effect sizes            |
+| Bot impact              | `bot_impact.csv`             | Per-repo bot counts and metric comparisons (with/without bots)                                 |
+| Bot impact tests        | `wilcoxon_bot_impact.csv`    | Wilcoxon signed-rank paired tests for bot impact on HHI, bus factor, elephant factor           |
+| Maturity analysis       | `maturity_analysis.csv`      | Mature vs. young project comparison (median age split) with Mann-Whitney U                     |
+| Organisation comparison | `org_kruskal_wallis.csv`     | Kruskal-Wallis H tests comparing metrics across organisations (≥3 repos each)                  |
 
 ### Statistical Methods
 
 **Why non-parametric?** The script first runs Shapiro-Wilk normality tests on all key metrics. In the canonical 2026-05 dataset (n=57), most key metrics are significantly non-normal (p < 0.05), justifying the exclusive use of non-parametric methods.
 
-| Method | Purpose | When Used |
-|--------|---------|-----------|
-| Shapiro-Wilk | Normality testing | All key metrics |
-| Spearman rank correlation | Monotonic relationships | All metric pairs (136 unique pairs for 17 metrics) |
-| Benjamini-Hochberg FDR | Multiple testing correction | Applied to all 136 correlation p-values at alpha=0.05 |
-| Partial Spearman correlation | Control for confounders | 10 key pairs, controlling for num_developers |
-| Mann-Whitney U | Two-group comparison | CI/CD vs. no CI/CD, mature vs. young, etc. |
-| Cliff's delta | Non-parametric effect size | All two-group comparisons |
-| Wilcoxon signed-rank | Paired comparison | Metrics with bots vs. without bots (same repos) |
-| Kruskal-Wallis H | Multi-group comparison | Cross-organisation differences (3+ groups) |
-| Epsilon-squared | Kruskal-Wallis effect size | All multi-group comparisons |
+| Method                       | Purpose                     | When Used                                             |
+| ---------------------------- | --------------------------- | ----------------------------------------------------- |
+| Shapiro-Wilk                 | Normality testing           | All key metrics                                       |
+| Spearman rank correlation    | Monotonic relationships     | All metric pairs (136 unique pairs for 17 metrics)    |
+| Benjamini-Hochberg FDR       | Multiple testing correction | Applied to all 136 correlation p-values at alpha=0.05 |
+| Partial Spearman correlation | Control for confounders     | 10 key pairs, controlling for num_developers          |
+| Mann-Whitney U               | Two-group comparison        | CI/CD vs. no CI/CD, mature vs. young, etc.            |
+| Cliff's delta                | Non-parametric effect size  | All two-group comparisons                             |
+| Wilcoxon signed-rank         | Paired comparison           | Metrics with bots vs. without bots (same repos)       |
+| Kruskal-Wallis H             | Multi-group comparison      | Cross-organisation differences (3+ groups)            |
+| Epsilon-squared              | Kruskal-Wallis effect size  | All multi-group comparisons                           |
 
 ### Example: Loading Statistical Results
 
@@ -1114,12 +1115,12 @@ Reads `output/contributor_weekly_activity.csv` and writes to `output/weekly_acti
 
 ### Analyses Performed
 
-| Analysis | Output File | Description |
-|---|---|---|
+| Analysis               | Output File                  | Description                                                                                                                                                                                                                                                                                                |
+| ---------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Weekly Elephant Factor | `weekly_elephant_factor.csv` | Per repo: mean share of weekly `lines_added + lines_removed` contributed by the single busiest author that week; percentage of weeks where that share ≥ 50% ("elephant weeks") and ≥ 99.9% ("single-contributor weeks"). A time-resolved complement to the static elephant factor in `chaoss_summary.csv`. |
-| Churn Ratio | `churn_ratio.csv` | Per repo: overall and weekly `deletions / (additions + deletions)`, alongside total adds/removes, net LOC delta, and percentage of deletion-heavy weeks. Values close to 0 indicate growth mode, close to 1 indicate cleanup/rewrite mode. |
-| Effort Gini | `effort_gini.csv` | Per repo: Gini coefficient of total `lines_added + lines_removed` per contributor, paired with the Gini of per-contributor commit counts. The gap between the two quantifies how much effort-weighted concentration exceeds count-based concentration. |
-| Summary | `summary.md` | Human-readable Markdown rundown of the most striking findings across all three analyses. |
+| Churn Ratio            | `churn_ratio.csv`            | Per repo: overall and weekly `deletions / (additions + deletions)`, alongside total adds/removes, net LOC delta, and percentage of deletion-heavy weeks. Values close to 0 indicate growth mode, close to 1 indicate cleanup/rewrite mode.                                                                 |
+| Effort Gini            | `effort_gini.csv`            | Per repo: Gini coefficient of total `lines_added + lines_removed` per contributor, paired with the Gini of per-contributor commit counts. The gap between the two quantifies how much effort-weighted concentration exceeds count-based concentration.                                                     |
+| Summary                | `summary.md`                 | Human-readable Markdown rundown of the most striking findings across all three analyses.                                                                                                                                                                                                                   |
 
 ### Example: Loading weekly activity results
 
@@ -1151,28 +1152,28 @@ print(gini.sort_values("gini_gap", ascending=False)
 
 ### Estimated API usage per repository
 
-| Collection Step | API Calls |
-|----------------|-----------|
-| Repository metadata + languages + community profile | ~5 |
-| Commits (count + first/last) | ~3 |
-| Statistics endpoints (contributors + weekly activity) | ~2-10 (with retries) |
-| User profile lookups (cached) | ~5-50 (depends on contributors) |
-| Pull requests (paginated, 100/page) | ~1-50 (depends on PR count) |
-| Tags + releases | ~2-5 |
-| Detection (root files + dependency files) | ~3-5 |
-| Labels + bug issues | ~2-10 |
-| Full commit history (paginated) | ~N/100 (N = total commits) |
-| Issue analytics (list + closed_by) | ~M/100 + C (M = issues, C = closed, capped at 2,000) |
-| **Total per repository** | **~25-500** |
+| Collection Step                                       | API Calls                                            |
+| ----------------------------------------------------- | ---------------------------------------------------- |
+| Repository metadata + languages + community profile   | ~5                                                   |
+| Commits (count + first/last)                          | ~3                                                   |
+| Statistics endpoints (contributors + weekly activity) | ~2-10 (with retries)                                 |
+| User profile lookups (cached)                         | ~5-50 (depends on contributors)                      |
+| Pull requests (paginated, 100/page)                   | ~1-50 (depends on PR count)                          |
+| Tags + releases                                       | ~2-5                                                 |
+| Detection (root files + dependency files)             | ~3-5                                                 |
+| Labels + bug issues                                   | ~2-10                                                |
+| Full commit history (paginated)                       | ~N/100 (N = total commits)                           |
+| Issue analytics (list + closed_by)                    | ~M/100 + C (M = issues, C = closed, capped at 2,000) |
+| **Total per repository**                              | **~25-500**                                          |
 
 ### Planning your runs
 
-| Repositories | Estimated API Calls | Time (approx.) |
-|-------------|--------------------|----|
-| 3 | 75-1,500 | 1-10 minutes |
-| 10 | 250-5,000 | 5-30 minutes |
-| 50 | 1,250-25,000 | 30-120 minutes (use incremental runs) |
-| 100+ | 2,500+ | Use incremental runs across sessions |
+| Repositories | Estimated API Calls | Time (approx.)                        |
+| ------------ | ------------------- | ------------------------------------- |
+| 3            | 75-1,500            | 1-10 minutes                          |
+| 10           | 250-5,000           | 5-30 minutes                          |
+| 50           | 1,250-25,000        | 30-120 minutes (use incremental runs) |
+| 100+         | 2,500+              | Use incremental runs across sessions  |
 
 The tool monitors remaining API calls and automatically sleeps when the rate limit is nearly exhausted, resuming when the limit resets (every hour). For large-scale crawling, the [incremental caching](#incremental-runs--crash-recovery) feature means you can split runs across multiple sessions without losing progress.
 
@@ -1211,14 +1212,14 @@ Charts are saved to `output/plots/` as PNG files at 150 DPI.
 
 ### Chart types
 
-| Chart | Filename | Description |
-|-------|----------|-------------|
-| Project Growth | `{repo}_growth.png` | Dual-axis line chart of cumulative commits and cumulative contributors over time |
-| Weekly Activity | `{repo}_weekly_activity.png` | Bar chart of weekly commit counts with a contributor count overlay line |
-| Contributor Lifecycles | `{repo}_lifecycle.png` | Horizontal Gantt chart showing the active period of the top 30 contributors (green = active, red = departed) |
-| New Contributor Rate | `{repo}_new_contributors.png` | Bar chart of new contributors per week with a 4-week rolling average line |
-| Issue Trends | `{repo}_issue_trends.png` | Monthly issues opened vs. closed with a cumulative open issues area fill |
-| Top Contributors | `{repo}_top_contributors.png` | Horizontal bar chart of the top 15 contributors showing additions vs. deletions |
+| Chart                  | Filename                      | Description                                                                                                  |
+| ---------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Project Growth         | `{repo}_growth.png`           | Dual-axis line chart of cumulative commits and cumulative contributors over time                             |
+| Weekly Activity        | `{repo}_weekly_activity.png`  | Bar chart of weekly commit counts with a contributor count overlay line                                      |
+| Contributor Lifecycles | `{repo}_lifecycle.png`        | Horizontal Gantt chart showing the active period of the top 30 contributors (green = active, red = departed) |
+| New Contributor Rate   | `{repo}_new_contributors.png` | Bar chart of new contributors per week with a 4-week rolling average line                                    |
+| Issue Trends           | `{repo}_issue_trends.png`     | Monthly issues opened vs. closed with a cumulative open issues area fill                                     |
+| Top Contributors       | `{repo}_top_contributors.png` | Horizontal bar chart of the top 15 contributors showing additions vs. deletions                              |
 
 ### Data sources
 
@@ -1486,8 +1487,8 @@ detection:
       - boto3
       - google-cloud
       - azure
-      - web3         # Added: blockchain
-      - ethers       # Added: blockchain
+      - web3 # Added: blockchain
+      - ethers # Added: blockchain
 ```
 
 ### Adding a new collector
@@ -1576,7 +1577,7 @@ readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
 ```bibtex
 @dataset{civic_tech_corpus_2026_05,
   title     = {Civic-Tech Corpus — 2026-05},
-  author    = {Parkkila, Janne},
+  author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia},
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},
