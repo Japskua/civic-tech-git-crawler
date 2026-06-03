@@ -205,15 +205,21 @@ def crawl_repository(
     ai_usage_metrics = None
     if not config.skip_ai_usage:
         progress.update(task_id, description=f"[bold blue]{slug}[/] - AI usage detection")
-        ai_usage_metrics = collect_ai_usage(
-            client,
-            repo,
-            repo_metrics,
-            temporal_metrics,
-            commit_history,
-            ai_dev_keywords=config.ai_dev_keywords or None,
-            product_llm_keywords=config.product_llm_keywords or None,
-        )
+        # Isolated: a failure here must not discard the repo's already-collected
+        # metrics (repo/person/temporal/commit-history/chaoss/issues). Degrade to
+        # ai_usage_metrics=None instead.
+        try:
+            ai_usage_metrics = collect_ai_usage(
+                client,
+                repo,
+                repo_metrics,
+                temporal_metrics,
+                commit_history,
+                ai_dev_keywords=config.ai_dev_keywords or None,
+                product_llm_keywords=config.product_llm_keywords or None,
+            )
+        except Exception as exc:  # noqa: BLE001 — defensive: never lose the repo
+            logger.warning("AI-usage detection failed for %s: %s", slug, exc)
 
     return RepositoryData(
         repo_metrics=repo_metrics,
