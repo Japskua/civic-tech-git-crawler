@@ -2,7 +2,7 @@
 
 A Python command-line tool for collecting comprehensive metrics from GitHub repositories. Designed for academic research on civic technology contributions, contributor networks, and open-source community health.
 
-The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Community Health Analytics in Open Source Software) framework alongside standard repository statistics, contributor-level code change analysis, and automated detection of cloud infrastructure and AI/ML technology usage.
+The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Community Health Analytics in Open Source Software) framework alongside standard repository statistics, contributor-level code change analysis, and automated detection of cloud infrastructure and AI usage. AI detection distinguishes three separate phenomena: traditional/classical ML, LLMs shipped as a product feature, and LLM coding tools used to *build* the project (see [AI Usage Detection](#ai-usage-detection)).
 
 ## Table of Contents
 
@@ -19,6 +19,7 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
   - [Temporal Metrics](#temporal-metrics)
   - [CHAOSS Metrics](#chaoss-metrics)
   - [Technology Detection](#technology-detection)
+  - [AI Usage Detection](#ai-usage-detection)
   - [Commit History & Contributor Lifecycles](#commit-history--contributor-lifecycles)
   - [Issue Analytics](#issue-analytics)
 - [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery)
@@ -229,7 +230,7 @@ detection:
       - pulumi
 
   ai_ml_keywords:
-    topics: # GitHub topics that indicate AI/ML
+    topics: # GitHub topics that indicate traditional/classical ML
       - machine-learning
       - deep-learning
       - ai
@@ -240,7 +241,7 @@ detection:
       - Jupyter Notebook
     files: # File patterns (wildcards supported)
       - "*.ipynb"
-    dependencies: # Package dependencies that indicate AI/ML
+    dependencies: # Classical ML only — LLM SDKs live under product_llm_keywords
       - tensorflow
       - pytorch
       - torch
@@ -249,11 +250,16 @@ detection:
       - keras
       - xgboost
       - lightgbm
-      - openai
-      - langchain
       - huggingface
       - spacy
       - nltk
+
+  # AI-usage detection (separate from the traditional ML above). Two further
+  # keyword groups — ai_dev_keywords (LLM coding tools used to *build* the code)
+  # and product_llm_keywords (LLMs shipped as a product feature) — are omitted
+  # here for brevity. See config.example.yaml for the full, ready-to-use blocks,
+  # and the AI Usage Detection section below for what each signal means. If a
+  # block is absent, the built-in defaults in utils/ai_detection.py are used.
 ```
 
 ### Configuration priority
@@ -284,7 +290,7 @@ usage: civic-tech-crawler [-h] [--config CONFIG] [--token TOKEN] [--repos REPOS]
                           [--output-dir OUTPUT_DIR] [--skip-chaoss]
                           [--skip-temporal] [--skip-detection]
                           [--skip-commit-history] [--skip-issue-analytics]
-                          [--verbose] [--force] [--export-only]
+                          [--skip-ai-usage] [--verbose] [--force] [--export-only]
 
 GitHub repository metrics crawler for civic tech research
 
@@ -299,6 +305,7 @@ options:
   --skip-detection         Skip cloud/AI-ML technology detection
   --skip-commit-history    Skip full commit history parsing
   --skip-issue-analytics   Skip detailed issue analytics
+  --skip-ai-usage          Skip AI-usage detection (dev tooling + product LLM)
   --verbose                Enable debug logging
   --force                  Re-crawl all repos even if cached data exists
   --export-only            Skip crawling; regenerate CSV/JSON from cached per-repo data
@@ -317,6 +324,7 @@ options:
 | `--skip-detection`       | Skips cloud and AI/ML technology detection. Saves a few API calls per repository.                                                                                                                                                   |
 | `--skip-commit-history`  | Skips full commit history parsing (weekly snapshots, contributor lifecycles). Saves ~N/100 API calls per repo where N is the total number of commits.                                                                               |
 | `--skip-issue-analytics` | Skips detailed issue analytics (per-issue records, closer tracking). Saves significant API calls for repos with many closed issues (up to ~2000 calls for the `closed_by` field).                                                   |
+| `--skip-ai-usage`        | Skips AI-usage detection (agent config files, AI commit/PR signals, CI agents, LLM dependencies). Adds a capped ≤200-PR GraphQL pass plus a few small file/date calls when enabled.                                                 |
 | `--verbose`              | Shows detailed debug output including every HTTP request and response.                                                                                                                                                              |
 | `--force`                | Re-crawl all repositories even if cached results exist in the output directory. Overwrites existing cache files.                                                                                                                    |
 | `--export-only`          | Skip crawling entirely. Regenerates all CSV and JSON output files from the existing cached per-repo JSON files in the output directory. Useful for rebuilding exports after manual edits or for merging results from multiple runs. |
@@ -351,6 +359,8 @@ All output files are written to the output directory (default: `./output/`). Bot
 | `contributor_weekly_activity.csv` | 1 per contributor-week pair         | Per-person weekly commit counts with lines added / removed                                 |
 | `issue_records.csv`               | 1 per issue                         | Individual issue records: author, closer, comments, labels, time-to-close                  |
 | `issue_summary.csv`               | 1 per repository                    | Aggregated issue analytics: counts, averages, top openers/closers                          |
+| `ai_usage.csv`                    | 1 per repository                    | AI-usage summary: dev-tooling + product-LLM detection, counts, first-appearance date       |
+| `ai_signals.csv`                  | 1 per detected signal               | Every individual AI-usage signal with its source, evidence, count, and first-seen date     |
 | `cross_project_overlap.csv`       | 1 per unique contributor            | Cross-project contributor overlap (login, number of repos contributed to)                  |
 
 ### JSON files
@@ -724,7 +734,7 @@ Summary statistics (total unique contributors, multi-repo count, multi-repo rati
 
 ### Technology Detection
 
-The detection module uses a multi-signal approach to identify cloud infrastructure and AI/ML technology usage. It checks four signal categories for each technology type:
+The detection module uses a multi-signal approach to identify cloud infrastructure and **traditional/classical ML** usage. It checks four signal categories for each technology type:
 
 1. **Topics** -- GitHub repository topic tags
 2. **Languages** -- Programming languages used in the repository
@@ -734,6 +744,70 @@ The detection module uses a multi-signal approach to identify cloud infrastructu
 Each detected signal is recorded in the format `{category}:{keyword}` (e.g., `file:Dockerfile`, `dependency:boto3`, `language:Jupyter Notebook`).
 
 Detection is positive (`cloud_detected: True` or `ai_ml_detected: True`) if **at least one signal** is found. All keyword lists are fully configurable in `config.yaml`.
+
+> **Note:** `ai_ml_detected` / `ai_ml_signals` now cover **classical ML only** (TensorFlow, PyTorch, scikit-learn, Jupyter, etc.). LLM SDKs such as `openai` and `langchain` were moved out of this group into the dedicated **product-LLM** detection — see [AI Usage Detection](#ai-usage-detection) below.
+
+---
+
+### AI Usage Detection
+
+Beyond classical ML, the crawler detects how (and whether) **AI/LLMs** are involved in a project, separating two phenomena that research often needs to tell apart. Results are written to `ai_usage.csv` (one row per repo) and `ai_signals.csv` (one row per piece of evidence).
+
+> **⚠️ AI-usage detection measures a lower bound.** These signals only capture AI involvement that leaves a durable, disclosed, or automated trace — agent config files, commit co-author trailers, AI-bot commits/PRs, CI agents, and LLM dependencies. AI assistance that leaves **no** artifact (inline autocomplete, or code pasted from a chat UI) is undetectable from repository metadata. Treat detected counts as a **floor, not a true rate**. Signals are heuristic and config-driven; the `source` column in `ai_signals.csv` indicates evidence strength — config files / commit trailers / bot PRs are **strong**, CI refs and dependencies are **medium**, topics are **weak**.
+
+#### Three groups
+
+| Group | Question it answers | Where it lands |
+| ----- | ------------------- | -------------- |
+| **Traditional ML** | Does the project use classical ML? | `ai_ml_detected` / `ai_ml_signals` on `repo_metrics.csv` (see [Technology Detection](#technology-detection)) |
+| **Product LLM** (`product_*`) | Does the project **ship** LLM/GenAI functionality? | `ai_usage.csv` — detected from LLM SDK dependencies (`openai`, `anthropic`, `langchain`, `deepseek`, `qwen`, `ollama`, …) and GenAI topics |
+| **AI-assisted development** (`dev_*`) | Did LLM coding tools help **build** the code? | `ai_usage.csv` — detected from the signal sources below |
+
+#### Signal sources (AI-assisted development)
+
+- **Agent config files** — `CLAUDE.md`, `AGENTS.md`, `.cursorrules`, `.github/copilot-instructions.md`, `.windsurfrules`, `.aider.conf.yml`, `GEMINI.md`, `.clinerules`, `.claude/`, `.cursor/rules/`, `soul.md`, … (first-appearance dated via the oldest commit touching the path)
+- **Commit co-author trailers** — `Co-authored-by: Claude`, `🤖 Generated with Claude Code`, `Co-authored-by: Copilot`, etc. (matched only inside trailer-shaped lines to avoid prose false positives)
+- **AI agent commit/PR authors** — bot logins such as `copilot-swe-agent[bot]`, `devin-ai-integration[bot]`, `cursoragent`, `google-labs-jules[bot]`
+- **PR body markers** and **review-bot comments** — scanned on the ≤200 most-recent PRs (`coderabbitai[bot]`, `sourcery-ai[bot]`, …)
+- **CI workflows** — `.github/workflows/*` referencing `anthropics/claude-code-action`, CodeRabbit, Copilot, Cursor, …
+
+All vocabulary (tool labels, bot logins, file names, dependencies, topics) is config-driven under `detection.ai_dev_keywords` / `detection.product_llm_keywords` in `config.yaml` (full block in `config.example.yaml`); the built-in defaults live in [`utils/ai_detection.py`](src/civic_tech_crawler/utils/ai_detection.py). Commit scanning piggybacks the existing commit-history walk, so it adds **zero** extra API calls.
+
+#### AI Usage Summary (`ai_usage.csv`)
+
+One row per repository.
+
+| Column | Type | Description |
+| ------ | ---- | ----------- |
+| `repo_full_name` | string | Repository identifier |
+| `dev_ai_detected` | boolean | Any AI-assisted-development signal found |
+| `dev_ai_tools` | list | Distinct dev tools detected (e.g. `claude_code;github_copilot;cursor`) |
+| `agent_config_files` | list | Agent config files/dirs present (e.g. `CLAUDE.md;.cursor/rules/`) |
+| `ai_coauthored_commit_count` | integer | Commits carrying an AI co-author trailer |
+| `ai_authored_commit_count` | integer | Commits authored by an AI agent bot |
+| `commits_scanned` | integer | Total commits walked (denominator for the ratio) |
+| `ai_commit_ratio` | float | `(coauthored + authored) / commits_scanned` |
+| `ai_agent_pr_count` | integer | PRs opened by AI agent bots |
+| `ci_ai_workflows` | list | Workflow files referencing an AI action |
+| `review_bot_tools` | list | AI review/comment bots seen on recent PRs |
+| `first_dev_ai_date` | datetime | Earliest datable AI-assisted-development signal (first appearance) |
+| `product_llm_detected` | boolean | Project ships LLM/GenAI functionality |
+| `product_llm_providers` | list | Distinct LLM providers (e.g. `openai;anthropic`) |
+| `product_llm_signals` | list | Evidence strings for product-LLM detection |
+
+#### AI Signals (`ai_signals.csv`)
+
+One row per detected signal — the full evidence trail behind the summary, suitable for filtering by confidence.
+
+| Column | Type | Description |
+| ------ | ---- | ----------- |
+| `repo_full_name` | string | Repository identifier |
+| `group` | string | `dev` (AI-assisted development) or `product` (LLM shipped as a feature) |
+| `tool` | string | Tool/provider label (e.g. `claude_code`, `openai`) |
+| `source` | string | Evidence type: `file`, `commit_trailer`, `commit_author`, `pr_author`, `pr_body`, `bot_comment`, `workflow`, `dependency`, `topic` |
+| `evidence` | string | Human-readable evidence (e.g. `file:CLAUDE.md`, `dependency:anthropic`) |
+| `count` | integer | Occurrences (e.g. number of AI-coauthored commits for this tool) |
+| `first_seen` | datetime | Earliest date this signal is datable to (empty when not datable) |
 
 ---
 
@@ -988,7 +1062,14 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                     |  +-------------+---------------+   |
                     |                |                    |
                     |  +-------------v---------------+   |
-                    |  | 8. SAVE TO CACHE             |   |
+                    |  | 8. AI USAGE (optional)       |   |
+                    |  |    - Agent config files      |   |
+                    |  |    - AI commit/PR signals     |   |
+                    |  |    - CI agents & LLM deps      |   |
+                    |  +-------------+---------------+   |
+                    |                |                    |
+                    |  +-------------v---------------+   |
+                    |  | 9. SAVE TO CACHE             |   |
                     |  |    - Immediate persistence   |   |
                     |  |    - Crash-safe (per-repo)   |   |
                     |  +-----------------------------+   |
@@ -997,7 +1078,7 @@ The tool follows a sequential pipeline for each repository. Understanding this p
                                        |
                           +------------v-------------+
                           |    EXPORT RESULTS        |
-                          |    - 13 CSV files        |
+                          |    - 15 CSV files        |
                           |    - Full JSON           |
                           |    (from all cached data)|
                           +--------------------------+
@@ -1008,7 +1089,7 @@ The tool follows a sequential pipeline for each repository. Understanding this p
 - **Incremental & crash-safe:** Each repository is saved to disk immediately after crawling. If the process is interrupted, already-crawled repos are preserved and loaded from cache on the next run.
 - **Error isolation:** If one repository fails, the tool continues with the remaining repositories. Failed repositories are logged and excluded from the output.
 - **Progress reporting:** A Rich progress bar shows current repository and collection step in the terminal.
-- **Collector dependencies:** CHAOSS metrics depend on data from person metrics and temporal metrics. If temporal metrics are skipped (`--skip-temporal`), dependent CHAOSS metrics (acceptance ratio, release frequency) will be `null`.
+- **Collector dependencies:** CHAOSS metrics depend on data from person metrics and temporal metrics. If temporal metrics are skipped (`--skip-temporal`), dependent CHAOSS metrics (acceptance ratio, release frequency) will be `null`. AI-usage detection runs last and consumes commit history (AI commit tallies) and temporal metrics (PR authors); skipping those reduces its coverage but it still detects config files, CI agents, and dependencies.
 - **User info caching:** Contributor profile lookups are cached in memory. If the same person contributes to multiple repositories, their profile is fetched only once.
 
 ### Retry mechanism

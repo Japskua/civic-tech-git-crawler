@@ -44,6 +44,8 @@ def export_csv(
     _export_contributor_weekly_activity(data, out)
     _export_issue_records(data, out)
     _export_issue_summary(data, out)
+    _export_ai_usage(data, out)
+    _export_ai_signals(data, out)
     if cross_project_overlap:
         _export_cross_project_overlap(cross_project_overlap, out)
 
@@ -344,6 +346,60 @@ def _export_issue_summary(data: list[RepositoryData], out: Path) -> None:
             if ia:
                 writer.writerow({h: _fmt(getattr(ia, h)) for h in headers})
     logger.info("Wrote %s", filepath.name)
+
+
+def _export_ai_usage(data: list[RepositoryData], out: Path) -> None:
+    """Export per-repo AI-usage summary (one row per repo)."""
+    headers = [
+        "repo_full_name",
+        "dev_ai_detected", "dev_ai_tools", "agent_config_files",
+        "ai_coauthored_commit_count", "ai_authored_commit_count",
+        "commits_scanned", "ai_commit_ratio", "ai_agent_pr_count",
+        "ci_ai_workflows", "review_bot_tools", "first_dev_ai_date",
+        "product_llm_detected", "product_llm_providers", "product_llm_signals",
+    ]
+    filepath = out / "ai_usage.csv"
+    rows = 0
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            a = rd.ai_usage_metrics
+            if a:
+                writer.writerow({h: _fmt(getattr(a, h)) for h in headers})
+                rows += 1
+    logger.info("Wrote %s (%d rows)", filepath.name, rows)
+
+
+def _export_ai_signals(data: list[RepositoryData], out: Path) -> None:
+    """Export every individual AI-usage signal (one row per signal)."""
+    headers = [
+        "repo_full_name", "group", "tool", "source",
+        "evidence", "count", "first_seen",
+    ]
+    filepath = out / "ai_signals.csv"
+    total = 0
+    with open(filepath, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        for rd in data:
+            a = rd.ai_usage_metrics
+            if not a:
+                continue
+            for s in a.signals:
+                writer.writerow(
+                    {
+                        "repo_full_name": a.repo_full_name,
+                        "group": s.group,
+                        "tool": s.tool,
+                        "source": s.source,
+                        "evidence": s.evidence,
+                        "count": s.count,
+                        "first_seen": _fmt(s.first_seen),
+                    }
+                )
+                total += 1
+    logger.info("Wrote %s (%d rows)", filepath.name, total)
 
 
 def _export_cross_project_overlap(

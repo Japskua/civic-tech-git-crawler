@@ -1,4 +1,5 @@
 import logging
+import re
 import time
 from collections.abc import Iterator
 from dataclasses import dataclass
@@ -58,6 +59,7 @@ class CommitRecord:
     author_email: str
     author_name: str
     author_login: str | None
+    message: str = ""
 
 
 class GitHubClient:
@@ -320,6 +322,116 @@ class GitHubClient:
                 return data[0].get("commit", {}).get("author", {}).get("date")
         return None
 
+    def get_first_commit_date_for_path(self, slug: str, path: str) -> str | None:
+        """Get ISO date string of the *oldest* commit touching a file path.
+
+        Commits come back newest-first, so the oldest commit is on the last
+        page. We fetch one commit per page and follow the ``Link: rel="last"``
+        header to jump straight to it — used to date when a file (e.g.
+        ``CLAUDE.md``) was first introduced.
+        """
+        self._rate_limiter.wait_if_needed()
+        resp = self._httpx.get(
+            f"/repos/{slug}/commits",
+            params={"path": path, "per_page": 1},
+        )
+        if resp.status_code != 200:
+            return None
+        data = resp.json()
+        if not data:
+            return None
+
+        last_page = self._parse_last_page(resp.headers.get("Link", ""))
+        if last_page and last_page > 1:
+            self._rate_limiter.wait_if_needed()
+            resp = self._httpx.get(
+                f"/repos/{slug}/commits",
+                params={"path": path, "per_page": 1, "page": last_page},
+            )
+            if resp.status_code == 200 and resp.json():
+                data = resp.json()
+        return data[0].get("commit", {}).get("author", {}).get("date")
+
+    @staticmethod
+    def _parse_last_page(link_header: str) -> int | None:
+        """Extract the page number of the rel="last" URL from a Link header."""
+        for part in link_header.split(","):
+            if 'rel="last"' in part:
+                match = re.search(r"[?&]page=(\d+)", part)
+                if match:
+                    return int(match.group(1))
+        return None
+
+    def iter_recent_prs_with_meta(
+        self, slug: str, limit: int = 200
+    ) -> list[dict]:
+        """Return up to *limit* most-recent PRs with author, body and the logins
+        of their comment/review authors — for AI body-marker and review-bot
+        detection. One GraphQL call per 50 PRs.
+
+        Each dict: ``{number, created_at, author, body, participant_logins}``.
+        """
+        try:
+            owner, name = slug.split("/", 1)
+        except ValueError:
+            return []
+
+        query = """
+        query ($owner: String!, $name: String!, $cursor: String) {
+          repository(owner: $owner, name: $name) {
+            pullRequests(first: 50, after: $cursor,
+                         orderBy: {field: CREATED_AT, direction: DESC}) {
+              pageInfo { hasNextPage endCursor }
+              nodes {
+                number
+                createdAt
+                author { login }
+                bodyText
+                comments(first: 20) { nodes { author { login } } }
+                reviews(first: 20) { nodes { author { login } } }
+              }
+            }
+          }
+        }
+        """
+        results: list[dict] = []
+        cursor: str | None = None
+        while len(results) < limit:
+            data = self.execute_graphql(
+                query, {"owner": owner, "name": name, "cursor": cursor}
+            )
+            if data is None:
+                break
+            repo_data = data.get("repository") or {}
+            prs = repo_data.get("pullRequests") or {}
+            for node in prs.get("nodes") or []:
+                if not node:
+                    continue
+                participants: list[str] = []
+                for section in ("comments", "reviews"):
+                    for sub in ((node.get(section) or {}).get("nodes") or []):
+                        login = ((sub or {}).get("author") or {}).get("login")
+                        if login:
+                            participants.append(login)
+                results.append(
+                    {
+                        "number": node.get("number"),
+                        "created_at": node.get("createdAt"),
+                        "author": ((node.get("author") or {}).get("login")),
+                        "body": node.get("bodyText") or "",
+                        "participant_logins": participants,
+                    }
+                )
+                if len(results) >= limit:
+                    break
+            page_info = prs.get("pageInfo") or {}
+            if not page_info.get("hasNextPage"):
+                break
+            cursor = page_info.get("endCursor")
+            if not cursor:
+                break
+        return results
+
     def execute_graphql(
         self,
         query: str,
@@ -402,6 +514,7 @@ class GitHubClient:
                       additions
                       deletions
                       committedDate
+                      message
                       author {
                         email
                         name
@@ -457,6 +570,7 @@ class GitHubClient:
                     author_email=author.get("email") or "unknown",
                     author_name=author.get("name") or "",
                     author_login=user.get("login"),
+                    message=node.get("message") or "",
                 )
             page_info = history.get("pageInfo") or {}
             if not page_info.get("hasNextPage"):

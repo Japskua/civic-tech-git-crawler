@@ -14,6 +14,7 @@ from civic_tech_crawler.cache import (
     save_repo_cache,
 )
 from civic_tech_crawler.client import GitHubClient
+from civic_tech_crawler.collectors.ai_usage import collect_ai_usage
 from civic_tech_crawler.collectors.chaoss_metrics import collect_chaoss_metrics
 from civic_tech_crawler.collectors.commit_history import collect_commit_history
 from civic_tech_crawler.collectors.detection import run_detection
@@ -69,6 +70,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--skip-issue-analytics", action="store_true",
         help="Skip detailed issue analytics (per-issue records, opener/closer tracking)",
+    )
+    parser.add_argument(
+        "--skip-ai-usage", action="store_true",
+        help="Skip AI-usage detection (dev tooling + product LLM signals)",
     )
     parser.add_argument("--verbose", action="store_true", help="Enable debug logging")
     parser.add_argument(
@@ -170,7 +175,9 @@ def crawl_repository(
     commit_history = None
     if not config.skip_commit_history:
         progress.update(task_id, description=f"[bold blue]{slug}[/] - commit history")
-        commit_history = collect_commit_history(client, repo)
+        commit_history = collect_commit_history(
+            client, repo, ai_dev_keywords=config.ai_dev_keywords or None
+        )
 
     # Step 6: CHAOSS metrics + Core-Periphery
     chaoss_metrics = None
@@ -192,6 +199,22 @@ def crawl_repository(
         progress.update(task_id, description=f"[bold blue]{slug}[/] - issue analytics")
         issue_analytics = collect_issue_analytics(client, repo)
 
+    # Step 8: AI-usage detection (dev tooling + product LLM signals).
+    # Runs last so it can consume commit_history (AI commit tallies) and
+    # temporal_metrics (PR authors).
+    ai_usage_metrics = None
+    if not config.skip_ai_usage:
+        progress.update(task_id, description=f"[bold blue]{slug}[/] - AI usage detection")
+        ai_usage_metrics = collect_ai_usage(
+            client,
+            repo,
+            repo_metrics,
+            temporal_metrics,
+            commit_history,
+            ai_dev_keywords=config.ai_dev_keywords or None,
+            product_llm_keywords=config.product_llm_keywords or None,
+        )
+
     return RepositoryData(
         repo_metrics=repo_metrics,
         person_metrics=person_metrics,
@@ -201,6 +224,7 @@ def crawl_repository(
         core_periphery_contributors=cp_contributors,
         commit_history=commit_history,
         issue_analytics=issue_analytics,
+        ai_usage_metrics=ai_usage_metrics,
     )
 
 
@@ -220,6 +244,7 @@ def main() -> None:
             skip_detection=args.skip_detection,
             skip_commit_history=args.skip_commit_history,
             skip_issue_analytics=args.skip_issue_analytics,
+            skip_ai_usage=args.skip_ai_usage,
         )
     except ValueError as e:
         console.print(f"[red]Configuration error:[/red] {e}")

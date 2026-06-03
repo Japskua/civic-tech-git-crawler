@@ -5,6 +5,7 @@ from github.GithubException import GithubException
 
 from civic_tech_crawler.client import GitHubClient
 from civic_tech_crawler.models import RepoMetrics
+from civic_tech_crawler.utils.deps import extract_dependencies
 
 logger = logging.getLogger(__name__)
 
@@ -30,59 +31,13 @@ DEFAULT_AI_ML_KEYWORDS: dict = {
     ],
     "languages": ["Jupyter Notebook"],
     "files": [],
+    # Traditional/classical ML only. LLM SDKs (openai, langchain, …) live in
+    # the separate product-LLM group — see collectors/ai_usage.py.
     "dependencies": [
         "tensorflow", "pytorch", "torch", "scikit-learn", "transformers",
-        "keras", "xgboost", "lightgbm", "openai", "langchain",
-        "huggingface", "spacy", "nltk",
+        "keras", "xgboost", "lightgbm", "huggingface", "spacy", "nltk",
     ],
 }
-
-
-def _extract_dependencies(client: GitHubClient, slug: str) -> list[str]:
-    """Extract dependency names from common dependency files."""
-    deps: list[str] = []
-
-    # requirements.txt
-    content = client.get_file_content(slug, "requirements.txt")
-    if content:
-        for line in content.splitlines():
-            line = line.strip()
-            if line and not line.startswith("#") and not line.startswith("-"):
-                # Parse "package>=1.0" -> "package"
-                name = line.split(">=")[0].split("<=")[0].split("==")[0].split("~=")[0]
-                name = name.split("[")[0].strip()
-                if name:
-                    deps.append(name.lower())
-
-    # pyproject.toml dependencies
-    content = client.get_file_content(slug, "pyproject.toml")
-    if content:
-        import tomllib
-
-        try:
-            data = tomllib.loads(content)
-            for dep in data.get("project", {}).get("dependencies", []):
-                name = dep.split(">=")[0].split("<=")[0].split("==")[0].split("~=")[0]
-                name = name.split("[")[0].strip()
-                if name:
-                    deps.append(name.lower())
-        except Exception:
-            pass
-
-    # package.json
-    content = client.get_file_content(slug, "package.json")
-    if content:
-        import json
-
-        try:
-            data = json.loads(content)
-            for section in ("dependencies", "devDependencies"):
-                for dep_name in data.get(section, {}):
-                    deps.append(dep_name.lower())
-        except Exception:
-            pass
-
-    return deps
 
 
 def _detect_signals(
@@ -145,7 +100,7 @@ def run_detection(
 
     # Shared data fetches
     root_files = client.get_repo_contents_names(slug)
-    deps = _extract_dependencies(client, slug)
+    deps = extract_dependencies(client, slug)
 
     cloud_signals = _detect_signals(
         repo, client, cloud_kw, root_files, deps, repo_metrics.languages
