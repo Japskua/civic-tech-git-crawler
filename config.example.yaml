@@ -181,7 +181,7 @@ detection:
       jules: jules
       clawcode: clawcode
       openhuman: openhuman
-      hermes: hermes_agent
+      "hermes agent": hermes_agent
     agent_bot_logins:
       copilot-swe-agent[bot]: github_copilot
       copilot[bot]: github_copilot

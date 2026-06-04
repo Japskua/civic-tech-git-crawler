@@ -77,6 +77,14 @@ def collect_data(snapshot: Path) -> dict[str, dict]:
     cwa = pd.read_csv(snapshot / "contributor_weekly_activity.csv")
     cwa_commits = cwa.groupby("repo_full_name")["commits"].sum().rename("cwa_commits")
 
+    # AI-usage is optional (older snapshots predate it).
+    ai_path = snapshot / "ai_usage.csv"
+    ai = (
+        pd.read_csv(ai_path).rename(columns={"repo_full_name": "repo"})
+        if ai_path.exists()
+        else pd.DataFrame(columns=["repo"])
+    )
+
     merged = (
         rm.merge(ch, on="repo", how="left", suffixes=("", "_chaoss"))
         .merge(isum, on="repo", how="left", suffixes=("", "_issum"))
@@ -84,6 +92,7 @@ def collect_data(snapshot: Path) -> dict[str, dict]:
         .merge(gini, on="repo", how="left", suffixes=("", "_gini"))
         .merge(eleph, on="repo", how="left", suffixes=("", "_eleph"))
         .merge(cwa_commits, left_on="repo", right_index=True, how="left")
+        .merge(ai, on="repo", how="left", suffixes=("", "_ai"))
     )
     out: dict[str, dict] = {}
     for _, r in merged.iterrows():
@@ -152,6 +161,32 @@ def things_to_note(repo: str, d: dict) -> list[str]:
     return notes
 
 
+def _truthy(v) -> bool:
+    if isinstance(v, str):
+        return v.strip().lower() == "true"
+    return bool(v) and not (isinstance(v, float) and pd.isna(v))
+
+
+def _list_str(v) -> str:
+    if v is None or (isinstance(v, float) and pd.isna(v)):
+        return ""
+    return str(v).replace(";", ", ")
+
+
+def ai_dev_cell(d: dict) -> str:
+    if not _truthy(d.get("dev_ai_detected")):
+        return "no"
+    tools = _list_str(d.get("dev_ai_tools")) or "detected"
+    return f"yes ({tools})"
+
+
+def ai_product_cell(d: dict) -> str:
+    if not _truthy(d.get("product_llm_detected")):
+        return "no"
+    provs = _list_str(d.get("product_llm_providers")) or "detected"
+    return f"yes ({provs})"
+
+
 def quick_facts_table(repo: str, d: dict) -> str:
     age_years = None
     fc = d.get("first_commit_date")
@@ -170,7 +205,9 @@ def quick_facts_table(repo: str, d: dict) -> str:
         ("Project age", f"{age_years:.1f} years" if age_years is not None else "—"),
         ("Total commits (repo_metrics)", fmt_num(d.get("total_commits"))),
         ("Attributable contributors (CWA)", fmt_num(d.get("contributors") or d.get("num_developers"))),
-        ("Cloud / AI-ML signals", f"{'yes' if d.get('cloud_detected') else 'no'} / {'yes' if d.get('ai_ml_detected') else 'no'}"),
+        ("Cloud / traditional-ML signals", f"{'yes' if d.get('cloud_detected') else 'no'} / {'yes' if d.get('ai_ml_detected') else 'no'}"),
+        ("AI-assisted development", ai_dev_cell(d)),
+        ("Ships LLM product feature", ai_product_cell(d)),
         ("OSI-approved license", "yes" if d.get("is_osi_approved") else "no"),
     ]
     out = "| | |\n|---|---|\n"

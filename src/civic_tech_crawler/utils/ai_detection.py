@@ -59,7 +59,9 @@ DEFAULT_AI_DEV_KEYWORDS: dict = {
         "jules": "jules",
         "clawcode": "clawcode",
         "openhuman": "openhuman",
-        "hermes": "hermes_agent",
+        # "hermes agent" (not bare "hermes" — too generic; matched a human
+        # co-author named Hermes and produced false positives).
+        "hermes agent": "hermes_agent",
     },
     # Commit/PR author login -> tool label (matched case-insensitively).
     "agent_bot_logins": {
