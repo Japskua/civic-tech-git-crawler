@@ -1,0 +1,8 @@
+source,repos,tier
+pr_body,9,medium
+workflow,3,medium
+dependency,2,medium
+commit_trailer,20,strong
+file,14,strong
+pr_author,9,strong
+commit_author,6,strong

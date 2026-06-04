@@ -1,0 +1,540 @@
+{
+  "repo_metrics": {
+    "full_name": "bikespace/parking-map-data",
+    "name": "parking-map-data",
+    "description": "Data for BikeSpace Toronto parking map",
+    "num_developers": 2,
+    "total_commits": 192,
+    "languages": {
+      "Jupyter Notebook": 11197169,
+      "Python": 220983
+    },
+    "primary_language": "Jupyter Notebook",
+    "first_commit_date": "2023-11-19T00:03:56+00:00",
+    "last_commit_date": "2026-05-03T12:30:16+00:00",
+    "license_spdx": null,
+    "license_name": null,
+    "is_osi_approved": false,
+    "topics": [
+      "civic-tech",
+      "cycling"
+    ],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 25,
+    "stars": 3,
+    "watchers": 1,
+    "forks": 0,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": true,
+    "ai_ml_signals": [
+      "language:Jupyter Notebook",
+      "dependency:scikit-learn"
+    ],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Run Update (Sensor)",
+      "Test Data Scripts",
+      "Test and Preview"
+    ],
+    "deployments_count": 0,
+    "created_at": "2023-12-06T02:55:32+00:00",
+    "updated_at": "2026-05-03T12:30:20+00:00",
+    "pushed_at": "2026-06-03T13:18:46+00:00",
+    "size_kb": 711429
+  },
+  "person_metrics": [],
+  "temporal_metrics": {
+    "repo_full_name": "bikespace/parking-map-data",
+    "pr_count_total": 28,
+    "pr_count_merged": 26,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 2,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Demo of new BikeSpace parking map",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2024-04-12T20:23:44+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-01T16:35:28+00:00"
+      },
+      {
+        "number": 2,
+        "title": "Quest map - draft pr",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2024-09-08T21:37:37+00:00",
+        "merged_at": null,
+        "closed_at": "2025-09-01T16:34:44+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Added to pipeline - pull city locker data from webpage",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2024-11-17T19:49:39+00:00",
+        "merged_at": "2024-11-17T19:49:56+00:00",
+        "closed_at": "2024-11-17T19:49:56+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Data format updates and added uv",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-04-12T14:55:29+00:00",
+        "merged_at": "2025-04-12T14:56:25+00:00",
+        "closed_at": "2025-04-12T14:56:25+00:00"
+      },
+      {
+        "number": 5,
+        "title": "Save all normalized and cleanup",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-06-15T13:08:51+00:00",
+        "merged_at": "2025-06-15T13:09:57+00:00",
+        "closed_at": "2025-06-15T13:09:58+00:00"
+      },
+      {
+        "number": 6,
+        "title": "Convert archive file format to parquet",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-05T19:19:08+00:00",
+        "merged_at": "2025-07-05T19:21:18+00:00",
+        "closed_at": "2025-07-05T19:21:18+00:00"
+      },
+      {
+        "number": 7,
+        "title": "Reorganize structure",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-06T02:17:26+00:00",
+        "merged_at": "2025-07-06T02:18:16+00:00",
+        "closed_at": "2025-07-06T02:18:16+00:00"
+      },
+      {
+        "number": 8,
+        "title": "Remove breakpoint from data_pipeline.py",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-06T11:08:49+00:00",
+        "merged_at": "2025-07-06T11:09:08+00:00",
+        "closed_at": "2025-07-06T11:09:08+00:00"
+      },
+      {
+        "number": 9,
+        "title": "Bugfix - ensure mkdirs also generate parents",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-07T09:52:40+00:00",
+        "merged_at": "2025-07-07T09:53:17+00:00",
+        "closed_at": "2025-07-07T09:53:17+00:00"
+      },
+      {
+        "number": 10,
+        "title": "Update git switch",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-08T03:57:46+00:00",
+        "merged_at": "2025-07-08T03:58:02+00:00",
+        "closed_at": "2025-07-08T03:58:02+00:00"
+      },
+      {
+        "number": 12,
+        "title": "Add bicycle network data",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-18T14:47:41+00:00",
+        "merged_at": "2025-07-18T14:49:43+00:00",
+        "closed_at": "2025-07-18T14:49:43+00:00"
+      },
+      {
+        "number": 13,
+        "title": "Remove data updates on main",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-19T02:25:35+00:00",
+        "merged_at": "2025-07-22T23:15:44+00:00",
+        "closed_at": "2025-07-22T23:15:44+00:00"
+      },
+      {
+        "number": 14,
+        "title": "Add testing action",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-19T03:07:34+00:00",
+        "merged_at": "2025-07-22T23:51:01+00:00",
+        "closed_at": "2025-07-22T23:51:01+00:00"
+      },
+      {
+        "number": 15,
+        "title": "Bugfix - convert last_updated to utc if no offset",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-19T10:58:25+00:00",
+        "merged_at": "2025-07-19T10:58:39+00:00",
+        "closed_at": "2025-07-19T10:58:39+00:00"
+      },
+      {
+        "number": 16,
+        "title": "Bicycle network data - make action commit conditional",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-07-20T19:52:09+00:00",
+        "merged_at": "2025-07-20T19:52:22+00:00",
+        "closed_at": "2025-07-20T19:52:22+00:00"
+      },
+      {
+        "number": 17,
+        "title": "Update bicycle_parking status handling",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-08-28T23:55:06+00:00",
+        "merged_at": "2025-08-29T00:08:47+00:00",
+        "closed_at": "2025-08-29T00:08:47+00:00"
+      },
+      {
+        "number": 18,
+        "title": "Improve deduplication",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-08-29T00:19:26+00:00",
+        "merged_at": "2025-09-01T16:33:43+00:00",
+        "closed_at": "2025-09-01T16:33:43+00:00"
+      },
+      {
+        "number": 19,
+        "title": "Add tests for statusmanager",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-09-01T16:40:32+00:00",
+        "merged_at": "2025-09-01T16:43:44+00:00",
+        "closed_at": "2025-09-01T16:43:44+00:00"
+      },
+      {
+        "number": 20,
+        "title": "Improve cluster property summarization functions",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-09-02T00:55:22+00:00",
+        "merged_at": "2025-09-02T00:57:18+00:00",
+        "closed_at": "2025-09-02T00:57:18+00:00"
+      },
+      {
+        "number": 21,
+        "title": "Improve input handling for clustering functions",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-10-18T13:23:13+00:00",
+        "merged_at": "2025-10-18T13:24:44+00:00",
+        "closed_at": "2025-10-18T13:24:44+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Add retry for sources",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-10-19T00:51:37+00:00",
+        "merged_at": "2025-10-19T00:52:59+00:00",
+        "closed_at": "2025-10-19T00:52:59+00:00"
+      },
+      {
+        "number": 23,
+        "title": "Add RentSafeTO data on bicycle parking in Toronto apartment buildings",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-12-06T22:58:06+00:00",
+        "merged_at": "2025-12-06T23:19:15+00:00",
+        "closed_at": "2025-12-06T23:19:15+00:00"
+      },
+      {
+        "number": 24,
+        "title": "Improve diffing of source_files csvs",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-12-08T12:39:32+00:00",
+        "merged_at": "2025-12-08T12:52:08+00:00",
+        "closed_at": "2025-12-08T12:52:08+00:00"
+      },
+      {
+        "number": 25,
+        "title": "Add missing statusmanager save call to apartments dataset",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-12-08T13:08:48+00:00",
+        "merged_at": "2025-12-08T13:09:50+00:00",
+        "closed_at": "2025-12-08T13:09:50+00:00"
+      },
+      {
+        "number": 26,
+        "title": "Update readmes on main",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-12-09T22:56:58+00:00",
+        "merged_at": "2025-12-09T22:58:18+00:00",
+        "closed_at": "2025-12-09T22:58:18+00:00"
+      },
+      {
+        "number": 27,
+        "title": "Remove indexes from CSV outputs to improve diffing",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2025-12-10T11:53:53+00:00",
+        "merged_at": "2025-12-10T11:54:58+00:00",
+        "closed_at": "2025-12-10T11:54:58+00:00"
+      },
+      {
+        "number": 30,
+        "title": "Customize overpass server",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2026-04-10T15:39:28+00:00",
+        "merged_at": "2026-04-10T15:41:41+00:00",
+        "closed_at": "2026-04-10T15:41:41+00:00"
+      },
+      {
+        "number": 33,
+        "title": "Add headers to overpass request",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "created_at": "2026-05-03T12:28:44+00:00",
+        "merged_at": "2026-05-03T12:30:16+00:00",
+        "closed_at": "2026-05-03T12:30:16+00:00"
+      }
+    ],
+    "tag_count": 3,
+    "tags": [
+      {
+        "name": "v2025.12",
+        "commit_sha": "d6b19a5a505aaac0326606ac95ac865b0c676279",
+        "date": "2025-12-10T11:54:58+00:00"
+      },
+      {
+        "name": "v2025.08",
+        "commit_sha": "f35124148ff9a7b8195342c1ac39f3a74d2fbdb1",
+        "date": "2025-09-02T00:57:18+00:00"
+      },
+      {
+        "name": "v2025.07",
+        "commit_sha": "c50b3ed78baeaf33c19c1dfdc75bc9a400300c19",
+        "date": "2025-07-22T23:51:01+00:00"
+      }
+    ],
+    "release_count": 3,
+    "releases": [
+      {
+        "tag_name": "v2025.12",
+        "name": "v2025.12",
+        "created_at": "2025-12-10T11:54:58+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2025.08",
+        "name": "v2025.08",
+        "created_at": "2025-09-02T00:57:18+00:00",
+        "is_prerelease": false
+      },
+      {
+        "tag_name": "v2025.07",
+        "name": "v2025.07",
+        "created_at": "2025-07-22T23:51:01+00:00",
+        "is_prerelease": false
+      }
+    ]
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "bikespace/parking-map-data",
+    "weekly_commits": [],
+    "change_request_acceptance_ratio": 0.9286,
+    "bus_factor": null,
+    "contribution_types": {
+      "code_commits": 0,
+      "pull_requests": 28,
+      "issues": 0
+    },
+    "organizational_diversity": {},
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": 0.65,
+    "fork_count": 0,
+    "burstiness_cv": null,
+    "burstiness_mean": null,
+    "burstiness_std": null,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": null,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": null,
+    "elephant_factor_no_bots": null,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 5,
+    "time_to_first_response_prs_sample_size": 28,
+    "readme_last_updated": "2026-04-10T15:41:40+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 0.0,
+    "stale_issue_count": 0,
+    "open_issue_count": 2,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": null,
+    "hhi_no_bots": null,
+    "hhi_known_orgs_only": null,
+    "unknown_org_contributor_count": 0,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 0,
+      "unknown": 0
+    },
+    "dora_deployment_frequency_per_month": 0.1,
+    "dora_median_lead_time_days": 70.3,
+    "dora_change_failure_rate": 0.0769,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-06-03T20:55:22.017895+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "bikespace/parking-map-data",
+    "weekly_snapshots": [],
+    "contributor_lifecycles": [],
+    "contributor_weeks": [],
+    "total_weeks": 0,
+    "total_unique_contributors": 0,
+    "new_contributor_rate_per_month": null,
+    "total_commits_scanned": 0,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "bikespace/parking-map-data",
+    "issues": [
+      {
+        "number": 11,
+        "title": "De-duplicate City lockers using ref:toronto.ca:lockers:title OSM tag",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "closed_by_login": "tallcoleman",
+        "created_at": "2025-07-09T23:07:55+00:00",
+        "closed_at": "2025-09-01T16:33:44+00:00",
+        "updated_at": "2025-09-01T16:33:44+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 53.73
+      },
+      {
+        "number": 28,
+        "title": "Allow for customization of which Overpass server to use",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "closed_by_login": "tallcoleman",
+        "created_at": "2026-03-04T12:05:42+00:00",
+        "closed_at": "2026-04-10T15:41:42+00:00",
+        "updated_at": "2026-04-10T15:41:42+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 37.15
+      },
+      {
+        "number": 29,
+        "title": "Use address open data instead of reverse geocoding for apartment data",
+        "state": "open",
+        "author_login": "tallcoleman",
+        "closed_by_login": null,
+        "created_at": "2026-03-25T22:06:52+00:00",
+        "closed_at": null,
+        "updated_at": "2026-03-25T22:06:52+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 31,
+        "title": "Explore adding data for Vancouver, BC",
+        "state": "open",
+        "author_login": "tallcoleman",
+        "closed_by_login": null,
+        "created_at": "2026-04-27T00:52:15+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-27T00:52:44+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 32,
+        "title": "Add a user agent to Overpass API requests",
+        "state": "closed",
+        "author_login": "tallcoleman",
+        "closed_by_login": "tallcoleman",
+        "created_at": "2026-05-02T19:13:16+00:00",
+        "closed_at": "2026-05-03T12:30:17+00:00",
+        "updated_at": "2026-05-03T12:30:17+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 0.72
+      }
+    ],
+    "total_issues": 5,
+    "open_issues": 2,
+    "closed_issues": 3,
+    "avg_comments_per_issue": 0,
+    "median_time_to_close_days": 37.15,
+    "unique_openers": 1,
+    "unique_closers": 1,
+    "top_openers": {
+      "tallcoleman": 5
+    },
+    "top_closers": {
+      "tallcoleman": 3
+    }
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "bikespace/parking-map-data",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 0,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}

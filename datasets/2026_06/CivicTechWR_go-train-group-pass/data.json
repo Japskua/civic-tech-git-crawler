@@ -1,0 +1,3726 @@
+{
+  "repo_metrics": {
+    "full_name": "CivicTechWR/go-train-group-pass",
+    "name": "go-train-group-pass",
+    "description": "GO Train weekday group pass coordination app as an alternative to WhatsApp-based coordination",
+    "num_developers": 6,
+    "total_commits": 108,
+    "languages": {
+      "TypeScript": 183526,
+      "JavaScript": 897,
+      "Shell": 38
+    },
+    "primary_language": "TypeScript",
+    "first_commit_date": "2025-10-07T20:48:17+00:00",
+    "last_commit_date": "2026-01-28T22:07:58+00:00",
+    "license_spdx": null,
+    "license_name": null,
+    "is_osi_approved": false,
+    "topics": [],
+    "has_contributing": true,
+    "has_code_of_conduct": true,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": true,
+    "health_percentage": 87,
+    "stars": 4,
+    "watchers": 0,
+    "forks": 1,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Accessibility Audit",
+      "Lint and Type Check",
+      "Reusable Gitleaks Scan",
+      "Security Audit",
+      "Copilot coding agent",
+      "Dependabot Updates",
+      "CodeQL"
+    ],
+    "deployments_count": 0,
+    "created_at": "2025-10-12T13:40:57+00:00",
+    "updated_at": "2026-04-14T02:57:38+00:00",
+    "pushed_at": "2026-05-29T13:39:27+00:00",
+    "size_kb": 2128
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "BreakableHoodie",
+      "name": "Dre Levesque",
+      "num_commits": 1,
+      "additions": 410,
+      "deletions": 1,
+      "avg_additions_per_commit": 410.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "jliu1016",
+      "name": "jliu1016",
+      "num_commits": 9,
+      "additions": 20962,
+      "deletions": 32473,
+      "avg_additions_per_commit": 2329.11,
+      "avg_deletions_per_commit": 3608.11,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "Mosaab-Emam",
+      "name": "Mosaab El-Emam",
+      "num_commits": 3,
+      "additions": 135,
+      "deletions": 3,
+      "avg_additions_per_commit": 45.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "adinschmidt",
+      "name": "Adin Schmidt",
+      "num_commits": 7,
+      "additions": 10762,
+      "deletions": 11523,
+      "avg_additions_per_commit": 1537.43,
+      "avg_deletions_per_commit": 1646.14,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "ApilaashY",
+      "name": "Apilaash Yoharan",
+      "num_commits": 2,
+      "additions": 682,
+      "deletions": 22,
+      "avg_additions_per_commit": 341.0,
+      "avg_deletions_per_commit": 11.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "Copilot",
+      "name": "Copilot",
+      "num_commits": 1,
+      "additions": 44,
+      "deletions": 49,
+      "avg_additions_per_commit": 44.0,
+      "avg_deletions_per_commit": 49.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "BreakableHoodie",
+      "name": "Dre Levesque",
+      "num_commits": 49,
+      "additions": 11623,
+      "deletions": 8123,
+      "avg_additions_per_commit": 237.2,
+      "avg_deletions_per_commit": 165.78,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": null,
+      "name": "ondre",
+      "num_commits": 29,
+      "additions": 24014,
+      "deletions": 5699,
+      "avg_additions_per_commit": 828.07,
+      "avg_deletions_per_commit": 196.52,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": null,
+      "name": "Dre (Claude Code Assisted)",
+      "num_commits": 4,
+      "additions": 2165,
+      "deletions": 1629,
+      "avg_additions_per_commit": 541.25,
+      "avg_deletions_per_commit": 407.25,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": null,
+      "name": "Dre Levesque",
+      "num_commits": 2,
+      "additions": 9955,
+      "deletions": 0,
+      "avg_additions_per_commit": 4977.5,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "BreakableHoodie",
+      "name": "BreakableHoodie",
+      "num_commits": 1,
+      "additions": 0,
+      "deletions": 0,
+      "avg_additions_per_commit": 0.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "CivicTechWR/go-train-group-pass",
+    "pr_count_total": 64,
+    "pr_count_merged": 39,
+    "pr_count_open": 10,
+    "pr_count_closed_unmerged": 15,
+    "prs": [
+      {
+        "number": 4,
+        "title": "update middleware to not require auth for demo page",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-10-27T16:46:21+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-06T06:06:06+00:00"
+      },
+      {
+        "number": 6,
+        "title": "Add GitHub token to gitleaks workflow",
+        "state": "closed",
+        "author_login": "BreakableHoodie",
+        "created_at": "2025-10-27T17:49:05+00:00",
+        "merged_at": "2025-11-13T03:39:56+00:00",
+        "closed_at": "2025-11-13T03:39:56+00:00"
+      },
+      {
+        "number": 9,
+        "title": "Demo-App for Go Train Group Pass",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-10-29T17:11:05+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-13T06:21:50+00:00"
+      },
+      {
+        "number": 11,
+        "title": "Backend infra",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-10-30T21:06:26+00:00",
+        "merged_at": "2025-11-13T00:00:30+00:00",
+        "closed_at": "2025-11-13T00:00:30+00:00"
+      },
+      {
+        "number": 19,
+        "title": "read from .env in mikro-orm config",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-06T01:28:40+00:00",
+        "merged_at": "2025-11-06T04:13:55+00:00",
+        "closed_at": "2025-11-06T04:13:55+00:00"
+      },
+      {
+        "number": 21,
+        "title": "Create special gtfs time type",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-06T06:01:15+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-13T06:21:44+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Coordination entities",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-06T07:21:58+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-13T05:38:31+00:00"
+      },
+      {
+        "number": 23,
+        "title": "docs(backend): Improve instructions for managed Supabase production setup",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-12T06:40:52+00:00",
+        "merged_at": "2025-11-12T21:13:05+00:00",
+        "closed_at": "2025-11-12T21:13:06+00:00"
+      },
+      {
+        "number": 28,
+        "title": "Create special gtfs time type",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-13T03:55:02+00:00",
+        "merged_at": "2025-11-14T00:31:54+00:00",
+        "closed_at": "2025-11-14T00:31:54+00:00"
+      },
+      {
+        "number": 29,
+        "title": "adjustments to user service and base entities",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-13T05:40:15+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-14T03:27:09+00:00"
+      },
+      {
+        "number": 30,
+        "title": "Create user repository",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-13T06:11:02+00:00",
+        "merged_at": null,
+        "closed_at": "2025-11-14T03:30:06+00:00"
+      },
+      {
+        "number": 33,
+        "title": "fix(readme): wrong environment copy instruction",
+        "state": "closed",
+        "author_login": "Mosaab-Emam",
+        "created_at": "2025-11-13T15:58:41+00:00",
+        "merged_at": "2025-11-16T12:14:58+00:00",
+        "closed_at": "2025-11-16T12:14:58+00:00"
+      },
+      {
+        "number": 34,
+        "title": "docs: refresh primary readme",
+        "state": "closed",
+        "author_login": "BreakableHoodie",
+        "created_at": "2025-11-13T20:16:50+00:00",
+        "merged_at": "2026-01-28T22:07:59+00:00",
+        "closed_at": "2026-01-28T22:07:59+00:00"
+      },
+      {
+        "number": 35,
+        "title": "restore migrations into a workable state",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-14T01:44:37+00:00",
+        "merged_at": "2025-11-19T05:13:17+00:00",
+        "closed_at": "2025-11-19T05:13:17+00:00"
+      },
+      {
+        "number": 36,
+        "title": "Create WORKING_WITH_AI.md",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-14T02:03:00+00:00",
+        "merged_at": "2025-12-03T07:48:40+00:00",
+        "closed_at": "2025-12-03T07:48:40+00:00"
+      },
+      {
+        "number": 37,
+        "title": "Create RepositoryServiceController.md to give context to architecture",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-14T03:01:17+00:00",
+        "merged_at": "2025-11-19T23:59:21+00:00",
+        "closed_at": "2025-11-19T23:59:21+00:00"
+      },
+      {
+        "number": 38,
+        "title": "chore(ci): improve security workflow summary handling",
+        "state": "closed",
+        "author_login": "BreakableHoodie",
+        "created_at": "2025-11-14T03:05:25+00:00",
+        "merged_at": "2025-11-16T02:46:33+00:00",
+        "closed_at": "2025-11-16T02:46:33+00:00"
+      },
+      {
+        "number": 39,
+        "title": "add base coordination entities + move auth into module + get gtfs import to work",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-14T03:27:26+00:00",
+        "merged_at": "2025-12-07T00:13:08+00:00",
+        "closed_at": "2025-12-07T00:13:08+00:00"
+      },
+      {
+        "number": 40,
+        "title": "add repository layer to user stack",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-14T03:30:27+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-09T01:18:05+00:00"
+      },
+      {
+        "number": 44,
+        "title": "[FEATURE] Next.js frontend setup",
+        "state": "open",
+        "author_login": "Mosaab-Emam",
+        "created_at": "2025-11-16T19:00:14+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 46,
+        "title": "feat(gtfs): add GtfsService for scheduled GO Transit GTFS download/extraction to memory",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-17T05:06:25+00:00",
+        "merged_at": "2025-11-19T23:43:57+00:00",
+        "closed_at": "2025-11-19T23:43:57+00:00"
+      },
+      {
+        "number": 47,
+        "title": "chore(lint): ignore database migrations in eslint and prettier",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-17T05:36:09+00:00",
+        "merged_at": "2025-11-17T05:53:55+00:00",
+        "closed_at": "2025-11-17T05:53:55+00:00"
+      },
+      {
+        "number": 48,
+        "title": "chore: add lint:check, format:check, check scripts and Husky pre-commit hooks",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-18T00:35:54+00:00",
+        "merged_at": "2025-11-18T19:06:29+00:00",
+        "closed_at": "2025-11-18T19:06:29+00:00"
+      },
+      {
+        "number": 49,
+        "title": "fix(backend): resolve all npm audit vulnerabilities",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-18T00:51:45+00:00",
+        "merged_at": "2025-11-18T18:39:39+00:00",
+        "closed_at": "2025-11-18T18:39:39+00:00"
+      },
+      {
+        "number": 51,
+        "title": "feat: setup swagger documentation with nestjs-zod",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-18T21:47:09+00:00",
+        "merged_at": "2025-11-19T03:20:19+00:00",
+        "closed_at": "2025-11-19T03:20:19+00:00"
+      },
+      {
+        "number": 53,
+        "title": "Add shad cn",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-19T05:20:20+00:00",
+        "merged_at": "2025-11-26T14:22:04+00:00",
+        "closed_at": "2025-11-26T14:22:04+00:00"
+      },
+      {
+        "number": 55,
+        "title": "use nestjs linter",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-19T21:36:04+00:00",
+        "merged_at": "2025-11-26T22:05:39+00:00",
+        "closed_at": "2025-11-26T22:05:39+00:00"
+      },
+      {
+        "number": 57,
+        "title": "Strict type check",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-19T21:45:36+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-05T07:26:19+00:00"
+      },
+      {
+        "number": 59,
+        "title": "Refactor: Move DTOs to Shared Package",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-11-20T00:10:37+00:00",
+        "merged_at": "2025-12-05T07:25:19+00:00",
+        "closed_at": "2025-12-05T07:25:19+00:00"
+      },
+      {
+        "number": 60,
+        "title": "Fix strict TypeScript lint errors in backend",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2025-11-20T00:13:58+00:00",
+        "merged_at": "2025-11-20T00:42:08+00:00",
+        "closed_at": "2025-11-20T00:42:08+00:00"
+      },
+      {
+        "number": 61,
+        "title": "Password reset backend implementation",
+        "state": "closed",
+        "author_login": "Mosaab-Emam",
+        "created_at": "2025-11-21T14:22:30+00:00",
+        "merged_at": "2025-11-25T13:17:33+00:00",
+        "closed_at": "2025-11-25T13:17:33+00:00"
+      },
+      {
+        "number": 62,
+        "title": "Parsing GTFS Data",
+        "state": "closed",
+        "author_login": "ApilaashY",
+        "created_at": "2025-11-24T18:06:52+00:00",
+        "merged_at": "2025-12-04T00:10:02+00:00",
+        "closed_at": "2025-12-04T00:10:02+00:00"
+      },
+      {
+        "number": 63,
+        "title": "Recreate gtfs entities",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-11-25T08:27:17+00:00",
+        "merged_at": "2025-12-04T00:06:00+00:00",
+        "closed_at": "2025-12-04T00:06:00+00:00"
+      },
+      {
+        "number": 118,
+        "title": "GTFS uses new entity structure",
+        "state": "closed",
+        "author_login": "ApilaashY",
+        "created_at": "2025-12-04T00:35:02+00:00",
+        "merged_at": "2025-12-04T00:38:59+00:00",
+        "closed_at": "2025-12-04T00:38:59+00:00"
+      },
+      {
+        "number": 121,
+        "title": "Api round trip endpoint",
+        "state": "open",
+        "author_login": "ApilaashY",
+        "created_at": "2025-12-05T02:48:45+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 123,
+        "title": "add a trip schedule view",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-12-07T00:52:12+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-07T21:51:19+00:00"
+      },
+      {
+        "number": 124,
+        "title": "fix: add HttpExceptionFilter to handle exceptions with nodenext module",
+        "state": "closed",
+        "author_login": "Mosaab-Emam",
+        "created_at": "2025-12-07T01:16:22+00:00",
+        "merged_at": "2025-12-08T00:04:52+00:00",
+        "closed_at": "2025-12-08T00:04:52+00:00"
+      },
+      {
+        "number": 125,
+        "title": "refactor(shared): move internal UserMetadataSchema to backend",
+        "state": "open",
+        "author_login": "adinschmidt",
+        "created_at": "2025-12-07T07:50:07+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 127,
+        "title": "Feature/65 itinerary creation",
+        "state": "open",
+        "author_login": "jliu1016",
+        "created_at": "2025-12-07T19:36:32+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 128,
+        "title": "feat: Implement Group Formation Job (#68)",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2025-12-07T20:27:47+00:00",
+        "merged_at": null,
+        "closed_at": "2025-12-09T21:18:19+00:00"
+      },
+      {
+        "number": 129,
+        "title": "Round trip kitchener to union",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-12-07T21:49:31+00:00",
+        "merged_at": "2025-12-08T03:46:42+00:00",
+        "closed_at": "2025-12-08T03:46:42+00:00"
+      },
+      {
+        "number": 130,
+        "title": "Feature/116 aggregated itineraries view",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-12-09T05:01:26+00:00",
+        "merged_at": "2025-12-09T16:35:00+00:00",
+        "closed_at": "2025-12-09T16:35:00+00:00"
+      },
+      {
+        "number": 131,
+        "title": "Feature/itinerary details",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "created_at": "2025-12-09T17:33:10+00:00",
+        "merged_at": "2025-12-10T03:12:42+00:00",
+        "closed_at": "2025-12-10T03:12:42+00:00"
+      },
+      {
+        "number": 132,
+        "title": "Group formation",
+        "state": "open",
+        "author_login": "jliu1016",
+        "created_at": "2025-12-10T00:53:52+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 133,
+        "title": "feat(itineraries): add quick view endpoint for active itineraries",
+        "state": "open",
+        "author_login": "adinschmidt",
+        "created_at": "2025-12-10T04:46:37+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 134,
+        "title": "Demo day dec10",
+        "state": "open",
+        "author_login": "jliu1016",
+        "created_at": "2025-12-10T13:19:18+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 135,
+        "title": "fix: address critical merge blockers for demoDayDec10",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "created_at": "2026-01-13T08:15:22+00:00",
+        "merged_at": null,
+        "closed_at": "2026-01-22T01:11:41+00:00"
+      },
+      {
+        "number": 178,
+        "title": "[WIP] WIP address feedback on 'docs: refresh primary readme' PR",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-15T19:39:58+00:00",
+        "merged_at": "2026-01-15T19:44:15+00:00",
+        "closed_at": "2026-01-15T19:44:15+00:00"
+      },
+      {
+        "number": 179,
+        "title": "docs: add ORM knowledge to developer prerequisites",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-15T19:47:30+00:00",
+        "merged_at": "2026-01-15T19:51:23+00:00",
+        "closed_at": "2026-01-15T19:51:23+00:00"
+      },
+      {
+        "number": 180,
+        "title": "Simplify backend entry in Project Structure to avoid duplication",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-15T19:52:27+00:00",
+        "merged_at": "2026-01-15T19:58:46+00:00",
+        "closed_at": "2026-01-15T19:58:46+00:00"
+      },
+      {
+        "number": 181,
+        "title": "Remove duplicate backend setup instructions from main README",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-15T20:01:49+00:00",
+        "merged_at": "2026-01-15T20:11:50+00:00",
+        "closed_at": "2026-01-15T20:11:50+00:00"
+      },
+      {
+        "number": 182,
+        "title": "Reframe commitment section from time-based to behavior-based expectations",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-15T20:13:02+00:00",
+        "merged_at": "2026-01-15T20:22:50+00:00",
+        "closed_at": "2026-01-15T20:22:50+00:00"
+      },
+      {
+        "number": 183,
+        "title": "Document PR and issue management policies in Development Workflow",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-15T20:24:02+00:00",
+        "merged_at": "2026-01-15T20:41:36+00:00",
+        "closed_at": "2026-01-15T20:41:36+00:00"
+      },
+      {
+        "number": 197,
+        "title": "Eliminate README update anomalies by consolidating architecture docs",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-28T01:04:54+00:00",
+        "merged_at": "2026-01-28T01:12:28+00:00",
+        "closed_at": "2026-01-28T01:12:28+00:00"
+      },
+      {
+        "number": 198,
+        "title": "docs: update README to reflect frontend exists in demoday branch and resolve merge conflict",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-28T01:05:13+00:00",
+        "merged_at": "2026-01-28T01:17:26+00:00",
+        "closed_at": "2026-01-28T01:17:26+00:00"
+      },
+      {
+        "number": 199,
+        "title": "Remove backend complexity framing from contributor FAQ",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-28T01:05:33+00:00",
+        "merged_at": "2026-01-28T01:10:12+00:00",
+        "closed_at": "2026-01-28T01:10:13+00:00"
+      },
+      {
+        "number": 200,
+        "title": "Mention non-technical label in README FAQ for non-developer contributors",
+        "state": "closed",
+        "author_login": "Copilot",
+        "created_at": "2026-01-28T01:06:06+00:00",
+        "merged_at": "2026-01-28T01:11:22+00:00",
+        "closed_at": "2026-01-28T01:11:23+00:00"
+      },
+      {
+        "number": 202,
+        "title": "build(deps): bump axios from 1.13.2 to 1.15.2 in the npm_and_yarn group across 1 directory",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-05-26T15:54:25+00:00",
+        "merged_at": null,
+        "closed_at": "2026-05-29T13:39:15+00:00"
+      },
+      {
+        "number": 203,
+        "title": "build(deps): bump serialize-javascript from 6.0.2 to removed in the npm_and_yarn group across 1 directory",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-05-26T15:54:29+00:00",
+        "merged_at": null,
+        "closed_at": "2026-05-29T13:39:19+00:00"
+      },
+      {
+        "number": 204,
+        "title": "build(deps): bump qs from 6.14.0 to 6.15.2 in the npm_and_yarn group across 1 directory",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-05-26T15:54:30+00:00",
+        "merged_at": null,
+        "closed_at": "2026-05-29T13:39:22+00:00"
+      },
+      {
+        "number": 205,
+        "title": "build(deps): bump fast-uri from 3.1.0 to 3.1.2 in the npm_and_yarn group across 1 directory",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-05-26T15:54:35+00:00",
+        "merged_at": null,
+        "closed_at": "2026-05-29T13:39:25+00:00"
+      },
+      {
+        "number": 206,
+        "title": "security: patch 60+ dependabot alerts and restrict workflow permissions",
+        "state": "open",
+        "author_login": "BreakableHoodie",
+        "created_at": "2026-05-26T16:03:05+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 207,
+        "title": "build(deps): bump the npm_and_yarn group across 2 directories with 14 updates",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-05-29T13:39:10+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 208,
+        "title": "build(deps): bump @isaacs/brace-expansion from 5.0.0 to 5.0.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-05-29T13:39:23+00:00",
+        "merged_at": null,
+        "closed_at": null
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "CivicTechWR/go-train-group-pass",
+    "weekly_commits": [
+      {
+        "week_start": "2025-10-06",
+        "commits": 77
+      },
+      {
+        "week_start": "2025-10-13",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-10-20",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-11-10",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-11-17",
+        "commits": 8
+      },
+      {
+        "week_start": "2025-11-24",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-12-01",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-12-08",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-01-26",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": 0.6094,
+    "bus_factor": 2,
+    "contribution_types": {
+      "code_commits": 108,
+      "pull_requests": 64,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 7,
+      "Freelancer": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 19,
+    "release_frequency_per_month": null,
+    "fork_count": 1,
+    "burstiness_cv": 1.92,
+    "burstiness_mean": 12.0,
+    "burstiness_std": 23.09,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 1,
+        "days_to_close": 21.3
+      }
+    ],
+    "median_defect_resolution_days": 21.3,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 2,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 353.5,
+    "median_time_to_first_response_prs_hours": 11.9,
+    "time_to_first_response_issues_sample_size": 100,
+    "time_to_first_response_prs_sample_size": 64,
+    "readme_last_updated": "2026-01-28T22:07:58+00:00",
+    "contributing_last_updated": "2026-01-28T22:07:58+00:00",
+    "stale_issue_ratio": 0.9872,
+    "stale_issue_count": 77,
+    "open_issue_count": 78,
+    "median_pr_review_turnaround_hours": 16.0,
+    "avg_review_comments_per_pr": 0.1,
+    "herfindahl_hirschman_index": 9211.9,
+    "hhi_no_bots": 2741.0,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 7,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 4,
+      "unknown": 7
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 3,
+    "periphery_contributor_count": 4,
+    "core_periphery_ratio": 0.4286,
+    "network_density": 0.4286,
+    "avg_degree_centrality": 0.4286,
+    "pr_review_edges": [
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "Mosaab-Emam"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "Mosaab-Emam"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "github-actions[bot]"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "github-actions[bot]"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "github-actions[bot]"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "github-actions[bot]"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "github-actions[bot]"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "github-actions[bot]"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "github-actions[bot]"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "Copilot",
+        "reviewer": "BreakableHoodie"
+      },
+      {
+        "author": "Copilot",
+        "reviewer": "BreakableHoodie"
+      },
+      {
+        "author": "Copilot",
+        "reviewer": "BreakableHoodie"
+      },
+      {
+        "author": "Copilot",
+        "reviewer": "BreakableHoodie"
+      },
+      {
+        "author": "Copilot",
+        "reviewer": "BreakableHoodie"
+      },
+      {
+        "author": "Copilot",
+        "reviewer": "BreakableHoodie"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "Mosaab-Emam"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "Mosaab-Emam",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "Mosaab-Emam"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "Mosaab-Emam"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "ApilaashY",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "ApilaashY",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "ApilaashY",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "ApilaashY",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "Mosaab-Emam"
+      },
+      {
+        "author": "Mosaab-Emam",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "Copilot",
+        "reviewer": "BreakableHoodie"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "jliu1016",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "Mosaab-Emam",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "adinschmidt"
+      },
+      {
+        "author": "BreakableHoodie",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      },
+      {
+        "author": "adinschmidt",
+        "reviewer": "jliu1016"
+      }
+    ]
+  },
+  "crawled_at": "2026-06-03T22:20:20.781816+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "jliu1016",
+      "degree_centrality": 0.8333,
+      "betweenness_centrality": 0.5,
+      "classification": "core",
+      "num_collaborators": 5
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "adinschmidt",
+      "degree_centrality": 0.6667,
+      "betweenness_centrality": 0.1667,
+      "classification": "core",
+      "num_collaborators": 4
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "Mosaab-Emam",
+      "degree_centrality": 0.3333,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "github-actions[bot]",
+      "degree_centrality": 0.1667,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "BreakableHoodie",
+      "degree_centrality": 0.5,
+      "betweenness_centrality": 0.3333,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "Copilot",
+      "degree_centrality": 0.1667,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CivicTechWR/go-train-group-pass",
+      "login": "ApilaashY",
+      "degree_centrality": 0.3333,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 2
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "CivicTechWR/go-train-group-pass",
+    "weekly_snapshots": [
+      {
+        "week_start": "2025-10-06",
+        "total_commits": 77,
+        "unique_contributors": 4,
+        "new_contributors": 4,
+        "cumulative_commits": 77,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 79,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 83,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-11-10",
+        "total_commits": 6,
+        "unique_contributors": 4,
+        "new_contributors": 3,
+        "cumulative_commits": 89,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2025-11-17",
+        "total_commits": 8,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 97,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-11-24",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 99,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2025-12-01",
+        "total_commits": 6,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 105,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2025-12-08",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 107,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 108,
+        "cumulative_contributors": 9
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "BreakableHoodie",
+        "login": "BreakableHoodie",
+        "name": "Dre Levesque",
+        "email": "github@dredre.net",
+        "first_commit_date": "2025-10-07T20:48:17+00:00",
+        "last_commit_date": "2026-01-28T22:07:58+00:00",
+        "duration_days": 113,
+        "total_commits": 51,
+        "active_weeks": 5,
+        "total_weeks_span": 16,
+        "activity_ratio": 0.3125,
+        "status": "departed",
+        "departed_weeks_ago": 17,
+        "avg_commits_per_active_week": 10.2
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "ondre@lenny.dredre.net",
+        "login": null,
+        "name": "ondre",
+        "email": "ondre@lenny.dredre.net",
+        "first_commit_date": "2025-10-11T01:24:20+00:00",
+        "last_commit_date": "2025-10-12T13:41:52+00:00",
+        "duration_days": 1,
+        "total_commits": 29,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 33,
+        "avg_commits_per_active_week": 29.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "jliu1016",
+        "login": "jliu1016",
+        "name": "jliu1016",
+        "email": "jessica.liu1610@gmail.com",
+        "first_commit_date": "2025-11-13T04:49:50+00:00",
+        "last_commit_date": "2025-12-08T03:46:42+00:00",
+        "duration_days": 24,
+        "total_commits": 9,
+        "active_weeks": 5,
+        "total_weeks_span": 3,
+        "activity_ratio": 1.6667,
+        "status": "departed",
+        "departed_weeks_ago": 25,
+        "avg_commits_per_active_week": 1.8
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "adinschmidt",
+        "login": "adinschmidt",
+        "name": "Adin Schmidt",
+        "email": "9936213+adinschmidt@users.noreply.github.com",
+        "first_commit_date": "2025-11-13T04:49:58+00:00",
+        "last_commit_date": "2025-12-05T07:25:19+00:00",
+        "duration_days": 22,
+        "total_commits": 7,
+        "active_weeks": 3,
+        "total_weeks_span": 3,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 25,
+        "avg_commits_per_active_week": 2.33
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "dre@local",
+        "login": null,
+        "name": "Dre (Claude Code Assisted)",
+        "email": "dre@local",
+        "first_commit_date": "2025-10-08T16:33:13+00:00",
+        "last_commit_date": "2025-10-10T21:08:35+00:00",
+        "duration_days": 2,
+        "total_commits": 4,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 33,
+        "avg_commits_per_active_week": 4.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "Mosaab-Emam",
+        "login": "Mosaab-Emam",
+        "name": "Mosaab El-Emam",
+        "email": "mosaab.emam123@outlook.com",
+        "first_commit_date": "2025-11-16T12:14:58+00:00",
+        "last_commit_date": "2025-12-08T00:04:52+00:00",
+        "duration_days": 21,
+        "total_commits": 3,
+        "active_weeks": 3,
+        "total_weeks_span": 3,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 25,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "ApilaashY",
+        "login": "ApilaashY",
+        "name": "Apilaash Yoharan",
+        "email": "50249835+ApilaashY@users.noreply.github.com",
+        "first_commit_date": "2025-12-04T00:10:02+00:00",
+        "last_commit_date": "2025-12-04T00:38:59+00:00",
+        "duration_days": 0,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 25,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "dre@dredre.net",
+        "login": null,
+        "name": "Dre Levesque",
+        "email": "dre@dredre.net",
+        "first_commit_date": "2025-10-07T20:53:57+00:00",
+        "last_commit_date": "2025-10-07T21:56:26+00:00",
+        "duration_days": 0,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 34,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/go-train-group-pass",
+        "contributor_id": "Copilot",
+        "login": "Copilot",
+        "name": "Copilot",
+        "email": "198982749+Copilot@users.noreply.github.com",
+        "first_commit_date": "2025-11-20T00:42:07+00:00",
+        "last_commit_date": "2025-11-20T00:42:07+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 27,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "BreakableHoodie",
+        "week_start": "2025-10-06",
+        "commits": 42,
+        "lines_added": 10548,
+        "lines_removed": 1541
+      },
+      {
+        "contributor_id": "BreakableHoodie",
+        "week_start": "2025-10-13",
+        "commits": 2,
+        "lines_added": 256,
+        "lines_removed": 6423
+      },
+      {
+        "contributor_id": "BreakableHoodie",
+        "week_start": "2025-10-20",
+        "commits": 4,
+        "lines_added": 160,
+        "lines_removed": 143
+      },
+      {
+        "contributor_id": "BreakableHoodie",
+        "week_start": "2025-11-10",
+        "commits": 2,
+        "lines_added": 659,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "BreakableHoodie",
+        "week_start": "2026-01-26",
+        "commits": 1,
+        "lines_added": 410,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "jliu1016",
+        "week_start": "2025-11-10",
+        "commits": 2,
+        "lines_added": 14973,
+        "lines_removed": 31256
+      },
+      {
+        "contributor_id": "jliu1016",
+        "week_start": "2025-11-17",
+        "commits": 2,
+        "lines_added": 663,
+        "lines_removed": 243
+      },
+      {
+        "contributor_id": "jliu1016",
+        "week_start": "2025-11-24",
+        "commits": 1,
+        "lines_added": 295,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "jliu1016",
+        "week_start": "2025-12-01",
+        "commits": 3,
+        "lines_added": 4418,
+        "lines_removed": 964
+      },
+      {
+        "contributor_id": "jliu1016",
+        "week_start": "2025-12-08",
+        "commits": 1,
+        "lines_added": 613,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "Mosaab-Emam",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 12,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "Mosaab-Emam",
+        "week_start": "2025-11-24",
+        "commits": 1,
+        "lines_added": 69,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "Mosaab-Emam",
+        "week_start": "2025-12-08",
+        "commits": 1,
+        "lines_added": 54,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "adinschmidt",
+        "week_start": "2025-11-10",
+        "commits": 1,
+        "lines_added": 133,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "adinschmidt",
+        "week_start": "2025-11-17",
+        "commits": 5,
+        "lines_added": 898,
+        "lines_removed": 376
+      },
+      {
+        "contributor_id": "adinschmidt",
+        "week_start": "2025-12-01",
+        "commits": 1,
+        "lines_added": 9731,
+        "lines_removed": 11105
+      },
+      {
+        "contributor_id": "ApilaashY",
+        "week_start": "2025-12-01",
+        "commits": 2,
+        "lines_added": 682,
+        "lines_removed": 22
+      },
+      {
+        "contributor_id": "Copilot",
+        "week_start": "2025-11-17",
+        "commits": 1,
+        "lines_added": 44,
+        "lines_removed": 49
+      },
+      {
+        "contributor_id": "ondre@lenny.dredre.net",
+        "week_start": "2025-10-06",
+        "commits": 29,
+        "lines_added": 24014,
+        "lines_removed": 5699
+      },
+      {
+        "contributor_id": "dre@local",
+        "week_start": "2025-10-06",
+        "commits": 4,
+        "lines_added": 2165,
+        "lines_removed": 1629
+      },
+      {
+        "contributor_id": "dre@dredre.net",
+        "week_start": "2025-10-06",
+        "commits": 2,
+        "lines_added": 9955,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 9,
+    "total_unique_contributors": 9,
+    "new_contributor_rate_per_month": 2.45,
+    "total_commits_scanned": 108,
+    "ai_coauthored_commit_count": 42,
+    "ai_authored_commit_count": 1,
+    "ai_coauthor_tool_counts": {
+      "github_copilot": 2,
+      "claude_code": 40
+    },
+    "ai_author_tool_counts": {
+      "github_copilot": 1
+    },
+    "ai_commit_tool_first_dates": {
+      "github_copilot": "2025-11-20T00:42:07+00:00",
+      "claude_code": "2025-10-08T16:33:13+00:00"
+    }
+  },
+  "issue_analytics": {
+    "repo_full_name": "CivicTechWR/go-train-group-pass",
+    "issues": [
+      {
+        "number": 1,
+        "title": "[BUG] Setup.MD leads to 404",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-10-15T22:35:15+00:00",
+        "closed_at": "2025-11-06T06:06:33+00:00",
+        "updated_at": "2025-11-06T06:06:33+00:00",
+        "comment_count": 0,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 21.31
+      },
+      {
+        "number": 2,
+        "title": "THIS IS A TEST",
+        "state": "closed",
+        "author_login": "BreakableHoodie",
+        "closed_by_login": "BreakableHoodie",
+        "created_at": "2025-10-18T15:42:26+00:00",
+        "closed_at": "2025-10-18T15:50:37+00:00",
+        "updated_at": "2025-10-18T15:50:37+00:00",
+        "comment_count": 0,
+        "labels": [
+          "good first issue"
+        ],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 3,
+        "title": "Import Schedule Data into App",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-10-27T16:36:48+00:00",
+        "closed_at": "2026-01-27T21:31:58+00:00",
+        "updated_at": "2026-01-27T21:31:58+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 92.2
+      },
+      {
+        "number": 5,
+        "title": "Get Demo Page to run again",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-10-27T16:46:43+00:00",
+        "closed_at": "2025-11-05T21:58:36+00:00",
+        "updated_at": "2025-11-05T21:58:36+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 9.22
+      },
+      {
+        "number": 7,
+        "title": "Research how to get push notifications on phone",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-10-29T16:52:12+00:00",
+        "closed_at": "2025-11-05T21:58:17+00:00",
+        "updated_at": "2025-12-03T07:46:01+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 7.21
+      },
+      {
+        "number": 8,
+        "title": "See how to create a github issue from slack",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-10-29T17:05:15+00:00",
+        "closed_at": "2025-11-05T21:57:28+00:00",
+        "updated_at": "2025-11-05T21:57:28+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 7.2
+      },
+      {
+        "number": 10,
+        "title": "Exploration for Enhancing Existing Messaging Flow",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-10-29T17:19:32+00:00",
+        "closed_at": "2025-11-06T06:06:50+00:00",
+        "updated_at": "2025-12-03T07:46:01+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 7.53
+      },
+      {
+        "number": 12,
+        "title": "Create data models for GTFS data",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "adinschmidt",
+        "created_at": "2025-11-04T20:06:22+00:00",
+        "closed_at": "2025-11-13T00:00:31+00:00",
+        "updated_at": "2025-12-03T07:46:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 8.16
+      },
+      {
+        "number": 13,
+        "title": "Write a function to take GTFS .txt files and import data into appropriate mikro-orm entities",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-04T20:28:08+00:00",
+        "closed_at": "2026-01-27T21:31:59+00:00",
+        "updated_at": "2026-01-27T21:31:59+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 84.04
+      },
+      {
+        "number": 14,
+        "title": "Set up backend stack",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "adinschmidt",
+        "created_at": "2025-11-05T02:24:30+00:00",
+        "closed_at": "2025-11-13T00:00:31+00:00",
+        "updated_at": "2025-12-03T07:46:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 7.9
+      },
+      {
+        "number": 15,
+        "title": "Design and Create Function For Creating Groups",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-05T17:19:56+00:00",
+        "closed_at": "2026-01-27T21:31:59+00:00",
+        "updated_at": "2026-01-27T21:31:59+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 83.18
+      },
+      {
+        "number": 16,
+        "title": "Write function to make \"fair groups\"",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-05T17:20:08+00:00",
+        "closed_at": "2026-01-27T21:31:59+00:00",
+        "updated_at": "2026-01-27T21:32:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 83.17
+      },
+      {
+        "number": 17,
+        "title": "Fix and review tests on ai_generated_tests branch",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-05T17:20:46+00:00",
+        "closed_at": "2026-01-27T21:32:00+00:00",
+        "updated_at": "2026-01-27T21:32:00+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 83.17
+      },
+      {
+        "number": 18,
+        "title": "Create Data models",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-05T17:22:48+00:00",
+        "closed_at": "2026-01-27T21:32:00+00:00",
+        "updated_at": "2026-01-27T21:32:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 83.17
+      },
+      {
+        "number": 20,
+        "title": "Provide better instructions for non-local supabase setup",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "adinschmidt",
+        "created_at": "2025-11-06T02:44:47+00:00",
+        "closed_at": "2025-11-12T07:09:45+00:00",
+        "updated_at": "2025-12-03T07:46:03+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 6.18
+      },
+      {
+        "number": 24,
+        "title": "Set up secret manager for secrets",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "adinschmidt",
+        "created_at": "2025-11-12T18:44:42+00:00",
+        "closed_at": "2025-11-16T19:55:11+00:00",
+        "updated_at": "2025-12-03T07:46:03+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 4.05
+      },
+      {
+        "number": 25,
+        "title": "Figure out an image storage solution for uploading ticket sreenshots",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-12T22:00:20+00:00",
+        "closed_at": "2026-01-27T21:32:01+00:00",
+        "updated_at": "2026-01-27T21:32:01+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 75.98
+      },
+      {
+        "number": 26,
+        "title": "Create /frontend folder and set up React.js/Nextjs",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-13T00:30:11+00:00",
+        "closed_at": "2026-01-27T21:32:01+00:00",
+        "updated_at": "2026-01-27T21:32:01+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 75.88
+      },
+      {
+        "number": 27,
+        "title": "Look into where to host frontend  server and backend server",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-13T03:42:32+00:00",
+        "closed_at": "2026-01-27T21:32:02+00:00",
+        "updated_at": "2026-01-27T21:32:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 75.74
+      },
+      {
+        "number": 31,
+        "title": "Create github Project Kanban for GO Train project management?",
+        "state": "closed",
+        "author_login": "gohbi",
+        "closed_by_login": "BreakableHoodie",
+        "created_at": "2025-11-13T15:12:13+00:00",
+        "closed_at": "2025-11-14T01:43:39+00:00",
+        "updated_at": "2025-11-14T01:43:39+00:00",
+        "comment_count": 3,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 0.44
+      },
+      {
+        "number": 32,
+        "title": "Wrong env copy command in README.md",
+        "state": "closed",
+        "author_login": "Mosaab-Emam",
+        "closed_by_login": "Mosaab-Emam",
+        "created_at": "2025-11-13T15:57:50+00:00",
+        "closed_at": "2025-11-16T12:14:59+00:00",
+        "updated_at": "2025-11-16T12:14:59+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 2.85
+      },
+      {
+        "number": 41,
+        "title": "Implement CI/CD security audit workflow",
+        "state": "closed",
+        "author_login": "BreakableHoodie",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-14T22:16:52+00:00",
+        "closed_at": "2026-01-27T21:32:02+00:00",
+        "updated_at": "2026-01-27T21:32:02+00:00",
+        "comment_count": 0,
+        "labels": [
+          "documentation",
+          "devops"
+        ],
+        "time_to_close_days": 73.97
+      },
+      {
+        "number": 42,
+        "title": "Document repo architecture and contribution workflows",
+        "state": "closed",
+        "author_login": "BreakableHoodie",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-14T22:23:52+00:00",
+        "closed_at": "2026-01-27T21:32:03+00:00",
+        "updated_at": "2026-01-27T21:32:03+00:00",
+        "comment_count": 0,
+        "labels": [
+          "documentation"
+        ],
+        "time_to_close_days": 73.96
+      },
+      {
+        "number": 43,
+        "title": "[FEATURE] Password Reset Endpoint for Email Recovery Tokens",
+        "state": "closed",
+        "author_login": "Mosaab-Emam",
+        "closed_by_login": "Mosaab-Emam",
+        "created_at": "2025-11-16T18:08:15+00:00",
+        "closed_at": "2025-11-25T13:17:34+00:00",
+        "updated_at": "2025-11-25T13:17:34+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 8.8
+      },
+      {
+        "number": 45,
+        "title": "Determine and implement appropriate refresh data mechanism",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "adinschmidt",
+        "created_at": "2025-11-16T19:23:31+00:00",
+        "closed_at": "2025-11-19T23:43:58+00:00",
+        "updated_at": "2025-12-03T07:46:04+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 3.18
+      },
+      {
+        "number": 50,
+        "title": "Setup Swagger/OpenAPI Documentation",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "closed_by_login": "adinschmidt",
+        "created_at": "2025-11-18T20:25:49+00:00",
+        "closed_at": "2025-11-19T23:45:16+00:00",
+        "updated_at": "2025-12-03T07:44:42+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 1.14
+      },
+      {
+        "number": 52,
+        "title": "[FEATURE] Create Sign In + Password Reset + Registration pages",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-11-19T03:35:45+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-06T20:48:54+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 54,
+        "title": "Determine requirements around sign up",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-11-19T05:26:51+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:41:45+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 56,
+        "title": "Turn on stricter lint rules in the backend",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "BreakableHoodie",
+        "created_at": "2025-11-19T21:45:03+00:00",
+        "closed_at": "2025-11-20T00:42:09+00:00",
+        "updated_at": "2025-12-03T07:46:04+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.12
+      },
+      {
+        "number": 58,
+        "title": "Refactor DTOs to Shared Package for Frontend Reuse",
+        "state": "closed",
+        "author_login": "adinschmidt",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-11-20T00:05:13+00:00",
+        "closed_at": "2025-12-05T07:25:20+00:00",
+        "updated_at": "2025-12-05T07:25:20+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 15.31
+      },
+      {
+        "number": 64,
+        "title": "Implement Trip Search API",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:33:58+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-04T00:14:08+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp",
+          "DemoDecember10"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 65,
+        "title": "Implement Itinerary Creation API",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:02+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-07T19:14:59+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp",
+          "DemoDecember10"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 66,
+        "title": "Implement Get Itinerary Details API",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:04+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-04T00:13:54+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp",
+          "DemoDecember10"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 67,
+        "title": "Implement User Check-In API",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:09+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:41:47+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 68,
+        "title": "Implement Group Formation Job",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:13+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-08T03:11:23+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 69,
+        "title": "Implement Steward Group View API",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:19+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-09T05:47:14+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp",
+          "DemoDecember10"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 70,
+        "title": "Implement Participant Confirmation API",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:24+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:23+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 71,
+        "title": "(Bonus) QR Code Generation & Scanning",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:29+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:24+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 72,
+        "title": "Implement Ticket Purchase & Cost Calculation",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:32+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:24+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 73,
+        "title": "Implement Debt & Repayment API",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:34:38+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:24+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "mvp"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 74,
+        "title": "Create TripsController and TripsService",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:23+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:25+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 75,
+        "title": "Implement search method with Zod validation",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:25+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:25+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 76,
+        "title": "Query GtfsService for matching trips",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:27+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:26+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 77,
+        "title": "Return mapped results",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:29+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:26+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 78,
+        "title": "Add unit tests for Trip Search",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:31+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:27+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 79,
+        "title": "Create ItinerariesController and ItinerariesService",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:33+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:27+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 80,
+        "title": "Implement logic to find or create Trip entities",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:36+00:00",
+        "closed_at": "2025-12-04T00:37:44+00:00",
+        "updated_at": "2025-12-04T00:37:52+00:00",
+        "comment_count": 1,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 0.71
+      },
+      {
+        "number": 81,
+        "title": "Create Itinerary and linked TripBooking entities",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:37+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T23:49:57+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 82,
+        "title": "Add unit tests for Itinerary Creation",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:37:39+00:00",
+        "closed_at": null,
+        "updated_at": "2025-12-03T07:42:29+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 83,
+        "title": "Add findOne endpoint to ItinerariesController",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:41+00:00",
+        "closed_at": "2026-01-27T21:31:42+00:00",
+        "updated_at": "2026-01-27T21:31:42+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 84,
+        "title": "Fetch itinerary with relations",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:43+00:00",
+        "closed_at": "2026-01-27T21:31:42+00:00",
+        "updated_at": "2026-01-27T21:31:42+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 85,
+        "title": "Implement query for interest count",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:45+00:00",
+        "closed_at": "2026-01-27T21:31:42+00:00",
+        "updated_at": "2026-01-27T21:31:42+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 86,
+        "title": "Add unit tests for Itinerary Details",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:47+00:00",
+        "closed_at": "2026-01-27T21:31:43+00:00",
+        "updated_at": "2026-01-27T21:31:43+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 87,
+        "title": "Create TripBookingsController and TripBookingsService",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:49+00:00",
+        "closed_at": "2026-01-27T21:31:43+00:00",
+        "updated_at": "2026-01-27T21:31:43+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 88,
+        "title": "Implement checkIn method",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:51+00:00",
+        "closed_at": "2026-01-27T21:31:44+00:00",
+        "updated_at": "2026-01-27T21:31:44+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 89,
+        "title": "Add unit tests for Check-In",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:54+00:00",
+        "closed_at": "2026-01-27T21:31:44+00:00",
+        "updated_at": "2026-01-27T21:31:44+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 90,
+        "title": "Setup NestJS Schedule/Cron",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:56+00:00",
+        "closed_at": "2026-01-27T21:31:45+00:00",
+        "updated_at": "2026-01-27T21:31:45+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 91,
+        "title": "Create GroupFormationService",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:37:58+00:00",
+        "closed_at": "2026-01-27T21:31:45+00:00",
+        "updated_at": "2026-01-27T21:31:45+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 92,
+        "title": "Query trips departing soon and checked-in users",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:00+00:00",
+        "closed_at": "2026-01-27T21:31:45+00:00",
+        "updated_at": "2026-01-27T21:31:45+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 93,
+        "title": "Implement grouping algorithm",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:02+00:00",
+        "closed_at": "2026-01-27T21:31:46+00:00",
+        "updated_at": "2026-01-27T21:31:46+00:00",
+        "comment_count": 1,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 94,
+        "title": "Persist TravelGroup and update bookings",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:04+00:00",
+        "closed_at": "2026-01-27T21:31:46+00:00",
+        "updated_at": "2026-01-27T21:31:46+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 95,
+        "title": "Add unit tests for Group Formation",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:06+00:00",
+        "closed_at": "2026-01-27T21:31:46+00:00",
+        "updated_at": "2026-01-27T21:31:47+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 96,
+        "title": "Create TravelGroupsController and TravelGroupsService",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:08+00:00",
+        "closed_at": "2026-01-27T21:31:47+00:00",
+        "updated_at": "2026-01-27T21:31:47+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 97,
+        "title": "Implement findOne ensuring user is steward",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:10+00:00",
+        "closed_at": "2026-01-27T21:31:47+00:00",
+        "updated_at": "2026-01-27T21:31:47+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 98,
+        "title": "Return member details",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:11+00:00",
+        "closed_at": "2026-01-27T21:31:48+00:00",
+        "updated_at": "2026-01-27T21:31:48+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 99,
+        "title": "Add unit tests for Steward View",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:14+00:00",
+        "closed_at": "2026-01-27T21:31:48+00:00",
+        "updated_at": "2026-01-27T21:31:48+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 100,
+        "title": "Add confirmMember endpoint",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:16+00:00",
+        "closed_at": "2026-01-27T21:31:49+00:00",
+        "updated_at": "2026-01-27T21:31:49+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 101,
+        "title": "Validate steward permissions",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:18+00:00",
+        "closed_at": "2026-01-27T21:31:49+00:00",
+        "updated_at": "2026-01-27T21:31:49+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 102,
+        "title": "Update booking status",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:20+00:00",
+        "closed_at": "2026-01-27T21:31:49+00:00",
+        "updated_at": "2026-01-27T21:31:49+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 103,
+        "title": "Add unit tests for Confirmation",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:22+00:00",
+        "closed_at": "2026-01-27T21:31:50+00:00",
+        "updated_at": "2026-01-27T21:31:50+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 104,
+        "title": "Implement QR generation endpoint",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:24+00:00",
+        "closed_at": "2026-01-27T21:31:50+00:00",
+        "updated_at": "2026-01-27T21:31:50+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 105,
+        "title": "Implement Scan endpoint",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:25+00:00",
+        "closed_at": "2026-01-27T21:31:51+00:00",
+        "updated_at": "2026-01-27T21:31:51+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 106,
+        "title": "Integrate with confirmation logic",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:27+00:00",
+        "closed_at": "2026-01-27T21:31:51+00:00",
+        "updated_at": "2026-01-27T21:31:51+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 107,
+        "title": "Add purchase endpoint to TravelGroupsController",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2025-12-03T07:38:29+00:00",
+        "closed_at": "2026-01-27T21:31:51+00:00",
+        "updated_at": "2026-01-27T21:31:52+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend"
+        ],
+        "time_to_close_days": 55.58
+      },
+      {
+        "number": 108,
+        "title": "Create TicketPurchase entity",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:32+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:21+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 109,
+        "title": "Calculate split costs",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:33+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:21+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 110,
+        "title": "Create Payment entities",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:35+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:22+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 111,
+        "title": "Add unit tests for Purchase",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:37+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:22+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 112,
+        "title": "Create PaymentsController and PaymentsService",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:39+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:23+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 113,
+        "title": "Implement getOwed and getReceivable",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:41+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:23+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 114,
+        "title": "Implement markPaid",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:43+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:24+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 115,
+        "title": "Add unit tests for Payments",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-03T07:38:45+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:25+00:00",
+        "comment_count": 0,
+        "labels": [
+          "backend",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 116,
+        "title": "[FEATURE] Make an api that fetches aggregated itineraries",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-04T00:19:54+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:25+00:00",
+        "comment_count": 0,
+        "labels": [
+          "DemoDecember10",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 117,
+        "title": "[FEATURE] Create page to view existing itineraries",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-04T00:20:52+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:26+00:00",
+        "comment_count": 0,
+        "labels": [
+          "DemoDecember10",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 119,
+        "title": "[FEATURE] Create page to create new itinierary",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-04T00:36:01+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:26+00:00",
+        "comment_count": 1,
+        "labels": [
+          "DemoDecember10",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 120,
+        "title": "[FEATURE] Create a round trip endpoint",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-04T03:03:12+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:27+00:00",
+        "comment_count": 0,
+        "labels": [
+          "DemoDecember10",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 122,
+        "title": "Refactor private zod schemas to be in /backend only",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-06T19:58:58+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:27+00:00",
+        "comment_count": 0,
+        "labels": [
+          "good first issue",
+          "codeQualityImprovement",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 126,
+        "title": "Ensure time is being handled appropriately across the app.",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2025-12-07T19:00:06+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:31:28+00:00",
+        "comment_count": 0,
+        "labels": [
+          "codeQualityImprovement",
+          "legacyTask"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 136,
+        "title": "Starting Infrastructure",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T04:47:21+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:17:39+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 137,
+        "title": "Create a backend repository using NestJS/Fastify/MikroORM",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T04:48:57+00:00",
+        "closed_at": "2026-01-14T04:53:32+00:00",
+        "updated_at": "2026-01-14T06:23:28+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 138,
+        "title": "Implement an Authentication Service and Auth Guard to protect endpoints",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T04:54:00+00:00",
+        "closed_at": "2026-01-14T04:54:36+00:00",
+        "updated_at": "2026-01-14T06:23:16+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 139,
+        "title": "Set up linter for backend service",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T04:55:08+00:00",
+        "closed_at": "2026-01-14T04:55:28+00:00",
+        "updated_at": "2026-01-14T04:59:08+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 140,
+        "title": "Set up frontend infra using NextJS",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T05:04:58+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T05:09:30+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 141,
+        "title": "Add exception/response templating handling wrappers around api routes to ensure consistency for frontend",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T05:06:22+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T05:09:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 142,
+        "title": "Add test framework vitest",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T05:07:13+00:00",
+        "closed_at": "2026-01-14T05:07:37+00:00",
+        "updated_at": "2026-01-14T05:07:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 143,
+        "title": "Integrate Swagger docs",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T05:08:03+00:00",
+        "closed_at": "2026-01-14T05:08:44+00:00",
+        "updated_at": "2026-01-14T05:08:44+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 144,
+        "title": "Database Model Foundation",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T05:11:10+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:17:43+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 145,
+        "title": "Design and implement GTFS mirror models",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:20:45+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:22:03+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 146,
+        "title": "Design and implement all the entities for coordinating group passes",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:21:19+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:22:08+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 147,
+        "title": "User Registration Flow",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:26:02+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:26:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 148,
+        "title": "Create api endpoints for registering a user",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:27:04+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:16:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 149,
+        "title": "Create the registration page and path in frontend",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:27:32+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:16:41+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 150,
+        "title": "Sign in flow",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:29:19+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:33:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 151,
+        "title": "Sign in flow",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:29:56+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:29:56+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 152,
+        "title": "Create api endpoint to sign in",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T06:30:37+00:00",
+        "closed_at": "2026-01-14T06:31:45+00:00",
+        "updated_at": "2026-01-14T07:16:44+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 153,
+        "title": "Create UI for sign in",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:32:11+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:16:46+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 154,
+        "title": "Password reset flow",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:34:41+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:35:14+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 155,
+        "title": "Create API endpoint for password reset",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:34:57+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:16:51+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 156,
+        "title": "Create UI for password reset",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:35:32+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:16:53+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 157,
+        "title": "Forgot password flow",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:36:50+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:36:50+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 158,
+        "title": "Create functionality to import GTFS data into database",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:40:43+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:17:10+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 159,
+        "title": "Write function to grab CSV data from metrolinx",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T06:41:03+00:00",
+        "closed_at": "2026-01-14T06:46:33+00:00",
+        "updated_at": "2026-01-14T07:17:04+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 160,
+        "title": "Write code to import csv data to database",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:41:38+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:17:06+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 161,
+        "title": "Create a mechanism to sync database with newest GTFS data",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:45:31+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:17:12+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 162,
+        "title": "Improve speed of GTFS import by using PG COPY instead of mikro orm",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:47:33+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-22T01:18:25+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 163,
+        "title": "Mechanism to mark itineraries with trips that have a changed schedule",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:50:06+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:02:20+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 164,
+        "title": "Secure GTFS endpoint",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:51:39+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:02:41+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 165,
+        "title": "User can view round trip schedules from Kitchener GO to Union Go",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:53:22+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:26:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 166,
+        "title": "API to fetch round trips from Kitchener GO to Union Go",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:54:30+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T06:54:30+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 167,
+        "title": "API to fetch round trips from Kitchener GO to Union Go",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T06:59:12+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:01:37+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 168,
+        "title": "Implement UI to view round trip from Kitchener to Union",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T07:00:24+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:15:25+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 169,
+        "title": "Initial Pass at import code",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T07:07:57+00:00",
+        "closed_at": "2026-01-14T07:23:02+00:00",
+        "updated_at": "2026-01-14T07:23:02+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 170,
+        "title": "Bug Fixes to get import code to work E2E",
+        "state": "closed",
+        "author_login": "jliu1016",
+        "closed_by_login": "jliu1016",
+        "created_at": "2026-01-14T07:08:13+00:00",
+        "closed_at": "2026-01-14T07:27:55+00:00",
+        "updated_at": "2026-01-14T07:27:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.01
+      },
+      {
+        "number": 171,
+        "title": "API endpoint to create itinerary",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T07:22:03+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:22:12+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 172,
+        "title": "Ability to view+join existing itineraries",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T07:30:51+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:43:03+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 173,
+        "title": "Create an aggregated view of itineraries",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T07:33:18+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:45:26+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 174,
+        "title": "Existing Itineraries View",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T07:35:08+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:45:03+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 175,
+        "title": "Write API endpoint + service to get summary view of itineraries",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T07:42:39+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T07:44:55+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 176,
+        "title": "Create function to form travel groups for all checkedin members of itinerary",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-14T08:01:53+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-14T08:03:33+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 177,
+        "title": "Verify Group Formation works",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-15T19:22:20+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-15T19:26:34+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 184,
+        "title": "Closed: Security report moved to private channels",
+        "state": "closed",
+        "author_login": "BreakableHoodie",
+        "closed_by_login": "BreakableHoodie",
+        "created_at": "2026-01-15T21:39:23+00:00",
+        "closed_at": "2026-01-15T21:40:22+00:00",
+        "updated_at": "2026-01-15T21:40:22+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.0
+      },
+      {
+        "number": 185,
+        "title": "Add health checks to app controller",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T20:42:36+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:11:40+00:00",
+        "comment_count": 0,
+        "labels": [
+          "good first issue"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 186,
+        "title": "Explore liabilities of making this project live",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T20:50:03+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T20:50:12+00:00",
+        "comment_count": 0,
+        "labels": [
+          "non-technical"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 187,
+        "title": "[Research Spike] Flesh out the tickets and tasks to incorporate live service interrupts into the app",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T21:06:00+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:07:06+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 188,
+        "title": "Time Audit",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T21:47:30+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T22:07:53+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 189,
+        "title": "Ability to configure timezone enforcement project wide",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T21:49:44+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:50:36+00:00",
+        "comment_count": 0,
+        "labels": [
+          "abstractingForOtherTransitSystems"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 190,
+        "title": "Merge demo day dec 10 branch",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T21:53:59+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:53:59+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 191,
+        "title": "Travel Group Audit",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T21:55:32+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T21:55:32+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 192,
+        "title": "Fix frontend timezone display issues",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T22:08:25+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T22:08:25+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 193,
+        "title": "Ensure serviceID is parsed into the proper timezone",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T22:21:11+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T22:21:11+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 194,
+        "title": "Make Demoseeder appropriate for development",
+        "state": "open",
+        "author_login": "jliu1016",
+        "closed_by_login": null,
+        "created_at": "2026-01-27T22:24:42+00:00",
+        "closed_at": null,
+        "updated_at": "2026-01-27T22:24:42+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 201,
+        "title": "Add CODEOWNERS file to define code reviewers",
+        "state": "open",
+        "author_login": "BreakableHoodie",
+        "closed_by_login": null,
+        "created_at": "2026-04-15T15:30:03+00:00",
+        "closed_at": null,
+        "updated_at": "2026-04-15T15:30:03+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 142,
+    "open_issues": 78,
+    "closed_issues": 64,
+    "avg_comments_per_issue": 0.2,
+    "median_time_to_close_days": 55.58,
+    "unique_openers": 5,
+    "unique_closers": 4,
+    "top_openers": {
+      "jliu1016": 132,
+      "BreakableHoodie": 5,
+      "Mosaab-Emam": 2,
+      "adinschmidt": 2,
+      "gohbi": 1
+    },
+    "top_closers": {
+      "jliu1016": 52,
+      "adinschmidt": 6,
+      "BreakableHoodie": 4,
+      "Mosaab-Emam": 2
+    }
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "CivicTechWR/go-train-group-pass",
+    "dev_ai_detected": true,
+    "dev_ai_tools": [
+      "claude_code",
+      "github_copilot"
+    ],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 42,
+    "ai_authored_commit_count": 1,
+    "commits_scanned": 108,
+    "ai_commit_ratio": 0.3981,
+    "ai_agent_pr_count": 11,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": "2025-10-08T16:33:13+00:00",
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": [
+      {
+        "group": "dev",
+        "tool": "github_copilot",
+        "source": "commit_trailer",
+        "evidence": "commit_trailer:github_copilot",
+        "count": 2,
+        "first_seen": "2025-11-20T00:42:07+00:00"
+      },
+      {
+        "group": "dev",
+        "tool": "claude_code",
+        "source": "commit_trailer",
+        "evidence": "commit_trailer:claude_code",
+        "count": 40,
+        "first_seen": "2025-10-08T16:33:13+00:00"
+      },
+      {
+        "group": "dev",
+        "tool": "github_copilot",
+        "source": "commit_author",
+        "evidence": "commit_author:github_copilot",
+        "count": 1,
+        "first_seen": "2025-11-20T00:42:07+00:00"
+      },
+      {
+        "group": "dev",
+        "tool": "github_copilot",
+        "source": "pr_author",
+        "evidence": "pr_author:Copilot",
+        "count": 11,
+        "first_seen": null
+      },
+      {
+        "group": "dev",
+        "tool": "claude_code",
+        "source": "pr_body",
+        "evidence": "pr_body:claude_code",
+        "count": 1,
+        "first_seen": "2026-05-26T16:03:05+00:00"
+      }
+    ]
+  }
+}

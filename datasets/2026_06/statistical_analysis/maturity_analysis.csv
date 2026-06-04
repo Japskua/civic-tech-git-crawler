@@ -1,0 +1,13 @@
+comparison,metric,mature_n,young_n,mature_median,young_median,U_statistic,p_value,cliffs_delta,effect_magnitude
+Mature (≥3.5y) vs Young (<3.5y),num_developers,28,28,15.5,3.5,670.5,0.0,0.7105,large
+Mature (≥3.5y) vs Young (<3.5y),total_commits,28,28,1357.5,189.0,699.0,0.0,0.7832,large
+Mature (≥3.5y) vs Young (<3.5y),bus_factor,28,27,1.5,1.0,492.0,0.0256,0.3016,small
+Mature (≥3.5y) vs Young (<3.5y),bus_factor_no_bots,28,27,1.5,1.0,492.0,0.0256,0.3016,small
+Mature (≥3.5y) vs Young (<3.5y),burstiness_cv,28,27,0.89,1.06,266.0,0.0604,-0.2963,small
+Mature (≥3.5y) vs Young (<3.5y),hhi_no_bots,28,27,4567.85,8618.3,218.0,0.0071,-0.4233,medium
+Mature (≥3.5y) vs Young (<3.5y),stale_issue_ratio,21,13,0.7857,0.9872,95.0,0.1371,-0.304,small
+Mature (≥3.5y) vs Young (<3.5y),health_percentage,28,28,50.0,50.0,364.0,0.6456,-0.0714,negligible
+Mature (≥3.5y) vs Young (<3.5y),core_contributor_count,28,28,1.5,0.0,455.5,0.2649,0.162,small
+Mature (≥3.5y) vs Young (<3.5y),network_density,20,17,0.3667,0.4,135.0,0.2905,-0.2059,small
+Mature (≥3.5y) vs Young (<3.5y),change_request_acceptance_ratio,26,23,0.8274,0.7903,255.0,0.3828,-0.1472,small
+Mature (≥3.5y) vs Young (<3.5y),median_pr_review_turnaround_hours,20,17,3.2,22.3,135.0,0.293,-0.2059,small

@@ -1,0 +1,13 @@
+metric,n,W_statistic,p_value,normal_at_0.05
+total_commits,56,0.5357,0.0,False
+num_developers,56,0.3212,0.0,False
+bus_factor,55,0.688,0.0,False
+bus_factor_no_bots,55,0.688,0.0,False
+burstiness_cv,55,0.9667,0.130927,True
+herfindahl_hirschman_index,55,0.8456,5e-06,False
+hhi_no_bots,55,0.8702,2.7e-05,False
+stale_issue_ratio,34,0.76,5e-06,False
+health_percentage,56,0.9373,0.005972,False
+change_request_acceptance_ratio,49,0.8139,2e-06,False
+core_contributor_count,56,0.6924,0.0,False
+network_density,37,0.853,0.000185,False

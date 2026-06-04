@@ -1,0 +1,2582 @@
+{
+  "repo_metrics": {
+    "full_name": "CodeForAfrica/GenderGap.AFRICA",
+    "name": "GenderGap.AFRICA",
+    "description": "GenderGap.AFRICA is a tool designed to help users calculate the gender pay gap in any African country. Accessible at https://gendergap.africa/",
+    "num_developers": 11,
+    "total_commits": 254,
+    "languages": {
+      "JavaScript": 48496,
+      "HTML": 34497,
+      "SCSS": 34337
+    },
+    "primary_language": "JavaScript",
+    "first_commit_date": "2017-03-21T14:49:03+00:00",
+    "last_commit_date": "2025-09-01T23:22:13+00:00",
+    "license_spdx": "GPL-3.0",
+    "license_name": "GNU General Public License v3.0",
+    "is_osi_approved": true,
+    "topics": [
+      "gender-equality",
+      "gender-gap",
+      "equal-pay",
+      "africa",
+      "storylab",
+      "calculator",
+      "kenya",
+      "nigeria",
+      "tanzania",
+      "south-africa"
+    ],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": true,
+    "has_pr_template": true,
+    "health_percentage": 50,
+    "stars": 9,
+    "watchers": 17,
+    "forks": 4,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "CodeQL",
+      "pages-build-deployment"
+    ],
+    "deployments_count": 126,
+    "created_at": "2017-03-21T14:49:03+00:00",
+    "updated_at": "2025-09-01T23:22:46+00:00",
+    "pushed_at": "2025-09-01T23:53:36+00:00",
+    "size_kb": 3267
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "elric-wamugu",
+      "name": "Eric Wamugu",
+      "num_commits": 2,
+      "additions": 38,
+      "deletions": 24,
+      "avg_additions_per_commit": 19.0,
+      "avg_deletions_per_commit": 12.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "thepsalmist",
+      "name": "Xavier Frankline Odhiambo",
+      "num_commits": 2,
+      "additions": 2,
+      "deletions": 2,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "Kinjuriu",
+      "name": "Stephane Njoki",
+      "num_commits": 4,
+      "additions": 333,
+      "deletions": 353,
+      "avg_additions_per_commit": 83.25,
+      "avg_deletions_per_commit": 88.25,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "Kinjuriu",
+      "name": "Kinjuriu",
+      "num_commits": 7,
+      "additions": 492,
+      "deletions": 505,
+      "avg_additions_per_commit": 70.29,
+      "avg_deletions_per_commit": 72.14,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "kilemensi",
+      "name": "Clemence Kyara",
+      "num_commits": 19,
+      "additions": 374,
+      "deletions": 224,
+      "avg_additions_per_commit": 19.68,
+      "avg_deletions_per_commit": 11.79,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "num_commits": 14,
+      "additions": 372,
+      "deletions": 222,
+      "avg_additions_per_commit": 26.57,
+      "avg_deletions_per_commit": 15.86,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "kilemensi",
+      "name": "_ Kilemensi",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "nerdlet",
+      "name": "Brenda Nyokabi Bucha",
+      "num_commits": 20,
+      "additions": 4210,
+      "deletions": 14176,
+      "avg_additions_per_commit": 210.5,
+      "avg_deletions_per_commit": 708.8,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": null,
+      "name": "Brenda Nyokabi Bucha",
+      "num_commits": 5,
+      "additions": 2427,
+      "deletions": 1964,
+      "avg_additions_per_commit": 485.4,
+      "avg_deletions_per_commit": 392.8,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "robinkiplangat",
+      "name": "Robin Kiplang'at",
+      "num_commits": 2,
+      "additions": 47,
+      "deletions": 43,
+      "avg_additions_per_commit": 23.5,
+      "avg_deletions_per_commit": 21.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "DavidLemayian",
+      "name": "David Lemayian",
+      "num_commits": 3,
+      "additions": 90,
+      "deletions": 76,
+      "avg_additions_per_commit": 30.0,
+      "avg_deletions_per_commit": 25.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "num_commits": 2,
+      "additions": 19,
+      "deletions": 7,
+      "avg_additions_per_commit": 9.5,
+      "avg_deletions_per_commit": 3.5,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "DavidLemayian",
+      "name": "David Lemayian",
+      "num_commits": 37,
+      "additions": 48732,
+      "deletions": 36564,
+      "avg_additions_per_commit": 1317.08,
+      "avg_deletions_per_commit": 988.22,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "robinkiplangat",
+      "name": "4bic",
+      "num_commits": 2,
+      "additions": 71,
+      "deletions": 69,
+      "avg_additions_per_commit": 35.5,
+      "avg_deletions_per_commit": 34.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "mtuchi",
+      "name": "Emmanuel Evance",
+      "num_commits": 1,
+      "additions": 937,
+      "deletions": 11498,
+      "avg_additions_per_commit": 937.0,
+      "avg_deletions_per_commit": 11498.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": null,
+      "name": "nerdlet",
+      "num_commits": 15,
+      "additions": 11362,
+      "deletions": 696,
+      "avg_additions_per_commit": 757.47,
+      "avg_deletions_per_commit": 46.4,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "emmalewis",
+      "name": "Emma Lewis",
+      "num_commits": 70,
+      "additions": 6795,
+      "deletions": 11955,
+      "avg_additions_per_commit": 97.07,
+      "avg_deletions_per_commit": 170.79,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "chaficnajjar",
+      "name": "Chafic Najjar",
+      "num_commits": 48,
+      "additions": 11739,
+      "deletions": 2185,
+      "avg_additions_per_commit": 244.56,
+      "avg_deletions_per_commit": 45.52,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+    "pr_count_total": 44,
+    "pr_count_merged": 38,
+    "pr_count_open": 2,
+    "pr_count_closed_unmerged": 4,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Implement homepage",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "created_at": "2017-04-10T20:22:12+00:00",
+        "merged_at": "2017-04-10T20:28:04+00:00",
+        "closed_at": "2017-04-10T20:28:04+00:00"
+      },
+      {
+        "number": 15,
+        "title": "Feature footer: ",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2018-03-02T14:05:02+00:00",
+        "merged_at": "2018-03-05T14:42:21+00:00",
+        "closed_at": "2018-03-05T14:42:21+00:00"
+      },
+      {
+        "number": 16,
+        "title": "Feature-footer: Small changes on the footer text",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2018-03-07T14:57:04+00:00",
+        "merged_at": "2018-03-07T15:29:45+00:00",
+        "closed_at": "2018-03-07T15:29:45+00:00"
+      },
+      {
+        "number": 18,
+        "title": "Add google analytics event tracking",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2018-03-19T07:56:30+00:00",
+        "merged_at": "2018-03-19T11:25:51+00:00",
+        "closed_at": "2018-03-19T11:25:51+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Add link to GenderGap medium page",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2018-07-17T14:51:07+00:00",
+        "merged_at": "2018-07-21T17:08:55+00:00",
+        "closed_at": "2018-07-21T17:08:55+00:00"
+      },
+      {
+        "number": 23,
+        "title": "Change title tag to GenderGap.AFRICA",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2018-07-17T14:56:58+00:00",
+        "merged_at": "2018-07-19T16:56:00+00:00",
+        "closed_at": "2018-07-19T16:56:00+00:00"
+      },
+      {
+        "number": 24,
+        "title": "Replace github link in the footer",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2018-07-17T15:04:26+00:00",
+        "merged_at": "2018-07-21T17:17:15+00:00",
+        "closed_at": "2018-07-21T17:17:15+00:00"
+      },
+      {
+        "number": 26,
+        "title": "Updgrade dependency",
+        "state": "closed",
+        "author_login": "mtuchi",
+        "created_at": "2018-07-19T12:05:50+00:00",
+        "merged_at": "2018-07-19T12:06:58+00:00",
+        "closed_at": "2018-07-19T12:06:58+00:00"
+      },
+      {
+        "number": 27,
+        "title": "Data updates from the WEF 2018 report",
+        "state": "closed",
+        "author_login": "robinkiplangat",
+        "created_at": "2019-01-10T13:00:06+00:00",
+        "merged_at": "2019-01-10T13:15:10+00:00",
+        "closed_at": "2019-01-10T13:15:10+00:00"
+      },
+      {
+        "number": 28,
+        "title": "Bump fstream from 1.0.11 to 1.0.12",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-05-31T12:53:22+00:00",
+        "merged_at": "2019-05-31T13:05:25+00:00",
+        "closed_at": "2019-05-31T13:05:25+00:00"
+      },
+      {
+        "number": 29,
+        "title": "Bump js-yaml from 3.12.1 to 3.13.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-06-06T08:01:53+00:00",
+        "merged_at": "2019-06-09T17:02:22+00:00",
+        "closed_at": "2019-06-09T17:02:22+00:00"
+      },
+      {
+        "number": 30,
+        "title": "[Snyk] Fix for 1 vulnerable dependencies",
+        "state": "closed",
+        "author_login": "snyk-bot",
+        "created_at": "2019-06-21T08:11:23+00:00",
+        "merged_at": null,
+        "closed_at": "2021-08-11T06:51:26+00:00"
+      },
+      {
+        "number": 31,
+        "title": "[Snyk] Fix for 1 vulnerable dependencies",
+        "state": "closed",
+        "author_login": "snyk-bot",
+        "created_at": "2019-07-04T08:11:21+00:00",
+        "merged_at": null,
+        "closed_at": "2021-08-11T06:51:12+00:00"
+      },
+      {
+        "number": 32,
+        "title": "Bump lodash.mergewith from 4.6.1 to 4.6.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2019-07-11T11:04:33+00:00",
+        "merged_at": "2021-08-04T06:33:57+00:00",
+        "closed_at": "2021-08-04T06:33:57+00:00"
+      },
+      {
+        "number": 33,
+        "title": "Update data to WEF 2020 Report ",
+        "state": "closed",
+        "author_login": "robinkiplangat",
+        "created_at": "2020-02-12T23:17:02+00:00",
+        "merged_at": null,
+        "closed_at": "2020-02-13T11:36:09+00:00"
+      },
+      {
+        "number": 34,
+        "title": "Update WEF data to 2019",
+        "state": "closed",
+        "author_login": "robinkiplangat",
+        "created_at": "2020-02-13T11:39:29+00:00",
+        "merged_at": "2020-02-14T10:00:37+00:00",
+        "closed_at": "2020-02-14T10:00:37+00:00"
+      },
+      {
+        "number": 35,
+        "title": "Bump mixin-deep from 1.3.1 to 1.3.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-02-14T10:01:11+00:00",
+        "merged_at": "2021-08-04T06:32:45+00:00",
+        "closed_at": "2021-08-04T06:32:45+00:00"
+      },
+      {
+        "number": 36,
+        "title": "Update the tool description ",
+        "state": "closed",
+        "author_login": "robinkiplangat",
+        "created_at": "2020-02-19T07:23:19+00:00",
+        "merged_at": "2020-02-19T07:38:17+00:00",
+        "closed_at": "2020-02-19T07:38:17+00:00"
+      },
+      {
+        "number": 37,
+        "title": "Bump lodash.merge from 4.6.1 to 4.6.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-09-04T02:52:13+00:00",
+        "merged_at": "2021-08-04T06:32:20+00:00",
+        "closed_at": "2021-08-04T06:32:20+00:00"
+      },
+      {
+        "number": 38,
+        "title": "Bump node-sass from 4.11.0 to 4.14.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-09-04T11:28:12+00:00",
+        "merged_at": "2021-10-05T05:19:30+00:00",
+        "closed_at": "2021-10-05T05:19:31+00:00"
+      },
+      {
+        "number": 39,
+        "title": "Bump ini from 1.3.5 to 1.3.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-12-11T07:29:15+00:00",
+        "merged_at": "2020-12-11T07:39:37+00:00",
+        "closed_at": "2020-12-11T07:39:37+00:00"
+      },
+      {
+        "number": 40,
+        "title": "Bump dot-prop from 4.2.0 to 4.2.1",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-12-11T07:41:29+00:00",
+        "merged_at": "2021-08-04T06:32:00+00:00",
+        "closed_at": "2021-08-04T06:32:00+00:00"
+      },
+      {
+        "number": 41,
+        "title": "Bump y18n from 3.2.1 to 3.2.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-30T16:11:15+00:00",
+        "merged_at": "2021-08-04T06:31:49+00:00",
+        "closed_at": "2021-08-04T06:31:49+00:00"
+      },
+      {
+        "number": 42,
+        "title": "Bump hosted-git-info from 2.7.1 to 2.8.9",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-05-10T09:20:11+00:00",
+        "merged_at": "2021-08-04T06:31:24+00:00",
+        "closed_at": "2021-08-04T06:31:25+00:00"
+      },
+      {
+        "number": 43,
+        "title": "Bump tar from 2.2.1 to 2.2.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-08-04T00:03:58+00:00",
+        "merged_at": "2021-08-04T06:30:25+00:00",
+        "closed_at": "2021-08-04T06:30:26+00:00"
+      },
+      {
+        "number": 44,
+        "title": "Bump path-parse from 1.0.6 to 1.0.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-08-11T00:39:52+00:00",
+        "merged_at": "2021-08-11T06:50:44+00:00",
+        "closed_at": "2021-08-11T06:50:44+00:00"
+      },
+      {
+        "number": 45,
+        "title": "Bump follow-redirects from 1.6.1 to 1.14.7",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-01-13T12:48:33+00:00",
+        "merged_at": "2022-01-14T14:00:45+00:00",
+        "closed_at": "2022-01-14T14:00:45+00:00"
+      },
+      {
+        "number": 46,
+        "title": "update link in homepage and upload 2021 datasets",
+        "state": "closed",
+        "author_login": "Kinjuriu",
+        "created_at": "2022-01-14T08:08:43+00:00",
+        "merged_at": "2022-01-14T13:56:46+00:00",
+        "closed_at": "2022-01-14T13:56:46+00:00"
+      },
+      {
+        "number": 47,
+        "title": "[HOTFIX] Cleanup  + Update Footer Link",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2022-01-16T08:48:26+00:00",
+        "merged_at": "2022-01-17T15:02:19+00:00",
+        "closed_at": "2022-01-17T15:02:19+00:00"
+      },
+      {
+        "number": 48,
+        "title": "Fix/typos and data",
+        "state": "closed",
+        "author_login": "Kinjuriu",
+        "created_at": "2022-01-25T12:23:12+00:00",
+        "merged_at": null,
+        "closed_at": "2022-02-02T11:51:08+00:00"
+      },
+      {
+        "number": 49,
+        "title": "[Fix]Update genderGap data currencies ",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2022-01-28T09:48:33+00:00",
+        "merged_at": "2022-02-03T06:59:45+00:00",
+        "closed_at": "2022-02-03T06:59:45+00:00"
+      },
+      {
+        "number": 50,
+        "title": "Bump follow-redirects from 1.14.7 to 1.14.8",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-02-12T10:04:05+00:00",
+        "merged_at": "2022-02-14T11:08:17+00:00",
+        "closed_at": "2022-02-14T11:08:17+00:00"
+      },
+      {
+        "number": 51,
+        "title": "[Feature ] Update links and genderGap infomation",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "created_at": "2022-02-14T09:41:26+00:00",
+        "merged_at": "2022-02-18T11:50:15+00:00",
+        "closed_at": "2022-02-18T11:50:16+00:00"
+      },
+      {
+        "number": 52,
+        "title": "updated to 2022 datasets",
+        "state": "closed",
+        "author_login": "Kinjuriu",
+        "created_at": "2022-10-11T10:15:22+00:00",
+        "merged_at": "2022-10-13T07:45:26+00:00",
+        "closed_at": "2022-10-13T07:45:26+00:00"
+      },
+      {
+        "number": 53,
+        "title": "Make gap__compare standout",
+        "state": "closed",
+        "author_login": "kilemensi",
+        "created_at": "2022-10-13T09:00:03+00:00",
+        "merged_at": "2022-10-13T09:43:19+00:00",
+        "closed_at": "2022-10-13T09:43:19+00:00"
+      },
+      {
+        "number": 54,
+        "title": "add pesa yetu and wannadata",
+        "state": "closed",
+        "author_login": "Kinjuriu",
+        "created_at": "2022-10-13T10:22:31+00:00",
+        "merged_at": "2022-10-13T10:37:50+00:00",
+        "closed_at": "2022-10-13T10:37:50+00:00"
+      },
+      {
+        "number": 55,
+        "title": "capitalised africa",
+        "state": "closed",
+        "author_login": "Kinjuriu",
+        "created_at": "2022-10-13T10:56:55+00:00",
+        "merged_at": "2022-10-13T11:03:40+00:00",
+        "closed_at": "2022-10-13T11:03:40+00:00"
+      },
+      {
+        "number": 56,
+        "title": "Bump socket.io-parser from 3.3.2 to 3.3.3",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-11-10T01:58:27+00:00",
+        "merged_at": "2022-11-16T05:56:45+00:00",
+        "closed_at": "2022-11-16T05:56:45+00:00"
+      },
+      {
+        "number": 57,
+        "title": "Bump decode-uri-component from 0.2.0 to 0.2.2",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-12-03T09:25:24+00:00",
+        "merged_at": "2022-12-05T05:12:44+00:00",
+        "closed_at": "2022-12-05T05:12:44+00:00"
+      },
+      {
+        "number": 58,
+        "title": "Bump stylelint from 9.10.1 to 15.10.1",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-07-07T22:07:48+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 59,
+        "title": "Updated datasets and changed all instances of 2022 to 2023",
+        "state": "closed",
+        "author_login": "Kinjuriu",
+        "created_at": "2023-08-30T11:35:43+00:00",
+        "merged_at": "2023-09-04T07:46:40+00:00",
+        "closed_at": "2023-09-04T07:46:40+00:00"
+      },
+      {
+        "number": 60,
+        "title": "update GA tracking ID",
+        "state": "closed",
+        "author_login": "thepsalmist",
+        "created_at": "2023-09-05T11:44:24+00:00",
+        "merged_at": "2023-09-05T11:45:25+00:00",
+        "closed_at": "2023-09-05T11:45:25+00:00"
+      },
+      {
+        "number": 61,
+        "title": "Improve deployment",
+        "state": "open",
+        "author_login": "kilemensi",
+        "created_at": "2023-09-05T12:10:45+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 62,
+        "title": "2023/24 updates: Copy edits on Estimated Earned Income",
+        "state": "closed",
+        "author_login": "elric-wamugu",
+        "created_at": "2024-09-23T15:01:24+00:00",
+        "merged_at": "2024-09-23T15:11:13+00:00",
+        "closed_at": "2024-09-23T15:11:13+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+    "weekly_commits": [
+      {
+        "week_start": "2017-04-03",
+        "commits": 1
+      },
+      {
+        "week_start": "2017-04-10",
+        "commits": 10
+      },
+      {
+        "week_start": "2017-04-17",
+        "commits": 2
+      },
+      {
+        "week_start": "2017-04-24",
+        "commits": 1
+      },
+      {
+        "week_start": "2017-05-01",
+        "commits": 15
+      },
+      {
+        "week_start": "2017-05-22",
+        "commits": 2
+      },
+      {
+        "week_start": "2017-06-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2017-06-19",
+        "commits": 11
+      },
+      {
+        "week_start": "2017-06-26",
+        "commits": 5
+      },
+      {
+        "week_start": "2017-09-18",
+        "commits": 2
+      },
+      {
+        "week_start": "2017-09-25",
+        "commits": 5
+      },
+      {
+        "week_start": "2017-10-09",
+        "commits": 4
+      },
+      {
+        "week_start": "2017-10-23",
+        "commits": 11
+      },
+      {
+        "week_start": "2017-10-30",
+        "commits": 3
+      },
+      {
+        "week_start": "2017-11-06",
+        "commits": 6
+      },
+      {
+        "week_start": "2017-11-13",
+        "commits": 8
+      },
+      {
+        "week_start": "2017-11-27",
+        "commits": 6
+      },
+      {
+        "week_start": "2018-01-15",
+        "commits": 28
+      },
+      {
+        "week_start": "2018-01-22",
+        "commits": 1
+      },
+      {
+        "week_start": "2018-01-29",
+        "commits": 1
+      },
+      {
+        "week_start": "2018-02-26",
+        "commits": 2
+      },
+      {
+        "week_start": "2018-03-05",
+        "commits": 28
+      },
+      {
+        "week_start": "2018-03-19",
+        "commits": 4
+      },
+      {
+        "week_start": "2018-07-16",
+        "commits": 18
+      },
+      {
+        "week_start": "2019-01-07",
+        "commits": 4
+      },
+      {
+        "week_start": "2019-05-13",
+        "commits": 1
+      },
+      {
+        "week_start": "2019-05-27",
+        "commits": 2
+      },
+      {
+        "week_start": "2019-06-03",
+        "commits": 2
+      },
+      {
+        "week_start": "2020-02-10",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-02-17",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-08-31",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-12-07",
+        "commits": 3
+      },
+      {
+        "week_start": "2021-03-29",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-05-10",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-08-02",
+        "commits": 11
+      },
+      {
+        "week_start": "2021-08-09",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-10-04",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-01-10",
+        "commits": 10
+      },
+      {
+        "week_start": "2022-01-17",
+        "commits": 2
+      },
+      {
+        "week_start": "2022-01-24",
+        "commits": 2
+      },
+      {
+        "week_start": "2022-01-31",
+        "commits": 5
+      },
+      {
+        "week_start": "2022-02-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-02-14",
+        "commits": 5
+      },
+      {
+        "week_start": "2022-10-10",
+        "commits": 12
+      },
+      {
+        "week_start": "2022-11-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-11-14",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-11-28",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-12-05",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-08-28",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-09-04",
+        "commits": 3
+      },
+      {
+        "week_start": "2024-09-23",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-09-01",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": 0.8636,
+    "bus_factor": 3,
+    "contribution_types": {
+      "code_commits": 254,
+      "pull_requests": 44,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 2,
+      "Code for Africa": 1,
+      "World Benchmarking Alliance": 2,
+      "CodeForAfrica": 2,
+      "nativecoders-se": 1,
+      "fourbic": 2,
+      "TeneryResearch": 2,
+      "OpenFn": 1,
+      "Financial Times": 1
+    },
+    "newcomer_friendly_labels": [
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 4,
+    "burstiness_cv": 1.26,
+    "burstiness_mean": 4.87,
+    "burstiness_std": 6.14,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 25,
+        "days_to_close": 3.2
+      }
+    ],
+    "median_defect_resolution_days": 3.2,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 3,
+    "bot_contributor_count": 2,
+    "bot_commit_count": 16,
+    "elephant_factor": 2,
+    "elephant_factor_no_bots": 2,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 7300.3,
+    "median_time_to_first_response_prs_hours": 6.0,
+    "time_to_first_response_issues_sample_size": 18,
+    "time_to_first_response_prs_sample_size": 44,
+    "readme_last_updated": "2022-01-16T07:49:13+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": 3.0,
+    "avg_review_comments_per_pr": 0.34,
+    "herfindahl_hirschman_index": 2092.0,
+    "hhi_no_bots": 2051.6,
+    "hhi_known_orgs_only": 2636.8,
+    "unknown_org_contributor_count": 2,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 13,
+      "unknown": 3
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0263,
+    "core_contributor_count": 4,
+    "periphery_contributor_count": 5,
+    "core_periphery_ratio": 0.4444,
+    "network_density": 0.2222,
+    "avg_degree_centrality": 0.2222,
+    "pr_review_edges": [
+      {
+        "author": "elric-wamugu",
+        "reviewer": "github-advanced-security[bot]"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "AbdullahWins"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "nerdlet"
+      },
+      {
+        "author": "Kinjuriu",
+        "reviewer": "nerdlet"
+      },
+      {
+        "author": "robinkiplangat",
+        "reviewer": "kilemensi"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "mtuchi",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "DavidLemayian"
+      },
+      {
+        "author": "nerdlet",
+        "reviewer": "DavidLemayian"
+      }
+    ]
+  },
+  "crawled_at": "2026-06-04T03:13:58.024555+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "elric-wamugu",
+      "degree_centrality": 0.125,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "github-advanced-security[bot]",
+      "degree_centrality": 0.125,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "Kinjuriu",
+      "degree_centrality": 0.375,
+      "betweenness_centrality": 0.1786,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "AbdullahWins",
+      "degree_centrality": 0.125,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "kilemensi",
+      "degree_centrality": 0.375,
+      "betweenness_centrality": 0.1786,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "nerdlet",
+      "degree_centrality": 0.375,
+      "betweenness_centrality": 0.2857,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "robinkiplangat",
+      "degree_centrality": 0.125,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "DavidLemayian",
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.1786,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+      "login": "mtuchi",
+      "degree_centrality": 0.125,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+    "weekly_snapshots": [
+      {
+        "week_start": "2017-03-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 1,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2017-04-03",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 2,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-04-10",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 12,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-04-17",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 14,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-04-24",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 15,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-05-01",
+        "total_commits": 15,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-05-22",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 32,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-06-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 33,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-06-19",
+        "total_commits": 11,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 44,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-06-26",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 49,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2017-09-18",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 51,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-09-25",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 56,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-10-09",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 60,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-10-23",
+        "total_commits": 11,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 71,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-10-30",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 74,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-11-06",
+        "total_commits": 6,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 80,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-11-13",
+        "total_commits": 8,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 88,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2017-11-27",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 94,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2018-01-15",
+        "total_commits": 28,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 122,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2018-01-22",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 123,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2018-01-29",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 124,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2018-02-26",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 126,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-03-05",
+        "total_commits": 28,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 154,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-03-19",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 158,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-07-16",
+        "total_commits": 18,
+        "unique_contributors": 3,
+        "new_contributors": 2,
+        "cumulative_commits": 176,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2019-01-07",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 180,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2019-05-13",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 181,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2019-05-27",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 183,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2019-06-03",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 185,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2020-02-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 186,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2020-02-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 187,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2020-08-31",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 188,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2020-12-07",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 191,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2021-03-29",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 192,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2021-05-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 193,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2021-08-02",
+        "total_commits": 11,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 204,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2021-08-09",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 206,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2021-10-04",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 207,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2022-01-10",
+        "total_commits": 10,
+        "unique_contributors": 5,
+        "new_contributors": 2,
+        "cumulative_commits": 217,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-01-17",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 219,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-01-24",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 221,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-01-31",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 226,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-02-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 227,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-02-14",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 232,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-10-10",
+        "total_commits": 12,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 244,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-11-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 245,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-11-14",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 246,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-11-28",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 247,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2022-12-05",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 248,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2023-08-28",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 249,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2023-09-04",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 252,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2024-09-23",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 253,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2025-09-01",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 254,
+        "cumulative_contributors": 13
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "emmalewis",
+        "login": "emmalewis",
+        "name": "Emma Lewis",
+        "email": "emmarachellewis@gmail.com",
+        "first_commit_date": "2017-09-22T14:34:59+00:00",
+        "last_commit_date": "2018-02-04T14:46:42+00:00",
+        "duration_days": 135,
+        "total_commits": 70,
+        "active_weeks": 11,
+        "total_weeks_span": 19,
+        "activity_ratio": 0.5789,
+        "status": "departed",
+        "departed_weeks_ago": 434,
+        "avg_commits_per_active_week": 6.36
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "chaficnajjar",
+        "login": "chaficnajjar",
+        "name": "Chafic Najjar",
+        "email": "chafic.najjar@gmail.com",
+        "first_commit_date": "2017-04-05T22:25:09+00:00",
+        "last_commit_date": "2017-06-29T23:45:29+00:00",
+        "duration_days": 85,
+        "total_commits": 48,
+        "active_weeks": 9,
+        "total_weeks_span": 12,
+        "activity_ratio": 0.75,
+        "status": "departed",
+        "departed_weeks_ago": 465,
+        "avg_commits_per_active_week": 5.33
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "DavidLemayian",
+        "login": "DavidLemayian",
+        "name": "David Lemayian",
+        "email": "877919+DavidLemayian@users.noreply.github.com",
+        "first_commit_date": "2017-03-21T14:49:03+00:00",
+        "last_commit_date": "2019-06-09T17:02:21+00:00",
+        "duration_days": 810,
+        "total_commits": 40,
+        "active_weeks": 10,
+        "total_weeks_span": 115,
+        "activity_ratio": 0.087,
+        "status": "departed",
+        "departed_weeks_ago": 364,
+        "avg_commits_per_active_week": 4.0
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "kilemensi",
+        "login": "kilemensi",
+        "name": "Clemence Kyara",
+        "email": "kilemensi@users.noreply.github.com",
+        "first_commit_date": "2020-12-11T07:39:36+00:00",
+        "last_commit_date": "2022-12-05T05:12:44+00:00",
+        "duration_days": 723,
+        "total_commits": 20,
+        "active_weeks": 9,
+        "total_weeks_span": 103,
+        "activity_ratio": 0.0874,
+        "status": "departed",
+        "departed_weeks_ago": 182,
+        "avg_commits_per_active_week": 2.22
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "nerdlet",
+        "login": "nerdlet",
+        "name": "Brenda Nyokabi Bucha",
+        "email": "brndnyokabi@gmail.com",
+        "first_commit_date": "2018-07-17T14:26:39+00:00",
+        "last_commit_date": "2022-02-18T11:50:15+00:00",
+        "duration_days": 1311,
+        "total_commits": 20,
+        "active_weeks": 6,
+        "total_weeks_span": 187,
+        "activity_ratio": 0.0321,
+        "status": "departed",
+        "departed_weeks_ago": 223,
+        "avg_commits_per_active_week": 3.33
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "dependabot[bot]",
+        "login": "dependabot[bot]",
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "first_commit_date": "2019-05-31T12:53:21+00:00",
+        "last_commit_date": "2022-12-03T09:25:23+00:00",
+        "duration_days": 1281,
+        "total_commits": 16,
+        "active_weeks": 12,
+        "total_weeks_span": 183,
+        "activity_ratio": 0.0656,
+        "status": "departed",
+        "departed_weeks_ago": 182,
+        "avg_commits_per_active_week": 1.33
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "brndnyokabi@gamil.com",
+        "login": null,
+        "name": "nerdlet",
+        "email": "brndnyokabi@gamil.com",
+        "first_commit_date": "2018-03-02T13:51:54+00:00",
+        "last_commit_date": "2018-03-19T11:16:28+00:00",
+        "duration_days": 16,
+        "total_commits": 15,
+        "active_weeks": 3,
+        "total_weeks_span": 2,
+        "activity_ratio": 1.5,
+        "status": "departed",
+        "departed_weeks_ago": 428,
+        "avg_commits_per_active_week": 5.0
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "Kinjuriu",
+        "login": "Kinjuriu",
+        "name": "Stephane Njoki",
+        "email": "69685769+Kinjuriu@users.noreply.github.com",
+        "first_commit_date": "2022-01-14T07:56:04+00:00",
+        "last_commit_date": "2023-09-04T07:46:40+00:00",
+        "duration_days": 597,
+        "total_commits": 11,
+        "active_weeks": 4,
+        "total_weeks_span": 85,
+        "activity_ratio": 0.0471,
+        "status": "departed",
+        "departed_weeks_ago": 143,
+        "avg_commits_per_active_week": 2.75
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "nyokabi@codeforafrica.org",
+        "login": null,
+        "name": "Brenda Nyokabi Bucha",
+        "email": "nyokabi@codeforafrica.org",
+        "first_commit_date": "2022-01-14T13:56:46+00:00",
+        "last_commit_date": "2022-02-03T06:59:45+00:00",
+        "duration_days": 19,
+        "total_commits": 5,
+        "active_weeks": 3,
+        "total_weeks_span": 2,
+        "activity_ratio": 1.5,
+        "status": "departed",
+        "departed_weeks_ago": 225,
+        "avg_commits_per_active_week": 1.67
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "robinkiplangat",
+        "login": "robinkiplangat",
+        "name": "Robin Kiplang'at",
+        "email": "robyne.kiplangat@Gmail.com",
+        "first_commit_date": "2019-01-10T12:46:36+00:00",
+        "last_commit_date": "2020-02-19T07:38:16+00:00",
+        "duration_days": 404,
+        "total_commits": 4,
+        "active_weeks": 3,
+        "total_weeks_span": 57,
+        "activity_ratio": 0.0526,
+        "status": "departed",
+        "departed_weeks_ago": 328,
+        "avg_commits_per_active_week": 1.33
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "elric-wamugu",
+        "login": "elric-wamugu",
+        "name": "Eric Wamugu",
+        "email": "wamugu@gmail.com",
+        "first_commit_date": "2024-09-23T15:11:13+00:00",
+        "last_commit_date": "2025-09-01T23:22:13+00:00",
+        "duration_days": 343,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 49,
+        "activity_ratio": 0.0408,
+        "status": "departed",
+        "departed_weeks_ago": 39,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "thepsalmist",
+        "login": "thepsalmist",
+        "name": "Xavier Frankline Odhiambo",
+        "email": "49587182+thepsalmist@users.noreply.github.com",
+        "first_commit_date": "2023-09-05T11:42:05+00:00",
+        "last_commit_date": "2023-09-05T11:45:25+00:00",
+        "duration_days": 0,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 143,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+        "contributor_id": "mtuchi",
+        "login": "mtuchi",
+        "name": "Emmanuel Evance",
+        "email": "emmanuel@irabu.co.tz",
+        "first_commit_date": "2018-07-19T12:02:28+00:00",
+        "last_commit_date": "2018-07-19T12:02:28+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 410,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "elric-wamugu",
+        "week_start": "2024-09-23",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "elric-wamugu",
+        "week_start": "2025-09-01",
+        "commits": 1,
+        "lines_added": 34,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "thepsalmist",
+        "week_start": "2023-09-04",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "Kinjuriu",
+        "week_start": "2022-01-10",
+        "commits": 3,
+        "lines_added": 159,
+        "lines_removed": 152
+      },
+      {
+        "contributor_id": "Kinjuriu",
+        "week_start": "2022-10-10",
+        "commits": 6,
+        "lines_added": 344,
+        "lines_removed": 376
+      },
+      {
+        "contributor_id": "Kinjuriu",
+        "week_start": "2023-08-28",
+        "commits": 1,
+        "lines_added": 161,
+        "lines_removed": 165
+      },
+      {
+        "contributor_id": "Kinjuriu",
+        "week_start": "2023-09-04",
+        "commits": 1,
+        "lines_added": 161,
+        "lines_removed": 165
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2020-12-07",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2021-08-02",
+        "commits": 7,
+        "lines_added": 62,
+        "lines_removed": 33
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2021-08-09",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2021-10-04",
+        "commits": 1,
+        "lines_added": 280,
+        "lines_removed": 157
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2022-01-10",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2022-02-14",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2022-10-10",
+        "commits": 6,
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2022-11-14",
+        "commits": 1,
+        "lines_added": 5,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "kilemensi",
+        "week_start": "2022-12-05",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2019-05-27",
+        "commits": 1,
+        "lines_added": 16,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2019-06-03",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2020-08-31",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2020-12-07",
+        "commits": 2,
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2021-03-29",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2021-05-10",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2021-08-02",
+        "commits": 4,
+        "lines_added": 333,
+        "lines_removed": 181
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2021-08-09",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2022-01-10",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2022-02-07",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2022-11-07",
+        "commits": 1,
+        "lines_added": 5,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2022-11-28",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "nerdlet",
+        "week_start": "2018-07-16",
+        "commits": 7,
+        "lines_added": 1637,
+        "lines_removed": 12070
+      },
+      {
+        "contributor_id": "nerdlet",
+        "week_start": "2022-01-10",
+        "commits": 4,
+        "lines_added": 150,
+        "lines_removed": 153
+      },
+      {
+        "contributor_id": "nerdlet",
+        "week_start": "2022-01-17",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "nerdlet",
+        "week_start": "2022-01-24",
+        "commits": 2,
+        "lines_added": 296,
+        "lines_removed": 296
+      },
+      {
+        "contributor_id": "nerdlet",
+        "week_start": "2022-01-31",
+        "commits": 2,
+        "lines_added": 2117,
+        "lines_removed": 1647
+      },
+      {
+        "contributor_id": "nerdlet",
+        "week_start": "2022-02-14",
+        "commits": 4,
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "nyokabi@codeforafrica.org",
+        "week_start": "2022-01-10",
+        "commits": 1,
+        "lines_added": 83,
+        "lines_removed": 76
+      },
+      {
+        "contributor_id": "nyokabi@codeforafrica.org",
+        "week_start": "2022-01-17",
+        "commits": 1,
+        "lines_added": 65,
+        "lines_removed": 79
+      },
+      {
+        "contributor_id": "nyokabi@codeforafrica.org",
+        "week_start": "2022-01-31",
+        "commits": 3,
+        "lines_added": 2279,
+        "lines_removed": 1809
+      },
+      {
+        "contributor_id": "robinkiplangat",
+        "week_start": "2019-01-07",
+        "commits": 2,
+        "lines_added": 71,
+        "lines_removed": 69
+      },
+      {
+        "contributor_id": "robinkiplangat",
+        "week_start": "2020-02-10",
+        "commits": 1,
+        "lines_added": 44,
+        "lines_removed": 39
+      },
+      {
+        "contributor_id": "robinkiplangat",
+        "week_start": "2020-02-17",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-03-20",
+        "commits": 1,
+        "lines_added": 679,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-11-06",
+        "commits": 2,
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2017-11-13",
+        "commits": 3,
+        "lines_added": 44,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-03-05",
+        "commits": 17,
+        "lines_added": 42730,
+        "lines_removed": 1549
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-03-19",
+        "commits": 2,
+        "lines_added": 10,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2018-07-16",
+        "commits": 10,
+        "lines_added": 3074,
+        "lines_removed": 34092
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-01-07",
+        "commits": 2,
+        "lines_added": 2242,
+        "lines_removed": 933
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-05-13",
+        "commits": 1,
+        "lines_added": 19,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-05-27",
+        "commits": 1,
+        "lines_added": 16,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "DavidLemayian",
+        "week_start": "2019-06-03",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "mtuchi",
+        "week_start": "2018-07-16",
+        "commits": 1,
+        "lines_added": 937,
+        "lines_removed": 11498
+      },
+      {
+        "contributor_id": "brndnyokabi@gamil.com",
+        "week_start": "2018-02-26",
+        "commits": 2,
+        "lines_added": 10651,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "brndnyokabi@gamil.com",
+        "week_start": "2018-03-05",
+        "commits": 11,
+        "lines_added": 704,
+        "lines_removed": 673
+      },
+      {
+        "contributor_id": "brndnyokabi@gamil.com",
+        "week_start": "2018-03-19",
+        "commits": 2,
+        "lines_added": 7,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-09-18",
+        "commits": 2,
+        "lines_added": 3864,
+        "lines_removed": 1652
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-09-25",
+        "commits": 5,
+        "lines_added": 450,
+        "lines_removed": 66
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-10-09",
+        "commits": 4,
+        "lines_added": 91,
+        "lines_removed": 87
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-10-23",
+        "commits": 11,
+        "lines_added": 819,
+        "lines_removed": 277
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-10-30",
+        "commits": 3,
+        "lines_added": 89,
+        "lines_removed": 50
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-11-06",
+        "commits": 4,
+        "lines_added": 49,
+        "lines_removed": 36
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-11-13",
+        "commits": 5,
+        "lines_added": 354,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2017-11-27",
+        "commits": 6,
+        "lines_added": 43,
+        "lines_removed": 9048
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2018-01-15",
+        "commits": 28,
+        "lines_added": 948,
+        "lines_removed": 498
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2018-01-22",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 184
+      },
+      {
+        "contributor_id": "emmalewis",
+        "week_start": "2018-01-29",
+        "commits": 1,
+        "lines_added": 74,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-04-03",
+        "commits": 1,
+        "lines_added": 482,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-04-10",
+        "commits": 10,
+        "lines_added": 495,
+        "lines_removed": 130
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-04-17",
+        "commits": 2,
+        "lines_added": 822,
+        "lines_removed": 61
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-04-24",
+        "commits": 1,
+        "lines_added": 590,
+        "lines_removed": 31
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-05-01",
+        "commits": 15,
+        "lines_added": 681,
+        "lines_removed": 341
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-05-22",
+        "commits": 2,
+        "lines_added": 955,
+        "lines_removed": 430
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-06-12",
+        "commits": 1,
+        "lines_added": 288,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-06-19",
+        "commits": 11,
+        "lines_added": 5326,
+        "lines_removed": 87
+      },
+      {
+        "contributor_id": "chaficnajjar",
+        "week_start": "2017-06-26",
+        "commits": 5,
+        "lines_added": 2100,
+        "lines_removed": 1057
+      }
+    ],
+    "total_weeks": 53,
+    "total_unique_contributors": 13,
+    "new_contributor_rate_per_month": 0.13,
+    "total_commits_scanned": 254,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+    "issues": [
+      {
+        "number": 2,
+        "title": "Implement form page",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-04-12T23:33:30+00:00",
+        "closed_at": "2017-04-19T14:07:36+00:00",
+        "updated_at": "2017-04-19T14:07:36+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 6.61
+      },
+      {
+        "number": 3,
+        "title": "Change title",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-04-17T12:42:48+00:00",
+        "closed_at": "2017-04-19T14:07:36+00:00",
+        "updated_at": "2017-04-19T14:07:36+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 2.06
+      },
+      {
+        "number": 4,
+        "title": "Implement visualizations",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-04-23T14:20:46+00:00",
+        "closed_at": "2017-06-19T02:41:22+00:00",
+        "updated_at": "2017-06-19T02:41:49+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 56.51
+      },
+      {
+        "number": 5,
+        "title": "Remove occupation field from form page",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-04-28T12:00:36+00:00",
+        "closed_at": "2017-05-07T17:21:33+00:00",
+        "updated_at": "2017-05-07T17:21:33+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 9.22
+      },
+      {
+        "number": 6,
+        "title": "Ask for monthly salary instead of hourly rate",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-04-28T12:02:28+00:00",
+        "closed_at": "2017-05-07T18:34:00+00:00",
+        "updated_at": "2017-05-07T18:34:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 9.27
+      },
+      {
+        "number": 7,
+        "title": "Implement sharing buttons",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-04-28T12:14:21+00:00",
+        "closed_at": "2019-01-10T14:09:00+00:00",
+        "updated_at": "2019-01-10T14:09:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 622.08
+      },
+      {
+        "number": 8,
+        "title": "Allow users to choose the currency",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-04-28T14:36:36+00:00",
+        "closed_at": "2017-05-07T18:34:00+00:00",
+        "updated_at": "2017-05-07T18:34:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 9.16
+      },
+      {
+        "number": 9,
+        "title": "Hide WhatsApp button on non-mobile devices",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-05-05T19:49:31+00:00",
+        "closed_at": "2017-05-05T21:25:43+00:00",
+        "updated_at": "2017-05-05T21:25:43+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.07
+      },
+      {
+        "number": 10,
+        "title": "Add image for Twitter Cards and OGP",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2017-05-05T19:52:17+00:00",
+        "closed_at": "2019-01-10T14:08:20+00:00",
+        "updated_at": "2019-01-10T14:08:20+00:00",
+        "comment_count": 1,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 614.76
+      },
+      {
+        "number": 11,
+        "title": "Increase size of \"Clock View\"",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-06-21T12:38:40+00:00",
+        "closed_at": "2017-06-27T02:34:11+00:00",
+        "updated_at": "2017-06-27T02:34:11+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 5.58
+      },
+      {
+        "number": 12,
+        "title": "Add information about the data",
+        "state": "closed",
+        "author_login": "chaficnajjar",
+        "closed_by_login": "chaficnajjar",
+        "created_at": "2017-06-21T12:39:33+00:00",
+        "closed_at": "2017-06-26T15:34:50+00:00",
+        "updated_at": "2017-06-26T15:34:50+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 5.12
+      },
+      {
+        "number": 13,
+        "title": "Redirect to HTTPS when loaded on HTTP",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-02-28T14:41:19+00:00",
+        "closed_at": "2019-01-10T14:05:27+00:00",
+        "updated_at": "2019-01-10T14:05:27+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 315.98
+      },
+      {
+        "number": 14,
+        "title": "Add Standard Footer",
+        "state": "closed",
+        "author_login": "DavidLemayian",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-03-01T13:47:07+00:00",
+        "closed_at": "2018-07-21T17:22:00+00:00",
+        "updated_at": "2018-07-21T17:22:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 142.15
+      },
+      {
+        "number": 17,
+        "title": "Add Google Analytics Events",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-03-12T09:46:05+00:00",
+        "closed_at": "2019-01-10T14:05:09+00:00",
+        "updated_at": "2019-01-10T14:05:10+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 304.18
+      },
+      {
+        "number": 19,
+        "title": "Add medium link to the footer",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-07-17T14:32:26+00:00",
+        "closed_at": "2018-07-21T17:21:43+00:00",
+        "updated_at": "2018-07-21T17:21:43+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 4.12
+      },
+      {
+        "number": 20,
+        "title": "Change title tag to GenderGap.AFRICA",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-07-17T14:36:41+00:00",
+        "closed_at": "2018-07-21T17:21:07+00:00",
+        "updated_at": "2018-07-21T17:21:07+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": 4.11
+      },
+      {
+        "number": 21,
+        "title": "Change Github link in the footer",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-07-17T14:46:23+00:00",
+        "closed_at": "2018-07-21T17:21:00+00:00",
+        "updated_at": "2018-07-21T17:21:00+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 4.11
+      },
+      {
+        "number": 25,
+        "title": "[Fix] Fix dependancy in package.json",
+        "state": "closed",
+        "author_login": "nerdlet",
+        "closed_by_login": "DavidLemayian",
+        "created_at": "2018-07-18T13:42:31+00:00",
+        "closed_at": "2018-07-21T17:20:40+00:00",
+        "updated_at": "2018-07-21T17:20:48+00:00",
+        "comment_count": 2,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 3.15
+      }
+    ],
+    "total_issues": 18,
+    "open_issues": 0,
+    "closed_issues": 18,
+    "avg_comments_per_issue": 0.22,
+    "median_time_to_close_days": 7.88,
+    "unique_openers": 3,
+    "unique_closers": 2,
+    "top_openers": {
+      "chaficnajjar": 11,
+      "nerdlet": 5,
+      "DavidLemayian": 2
+    },
+    "top_closers": {
+      "chaficnajjar": 9,
+      "DavidLemayian": 9
+    }
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "CodeForAfrica/GenderGap.AFRICA",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 254,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}

@@ -1,0 +1,626 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforcologne/Denkmal-4D-Koeln",
+    "name": "Denkmal-4D-Koeln",
+    "description": "Mit dieser Web Anwendung k\u00f6nnt Ihr Metadaten \u00fcber die Denkm\u00e4ler der Stadt K\u00f6ln pflegen.",
+    "num_developers": 3,
+    "total_commits": 39,
+    "languages": {
+      "HTML": 208530,
+      "JavaScript": 46265
+    },
+    "primary_language": "HTML",
+    "first_commit_date": "2024-05-31T15:50:58+00:00",
+    "last_commit_date": "2026-03-15T09:54:07+00:00",
+    "license_spdx": "BSD-2-Clause",
+    "license_name": "BSD 2-Clause \"Simplified\" License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 50,
+    "stars": 2,
+    "watchers": 6,
+    "forks": 1,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "pages-build-deployment"
+    ],
+    "deployments_count": 34,
+    "created_at": "2024-05-31T15:50:57+00:00",
+    "updated_at": "2026-03-15T09:54:21+00:00",
+    "pushed_at": "2026-03-15T09:54:16+00:00",
+    "size_kb": 11909
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+      "login": "OpenDEM",
+      "name": "OpenDEM",
+      "num_commits": 23,
+      "additions": 5931,
+      "deletions": 297,
+      "avg_additions_per_commit": 257.87,
+      "avg_deletions_per_commit": 12.91,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+      "login": "ErtanOz",
+      "name": "ErtanOz",
+      "num_commits": 14,
+      "additions": 18,
+      "deletions": 9,
+      "avg_additions_per_commit": 1.29,
+      "avg_deletions_per_commit": 0.64,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+      "login": "gorkemkurban",
+      "name": "G\u00f6rkem Kurban",
+      "num_commits": 2,
+      "additions": 3,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.5,
+      "avg_deletions_per_commit": 0.5,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+    "pr_count_total": 2,
+    "pr_count_merged": 2,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 0,
+    "prs": [
+      {
+        "number": 1,
+        "title": "3dcologne map added",
+        "state": "closed",
+        "author_login": "gorkemkurban",
+        "created_at": "2024-06-12T20:26:07+00:00",
+        "merged_at": "2024-06-12T20:43:31+00:00",
+        "closed_at": "2024-06-12T20:43:31+00:00"
+      },
+      {
+        "number": 2,
+        "title": "3DHeritageMap link fix",
+        "state": "closed",
+        "author_login": "gorkemkurban",
+        "created_at": "2024-11-18T21:59:32+00:00",
+        "merged_at": "2024-11-19T19:36:48+00:00",
+        "closed_at": "2024-11-19T19:36:48+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+    "weekly_commits": [
+      {
+        "week_start": "2024-05-27",
+        "commits": 8
+      },
+      {
+        "week_start": "2024-06-03",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-06-10",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-06-17",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-07-01",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-07-08",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-08-19",
+        "commits": 5
+      },
+      {
+        "week_start": "2024-08-26",
+        "commits": 3
+      },
+      {
+        "week_start": "2024-11-11",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-11-18",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-12-29",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-01-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-02-16",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-02-23",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-03-02",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-03-09",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": 1.0,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 39,
+      "pull_requests": 2,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 2,
+      "Digital-Heritage-Lab": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 1,
+    "burstiness_cv": 0.75,
+    "burstiness_mean": 2.44,
+    "burstiness_std": 1.84,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 2,
+    "readme_last_updated": "2026-01-04T21:42:12+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": 0.2,
+    "avg_review_comments_per_pr": 0.5,
+    "herfindahl_hirschman_index": 9027.0,
+    "hhi_no_bots": 4792.9,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 2,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 1,
+      "nonprofit": 0,
+      "company": 1,
+      "unknown": 1
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 2,
+    "core_periphery_ratio": 0.0,
+    "network_density": 1.0,
+    "avg_degree_centrality": 1.0,
+    "pr_review_edges": [
+      {
+        "author": "gorkemkurban",
+        "reviewer": "ErtanOz"
+      }
+    ]
+  },
+  "crawled_at": "2026-06-04T08:20:48.665720+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+      "login": "gorkemkurban",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+      "login": "ErtanOz",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+    "weekly_snapshots": [
+      {
+        "week_start": "2024-05-27",
+        "total_commits": 8,
+        "unique_contributors": 2,
+        "new_contributors": 2,
+        "cumulative_commits": 8,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-06-03",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 10,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-06-10",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 12,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2024-06-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 13,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2024-07-01",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 15,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2024-07-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 16,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2024-08-19",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 21,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2024-08-26",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 24,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2024-11-11",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 25,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2024-11-18",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 28,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-12-29",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 31,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2026-02-16",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 35,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2026-02-23",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 36,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2026-03-02",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 38,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2026-03-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 39,
+        "cumulative_contributors": 3
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+        "contributor_id": "OpenDEM",
+        "login": "OpenDEM",
+        "name": "OpenDEM",
+        "email": "contact@opendemdata.info",
+        "first_commit_date": "2024-05-31T15:50:58+00:00",
+        "last_commit_date": "2026-03-15T09:54:07+00:00",
+        "duration_days": 652,
+        "total_commits": 23,
+        "active_weeks": 11,
+        "total_weeks_span": 93,
+        "activity_ratio": 0.1183,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 2.09
+      },
+      {
+        "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+        "contributor_id": "ErtanOz",
+        "login": "ErtanOz",
+        "name": "ErtanOz",
+        "email": "67025766+ErtanOz@users.noreply.github.com",
+        "first_commit_date": "2024-06-01T22:59:09+00:00",
+        "last_commit_date": "2026-01-14T20:12:09+00:00",
+        "duration_days": 591,
+        "total_commits": 14,
+        "active_weeks": 6,
+        "total_weeks_span": 84,
+        "activity_ratio": 0.0714,
+        "status": "departed",
+        "departed_weeks_ago": 20,
+        "avg_commits_per_active_week": 2.33
+      },
+      {
+        "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+        "contributor_id": "gorkemkurban",
+        "login": "gorkemkurban",
+        "name": "G\u00f6rkem Kurban",
+        "email": "gorkem46591@hotmail.com",
+        "first_commit_date": "2024-06-12T20:23:10+00:00",
+        "last_commit_date": "2024-11-18T21:58:54+00:00",
+        "duration_days": 159,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 22,
+        "activity_ratio": 0.0909,
+        "status": "departed",
+        "departed_weeks_ago": 80,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2024-05-27",
+        "commits": 6,
+        "lines_added": 4405,
+        "lines_removed": 143
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2024-06-03",
+        "commits": 2,
+        "lines_added": 44,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2024-06-17",
+        "commits": 1,
+        "lines_added": 73,
+        "lines_removed": 24
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2024-07-01",
+        "commits": 2,
+        "lines_added": 65,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2024-07-08",
+        "commits": 1,
+        "lines_added": 100,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2024-11-11",
+        "commits": 1,
+        "lines_added": 88,
+        "lines_removed": 27
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2024-11-18",
+        "commits": 2,
+        "lines_added": 7,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2026-02-16",
+        "commits": 4,
+        "lines_added": 1062,
+        "lines_removed": 28
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2026-02-23",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2026-03-02",
+        "commits": 2,
+        "lines_added": 86,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "OpenDEM",
+        "week_start": "2026-03-09",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ErtanOz",
+        "week_start": "2024-05-27",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ErtanOz",
+        "week_start": "2024-06-10",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ErtanOz",
+        "week_start": "2024-08-19",
+        "commits": 5,
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ErtanOz",
+        "week_start": "2024-08-26",
+        "commits": 3,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "ErtanOz",
+        "week_start": "2025-12-29",
+        "commits": 2,
+        "lines_added": 8,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ErtanOz",
+        "week_start": "2026-01-12",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "gorkemkurban",
+        "week_start": "2024-06-10",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "gorkemkurban",
+        "week_start": "2024-11-18",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      }
+    ],
+    "total_weeks": 16,
+    "total_unique_contributors": 3,
+    "new_contributor_rate_per_month": 0.14,
+    "total_commits_scanned": 39,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "codeforcologne/Denkmal-4D-Koeln",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 39,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "repo_metrics": {
+    "full_name": "codeforbielefeld/losdb",
+    "name": "losdb",
+    "description": "Linked Open Statistical Data Bielefeld",
+    "num_developers": 2,
+    "total_commits": 28,
+    "languages": {
+      "Elixir": 24069
+    },
+    "primary_language": "Elixir",
+    "first_commit_date": "2020-09-21T20:20:50+00:00",
+    "last_commit_date": "2025-07-28T14:21:42+00:00",
+    "license_spdx": null,
+    "license_name": null,
+    "is_osi_approved": false,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 25,
+    "stars": 9,
+    "watchers": 6,
+    "forks": 0,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": false,
+    "ci_cd_workflows": [],
+    "deployments_count": 0,
+    "created_at": "2021-04-22T16:00:36+00:00",
+    "updated_at": "2026-01-22T13:48:39+00:00",
+    "pushed_at": "2025-07-28T14:21:47+00:00",
+    "size_kb": 883
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeforbielefeld/losdb",
+      "login": "marcelotto",
+      "name": "Marcel Otto",
+      "num_commits": 27,
+      "additions": 414096,
+      "deletions": 180023,
+      "avg_additions_per_commit": 15336.89,
+      "avg_deletions_per_commit": 6667.52,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeforbielefeld/losdb",
+      "login": "HelenBielawa",
+      "name": "HelenBielawa",
+      "num_commits": 1,
+      "additions": 8,
+      "deletions": 0,
+      "avg_additions_per_commit": 8.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeforbielefeld/losdb",
+    "pr_count_total": 0,
+    "pr_count_merged": 0,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 0,
+    "prs": [],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeforbielefeld/losdb",
+    "weekly_commits": [
+      {
+        "week_start": "2020-09-21",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-10-12",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-04-12",
+        "commits": 3
+      },
+      {
+        "week_start": "2021-04-19",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-04-26",
+        "commits": 5
+      },
+      {
+        "week_start": "2021-05-03",
+        "commits": 6
+      },
+      {
+        "week_start": "2021-05-10",
+        "commits": 6
+      },
+      {
+        "week_start": "2021-07-19",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-07-28",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": null,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 28,
+      "pull_requests": 0,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "NinjaConcept GmbH": 1,
+      "Unknown": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 0,
+    "burstiness_cv": 0.63,
+    "burstiness_mean": 3.11,
+    "burstiness_std": 1.97,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 0,
+    "readme_last_updated": "2021-07-19T23:05:54+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": null,
+    "herfindahl_hirschman_index": 9311.2,
+    "hhi_no_bots": 9311.2,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 1,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 1,
+      "unknown": 1
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": null,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-06-04T05:35:19.483499+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "codeforbielefeld/losdb",
+    "weekly_snapshots": [
+      {
+        "week_start": "2020-09-21",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 1,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2020-10-12",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 3,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-04-12",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 6,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-04-19",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 7,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-04-26",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 12,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-05-03",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 18,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2021-05-10",
+        "total_commits": 6,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 24,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2021-07-19",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 27,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-07-28",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 28,
+        "cumulative_contributors": 2
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeforbielefeld/losdb",
+        "contributor_id": "marcelotto",
+        "login": "marcelotto",
+        "name": "Marcel Otto",
+        "email": "marcelotto@gmx.de",
+        "first_commit_date": "2020-09-21T20:20:50+00:00",
+        "last_commit_date": "2025-07-28T14:21:42+00:00",
+        "duration_days": 1770,
+        "total_commits": 27,
+        "active_weeks": 9,
+        "total_weeks_span": 252,
+        "activity_ratio": 0.0357,
+        "status": "departed",
+        "departed_weeks_ago": 44,
+        "avg_commits_per_active_week": 3.0
+      },
+      {
+        "repo_full_name": "codeforbielefeld/losdb",
+        "contributor_id": "HelenBielawa",
+        "login": "HelenBielawa",
+        "name": "HelenBielawa",
+        "email": "37307570+HelenBielawa@users.noreply.github.com",
+        "first_commit_date": "2021-05-12T15:53:02+00:00",
+        "last_commit_date": "2021-05-12T15:53:02+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 264,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2020-09-21",
+        "commits": 1,
+        "lines_added": 104,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2020-10-12",
+        "commits": 2,
+        "lines_added": 3844,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2021-04-12",
+        "commits": 3,
+        "lines_added": 133226,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2021-04-19",
+        "commits": 1,
+        "lines_added": 84,
+        "lines_removed": 79
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2021-04-26",
+        "commits": 5,
+        "lines_added": 66605,
+        "lines_removed": 42192
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2021-05-03",
+        "commits": 6,
+        "lines_added": 82246,
+        "lines_removed": 50970
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2021-05-10",
+        "commits": 5,
+        "lines_added": 31264,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2021-07-19",
+        "commits": 3,
+        "lines_added": 86769,
+        "lines_removed": 86719
+      },
+      {
+        "contributor_id": "marcelotto",
+        "week_start": "2025-07-28",
+        "commits": 1,
+        "lines_added": 9954,
+        "lines_removed": 41
+      },
+      {
+        "contributor_id": "HelenBielawa",
+        "week_start": "2021-05-10",
+        "commits": 1,
+        "lines_added": 8,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 9,
+    "total_unique_contributors": 2,
+    "new_contributor_rate_per_month": 0.03,
+    "total_commits_scanned": 28,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeforbielefeld/losdb",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "codeforbielefeld/losdb",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 28,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}
