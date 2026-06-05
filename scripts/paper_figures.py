@@ -516,120 +516,6 @@ def fig7_weekly_commits_vs_project_age(snap: Path, out: Path) -> str:
             f"rho = {rho:.3f}, p = {p_value:.3f}.")
 
 
-def _theme_kmodes_heatmap(
-    snap: Path,
-    out: Path,
-    cluster_csv_name: str,
-    figure_name: str,
-    figure_label: str,
-) -> str:
-    """Show theme distribution across k-modes clusters as a row-normalized heatmap."""
-    df = pd.read_csv(snap / cluster_csv_name)
-    required = {"Theme", "kmodes_cluster"}
-    missing = required - set(df.columns)
-    if missing:
-        raise ValueError(
-            f"{cluster_csv_name} is missing required columns: {sorted(missing)}"
-        )
-
-    df = df.dropna(subset=["Theme", "kmodes_cluster"]).copy()
-    df["Theme"] = df["Theme"].astype(str).str.strip()
-    df.loc[df["Theme"].eq(""), "Theme"] = "Unclassified"
-    df["kmodes_cluster"] = pd.to_numeric(df["kmodes_cluster"], errors="coerce")
-    df = df.dropna(subset=["kmodes_cluster"])
-    df["kmodes_cluster"] = df["kmodes_cluster"].astype(int)
-
-    counts = pd.crosstab(df["Theme"], df["kmodes_cluster"])
-    counts = counts.loc[counts.sum(axis=1).sort_values(ascending=False).index]
-    counts = counts.reindex(sorted(counts.columns), axis=1)
-    shares = counts.div(counts.sum(axis=1), axis=0)
-
-    fig_width = max(7.5, 1.25 * len(counts.columns) + 3.5)
-    fig_height = max(4.5, 0.65 * len(counts.index) + 2.2)
-    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
-    im = ax.imshow(shares.values, cmap="Greys", vmin=0, vmax=1, aspect="auto")
-
-    ax.set_xticks(np.arange(len(counts.columns)))
-    ax.set_xticklabels([f"Cluster {col}" for col in counts.columns])
-    ax.set_yticks(np.arange(len(counts.index)))
-    ax.set_yticklabels(counts.index)
-    ax.set_xlabel("K-modes cluster")
-    ax.set_ylabel("Theme")
-    ax.set_title(
-        f"Theme distribution across {figure_label.lower()}",
-        loc="left",
-        fontweight="bold",
-        fontsize=14,
-        pad=14,
-    )
-
-    for row_idx, theme in enumerate(counts.index):
-        for col_idx, cluster in enumerate(counts.columns):
-            count = int(counts.loc[theme, cluster])
-            share = shares.loc[theme, cluster]
-            text_color = "white" if share >= 0.55 else "black"
-            ax.text(
-                col_idx,
-                row_idx,
-                f"{count}\n{share * 100:.0f}%",
-                ha="center",
-                va="center",
-                color=text_color,
-                fontsize=10,
-            )
-
-    cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
-    cbar.ax.yaxis.set_major_formatter(PercentFormatter(xmax=1, decimals=0))
-    cbar.set_label("Share of theme")
-
-    ax.set_xticks(np.arange(-0.5, len(counts.columns), 1), minor=True)
-    ax.set_yticks(np.arange(-0.5, len(counts.index), 1), minor=True)
-    ax.grid(which="minor", color="white", linewidth=1.2)
-    ax.tick_params(which="minor", bottom=False, left=False)
-    for spine in ax.spines.values():
-        spine.set_visible(False)
-
-    fig.tight_layout()
-    fig.savefig(out / figure_name)
-    plt.close(fig)
-
-    chi2, p_value, _, _ = stats.chi2_contingency(counts)
-    n = int(counts.to_numpy().sum())
-    top_cells = []
-    for theme in counts.index:
-        cluster = shares.loc[theme].idxmax()
-        top_cells.append(
-            f"{theme}: cluster {cluster} "
-            f"({int(counts.loc[theme, cluster])}/{int(counts.loc[theme].sum())})"
-        )
-    return (
-        f"{figure_label}. Row-normalized heatmap of theme distribution across "
-        f"k-modes clusters for n={n} repositories. Cell labels show repository "
-        f"count and within-theme percentage. The theme-cluster association has "
-        f"chi-square={chi2:.3f}, p={p_value:.4g}; strongest cells: "
-        f"{'; '.join(top_cells)}."
-    )
-
-
-def fig8_theme_kmodes_heatmap(snap: Path, out: Path) -> str:
-    return _theme_kmodes_heatmap(
-        snap,
-        out,
-        cluster_csv_name="theme_kmodes_clusters.csv",
-        figure_name="fig8_theme_kmodes_heatmap.png",
-        figure_label="Figure 8",
-    )
-
-
-def fig9_theme_kmodes_heatmap_k3(snap: Path, out: Path) -> str:
-    return _theme_kmodes_heatmap(
-        snap,
-        out,
-        cluster_csv_name="theme_kmodes_clusters_k3.csv",
-        figure_name="fig9_theme_kmodes_heatmap_k3.png",
-        figure_label="Figure 9",
-    )
-
 
 def fig10_weekly_commit_health_by_theme(snap: Path, out: Path) -> str:
     """Scatter median weekly commits against health percentage using theme labels."""
@@ -770,18 +656,14 @@ def main() -> int:
 
     captions = []
     captions.append(fig1_busfactor_vs_hhi(snap, out))
-    # captions.append(fig2_effort_gini(snap, out))
-    # captions.append(fig3_burstiness_vs_stale(snap, out))
-    # captions.append(fig4_corpus_distributions(snap, out))
-    # captions.append(fig4_corpus_distributions_colored(snap, out))
-    # captions.append(fig5_maturity_split(snap, out))
-    # captions.append(fig6_contributor_engagement_durations(snap, out))
-    # captions.append(fig7_weekly_commits_vs_project_age(snap, out))
-    # if (snap / "theme_kmodes_clusters.csv").exists():
-    #     captions.append(fig8_theme_kmodes_heatmap(snap, out))
-    # if (snap / "theme_kmodes_clusters_k3.csv").exists():
-    #     captions.append(fig9_theme_kmodes_heatmap_k3(snap, out))
-    # captions.append(fig10_weekly_commit_health_by_theme(snap, out))
+    captions.append(fig2_effort_gini(snap, out))
+    captions.append(fig3_burstiness_vs_stale(snap, out))
+    captions.append(fig4_corpus_distributions(snap, out))
+    captions.append(fig4_corpus_distributions_colored(snap, out))
+    captions.append(fig5_maturity_split(snap, out))
+    captions.append(fig6_contributor_engagement_durations(snap, out))
+    captions.append(fig7_weekly_commits_vs_project_age(snap, out))
+    captions.append(fig10_weekly_commit_health_by_theme(snap, out))
 
     print(f"\nGenerated {len(captions)} figures in {out}/\n")
     for c in captions:
