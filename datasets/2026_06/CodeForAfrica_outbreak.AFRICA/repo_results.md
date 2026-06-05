@@ -66,4 +66,4 @@ _Per-repository narrative findings are not bundled with this snapshot. See [`../
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n56.md`](../analysis_n56.md) — academic writeup of the n=56 corpus
+- [`../analysis_n56.md`](../analysis_n56.md) — academic writeup of the n=55 corpus

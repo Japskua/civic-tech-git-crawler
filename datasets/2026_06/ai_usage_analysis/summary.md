@@ -1,11 +1,11 @@
 # AI-usage analysis — 2026_06
 
-> **AI-usage detection measures a lower bound** (disclosed/configured/automated traces only). With n=56 the comparisons below are exploratory and **correlational, not causal** — AI tooling co-varies with project recency and activity.
+> **AI-usage detection measures a lower bound** (disclosed/configured/automated traces only). With n=55 the comparisons below are exploratory and **correlational, not causal** — AI tooling co-varies with project recency and activity.
 
 ## Adoption
 
-- **24/56 (43%)** repos show **AI-assisted development**
-- **2/56 (4%)** repos **ship an LLM product feature**
+- **24/55 (44%)** repos show **AI-assisted development**
+- **2/55 (4%)** repos **ship an LLM product feature**
 
 ## Dev tools (repos)
 
@@ -63,12 +63,12 @@ quarter  repos_first_seen  cumulative
 
 ```
             metric  adopter_median  nonadopter_median  adopter_n  nonadopter_n  mannwhitney_p
-     total_commits          575.00             268.00         24            32         0.0075
-    num_developers           11.00               5.00         24            32         0.0014
-             stars            7.00               3.00         24            32         0.0582
- health_percentage           50.00              50.00         24            32         0.2461
-         age_years            3.79               3.29         24            32         0.9736
-bus_factor_no_bots            1.00               1.00         23            32         0.0883
+     total_commits          575.00             272.00         24            31         0.0112
+    num_developers           11.00               5.00         24            31         0.0022
+             stars            7.00               3.00         24            31         0.0780
+ health_percentage           50.00              50.00         24            31         0.3262
+         age_years            3.79               3.47         24            31         0.9324
+bus_factor_no_bots            1.00               1.00         23            31         0.1038
 ```
 
 ## Most AI-active repos

@@ -1,7 +1,7 @@
 # AI Usage in Open-Source Civic Technology: Findings & Discussion
 
 *Companion findings document for the research paper, generated against the
-**2026-06** civic-tech corpus (n = 56). Underlying tables: `ai_usage.csv`,
+**2026-06** civic-tech corpus (n = 55). Underlying tables: `ai_usage.csv`,
 `ai_signals.csv`, and `ai_usage_analysis/`. All AI-usage measures are a **lower
 bound** (see §5).*
 
@@ -30,8 +30,8 @@ source and a first-appearance date.
 
 ### F1 — AI-assisted development is already mainstream; shipped-AI is rare
 
-**24 of 56 projects (43%)** carry at least one AI-assisted-development signal,
-while only **2 of 56 (4%)** ship an LLM product feature. Civic technology, in this
+**24 of 55 projects (44%)** carry at least one AI-assisted-development signal,
+while only **2 of 55 (4%)** ship an LLM product feature. Civic technology, in this
 corpus, **uses AI to build software far more than it ships AI to users.** The two
 product-LLM cases are `CodeForAfrica/PromiseTracker` (OpenAI, Anthropic, Cohere,
 DeepSeek, Groq SDKs) and an inherited signal in the `CivicTechWR/connectedkw`
@@ -90,7 +90,7 @@ Adoption is highly uneven by organisational community:
 | Canada — CivicTechWR / Toronto | 6 / 8 | 75% |
 | USA — Code for America / CiviForm | 5 / 9 | 56% |
 | Code for Africa | 3 / 9 | 33% |
-| Other (mySociety, g0v, VoteIT, …) | 2 / 7 | 29% |
+| Other (mySociety, g0v, VoteIT, ...) | 2 / 6 | 33% |
 | Germany — Code for / OK Lab | 3 / 18 | **17%** |
 
 North American communities and certain orgs (Meshtastic, Code for Japan) have
@@ -100,16 +100,16 @@ than a uniform technological wave.
 
 ### F6 — Adopters are larger and busier, but not better-bussed
 
-Comparing adopters (n = 24) to non-adopters (n = 32), Mann-Whitney U:
+Comparing adopters (n = 24) to non-adopters (n = 31), Mann-Whitney U:
 
 | Metric | Adopter median | Non-adopter median | p |
 |---|--:|--:|--:|
-| Total commits | 575 | 268 | **0.008** |
-| Developers | 11 | 5 | **0.001** |
-| Stars | 7 | 3 | 0.058 |
-| Health % | 50 | 50 | 0.25 |
-| Project age (yr) | 3.8 | 3.3 | 0.97 |
-| Bus factor (no bots) | 1 | 1 | 0.09 |
+| Total commits | 575 | 272 | **0.011** |
+| Developers | 11 | 5 | **0.002** |
+| Stars | 7 | 3 | 0.078 |
+| Health % | 50 | 50 | 0.326 |
+| Project age (yr) | 3.79 | 3.47 | 0.932 |
+| Bus factor (no bots) | 1 | 1 | 0.104 |
 
 AI adopters are significantly larger and more active, but show **no** difference in
 single-maintainer risk (bus factor) or project age. The most AI-active projects —
@@ -182,11 +182,11 @@ written; there is no evidence here that it changes who is left maintaining it.
 - **Lower bound.** Detection captures only **disclosed, configured, or automated**
   AI traces (config files, co-author trailers, agent bots, CI agents, LLM
   dependencies). Inline autocomplete and chat-paste workflows leave no artifact and
-  are invisible. **True AI-assistance rates are necessarily higher than 43%.**
+  are invisible. **True AI-assistance rates are necessarily higher than 44%.**
 - **Correlational, cross-sectional.** §F6/§3 associations cannot establish
   causation or direction; a single snapshot cannot separate "AI raises activity"
   from "active teams adopt AI."
-- **Small n; ecosystem bias.** n = 56 limits statistical power. Product-LLM
+- **Small n; ecosystem bias.** n = 55 limits statistical power. Product-LLM
   detection reads only root-level Python/JS manifests, under-sampling shipped-AI in
   other language ecosystems (the 4% product figure is itself a floor).
 - **Forks (3).** Inherited history can attribute a parent's AI signals to a fork

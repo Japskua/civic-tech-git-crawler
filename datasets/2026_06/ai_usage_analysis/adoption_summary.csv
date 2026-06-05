@@ -1,8 +1,8 @@
 metric,count,rate
-repos_total,56,
-dev_ai_detected,24,42.9%
+repos_total,55,
+dev_ai_detected,24,43.6%
 product_llm_detected,2,3.6%
-any_ai,25,44.6%
+any_ai,25,45.5%
 dev_with_commit_evidence,21,
 dev_with_agent_prs,9,
 dev_with_ci_agent,3,
