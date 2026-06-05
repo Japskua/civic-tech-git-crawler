@@ -3971,34 +3971,6 @@ bikespace/bikespace,406,Bump idna from 3.10 to 3.15 in /datasets/analysis-for-ci
 bikespace/bikespace,407,Bump idna from 3.7 to 3.15 in /bikespace_api,closed,dependabot[bot],2026-05-20T02:43:16+00:00,2026-05-23T12:56:43+00:00,2026-05-23T12:56:43+00:00
 bikespace/bikespace,408,Bump idna from 3.7 to 3.15 in /datasets/scrape-ero-comments,closed,dependabot[bot],2026-05-20T03:28:22+00:00,,2026-05-20T10:37:59+00:00
 bikespace/bikespace,409,Added issue filter,open,KarishmaChanglani,2026-05-31T18:07:09+00:00,,
-bikespace/parking-map-data,1,Demo of new BikeSpace parking map,closed,tallcoleman,2024-04-12T20:23:44+00:00,,2025-09-01T16:35:28+00:00
-bikespace/parking-map-data,2,Quest map - draft pr,closed,tallcoleman,2024-09-08T21:37:37+00:00,,2025-09-01T16:34:44+00:00
-bikespace/parking-map-data,3,Added to pipeline - pull city locker data from webpage,closed,tallcoleman,2024-11-17T19:49:39+00:00,2024-11-17T19:49:56+00:00,2024-11-17T19:49:56+00:00
-bikespace/parking-map-data,4,Data format updates and added uv,closed,tallcoleman,2025-04-12T14:55:29+00:00,2025-04-12T14:56:25+00:00,2025-04-12T14:56:25+00:00
-bikespace/parking-map-data,5,Save all normalized and cleanup,closed,tallcoleman,2025-06-15T13:08:51+00:00,2025-06-15T13:09:57+00:00,2025-06-15T13:09:58+00:00
-bikespace/parking-map-data,6,Convert archive file format to parquet,closed,tallcoleman,2025-07-05T19:19:08+00:00,2025-07-05T19:21:18+00:00,2025-07-05T19:21:18+00:00
-bikespace/parking-map-data,7,Reorganize structure,closed,tallcoleman,2025-07-06T02:17:26+00:00,2025-07-06T02:18:16+00:00,2025-07-06T02:18:16+00:00
-bikespace/parking-map-data,8,Remove breakpoint from data_pipeline.py,closed,tallcoleman,2025-07-06T11:08:49+00:00,2025-07-06T11:09:08+00:00,2025-07-06T11:09:08+00:00
-bikespace/parking-map-data,9,Bugfix - ensure mkdirs also generate parents,closed,tallcoleman,2025-07-07T09:52:40+00:00,2025-07-07T09:53:17+00:00,2025-07-07T09:53:17+00:00
-bikespace/parking-map-data,10,Update git switch,closed,tallcoleman,2025-07-08T03:57:46+00:00,2025-07-08T03:58:02+00:00,2025-07-08T03:58:02+00:00
-bikespace/parking-map-data,12,Add bicycle network data,closed,tallcoleman,2025-07-18T14:47:41+00:00,2025-07-18T14:49:43+00:00,2025-07-18T14:49:43+00:00
-bikespace/parking-map-data,13,Remove data updates on main,closed,tallcoleman,2025-07-19T02:25:35+00:00,2025-07-22T23:15:44+00:00,2025-07-22T23:15:44+00:00
-bikespace/parking-map-data,14,Add testing action,closed,tallcoleman,2025-07-19T03:07:34+00:00,2025-07-22T23:51:01+00:00,2025-07-22T23:51:01+00:00
-bikespace/parking-map-data,15,Bugfix - convert last_updated to utc if no offset,closed,tallcoleman,2025-07-19T10:58:25+00:00,2025-07-19T10:58:39+00:00,2025-07-19T10:58:39+00:00
-bikespace/parking-map-data,16,Bicycle network data - make action commit conditional,closed,tallcoleman,2025-07-20T19:52:09+00:00,2025-07-20T19:52:22+00:00,2025-07-20T19:52:22+00:00
-bikespace/parking-map-data,17,Update bicycle_parking status handling,closed,tallcoleman,2025-08-28T23:55:06+00:00,2025-08-29T00:08:47+00:00,2025-08-29T00:08:47+00:00
-bikespace/parking-map-data,18,Improve deduplication,closed,tallcoleman,2025-08-29T00:19:26+00:00,2025-09-01T16:33:43+00:00,2025-09-01T16:33:43+00:00
-bikespace/parking-map-data,19,Add tests for statusmanager,closed,tallcoleman,2025-09-01T16:40:32+00:00,2025-09-01T16:43:44+00:00,2025-09-01T16:43:44+00:00
-bikespace/parking-map-data,20,Improve cluster property summarization functions,closed,tallcoleman,2025-09-02T00:55:22+00:00,2025-09-02T00:57:18+00:00,2025-09-02T00:57:18+00:00
-bikespace/parking-map-data,21,Improve input handling for clustering functions,closed,tallcoleman,2025-10-18T13:23:13+00:00,2025-10-18T13:24:44+00:00,2025-10-18T13:24:44+00:00
-bikespace/parking-map-data,22,Add retry for sources,closed,tallcoleman,2025-10-19T00:51:37+00:00,2025-10-19T00:52:59+00:00,2025-10-19T00:52:59+00:00
-bikespace/parking-map-data,23,Add RentSafeTO data on bicycle parking in Toronto apartment buildings,closed,tallcoleman,2025-12-06T22:58:06+00:00,2025-12-06T23:19:15+00:00,2025-12-06T23:19:15+00:00
-bikespace/parking-map-data,24,Improve diffing of source_files csvs,closed,tallcoleman,2025-12-08T12:39:32+00:00,2025-12-08T12:52:08+00:00,2025-12-08T12:52:08+00:00
-bikespace/parking-map-data,25,Add missing statusmanager save call to apartments dataset,closed,tallcoleman,2025-12-08T13:08:48+00:00,2025-12-08T13:09:50+00:00,2025-12-08T13:09:50+00:00
-bikespace/parking-map-data,26,Update readmes on main,closed,tallcoleman,2025-12-09T22:56:58+00:00,2025-12-09T22:58:18+00:00,2025-12-09T22:58:18+00:00
-bikespace/parking-map-data,27,Remove indexes from CSV outputs to improve diffing,closed,tallcoleman,2025-12-10T11:53:53+00:00,2025-12-10T11:54:58+00:00,2025-12-10T11:54:58+00:00
-bikespace/parking-map-data,30,Customize overpass server,closed,tallcoleman,2026-04-10T15:39:28+00:00,2026-04-10T15:41:41+00:00,2026-04-10T15:41:41+00:00
-bikespace/parking-map-data,33,Add headers to overpass request,closed,tallcoleman,2026-05-03T12:28:44+00:00,2026-05-03T12:30:16+00:00,2026-05-03T12:30:16+00:00
 choruslabs/chorus,5,Replace 'convergent' engine wheel file with 'chorus' engine wheel file,closed,MaanasArora,2025-11-01T02:33:17+00:00,2025-11-01T02:39:37+00:00,2025-11-01T02:39:37+00:00
 choruslabs/chorus,7,Conversation deletion cascades through associated data,closed,MaanasArora,2025-11-01T03:16:31+00:00,2025-11-01T03:28:22+00:00,2025-11-01T03:28:22+00:00
 choruslabs/chorus,8,Enhance ConversationConfig layout with improved spacing and styling,closed,MaanasArora,2025-11-01T03:29:25+00:00,2025-11-01T03:29:51+00:00,2025-11-01T03:29:51+00:00

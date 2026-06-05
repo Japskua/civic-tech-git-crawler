@@ -1,14 +1,14 @@
-# Civic-Tech Corpus — 2026-06 Refresh (n = 57)
+# Civic-Tech Corpus — 2026-06 Refresh (n = 56)
 
 This is the **2026-06 snapshot** of the Civic Tech Git Crawler corpus. It re-crawls
-the same 57-project roster as the [2026-05 refresh](../2026_05/) and adds a new
+the 2026-05 roster — minus `bikespace/parking-map-data`, which was dropped (n = 56) — and adds a new
 data layer: **AI-usage detection** — distinguishing whether (and how) AI/LLMs are
 involved in each project. Everything downstream — analysis scripts, figures, and
 any writeup — is generated against this folder.
 
 | | |
 |---|---|
-| **Repositories** | 57 |
+| **Repositories** | 56 |
 | **Organisations** | 24 |
 | **Regions** | North America (US + Canada), Africa, Japan, Taiwan, Europe (Germany, UK, Sweden) |
 | **Crawl tool** | `civic-tech-crawler` via `scripts/run_with_respawn.sh` |
@@ -41,13 +41,12 @@ comparison.
 
 ---
 
-## The 57 repositories
+## The 56 repositories
 
 Grouped by community / region (same grouping as `config.yaml`):
 
-### Canada — Toronto / Waterloo Region (9)
+### Canada — Toronto / Waterloo Region (8)
 - `bikespace/bikespace`
-- `bikespace/parking-map-data`
 - `choruslabs/chorus`
 - `civic-dashboard/civic-dashboard-web`
 - `CivicTechWR/accessible-housing-portal`
@@ -122,7 +121,7 @@ Grouped by community / region (same grouping as `config.yaml`):
 ### NLP / open-knowledge (1, borderline)
 - `fvialibre/heseia-sentence-bias-dataset`
 
-> Section subtotals: 9 + 9 + 9 + 2 + 1 + 18 + 2 + 4 + 2 + 1 = **57**.
+> Section subtotals: 8 + 9 + 9 + 2 + 1 + 18 + 2 + 4 + 2 + 1 = **56**.
 
 ---
 
@@ -188,12 +187,13 @@ The crawler (`src/civic_tech_crawler/`) collects, per repository:
 
 The crawl runs through `scripts/run_with_respawn.sh`, which writes a per-repo JSON
 cache (resumable; relaunches skip completed repos), **auto-respawns** on SIGKILL /
-non-zero exit, and exits only once all 57 caches **and** `full_results.json` exist.
+non-zero exit, and exits only once all 56 caches **and** `full_results.json` exist.
 Inside the crawler: `retry_on_none` handles GitHub's HTTP 202 "computing" stats
 responses, `retry_with_backoff` / a transient-error httpx retry layer handle
 403/429/5xx with backoff, and the commit-history `weekly_snapshots` fallback
-covers stats-endpoint outages. This refresh's crawl completed **57/57 with zero
-unrecovered faults**.
+covers stats-endpoint outages. This refresh's crawl completed all 57 originally-listed
+repos with **zero unrecovered faults**; `bikespace/parking-map-data` was subsequently
+dropped from the corpus, leaving **n = 56**.
 
 ---
 
@@ -218,7 +218,7 @@ unrecovered faults**.
 | `cross_project_overlap.csv` | Contributors active in multiple crawled repos |
 | **`ai_usage.csv`** | **New.** One row/repo: dev-tooling + product-LLM detection, counts, first-appearance date |
 | **`ai_signals.csv`** | **New.** One row per detected AI signal: `group`, `tool`, `source`, `evidence`, `count`, `first_seen` |
-| `full_results.json` | Complete nested data for all 57 repos |
+| `full_results.json` | Complete nested data for all 56 repos |
 | `<owner>_<repo>/data.json` | Per-repo cache (inside each repo folder after the analysis pass) |
 
 ### Generated after the crawl (analysis pass)
@@ -240,7 +240,7 @@ unrecovered faults**.
 export GITHUB_TOKEN=$(gh auth token)
 
 # Full crawl with auto-respawn (resumable; config.yaml output -> datasets/2026_06/)
-scripts/run_with_respawn.sh config.yaml datasets/2026_06 57
+scripts/run_with_respawn.sh config.yaml datasets/2026_06 56
 
 # Analysis pass
 uv run python scripts/statistical_analysis.py datasets/2026_06/
@@ -256,20 +256,20 @@ uv run python scripts/build_repo_folders.py datasets/2026_06/
 
 | | |
 |---|---|
-| **Repositories** | 57 |
+| **Repositories** | 56 |
 | **Organisations** | 24 |
-| **Primary languages** | 17 (C++, Dart, Dockerfile, Elixir, HCL, HTML, Java, JavaScript, Jinja, Jupyter Notebook, Kotlin, PHP, Python, Ruby, Svelte, TypeScript, Vue) |
+| **Primary languages** | 16 (C++, Dart, Dockerfile, Elixir, HCL, HTML, Java, JavaScript, Jinja, Kotlin, PHP, Python, Ruby, Svelte, TypeScript, Vue) |
 | **Contributors** | 661 (607 human, 54 bot) |
-| **Total commits** | 90,669 |
-| **Stars / forks** | 12,911 / 3,658 |
-| **Repos with CI/CD** | 48 / 57 |
-| **Repos w/ cloud signals** | 29 / 57 |
-| **Repos w/ traditional-ML signals** | 4 / 57 |
-| **Repos w/ OSI license** | 34 / 57 |
+| **Total commits** | 90,477 |
+| **Stars / forks** | 12,908 / 3,658 |
+| **Repos with CI/CD** | 47 / 56 |
+| **Repos w/ cloud signals** | 29 / 56 |
+| **Repos w/ traditional-ML signals** | 3 / 56 |
+| **Repos w/ OSI license** | 34 / 56 |
 | **Median project age** | 3.5 years |
-| **Repos w/ AI-assisted development** | **24 / 57 (42%)** |
-| **Repos shipping an LLM product feature** | **2 / 57 (4%)** |
-| **Repos w/ any AI signal** | **25 / 57 (44%)** |
+| **Repos w/ AI-assisted development** | **24 / 56 (43%)** |
+| **Repos shipping an LLM product feature** | **2 / 56 (4%)** |
+| **Repos w/ any AI signal** | **25 / 56 (45%)** |
 
 ### Headline findings
 
@@ -280,14 +280,14 @@ uv run python scripts/build_repo_folders.py datasets/2026_06/
   larger teams spread effort, but most projects stay concentrated. Many small
   repos are **100% solo** across their entire active history.
 - **Scale grows with age; single-maintainer risk barely moves.** Mature repos
-  (≥3.5 yr) have far more developers (median 15.5 vs 3.5, p<0.001) and commits
-  (1,358 vs 189, p<0.001) and are less concentrated (HHI 4,568 vs 8,618, p=0.007),
+  (≥3.5 yr) have far more developers (median 15.5 vs 4, p<0.001) and commits
+  (1,358 vs 186, p<0.001) and are less concentrated (HHI 4,568 vs 8,618, p=0.007),
   yet the bus factor improves only marginally (median 1.5 vs 1.0, p=0.026, small
   effect).
 
 **AI usage (from `ai_usage_analysis/`)**
 
-- **42% of the corpus shows AI-assisted development**, dominated by **Claude Code
+- **43% of the corpus shows AI-assisted development**, dominated by **Claude Code
   (20 repos)** and **GitHub Copilot (12)**; `AGENTS.md` appears in 6. Only **2
   repos ship an LLM product feature** — civic-tech here mostly *uses* AI to build,
   rather than *shipping* AI.
@@ -295,7 +295,7 @@ uv run python scripts/build_repo_folders.py datasets/2026_06/
   2025-Q1; cumulative adopters climb to 23 by 2026-Q2 — essentially a 2025–2026
   phenomenon.
 - **AI-adopters are bigger and busier, but not better-bussed.** Adopters have
-  significantly more commits (median 575 vs 264, p=0.006) and developers (11 vs 5,
+  significantly more commits (median 575 vs 268, p=0.008) and developers (11 vs 5,
   p=0.001) than non-adopters, but show **no** difference in bus factor (1 vs 1) or
   project age (p=0.91). *This is correlational, not causal* — AI tooling co-varies
   with active, multi-contributor projects.
@@ -325,7 +325,7 @@ a version DOI pins this snapshot.
 
 ```bibtex
 @dataset{civic_tech_corpus_2026_06,
-  title     = {Civic-Tech Corpus — 2026-06 Refresh (n = 57, with AI-usage detection)},
+  title     = {Civic-Tech Corpus — 2026-06 Refresh (n = 56, with AI-usage detection)},
   author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia},
   year      = {2026},
   publisher = {Zenodo},

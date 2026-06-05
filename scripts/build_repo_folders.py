@@ -100,7 +100,7 @@ def collect_data(snapshot: Path) -> dict[str, dict]:
     return out
 
 
-def things_to_note(repo: str, d: dict) -> list[str]:
+def things_to_note(repo: str, d: dict, analysis_name: str = "analysis.md") -> list[str]:
     notes: list[str] = []
     if repo == "mastodon/mastodon":
         notes.append(
@@ -134,7 +134,7 @@ def things_to_note(repo: str, d: dict) -> list[str]:
             f"**Net-negative LOC trajectory.** Cumulative deletions ({int(d['total_removed']):,}) "
             f"exceed cumulative additions ({int(d['total_added']):,}) by "
             f"{abs(int(d['net_loc_delta'])):,} lines over the project's history "
-            "— consistent with the maintenance-phase signal discussed in `../analysis_n57.md` §2.7."
+            f"— a maintenance-phase signal (see [`../{analysis_name}`](../{analysis_name}))."
         )
 
     health = d.get("health_percentage")
@@ -264,13 +264,25 @@ def file_listing(folder: Path) -> str:
 
 
 def render(repo: str, d: dict, finding_paragraph: str, folder: Path) -> str:
-    notes = things_to_note(repo, d)
+    # Resolve the academic writeup filename (analysis_n<NN>.md) once so every
+    # cross-reference tracks the actual corpus size rather than a hardcoded n.
+    matches = sorted(folder.parent.glob("analysis_n*.md"))
+    analysis_name = matches[0].name if matches else "analysis.md"
+    notes = things_to_note(repo, d, analysis_name)
     notes_section = ""
     if notes:
         notes_section = "## Things to note\n\n"
         for n in notes:
             notes_section += f"- {n}\n"
         notes_section += "\n"
+    analysis_link = ""
+    if matches:
+        m = re.search(r"analysis_n(\d+)", analysis_name)
+        ntxt = f"n={m.group(1)}" if m else "the"
+        analysis_link = (
+            f"\n- [`../{analysis_name}`](../{analysis_name}) — "
+            f"academic writeup of the {ntxt} corpus"
+        )
     return f"""# {repo}
 
 [View on GitHub](https://github.com/{repo})
@@ -293,8 +305,7 @@ def render(repo: str, d: dict, finding_paragraph: str, folder: Path) -> str:
 
 ## See also
 
-- [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n57.md`](../analysis_n57.md) — academic writeup of the n=57 corpus
+- [`../README.md`](../README.md) — full dataset overview and reproduction instructions{analysis_link}
 """
 
 
@@ -332,6 +343,10 @@ def main() -> int:
     moved_plots = 0
     written_md = 0
 
+    # Resolve the academic writeup filename (analysis_n<NN>.md) for the fallback.
+    _an = sorted(snapshot.glob("analysis_n*.md"))
+    analysis_name = _an[0].name if _an else "analysis.md"
+
     for repo, d in metrics.items():
         slug = file_slug(repo)
         folder = snapshot / slug
@@ -357,7 +372,7 @@ def main() -> int:
         finding = findings.get(
             repo,
             "_Per-repository narrative findings are not bundled with this snapshot. "
-            "See [`../analysis_n57.md`](../analysis_n57.md) for cross-cutting findings; "
+            f"See [`../{analysis_name}`](../{analysis_name}) for cross-cutting findings; "
             "the per-repository quantitative metrics are in the **Key metrics** table below._",
         )
         (folder / "repo_results.md").write_text(render(repo, d, finding, folder))

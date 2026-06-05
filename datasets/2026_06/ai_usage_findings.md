@@ -1,7 +1,7 @@
 # AI Usage in Open-Source Civic Technology: Findings & Discussion
 
 *Companion findings document for the research paper, generated against the
-**2026-06** civic-tech corpus (n = 57). Underlying tables: `ai_usage.csv`,
+**2026-06** civic-tech corpus (n = 56). Underlying tables: `ai_usage.csv`,
 `ai_signals.csv`, and `ai_usage_analysis/`. All AI-usage measures are a **lower
 bound** (see §5).*
 
@@ -30,8 +30,8 @@ source and a first-appearance date.
 
 ### F1 — AI-assisted development is already mainstream; shipped-AI is rare
 
-**24 of 57 projects (42%)** carry at least one AI-assisted-development signal,
-while only **2 of 57 (4%)** ship an LLM product feature. Civic technology, in this
+**24 of 56 projects (43%)** carry at least one AI-assisted-development signal,
+while only **2 of 56 (4%)** ship an LLM product feature. Civic technology, in this
 corpus, **uses AI to build software far more than it ships AI to users.** The two
 product-LLM cases are `CodeForAfrica/PromiseTracker` (OpenAI, Anthropic, Cohere,
 DeepSeek, Groq SDKs) and an inherited signal in the `CivicTechWR/connectedkw`
@@ -87,7 +87,7 @@ Adoption is highly uneven by organisational community:
 |---|---|--:|
 | Meshtastic | 3 / 3 | 100% |
 | Code for Japan | 2 / 2 | 100% |
-| Canada — CivicTechWR / Toronto | 6 / 9 | 67% |
+| Canada — CivicTechWR / Toronto | 6 / 8 | 75% |
 | USA — Code for America / CiviForm | 5 / 9 | 56% |
 | Code for Africa | 3 / 9 | 33% |
 | Other (mySociety, g0v, VoteIT, …) | 2 / 7 | 29% |
@@ -100,15 +100,15 @@ than a uniform technological wave.
 
 ### F6 — Adopters are larger and busier, but not better-bussed
 
-Comparing adopters (n = 24) to non-adopters (n = 33), Mann-Whitney U:
+Comparing adopters (n = 24) to non-adopters (n = 32), Mann-Whitney U:
 
 | Metric | Adopter median | Non-adopter median | p |
 |---|--:|--:|--:|
-| Total commits | 575 | 264 | **0.006** |
+| Total commits | 575 | 268 | **0.008** |
 | Developers | 11 | 5 | **0.001** |
-| Stars | 7 | 3 | 0.053 |
-| Health % | 50 | 50 | 0.18 |
-| Project age (yr) | 3.8 | 3.1 | 0.91 |
+| Stars | 7 | 3 | 0.058 |
+| Health % | 50 | 50 | 0.25 |
+| Project age (yr) | 3.8 | 3.3 | 0.97 |
 | Bus factor (no bots) | 1 | 1 | 0.09 |
 
 AI adopters are significantly larger and more active, but show **no** difference in
@@ -122,7 +122,7 @@ among the corpus's more active repositories generally.
 
 ## 3. Discussion
 
-**Civic-tech is an AI *consumer*, not an AI *vendor* (F1).** The 42%/4% split says
+**Civic-tech is an AI *consumer*, not an AI *vendor* (F1).** The 43%/4% split says
 the sector's AI story is overwhelmingly about developer productivity, not
 AI-powered civic services. For a sector chronically short on contributor capacity,
 this is a rational allocation: AI is being pointed at the bottleneck (building and
@@ -182,11 +182,11 @@ written; there is no evidence here that it changes who is left maintaining it.
 - **Lower bound.** Detection captures only **disclosed, configured, or automated**
   AI traces (config files, co-author trailers, agent bots, CI agents, LLM
   dependencies). Inline autocomplete and chat-paste workflows leave no artifact and
-  are invisible. **True AI-assistance rates are necessarily higher than 42%.**
+  are invisible. **True AI-assistance rates are necessarily higher than 43%.**
 - **Correlational, cross-sectional.** §F6/§3 associations cannot establish
   causation or direction; a single snapshot cannot separate "AI raises activity"
   from "active teams adopt AI."
-- **Small n; ecosystem bias.** n = 57 limits statistical power. Product-LLM
+- **Small n; ecosystem bias.** n = 56 limits statistical power. Product-LLM
   detection reads only root-level Python/JS manifests, under-sampling shipped-AI in
   other language ecosystems (the 4% product figure is itself a floor).
 - **Forks (3).** Inherited history can attribute a parent's AI signals to a fork
@@ -213,4 +213,4 @@ written; there is no evidence here that it changes who is left maintaining it.
 
 *Reproduce: `uv run python scripts/ai_usage_analysis.py datasets/2026_06/`.
 See `ai_usage_analysis/summary.md` for the generated tables and
-`analysis_n57.md` for the structural (non-AI) analysis.*
+`analysis_n56.md` for the structural (non-AI) analysis.*

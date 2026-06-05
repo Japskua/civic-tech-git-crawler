@@ -17,7 +17,6 @@ github:
 repositories:
   # Canada — Toronto / Waterloo Region civic tech
   - "bikespace/bikespace"
-  - "bikespace/parking-map-data"
   - "choruslabs/chorus"
   - "civic-dashboard/civic-dashboard-web"
   - "CivicTechWR/accessible-housing-portal"

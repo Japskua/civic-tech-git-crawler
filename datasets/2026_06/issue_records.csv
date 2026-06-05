@@ -1580,11 +1580,6 @@ bikespace/bikespace,391,Make all datetimes used by the API and frontend timezone
 bikespace/bikespace,397,Add a test database to use with frontend previews,open,tallcoleman,,2026-05-09T14:29:37+00:00,,2026-05-09T15:55:52+00:00,1,api;frontend,
 bikespace/bikespace,403,Allow users to view and interact with features within clustered points,open,tallcoleman,,2026-05-12T17:57:36+00:00,,2026-05-12T18:40:44+00:00,0,,
 bikespace/bikespace,405,Enable a login flow via the front-end and and show user account on submissions,open,tallcoleman,,2026-05-18T01:47:42+00:00,,2026-05-21T11:03:20+00:00,0,,
-bikespace/parking-map-data,11,De-duplicate City lockers using ref:toronto.ca:lockers:title OSM tag,closed,tallcoleman,tallcoleman,2025-07-09T23:07:55+00:00,2025-09-01T16:33:44+00:00,2025-09-01T16:33:44+00:00,0,enhancement,53.73
-bikespace/parking-map-data,28,Allow for customization of which Overpass server to use,closed,tallcoleman,tallcoleman,2026-03-04T12:05:42+00:00,2026-04-10T15:41:42+00:00,2026-04-10T15:41:42+00:00,0,enhancement,37.15
-bikespace/parking-map-data,29,Use address open data instead of reverse geocoding for apartment data,open,tallcoleman,,2026-03-25T22:06:52+00:00,,2026-03-25T22:06:52+00:00,0,,
-bikespace/parking-map-data,31,"Explore adding data for Vancouver, BC",open,tallcoleman,,2026-04-27T00:52:15+00:00,,2026-04-27T00:52:44+00:00,0,,
-bikespace/parking-map-data,32,Add a user agent to Overpass API requests,closed,tallcoleman,tallcoleman,2026-05-02T19:13:16+00:00,2026-05-03T12:30:17+00:00,2026-05-03T12:30:17+00:00,0,enhancement,0.72
 choruslabs/chorus,1,Add frontend functionality to allow importing Pol.is conversation archives,open,MaanasArora,,2025-10-31T22:44:42+00:00,,2025-11-16T21:49:25+00:00,3,enhancement;react,
 choruslabs/chorus,2,Unmoderated comments are not visible even if display_unmoderated is true,closed,MaanasArora,MaanasArora,2025-10-31T22:46:57+00:00,2025-11-05T23:57:18+00:00,2025-11-05T23:57:18+00:00,0,bug;good first issue;python,5.05
 choruslabs/chorus,3,Disable clicking on vote again until the next comment shows,closed,MaanasArora,MaanasArora,2025-10-31T22:48:16+00:00,2025-12-14T03:55:36+00:00,2025-12-14T03:55:36+00:00,0,enhancement;good first issue;react,43.21

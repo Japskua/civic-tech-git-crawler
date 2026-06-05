@@ -11,7 +11,7 @@ usage leaves no artifact.
 
 | File | Granularity | Contents |
 |---|---|---|
-| `ai_usage.csv` | 1 row / repo (57) | Per-repo AI-usage summary (§2) |
+| `ai_usage.csv` | 1 row / repo (56) | Per-repo AI-usage summary (§2) |
 | `ai_signals.csv` | 1 row / signal (94 rows) | Every individual piece of AI evidence (§3) |
 | `ai_usage_analysis/` | directory (7 files) | `adoption_summary.csv`, `tool_frequency.csv`, `provider_frequency.csv`, `signal_source_breakdown.csv`, `adoption_timeline.csv`, `adopter_vs_nonadopter.csv`, `summary.md` |
 
@@ -92,9 +92,9 @@ had `dependency:openai`, now reported under `product_llm_*`.
 
 | Measure | Value |
 |---|---|
-| Repos with AI-assisted development | 24 / 57 (42.1%) |
-| Repos shipping an LLM product feature | 2 / 57 (3.5%) |
-| Repos with any AI signal | 25 / 57 (43.9%) |
+| Repos with AI-assisted development | 24 / 56 (42.9%) |
+| Repos shipping an LLM product feature | 2 / 56 (3.6%) |
+| Repos with any AI signal | 25 / 56 (44.6%) |
 | Adopters with active-use evidence (commits/PRs) | 21 |
 | Adopters with agent-opened PRs | 9 |
 | Adopters with bot-authored commits | 6 |
@@ -136,19 +136,21 @@ deepseek 1 · groq 1.
 
 | Metric | Adopter | Non-adopter | p |
 |---|--:|--:|--:|
-| Total commits | 575 | 264 | 0.006 |
+| Total commits | 575 | 268 | 0.008 |
 | Developers | 11 | 5 | 0.001 |
-| Stars | 7 | 3 | 0.053 |
-| Health % | 50 | 50 | 0.18 |
-| Project age (yr) | 3.8 | 3.1 | 0.91 |
+| Stars | 7 | 3 | 0.058 |
+| Health % | 50 | 50 | 0.25 |
+| Project age (yr) | 3.8 | 3.3 | 0.97 |
 | Bus factor (no bots) | 1 | 1 | 0.088 |
 
+(adopters n = 24, non-adopters n = 32)
+
 **Adoption by civic-tech community:** Meshtastic 3/3 (100%) · Code for Japan 2/2
-(100%) · CivicTechWR/Canada 6/9 (67%) · CfA/CiviForm 5/9 (56%) · Code for Africa
+(100%) · CivicTechWR/Canada 6/8 (75%) · CfA/CiviForm 5/9 (56%) · Code for Africa
 3/9 (33%) · German OK-Lab 3/18 (17%) · Other 2/7 (29%).
 
 ---
 
 *Reproduce: `uv run python scripts/ai_usage_analysis.py datasets/2026_06/`.
 Narrative writeups: `ai_usage_findings.md` (findings & discussion),
-`analysis_n57.md` (full analysis), `README.md` (dataset overview).*
+`analysis_n56.md` (full analysis), `README.md` (dataset overview).*
