@@ -26,4 +26,7 @@ config.yaml
 .idea/
 .vscode/
 *.swp
+
+# macOS
+.DS_Store
 paper_esem/.DS_Store
