@@ -91,11 +91,18 @@ def fig_community(ai: pd.DataFrame, out: Path) -> None:
     plt.close(fig)
 
 
-def fig_boxplots(ai: pd.DataFrame, rm: pd.DataFrame, cmp_p: dict, out: Path) -> None:
+def fig_boxplots(
+    ai: pd.DataFrame, rm: pd.DataFrame, cmp_p: dict, out: Path,
+    dev_mode: str = "linear", fname: str = "fig_adopter_vs_nonadopter.png",
+) -> None:
+    """Adopter-vs-non boxplots. `dev_mode` controls the Developers panel y-axis:
+    'linear' (full range), 'log', or 'clip' (zoom to the bulk; off-scale points
+    annotated). The Total-commits panel is always log-scaled."""
     m = ai.merge(rm.rename(columns={"full_name": "repo_full_name"}), on="repo_full_name", how="left")
     fig, axes = plt.subplots(1, 2, figsize=(9, 4.5))
-    specs = [("total_commits", "Total commits", True), ("num_developers", "Developers", False)]
-    for ax, (col, label, logy) in zip(axes, specs):
+    # (column, label, is_developers_panel)
+    specs = [("total_commits", "Total commits", False), ("num_developers", "Developers", True)]
+    for ax, (col, label, is_dev) in zip(axes, specs):
         a = pd.to_numeric(m.loc[m["dev"], col], errors="coerce").dropna()
         b = pd.to_numeric(m.loc[~m["dev"], col], errors="coerce").dropna()
         bp = ax.boxplot([a, b], patch_artist=True, widths=0.55, showfliers=False)
@@ -104,19 +111,28 @@ def fig_boxplots(ai: pd.DataFrame, rm: pd.DataFrame, cmp_p: dict, out: Path) -> 
         for patch, c in zip(bp["boxes"], [ACCENT, GREY]):
             patch.set_facecolor(c)
             patch.set_alpha(0.6)
-        # jittered points
         for i, data in enumerate([a, b], start=1):
             xj = np.random.default_rng(i).normal(i, 0.05, size=len(data))
             ax.scatter(xj, data, s=12, color="#374151", alpha=0.5, zorder=3)
-        if logy:
+        mode_note = ""
+        if not is_dev:  # commits panel: always log
             ax.set_yscale("log")
+        elif dev_mode == "log":
+            ax.set_yscale("log")
+        elif dev_mode == "clip":
+            allv = pd.concat([a, b])
+            cap = max(float(np.nanpercentile(allv, 90)), float(b.max()) * 1.1)
+            ax.set_ylim(0, cap)
+            off = int((a > cap).sum() + (b > cap).sum())
+            if off:
+                mode_note = f"\n({off} point(s) off-scale, max {int(allv.max())})"
         ax.set_ylabel(label)
         p = cmp_p.get(col)
         ptxt = f"Mann-Whitney p = {p:.3f}" if p is not None else ""
-        ax.set_title(f"{label}\n{ptxt}", fontsize=10)
+        ax.set_title(f"{label}\n{ptxt}{mode_note}", fontsize=10)
     fig.suptitle("AI adopters are larger and busier (medians differ; correlational)", fontsize=11)
     fig.tight_layout()
-    fig.savefig(out / "fig_adopter_vs_nonadopter.png", dpi=150)
+    fig.savefig(out / fname, dpi=150)
     plt.close(fig)
 
 
@@ -163,7 +179,12 @@ def main() -> int:
 
     fig_timeline(tl, out)
     fig_community(ai, out)
-    fig_boxplots(ai, rm, cmp_p, out)
+    fig_boxplots(ai, rm, cmp_p, out, dev_mode="linear",
+                 fname="fig_adopter_vs_nonadopter.png")
+    fig_boxplots(ai, rm, cmp_p, out, dev_mode="log",
+                 fname="fig_adopter_vs_nonadopter_devlog.png")
+    fig_boxplots(ai, rm, cmp_p, out, dev_mode="clip",
+                 fname="fig_adopter_vs_nonadopter_devclip.png")
     fig_tools(ai, out)
 
     print(f"Figures written to {out.relative_to(snap.parent)}:")
