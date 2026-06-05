@@ -292,7 +292,7 @@ while a version DOI pins this specific snapshot.
 ```bibtex
 @dataset{civic_tech_corpus_2026_05,
   title     = {Civic-Tech Corpus — 2026-05 Refresh (n = 57)},
-  author    = {Parkkila, Janne},
+  author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia},
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},

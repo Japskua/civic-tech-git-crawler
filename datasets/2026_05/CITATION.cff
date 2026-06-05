@@ -19,6 +19,12 @@ authors:
     given-names: Janne
     email: japskua@gmail.com
     # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Tran
+    given-names: Duc Thinh
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Olshanskaia
+    given-names: Viktoriia
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
 date-released: "2026-05-24"
 version: "2026.05"
 license: CC-BY-4.0
