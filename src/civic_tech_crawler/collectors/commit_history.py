@@ -18,6 +18,10 @@ from civic_tech_crawler.models import (
     ContributorWeek,
     WeeklySnapshot,
 )
+from civic_tech_crawler.utils.ai_detection import (
+    DEFAULT_AI_DEV_KEYWORDS,
+    detect_ai_in_commit,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -33,12 +37,18 @@ def _iso_week_start(dt: datetime) -> str:
     return monday.isoformat()
 
 
-def collect_commit_history(client, repo) -> CommitHistoryMetrics:
+def collect_commit_history(
+    client, repo, ai_dev_keywords: dict | None = None
+) -> CommitHistoryMetrics:
     """Parse the full commit history into weekly snapshots and contributor lifecycles.
 
     Uses GraphQL (100 commits per API call, includes additions/deletions) — about
     35x faster than the REST-per-commit approach and avoids the PyGithub
     RecursionError on 202 retries.
+
+    The same single pass also tallies AI-assisted-development signals from each
+    commit's message/author (co-author trailers, agent-bot commits) so the
+    ai_usage collector needs no second commit walk.
     """
     slug = repo.full_name
     logger.info("Collecting commit history for %s", slug)
@@ -46,6 +56,8 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
     if client is None:
         logger.warning("%s: client is None, cannot iterate commits via GraphQL", slug)
         return _empty_result(slug)
+
+    dev_kw = ai_dev_keywords or DEFAULT_AI_DEV_KEYWORDS
 
     # Per-contributor tracking
     # Key = contributor_id (login or email)
@@ -60,6 +72,13 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
     week_commits: dict[str, int] = defaultdict(int)  # week_start -> count
     week_contributors: dict[str, set[str]] = defaultdict(set)  # week_start -> set of ids
 
+    # AI-assisted-development tally (piggybacks this commit walk)
+    ai_coauthored = 0
+    ai_authored = 0
+    ai_coauthor_tool_counts: dict[str, int] = defaultdict(int)
+    ai_author_tool_counts: dict[str, int] = defaultdict(int)
+    ai_tool_first_dates: dict[str, datetime] = {}
+
     commit_count = 0
     for rec in client.iter_commits_graphql(slug):
         commit_count += 1
@@ -67,6 +86,23 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
         author_email = rec.author_email or "unknown"
         author_name = rec.author_name or ""
         login = rec.author_login
+
+        # AI commit detection (co-author trailers + agent-bot authors)
+        co_tools, auth_tools = detect_ai_in_commit(
+            rec.message, login, author_email, dev_kw
+        )
+        if co_tools:
+            ai_coauthored += 1
+        if auth_tools:
+            ai_authored += 1
+        for tool in co_tools:
+            ai_coauthor_tool_counts[tool] += 1
+        for tool in auth_tools:
+            ai_author_tool_counts[tool] += 1
+        for tool in co_tools | auth_tools:
+            prev = ai_tool_first_dates.get(tool)
+            if prev is None or author_date < prev:
+                ai_tool_first_dates[tool] = author_date
 
         # Determine contributor ID: prefer GitHub login, fall back to email
         contributor_id = login if login else author_email
@@ -220,6 +256,14 @@ def collect_commit_history(client, repo) -> CommitHistoryMetrics:
         total_weeks=len(snapshots),
         total_unique_contributors=total_unique,
         new_contributor_rate_per_month=new_rate,
+        total_commits_scanned=commit_count,
+        ai_coauthored_commit_count=ai_coauthored,
+        ai_authored_commit_count=ai_authored,
+        ai_coauthor_tool_counts=dict(ai_coauthor_tool_counts),
+        ai_author_tool_counts=dict(ai_author_tool_counts),
+        ai_commit_tool_first_dates={
+            tool: dt.isoformat() for tool, dt in ai_tool_first_dates.items()
+        },
     )
 
 

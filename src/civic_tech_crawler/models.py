@@ -12,11 +12,14 @@ class CrawlerConfig:
     rate_limit_buffer: int = 100
     cloud_keywords: dict = field(default_factory=dict)
     ai_ml_keywords: dict = field(default_factory=dict)
+    ai_dev_keywords: dict = field(default_factory=dict)
+    product_llm_keywords: dict = field(default_factory=dict)
     skip_chaoss: bool = False
     skip_temporal: bool = False
     skip_detection: bool = False
     skip_commit_history: bool = False
     skip_issue_analytics: bool = False
+    skip_ai_usage: bool = False
 
 
 @dataclass
@@ -258,6 +261,16 @@ class CommitHistoryMetrics:
     total_weeks: int
     total_unique_contributors: int
     new_contributor_rate_per_month: float | None
+    total_commits_scanned: int = 0
+    # AI-assisted-development signals tallied during the commit walk (no extra
+    # API calls). Consumed by collectors/ai_usage.py.
+    ai_coauthored_commit_count: int = 0  # commits with an AI co-author trailer
+    ai_authored_commit_count: int = 0  # commits authored by an AI agent bot
+    ai_coauthor_tool_counts: dict[str, int] = field(default_factory=dict)
+    ai_author_tool_counts: dict[str, int] = field(default_factory=dict)
+    ai_commit_tool_first_dates: dict[str, str] = field(
+        default_factory=dict
+    )  # tool -> ISO date of earliest AI-attributed commit
 
 
 @dataclass
@@ -293,6 +306,48 @@ class IssueAnalytics:
 
 
 @dataclass
+class AISignal:
+    """A single piece of evidence that AI was used in/by a repository."""
+    group: str  # "dev" (AI-assisted development) | "product" (LLM as artifact)
+    tool: str  # tool/provider label, e.g. "claude_code", "github_copilot", "openai"
+    source: str  # "file"|"commit_trailer"|"commit_author"|"pr_author"|"pr_body"|
+    #              "workflow"|"dependency"|"topic"|"bot_comment"
+    evidence: str  # human-readable, e.g. "file:CLAUDE.md"
+    count: int = 1
+    first_seen: datetime | None = None  # earliest date this signal is datable to
+
+
+@dataclass
+class AIUsageMetrics:
+    """AI-usage detection, kept separate from the traditional ML detection on
+    RepoMetrics (``ai_ml_detected`` / ``ai_ml_signals``).
+
+    Two independent groups:
+    * ``dev_*``    — LLM coding tools helped build the code.
+    * ``product_*`` — the project ships LLM/GenAI functionality.
+    """
+    repo_full_name: str
+    # Group 3 — LLM used in development
+    dev_ai_detected: bool
+    dev_ai_tools: list[str]
+    agent_config_files: list[str]
+    ai_coauthored_commit_count: int
+    ai_authored_commit_count: int
+    commits_scanned: int
+    ai_commit_ratio: float
+    ai_agent_pr_count: int
+    ci_ai_workflows: list[str]
+    review_bot_tools: list[str]
+    first_dev_ai_date: datetime | None
+    # Group 2 — LLM as delivered product artifact
+    product_llm_detected: bool
+    product_llm_signals: list[str]
+    product_llm_providers: list[str]
+    # Full structured evidence (one entry per detected signal)
+    signals: list[AISignal] = field(default_factory=list)
+
+
+@dataclass
 class RepositoryData:
     repo_metrics: RepoMetrics
     person_metrics: list[PersonMetrics]
@@ -304,3 +359,4 @@ class RepositoryData:
     )
     commit_history: CommitHistoryMetrics | None = None
     issue_analytics: IssueAnalytics | None = None
+    ai_usage_metrics: AIUsageMetrics | None = None

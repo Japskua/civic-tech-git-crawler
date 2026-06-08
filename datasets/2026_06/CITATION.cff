@@ -1,0 +1,69 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, please cite both the dataset and the tool that
+  produced it (see CITATION.cff at the repository root).
+type: dataset
+title: "Civic-Tech Corpus — 2026-06 Refresh (n = 55, with AI-usage detection)"
+abstract: >-
+  A curated corpus of 55 open-source civic-technology repositories from 24
+  organisations across five continents (North America, Africa, Japan, Taiwan,
+  Europe), re-crawled 2026-06-03 to 2026-06-04. It extends the 2026-05 refresh
+  with an AI-usage detection layer that distinguishes three phenomena:
+  traditional/classical ML, LLMs shipped as a product feature, and LLM coding
+  tools used to build the software (detected from agent config files, commit
+  co-author trailers, AI agent-bot commits/PRs, CI agents, and review bots),
+  each with first-appearance dating. Each repository also carries
+  repository-level metrics, per-(repository, contributor) commit counts with a
+  heuristic bot flag, PR and tag/release cadence, full-history weekly snapshots,
+  per-(contributor, ISO-week) activity (commits + lines added/removed), 45+
+  CHAOSS metrics including bus factor, elephant factor, HHI, and burstiness, and
+  issue analytics. Companion analyses (statistical_analysis/,
+  weekly_activity_analysis/, ai_usage_analysis/), figures, per-repository
+  folders, and the pre-crawl candidate-selection list are included.
+authors:
+  - family-names: Parkkila
+    given-names: Janne
+    email: japskua@gmail.com
+    affiliation: "LUT University"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Tran
+    given-names: Duc Thinh
+    affiliation: "IMT Atlantique"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Olshanskaia
+    given-names: Viktoriia
+    affiliation: "LUT University"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Knutas
+    given-names: Antti
+    affiliation: "LUT University"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+date-released: "2026-06-04"
+version: "2026.06"
+license: CC-BY-4.0
+repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
+url: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_06"
+keywords:
+  - civic-technology
+  - open-source-sustainability
+  - mining-software-repositories
+  - CHAOSS
+  - software-engineering
+  - GitHub
+  - AI-assisted-development
+  - large-language-models
+  - generative-AI
+  - dataset
+# doi: "10.5281/zenodo.XXXXXXXX"   # add the Zenodo version DOI after deposit
+identifiers:
+  - type: url
+    value: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_06"
+    description: "Source location of this dataset in the project repository"
+references:
+  - type: software
+    title: "Civic Tech Git Crawler"
+    authors:
+      - family-names: Parkkila
+        given-names: Janne
+    repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
+    notes: "The crawler that produced this dataset; see CITATION.cff at the repo root."

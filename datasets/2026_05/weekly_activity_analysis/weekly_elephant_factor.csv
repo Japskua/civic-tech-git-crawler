@@ -1,14 +1,13 @@
 repo_full_name,weeks_with_activity,mean_top_share,median_top_share,elephant_weeks_pct,single_contributor_weeks_pct,solo_weeks_pct
 ton-An/station_reach,14,1.0,1.0,100.0,100.0,100.0
-fvialibre/heseia-sentence-bias-dataset,3,1.0,1.0,100.0,100.0,100.0
-digidemlab/decidim-census,217,1.0,1.0,100.0,99.5,99.5
+oklabflensburg/open-school-map,21,1.0,1.0,100.0,100.0,100.0
 codeforamerica/document-transfer-service,9,1.0,1.0,100.0,100.0,100.0
 codeforamerica/cmr-maryland-eligibility-determination,8,1.0,1.0,100.0,100.0,100.0
 codeforbielefeld/losdb,9,1.0,1.0,100.0,100.0,88.9
 oklabflensburg/open-biotope-map,8,1.0,1.0,100.0,100.0,100.0
-oklabflensburg/open-school-map,21,1.0,1.0,100.0,100.0,100.0
 oklabflensburg/open-recycling-map,9,1.0,1.0,100.0,100.0,100.0
 oklabflensburg/open-emergency-map,3,1.0,1.0,100.0,100.0,100.0
+digidemlab/decidim-census,217,1.0,1.0,100.0,99.5,99.5
 oklabflensburg/open-monuments-map,75,0.994,1.0,100.0,96.0,92.0
 VoteIT/voteit_frontend,181,0.988,1.0,100.0,80.1,79.0
 oklabflensburg/open-data-api,42,0.985,1.0,100.0,95.2,95.2
@@ -17,8 +16,8 @@ g0v/tw-rental-house-data,93,0.982,1.0,100.0,93.5,93.5
 oklabflensburg/open-trees-map,24,0.978,1.0,100.0,87.5,79.2
 CodeForAfrica/openAFRICA,50,0.974,1.0,100.0,88.0,88.0
 CivicTechWR/project-pech,15,0.972,1.0,100.0,73.3,73.3
-codeforcologne/Denkmal-4D-Koeln,15,0.958,1.0,100.0,86.7,80.0
 mysociety/ceuk-marking,110,0.958,1.0,99.1,80.0,80.0
+codeforcologne/Denkmal-4D-Koeln,15,0.958,1.0,100.0,86.7,80.0
 codeforberlin/we-count,75,0.956,1.0,100.0,78.7,77.3
 CodeForAfrica/PromiseTracker,32,0.955,1.0,100.0,68.8,68.8
 CodeforLeipzig/weihnachtsmarktkarte,18,0.954,1.0,100.0,66.7,61.1

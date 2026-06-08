@@ -40,6 +40,7 @@ def load_config(
     skip_detection: bool = False,
     skip_commit_history: bool = False,
     skip_issue_analytics: bool = False,
+    skip_ai_usage: bool = False,
 ) -> CrawlerConfig:
     """Load configuration from YAML file with CLI overrides."""
     path = Path(config_path)
@@ -74,9 +75,12 @@ def load_config(
         rate_limit_buffer=github_cfg.get("rate_limit_buffer", 100),
         cloud_keywords=detection_cfg.get("cloud_keywords", {}),
         ai_ml_keywords=detection_cfg.get("ai_ml_keywords", {}),
+        ai_dev_keywords=detection_cfg.get("ai_dev_keywords", {}),
+        product_llm_keywords=detection_cfg.get("product_llm_keywords", {}),
         skip_chaoss=skip_chaoss,
         skip_temporal=skip_temporal,
         skip_detection=skip_detection,
         skip_commit_history=skip_commit_history,
         skip_issue_analytics=skip_issue_analytics,
+        skip_ai_usage=skip_ai_usage,
     )

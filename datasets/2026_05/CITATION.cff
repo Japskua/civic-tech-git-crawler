@@ -3,9 +3,9 @@ message: >-
   If you use this dataset, please cite both the dataset and the tool that
   produced it (see CITATION.cff at the repository root).
 type: dataset
-title: "Civic-Tech Corpus — 2026-05 Refresh (n = 57)"
+title: "Civic-Tech Corpus — 2026-05 Refresh (n = 55)"
 abstract: >-
-  A curated corpus of 57 open-source civic-technology repositories from 24
+  A curated corpus of 55 open-source civic-technology repositories from 24
   organisations across five continents (North America, Africa, Japan, Taiwan,
   Europe), crawled 2026-05-21 to 2026-05-24. Each repository carries
   repository-level metrics, per-(repository, contributor) commit counts with a
@@ -18,6 +18,19 @@ authors:
   - family-names: Parkkila
     given-names: Janne
     email: japskua@gmail.com
+    affiliation: "LUT University"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Tran
+    given-names: Duc Thinh
+    affiliation: "IMT Atlantique"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Olshanskaia
+    given-names: Viktoriia
+    affiliation: "LUT University"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
+  - family-names: Knutas
+    given-names: Antti
+    affiliation: "LUT University"
     # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
 date-released: "2026-05-24"
 version: "2026.05"

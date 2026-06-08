@@ -77,6 +77,14 @@ def collect_data(snapshot: Path) -> dict[str, dict]:
     cwa = pd.read_csv(snapshot / "contributor_weekly_activity.csv")
     cwa_commits = cwa.groupby("repo_full_name")["commits"].sum().rename("cwa_commits")
 
+    # AI-usage is optional (older snapshots predate it).
+    ai_path = snapshot / "ai_usage.csv"
+    ai = (
+        pd.read_csv(ai_path).rename(columns={"repo_full_name": "repo"})
+        if ai_path.exists()
+        else pd.DataFrame(columns=["repo"])
+    )
+
     merged = (
         rm.merge(ch, on="repo", how="left", suffixes=("", "_chaoss"))
         .merge(isum, on="repo", how="left", suffixes=("", "_issum"))
@@ -84,6 +92,7 @@ def collect_data(snapshot: Path) -> dict[str, dict]:
         .merge(gini, on="repo", how="left", suffixes=("", "_gini"))
         .merge(eleph, on="repo", how="left", suffixes=("", "_eleph"))
         .merge(cwa_commits, left_on="repo", right_index=True, how="left")
+        .merge(ai, on="repo", how="left", suffixes=("", "_ai"))
     )
     out: dict[str, dict] = {}
     for _, r in merged.iterrows():
@@ -91,7 +100,7 @@ def collect_data(snapshot: Path) -> dict[str, dict]:
     return out
 
 
-def things_to_note(repo: str, d: dict) -> list[str]:
+def things_to_note(repo: str, d: dict, analysis_name: str = "analysis.md") -> list[str]:
     notes: list[str] = []
     if repo == "mastodon/mastodon":
         notes.append(
@@ -125,7 +134,7 @@ def things_to_note(repo: str, d: dict) -> list[str]:
             f"**Net-negative LOC trajectory.** Cumulative deletions ({int(d['total_removed']):,}) "
             f"exceed cumulative additions ({int(d['total_added']):,}) by "
             f"{abs(int(d['net_loc_delta'])):,} lines over the project's history "
-            "— consistent with the maintenance-phase signal discussed in `../analysis_n57.md` §2.7."
+            f"— a maintenance-phase signal (see [`../{analysis_name}`](../{analysis_name}))."
         )
 
     health = d.get("health_percentage")
@@ -152,6 +161,32 @@ def things_to_note(repo: str, d: dict) -> list[str]:
     return notes
 
 
+def _truthy(v) -> bool:
+    if isinstance(v, str):
+        return v.strip().lower() == "true"
+    return bool(v) and not (isinstance(v, float) and pd.isna(v))
+
+
+def _list_str(v) -> str:
+    if v is None or (isinstance(v, float) and pd.isna(v)):
+        return ""
+    return str(v).replace(";", ", ")
+
+
+def ai_dev_cell(d: dict) -> str:
+    if not _truthy(d.get("dev_ai_detected")):
+        return "no"
+    tools = _list_str(d.get("dev_ai_tools")) or "detected"
+    return f"yes ({tools})"
+
+
+def ai_product_cell(d: dict) -> str:
+    if not _truthy(d.get("product_llm_detected")):
+        return "no"
+    provs = _list_str(d.get("product_llm_providers")) or "detected"
+    return f"yes ({provs})"
+
+
 def quick_facts_table(repo: str, d: dict) -> str:
     age_years = None
     fc = d.get("first_commit_date")
@@ -170,7 +205,9 @@ def quick_facts_table(repo: str, d: dict) -> str:
         ("Project age", f"{age_years:.1f} years" if age_years is not None else "—"),
         ("Total commits (repo_metrics)", fmt_num(d.get("total_commits"))),
         ("Attributable contributors (CWA)", fmt_num(d.get("contributors") or d.get("num_developers"))),
-        ("Cloud / AI-ML signals", f"{'yes' if d.get('cloud_detected') else 'no'} / {'yes' if d.get('ai_ml_detected') else 'no'}"),
+        ("Cloud / traditional-ML signals", f"{'yes' if d.get('cloud_detected') else 'no'} / {'yes' if d.get('ai_ml_detected') else 'no'}"),
+        ("AI-assisted development", ai_dev_cell(d)),
+        ("Ships LLM product feature", ai_product_cell(d)),
         ("OSI-approved license", "yes" if d.get("is_osi_approved") else "no"),
     ]
     out = "| | |\n|---|---|\n"
@@ -227,13 +264,25 @@ def file_listing(folder: Path) -> str:
 
 
 def render(repo: str, d: dict, finding_paragraph: str, folder: Path) -> str:
-    notes = things_to_note(repo, d)
+    # Resolve the academic writeup filename (analysis_n<NN>.md) once so every
+    # cross-reference tracks the actual corpus size rather than a hardcoded n.
+    matches = sorted(folder.parent.glob("analysis_n*.md"))
+    analysis_name = matches[0].name if matches else "analysis.md"
+    notes = things_to_note(repo, d, analysis_name)
     notes_section = ""
     if notes:
         notes_section = "## Things to note\n\n"
         for n in notes:
             notes_section += f"- {n}\n"
         notes_section += "\n"
+    analysis_link = ""
+    if matches:
+        m = re.search(r"analysis_n(\d+)", analysis_name)
+        ntxt = f"n={m.group(1)}" if m else "the"
+        analysis_link = (
+            f"\n- [`../{analysis_name}`](../{analysis_name}) — "
+            f"academic writeup of the {ntxt} corpus"
+        )
     return f"""# {repo}
 
 [View on GitHub](https://github.com/{repo})
@@ -256,8 +305,7 @@ def render(repo: str, d: dict, finding_paragraph: str, folder: Path) -> str:
 
 ## See also
 
-- [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n57.md`](../analysis_n57.md) — academic writeup of the n=57 corpus
+- [`../README.md`](../README.md) — full dataset overview and reproduction instructions{analysis_link}
 """
 
 
@@ -295,6 +343,10 @@ def main() -> int:
     moved_plots = 0
     written_md = 0
 
+    # Resolve the academic writeup filename (analysis_n<NN>.md) for the fallback.
+    _an = sorted(snapshot.glob("analysis_n*.md"))
+    analysis_name = _an[0].name if _an else "analysis.md"
+
     for repo, d in metrics.items():
         slug = file_slug(repo)
         folder = snapshot / slug
@@ -320,7 +372,7 @@ def main() -> int:
         finding = findings.get(
             repo,
             "_Per-repository narrative findings are not bundled with this snapshot. "
-            "See [`../analysis_n57.md`](../analysis_n57.md) for cross-cutting findings; "
+            f"See [`../{analysis_name}`](../{analysis_name}) for cross-cutting findings; "
             "the per-repository quantitative metrics are in the **Key metrics** table below._",
         )
         (folder / "repo_results.md").write_text(render(repo, d, finding, folder))

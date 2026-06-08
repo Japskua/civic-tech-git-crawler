@@ -1,0 +1,2 @@
+total_repositories,unique_organisations,unique_primary_languages,primary_languages,total_contributors,human_contributors,bot_contributors,total_commits,total_stars,total_forks,repos_with_ci_cd,repos_with_cloud,repos_with_ai_ml,repos_with_osi_license,median_age_years
+55,23,16,"C++, Dart, Dockerfile, Elixir, HCL, HTML, Java, JavaScript, Jinja, Kotlin, PHP, Python, Ruby, Svelte, TypeScript, Vue",660,606,54,90468,12908,3658,47,29,3,34,3.5

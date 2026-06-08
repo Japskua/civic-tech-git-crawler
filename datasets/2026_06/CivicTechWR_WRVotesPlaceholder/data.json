@@ -1,0 +1,2519 @@
+{
+  "repo_metrics": {
+    "full_name": "CivicTechWR/WRVotesPlaceholder",
+    "name": "WRVotesPlaceholder",
+    "description": "Waterloo Region Votes placehold site for in-between elections",
+    "num_developers": 16,
+    "total_commits": 2142,
+    "languages": {
+      "Python": 47857,
+      "Shell": 2882,
+      "Ruby": 1296
+    },
+    "primary_language": "Python",
+    "first_commit_date": "2018-03-28T23:45:51+00:00",
+    "last_commit_date": "2026-06-03T22:23:14+00:00",
+    "license_spdx": "MIT",
+    "license_name": "MIT License",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": true,
+    "has_code_of_conduct": true,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": true,
+    "health_percentage": 100,
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Deploy Jekyll and Worksheets together",
+      "Generate WRV Worksheets",
+      "pages-build-deployment"
+    ],
+    "deployments_count": 28,
+    "created_at": "2025-10-15T23:52:47+00:00",
+    "updated_at": "2026-06-03T22:23:18+00:00",
+    "pushed_at": "2026-06-03T22:23:15+00:00",
+    "size_kb": 24137
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": "pnijjar",
+      "name": "Paul Nijjar",
+      "num_commits": 4,
+      "additions": 3,
+      "deletions": 3,
+      "avg_additions_per_commit": 0.75,
+      "avg_deletions_per_commit": 0.75,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": "pnijjar",
+      "name": "Paul Nijjar",
+      "num_commits": 222,
+      "additions": 152913,
+      "deletions": 96306,
+      "avg_additions_per_commit": 688.8,
+      "avg_deletions_per_commit": 433.81,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": "SyedAlbiz",
+      "name": "Syed Muhammad Hasan Albiz",
+      "num_commits": 1,
+      "additions": 89149,
+      "deletions": 2,
+      "avg_additions_per_commit": 89149.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": "s-kennedy",
+      "name": "Shay",
+      "num_commits": 4,
+      "additions": 2,
+      "deletions": 2,
+      "avg_additions_per_commit": 0.5,
+      "avg_deletions_per_commit": 0.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": "acant",
+      "name": "Andrew Sullivan Cant",
+      "num_commits": 2,
+      "additions": 7,
+      "deletions": 4,
+      "avg_additions_per_commit": 3.5,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": "BreakableHoodie",
+      "name": "Andre Levesque",
+      "num_commits": 4,
+      "additions": 184,
+      "deletions": 100,
+      "avg_additions_per_commit": 46.0,
+      "avg_deletions_per_commit": 25.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": null,
+      "name": "pnijjar",
+      "num_commits": 260,
+      "additions": 3004,
+      "deletions": 2274,
+      "avg_additions_per_commit": 11.55,
+      "avg_deletions_per_commit": 8.75,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+      "login": null,
+      "name": "WRV Auto-committer",
+      "num_commits": 3,
+      "additions": 0,
+      "deletions": 0,
+      "avg_additions_per_commit": 0.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+    "pr_count_total": 0,
+    "pr_count_merged": 0,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 0,
+    "prs": [],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+    "weekly_commits": [
+      {
+        "week_start": "2018-09-17",
+        "commits": 64
+      },
+      {
+        "week_start": "2018-09-24",
+        "commits": 57
+      },
+      {
+        "week_start": "2018-10-01",
+        "commits": 59
+      },
+      {
+        "week_start": "2018-10-08",
+        "commits": 47
+      },
+      {
+        "week_start": "2018-10-15",
+        "commits": 48
+      },
+      {
+        "week_start": "2018-10-22",
+        "commits": 34
+      },
+      {
+        "week_start": "2018-10-29",
+        "commits": 44
+      },
+      {
+        "week_start": "2018-11-05",
+        "commits": 12
+      },
+      {
+        "week_start": "2018-11-12",
+        "commits": 11
+      },
+      {
+        "week_start": "2018-11-19",
+        "commits": 9
+      },
+      {
+        "week_start": "2018-11-26",
+        "commits": 7
+      },
+      {
+        "week_start": "2018-12-03",
+        "commits": 5
+      },
+      {
+        "week_start": "2019-06-10",
+        "commits": 10
+      },
+      {
+        "week_start": "2019-09-09",
+        "commits": 1
+      },
+      {
+        "week_start": "2019-09-16",
+        "commits": 37
+      },
+      {
+        "week_start": "2019-09-23",
+        "commits": 42
+      },
+      {
+        "week_start": "2019-09-30",
+        "commits": 41
+      },
+      {
+        "week_start": "2019-10-07",
+        "commits": 22
+      },
+      {
+        "week_start": "2019-10-14",
+        "commits": 18
+      },
+      {
+        "week_start": "2019-10-21",
+        "commits": 14
+      },
+      {
+        "week_start": "2019-10-28",
+        "commits": 7
+      },
+      {
+        "week_start": "2019-11-04",
+        "commits": 7
+      },
+      {
+        "week_start": "2019-11-11",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-08-01",
+        "commits": 2
+      },
+      {
+        "week_start": "2022-08-08",
+        "commits": 3
+      },
+      {
+        "week_start": "2022-08-15",
+        "commits": 13
+      },
+      {
+        "week_start": "2022-08-22",
+        "commits": 11
+      },
+      {
+        "week_start": "2022-08-29",
+        "commits": 28
+      },
+      {
+        "week_start": "2022-09-05",
+        "commits": 29
+      },
+      {
+        "week_start": "2022-09-12",
+        "commits": 57
+      },
+      {
+        "week_start": "2022-09-19",
+        "commits": 45
+      },
+      {
+        "week_start": "2022-09-26",
+        "commits": 46
+      },
+      {
+        "week_start": "2022-10-03",
+        "commits": 46
+      },
+      {
+        "week_start": "2022-10-10",
+        "commits": 36
+      },
+      {
+        "week_start": "2022-10-17",
+        "commits": 39
+      },
+      {
+        "week_start": "2022-10-24",
+        "commits": 32
+      },
+      {
+        "week_start": "2022-10-31",
+        "commits": 3
+      },
+      {
+        "week_start": "2022-11-07",
+        "commits": 3
+      },
+      {
+        "week_start": "2022-11-28",
+        "commits": 5
+      },
+      {
+        "week_start": "2022-12-05",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-01-02",
+        "commits": 2
+      },
+      {
+        "week_start": "2025-02-10",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-10-13",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-10-20",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-12-29",
+        "commits": 8
+      },
+      {
+        "week_start": "2026-01-05",
+        "commits": 20
+      },
+      {
+        "week_start": "2026-01-12",
+        "commits": 8
+      },
+      {
+        "week_start": "2026-01-19",
+        "commits": 4
+      },
+      {
+        "week_start": "2026-01-26",
+        "commits": 11
+      },
+      {
+        "week_start": "2026-02-02",
+        "commits": 10
+      },
+      {
+        "week_start": "2026-05-25",
+        "commits": 21
+      },
+      {
+        "week_start": "2026-06-01",
+        "commits": 3
+      }
+    ],
+    "change_request_acceptance_ratio": null,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 500,
+      "pull_requests": 0,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 4,
+      "Dreamside Digital": 1,
+      "SugarCRM": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 9,
+    "release_frequency_per_month": null,
+    "fork_count": 0,
+    "burstiness_cv": 0.89,
+    "burstiness_mean": 21.04,
+    "burstiness_std": 18.83,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 0,
+    "readme_last_updated": "2026-05-28T05:57:55+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": null,
+    "avg_review_comments_per_pr": null,
+    "herfindahl_hirschman_index": 9503.6,
+    "hhi_no_bots": 9084.9,
+    "hhi_known_orgs_only": 5555.6,
+    "unknown_org_contributor_count": 4,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 4,
+      "unknown": 4
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": null,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 0,
+    "core_periphery_ratio": null,
+    "network_density": null,
+    "avg_degree_centrality": null,
+    "pr_review_edges": []
+  },
+  "crawled_at": "2026-06-03T22:45:27.389869+00:00",
+  "core_periphery_contributors": [],
+  "commit_history": {
+    "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+    "weekly_snapshots": [
+      {
+        "week_start": "2018-03-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 1,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-04-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-04-23",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 10,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2018-05-07",
+        "total_commits": 20,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2018-05-21",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 32,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2018-06-04",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 36,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2018-07-09",
+        "total_commits": 81,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 117,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2018-07-16",
+        "total_commits": 125,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 242,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2018-07-23",
+        "total_commits": 146,
+        "unique_contributors": 4,
+        "new_contributors": 2,
+        "cumulative_commits": 388,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2018-07-30",
+        "total_commits": 141,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 529,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2018-08-06",
+        "total_commits": 104,
+        "unique_contributors": 5,
+        "new_contributors": 2,
+        "cumulative_commits": 633,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2018-08-13",
+        "total_commits": 49,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 682,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2018-08-20",
+        "total_commits": 200,
+        "unique_contributors": 7,
+        "new_contributors": 3,
+        "cumulative_commits": 882,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2018-08-27",
+        "total_commits": 47,
+        "unique_contributors": 5,
+        "new_contributors": 0,
+        "cumulative_commits": 929,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2018-09-03",
+        "total_commits": 61,
+        "unique_contributors": 5,
+        "new_contributors": 0,
+        "cumulative_commits": 990,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2018-09-10",
+        "total_commits": 58,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 1048,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2018-09-17",
+        "total_commits": 64,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 1112,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2018-09-24",
+        "total_commits": 57,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 1169,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2018-10-01",
+        "total_commits": 59,
+        "unique_contributors": 5,
+        "new_contributors": 0,
+        "cumulative_commits": 1228,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2018-10-08",
+        "total_commits": 47,
+        "unique_contributors": 7,
+        "new_contributors": 3,
+        "cumulative_commits": 1275,
+        "cumulative_contributors": 17
+      },
+      {
+        "week_start": "2018-10-15",
+        "total_commits": 48,
+        "unique_contributors": 6,
+        "new_contributors": 1,
+        "cumulative_commits": 1323,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2018-10-22",
+        "total_commits": 34,
+        "unique_contributors": 4,
+        "new_contributors": 0,
+        "cumulative_commits": 1357,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2018-10-29",
+        "total_commits": 44,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 1401,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2018-11-05",
+        "total_commits": 12,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1413,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2018-11-12",
+        "total_commits": 11,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1424,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2018-11-19",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1433,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2018-11-26",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1440,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2018-12-03",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1445,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2019-06-10",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1455,
+        "cumulative_contributors": 18
+      },
+      {
+        "week_start": "2019-09-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 1456,
+        "cumulative_contributors": 19
+      },
+      {
+        "week_start": "2019-09-16",
+        "total_commits": 37,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1493,
+        "cumulative_contributors": 19
+      },
+      {
+        "week_start": "2019-09-23",
+        "total_commits": 42,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 1535,
+        "cumulative_contributors": 20
+      },
+      {
+        "week_start": "2019-09-30",
+        "total_commits": 41,
+        "unique_contributors": 5,
+        "new_contributors": 1,
+        "cumulative_commits": 1576,
+        "cumulative_contributors": 21
+      },
+      {
+        "week_start": "2019-10-07",
+        "total_commits": 22,
+        "unique_contributors": 3,
+        "new_contributors": 0,
+        "cumulative_commits": 1598,
+        "cumulative_contributors": 21
+      },
+      {
+        "week_start": "2019-10-14",
+        "total_commits": 18,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 1616,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2019-10-21",
+        "total_commits": 14,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1630,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2019-10-28",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1637,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2019-11-04",
+        "total_commits": 7,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1644,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2019-11-11",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1645,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2022-08-01",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1647,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2022-08-08",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1650,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2022-08-15",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1663,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2022-08-22",
+        "total_commits": 11,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 1674,
+        "cumulative_contributors": 22
+      },
+      {
+        "week_start": "2022-08-29",
+        "total_commits": 28,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 1702,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-09-05",
+        "total_commits": 29,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1731,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-09-12",
+        "total_commits": 57,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1788,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-09-19",
+        "total_commits": 45,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1833,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-09-26",
+        "total_commits": 46,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1879,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-10-03",
+        "total_commits": 46,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1925,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-10-10",
+        "total_commits": 36,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 1961,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-10-17",
+        "total_commits": 39,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2000,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-10-24",
+        "total_commits": 32,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2032,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-10-31",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2035,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-11-07",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2038,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-11-28",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2043,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2022-12-05",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 2045,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2023-01-02",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2047,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2025-02-10",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2048,
+        "cumulative_contributors": 23
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 2053,
+        "cumulative_contributors": 24
+      },
+      {
+        "week_start": "2025-10-20",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 2057,
+        "cumulative_contributors": 25
+      },
+      {
+        "week_start": "2025-12-29",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2065,
+        "cumulative_contributors": 25
+      },
+      {
+        "week_start": "2026-01-05",
+        "total_commits": 20,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2085,
+        "cumulative_contributors": 25
+      },
+      {
+        "week_start": "2026-01-12",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2093,
+        "cumulative_contributors": 25
+      },
+      {
+        "week_start": "2026-01-19",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2097,
+        "cumulative_contributors": 25
+      },
+      {
+        "week_start": "2026-01-26",
+        "total_commits": 11,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2108,
+        "cumulative_contributors": 25
+      },
+      {
+        "week_start": "2026-02-02",
+        "total_commits": 10,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 2118,
+        "cumulative_contributors": 26
+      },
+      {
+        "week_start": "2026-05-25",
+        "total_commits": 21,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2139,
+        "cumulative_contributors": 26
+      },
+      {
+        "week_start": "2026-06-01",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 2142,
+        "cumulative_contributors": 26
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "pnijjar",
+        "login": "pnijjar",
+        "name": "Paul Nijjar",
+        "email": "11766780+pnijjar@users.noreply.github.com",
+        "first_commit_date": "2018-07-11T22:37:27+00:00",
+        "last_commit_date": "2026-06-03T22:23:14+00:00",
+        "duration_days": 2883,
+        "total_commits": 1389,
+        "active_weeks": 49,
+        "total_weeks_span": 411,
+        "activity_ratio": 0.1192,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 28.35
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "login": null,
+        "name": "pnijjar",
+        "email": "pnijjar@vps03.kwlug.org",
+        "first_commit_date": "2022-08-30T08:08:47+00:00",
+        "last_commit_date": "2022-12-07T08:16:08+00:00",
+        "duration_days": 99,
+        "total_commits": 260,
+        "active_weeks": 13,
+        "total_weeks_span": 14,
+        "activity_ratio": 0.9286,
+        "status": "departed",
+        "departed_weeks_ago": 182,
+        "avg_commits_per_active_week": 20.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "KristinaTaylor",
+        "login": "KristinaTaylor",
+        "name": "Kristina Taylor",
+        "email": "KristinaTaylor@users.noreply.github.com",
+        "first_commit_date": "2018-03-28T23:45:51+00:00",
+        "last_commit_date": "2019-10-09T02:15:00+00:00",
+        "duration_days": 559,
+        "total_commits": 136,
+        "active_weeks": 21,
+        "total_weeks_span": 79,
+        "activity_ratio": 0.2658,
+        "status": "departed",
+        "departed_weeks_ago": 347,
+        "avg_commits_per_active_week": 6.48
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "robo-pusher@example.com",
+        "login": null,
+        "name": "WRV Robo-updater",
+        "email": "robo-pusher@example.com",
+        "first_commit_date": "2018-08-15T06:11:15+00:00",
+        "last_commit_date": "2018-12-07T07:37:03+00:00",
+        "duration_days": 114,
+        "total_commits": 122,
+        "active_weeks": 17,
+        "total_weeks_span": 16,
+        "activity_ratio": 1.0625,
+        "status": "departed",
+        "departed_weeks_ago": 390,
+        "avg_commits_per_active_week": 7.18
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "wrv@example.com",
+        "login": null,
+        "name": "WRV Auto-committer",
+        "email": "wrv@example.com",
+        "first_commit_date": "2019-09-23T05:20:30+00:00",
+        "last_commit_date": "2019-11-11T05:01:02+00:00",
+        "duration_days": 48,
+        "total_commits": 104,
+        "active_weeks": 8,
+        "total_weeks_span": 6,
+        "activity_ratio": 1.3333,
+        "status": "departed",
+        "departed_weeks_ago": 342,
+        "avg_commits_per_active_week": 13.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "sharon.peishan.kennedy@gmail.com",
+        "login": null,
+        "name": "Sharon",
+        "email": "sharon.peishan.kennedy@gmail.com",
+        "first_commit_date": "2018-08-09T00:09:38+00:00",
+        "last_commit_date": "2018-09-11T20:40:34+00:00",
+        "duration_days": 33,
+        "total_commits": 20,
+        "active_weeks": 4,
+        "total_weeks_span": 4,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 403,
+        "avg_commits_per_active_week": 5.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "qedi-r",
+        "login": "qedi-r",
+        "name": "qedi-r",
+        "email": "github@infornography.ca",
+        "first_commit_date": "2018-08-22T11:22:59+00:00",
+        "last_commit_date": "2018-10-15T10:01:40+00:00",
+        "duration_days": 53,
+        "total_commits": 17,
+        "active_weeks": 6,
+        "total_weeks_span": 7,
+        "activity_ratio": 0.8571,
+        "status": "departed",
+        "departed_weeks_ago": 398,
+        "avg_commits_per_active_week": 2.83
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "MadameDuJour",
+        "login": "MadameDuJour",
+        "name": "MadameDuJour",
+        "email": "41972799+MadameDuJour@users.noreply.github.com",
+        "first_commit_date": "2018-07-31T21:25:43+00:00",
+        "last_commit_date": "2018-09-06T00:08:55+00:00",
+        "duration_days": 36,
+        "total_commits": 14,
+        "active_weeks": 3,
+        "total_weeks_span": 5,
+        "activity_ratio": 0.6,
+        "status": "departed",
+        "departed_weeks_ago": 403,
+        "avg_commits_per_active_week": 4.67
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "sharon@nomadiclabs.ca",
+        "login": null,
+        "name": "Sharon Kennedy",
+        "email": "sharon@nomadiclabs.ca",
+        "first_commit_date": "2018-10-20T23:43:27+00:00",
+        "last_commit_date": "2018-11-03T00:49:02+00:00",
+        "duration_days": 13,
+        "total_commits": 13,
+        "active_weeks": 3,
+        "total_weeks_span": 1,
+        "activity_ratio": 3.0,
+        "status": "departed",
+        "departed_weeks_ago": 395,
+        "avg_commits_per_active_week": 4.33
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "Westacular",
+        "login": "Westacular",
+        "name": "Wes Campaigne",
+        "email": "wes@tulip.io",
+        "first_commit_date": "2018-05-09T22:43:16+00:00",
+        "last_commit_date": "2018-06-06T22:42:04+00:00",
+        "duration_days": 27,
+        "total_commits": 13,
+        "active_weeks": 2,
+        "total_weeks_span": 3,
+        "activity_ratio": 0.6667,
+        "status": "departed",
+        "departed_weeks_ago": 416,
+        "avg_commits_per_active_week": 6.5
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "acant",
+        "login": "acant",
+        "name": "Andrew Sullivan Cant",
+        "email": "mail@andrewsullivancant.ca",
+        "first_commit_date": "2018-08-09T00:02:53+00:00",
+        "last_commit_date": "2025-10-15T23:52:47+00:00",
+        "duration_days": 2624,
+        "total_commits": 11,
+        "active_weeks": 5,
+        "total_weeks_span": 374,
+        "activity_ratio": 0.0134,
+        "status": "departed",
+        "departed_weeks_ago": 32,
+        "avg_commits_per_active_week": 2.2
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "nifeoluyemi",
+        "login": "nifeoluyemi",
+        "name": "Nifemi Oluyemi",
+        "email": "nifemioluyemi@yahoo.com",
+        "first_commit_date": "2018-10-08T03:44:43+00:00",
+        "last_commit_date": "2018-10-21T03:39:33+00:00",
+        "duration_days": 12,
+        "total_commits": 7,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 397,
+        "avg_commits_per_active_week": 3.5
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "kingsc850@gmail.com",
+        "login": null,
+        "name": "Scott King",
+        "email": "kingsc850@gmail.com",
+        "first_commit_date": "2019-10-01T17:14:52+00:00",
+        "last_commit_date": "2019-10-03T04:57:21+00:00",
+        "duration_days": 1,
+        "total_commits": 5,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 347,
+        "avg_commits_per_active_week": 5.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "rutherfh@gmail.com",
+        "login": null,
+        "name": "Hayley Rutherford",
+        "email": "rutherfh@gmail.com",
+        "first_commit_date": "2018-08-22T23:31:12+00:00",
+        "last_commit_date": "2018-08-27T02:06:51+00:00",
+        "duration_days": 4,
+        "total_commits": 5,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 405,
+        "avg_commits_per_active_week": 2.5
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "s-kennedy",
+        "login": "s-kennedy",
+        "name": "Shay",
+        "email": "shay@dreamsidedigital.com",
+        "first_commit_date": "2025-10-20T03:35:21+00:00",
+        "last_commit_date": "2025-10-20T04:02:53+00:00",
+        "duration_days": 0,
+        "total_commits": 4,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 32,
+        "avg_commits_per_active_week": 4.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "BreakableHoodie",
+        "login": "BreakableHoodie",
+        "name": "Andre Levesque",
+        "email": "0sniffs_scaled@icloud.com",
+        "first_commit_date": "2025-10-14T01:47:19+00:00",
+        "last_commit_date": "2025-10-14T02:00:56+00:00",
+        "duration_days": 0,
+        "total_commits": 4,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 33,
+        "avg_commits_per_active_week": 4.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "skchuhan",
+        "login": "skchuhan",
+        "name": "sukhi chuhan",
+        "email": "sukhpreetchuhan@gmail.com",
+        "first_commit_date": "2019-10-17T00:11:05+00:00",
+        "last_commit_date": "2019-10-24T01:59:43+00:00",
+        "duration_days": 7,
+        "total_commits": 4,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 344,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "ToddTurnbull",
+        "login": "ToddTurnbull",
+        "name": "Todd Turnbull",
+        "email": "shingaling@gmail.com",
+        "first_commit_date": "2018-07-25T23:13:14+00:00",
+        "last_commit_date": "2019-10-02T23:02:37+00:00",
+        "duration_days": 433,
+        "total_commits": 4,
+        "active_weeks": 3,
+        "total_weeks_span": 61,
+        "activity_ratio": 0.0492,
+        "status": "departed",
+        "departed_weeks_ago": 347,
+        "avg_commits_per_active_week": 1.33
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "jeffwoods",
+        "login": "jeffwoods",
+        "name": "jeffwoods",
+        "email": "jeff@tulipretail.ca",
+        "first_commit_date": "2018-06-06T22:16:00+00:00",
+        "last_commit_date": "2018-06-06T22:42:28+00:00",
+        "duration_days": 0,
+        "total_commits": 3,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 416,
+        "avg_commits_per_active_week": 3.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "SyedAlbiz",
+        "login": "SyedAlbiz",
+        "name": "Syed Muhammad Hasan Albiz",
+        "email": "albizsyed@gmail.com",
+        "first_commit_date": "2026-02-05T00:50:26+00:00",
+        "last_commit_date": "2026-02-05T00:50:26+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 16,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "kristina@Kristinas-MacBook-Pro.local",
+        "login": null,
+        "name": "Kristina Taylor",
+        "email": "kristina@Kristinas-MacBook-Pro.local",
+        "first_commit_date": "2019-09-14T20:45:40+00:00",
+        "last_commit_date": "2019-09-14T20:45:40+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 350,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "mboos",
+        "login": "mboos",
+        "name": "Mike Boos",
+        "email": "mike.boos@gmail.com",
+        "first_commit_date": "2018-10-12T01:41:40+00:00",
+        "last_commit_date": "2018-10-12T01:41:40+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 398,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "hjroaf",
+        "login": "hjroaf",
+        "name": "Hayley Rutherford",
+        "email": "42351900+hjroaf@users.noreply.github.com",
+        "first_commit_date": "2018-10-10T01:35:37+00:00",
+        "last_commit_date": "2018-10-10T01:35:37+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 399,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "33005639+her0d0tus@users.noreply.github.com",
+        "login": null,
+        "name": "skoparde",
+        "email": "33005639+her0d0tus@users.noreply.github.com",
+        "first_commit_date": "2018-08-23T00:54:05+00:00",
+        "last_commit_date": "2018-08-23T00:54:05+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 405,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "linsean@manulife.com",
+        "login": null,
+        "name": "Sean Lin",
+        "email": "linsean@manulife.com",
+        "first_commit_date": "2018-07-25T22:57:50+00:00",
+        "last_commit_date": "2018-07-25T22:57:50+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 409,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+        "contributor_id": "KejoBuchanan",
+        "login": "KejoBuchanan",
+        "name": "Kejo Buchanan",
+        "email": "35035513+KejoBuchanan@users.noreply.github.com",
+        "first_commit_date": "2018-07-18T13:47:37+00:00",
+        "last_commit_date": "2018-07-18T13:47:37+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 411,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-07-09",
+        "commits": 81,
+        "lines_added": 706,
+        "lines_removed": 214
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-07-16",
+        "commits": 112,
+        "lines_added": 2350,
+        "lines_removed": 849
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-07-23",
+        "commits": 134,
+        "lines_added": 61229,
+        "lines_removed": 59909
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-07-30",
+        "commits": 129,
+        "lines_added": 1962,
+        "lines_removed": 726
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-08-06",
+        "commits": 84,
+        "lines_added": 1457,
+        "lines_removed": 318
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-08-13",
+        "commits": 33,
+        "lines_added": 337,
+        "lines_removed": 135
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-08-20",
+        "commits": 176,
+        "lines_added": 4857,
+        "lines_removed": 1193
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-08-27",
+        "commits": 32,
+        "lines_added": 436,
+        "lines_removed": 352
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-09-03",
+        "commits": 31,
+        "lines_added": 2429,
+        "lines_removed": 1156
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-09-10",
+        "commits": 32,
+        "lines_added": 460,
+        "lines_removed": 362
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-09-17",
+        "commits": 42,
+        "lines_added": 408,
+        "lines_removed": 262
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-09-24",
+        "commits": 41,
+        "lines_added": 163,
+        "lines_removed": 106
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-10-01",
+        "commits": 42,
+        "lines_added": 534,
+        "lines_removed": 90
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-10-08",
+        "commits": 26,
+        "lines_added": 347,
+        "lines_removed": 206
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-10-15",
+        "commits": 24,
+        "lines_added": 49,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-10-22",
+        "commits": 20,
+        "lines_added": 1152,
+        "lines_removed": 867
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-10-29",
+        "commits": 35,
+        "lines_added": 257,
+        "lines_removed": 95
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-11-05",
+        "commits": 5,
+        "lines_added": 11,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-11-12",
+        "commits": 4,
+        "lines_added": 5,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2018-11-19",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2019-06-10",
+        "commits": 10,
+        "lines_added": 474,
+        "lines_removed": 478
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2019-09-16",
+        "commits": 33,
+        "lines_added": 13203,
+        "lines_removed": 108960
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2019-09-23",
+        "commits": 21,
+        "lines_added": 543,
+        "lines_removed": 1072
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2019-09-30",
+        "commits": 13,
+        "lines_added": 332,
+        "lines_removed": 45
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2019-10-07",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-08-01",
+        "commits": 2,
+        "lines_added": 185,
+        "lines_removed": 169
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-08-08",
+        "commits": 3,
+        "lines_added": 64470,
+        "lines_removed": 17813
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-08-15",
+        "commits": 13,
+        "lines_added": 431,
+        "lines_removed": 198
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-08-22",
+        "commits": 11,
+        "lines_added": 1701,
+        "lines_removed": 212
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-08-29",
+        "commits": 12,
+        "lines_added": 191,
+        "lines_removed": 100
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-09-05",
+        "commits": 18,
+        "lines_added": 188,
+        "lines_removed": 199
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-09-12",
+        "commits": 25,
+        "lines_added": 1099,
+        "lines_removed": 957
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-09-19",
+        "commits": 10,
+        "lines_added": 164,
+        "lines_removed": 79
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-09-26",
+        "commits": 14,
+        "lines_added": 55,
+        "lines_removed": 58
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-10-03",
+        "commits": 10,
+        "lines_added": 304,
+        "lines_removed": 114
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-10-10",
+        "commits": 6,
+        "lines_added": 185,
+        "lines_removed": 38
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-10-17",
+        "commits": 8,
+        "lines_added": 8083,
+        "lines_removed": 35
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-10-24",
+        "commits": 6,
+        "lines_added": 192,
+        "lines_removed": 167
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-10-31",
+        "commits": 1,
+        "lines_added": 7,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2022-12-05",
+        "commits": 1,
+        "lines_added": 7,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2023-01-02",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2025-12-29",
+        "commits": 8,
+        "lines_added": 553,
+        "lines_removed": 144
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2026-01-05",
+        "commits": 20,
+        "lines_added": 240,
+        "lines_removed": 127
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2026-01-12",
+        "commits": 8,
+        "lines_added": 98,
+        "lines_removed": 21
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2026-01-19",
+        "commits": 4,
+        "lines_added": 757,
+        "lines_removed": 746
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2026-01-26",
+        "commits": 11,
+        "lines_added": 370,
+        "lines_removed": 144
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2026-02-02",
+        "commits": 9,
+        "lines_added": 71606,
+        "lines_removed": 60328
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2026-05-25",
+        "commits": 21,
+        "lines_added": 2011,
+        "lines_removed": 14640
+      },
+      {
+        "contributor_id": "pnijjar",
+        "week_start": "2026-06-01",
+        "commits": 3,
+        "lines_added": 17,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "SyedAlbiz",
+        "week_start": "2026-02-02",
+        "commits": 1,
+        "lines_added": 89149,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "s-kennedy",
+        "week_start": "2025-10-20",
+        "commits": 4,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "acant",
+        "week_start": "2018-08-06",
+        "commits": 4,
+        "lines_added": 7,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "acant",
+        "week_start": "2019-09-16",
+        "commits": 4,
+        "lines_added": 6047,
+        "lines_removed": 52796
+      },
+      {
+        "contributor_id": "acant",
+        "week_start": "2019-09-30",
+        "commits": 1,
+        "lines_added": 27,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "acant",
+        "week_start": "2025-02-10",
+        "commits": 1,
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "acant",
+        "week_start": "2025-10-13",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "BreakableHoodie",
+        "week_start": "2025-10-13",
+        "commits": 4,
+        "lines_added": 184,
+        "lines_removed": 100
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-08-29",
+        "commits": 16,
+        "lines_added": 64,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-09-05",
+        "commits": 11,
+        "lines_added": 42,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-09-12",
+        "commits": 32,
+        "lines_added": 883,
+        "lines_removed": 854
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-09-19",
+        "commits": 35,
+        "lines_added": 204,
+        "lines_removed": 74
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-09-26",
+        "commits": 32,
+        "lines_added": 190,
+        "lines_removed": 55
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-10-03",
+        "commits": 36,
+        "lines_added": 240,
+        "lines_removed": 133
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-10-10",
+        "commits": 30,
+        "lines_added": 93,
+        "lines_removed": 22
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-10-17",
+        "commits": 31,
+        "lines_added": 154,
+        "lines_removed": 24
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-10-24",
+        "commits": 26,
+        "lines_added": 1002,
+        "lines_removed": 940
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-10-31",
+        "commits": 2,
+        "lines_added": 13,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-11-07",
+        "commits": 3,
+        "lines_added": 96,
+        "lines_removed": 94
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-11-28",
+        "commits": 5,
+        "lines_added": 1,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "pnijjar@vps03.kwlug.org",
+        "week_start": "2022-12-05",
+        "commits": 1,
+        "lines_added": 22,
+        "lines_removed": 22
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-09-23",
+        "commits": 21,
+        "lines_added": 337,
+        "lines_removed": 109
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-09-30",
+        "commits": 20,
+        "lines_added": 141,
+        "lines_removed": 130
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-10-07",
+        "commits": 20,
+        "lines_added": 24,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-10-14",
+        "commits": 17,
+        "lines_added": 37,
+        "lines_removed": 28
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-10-21",
+        "commits": 11,
+        "lines_added": 10,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-10-28",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-11-04",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "wrv@example.com",
+        "week_start": "2019-11-11",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "skchuhan",
+        "week_start": "2019-10-14",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "skchuhan",
+        "week_start": "2019-10-21",
+        "commits": 3,
+        "lines_added": 8,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-03-26",
+        "commits": 1,
+        "lines_added": 22,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-04-09",
+        "commits": 1,
+        "lines_added": 46773,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-04-23",
+        "commits": 8,
+        "lines_added": 16,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-05-07",
+        "commits": 8,
+        "lines_added": 12740,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-05-21",
+        "commits": 2,
+        "lines_added": 45,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-07-16",
+        "commits": 12,
+        "lines_added": 114,
+        "lines_removed": 98
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-07-23",
+        "commits": 10,
+        "lines_added": 466,
+        "lines_removed": 432
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-07-30",
+        "commits": 8,
+        "lines_added": 47,
+        "lines_removed": 44
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-08-06",
+        "commits": 7,
+        "lines_added": 22,
+        "lines_removed": 23
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-08-13",
+        "commits": 5,
+        "lines_added": 45,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-08-20",
+        "commits": 7,
+        "lines_added": 50,
+        "lines_removed": 52
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-08-27",
+        "commits": 5,
+        "lines_added": 7,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-09-03",
+        "commits": 6,
+        "lines_added": 11,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-09-10",
+        "commits": 17,
+        "lines_added": 61,
+        "lines_removed": 51
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-09-17",
+        "commits": 15,
+        "lines_added": 36,
+        "lines_removed": 51
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-09-24",
+        "commits": 8,
+        "lines_added": 11,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-10-01",
+        "commits": 5,
+        "lines_added": 6,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-10-08",
+        "commits": 3,
+        "lines_added": 11,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-10-15",
+        "commits": 2,
+        "lines_added": 4,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2018-10-22",
+        "commits": 5,
+        "lines_added": 28,
+        "lines_removed": 28
+      },
+      {
+        "contributor_id": "KristinaTaylor",
+        "week_start": "2019-10-07",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "kingsc850@gmail.com",
+        "week_start": "2019-09-30",
+        "commits": 5,
+        "lines_added": 417,
+        "lines_removed": 87
+      },
+      {
+        "contributor_id": "ToddTurnbull",
+        "week_start": "2018-07-23",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ToddTurnbull",
+        "week_start": "2018-10-01",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "ToddTurnbull",
+        "week_start": "2019-09-30",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "kristina@Kristinas-MacBook-Pro.local",
+        "week_start": "2019-09-09",
+        "commits": 1,
+        "lines_added": 33,
+        "lines_removed": 297
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-08-13",
+        "commits": 11,
+        "lines_added": 31,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-08-20",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-08-27",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-09-03",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-09-10",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-09-17",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-09-24",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-10-01",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-10-08",
+        "commits": 8,
+        "lines_added": 6,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-10-15",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-10-22",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-10-29",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-11-05",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-11-12",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-11-19",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-11-26",
+        "commits": 7,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "robo-pusher@example.com",
+        "week_start": "2018-12-03",
+        "commits": 5,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "sharon@nomadiclabs.ca",
+        "week_start": "2018-10-15",
+        "commits": 9,
+        "lines_added": 813,
+        "lines_removed": 560
+      },
+      {
+        "contributor_id": "sharon@nomadiclabs.ca",
+        "week_start": "2018-10-22",
+        "commits": 2,
+        "lines_added": 268,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "sharon@nomadiclabs.ca",
+        "week_start": "2018-10-29",
+        "commits": 2,
+        "lines_added": 222,
+        "lines_removed": 222
+      },
+      {
+        "contributor_id": "nifeoluyemi",
+        "week_start": "2018-10-08",
+        "commits": 2,
+        "lines_added": 48,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "nifeoluyemi",
+        "week_start": "2018-10-15",
+        "commits": 5,
+        "lines_added": 655,
+        "lines_removed": 209
+      },
+      {
+        "contributor_id": "qedi-r",
+        "week_start": "2018-08-20",
+        "commits": 3,
+        "lines_added": 219,
+        "lines_removed": 35
+      },
+      {
+        "contributor_id": "qedi-r",
+        "week_start": "2018-08-27",
+        "commits": 2,
+        "lines_added": 36,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "qedi-r",
+        "week_start": "2018-09-24",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 10
+      },
+      {
+        "contributor_id": "qedi-r",
+        "week_start": "2018-10-01",
+        "commits": 4,
+        "lines_added": 87,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "qedi-r",
+        "week_start": "2018-10-08",
+        "commits": 6,
+        "lines_added": 167,
+        "lines_removed": 112
+      },
+      {
+        "contributor_id": "qedi-r",
+        "week_start": "2018-10-15",
+        "commits": 1,
+        "lines_added": 5,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "mboos",
+        "week_start": "2018-10-08",
+        "commits": 1,
+        "lines_added": 51,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "hjroaf",
+        "week_start": "2018-10-08",
+        "commits": 1,
+        "lines_added": 57,
+        "lines_removed": 55
+      },
+      {
+        "contributor_id": "sharon.peishan.kennedy@gmail.com",
+        "week_start": "2018-08-06",
+        "commits": 1,
+        "lines_added": 272,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "sharon.peishan.kennedy@gmail.com",
+        "week_start": "2018-08-20",
+        "commits": 2,
+        "lines_added": 1195,
+        "lines_removed": 298
+      },
+      {
+        "contributor_id": "sharon.peishan.kennedy@gmail.com",
+        "week_start": "2018-09-03",
+        "commits": 15,
+        "lines_added": 2966,
+        "lines_removed": 1443
+      },
+      {
+        "contributor_id": "sharon.peishan.kennedy@gmail.com",
+        "week_start": "2018-09-10",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "MadameDuJour",
+        "week_start": "2018-07-30",
+        "commits": 4,
+        "lines_added": 34,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "MadameDuJour",
+        "week_start": "2018-08-06",
+        "commits": 8,
+        "lines_added": 13,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "MadameDuJour",
+        "week_start": "2018-09-03",
+        "commits": 2,
+        "lines_added": 20,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "rutherfh@gmail.com",
+        "week_start": "2018-08-20",
+        "commits": 4,
+        "lines_added": 560,
+        "lines_removed": 361
+      },
+      {
+        "contributor_id": "rutherfh@gmail.com",
+        "week_start": "2018-08-27",
+        "commits": 1,
+        "lines_added": 65,
+        "lines_removed": 64
+      },
+      {
+        "contributor_id": "33005639+her0d0tus@users.noreply.github.com",
+        "week_start": "2018-08-20",
+        "commits": 1,
+        "lines_added": 16,
+        "lines_removed": 16
+      },
+      {
+        "contributor_id": "linsean@manulife.com",
+        "week_start": "2018-07-23",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "KejoBuchanan",
+        "week_start": "2018-07-16",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "jeffwoods",
+        "week_start": "2018-06-04",
+        "commits": 3,
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "Westacular",
+        "week_start": "2018-05-07",
+        "commits": 12,
+        "lines_added": 105739,
+        "lines_removed": 93953
+      },
+      {
+        "contributor_id": "Westacular",
+        "week_start": "2018-06-04",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      }
+    ],
+    "total_weeks": 68,
+    "total_unique_contributors": 26,
+    "new_contributor_rate_per_month": 0.26,
+    "total_commits_scanned": 2142,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "CivicTechWR/WRVotesPlaceholder",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 2142,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}

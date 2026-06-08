@@ -1,4 +1,5 @@
 import logging
+import re
 import time
 from collections.abc import Iterator
 from dataclasses import dataclass
@@ -58,6 +59,7 @@ class CommitRecord:
     author_email: str
     author_name: str
     author_login: str | None
+    message: str = ""
 
 
 class GitHubClient:
@@ -227,11 +229,47 @@ class GitHubClient:
         logger.warning("Workflows for %s returned %d", slug, resp.status_code)
         return []
 
+    def _request_with_retry(
+        self, method: str, url: str, params: dict | None = None, max_retries: int = 3
+    ) -> httpx.Response | None:
+        """Issue an httpx request, retrying transient failures with backoff.
+
+        Mirrors the retry policy of ``execute_graphql``: retries on transport
+        errors and HTTP 429/500/502/503/504. Returns the response (which may be
+        a non-transient non-200 such as 404 — callers decide), or None if all
+        attempts fail. Without this, a transient blip during the detection scan
+        silently became a false-negative ("not detected").
+        """
+        for attempt in range(1, max_retries + 1):
+            self._rate_limiter.wait_if_needed()
+            try:
+                resp = self._httpx.request(method, url, params=params)
+            except httpx.HTTPError as e:
+                if attempt < max_retries:
+                    delay = min(2 ** (attempt - 1) * self._retry_delay, 30.0)
+                    logger.warning(
+                        "%s %s transport error (attempt %d/%d): %s — retrying in %.1fs",
+                        method, url, attempt, max_retries, e, delay,
+                    )
+                    time.sleep(delay)
+                    continue
+                logger.warning("%s %s transport error after %d attempts: %s", method, url, attempt, e)
+                return None
+            if resp.status_code in (429, 500, 502, 503, 504) and attempt < max_retries:
+                delay = min(2 ** (attempt - 1) * self._retry_delay, 30.0)
+                logger.warning(
+                    "%s %s HTTP %d (attempt %d/%d) — retrying in %.1fs",
+                    method, url, resp.status_code, attempt, max_retries, delay,
+                )
+                time.sleep(delay)
+                continue
+            return resp
+        return None
+
     def get_repo_contents_names(self, slug: str, path: str = "") -> list[str]:
         """List file/directory names at a path in the repo."""
-        self._rate_limiter.wait_if_needed()
-        resp = self._httpx.get(f"/repos/{slug}/contents/{path}")
-        if resp.status_code == 200:
+        resp = self._request_with_retry("GET", f"/repos/{slug}/contents/{path}")
+        if resp is not None and resp.status_code == 200:
             data = resp.json()
             if isinstance(data, list):
                 return [item["name"] for item in data]
@@ -239,9 +277,8 @@ class GitHubClient:
 
     def get_file_content(self, slug: str, path: str) -> str | None:
         """Get decoded file content from the repository."""
-        self._rate_limiter.wait_if_needed()
-        resp = self._httpx.get(f"/repos/{slug}/contents/{path}")
-        if resp.status_code == 200:
+        resp = self._request_with_retry("GET", f"/repos/{slug}/contents/{path}")
+        if resp is not None and resp.status_code == 200:
             data = resp.json()
             if data.get("encoding") == "base64":
                 import base64
@@ -252,9 +289,8 @@ class GitHubClient:
 
     def file_exists(self, slug: str, path: str) -> bool:
         """Check if a file exists in the repo (HEAD request)."""
-        self._rate_limiter.wait_if_needed()
-        resp = self._httpx.head(f"/repos/{slug}/contents/{path}")
-        return resp.status_code == 200
+        resp = self._request_with_retry("HEAD", f"/repos/{slug}/contents/{path}")
+        return resp is not None and resp.status_code == 200
 
     def get_user_info(self, login: str) -> dict:
         """Get user profile info with caching."""
@@ -309,16 +345,150 @@ class GitHubClient:
 
         Uses: GET /repos/{owner}/{repo}/commits?path={path}&per_page=1
         """
-        self._rate_limiter.wait_if_needed()
-        resp = self._httpx.get(
-            f"/repos/{slug}/commits",
-            params={"path": path, "per_page": 1},
+        resp = self._request_with_retry(
+            "GET", f"/repos/{slug}/commits", params={"path": path, "per_page": 1}
         )
-        if resp.status_code == 200:
+        if resp is not None and resp.status_code == 200:
             data = resp.json()
             if data and len(data) > 0:
                 return data[0].get("commit", {}).get("author", {}).get("date")
         return None
+
+    def get_first_commit_date_for_path(self, slug: str, path: str) -> str | None:
+        """Get ISO date string of the *oldest* commit touching a file path.
+
+        Commits come back newest-first, so the oldest commit is on the last
+        page. We fetch one commit per page and follow the ``Link: rel="last"``
+        header to jump straight to it — used to date when a file (e.g.
+        ``CLAUDE.md``) was first introduced.
+        """
+        resp = self._request_with_retry(
+            "GET", f"/repos/{slug}/commits", params={"path": path, "per_page": 1}
+        )
+        if resp is None or resp.status_code != 200:
+            return None
+        data = resp.json()
+        if not data:
+            return None
+
+        link = resp.headers.get("Link", "")
+        has_more_pages = 'rel="next"' in link or 'rel="last"' in link
+        if not has_more_pages:
+            # Single page: the only commit is also the oldest one.
+            return data[0].get("commit", {}).get("author", {}).get("date")
+
+        # Multiple pages exist; the oldest commit is on the last page. If we
+        # can't resolve and fetch that page, return None rather than the
+        # page-1 (newest) commit, which would be a wrong "first seen" date.
+        last_page = self._parse_last_page(link)
+        if not last_page or last_page <= 1:
+            return None
+        resp = self._request_with_retry(
+            "GET",
+            f"/repos/{slug}/commits",
+            params={"path": path, "per_page": 1, "page": last_page},
+        )
+        if resp is None or resp.status_code != 200:
+            return None
+        data = resp.json()
+        if not data:
+            return None
+        return data[0].get("commit", {}).get("author", {}).get("date")
+
+    @staticmethod
+    def _parse_last_page(link_header: str) -> int | None:
+        """Extract the page number of the rel="last" URL from a Link header."""
+        for part in link_header.split(","):
+            if 'rel="last"' in part:
+                match = re.search(r"[?&]page=(\d+)", part)
+                if match:
+                    return int(match.group(1))
+        return None
+
+    def iter_recent_prs_with_meta(
+        self, slug: str, limit: int = 200
+    ) -> list[dict]:
+        """Return up to *limit* most-recent PRs with author, body and the logins
+        of their comment/review authors — for AI body-marker and review-bot
+        detection. One GraphQL call per 50 PRs.
+
+        Each dict: ``{number, created_at, author, body, participant_logins}``.
+        """
+        try:
+            owner, name = slug.split("/", 1)
+        except ValueError:
+            return []
+
+        query = """
+        query ($owner: String!, $name: String!, $cursor: String) {
+          repository(owner: $owner, name: $name) {
+            pullRequests(first: 50, after: $cursor,
+                         orderBy: {field: CREATED_AT, direction: DESC}) {
+              pageInfo { hasNextPage endCursor }
+              nodes {
+                number
+                createdAt
+                author { login }
+                bodyText
+                comments(first: 20) { nodes { author { login } } }
+                reviews(first: 20) { nodes { author { login } } }
+              }
+            }
+          }
+        }
+        """
+        results: list[dict] = []
+        cursor: str | None = None
+        truncated = False
+        while len(results) < limit:
+            data = self.execute_graphql(
+                query, {"owner": owner, "name": name, "cursor": cursor}
+            )
+            if data is None:
+                break
+            repo_data = data.get("repository") or {}
+            prs = repo_data.get("pullRequests") or {}
+            nodes = prs.get("nodes") or []
+            page_info = prs.get("pageInfo") or {}
+            hit_limit = False
+            for idx, node in enumerate(nodes):
+                if not node:
+                    continue
+                participants: list[str] = []
+                for section in ("comments", "reviews"):
+                    for sub in ((node.get(section) or {}).get("nodes") or []):
+                        login = ((sub or {}).get("author") or {}).get("login")
+                        if login:
+                            participants.append(login)
+                results.append(
+                    {
+                        "number": node.get("number"),
+                        "created_at": node.get("createdAt"),
+                        "author": ((node.get("author") or {}).get("login")),
+                        "body": node.get("bodyText") or "",
+                        "participant_logins": participants,
+                    }
+                )
+                if len(results) >= limit:
+                    # More PRs exist if there are unprocessed nodes in this page
+                    # or further pages — i.e. we are leaving data unscanned.
+                    truncated = idx < len(nodes) - 1 or bool(page_info.get("hasNextPage"))
+                    hit_limit = True
+                    break
+            if hit_limit:
+                break
+            if not page_info.get("hasNextPage"):
+                break
+            cursor = page_info.get("endCursor")
+            if not cursor:
+                break
+        if truncated:
+            logger.info(
+                "PR meta scan for %s capped at %d most-recent PRs — older PR "
+                "bodies / review-bot comments are not scanned",
+                slug, limit,
+            )
+        return results
 
     def execute_graphql(
         self,
@@ -402,6 +572,7 @@ class GitHubClient:
                       additions
                       deletions
                       committedDate
+                      message
                       author {
                         email
                         name
@@ -457,6 +628,7 @@ class GitHubClient:
                     author_email=author.get("email") or "unknown",
                     author_name=author.get("name") or "",
                     author_login=user.get("login"),
+                    message=node.get("message") or "",
                 )
             page_info = history.get("pageInfo") or {}
             if not page_info.get("hasNextPage"):

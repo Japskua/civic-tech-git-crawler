@@ -1,0 +1,1210 @@
+{
+  "repo_metrics": {
+    "full_name": "oklabflensburg/open-data-api",
+    "name": "open-data-api",
+    "description": "Open Data Schnittstelle zur freien Nutzung von Rohdaten in einem maschinenlesbarem json Format mit aggregierten Datens\u00e4tzen.",
+    "num_developers": 4,
+    "total_commits": 272,
+    "languages": {
+      "Python": 358030,
+      "Jinja": 37301,
+      "Shell": 1747
+    },
+    "primary_language": "Python",
+    "first_commit_date": "2023-08-30T12:33:36+00:00",
+    "last_commit_date": "2026-04-12T16:56:24+00:00",
+    "license_spdx": "CC0-1.0",
+    "license_name": "Creative Commons Zero v1.0 Universal",
+    "is_osi_approved": false,
+    "topics": [
+      "datascience",
+      "geography",
+      "opendata",
+      "opendata-api",
+      "hacktoberfest",
+      "fossgis",
+      "geospatial",
+      "open-source",
+      "opengovernmentdata",
+      "geojson-data",
+      "json-api"
+    ],
+    "has_contributing": true,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 62,
+    "stars": 6,
+    "watchers": 4,
+    "forks": 7,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Run codeql",
+      "API Schemathesis tests"
+    ],
+    "deployments_count": 0,
+    "created_at": "2023-08-30T12:33:36+00:00",
+    "updated_at": "2026-04-12T16:56:33+00:00",
+    "pushed_at": "2026-04-12T16:56:29+00:00",
+    "size_kb": 3722
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "p3t3r67x0",
+      "name": "Aurelius Wendelken",
+      "num_commits": 261,
+      "additions": 89654,
+      "deletions": 9521,
+      "avg_additions_per_commit": 343.5,
+      "avg_deletions_per_commit": 36.48,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "sonnenteich",
+      "name": "sonnenteich",
+      "num_commits": 1,
+      "additions": 64,
+      "deletions": 2,
+      "avg_additions_per_commit": 64.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "sonnenteich",
+      "name": "sonnenteich",
+      "num_commits": 4,
+      "additions": 77,
+      "deletions": 15,
+      "avg_additions_per_commit": 19.25,
+      "avg_deletions_per_commit": 3.75,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "roaldchristesen",
+      "name": "Roald Christesen",
+      "num_commits": 1,
+      "additions": 148,
+      "deletions": 0,
+      "avg_additions_per_commit": 148.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "roaldchristesen",
+      "name": "Roald",
+      "num_commits": 2,
+      "additions": 99,
+      "deletions": 1,
+      "avg_additions_per_commit": 49.5,
+      "avg_deletions_per_commit": 0.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "Philzen",
+      "name": "Philzen",
+      "num_commits": 2,
+      "additions": 2,
+      "deletions": 2,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "p3t3r67x0",
+      "name": "Open Data Coder",
+      "num_commits": 1,
+      "additions": 123,
+      "deletions": 0,
+      "avg_additions_per_commit": 123.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "oklabflensburg/open-data-api",
+    "pr_count_total": 4,
+    "pr_count_merged": 3,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 1,
+    "prs": [
+      {
+        "number": 1,
+        "title": "add CONTRIBUTING.md",
+        "state": "closed",
+        "author_login": "p3t3r67x0",
+        "created_at": "2023-10-05T11:24:53+00:00",
+        "merged_at": "2023-10-06T11:37:11+00:00",
+        "closed_at": "2023-10-06T11:37:11+00:00"
+      },
+      {
+        "number": 2,
+        "title": "Improve API summary description",
+        "state": "closed",
+        "author_login": "Philzen",
+        "created_at": "2025-05-14T17:52:37+00:00",
+        "merged_at": "2025-05-15T07:52:46+00:00",
+        "closed_at": "2025-05-15T07:52:46+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Add street tree",
+        "state": "closed",
+        "author_login": "roaldchristesen",
+        "created_at": "2025-07-02T17:31:46+00:00",
+        "merged_at": null,
+        "closed_at": "2025-07-08T19:18:46+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Add tree species",
+        "state": "closed",
+        "author_login": "sonnenteich",
+        "created_at": "2025-07-08T19:19:38+00:00",
+        "merged_at": "2025-07-08T19:20:06+00:00",
+        "closed_at": "2025-07-08T19:20:06+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "oklabflensburg/open-data-api",
+    "weekly_commits": [
+      {
+        "week_start": "2023-08-28",
+        "commits": 21
+      },
+      {
+        "week_start": "2023-09-04",
+        "commits": 5
+      },
+      {
+        "week_start": "2023-09-11",
+        "commits": 18
+      },
+      {
+        "week_start": "2023-09-25",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-10-02",
+        "commits": 3
+      },
+      {
+        "week_start": "2023-10-09",
+        "commits": 4
+      },
+      {
+        "week_start": "2023-10-16",
+        "commits": 9
+      },
+      {
+        "week_start": "2024-02-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-03-25",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-04-01",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-05-06",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-05-13",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-07-15",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-09-09",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-10-07",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-10-14",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-10-28",
+        "commits": 4
+      },
+      {
+        "week_start": "2024-11-04",
+        "commits": 6
+      },
+      {
+        "week_start": "2024-11-11",
+        "commits": 24
+      },
+      {
+        "week_start": "2024-11-18",
+        "commits": 17
+      },
+      {
+        "week_start": "2024-11-25",
+        "commits": 4
+      },
+      {
+        "week_start": "2024-12-02",
+        "commits": 14
+      },
+      {
+        "week_start": "2024-12-09",
+        "commits": 13
+      },
+      {
+        "week_start": "2024-12-16",
+        "commits": 4
+      },
+      {
+        "week_start": "2024-12-23",
+        "commits": 14
+      },
+      {
+        "week_start": "2025-01-13",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-01-27",
+        "commits": 5
+      },
+      {
+        "week_start": "2025-02-03",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-02-10",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-02-17",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-03-17",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-03-31",
+        "commits": 30
+      },
+      {
+        "week_start": "2025-04-07",
+        "commits": 23
+      },
+      {
+        "week_start": "2025-04-14",
+        "commits": 10
+      },
+      {
+        "week_start": "2025-05-12",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-05-19",
+        "commits": 3
+      },
+      {
+        "week_start": "2025-05-26",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-06-16",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-06-30",
+        "commits": 4
+      },
+      {
+        "week_start": "2025-07-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-10-13",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-04-06",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": 0.75,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 272,
+      "pull_requests": 4,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "oklabflensburg": 2,
+      "Unknown": 5
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 7,
+    "burstiness_cv": 1.15,
+    "burstiness_mean": 6.48,
+    "burstiness_std": 7.44,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": null,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 0,
+    "time_to_first_response_prs_sample_size": 4,
+    "readme_last_updated": "2025-01-19T21:22:15+00:00",
+    "contributing_last_updated": "2024-12-09T15:48:24+00:00",
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": 13.2,
+    "avg_review_comments_per_pr": 0.0,
+    "herfindahl_hirschman_index": 9291.7,
+    "hhi_no_bots": 9419.5,
+    "hhi_known_orgs_only": 10000.0,
+    "unknown_org_contributor_count": 5,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 2,
+      "unknown": 5
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 2,
+    "core_periphery_ratio": 0.0,
+    "network_density": 1.0,
+    "avg_degree_centrality": 1.0,
+    "pr_review_edges": [
+      {
+        "author": "Philzen",
+        "reviewer": "roaldchristesen"
+      },
+      {
+        "author": "Philzen",
+        "reviewer": "roaldchristesen"
+      }
+    ]
+  },
+  "crawled_at": "2026-06-04T07:32:22.945428+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "Philzen",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-data-api",
+      "login": "roaldchristesen",
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "oklabflensburg/open-data-api",
+    "weekly_snapshots": [
+      {
+        "week_start": "2023-08-28",
+        "total_commits": 21,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 21,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-09-04",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 26,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-09-11",
+        "total_commits": 18,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 44,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-09-25",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 45,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-10-02",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 48,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-09",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 52,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-10-16",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 61,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-02-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 62,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-03-25",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 63,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-04-01",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 64,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-05-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 65,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-05-13",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 67,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-07-15",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 68,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-09-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 69,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-10-07",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 71,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-10-14",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 72,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-10-28",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 76,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-04",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 82,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-11",
+        "total_commits": 24,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 106,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-18",
+        "total_commits": 17,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 123,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-11-25",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 127,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-02",
+        "total_commits": 14,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 141,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-09",
+        "total_commits": 13,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 154,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-16",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 158,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2024-12-23",
+        "total_commits": 14,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 172,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-01-13",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 173,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-01-27",
+        "total_commits": 5,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 178,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-03",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 182,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-10",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 186,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-02-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 187,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-17",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 193,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-03-31",
+        "total_commits": 30,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 223,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-04-07",
+        "total_commits": 23,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 246,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-04-14",
+        "total_commits": 10,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 256,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2025-05-12",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 259,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 262,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-05-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 263,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-06-16",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 264,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2025-06-30",
+        "total_commits": 4,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 268,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-07-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 269,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2025-10-13",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 271,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 272,
+        "cumulative_contributors": 4
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "oklabflensburg/open-data-api",
+        "contributor_id": "p3t3r67x0",
+        "login": "p3t3r67x0",
+        "name": "Aurelius Wendelken",
+        "email": "webtobesocial@gmail.com",
+        "first_commit_date": "2023-08-30T12:33:36+00:00",
+        "last_commit_date": "2026-04-12T16:56:24+00:00",
+        "duration_days": 956,
+        "total_commits": 262,
+        "active_weeks": 38,
+        "total_weeks_span": 136,
+        "activity_ratio": 0.2794,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 6.89
+      },
+      {
+        "repo_full_name": "oklabflensburg/open-data-api",
+        "contributor_id": "sonnenteich",
+        "login": "sonnenteich",
+        "name": "sonnenteich",
+        "email": "59643794+sonnenteich@users.noreply.github.com",
+        "first_commit_date": "2025-07-03T20:19:59+00:00",
+        "last_commit_date": "2025-07-08T19:20:06+00:00",
+        "duration_days": 4,
+        "total_commits": 5,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 47,
+        "avg_commits_per_active_week": 2.5
+      },
+      {
+        "repo_full_name": "oklabflensburg/open-data-api",
+        "contributor_id": "roaldchristesen",
+        "login": "roaldchristesen",
+        "name": "Roald Christesen",
+        "email": "roald@grain.one",
+        "first_commit_date": "2023-10-06T11:37:11+00:00",
+        "last_commit_date": "2025-06-19T16:41:49+00:00",
+        "duration_days": 622,
+        "total_commits": 3,
+        "active_weeks": 3,
+        "total_weeks_span": 88,
+        "activity_ratio": 0.0341,
+        "status": "departed",
+        "departed_weeks_ago": 49,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "oklabflensburg/open-data-api",
+        "contributor_id": "Philzen",
+        "login": "Philzen",
+        "name": "Philzen",
+        "email": "philzen@riseup.net",
+        "first_commit_date": "2025-05-14T17:33:02+00:00",
+        "last_commit_date": "2025-05-14T17:52:43+00:00",
+        "duration_days": 0,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 55,
+        "avg_commits_per_active_week": 2.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-08-28",
+        "commits": 21,
+        "lines_added": 2214,
+        "lines_removed": 394
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-09-04",
+        "commits": 5,
+        "lines_added": 81,
+        "lines_removed": 32
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-09-11",
+        "commits": 18,
+        "lines_added": 782,
+        "lines_removed": 233
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-09-25",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-10-02",
+        "commits": 2,
+        "lines_added": 183,
+        "lines_removed": 59
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-10-09",
+        "commits": 4,
+        "lines_added": 278,
+        "lines_removed": 139
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-10-16",
+        "commits": 9,
+        "lines_added": 195,
+        "lines_removed": 103
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-02-12",
+        "commits": 1,
+        "lines_added": 32,
+        "lines_removed": 21
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-03-25",
+        "commits": 1,
+        "lines_added": 21,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-04-01",
+        "commits": 1,
+        "lines_added": 386,
+        "lines_removed": 20
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-05-06",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-05-13",
+        "commits": 2,
+        "lines_added": 40,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-07-15",
+        "commits": 1,
+        "lines_added": 164,
+        "lines_removed": 53
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-09-09",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-10-07",
+        "commits": 2,
+        "lines_added": 50,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-10-14",
+        "commits": 1,
+        "lines_added": 28,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-10-28",
+        "commits": 4,
+        "lines_added": 55,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-11-04",
+        "commits": 6,
+        "lines_added": 49,
+        "lines_removed": 54
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-11-11",
+        "commits": 24,
+        "lines_added": 1928,
+        "lines_removed": 365
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-11-18",
+        "commits": 17,
+        "lines_added": 3190,
+        "lines_removed": 772
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-11-25",
+        "commits": 4,
+        "lines_added": 1006,
+        "lines_removed": 78
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-12-02",
+        "commits": 14,
+        "lines_added": 244,
+        "lines_removed": 105
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-12-09",
+        "commits": 13,
+        "lines_added": 1445,
+        "lines_removed": 362
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-12-16",
+        "commits": 4,
+        "lines_added": 1014,
+        "lines_removed": 836
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-12-23",
+        "commits": 14,
+        "lines_added": 3225,
+        "lines_removed": 2755
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-01-13",
+        "commits": 1,
+        "lines_added": 170,
+        "lines_removed": 108
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-01-27",
+        "commits": 5,
+        "lines_added": 84,
+        "lines_removed": 17
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-02-03",
+        "commits": 4,
+        "lines_added": 88,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-02-10",
+        "commits": 4,
+        "lines_added": 58646,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-02-17",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 141
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-03-17",
+        "commits": 6,
+        "lines_added": 1840,
+        "lines_removed": 703
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-03-31",
+        "commits": 30,
+        "lines_added": 7438,
+        "lines_removed": 350
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-04-07",
+        "commits": 23,
+        "lines_added": 3249,
+        "lines_removed": 981
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-04-14",
+        "commits": 10,
+        "lines_added": 850,
+        "lines_removed": 447
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-05-19",
+        "commits": 3,
+        "lines_added": 300,
+        "lines_removed": 276
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-05-26",
+        "commits": 1,
+        "lines_added": 338,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-10-13",
+        "commits": 2,
+        "lines_added": 5,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2026-04-06",
+        "commits": 1,
+        "lines_added": 139,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "sonnenteich",
+        "week_start": "2025-06-30",
+        "commits": 4,
+        "lines_added": 77,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "sonnenteich",
+        "week_start": "2025-07-07",
+        "commits": 1,
+        "lines_added": 64,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "roaldchristesen",
+        "week_start": "2023-10-02",
+        "commits": 1,
+        "lines_added": 98,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "roaldchristesen",
+        "week_start": "2025-05-12",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "roaldchristesen",
+        "week_start": "2025-06-16",
+        "commits": 1,
+        "lines_added": 148,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "Philzen",
+        "week_start": "2025-05-12",
+        "commits": 2,
+        "lines_added": 2,
+        "lines_removed": 2
+      }
+    ],
+    "total_weeks": 42,
+    "total_unique_contributors": 4,
+    "new_contributor_rate_per_month": 0.13,
+    "total_commits_scanned": 272,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "oklabflensburg/open-data-api",
+    "issues": [],
+    "total_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "avg_comments_per_issue": null,
+    "median_time_to_close_days": null,
+    "unique_openers": 0,
+    "unique_closers": 0,
+    "top_openers": {},
+    "top_closers": {}
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "oklabflensburg/open-data-api",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 272,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}

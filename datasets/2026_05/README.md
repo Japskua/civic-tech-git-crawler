@@ -1,4 +1,4 @@
-# Civic-Tech Corpus — 2026-05 Refresh (n = 57)
+# Civic-Tech Corpus — 2026-05 Refresh (n = 55)
 
 This is the **canonical dataset** for the Civic Tech Git Crawler. It supersedes
 all earlier exploratory and example runs (the previous `output/` and
@@ -8,7 +8,7 @@ paper writeup — is generated against this folder.
 
 | | |
 |---|---|
-| **Repositories** | 57 |
+| **Repositories** | 55 |
 | **Organisations** | 24 |
 | **Regions** | North America (US + Canada), Africa, Japan, Taiwan, Europe (Germany, UK, Sweden) |
 | **Crawl tool** | `civic-tech-crawler` via `scripts/run_with_respawn.sh` |
@@ -44,13 +44,12 @@ Lab** cluster and the **Canadian CivicTechWR / Toronto** community).
 
 ---
 
-## The 57 repositories
+## The 55 repositories
 
 Grouped by community / region (same grouping as `config.yaml`):
 
-### Canada — Toronto / Waterloo Region (9)
+### Canada — Toronto / Waterloo Region (8)
 - `bikespace/bikespace`
-- `bikespace/parking-map-data`
 - `choruslabs/chorus`
 - `civic-dashboard/civic-dashboard-web`
 - `CivicTechWR/accessible-housing-portal`
@@ -122,10 +121,7 @@ Grouped by community / region (same grouping as `config.yaml`):
 - `mysociety/ceuk-marking`
 - `ton-An/station_reach`
 
-### NLP / open-knowledge (1, borderline)
-- `fvialibre/heseia-sentence-bias-dataset`
-
-> Section subtotals: 9 + 9 + 9 + 2 + 1 + 18 + 2 + 4 + 2 + 1 = **57**.
+> Section subtotals: 8 + 9 + 9 + 2 + 1 + 18 + 2 + 4 + 2 = **55**.
 
 ---
 
@@ -141,10 +137,6 @@ Grouped by community / region (same grouping as `config.yaml`):
   `VoteIT/voteit_frontend`, several single-digit-star OK Lab maps). Their metrics
   are valid but low-information; aggregate statistics should be reported with and
   without a minimum-activity threshold.
-- **Borderline civic.** `fvialibre/heseia-sentence-bias-dataset` is an NLP
-  sentence-bias dataset (AI-fairness research); it is retained as a borderline
-  member. Analyses sensitive to domain coherence may treat it as a separate
-  sub-cohort.
 - **Scale outliers.** `meshtastic/firmware` (~7.6k★), `iiab/iiab` (~1.9k★), and
   `meshtastic/Meshtastic-Android` (~1.6k★) dominate scale-sensitive aggregates;
   consider normalising or reporting medians.
@@ -177,7 +169,7 @@ The crawl is run through `scripts/run_with_respawn.sh`, which:
   (idempotent, resumable);
 - **auto-respawns** if the crawler is SIGKILLed (e.g. sandbox OOM, exit 137) or
   exits non-zero, sleeping 10 s between attempts;
-- exits only once all 57 per-repo caches exist **and** `full_results.json` has been
+- exits only once all 55 per-repo caches exist **and** `full_results.json` has been
   written.
 
 Inside the crawler, `retry_on_none` handles GitHub's HTTP 202 "computing"
@@ -205,7 +197,7 @@ exponential backoff.
 | `issue_records.csv` | Individual issue records (≤5,000/repo) |
 | `issue_summary.csv` | Aggregated issue analytics |
 | `cross_project_overlap.csv` | Contributors active in multiple crawled repos |
-| `full_results.json` | Complete nested data for all 57 repos |
+| `full_results.json` | Complete nested data for all 55 repos |
 | `<owner>_<repo>_data.json` | Per-repo cache (one per repository) |
 
 The three **bold** files are the weekly-activity outputs verified present for this run.
@@ -216,7 +208,7 @@ The three **bold** files are the weekly-activity outputs verified present for th
 - `figures/` — outputs of `scripts/paper_figures.py`
 - `weekly_activity_analysis/` — outputs of `scripts/weekly_activity_analysis.py`
 - `<owner>_<repo>/repo_results.md` — per-repo folders from `scripts/build_repo_folders.py`
-- `analysis_n57.md` — academic-style writeup of findings, methodology, threats to validity
+- `analysis_n55.md` — academic-style writeup of findings, methodology, threats to validity
 
 ---
 
@@ -227,7 +219,7 @@ The three **bold** files are the weekly-activity outputs verified present for th
 export GITHUB_TOKEN=$(gh auth token)
 
 # Full crawl with auto-respawn (resumable; output -> datasets/2026_05/)
-scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
+scripts/run_with_respawn.sh config.yaml datasets/2026_05 55
 
 # Then the analysis pass (see scripts/ and the "Generated after the crawl" list)
 ```
@@ -238,16 +230,16 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
 
 | | |
 |---|---|
-| **Repositories** | 57 |
+| **Repositories** | 55 |
 | **Organisations** | 24 |
-| **Primary languages** | 17 (C++, Dart, Dockerfile, Elixir, HCL, HTML, Java, JavaScript, Jinja, Jupyter Notebook, Kotlin, PHP, Python, Ruby, Svelte, TypeScript, Vue) |
-| **Contributors** | 659 (605 human, 54 bot) |
-| **Total commits** | 90,178 |
-| **Stars / forks** | 12,765 / 3,611 |
-| **Repos with CI/CD** | 48 / 57 |
-| **Repos w/ cloud signals** | 29 / 57 |
-| **Repos w/ AI/ML signals** | 6 / 57 |
-| **Repos w/ OSI license** | 34 / 57 |
+| **Primary languages** | 16 (C++, Dart, Dockerfile, Elixir, HCL, HTML, Java, JavaScript, Jinja, Kotlin, PHP, Python, Ruby, Svelte, TypeScript, Vue) |
+| **Contributors** | 658 (604 human, 54 bot) |
+| **Total commits** | 89,977 |
+| **Stars / forks** | 12,762 / 3,611 |
+| **Repos with CI/CD** | 47 / 55 |
+| **Repos w/ cloud signals** | 29 / 55 |
+| **Repos w/ AI/ML signals** | 5 / 55 |
+| **Repos w/ OSI license** | 34 / 55 |
 | **Median project age** | 3.4 years |
 | **Weekly activity rows** | 15,346 (56 repos, 1,093 contributors) |
 | **PR records** | 37,220 |
@@ -257,13 +249,13 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
 
 - **Concentration of effort.** Bus factor is strongly negatively correlated with
   HHI (ρ ≈ −0.72 for `hhi_no_bots`, FDR-significant) and with team size
-  (`num_developers` vs `hhi_no_bots` ρ = −0.77): larger teams spread effort, but
+  (`num_developers` vs `hhi_no_bots` ρ = −0.76): larger teams spread effort, but
   most projects remain highly concentrated.
-- **Sustainability doesn't come with age.** Mature projects (≥3.4 yr) have
-  significantly more developers (median 15 vs 3.5, p<0.001) and commits (1,352 vs
-  189, p<0.001), and are less concentrated (HHI 4,374 vs 7,575, p=0.008) — but
-  their **bus factor is no different** from young projects (median 1 vs 1,
-  p≈0.07–0.09): scale and deconcentration grow, single-maintainer risk does not.
+- **Sustainability doesn't come with age.** Mature projects (≥3.5 yr) have
+  significantly more developers (median 15.5 vs 4, p<0.001) and commits (1,356 vs
+  194, p<0.001), and are less concentrated (HHI 4,233 vs 7,575, p=0.008) — but
+  their **bus factor barely moves** versus young projects (median 1.5 vs 1,
+  p≈0.05): scale and deconcentration grow, single-maintainer risk does not.
 - **Solo-dominated weeks are the norm.** Weighted by active weeks, **89%** of
   weeks had one contributor responsible for ≥50% of lines changed. The most
   collaborative repos are `civiform/civiform` (50.6% top-share) and
@@ -271,7 +263,7 @@ scripts/run_with_respawn.sh config.yaml datasets/2026_05 57
 - **Two repos are net-negative LOC** over their history (more cumulative
   deletions than additions), led by `CodeforLeipzig/leipziggiesst`.
 
-See `analysis_n57.md` for the full writeup, methodology, and threats to validity.
+See `analysis_n55.md` for the full writeup, methodology, and threats to validity.
 
 ---
 
@@ -291,8 +283,8 @@ while a version DOI pins this specific snapshot.
 
 ```bibtex
 @dataset{civic_tech_corpus_2026_05,
-  title     = {Civic-Tech Corpus — 2026-05 Refresh (n = 57)},
-  author    = {Parkkila, Janne},
+  title     = {Civic-Tech Corpus — 2026-05 Refresh (n = 55)},
+  author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia and Knutas, Antti},
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},

@@ -12,6 +12,8 @@ from datetime import datetime
 from pathlib import Path
 
 from civic_tech_crawler.models import (
+    AISignal,
+    AIUsageMetrics,
     ChaossMetrics,
     CommitHistoryMetrics,
     ContributorLifecycle,
@@ -257,6 +259,45 @@ def _dict_to_commit_history_metrics(d: dict | None) -> CommitHistoryMetrics | No
         total_weeks=d["total_weeks"],
         total_unique_contributors=d["total_unique_contributors"],
         new_contributor_rate_per_month=d.get("new_contributor_rate_per_month"),
+        total_commits_scanned=d.get("total_commits_scanned", 0),
+        ai_coauthored_commit_count=d.get("ai_coauthored_commit_count", 0),
+        ai_authored_commit_count=d.get("ai_authored_commit_count", 0),
+        ai_coauthor_tool_counts=d.get("ai_coauthor_tool_counts", {}),
+        ai_author_tool_counts=d.get("ai_author_tool_counts", {}),
+        ai_commit_tool_first_dates=d.get("ai_commit_tool_first_dates", {}),
+    )
+
+
+def _dict_to_ai_usage_metrics(d: dict | None) -> AIUsageMetrics | None:
+    if d is None:
+        return None
+    return AIUsageMetrics(
+        repo_full_name=d["repo_full_name"],
+        dev_ai_detected=d["dev_ai_detected"],
+        dev_ai_tools=d.get("dev_ai_tools", []),
+        agent_config_files=d.get("agent_config_files", []),
+        ai_coauthored_commit_count=d.get("ai_coauthored_commit_count", 0),
+        ai_authored_commit_count=d.get("ai_authored_commit_count", 0),
+        commits_scanned=d.get("commits_scanned", 0),
+        ai_commit_ratio=d.get("ai_commit_ratio", 0.0),
+        ai_agent_pr_count=d.get("ai_agent_pr_count", 0),
+        ci_ai_workflows=d.get("ci_ai_workflows", []),
+        review_bot_tools=d.get("review_bot_tools", []),
+        first_dev_ai_date=_parse_datetime(d.get("first_dev_ai_date")),
+        product_llm_detected=d["product_llm_detected"],
+        product_llm_signals=d.get("product_llm_signals", []),
+        product_llm_providers=d.get("product_llm_providers", []),
+        signals=[
+            AISignal(
+                group=s["group"],
+                tool=s["tool"],
+                source=s["source"],
+                evidence=s["evidence"],
+                count=s.get("count", 1),
+                first_seen=_parse_datetime(s.get("first_seen")),
+            )
+            for s in d.get("signals", [])
+        ],
     )
 
 
@@ -314,6 +355,7 @@ def _dict_to_repository_data(d: dict) -> RepositoryData:
         ],
         commit_history=_dict_to_commit_history_metrics(d.get("commit_history")),
         issue_analytics=_dict_to_issue_analytics(d.get("issue_analytics")),
+        ai_usage_metrics=_dict_to_ai_usage_metrics(d.get("ai_usage_metrics")),
     )
 
 

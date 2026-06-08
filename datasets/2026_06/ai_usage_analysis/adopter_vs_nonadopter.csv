@@ -1,0 +1,7 @@
+metric,adopter_median,nonadopter_median,adopter_n,nonadopter_n,mannwhitney_p
+total_commits,575.0,272.0,24,31,0.0112
+num_developers,11.0,5.0,24,31,0.0022
+stars,7.0,3.0,24,31,0.078
+health_percentage,50.0,50.0,24,31,0.3262
+age_years,3.79,3.47,24,31,0.9324
+bus_factor_no_bots,1.0,1.0,23,31,0.1038

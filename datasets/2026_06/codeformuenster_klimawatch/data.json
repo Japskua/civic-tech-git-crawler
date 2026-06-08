@@ -1,0 +1,4358 @@
+{
+  "repo_metrics": {
+    "full_name": "codeformuenster/klimawatch",
+    "name": "klimawatch",
+    "description": "Ist deine Kommune schon klimaneutral?",
+    "num_developers": 15,
+    "total_commits": 264,
+    "languages": {
+      "HTML": 560647,
+      "JavaScript": 64445,
+      "CSS": 39831,
+      "Python": 31716,
+      "Makefile": 1040,
+      "Dockerfile": 870,
+      "Shell": 708,
+      "PowerShell": 452
+    },
+    "primary_language": "HTML",
+    "first_commit_date": "2019-10-31T16:54:01+00:00",
+    "last_commit_date": "2026-04-23T17:16:20+00:00",
+    "license_spdx": "Apache-2.0",
+    "license_name": "Apache License 2.0",
+    "is_osi_approved": true,
+    "topics": [],
+    "has_contributing": false,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 37,
+    "stars": 24,
+    "watchers": 9,
+    "forks": 20,
+    "cloud_detected": true,
+    "cloud_signals": [
+      "language:Dockerfile"
+    ],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Dependabot Updates"
+    ],
+    "deployments_count": 44,
+    "created_at": "2019-10-31T16:10:47+00:00",
+    "updated_at": "2026-04-23T17:16:25+00:00",
+    "pushed_at": "2026-04-23T17:16:22+00:00",
+    "size_kb": 19938
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "digital-codes",
+      "name": "Andreas Kugel",
+      "num_commits": 9,
+      "additions": 169,
+      "deletions": 112,
+      "avg_additions_per_commit": 18.78,
+      "avg_deletions_per_commit": 12.44,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "silberzwiebel",
+      "name": "kartoffelsalat",
+      "num_commits": 51,
+      "additions": 39492,
+      "deletions": 5844,
+      "avg_additions_per_commit": 774.35,
+      "avg_deletions_per_commit": 114.59,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "num_commits": 29,
+      "additions": 744,
+      "deletions": 422,
+      "avg_additions_per_commit": 25.66,
+      "avg_deletions_per_commit": 14.55,
+      "is_bot": true
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "saerdnaer",
+      "name": "Andreas Hubel",
+      "num_commits": 1,
+      "additions": 3,
+      "deletions": 3,
+      "avg_additions_per_commit": 3.0,
+      "avg_deletions_per_commit": 3.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "thunfischtoast",
+      "name": "Christian",
+      "num_commits": 10,
+      "additions": 5982,
+      "deletions": 794,
+      "avg_additions_per_commit": 598.2,
+      "avg_deletions_per_commit": 79.4,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "chk1",
+      "name": "Christoph Kisfeld",
+      "num_commits": 1,
+      "additions": 1,
+      "deletions": 1,
+      "avg_additions_per_commit": 1.0,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "jayAitch256",
+      "name": "Jan Hauke",
+      "num_commits": 2,
+      "additions": 173,
+      "deletions": 5,
+      "avg_additions_per_commit": 86.5,
+      "avg_deletions_per_commit": 2.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "ubergesundheit",
+      "name": "Gerald Pape",
+      "num_commits": 3,
+      "additions": 5,
+      "deletions": 3,
+      "avg_additions_per_commit": 1.67,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "Luensche",
+      "name": "Bj\u00f6rn Engel",
+      "num_commits": 2,
+      "additions": 147,
+      "deletions": 2,
+      "avg_additions_per_commit": 73.5,
+      "avg_deletions_per_commit": 1.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "mwunderlich",
+      "name": "Martin Wunderlich",
+      "num_commits": 1,
+      "additions": 157,
+      "deletions": 2,
+      "avg_additions_per_commit": 157.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "lhm",
+      "name": "Lars Mai",
+      "num_commits": 8,
+      "additions": 444,
+      "deletions": 74,
+      "avg_additions_per_commit": 55.5,
+      "avg_deletions_per_commit": 9.25,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "jonek",
+      "name": "Johannes Eickhold",
+      "num_commits": 1,
+      "additions": 31,
+      "deletions": 0,
+      "avg_additions_per_commit": 31.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": null,
+      "name": "TomThats",
+      "num_commits": 2,
+      "additions": 350,
+      "deletions": 18,
+      "avg_additions_per_commit": 175.0,
+      "avg_deletions_per_commit": 9.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "ccauet",
+      "name": "Christophe Cauet",
+      "num_commits": 1,
+      "additions": 136,
+      "deletions": 0,
+      "avg_additions_per_commit": 136.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "marcel12bell",
+      "name": "Marcel Belledin",
+      "num_commits": 9,
+      "additions": 19465,
+      "deletions": 845,
+      "avg_additions_per_commit": 2162.78,
+      "avg_deletions_per_commit": 93.89,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "thunfischtoast",
+      "name": "Christian R\u00f6mer",
+      "num_commits": 6,
+      "additions": 284,
+      "deletions": 261,
+      "avg_additions_per_commit": 47.33,
+      "avg_deletions_per_commit": 43.5,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "jonek",
+      "name": "Johannes Eickhold",
+      "num_commits": 1,
+      "additions": 69,
+      "deletions": 0,
+      "avg_additions_per_commit": 69.0,
+      "avg_deletions_per_commit": 0.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "ubergesundheit",
+      "name": "ubergesundheit",
+      "num_commits": 27,
+      "additions": 11689,
+      "deletions": 765,
+      "avg_additions_per_commit": 432.93,
+      "avg_deletions_per_commit": 28.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "silberzwiebel",
+      "name": "Thomas Kluth",
+      "num_commits": 99,
+      "additions": 30798,
+      "deletions": 26326,
+      "avg_additions_per_commit": 311.09,
+      "avg_deletions_per_commit": 265.92,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "MTRNord",
+      "name": "Marcel",
+      "num_commits": 1,
+      "additions": 2,
+      "deletions": 2,
+      "avg_additions_per_commit": 2.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "codeformuenster/klimawatch",
+    "pr_count_total": 138,
+    "pr_count_merged": 114,
+    "pr_count_open": 10,
+    "pr_count_closed_unmerged": 14,
+    "prs": [
+      {
+        "number": 1,
+        "title": "Link zum Chat",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2019-11-01T15:12:10+00:00",
+        "merged_at": "2019-11-01T15:31:30+00:00",
+        "closed_at": "2019-11-01T15:31:30+00:00"
+      },
+      {
+        "number": 16,
+        "title": "Improve readibilty",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2019-11-12T19:33:31+00:00",
+        "merged_at": "2019-11-12T19:44:24+00:00",
+        "closed_at": "2019-11-12T19:44:24+00:00"
+      },
+      {
+        "number": 17,
+        "title": "restructure; get rid of klimawatch-deutschland branch",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2019-11-25T10:38:52+00:00",
+        "merged_at": "2019-11-25T10:41:17+00:00",
+        "closed_at": "2019-11-25T10:41:17+00:00"
+      },
+      {
+        "number": 19,
+        "title": "Make text and menu more readable by darkening 2 colors",
+        "state": "closed",
+        "author_login": "MTRNord",
+        "created_at": "2019-11-26T11:41:49+00:00",
+        "merged_at": "2019-11-26T13:53:01+00:00",
+        "closed_at": "2019-11-26T13:53:01+00:00"
+      },
+      {
+        "number": 20,
+        "title": "Add configuration for hosting at netlify",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2019-11-26T13:42:30+00:00",
+        "merged_at": "2019-11-27T09:36:08+00:00",
+        "closed_at": "2019-11-27T09:36:08+00:00"
+      },
+      {
+        "number": 21,
+        "title": "Add conda environment.yml",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2019-11-26T21:48:41+00:00",
+        "merged_at": "2019-11-27T09:31:41+00:00",
+        "closed_at": "2019-11-27T09:31:41+00:00"
+      },
+      {
+        "number": 22,
+        "title": "Styling",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2019-11-27T12:11:55+00:00",
+        "merged_at": "2019-11-29T10:34:58+00:00",
+        "closed_at": "2019-11-29T10:34:59+00:00"
+      },
+      {
+        "number": 26,
+        "title": "always center contact email",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2019-11-29T16:37:01+00:00",
+        "merged_at": "2019-11-29T16:55:35+00:00",
+        "closed_at": "2019-11-29T16:55:35+00:00"
+      },
+      {
+        "number": 29,
+        "title": "Assets optimization",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2019-11-29T22:52:48+00:00",
+        "merged_at": "2019-12-04T15:29:43+00:00",
+        "closed_at": "2019-12-04T15:29:43+00:00"
+      },
+      {
+        "number": 36,
+        "title": "disable dragmode, fixes #34",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2019-12-04T15:49:48+00:00",
+        "merged_at": "2019-12-08T10:50:15+00:00",
+        "closed_at": "2019-12-08T10:50:15+00:00"
+      },
+      {
+        "number": 38,
+        "title": "Visualisierung Sachstandsberichte",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2019-12-05T16:09:22+00:00",
+        "merged_at": "2020-01-03T14:09:28+00:00",
+        "closed_at": "2020-01-03T14:09:28+00:00"
+      },
+      {
+        "number": 40,
+        "title": "Add Dockerfile",
+        "state": "closed",
+        "author_login": "lhm",
+        "created_at": "2019-12-12T12:25:08+00:00",
+        "merged_at": null,
+        "closed_at": "2019-12-14T13:24:23+00:00"
+      },
+      {
+        "number": 41,
+        "title": "rudimentary calculation for the whole EU",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2019-12-13T17:38:51+00:00",
+        "merged_at": "2019-12-17T14:32:20+00:00",
+        "closed_at": "2019-12-17T14:32:20+00:00"
+      },
+      {
+        "number": 42,
+        "title": "M\u00fcnster will bis 2030 klimaneutral sein",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2019-12-13T17:54:44+00:00",
+        "merged_at": "2019-12-17T14:39:33+00:00",
+        "closed_at": "2019-12-17T14:39:34+00:00"
+      },
+      {
+        "number": 43,
+        "title": "Add Leipzig",
+        "state": "closed",
+        "author_login": "lhm",
+        "created_at": "2019-12-14T13:27:15+00:00",
+        "merged_at": "2019-12-23T11:12:13+00:00",
+        "closed_at": "2019-12-23T11:12:13+00:00"
+      },
+      {
+        "number": 45,
+        "title": "Plotly muss kleiner werden",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2019-12-17T19:52:02+00:00",
+        "merged_at": "2020-01-07T19:29:14+00:00",
+        "closed_at": "2020-01-07T19:29:14+00:00"
+      },
+      {
+        "number": 46,
+        "title": "New youdrawit",
+        "state": "closed",
+        "author_login": "marcel12bell",
+        "created_at": "2019-12-24T15:08:36+00:00",
+        "merged_at": "2020-02-06T14:46:03+00:00",
+        "closed_at": "2020-02-06T14:46:03+00:00"
+      },
+      {
+        "number": 47,
+        "title": "CO2 Emissionen, Bev\u00f6lkerung und Ziele f\u00fcr Karlsruhe",
+        "state": "closed",
+        "author_login": "jonek",
+        "created_at": "2020-01-22T16:51:19+00:00",
+        "merged_at": "2020-01-22T17:24:00+00:00",
+        "closed_at": "2020-01-22T17:24:00+00:00"
+      },
+      {
+        "number": 50,
+        "title": "Add karlsruhe",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2020-01-28T19:58:07+00:00",
+        "merged_at": "2020-02-19T08:41:32+00:00",
+        "closed_at": "2020-02-19T08:41:32+00:00"
+      },
+      {
+        "number": 51,
+        "title": "Add Landau",
+        "state": "closed",
+        "author_login": "ccauet",
+        "created_at": "2020-01-29T09:08:35+00:00",
+        "merged_at": "2020-02-12T09:18:11+00:00",
+        "closed_at": "2020-02-12T09:18:11+00:00"
+      },
+      {
+        "number": 52,
+        "title": "- added hamburg",
+        "state": "closed",
+        "author_login": "ghost",
+        "created_at": "2020-01-31T13:23:25+00:00",
+        "merged_at": null,
+        "closed_at": "2020-02-07T09:11:33+00:00"
+      },
+      {
+        "number": 54,
+        "title": "update README for new PRs",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-02-06T15:32:43+00:00",
+        "merged_at": "2020-02-10T10:20:44+00:00",
+        "closed_at": "2020-02-10T10:20:44+00:00"
+      },
+      {
+        "number": 55,
+        "title": "Hamburg hinzugef\u00fcgt",
+        "state": "closed",
+        "author_login": "ghost",
+        "created_at": "2020-02-07T09:12:51+00:00",
+        "merged_at": "2020-02-07T12:15:53+00:00",
+        "closed_at": "2020-02-07T12:15:53+00:00"
+      },
+      {
+        "number": 58,
+        "title": "minor improvements for m\u00fcnster",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-02-07T12:39:58+00:00",
+        "merged_at": "2020-02-10T10:23:24+00:00",
+        "closed_at": "2020-02-10T10:23:24+00:00"
+      },
+      {
+        "number": 60,
+        "title": "Text f\u00fcr Karlsruhe \u00fcberarbeitet",
+        "state": "closed",
+        "author_login": "jonek",
+        "created_at": "2020-02-10T19:47:37+00:00",
+        "merged_at": "2020-02-11T10:24:44+00:00",
+        "closed_at": "2020-02-11T10:24:45+00:00"
+      },
+      {
+        "number": 63,
+        "title": "open external links in new tab/window",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-02-11T10:58:12+00:00",
+        "merged_at": "2020-02-11T20:46:40+00:00",
+        "closed_at": "2020-02-11T20:46:40+00:00"
+      },
+      {
+        "number": 64,
+        "title": "add newest data for 2018 for muenster",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-02-11T11:31:23+00:00",
+        "merged_at": "2020-02-11T19:53:18+00:00",
+        "closed_at": "2020-02-11T19:53:18+00:00"
+      },
+      {
+        "number": 65,
+        "title": "Aktualisierter Hamburg Text und gesetztes HTML Flag f\u00fcr Hugo > V0.60",
+        "state": "closed",
+        "author_login": "ghost",
+        "created_at": "2020-02-11T17:03:38+00:00",
+        "merged_at": "2020-02-12T13:18:12+00:00",
+        "closed_at": "2020-02-12T13:18:12+00:00"
+      },
+      {
+        "number": 66,
+        "title": "Explain how Paris data was calculated for Karlsruhe",
+        "state": "closed",
+        "author_login": "jonek",
+        "created_at": "2020-02-11T19:35:46+00:00",
+        "merged_at": "2020-02-18T14:54:14+00:00",
+        "closed_at": "2020-02-18T14:54:14+00:00"
+      },
+      {
+        "number": 68,
+        "title": "WIP: M\u00fcnster: Klimabilanz 2018 nutzen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-02-12T09:45:26+00:00",
+        "merged_at": "2020-07-14T19:41:34+00:00",
+        "closed_at": "2020-07-14T19:41:34+00:00"
+      },
+      {
+        "number": 71,
+        "title": "Refactor plot generation",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2020-02-18T20:21:34+00:00",
+        "merged_at": "2020-03-17T22:05:21+00:00",
+        "closed_at": "2020-03-17T22:05:21+00:00"
+      },
+      {
+        "number": 74,
+        "title": "Format document",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2020-03-03T20:42:50+00:00",
+        "merged_at": "2020-03-17T20:34:20+00:00",
+        "closed_at": "2020-03-17T20:34:20+00:00"
+      },
+      {
+        "number": 76,
+        "title": "Bump acorn from 5.7.3 to 5.7.4 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-03-16T16:40:27+00:00",
+        "merged_at": "2020-03-17T21:02:48+00:00",
+        "closed_at": "2020-03-17T21:02:48+00:00"
+      },
+      {
+        "number": 78,
+        "title": "redirect old domains to new domain",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-03-18T18:01:18+00:00",
+        "merged_at": "2020-03-18T18:06:27+00:00",
+        "closed_at": "2020-03-18T18:06:27+00:00"
+      },
+      {
+        "number": 79,
+        "title": "fix redirects",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-03-18T18:10:30+00:00",
+        "merged_at": "2020-03-18T18:11:44+00:00",
+        "closed_at": "2020-03-18T18:11:44+00:00"
+      },
+      {
+        "number": 80,
+        "title": "Klimawatch.de: adapt fathom tracking code",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-03-18T18:18:38+00:00",
+        "merged_at": "2020-03-18T18:19:28+00:00",
+        "closed_at": "2020-03-18T18:19:28+00:00"
+      },
+      {
+        "number": 81,
+        "title": "fix #77",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-03-24T20:10:42+00:00",
+        "merged_at": "2020-03-24T20:11:18+00:00",
+        "closed_at": "2020-03-24T20:11:19+00:00"
+      },
+      {
+        "number": 82,
+        "title": "Moers",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-03-24T20:46:13+00:00",
+        "merged_at": "2020-03-31T19:32:28+00:00",
+        "closed_at": "2020-03-31T19:32:28+00:00"
+      },
+      {
+        "number": 83,
+        "title": "Add chemnitz",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-04-14T18:48:25+00:00",
+        "merged_at": "2020-05-05T19:26:41+00:00",
+        "closed_at": "2020-05-05T19:26:41+00:00"
+      },
+      {
+        "number": 84,
+        "title": "Fix vulnerabilities",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-04-14T19:53:21+00:00",
+        "merged_at": "2020-04-21T19:25:48+00:00",
+        "closed_at": "2020-04-21T19:25:48+00:00"
+      },
+      {
+        "number": 86,
+        "title": "Same link style on kommunen pages as for paris-limits",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2020-05-12T18:43:15+00:00",
+        "merged_at": "2020-05-19T19:55:07+00:00",
+        "closed_at": "2020-05-19T19:55:07+00:00"
+      },
+      {
+        "number": 88,
+        "title": "add Berlin",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-06-16T21:14:23+00:00",
+        "merged_at": "2020-09-08T20:06:10+00:00",
+        "closed_at": "2020-09-08T20:06:10+00:00"
+      },
+      {
+        "number": 95,
+        "title": "Aachen hinzugef\u00fcgt",
+        "state": "closed",
+        "author_login": "jonek",
+        "created_at": "2020-07-05T22:24:52+00:00",
+        "merged_at": null,
+        "closed_at": "2021-11-07T17:02:08+00:00"
+      },
+      {
+        "number": 96,
+        "title": "Docker als Variante, um die Build-Abh\u00e4ngigkeiten aufzul\u00f6sen",
+        "state": "closed",
+        "author_login": "jonek",
+        "created_at": "2020-07-05T22:49:41+00:00",
+        "merged_at": "2020-09-08T20:11:52+00:00",
+        "closed_at": "2020-09-08T20:11:52+00:00"
+      },
+      {
+        "number": 97,
+        "title": "Update f\u00fcr Leipzig",
+        "state": "closed",
+        "author_login": "lhm",
+        "created_at": "2020-07-10T06:21:12+00:00",
+        "merged_at": "2020-09-08T20:26:07+00:00",
+        "closed_at": "2020-09-08T20:26:07+00:00"
+      },
+      {
+        "number": 98,
+        "title": "Bump lodash from 4.17.15 to 4.17.19 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-07-19T05:55:54+00:00",
+        "merged_at": "2020-07-21T18:49:25+00:00",
+        "closed_at": "2020-07-21T18:49:25+00:00"
+      },
+      {
+        "number": 99,
+        "title": "Bump elliptic from 6.5.2 to 6.5.3 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-08-01T10:04:07+00:00",
+        "merged_at": "2020-09-08T20:50:19+00:00",
+        "closed_at": "2020-09-08T20:50:19+00:00"
+      },
+      {
+        "number": 100,
+        "title": "Add munich",
+        "state": "closed",
+        "author_login": "mwunderlich",
+        "created_at": "2020-08-02T16:52:35+00:00",
+        "merged_at": "2020-09-08T20:42:48+00:00",
+        "closed_at": "2020-09-08T20:42:48+00:00"
+      },
+      {
+        "number": 104,
+        "title": "update readme with docker instructions",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-09-08T20:20:12+00:00",
+        "merged_at": "2020-09-08T20:21:09+00:00",
+        "closed_at": "2020-09-08T20:21:09+00:00"
+      },
+      {
+        "number": 105,
+        "title": "add contact in template.md, fixes #87",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-09-08T20:37:01+00:00",
+        "merged_at": "2020-09-08T20:37:59+00:00",
+        "closed_at": "2020-09-08T20:37:59+00:00"
+      },
+      {
+        "number": 106,
+        "title": "Bump yargs-parser from 15.0.0 to 15.0.1 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-09-08T20:51:15+00:00",
+        "merged_at": "2020-09-10T18:56:27+00:00",
+        "closed_at": "2020-09-10T18:56:27+00:00"
+      },
+      {
+        "number": 107,
+        "title": "add duesseldorf",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-09-08T21:16:24+00:00",
+        "merged_at": "2020-09-10T18:54:19+00:00",
+        "closed_at": "2020-09-10T18:54:19+00:00"
+      },
+      {
+        "number": 108,
+        "title": "new matrix room, fixes #102",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2020-10-13T20:35:35+00:00",
+        "merged_at": "2020-10-13T20:42:37+00:00",
+        "closed_at": "2020-10-13T20:42:37+00:00"
+      },
+      {
+        "number": 109,
+        "title": "Update README.md",
+        "state": "closed",
+        "author_login": "Luensche",
+        "created_at": "2020-11-17T16:47:35+00:00",
+        "merged_at": "2020-12-08T19:09:22+00:00",
+        "closed_at": "2020-12-08T19:09:22+00:00"
+      },
+      {
+        "number": 110,
+        "title": "Add Paderborn",
+        "state": "closed",
+        "author_login": "Luensche",
+        "created_at": "2020-11-17T17:05:46+00:00",
+        "merged_at": "2020-12-12T12:54:00+00:00",
+        "closed_at": "2020-12-12T12:54:00+00:00"
+      },
+      {
+        "number": 111,
+        "title": "Bump bl from 1.2.2 to 1.2.3 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-12-12T12:54:59+00:00",
+        "merged_at": "2020-12-14T17:04:14+00:00",
+        "closed_at": "2020-12-14T17:04:14+00:00"
+      },
+      {
+        "number": 112,
+        "title": "Bump dot-prop from 4.2.0 to 4.2.1 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2020-12-12T12:57:21+00:00",
+        "merged_at": "2020-12-14T15:14:58+00:00",
+        "closed_at": "2020-12-14T15:14:58+00:00"
+      },
+      {
+        "number": 115,
+        "title": "add osnabrueck",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-01-12T20:39:19+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-19T20:24:13+00:00"
+      },
+      {
+        "number": 116,
+        "title": "Update counting integration",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2021-02-12T09:12:04+00:00",
+        "merged_at": "2021-02-15T12:35:29+00:00",
+        "closed_at": "2021-02-15T12:35:29+00:00"
+      },
+      {
+        "number": 118,
+        "title": "Fix Matrix channel Room link in README.md",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "created_at": "2021-02-15T14:01:22+00:00",
+        "merged_at": "2021-02-15T14:24:30+00:00",
+        "closed_at": "2021-02-15T14:24:30+00:00"
+      },
+      {
+        "number": 119,
+        "title": "add dortmund",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-02-16T20:27:05+00:00",
+        "merged_at": "2021-03-02T20:28:00+00:00",
+        "closed_at": "2021-03-02T20:28:00+00:00"
+      },
+      {
+        "number": 120,
+        "title": "typos dortmund",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-03-06T14:40:27+00:00",
+        "merged_at": "2021-03-06T14:42:19+00:00",
+        "closed_at": "2021-03-06T14:42:20+00:00"
+      },
+      {
+        "number": 121,
+        "title": "Bump elliptic from 6.5.3 to 6.5.4 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-10T03:46:37+00:00",
+        "merged_at": "2021-03-10T09:06:15+00:00",
+        "closed_at": "2021-03-10T09:06:15+00:00"
+      },
+      {
+        "number": 126,
+        "title": "Bump y18n from 4.0.0 to 4.0.1 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-03-31T10:47:58+00:00",
+        "merged_at": "2021-05-25T15:13:45+00:00",
+        "closed_at": "2021-05-25T15:13:45+00:00"
+      },
+      {
+        "number": 127,
+        "title": "Ulm hinzugef\u00fcgt",
+        "state": "closed",
+        "author_login": "jayAitch256",
+        "created_at": "2021-05-03T13:23:04+00:00",
+        "merged_at": "2021-07-01T16:54:14+00:00",
+        "closed_at": "2021-07-01T16:54:14+00:00"
+      },
+      {
+        "number": 128,
+        "title": "Bump lodash from 4.17.19 to 4.17.21 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-05-10T23:37:47+00:00",
+        "merged_at": "2021-05-25T15:15:58+00:00",
+        "closed_at": "2021-05-25T15:15:58+00:00"
+      },
+      {
+        "number": 129,
+        "title": "update 2021: script and m\u00fcnster",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-05-18T20:49:19+00:00",
+        "merged_at": "2021-05-18T20:52:17+00:00",
+        "closed_at": "2021-05-18T20:52:17+00:00"
+      },
+      {
+        "number": 130,
+        "title": "Bump browserslist from 4.8.2 to 4.16.6 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-05-25T15:14:34+00:00",
+        "merged_at": "2021-05-25T15:18:34+00:00",
+        "closed_at": "2021-05-25T15:18:34+00:00"
+      },
+      {
+        "number": 131,
+        "title": "update hugo to 0.80.0 on netlify",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-05-25T19:27:10+00:00",
+        "merged_at": null,
+        "closed_at": "2021-10-27T17:45:41+00:00"
+      },
+      {
+        "number": 132,
+        "title": "update plotly",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-05-25T19:48:47+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 134,
+        "title": "Fix: Emissionen von 2020 als Ausgangsjahr f\u00fcr Trendberechnung und Plots",
+        "state": "closed",
+        "author_login": "jayAitch256",
+        "created_at": "2021-05-26T16:18:01+00:00",
+        "merged_at": "2021-06-29T19:41:50+00:00",
+        "closed_at": "2021-06-29T19:41:50+00:00"
+      },
+      {
+        "number": 135,
+        "title": "update ms with new method and 2030 short study",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-06-29T20:49:16+00:00",
+        "merged_at": "2021-06-29T20:51:04+00:00",
+        "closed_at": "2021-06-29T20:51:04+00:00"
+      },
+      {
+        "number": 136,
+        "title": "add bielefeld",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-08-03T19:17:35+00:00",
+        "merged_at": "2021-08-07T11:28:39+00:00",
+        "closed_at": "2021-08-07T11:28:39+00:00"
+      },
+      {
+        "number": 137,
+        "title": "update all sites for new 2021 calculation (with old data)",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-08-10T20:34:39+00:00",
+        "merged_at": "2021-08-10T20:39:09+00:00",
+        "closed_at": "2021-08-10T20:39:09+00:00"
+      },
+      {
+        "number": 139,
+        "title": "Bump path-parse from 1.0.6 to 1.0.7 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-08-11T21:06:05+00:00",
+        "merged_at": "2021-08-17T19:04:52+00:00",
+        "closed_at": "2021-08-17T19:04:52+00:00"
+      },
+      {
+        "number": 140,
+        "title": "Bump color-string from 1.5.3 to 1.6.0 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-08-17T19:06:16+00:00",
+        "merged_at": "2021-08-17T19:56:21+00:00",
+        "closed_at": "2021-08-17T19:56:22+00:00"
+      },
+      {
+        "number": 141,
+        "title": "Bump ws from 5.2.2 to 5.2.3 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2021-08-17T19:06:44+00:00",
+        "merged_at": "2021-08-17T20:06:27+00:00",
+        "closed_at": "2021-08-17T20:06:27+00:00"
+      },
+      {
+        "number": 142,
+        "title": "Bonn hinzuf\u00fcgen inkl. Skript zum automatischen Hinzuf\u00fcgen von neuen Kommunen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2021-08-24T20:07:08+00:00",
+        "merged_at": "2021-10-27T18:37:26+00:00",
+        "closed_at": "2021-10-27T18:37:26+00:00"
+      },
+      {
+        "number": 143,
+        "title": "Powershell generator script",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2021-10-02T14:05:16+00:00",
+        "merged_at": "2021-10-19T21:49:19+00:00",
+        "closed_at": "2021-10-19T21:49:19+00:00"
+      },
+      {
+        "number": 144,
+        "title": "bump hugo version to 0.88.1 (netlify), 0.88.0 (docker)",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2021-10-02T14:14:36+00:00",
+        "merged_at": "2021-10-24T14:15:16+00:00",
+        "closed_at": "2021-10-24T14:15:16+00:00"
+      },
+      {
+        "number": 145,
+        "title": "URL-encode leftover space to fix markdown email",
+        "state": "closed",
+        "author_login": "chk1",
+        "created_at": "2021-10-27T20:20:28+00:00",
+        "merged_at": "2021-10-28T07:08:27+00:00",
+        "closed_at": "2021-10-28T07:08:27+00:00"
+      },
+      {
+        "number": 146,
+        "title": "Clean treemap",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2021-10-30T15:02:58+00:00",
+        "merged_at": null,
+        "closed_at": "2024-10-12T14:34:22+00:00"
+      },
+      {
+        "number": 147,
+        "title": "add documents of other administrative entities + json schema",
+        "state": "open",
+        "author_login": "saerdnaer",
+        "created_at": "2021-10-31T10:23:38+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 148,
+        "title": "Add requirements.txt and setup.py",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2021-10-31T10:28:01+00:00",
+        "merged_at": "2021-11-14T16:09:36+00:00",
+        "closed_at": "2021-11-14T16:09:36+00:00"
+      },
+      {
+        "number": 149,
+        "title": "Refactor generation script",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2021-10-31T11:18:44+00:00",
+        "merged_at": "2021-11-23T21:14:11+00:00",
+        "closed_at": "2021-11-23T21:14:11+00:00"
+      },
+      {
+        "number": 150,
+        "title": "Alt sachstand",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2021-10-31T13:19:56+00:00",
+        "merged_at": null,
+        "closed_at": "2022-01-04T20:25:29+00:00"
+      },
+      {
+        "number": 151,
+        "title": "Wissenschaftsstadt Darmstadt + Darmstadt-Dieburg hinzuf\u00fcgen",
+        "state": "closed",
+        "author_login": "LearningLearning9",
+        "created_at": "2021-12-09T16:34:22+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-19T20:23:35+00:00"
+      },
+      {
+        "number": 152,
+        "title": "add alternative Sachstand visualization",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "created_at": "2022-01-04T20:29:18+00:00",
+        "merged_at": "2022-02-01T21:30:52+00:00",
+        "closed_at": "2022-02-01T21:30:52+00:00"
+      },
+      {
+        "number": 153,
+        "title": "Fix typos",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2022-01-04T20:57:53+00:00",
+        "merged_at": null,
+        "closed_at": "2022-01-04T20:58:32+00:00"
+      },
+      {
+        "number": 154,
+        "title": "small cleanup",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2022-01-04T21:04:00+00:00",
+        "merged_at": "2022-02-01T21:17:01+00:00",
+        "closed_at": "2022-02-01T21:17:01+00:00"
+      },
+      {
+        "number": 155,
+        "title": "Bump ajv from 6.10.2 to 6.12.6 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-02-12T22:13:00+00:00",
+        "merged_at": "2022-02-23T20:45:30+00:00",
+        "closed_at": "2022-02-23T20:45:30+00:00"
+      },
+      {
+        "number": 156,
+        "title": "Bump minimist from 1.2.5 to 1.2.6 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-04-02T02:14:15+00:00",
+        "merged_at": "2022-04-02T09:57:36+00:00",
+        "closed_at": "2022-04-02T09:57:36+00:00"
+      },
+      {
+        "number": 157,
+        "title": "Update ms",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2022-04-05T19:28:40+00:00",
+        "merged_at": "2022-04-05T19:29:27+00:00",
+        "closed_at": "2022-04-05T19:29:27+00:00"
+      },
+      {
+        "number": 158,
+        "title": "Update Karlsruhe to 2019 data",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2022-05-29T12:42:11+00:00",
+        "merged_at": "2022-06-09T07:18:03+00:00",
+        "closed_at": "2022-06-09T07:18:03+00:00"
+      },
+      {
+        "number": 159,
+        "title": "Update Karlsruhe",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2022-07-03T16:06:08+00:00",
+        "merged_at": "2022-07-04T08:08:56+00:00",
+        "closed_at": "2022-07-04T08:08:56+00:00"
+      },
+      {
+        "number": 160,
+        "title": "M\u00fcnchen: fix data source URL",
+        "state": "closed",
+        "author_login": "saerdnaer",
+        "created_at": "2022-10-03T11:13:40+00:00",
+        "merged_at": "2022-12-29T15:27:00+00:00",
+        "closed_at": "2022-12-29T15:27:00+00:00"
+      },
+      {
+        "number": 162,
+        "title": "Bump decode-uri-component from 0.2.0 to 0.2.2 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-12-05T03:24:31+00:00",
+        "merged_at": "2024-01-10T13:52:33+00:00",
+        "closed_at": "2024-01-10T13:52:33+00:00"
+      },
+      {
+        "number": 163,
+        "title": "Bump qs from 6.5.2 to 6.5.3 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2022-12-10T14:11:16+00:00",
+        "merged_at": "2024-01-09T21:48:36+00:00",
+        "closed_at": "2024-01-09T21:48:36+00:00"
+      },
+      {
+        "number": 165,
+        "title": "Bump json5 from 1.0.1 to 1.0.2 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2023-01-05T14:25:43+00:00",
+        "merged_at": "2024-01-09T21:46:24+00:00",
+        "closed_at": "2024-01-09T21:46:24+00:00"
+      },
+      {
+        "number": 166,
+        "title": "Update netlify.toml for enable cors",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2023-05-14T15:48:23+00:00",
+        "merged_at": "2023-08-25T09:06:11+00:00",
+        "closed_at": "2023-08-25T09:06:11+00:00"
+      },
+      {
+        "number": 167,
+        "title": "Updates fro Karlsruhe. Contact email changed to info@klimawatch.de",
+        "state": "open",
+        "author_login": "digital-codes",
+        "created_at": "2023-10-27T21:13:13+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 168,
+        "title": "update m\u00fcnster 2021",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2024-01-09T21:35:05+00:00",
+        "merged_at": "2024-02-13T21:06:41+00:00",
+        "closed_at": "2024-02-13T21:06:41+00:00"
+      },
+      {
+        "number": 169,
+        "title": "Bump word-wrap from 1.2.3 to 1.2.5 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-09T21:47:04+00:00",
+        "merged_at": "2024-01-10T13:23:24+00:00",
+        "closed_at": "2024-01-10T13:23:24+00:00"
+      },
+      {
+        "number": 170,
+        "title": "Bump @babel/traverse from 7.7.4 to 7.23.7 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-09T21:47:07+00:00",
+        "merged_at": "2024-01-10T13:25:16+00:00",
+        "closed_at": "2024-01-10T13:25:16+00:00"
+      },
+      {
+        "number": 171,
+        "title": "Bump plotly.js from 1.51.3 to 2.25.2 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-09T21:47:10+00:00",
+        "merged_at": null,
+        "closed_at": "2024-01-10T13:30:27+00:00"
+      },
+      {
+        "number": 172,
+        "title": "Bump browserify-sign from 4.0.4 to 4.2.2 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-09T21:47:17+00:00",
+        "merged_at": "2024-01-10T13:28:40+00:00",
+        "closed_at": "2024-01-10T13:28:40+00:00"
+      },
+      {
+        "number": 173,
+        "title": "Bump debug in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-09T21:47:40+00:00",
+        "merged_at": null,
+        "closed_at": "2024-01-09T21:50:28+00:00"
+      },
+      {
+        "number": 174,
+        "title": "Bump the npm_and_yarn group group in /hugo with 1 update",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-09T21:50:25+00:00",
+        "merged_at": "2024-01-10T13:49:58+00:00",
+        "closed_at": "2024-01-10T13:49:58+00:00"
+      },
+      {
+        "number": 175,
+        "title": "Bump minimatch from 3.0.4 to 3.1.2 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-10T13:26:25+00:00",
+        "merged_at": "2024-01-10T13:43:43+00:00",
+        "closed_at": "2024-01-10T13:43:43+00:00"
+      },
+      {
+        "number": 176,
+        "title": "Bump d3-color and plotly.js in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-10T13:30:24+00:00",
+        "merged_at": null,
+        "closed_at": "2024-01-10T13:44:44+00:00"
+      },
+      {
+        "number": 177,
+        "title": "Bump the npm_and_yarn group group in /hugo with 1 update",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-01-10T13:44:50+00:00",
+        "merged_at": null,
+        "closed_at": "2024-11-19T21:15:19+00:00"
+      },
+      {
+        "number": 178,
+        "title": "update script for 2024; update text for m\u00fcnster",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2024-02-20T21:26:40+00:00",
+        "merged_at": "2024-02-27T21:03:32+00:00",
+        "closed_at": "2024-02-27T21:03:32+00:00"
+      },
+      {
+        "number": 179,
+        "title": "Bump es5-ext from 0.10.53 to 0.10.63 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-02-27T03:34:23+00:00",
+        "merged_at": "2024-02-27T20:10:46+00:00",
+        "closed_at": "2024-02-27T20:10:46+00:00"
+      },
+      {
+        "number": 180,
+        "title": "youdrawit zum einbetten per iframe",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2024-04-09T20:44:08+00:00",
+        "merged_at": "2024-04-09T20:46:40+00:00",
+        "closed_at": "2024-04-09T20:46:40+00:00"
+      },
+      {
+        "number": 181,
+        "title": "Bump serve-static from 1.14.1 to 1.16.2 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-09-12T00:59:59+00:00",
+        "merged_at": "2024-11-19T20:34:00+00:00",
+        "closed_at": "2024-11-19T20:34:00+00:00"
+      },
+      {
+        "number": 182,
+        "title": "Bump elliptic from 6.5.4 to 6.5.7 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-10-11T18:37:49+00:00",
+        "merged_at": null,
+        "closed_at": "2024-10-29T16:16:32+00:00"
+      },
+      {
+        "number": 183,
+        "title": "Bump elliptic from 6.5.4 to 6.6.0 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-10-29T16:16:30+00:00",
+        "merged_at": "2024-11-19T20:25:14+00:00",
+        "closed_at": "2024-11-19T20:25:14+00:00"
+      },
+      {
+        "number": 184,
+        "title": "Update ms",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2024-11-19T20:11:18+00:00",
+        "merged_at": "2024-11-19T20:21:05+00:00",
+        "closed_at": "2024-11-19T20:21:05+00:00"
+      },
+      {
+        "number": 185,
+        "title": "Bump cross-spawn from 6.0.5 to 6.0.6 in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-11-19T20:26:59+00:00",
+        "merged_at": "2024-11-19T20:37:15+00:00",
+        "closed_at": "2024-11-19T20:37:15+00:00"
+      },
+      {
+        "number": 186,
+        "title": "add ffm",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2024-11-19T20:59:43+00:00",
+        "merged_at": "2024-11-26T19:00:26+00:00",
+        "closed_at": "2024-11-26T19:00:26+00:00"
+      },
+      {
+        "number": 187,
+        "title": "another update ffm",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2024-12-02T21:24:02+00:00",
+        "merged_at": "2024-12-02T21:30:19+00:00",
+        "closed_at": "2024-12-02T21:30:19+00:00"
+      },
+      {
+        "number": 188,
+        "title": "Add ffm",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2024-12-03T18:51:45+00:00",
+        "merged_at": "2024-12-11T13:37:18+00:00",
+        "closed_at": "2024-12-11T13:37:18+00:00"
+      },
+      {
+        "number": 189,
+        "title": "Bump json-schema and jsprim in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-12-09T19:37:25+00:00",
+        "merged_at": "2024-12-19T21:03:02+00:00",
+        "closed_at": "2024-12-19T21:03:02+00:00"
+      },
+      {
+        "number": 190,
+        "title": "Bump is-svg and postcss-svgo in /hugo",
+        "state": "closed",
+        "author_login": "dependabot[bot]",
+        "created_at": "2024-12-09T19:41:45+00:00",
+        "merged_at": "2024-12-19T20:57:51+00:00",
+        "closed_at": "2024-12-19T20:57:51+00:00"
+      },
+      {
+        "number": 191,
+        "title": "emails dortmund und klimawatch korrigiert",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2024-12-11T10:07:44+00:00",
+        "merged_at": "2024-12-11T10:11:56+00:00",
+        "closed_at": "2024-12-11T10:11:56+00:00"
+      },
+      {
+        "number": 192,
+        "title": "Update netlify.toml",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2024-12-11T10:44:52+00:00",
+        "merged_at": "2024-12-11T10:49:53+00:00",
+        "closed_at": "2024-12-11T10:49:53+00:00"
+      },
+      {
+        "number": 193,
+        "title": "Fix \"Wichtig\" Email",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2024-12-11T11:01:36+00:00",
+        "merged_at": "2024-12-11T11:02:37+00:00",
+        "closed_at": "2024-12-11T11:02:37+00:00"
+      },
+      {
+        "number": 194,
+        "title": "fix feedback email to klimawatch on several cities",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2024-12-11T11:08:02+00:00",
+        "merged_at": "2024-12-11T11:37:21+00:00",
+        "closed_at": "2024-12-11T11:37:21+00:00"
+      },
+      {
+        "number": 195,
+        "title": "Update netlify.toml",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2024-12-11T11:59:31+00:00",
+        "merged_at": "2024-12-11T12:01:49+00:00",
+        "closed_at": "2024-12-11T12:01:49+00:00"
+      },
+      {
+        "number": 196,
+        "title": "Bump pbkdf2 from 3.0.17 to 3.1.3 in /hugo",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-06-24T06:10:53+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 197,
+        "title": "Bump sha.js from 2.4.11 to 2.4.12 in /hugo",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-08-21T18:04:26+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 198,
+        "title": "Bump cipher-base from 1.0.4 to 1.0.6 in /hugo",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-09-11T23:22:24+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 199,
+        "title": "Bump js-yaml from 3.13.1 to 3.14.2 in /hugo",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2025-11-18T13:08:17+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 200,
+        "title": "Bump tar and fsevents in /hugo",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-17T05:51:31+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 201,
+        "title": "Bump lodash from 4.17.21 to 4.17.23 in /hugo",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-01-22T00:17:43+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 202,
+        "title": "Bump semver in /hugo",
+        "state": "open",
+        "author_login": "dependabot[bot]",
+        "created_at": "2026-02-05T00:10:09+00:00",
+        "merged_at": null,
+        "closed_at": null
+      },
+      {
+        "number": 203,
+        "title": "Update ms",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "created_at": "2026-04-10T20:05:04+00:00",
+        "merged_at": "2026-04-10T20:20:23+00:00",
+        "closed_at": "2026-04-10T20:20:23+00:00"
+      },
+      {
+        "number": 204,
+        "title": "Document Netlify deployment configuration in README",
+        "state": "closed",
+        "author_login": "digital-codes",
+        "created_at": "2026-04-23T17:15:57+00:00",
+        "merged_at": "2026-04-23T17:16:20+00:00",
+        "closed_at": "2026-04-23T17:16:20+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "codeformuenster/klimawatch",
+    "weekly_commits": [
+      {
+        "week_start": "2019-12-16",
+        "commits": 3
+      },
+      {
+        "week_start": "2019-12-23",
+        "commits": 9
+      },
+      {
+        "week_start": "2019-12-30",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-01-06",
+        "commits": 2
+      },
+      {
+        "week_start": "2020-01-20",
+        "commits": 4
+      },
+      {
+        "week_start": "2020-02-03",
+        "commits": 2
+      },
+      {
+        "week_start": "2020-02-10",
+        "commits": 6
+      },
+      {
+        "week_start": "2020-02-17",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-03-16",
+        "commits": 6
+      },
+      {
+        "week_start": "2020-03-23",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-03-30",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-04-20",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-05-04",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-05-18",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-07-13",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-07-20",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-09-07",
+        "commits": 9
+      },
+      {
+        "week_start": "2020-10-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2020-12-07",
+        "commits": 2
+      },
+      {
+        "week_start": "2020-12-14",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-02-15",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-03-01",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-03-08",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-05-17",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-05-24",
+        "commits": 3
+      },
+      {
+        "week_start": "2021-06-28",
+        "commits": 3
+      },
+      {
+        "week_start": "2021-08-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-08-09",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-08-16",
+        "commits": 3
+      },
+      {
+        "week_start": "2021-10-18",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-10-25",
+        "commits": 2
+      },
+      {
+        "week_start": "2021-11-08",
+        "commits": 1
+      },
+      {
+        "week_start": "2021-11-22",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-01-31",
+        "commits": 2
+      },
+      {
+        "week_start": "2022-02-21",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-03-28",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-04-04",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-06-06",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-07-04",
+        "commits": 1
+      },
+      {
+        "week_start": "2022-12-26",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-08-21",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-01-08",
+        "commits": 8
+      },
+      {
+        "week_start": "2024-02-12",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-02-26",
+        "commits": 2
+      },
+      {
+        "week_start": "2024-04-08",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-11-18",
+        "commits": 4
+      },
+      {
+        "week_start": "2024-11-25",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-12-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-12-09",
+        "commits": 6
+      },
+      {
+        "week_start": "2024-12-16",
+        "commits": 2
+      },
+      {
+        "week_start": "2026-04-06",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-04-20",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": 0.8261,
+    "bus_factor": 2,
+    "contribution_types": {
+      "code_commits": 264,
+      "pull_requests": 138,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "Unknown": 11,
+      "Code for M\u00fcnster": 2,
+      "giantswarm": 2,
+      "Mediform": 2,
+      "point8": 1
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 15,
+    "release_frequency_per_month": null,
+    "fork_count": 20,
+    "burstiness_cv": 0.93,
+    "burstiness_mean": 2.21,
+    "burstiness_std": 2.06,
+    "defect_resolution_durations_days": [],
+    "median_defect_resolution_days": null,
+    "osi_approved_license": true,
+    "bus_factor_no_bots": 2,
+    "bot_contributor_count": 1,
+    "bot_commit_count": 29,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 73.1,
+    "median_time_to_first_response_prs_hours": 169.1,
+    "time_to_first_response_issues_sample_size": 61,
+    "time_to_first_response_prs_sample_size": 100,
+    "readme_last_updated": "2026-04-23T17:16:20+00:00",
+    "contributing_last_updated": null,
+    "stale_issue_ratio": 1.0,
+    "stale_issue_count": 17,
+    "open_issue_count": 17,
+    "median_pr_review_turnaround_hours": 151.5,
+    "avg_review_comments_per_pr": 0.13,
+    "herfindahl_hirschman_index": 4771.7,
+    "hhi_no_bots": 4761.6,
+    "hhi_known_orgs_only": 6988.9,
+    "unknown_org_contributor_count": 11,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 8,
+      "unknown": 11
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 4,
+    "periphery_contributor_count": 7,
+    "core_periphery_ratio": 0.3636,
+    "network_density": 0.2182,
+    "avg_degree_centrality": 0.2182,
+    "pr_review_edges": [
+      {
+        "author": "silberzwiebel",
+        "reviewer": "ubergesundheit"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "thunfischtoast"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "chk1",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "jonek"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "jayAitch256",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ubergesundheit",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ubergesundheit",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "jonek",
+        "reviewer": "webwurst"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "thunfischtoast"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "thunfischtoast"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "thunfischtoast"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "dependabot[bot]",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "jonek"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "jonek"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "jonek"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "jonek"
+      },
+      {
+        "author": "thunfischtoast",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "jonek",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "jonek",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ghost",
+        "reviewer": "thunfischtoast"
+      },
+      {
+        "author": "ghost",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ghost",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ghost",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ghost",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ccauet",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ccauet",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "ubergesundheit"
+      },
+      {
+        "author": "jonek",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "ubergesundheit"
+      },
+      {
+        "author": "silberzwiebel",
+        "reviewer": "ubergesundheit"
+      },
+      {
+        "author": "marcel12bell",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "marcel12bell",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "marcel12bell",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ubergesundheit",
+        "reviewer": "silberzwiebel"
+      },
+      {
+        "author": "ubergesundheit",
+        "reviewer": "silberzwiebel"
+      }
+    ]
+  },
+  "crawled_at": "2026-06-04T05:51:18.454230+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "silberzwiebel",
+      "degree_centrality": 0.9,
+      "betweenness_centrality": 0.8889,
+      "classification": "core",
+      "num_collaborators": 9
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "ubergesundheit",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "thunfischtoast",
+      "degree_centrality": 0.3,
+      "betweenness_centrality": 0.0222,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "chk1",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "jonek",
+      "degree_centrality": 0.3,
+      "betweenness_centrality": 0.2,
+      "classification": "core",
+      "num_collaborators": 3
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "jayAitch256",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "webwurst",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "dependabot[bot]",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "ghost",
+      "degree_centrality": 0.2,
+      "betweenness_centrality": 0.0,
+      "classification": "core",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "ccauet",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "codeformuenster/klimawatch",
+      "login": "marcel12bell",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "codeformuenster/klimawatch",
+    "weekly_snapshots": [
+      {
+        "week_start": "2019-10-28",
+        "total_commits": 5,
+        "unique_contributors": 2,
+        "new_contributors": 2,
+        "cumulative_commits": 5,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2019-11-04",
+        "total_commits": 20,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 25,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2019-11-11",
+        "total_commits": 12,
+        "unique_contributors": 3,
+        "new_contributors": 2,
+        "cumulative_commits": 37,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2019-11-18",
+        "total_commits": 15,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 52,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2019-11-25",
+        "total_commits": 80,
+        "unique_contributors": 5,
+        "new_contributors": 1,
+        "cumulative_commits": 132,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2019-12-02",
+        "total_commits": 7,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 139,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2019-12-09",
+        "total_commits": 10,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 149,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2019-12-16",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 152,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2019-12-23",
+        "total_commits": 9,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 161,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2019-12-30",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 162,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2020-01-06",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 164,
+        "cumulative_contributors": 6
+      },
+      {
+        "week_start": "2020-01-20",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 168,
+        "cumulative_contributors": 7
+      },
+      {
+        "week_start": "2020-02-03",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 170,
+        "cumulative_contributors": 8
+      },
+      {
+        "week_start": "2020-02-10",
+        "total_commits": 6,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 176,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2020-02-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 177,
+        "cumulative_contributors": 9
+      },
+      {
+        "week_start": "2020-03-16",
+        "total_commits": 6,
+        "unique_contributors": 3,
+        "new_contributors": 1,
+        "cumulative_commits": 183,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-03-23",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 184,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-03-30",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 185,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-04-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 186,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-05-04",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 187,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-05-18",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 188,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-07-13",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 189,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-07-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 190,
+        "cumulative_contributors": 10
+      },
+      {
+        "week_start": "2020-09-07",
+        "total_commits": 9,
+        "unique_contributors": 5,
+        "new_contributors": 1,
+        "cumulative_commits": 199,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2020-10-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 200,
+        "cumulative_contributors": 11
+      },
+      {
+        "week_start": "2020-12-07",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 202,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2020-12-14",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 204,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2021-02-15",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 206,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2021-03-01",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 208,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2021-03-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 209,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2021-05-17",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 210,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2021-05-24",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 213,
+        "cumulative_contributors": 12
+      },
+      {
+        "week_start": "2021-06-28",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 216,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2021-08-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 217,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2021-08-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 218,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2021-08-16",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 221,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2021-10-18",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 223,
+        "cumulative_contributors": 13
+      },
+      {
+        "week_start": "2021-10-25",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 225,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2021-11-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 226,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2021-11-22",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 227,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2022-01-31",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 229,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2022-02-21",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 230,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2022-03-28",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 231,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2022-04-04",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 232,
+        "cumulative_contributors": 14
+      },
+      {
+        "week_start": "2022-06-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 233,
+        "cumulative_contributors": 15
+      },
+      {
+        "week_start": "2022-07-04",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 234,
+        "cumulative_contributors": 15
+      },
+      {
+        "week_start": "2022-12-26",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 235,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2023-08-21",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 236,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-01-08",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 244,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-02-12",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 245,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-02-26",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 247,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-04-08",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 248,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-11-18",
+        "total_commits": 4,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 252,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-11-25",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 253,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-12-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 254,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-12-09",
+        "total_commits": 6,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 260,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2024-12-16",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 262,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2026-04-06",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 263,
+        "cumulative_contributors": 16
+      },
+      {
+        "week_start": "2026-04-20",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 264,
+        "cumulative_contributors": 16
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "silberzwiebel",
+        "login": "silberzwiebel",
+        "name": "kartoffelsalat",
+        "email": "silberzwiebel@users.noreply.github.com",
+        "first_commit_date": "2019-10-31T16:54:01+00:00",
+        "last_commit_date": "2026-04-10T20:20:23+00:00",
+        "duration_days": 2353,
+        "total_commits": 150,
+        "active_weeks": 36,
+        "total_weeks_span": 336,
+        "activity_ratio": 0.1071,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 4.17
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "ubergesundheit",
+        "login": "ubergesundheit",
+        "name": "Gerald Pape",
+        "email": "ubergesundheit@users.noreply.github.com",
+        "first_commit_date": "2019-11-01T15:11:37+00:00",
+        "last_commit_date": "2021-02-15T14:24:29+00:00",
+        "duration_days": 471,
+        "total_commits": 30,
+        "active_weeks": 4,
+        "total_weeks_span": 67,
+        "activity_ratio": 0.0597,
+        "status": "departed",
+        "departed_weeks_ago": 276,
+        "avg_commits_per_active_week": 7.5
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "dependabot[bot]",
+        "login": "dependabot[bot]",
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "first_commit_date": "2020-03-17T21:02:47+00:00",
+        "last_commit_date": "2024-12-19T21:03:01+00:00",
+        "duration_days": 1738,
+        "total_commits": 29,
+        "active_weeks": 13,
+        "total_weeks_span": 248,
+        "activity_ratio": 0.0524,
+        "status": "departed",
+        "departed_weeks_ago": 75,
+        "avg_commits_per_active_week": 2.23
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "thunfischtoast",
+        "login": "thunfischtoast",
+        "name": "Christian",
+        "email": "thunfischtoast@posteo.de",
+        "first_commit_date": "2019-11-12T19:10:35+00:00",
+        "last_commit_date": "2022-02-01T21:30:52+00:00",
+        "duration_days": 812,
+        "total_commits": 16,
+        "active_weeks": 10,
+        "total_weeks_span": 116,
+        "activity_ratio": 0.0862,
+        "status": "departed",
+        "departed_weeks_ago": 226,
+        "avg_commits_per_active_week": 1.6
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "digital-codes",
+        "login": "digital-codes",
+        "name": "Andreas Kugel",
+        "email": "info@digital-codes.de",
+        "first_commit_date": "2022-06-09T07:18:03+00:00",
+        "last_commit_date": "2026-04-23T17:16:20+00:00",
+        "duration_days": 1414,
+        "total_commits": 9,
+        "active_weeks": 5,
+        "total_weeks_span": 202,
+        "activity_ratio": 0.0248,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 1.8
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "marcel12bell",
+        "login": "marcel12bell",
+        "name": "Marcel Belledin",
+        "email": "marcelbelledin@o2online.de",
+        "first_commit_date": "2019-11-14T09:43:58+00:00",
+        "last_commit_date": "2020-02-06T14:46:02+00:00",
+        "duration_days": 84,
+        "total_commits": 9,
+        "active_weeks": 5,
+        "total_weeks_span": 12,
+        "activity_ratio": 0.4167,
+        "status": "departed",
+        "departed_weeks_ago": 329,
+        "avg_commits_per_active_week": 1.8
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "lhm",
+        "login": "lhm",
+        "name": "Lars Mai",
+        "email": "lars.mai@kontinui.de",
+        "first_commit_date": "2019-12-14T13:08:29+00:00",
+        "last_commit_date": "2020-09-08T20:26:06+00:00",
+        "duration_days": 269,
+        "total_commits": 8,
+        "active_weeks": 3,
+        "total_weeks_span": 38,
+        "activity_ratio": 0.0789,
+        "status": "departed",
+        "departed_weeks_ago": 299,
+        "avg_commits_per_active_week": 2.67
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "jayAitch256",
+        "login": "jayAitch256",
+        "name": "Jan Hauke",
+        "email": "46936427+jayAitch256@users.noreply.github.com",
+        "first_commit_date": "2021-06-29T19:41:49+00:00",
+        "last_commit_date": "2021-07-01T16:54:14+00:00",
+        "duration_days": 1,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 256,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "Luensche",
+        "login": "Luensche",
+        "name": "Bj\u00f6rn Engel",
+        "email": "github@bjoernengel.de",
+        "first_commit_date": "2020-12-08T19:09:21+00:00",
+        "last_commit_date": "2020-12-12T12:53:59+00:00",
+        "duration_days": 3,
+        "total_commits": 2,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 285,
+        "avg_commits_per_active_week": 2.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "jonek",
+        "login": "jonek",
+        "name": "Johannes Eickhold",
+        "email": "jonek@gmx.net",
+        "first_commit_date": "2020-01-22T16:38:32+00:00",
+        "last_commit_date": "2020-09-08T20:11:51+00:00",
+        "duration_days": 230,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 32,
+        "activity_ratio": 0.0625,
+        "status": "departed",
+        "departed_weeks_ago": 299,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "tom@tom-thats.me",
+        "login": null,
+        "name": "TomThats",
+        "email": "tom@tom-thats.me",
+        "first_commit_date": "2020-02-07T12:15:53+00:00",
+        "last_commit_date": "2020-02-12T13:18:11+00:00",
+        "duration_days": 5,
+        "total_commits": 2,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 329,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "saerdnaer",
+        "login": "saerdnaer",
+        "name": "Andreas Hubel",
+        "email": "40266+saerdnaer@users.noreply.github.com",
+        "first_commit_date": "2022-12-29T15:27:00+00:00",
+        "last_commit_date": "2022-12-29T15:27:00+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 178,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "chk1",
+        "login": "chk1",
+        "name": "Christoph Kisfeld",
+        "email": "spam@b-web.org",
+        "first_commit_date": "2021-10-28T07:08:26+00:00",
+        "last_commit_date": "2021-10-28T07:08:26+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 239,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "mwunderlich",
+        "login": "mwunderlich",
+        "name": "Martin Wunderlich",
+        "email": "martin@wunderlich.com",
+        "first_commit_date": "2020-09-08T20:42:47+00:00",
+        "last_commit_date": "2020-09-08T20:42:47+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 299,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "ccauet",
+        "login": "ccauet",
+        "name": "Christophe Cauet",
+        "email": "ccauet@users.noreply.github.com",
+        "first_commit_date": "2020-02-12T09:18:10+00:00",
+        "last_commit_date": "2020-02-12T09:18:10+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 329,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "codeformuenster/klimawatch",
+        "contributor_id": "MTRNord",
+        "login": "MTRNord",
+        "name": "Marcel",
+        "email": "MTRNord@users.noreply.github.com",
+        "first_commit_date": "2019-11-26T11:41:41+00:00",
+        "last_commit_date": "2019-11-26T11:41:41+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 340,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "digital-codes",
+        "week_start": "2022-06-06",
+        "commits": 1,
+        "lines_added": 95,
+        "lines_removed": 84
+      },
+      {
+        "contributor_id": "digital-codes",
+        "week_start": "2022-07-04",
+        "commits": 1,
+        "lines_added": 9,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "digital-codes",
+        "week_start": "2023-08-21",
+        "commits": 1,
+        "lines_added": 6,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "digital-codes",
+        "week_start": "2024-12-09",
+        "commits": 5,
+        "lines_added": 22,
+        "lines_removed": 15
+      },
+      {
+        "contributor_id": "digital-codes",
+        "week_start": "2026-04-20",
+        "commits": 1,
+        "lines_added": 37,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-10-28",
+        "commits": 4,
+        "lines_added": 29,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-11-04",
+        "commits": 20,
+        "lines_added": 3367,
+        "lines_removed": 286
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-11-11",
+        "commits": 7,
+        "lines_added": 24773,
+        "lines_removed": 2959
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-11-18",
+        "commits": 12,
+        "lines_added": 187,
+        "lines_removed": 21465
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-11-25",
+        "commits": 50,
+        "lines_added": 21745,
+        "lines_removed": 1731
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-12-02",
+        "commits": 6,
+        "lines_added": 746,
+        "lines_removed": 283
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-12-09",
+        "commits": 4,
+        "lines_added": 410,
+        "lines_removed": 50
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-12-16",
+        "commits": 2,
+        "lines_added": 229,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-12-23",
+        "commits": 9,
+        "lines_added": 639,
+        "lines_removed": 290
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2019-12-30",
+        "commits": 1,
+        "lines_added": 530,
+        "lines_removed": 49
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-01-06",
+        "commits": 1,
+        "lines_added": 10950,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-02-10",
+        "commits": 4,
+        "lines_added": 50,
+        "lines_removed": 40
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-03-16",
+        "commits": 3,
+        "lines_added": 13,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-03-23",
+        "commits": 1,
+        "lines_added": 19,
+        "lines_removed": 19
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-03-30",
+        "commits": 1,
+        "lines_added": 236,
+        "lines_removed": 77
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-04-20",
+        "commits": 1,
+        "lines_added": 52,
+        "lines_removed": 52
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-05-04",
+        "commits": 1,
+        "lines_added": 143,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-07-13",
+        "commits": 1,
+        "lines_added": 52,
+        "lines_removed": 35
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-09-07",
+        "commits": 4,
+        "lines_added": 550,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2020-10-12",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2021-03-01",
+        "commits": 2,
+        "lines_added": 168,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2021-05-17",
+        "commits": 1,
+        "lines_added": 63,
+        "lines_removed": 148
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2021-06-28",
+        "commits": 1,
+        "lines_added": 58,
+        "lines_removed": 66
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2021-08-02",
+        "commits": 1,
+        "lines_added": 133,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2021-08-09",
+        "commits": 1,
+        "lines_added": 132,
+        "lines_removed": 256
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2021-10-25",
+        "commits": 1,
+        "lines_added": 356,
+        "lines_removed": 59
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2022-01-31",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 26
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2022-04-04",
+        "commits": 1,
+        "lines_added": 4151,
+        "lines_removed": 4127
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2024-02-12",
+        "commits": 1,
+        "lines_added": 10,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2024-02-26",
+        "commits": 1,
+        "lines_added": 112,
+        "lines_removed": 42
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2024-04-08",
+        "commits": 1,
+        "lines_added": 25,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2024-11-18",
+        "commits": 1,
+        "lines_added": 14,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2024-11-25",
+        "commits": 1,
+        "lines_added": 138,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2024-12-02",
+        "commits": 1,
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2024-12-09",
+        "commits": 1,
+        "lines_added": 70,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "silberzwiebel",
+        "week_start": "2026-04-06",
+        "commits": 1,
+        "lines_added": 126,
+        "lines_removed": 30
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2020-03-16",
+        "commits": 1,
+        "lines_added": 12,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2020-07-20",
+        "commits": 1,
+        "lines_added": 211,
+        "lines_removed": 47
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2020-09-07",
+        "commits": 2,
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2020-12-14",
+        "commits": 2,
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2021-03-08",
+        "commits": 1,
+        "lines_added": 16,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2021-05-24",
+        "commits": 3,
+        "lines_added": 42,
+        "lines_removed": 33
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2021-08-16",
+        "commits": 3,
+        "lines_added": 12,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2022-02-21",
+        "commits": 1,
+        "lines_added": 11,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2022-03-28",
+        "commits": 1,
+        "lines_added": 5,
+        "lines_removed": 87
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2024-01-08",
+        "commits": 8,
+        "lines_added": 267,
+        "lines_removed": 70
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2024-02-26",
+        "commits": 1,
+        "lines_added": 41,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2024-11-18",
+        "commits": 3,
+        "lines_added": 98,
+        "lines_removed": 91
+      },
+      {
+        "contributor_id": "dependabot[bot]",
+        "week_start": "2024-12-16",
+        "commits": 2,
+        "lines_added": 14,
+        "lines_removed": 26
+      },
+      {
+        "contributor_id": "saerdnaer",
+        "week_start": "2022-12-26",
+        "commits": 1,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2019-11-11",
+        "commits": 2,
+        "lines_added": 9,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2019-11-25",
+        "commits": 2,
+        "lines_added": 18,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2020-01-20",
+        "commits": 3,
+        "lines_added": 326,
+        "lines_removed": 257
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2020-02-17",
+        "commits": 1,
+        "lines_added": 223,
+        "lines_removed": 37
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2020-03-16",
+        "commits": 2,
+        "lines_added": 397,
+        "lines_removed": 282
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2020-05-18",
+        "commits": 1,
+        "lines_added": 13,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2021-10-18",
+        "commits": 2,
+        "lines_added": 23,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2021-11-08",
+        "commits": 1,
+        "lines_added": 156,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2021-11-22",
+        "commits": 1,
+        "lines_added": 514,
+        "lines_removed": 397
+      },
+      {
+        "contributor_id": "thunfischtoast",
+        "week_start": "2022-01-31",
+        "commits": 1,
+        "lines_added": 4587,
+        "lines_removed": 63
+      },
+      {
+        "contributor_id": "chk1",
+        "week_start": "2021-10-25",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "jayAitch256",
+        "week_start": "2021-06-28",
+        "commits": 2,
+        "lines_added": 173,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "ubergesundheit",
+        "week_start": "2019-10-28",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "ubergesundheit",
+        "week_start": "2019-11-25",
+        "commits": 26,
+        "lines_added": 739,
+        "lines_removed": 757
+      },
+      {
+        "contributor_id": "ubergesundheit",
+        "week_start": "2020-01-06",
+        "commits": 1,
+        "lines_added": 10950,
+        "lines_removed": 8
+      },
+      {
+        "contributor_id": "ubergesundheit",
+        "week_start": "2021-02-15",
+        "commits": 2,
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "Luensche",
+        "week_start": "2020-12-07",
+        "commits": 2,
+        "lines_added": 147,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "mwunderlich",
+        "week_start": "2020-09-07",
+        "commits": 1,
+        "lines_added": 157,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "lhm",
+        "week_start": "2019-12-09",
+        "commits": 6,
+        "lines_added": 321,
+        "lines_removed": 25
+      },
+      {
+        "contributor_id": "lhm",
+        "week_start": "2019-12-16",
+        "commits": 1,
+        "lines_added": 53,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "lhm",
+        "week_start": "2020-09-07",
+        "commits": 1,
+        "lines_added": 70,
+        "lines_removed": 48
+      },
+      {
+        "contributor_id": "jonek",
+        "week_start": "2020-01-20",
+        "commits": 1,
+        "lines_added": 69,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "jonek",
+        "week_start": "2020-09-07",
+        "commits": 1,
+        "lines_added": 31,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "tom@tom-thats.me",
+        "week_start": "2020-02-03",
+        "commits": 1,
+        "lines_added": 253,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "tom@tom-thats.me",
+        "week_start": "2020-02-10",
+        "commits": 1,
+        "lines_added": 97,
+        "lines_removed": 18
+      },
+      {
+        "contributor_id": "ccauet",
+        "week_start": "2020-02-10",
+        "commits": 1,
+        "lines_added": 136,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "marcel12bell",
+        "week_start": "2019-11-11",
+        "commits": 3,
+        "lines_added": 16592,
+        "lines_removed": 11
+      },
+      {
+        "contributor_id": "marcel12bell",
+        "week_start": "2019-11-18",
+        "commits": 3,
+        "lines_added": 165,
+        "lines_removed": 229
+      },
+      {
+        "contributor_id": "marcel12bell",
+        "week_start": "2019-11-25",
+        "commits": 1,
+        "lines_added": 50,
+        "lines_removed": 36
+      },
+      {
+        "contributor_id": "marcel12bell",
+        "week_start": "2019-12-02",
+        "commits": 1,
+        "lines_added": 17,
+        "lines_removed": 14
+      },
+      {
+        "contributor_id": "marcel12bell",
+        "week_start": "2020-02-03",
+        "commits": 1,
+        "lines_added": 2641,
+        "lines_removed": 555
+      },
+      {
+        "contributor_id": "MTRNord",
+        "week_start": "2019-11-25",
+        "commits": 1,
+        "lines_added": 2,
+        "lines_removed": 2
+      }
+    ],
+    "total_weeks": 59,
+    "total_unique_contributors": 16,
+    "new_contributor_rate_per_month": 0.21,
+    "total_commits_scanned": 264,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "codeformuenster/klimawatch",
+    "issues": [
+      {
+        "number": 2,
+        "title": "Text, was das alles soll",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:38:34+00:00",
+        "closed_at": "2019-11-27T10:34:46+00:00",
+        "updated_at": "2019-11-27T10:34:46+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 20.71
+      },
+      {
+        "number": 3,
+        "title": "README f\u00fcr Reproduktion",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:38:51+00:00",
+        "closed_at": "2019-11-27T10:34:54+00:00",
+        "updated_at": "2019-11-27T10:34:54+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 20.71
+      },
+      {
+        "number": 4,
+        "title": "deutsche Nummertrenner",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:39:30+00:00",
+        "closed_at": "2019-11-30T21:43:46+00:00",
+        "updated_at": "2019-11-30T21:43:46+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 24.17
+      },
+      {
+        "number": 5,
+        "title": "einfaches generieren der Seite",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:40:13+00:00",
+        "closed_at": "2019-11-27T10:35:33+00:00",
+        "updated_at": "2019-11-27T10:35:33+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 20.71
+      },
+      {
+        "number": 6,
+        "title": "Daten in csv-Form",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:41:04+00:00",
+        "closed_at": "2019-11-25T10:18:52+00:00",
+        "updated_at": "2019-11-25T10:18:52+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 18.69
+      },
+      {
+        "number": 7,
+        "title": "Module und Sachstand des Klimaschutzplans 2020 visualisieren",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:47:32+00:00",
+        "closed_at": "2020-01-07T18:19:44+00:00",
+        "updated_at": "2020-01-07T18:19:44+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 62.02
+      },
+      {
+        "number": 8,
+        "title": "Daten pro Sektor aufschl\u00fcsseln",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:48:55+00:00",
+        "closed_at": "2019-11-27T10:35:59+00:00",
+        "updated_at": "2019-11-27T10:35:59+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 20.7
+      },
+      {
+        "number": 9,
+        "title": "einzelne Sektoren visualisieren",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:49:34+00:00",
+        "closed_at": "2019-11-27T10:34:35+00:00",
+        "updated_at": "2019-11-27T10:34:35+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 20.7
+      },
+      {
+        "number": 10,
+        "title": "mobile friendly",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T17:51:50+00:00",
+        "closed_at": "2019-11-29T17:01:08+00:00",
+        "updated_at": "2019-11-29T17:01:08+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 22.96
+      },
+      {
+        "number": 11,
+        "title": "Ziele laut Klimaschutzmasterplan bis 2030 / 2050 eintragen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T18:16:02+00:00",
+        "closed_at": "2019-11-27T10:36:24+00:00",
+        "updated_at": "2019-11-27T10:36:24+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 20.68
+      },
+      {
+        "number": 12,
+        "title": "Farbenblindgeeignete Farbpalette nutzen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-06T18:30:20+00:00",
+        "closed_at": "2020-02-07T12:53:22+00:00",
+        "updated_at": "2020-02-07T12:53:23+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 92.77
+      },
+      {
+        "number": 13,
+        "title": "Lizenz",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-07T15:54:49+00:00",
+        "closed_at": "2019-11-29T17:00:55+00:00",
+        "updated_at": "2019-11-29T17:00:55+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 22.05
+      },
+      {
+        "number": 14,
+        "title": "\u201cHeute\u201d im Diagramm markieren",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-08T11:57:56+00:00",
+        "closed_at": "2019-11-27T10:32:56+00:00",
+        "updated_at": "2019-11-27T10:32:56+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 18.94
+      },
+      {
+        "number": 15,
+        "title": "NutzerInnen sollen Parisziele selber einzeichnen k\u00f6nnen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-09T20:12:10+00:00",
+        "closed_at": "2019-11-27T10:32:31+00:00",
+        "updated_at": "2019-11-30T16:29:50+00:00",
+        "comment_count": 4,
+        "labels": [],
+        "time_to_close_days": 17.6
+      },
+      {
+        "number": 18,
+        "title": "Bem\u00fchungen um erneuerbare Energien auch visualisieren",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-25T13:30:23+00:00",
+        "closed_at": "2021-03-23T21:03:12+00:00",
+        "updated_at": "2021-03-23T21:03:12+00:00",
+        "comment_count": 5,
+        "labels": [
+          "enhancement",
+          "help wanted"
+        ],
+        "time_to_close_days": 484.31
+      },
+      {
+        "number": 23,
+        "title": "Falsche Ausrichtung im footer (mobile) ",
+        "state": "closed",
+        "author_login": "MTRNord",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-29T11:26:20+00:00",
+        "closed_at": "2019-11-29T16:55:35+00:00",
+        "updated_at": "2019-11-29T16:55:35+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.23
+      },
+      {
+        "number": 24,
+        "title": "Deployment fixen",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "closed_by_login": "ubergesundheit",
+        "created_at": "2019-11-29T16:25:35+00:00",
+        "closed_at": "2019-11-29T20:14:12+00:00",
+        "updated_at": "2019-11-29T20:14:12+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.16
+      },
+      {
+        "number": 25,
+        "title": "Startseite - Startseite?",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-29T16:26:17+00:00",
+        "closed_at": "2019-11-29T17:00:03+00:00",
+        "updated_at": "2019-11-29T17:00:03+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 0.02
+      },
+      {
+        "number": 27,
+        "title": "Email verschleiern",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-29T16:38:35+00:00",
+        "closed_at": "2019-12-04T15:29:43+00:00",
+        "updated_at": "2019-12-04T15:29:43+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 4.95
+      },
+      {
+        "number": 28,
+        "title": "\"Was kann ich tun\"-Liste erweitern?",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-29T22:37:48+00:00",
+        "closed_at": "2021-10-19T21:47:52+00:00",
+        "updated_at": "2021-10-19T21:47:53+00:00",
+        "comment_count": 1,
+        "labels": [
+          "nice-to-have"
+        ],
+        "time_to_close_days": 689.97
+      },
+      {
+        "number": 30,
+        "title": "konstante Farben nutzen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-30T21:37:29+00:00",
+        "closed_at": "2020-03-17T22:05:51+00:00",
+        "updated_at": "2020-03-17T22:05:51+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 108.02
+      },
+      {
+        "number": 31,
+        "title": "geplante Sektorziele passend visualisieren",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2019-11-30T21:39:01+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T18:53:44+00:00",
+        "comment_count": 3,
+        "labels": [
+          "nice-to-have"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 32,
+        "title": "Rest der Seite erst nach you-draw-it anzeigen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-30T21:40:40+00:00",
+        "closed_at": "2020-02-19T10:03:00+00:00",
+        "updated_at": "2020-02-19T10:03:00+00:00",
+        "comment_count": 6,
+        "labels": [],
+        "time_to_close_days": 80.52
+      },
+      {
+        "number": 33,
+        "title": "you-draw-it Daten automatisch einlesen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-11-30T21:42:25+00:00",
+        "closed_at": "2020-02-06T15:36:17+00:00",
+        "updated_at": "2020-02-06T15:36:17+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 67.75
+      },
+      {
+        "number": 34,
+        "title": "scrollZoom von Plotly bei Touch-Ger\u00e4ten abschalten",
+        "state": "closed",
+        "author_login": "marcel12bell",
+        "closed_by_login": "marcel12bell",
+        "created_at": "2019-12-03T07:04:36+00:00",
+        "closed_at": "2019-12-08T10:50:17+00:00",
+        "updated_at": "2019-12-08T10:50:17+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 5.16
+      },
+      {
+        "number": 35,
+        "title": "you-draw-it zeichnet nicht zuverl\u00e4ssig",
+        "state": "closed",
+        "author_login": "quassy",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-12-03T18:32:34+00:00",
+        "closed_at": "2020-02-19T10:02:04+00:00",
+        "updated_at": "2020-02-19T10:02:04+00:00",
+        "comment_count": 11,
+        "labels": [],
+        "time_to_close_days": 77.65
+      },
+      {
+        "number": 37,
+        "title": "Dateigr\u00f6\u00dfe Plotly",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-12-05T12:23:29+00:00",
+        "closed_at": "2020-01-13T09:58:53+00:00",
+        "updated_at": "2020-01-13T09:58:53+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 38.9
+      },
+      {
+        "number": 39,
+        "title": "you-draw-it Y-Achsenbeschriftung",
+        "state": "closed",
+        "author_login": "ubergesundheit",
+        "closed_by_login": "ubergesundheit",
+        "created_at": "2019-12-10T08:18:06+00:00",
+        "closed_at": "2020-02-06T15:53:10+00:00",
+        "updated_at": "2020-02-06T15:53:11+00:00",
+        "comment_count": 5,
+        "labels": [],
+        "time_to_close_days": 58.32
+      },
+      {
+        "number": 44,
+        "title": "Notebooks f\u00fcr St\u00e4dteseiten?",
+        "state": "closed",
+        "author_login": "lhm",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2019-12-14T14:03:19+00:00",
+        "closed_at": "2021-03-23T21:02:36+00:00",
+        "updated_at": "2021-03-23T21:02:37+00:00",
+        "comment_count": 2,
+        "labels": [
+          "infrastructure"
+        ],
+        "time_to_close_days": 465.29
+      },
+      {
+        "number": 48,
+        "title": "Standard f\u00fcr Einwohnerzahlen schaffen und durchsetzen",
+        "state": "open",
+        "author_login": "thunfischtoast",
+        "closed_by_login": null,
+        "created_at": "2020-01-22T17:26:32+00:00",
+        "closed_at": null,
+        "updated_at": "2021-10-28T07:11:15+00:00",
+        "comment_count": 1,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 49,
+        "title": "Correctiv fragen, ob wir ihre Daten f\u00fcr Klimawatch nutzen k\u00f6nnen",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-01-23T14:29:17+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T19:03:28+00:00",
+        "comment_count": 0,
+        "labels": [
+          "question",
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 53,
+        "title": "Wie mit CO2-\u00c4quivalenten umgehen?",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-02-06T11:04:26+00:00",
+        "closed_at": "2021-03-23T21:16:00+00:00",
+        "updated_at": "2021-03-23T21:16:00+00:00",
+        "comment_count": 1,
+        "labels": [
+          "question"
+        ],
+        "time_to_close_days": 411.42
+      },
+      {
+        "number": 56,
+        "title": "Hugo Version > 0.60 erlaubt per Default kein inline HTML mehr (z.B. <sub>)",
+        "state": "closed",
+        "author_login": "ghost",
+        "closed_by_login": "thunfischtoast",
+        "created_at": "2020-02-07T11:46:00+00:00",
+        "closed_at": "2021-10-24T14:15:33+00:00",
+        "updated_at": "2021-10-24T14:15:33+00:00",
+        "comment_count": 0,
+        "labels": [
+          "dependencies",
+          "infrastructure"
+        ],
+        "time_to_close_days": 625.1
+      },
+      {
+        "number": 57,
+        "title": "gleicher Linkstyle auf Kommunen-Seite",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-02-07T12:29:30+00:00",
+        "closed_at": "2020-05-19T19:55:27+00:00",
+        "updated_at": "2020-05-19T19:55:28+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 102.31
+      },
+      {
+        "number": 59,
+        "title": "Share-M\u00f6glichkeit einbauen",
+        "state": "open",
+        "author_login": "ghost",
+        "closed_by_login": null,
+        "created_at": "2020-02-09T10:47:20+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T19:03:47+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement",
+          "good first issue"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 61,
+        "title": "Externe Links in neuem Tab \u00f6ffnen",
+        "state": "closed",
+        "author_login": "ghost",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-02-11T08:42:00+00:00",
+        "closed_at": "2020-02-11T20:46:40+00:00",
+        "updated_at": "2020-02-11T20:46:40+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 0.5
+      },
+      {
+        "number": 62,
+        "title": "you-draw-it: transparenter machen, was echte und was berechnete Daten sind",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-02-11T10:22:10+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T18:59:38+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 67,
+        "title": "neue hugo version?",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "thunfischtoast",
+        "created_at": "2020-02-11T20:46:16+00:00",
+        "closed_at": "2021-10-24T14:15:31+00:00",
+        "updated_at": "2021-10-24T14:15:31+00:00",
+        "comment_count": 2,
+        "labels": [
+          "dependencies",
+          "infrastructure"
+        ],
+        "time_to_close_days": 620.73
+      },
+      {
+        "number": 69,
+        "title": "Gesamtemissionen Deutschland 2019 f\u00fcr Paris-Budget-Berechnung nutzen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-02-18T17:40:21+00:00",
+        "closed_at": "2020-06-23T19:08:42+00:00",
+        "updated_at": "2020-06-23T19:08:42+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 126.06
+      },
+      {
+        "number": 70,
+        "title": "Muster-Brief f\u00fcr Anfragen an kommunale Stellen",
+        "state": "closed",
+        "author_login": "thunfischtoast",
+        "closed_by_login": "thunfischtoast",
+        "created_at": "2020-02-18T19:06:47+00:00",
+        "closed_at": "2020-03-10T19:40:05+00:00",
+        "updated_at": "2020-03-10T19:40:05+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 21.02
+      },
+      {
+        "number": 72,
+        "title": "Kartendarstellung",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-02-19T08:59:10+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T18:56:17+00:00",
+        "comment_count": 2,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 73,
+        "title": "Umstellung auf klimawatch.de",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-02-19T09:10:37+00:00",
+        "closed_at": "2020-03-18T18:23:32+00:00",
+        "updated_at": "2020-03-18T18:23:32+00:00",
+        "comment_count": 5,
+        "labels": [],
+        "time_to_close_days": 28.38
+      },
+      {
+        "number": 75,
+        "title": "Quellen f\u00fcr weitere St\u00e4dte",
+        "state": "open",
+        "author_login": "thunfischtoast",
+        "closed_by_login": null,
+        "created_at": "2020-03-10T20:05:16+00:00",
+        "closed_at": null,
+        "updated_at": "2021-10-19T21:45:51+00:00",
+        "comment_count": 1,
+        "labels": [
+          "good first issue",
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 77,
+        "title": "rename \"value\" to \"co2\"",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-03-17T21:50:31+00:00",
+        "closed_at": "2020-03-24T20:11:20+00:00",
+        "updated_at": "2020-03-24T20:11:20+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 6.93
+      },
+      {
+        "number": 85,
+        "title": "Quellen und Gradziel f\u00fcr paris-limits.md ",
+        "state": "closed",
+        "author_login": "kolossos",
+        "closed_by_login": "kolossos",
+        "created_at": "2020-05-06T17:48:28+00:00",
+        "closed_at": "2020-05-12T20:59:38+00:00",
+        "updated_at": "2020-05-12T20:59:38+00:00",
+        "comment_count": 4,
+        "labels": [],
+        "time_to_close_days": 6.13
+      },
+      {
+        "number": 87,
+        "title": "Ansprechparnter f\u00fcr Stadt im Template",
+        "state": "closed",
+        "author_login": "gerbsen",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-05-22T08:25:10+00:00",
+        "closed_at": "2020-09-08T20:38:00+00:00",
+        "updated_at": "2020-09-08T20:38:00+00:00",
+        "comment_count": 1,
+        "labels": [
+          "good first issue"
+        ],
+        "time_to_close_days": 109.51
+      },
+      {
+        "number": 89,
+        "title": "Daten f\u00fcr Aachen",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-06-23T18:32:29+00:00",
+        "closed_at": null,
+        "updated_at": "2020-07-28T20:00:59+00:00",
+        "comment_count": 2,
+        "labels": [
+          "good first issue",
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 90,
+        "title": "Tracking Klimaschutzkonzept \u00fcberarbeiten",
+        "state": "open",
+        "author_login": "thunfischtoast",
+        "closed_by_login": null,
+        "created_at": "2020-06-23T19:05:41+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T19:05:41+00:00",
+        "comment_count": 0,
+        "labels": [
+          "enhancement"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 91,
+        "title": "Klimaschutz-Planer wegen API anfragen",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-06-23T19:15:42+00:00",
+        "closed_at": null,
+        "updated_at": "2020-09-08T20:53:07+00:00",
+        "comment_count": 7,
+        "labels": [
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 92,
+        "title": "Daten vom Landesamt Baden-W\u00fcrttemberg nutzen",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-06-23T19:19:06+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T19:19:06+00:00",
+        "comment_count": 0,
+        "labels": [
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 93,
+        "title": "Bei Ecospeed nach API nachfragen",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-06-23T19:20:45+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T19:23:58+00:00",
+        "comment_count": 1,
+        "labels": [
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 94,
+        "title": "Beim IFEU nach API nachfragen",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-06-23T19:22:10+00:00",
+        "closed_at": null,
+        "updated_at": "2020-06-23T21:56:20+00:00",
+        "comment_count": 1,
+        "labels": [
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 101,
+        "title": "Aufteilung der Emissionen nach Sektoren?",
+        "state": "closed",
+        "author_login": "lhm",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-08-06T12:22:41+00:00",
+        "closed_at": "2021-03-23T21:16:59+00:00",
+        "updated_at": "2021-03-23T21:17:00+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 229.37
+      },
+      {
+        "number": 102,
+        "title": "Matrix Chat Raum offline",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2020-09-01T21:31:14+00:00",
+        "closed_at": "2020-10-13T20:42:38+00:00",
+        "updated_at": "2020-10-13T20:42:38+00:00",
+        "comment_count": 2,
+        "labels": [],
+        "time_to_close_days": 41.97
+      },
+      {
+        "number": 103,
+        "title": "M\u00fcnster: Ma\u00dfnahmenprogramm aktualisieren",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2020-09-01T21:33:00+00:00",
+        "closed_at": null,
+        "updated_at": "2020-10-31T13:26:11+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 113,
+        "title": "Daten f\u00fcr Osnabr\u00fcck",
+        "state": "open",
+        "author_login": "silberzwiebel",
+        "closed_by_login": null,
+        "created_at": "2021-01-09T13:03:15+00:00",
+        "closed_at": null,
+        "updated_at": "2021-01-12T20:44:25+00:00",
+        "comment_count": 1,
+        "labels": [
+          "good first issue",
+          "data"
+        ],
+        "time_to_close_days": null
+      },
+      {
+        "number": 114,
+        "title": "Text und Graphenerstellung f\u00fcr 2021 anpassen",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2021-01-09T13:05:09+00:00",
+        "closed_at": "2021-08-10T20:39:09+00:00",
+        "updated_at": "2021-08-10T20:39:09+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": 213.32
+      },
+      {
+        "number": 117,
+        "title": "add data for Dortmund",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2021-02-15T13:44:18+00:00",
+        "closed_at": "2021-03-02T20:28:14+00:00",
+        "updated_at": "2021-03-02T20:28:14+00:00",
+        "comment_count": 1,
+        "labels": [
+          "data"
+        ],
+        "time_to_close_days": 15.28
+      },
+      {
+        "number": 138,
+        "title": "Erstellung einer neuen Kommune automatisieren",
+        "state": "closed",
+        "author_login": "silberzwiebel",
+        "closed_by_login": "silberzwiebel",
+        "created_at": "2021-08-10T20:36:37+00:00",
+        "closed_at": "2021-10-28T07:10:19+00:00",
+        "updated_at": "2021-10-28T07:10:19+00:00",
+        "comment_count": 1,
+        "labels": [],
+        "time_to_close_days": 78.44
+      },
+      {
+        "number": 161,
+        "title": "Darstellung von Daten in you-draw-it charts ist falsch wenn Abst\u00e4nde zwischen Zeitpunkten nicht gleich ist",
+        "state": "open",
+        "author_login": "k-nut",
+        "closed_by_login": null,
+        "created_at": "2022-10-22T07:11:39+00:00",
+        "closed_at": null,
+        "updated_at": "2022-10-22T07:11:39+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      },
+      {
+        "number": 164,
+        "title": "Ranking / Leader Board",
+        "state": "open",
+        "author_login": "cryve",
+        "closed_by_login": null,
+        "created_at": "2022-12-18T12:27:42+00:00",
+        "closed_at": null,
+        "updated_at": "2022-12-18T12:27:42+00:00",
+        "comment_count": 0,
+        "labels": [],
+        "time_to_close_days": null
+      }
+    ],
+    "total_issues": 61,
+    "open_issues": 17,
+    "closed_issues": 44,
+    "avg_comments_per_issue": 1.51,
+    "median_time_to_close_days": 26.27,
+    "unique_openers": 12,
+    "unique_closers": 5,
+    "top_openers": {
+      "silberzwiebel": 38,
+      "ubergesundheit": 7,
+      "thunfischtoast": 4,
+      "ghost": 3,
+      "lhm": 2,
+      "MTRNord": 1,
+      "marcel12bell": 1,
+      "quassy": 1,
+      "kolossos": 1,
+      "gerbsen": 1,
+      "k-nut": 1,
+      "cryve": 1
+    },
+    "top_closers": {
+      "silberzwiebel": 37,
+      "thunfischtoast": 3,
+      "ubergesundheit": 2,
+      "marcel12bell": 1,
+      "kolossos": 1
+    }
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "codeformuenster/klimawatch",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 264,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}

@@ -1,0 +1,1056 @@
+{
+  "repo_metrics": {
+    "full_name": "oklabflensburg/open-trees-map",
+    "name": "open-trees-map",
+    "description": "Interaktive webbasierte Karte der lebenden und gef\u00e4llten Stra\u00dfenb\u00e4ume der Stadt Flensburg des TBZ Flensburg",
+    "num_developers": 5,
+    "total_commits": 99,
+    "languages": {
+      "HTML": 47871,
+      "JavaScript": 26055,
+      "Python": 21685,
+      "CSS": 8435
+    },
+    "primary_language": "HTML",
+    "first_commit_date": "2023-04-28T07:08:46+00:00",
+    "last_commit_date": "2026-03-24T07:43:04+00:00",
+    "license_spdx": "CC0-1.0",
+    "license_name": "Creative Commons Zero v1.0 Universal",
+    "is_osi_approved": false,
+    "topics": [
+      "baumkataster",
+      "geodata",
+      "geojson",
+      "opendata",
+      "public-domain",
+      "hacktoberfest",
+      "python"
+    ],
+    "has_contributing": true,
+    "has_code_of_conduct": false,
+    "has_governance": false,
+    "has_readme": true,
+    "has_issue_template": false,
+    "has_pr_template": false,
+    "health_percentage": 62,
+    "stars": 3,
+    "watchers": 3,
+    "forks": 3,
+    "cloud_detected": false,
+    "cloud_signals": [],
+    "ai_ml_detected": false,
+    "ai_ml_signals": [],
+    "has_ci_cd": true,
+    "ci_cd_workflows": [
+      "Run codeql",
+      "Lighthouse CI",
+      "Lint css files",
+      "Lint html files",
+      "Lint js files"
+    ],
+    "deployments_count": 0,
+    "created_at": "2023-04-28T07:08:45+00:00",
+    "updated_at": "2026-03-24T07:43:09+00:00",
+    "pushed_at": "2026-03-24T07:43:05+00:00",
+    "size_kb": 16972
+  },
+  "person_metrics": [
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "p3t3r67x0",
+      "name": "Open Data Coder",
+      "num_commits": 6,
+      "additions": 291,
+      "deletions": 14,
+      "avg_additions_per_commit": 48.5,
+      "avg_deletions_per_commit": 2.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "p3t3r67x0",
+      "name": "Aurelius Wendelken",
+      "num_commits": 76,
+      "additions": 524585,
+      "deletions": 230580,
+      "avg_additions_per_commit": 6902.43,
+      "avg_deletions_per_commit": 3033.95,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "roaldchristesen",
+      "name": "Roald Christesen",
+      "num_commits": 3,
+      "additions": 18714,
+      "deletions": 13,
+      "avg_additions_per_commit": 6238.0,
+      "avg_deletions_per_commit": 4.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "Pfannkuchensack",
+      "name": "Alexander Eichhorn",
+      "num_commits": 3,
+      "additions": 42,
+      "deletions": 13,
+      "avg_additions_per_commit": 14.0,
+      "avg_deletions_per_commit": 4.33,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "dbo-monomorph",
+      "name": "monomorph",
+      "num_commits": 1,
+      "additions": 32,
+      "deletions": 2,
+      "avg_additions_per_commit": 32.0,
+      "avg_deletions_per_commit": 2.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "SteffensKunst",
+      "name": "Programmierlauch",
+      "num_commits": 5,
+      "additions": 169,
+      "deletions": 40,
+      "avg_additions_per_commit": 33.8,
+      "avg_deletions_per_commit": 8.0,
+      "is_bot": false
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "Pfannkuchensack",
+      "name": "Alexander Eichhorn",
+      "num_commits": 5,
+      "additions": 16728,
+      "deletions": 233,
+      "avg_additions_per_commit": 3345.6,
+      "avg_deletions_per_commit": 46.6,
+      "is_bot": false
+    }
+  ],
+  "temporal_metrics": {
+    "repo_full_name": "oklabflensburg/open-trees-map",
+    "pr_count_total": 6,
+    "pr_count_merged": 6,
+    "pr_count_open": 0,
+    "pr_count_closed_unmerged": 0,
+    "prs": [
+      {
+        "number": 1,
+        "title": "discription modified",
+        "state": "closed",
+        "author_login": "roaldchristesen",
+        "created_at": "2023-05-01T14:33:17+00:00",
+        "merged_at": "2023-05-01T14:34:10+00:00",
+        "closed_at": "2023-05-01T14:34:10+00:00"
+      },
+      {
+        "number": 3,
+        "title": "Update tree_species.csv",
+        "state": "closed",
+        "author_login": "SteffensKunst",
+        "created_at": "2023-05-14T06:29:11+00:00",
+        "merged_at": "2023-05-16T11:49:59+00:00",
+        "closed_at": "2023-05-16T11:49:59+00:00"
+      },
+      {
+        "number": 4,
+        "title": "Update unknown_species.csv",
+        "state": "closed",
+        "author_login": "SteffensKunst",
+        "created_at": "2023-05-14T06:30:42+00:00",
+        "merged_at": "2023-05-16T11:49:48+00:00",
+        "closed_at": "2023-05-16T11:49:48+00:00"
+      },
+      {
+        "number": 5,
+        "title": "Update tree_species.csv",
+        "state": "closed",
+        "author_login": "SteffensKunst",
+        "created_at": "2023-05-18T09:24:19+00:00",
+        "merged_at": "2023-06-13T16:00:27+00:00",
+        "closed_at": "2023-06-13T16:00:27+00:00"
+      },
+      {
+        "number": 6,
+        "title": "updated readme",
+        "state": "closed",
+        "author_login": "dbo-monomorph",
+        "created_at": "2023-06-07T19:12:15+00:00",
+        "merged_at": "2023-06-09T12:52:46+00:00",
+        "closed_at": "2023-06-09T12:52:46+00:00"
+      },
+      {
+        "number": 8,
+        "title": "refactored condition to match tree fellings",
+        "state": "closed",
+        "author_login": "roaldchristesen",
+        "created_at": "2023-12-06T15:27:18+00:00",
+        "merged_at": "2023-12-06T15:28:42+00:00",
+        "closed_at": "2023-12-06T15:28:42+00:00"
+      }
+    ],
+    "tag_count": 0,
+    "tags": [],
+    "release_count": 0,
+    "releases": []
+  },
+  "chaoss_metrics": {
+    "repo_full_name": "oklabflensburg/open-trees-map",
+    "weekly_commits": [
+      {
+        "week_start": "2023-04-24",
+        "commits": 8
+      },
+      {
+        "week_start": "2023-05-01",
+        "commits": 3
+      },
+      {
+        "week_start": "2023-05-08",
+        "commits": 9
+      },
+      {
+        "week_start": "2023-05-15",
+        "commits": 8
+      },
+      {
+        "week_start": "2023-06-05",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-06-12",
+        "commits": 3
+      },
+      {
+        "week_start": "2023-06-26",
+        "commits": 3
+      },
+      {
+        "week_start": "2023-07-03",
+        "commits": 3
+      },
+      {
+        "week_start": "2023-07-31",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-08-07",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-08-28",
+        "commits": 2
+      },
+      {
+        "week_start": "2023-09-04",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-09-11",
+        "commits": 1
+      },
+      {
+        "week_start": "2023-11-13",
+        "commits": 3
+      },
+      {
+        "week_start": "2023-11-20",
+        "commits": 3
+      },
+      {
+        "week_start": "2023-12-04",
+        "commits": 20
+      },
+      {
+        "week_start": "2023-12-11",
+        "commits": 6
+      },
+      {
+        "week_start": "2024-01-01",
+        "commits": 1
+      },
+      {
+        "week_start": "2024-02-12",
+        "commits": 6
+      },
+      {
+        "week_start": "2024-02-19",
+        "commits": 3
+      },
+      {
+        "week_start": "2024-12-09",
+        "commits": 6
+      },
+      {
+        "week_start": "2025-03-31",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-05-19",
+        "commits": 1
+      },
+      {
+        "week_start": "2025-06-02",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-02-09",
+        "commits": 1
+      },
+      {
+        "week_start": "2026-03-23",
+        "commits": 1
+      }
+    ],
+    "change_request_acceptance_ratio": 1.0,
+    "bus_factor": 1,
+    "contribution_types": {
+      "code_commits": 99,
+      "pull_requests": 6,
+      "issues": 0
+    },
+    "organizational_diversity": {
+      "oklabflensburg": 2,
+      "Unknown": 3,
+      "54GradSoftware": 2
+    },
+    "newcomer_friendly_labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "total_labels": 10,
+    "release_frequency_per_month": null,
+    "fork_count": 3,
+    "burstiness_cv": 1.06,
+    "burstiness_mean": 3.81,
+    "burstiness_std": 4.04,
+    "defect_resolution_durations_days": [
+      {
+        "issue_number": 9,
+        "days_to_close": 0.8
+      }
+    ],
+    "median_defect_resolution_days": 0.8,
+    "osi_approved_license": false,
+    "bus_factor_no_bots": 1,
+    "bot_contributor_count": 0,
+    "bot_commit_count": 0,
+    "elephant_factor": 1,
+    "elephant_factor_no_bots": 1,
+    "contributor_new_count": 0,
+    "contributor_casual_count": 0,
+    "contributor_regular_count": 0,
+    "median_time_to_first_response_issues_hours": 4035.6,
+    "median_time_to_first_response_prs_hours": null,
+    "time_to_first_response_issues_sample_size": 3,
+    "time_to_first_response_prs_sample_size": 6,
+    "readme_last_updated": "2026-03-24T07:43:04+00:00",
+    "contributing_last_updated": "2024-12-10T21:31:16+00:00",
+    "stale_issue_ratio": null,
+    "stale_issue_count": 0,
+    "open_issue_count": 0,
+    "median_pr_review_turnaround_hours": 53.3,
+    "avg_review_comments_per_pr": 0.33,
+    "herfindahl_hirschman_index": 7008.5,
+    "hhi_no_bots": 6961.5,
+    "hhi_known_orgs_only": 8380.2,
+    "unknown_org_contributor_count": 3,
+    "contributor_org_types": {
+      "government": 0,
+      "academic": 0,
+      "nonprofit": 0,
+      "company": 4,
+      "unknown": 3
+    },
+    "dora_deployment_frequency_per_month": null,
+    "dora_median_lead_time_days": null,
+    "dora_change_failure_rate": 0.0,
+    "core_contributor_count": 0,
+    "periphery_contributor_count": 5,
+    "core_periphery_ratio": 0.0,
+    "network_density": 0.4,
+    "avg_degree_centrality": 0.4,
+    "pr_review_edges": [
+      {
+        "author": "roaldchristesen",
+        "reviewer": "p3t3r67x0"
+      },
+      {
+        "author": "SteffensKunst",
+        "reviewer": "p3t3r67x0"
+      },
+      {
+        "author": "dbo-monomorph",
+        "reviewer": "Pfannkuchensack"
+      },
+      {
+        "author": "SteffensKunst",
+        "reviewer": "Pfannkuchensack"
+      },
+      {
+        "author": "SteffensKunst",
+        "reviewer": "Pfannkuchensack"
+      }
+    ]
+  },
+  "crawled_at": "2026-06-04T07:56:23.006678+00:00",
+  "core_periphery_contributors": [
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "roaldchristesen",
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "p3t3r67x0",
+      "degree_centrality": 0.5,
+      "betweenness_centrality": 0.5,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "SteffensKunst",
+      "degree_centrality": 0.5,
+      "betweenness_centrality": 0.6667,
+      "classification": "periphery",
+      "num_collaborators": 2
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "dbo-monomorph",
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.0,
+      "classification": "periphery",
+      "num_collaborators": 1
+    },
+    {
+      "repo_full_name": "oklabflensburg/open-trees-map",
+      "login": "Pfannkuchensack",
+      "degree_centrality": 0.5,
+      "betweenness_centrality": 0.5,
+      "classification": "periphery",
+      "num_collaborators": 2
+    }
+  ],
+  "commit_history": {
+    "repo_full_name": "oklabflensburg/open-trees-map",
+    "weekly_snapshots": [
+      {
+        "week_start": "2023-04-24",
+        "total_commits": 8,
+        "unique_contributors": 1,
+        "new_contributors": 1,
+        "cumulative_commits": 8,
+        "cumulative_contributors": 1
+      },
+      {
+        "week_start": "2023-05-01",
+        "total_commits": 3,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 11,
+        "cumulative_contributors": 2
+      },
+      {
+        "week_start": "2023-05-08",
+        "total_commits": 9,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 20,
+        "cumulative_contributors": 3
+      },
+      {
+        "week_start": "2023-05-15",
+        "total_commits": 8,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 28,
+        "cumulative_contributors": 4
+      },
+      {
+        "week_start": "2023-06-05",
+        "total_commits": 2,
+        "unique_contributors": 2,
+        "new_contributors": 1,
+        "cumulative_commits": 30,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-06-12",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 33,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-06-26",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 36,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-07-03",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 39,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-07-31",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 41,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-08-07",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 42,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-08-28",
+        "total_commits": 2,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 44,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-09-04",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 45,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-09-11",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 46,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-11-13",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 49,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-11-20",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 52,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-12-04",
+        "total_commits": 20,
+        "unique_contributors": 2,
+        "new_contributors": 0,
+        "cumulative_commits": 72,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2023-12-11",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 78,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-01-01",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 79,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-02-12",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 85,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-02-19",
+        "total_commits": 3,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 88,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2024-12-09",
+        "total_commits": 6,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 94,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-03-31",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 95,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-05-19",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 96,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2025-06-02",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 97,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2026-02-09",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 98,
+        "cumulative_contributors": 5
+      },
+      {
+        "week_start": "2026-03-23",
+        "total_commits": 1,
+        "unique_contributors": 1,
+        "new_contributors": 0,
+        "cumulative_commits": 99,
+        "cumulative_contributors": 5
+      }
+    ],
+    "contributor_lifecycles": [
+      {
+        "repo_full_name": "oklabflensburg/open-trees-map",
+        "contributor_id": "p3t3r67x0",
+        "login": "p3t3r67x0",
+        "name": "Open Data Coder",
+        "email": "7386680+p3t3r67x0@users.noreply.github.com",
+        "first_commit_date": "2023-04-28T07:08:46+00:00",
+        "last_commit_date": "2026-03-24T07:43:04+00:00",
+        "duration_days": 1061,
+        "total_commits": 82,
+        "active_weeks": 23,
+        "total_weeks_span": 151,
+        "activity_ratio": 0.1523,
+        "status": "active",
+        "departed_weeks_ago": null,
+        "avg_commits_per_active_week": 3.57
+      },
+      {
+        "repo_full_name": "oklabflensburg/open-trees-map",
+        "contributor_id": "Pfannkuchensack",
+        "login": "Pfannkuchensack",
+        "name": "Alexander Eichhorn",
+        "email": "alex@eichhorn.dev",
+        "first_commit_date": "2023-05-16T11:49:48+00:00",
+        "last_commit_date": "2023-06-09T12:52:46+00:00",
+        "duration_days": 24,
+        "total_commits": 8,
+        "active_weeks": 2,
+        "total_weeks_span": 3,
+        "activity_ratio": 0.6667,
+        "status": "departed",
+        "departed_weeks_ago": 155,
+        "avg_commits_per_active_week": 4.0
+      },
+      {
+        "repo_full_name": "oklabflensburg/open-trees-map",
+        "contributor_id": "SteffensKunst",
+        "login": "SteffensKunst",
+        "name": "Programmierlauch",
+        "email": "130170534+Programmierlauch@users.noreply.github.com",
+        "first_commit_date": "2023-05-10T19:17:46+00:00",
+        "last_commit_date": "2023-05-18T09:24:01+00:00",
+        "duration_days": 7,
+        "total_commits": 5,
+        "active_weeks": 2,
+        "total_weeks_span": 1,
+        "activity_ratio": 2.0,
+        "status": "departed",
+        "departed_weeks_ago": 158,
+        "avg_commits_per_active_week": 2.5
+      },
+      {
+        "repo_full_name": "oklabflensburg/open-trees-map",
+        "contributor_id": "roaldchristesen",
+        "login": "roaldchristesen",
+        "name": "Roald Christesen",
+        "email": "roald@grain.one",
+        "first_commit_date": "2023-05-01T14:30:16+00:00",
+        "last_commit_date": "2025-06-04T17:02:50+00:00",
+        "duration_days": 765,
+        "total_commits": 3,
+        "active_weeks": 3,
+        "total_weeks_span": 109,
+        "activity_ratio": 0.0275,
+        "status": "departed",
+        "departed_weeks_ago": 52,
+        "avg_commits_per_active_week": 1.0
+      },
+      {
+        "repo_full_name": "oklabflensburg/open-trees-map",
+        "contributor_id": "dbo-monomorph",
+        "login": "dbo-monomorph",
+        "name": "monomorph",
+        "email": "github@monomorph.de",
+        "first_commit_date": "2023-06-07T19:08:18+00:00",
+        "last_commit_date": "2023-06-07T19:08:18+00:00",
+        "duration_days": 0,
+        "total_commits": 1,
+        "active_weeks": 1,
+        "total_weeks_span": 1,
+        "activity_ratio": 1.0,
+        "status": "departed",
+        "departed_weeks_ago": 156,
+        "avg_commits_per_active_week": 1.0
+      }
+    ],
+    "contributor_weeks": [
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-04-24",
+        "commits": 8,
+        "lines_added": 186224,
+        "lines_removed": 7
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-05-01",
+        "commits": 2,
+        "lines_added": 2005,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-05-08",
+        "commits": 5,
+        "lines_added": 2284,
+        "lines_removed": 1992
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-06-12",
+        "commits": 3,
+        "lines_added": 18848,
+        "lines_removed": 9
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-06-26",
+        "commits": 3,
+        "lines_added": 297,
+        "lines_removed": 5
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-07-03",
+        "commits": 3,
+        "lines_added": 107,
+        "lines_removed": 67
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-07-31",
+        "commits": 2,
+        "lines_added": 22,
+        "lines_removed": 13
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-08-07",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-08-28",
+        "commits": 2,
+        "lines_added": 1139,
+        "lines_removed": 1103
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-09-04",
+        "commits": 1,
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-09-11",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-11-13",
+        "commits": 3,
+        "lines_added": 175,
+        "lines_removed": 205841
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-11-20",
+        "commits": 3,
+        "lines_added": 259,
+        "lines_removed": 186
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-12-04",
+        "commits": 19,
+        "lines_added": 284511,
+        "lines_removed": 17796
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2023-12-11",
+        "commits": 6,
+        "lines_added": 19216,
+        "lines_removed": 129
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-01-01",
+        "commits": 1,
+        "lines_added": 222,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-02-12",
+        "commits": 6,
+        "lines_added": 4800,
+        "lines_removed": 781
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-02-19",
+        "commits": 3,
+        "lines_added": 225,
+        "lines_removed": 53
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2024-12-09",
+        "commits": 6,
+        "lines_added": 3098,
+        "lines_removed": 2508
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-03-31",
+        "commits": 1,
+        "lines_added": 92,
+        "lines_removed": 3
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2025-05-19",
+        "commits": 1,
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2026-02-09",
+        "commits": 1,
+        "lines_added": 1346,
+        "lines_removed": 94
+      },
+      {
+        "contributor_id": "p3t3r67x0",
+        "week_start": "2026-03-23",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "roaldchristesen",
+        "week_start": "2023-05-01",
+        "commits": 1,
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "contributor_id": "roaldchristesen",
+        "week_start": "2023-12-04",
+        "commits": 1,
+        "lines_added": 15,
+        "lines_removed": 12
+      },
+      {
+        "contributor_id": "roaldchristesen",
+        "week_start": "2025-06-02",
+        "commits": 1,
+        "lines_added": 18698,
+        "lines_removed": 0
+      },
+      {
+        "contributor_id": "Pfannkuchensack",
+        "week_start": "2023-05-15",
+        "commits": 7,
+        "lines_added": 16738,
+        "lines_removed": 244
+      },
+      {
+        "contributor_id": "Pfannkuchensack",
+        "week_start": "2023-06-05",
+        "commits": 1,
+        "lines_added": 32,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "dbo-monomorph",
+        "week_start": "2023-06-05",
+        "commits": 1,
+        "lines_added": 32,
+        "lines_removed": 2
+      },
+      {
+        "contributor_id": "SteffensKunst",
+        "week_start": "2023-05-08",
+        "commits": 4,
+        "lines_added": 37,
+        "lines_removed": 40
+      },
+      {
+        "contributor_id": "SteffensKunst",
+        "week_start": "2023-05-15",
+        "commits": 1,
+        "lines_added": 132,
+        "lines_removed": 0
+      }
+    ],
+    "total_weeks": 26,
+    "total_unique_contributors": 5,
+    "new_contributor_rate_per_month": 0.14,
+    "total_commits_scanned": 99,
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "ai_coauthor_tool_counts": {},
+    "ai_author_tool_counts": {},
+    "ai_commit_tool_first_dates": {}
+  },
+  "issue_analytics": {
+    "repo_full_name": "oklabflensburg/open-trees-map",
+    "issues": [
+      {
+        "number": 2,
+        "title": "Baumarten \u00dcbersetzung",
+        "state": "closed",
+        "author_login": "SteffensKunst",
+        "closed_by_login": "p3t3r67x0",
+        "created_at": "2023-05-10T18:40:26+00:00",
+        "closed_at": "2023-12-04T17:39:08+00:00",
+        "updated_at": "2023-12-04T17:39:41+00:00",
+        "comment_count": 1,
+        "labels": [
+          "good first issue"
+        ],
+        "time_to_close_days": 207.96
+      },
+      {
+        "number": 7,
+        "title": "Socialite Provider Accounts erstellen",
+        "state": "closed",
+        "author_login": "Pfannkuchensack",
+        "closed_by_login": "p3t3r67x0",
+        "created_at": "2023-06-19T14:03:07+00:00",
+        "closed_at": "2023-12-06T15:29:30+00:00",
+        "updated_at": "2023-12-06T15:29:30+00:00",
+        "comment_count": 2,
+        "labels": [
+          "wontfix"
+        ],
+        "time_to_close_days": 170.06
+      },
+      {
+        "number": 9,
+        "title": "Minor typo in repo About section",
+        "state": "closed",
+        "author_login": "midzer",
+        "closed_by_login": "p3t3r67x0",
+        "created_at": "2024-02-14T22:15:49+00:00",
+        "closed_at": "2024-02-15T17:46:13+00:00",
+        "updated_at": "2024-02-15T17:46:14+00:00",
+        "comment_count": 3,
+        "labels": [
+          "bug"
+        ],
+        "time_to_close_days": 0.81
+      }
+    ],
+    "total_issues": 3,
+    "open_issues": 0,
+    "closed_issues": 3,
+    "avg_comments_per_issue": 2,
+    "median_time_to_close_days": 170.06,
+    "unique_openers": 3,
+    "unique_closers": 1,
+    "top_openers": {
+      "SteffensKunst": 1,
+      "Pfannkuchensack": 1,
+      "midzer": 1
+    },
+    "top_closers": {
+      "p3t3r67x0": 3
+    }
+  },
+  "ai_usage_metrics": {
+    "repo_full_name": "oklabflensburg/open-trees-map",
+    "dev_ai_detected": false,
+    "dev_ai_tools": [],
+    "agent_config_files": [],
+    "ai_coauthored_commit_count": 0,
+    "ai_authored_commit_count": 0,
+    "commits_scanned": 99,
+    "ai_commit_ratio": 0.0,
+    "ai_agent_pr_count": 0,
+    "ci_ai_workflows": [],
+    "review_bot_tools": [],
+    "first_dev_ai_date": null,
+    "product_llm_detected": false,
+    "product_llm_signals": [],
+    "product_llm_providers": [],
+    "signals": []
+  }
+}
