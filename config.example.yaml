@@ -79,8 +79,6 @@ repositories:
   # Transparency / scoring / other
   - "mysociety/ceuk-marking"
   - "ton-An/station_reach"
-  # NLP bias dataset (borderline civic — see rationale)
-  - "fvialibre/heseia-sentence-bias-dataset"
 
 output:
   directory: "./datasets/2026_05"

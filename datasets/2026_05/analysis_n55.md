@@ -1,4 +1,4 @@
-# Contributor Dynamics and Sustainability in Open-Source Civic Technology: An Analysis of 57 Projects
+# Contributor Dynamics and Sustainability in Open-Source Civic Technology: An Analysis of 55 Projects
 
 _Companion analysis to the `datasets/2026_05` crawl. All figures are in
 `figures/`; all statistics are reproducible from the CSVs in
@@ -8,7 +8,7 @@ _Companion analysis to the `datasets/2026_05` crawl. All figures are in
 
 ## 1. Dataset
 
-The corpus is **57 open-source civic-technology repositories** crawled
+The corpus is **55 open-source civic-technology repositories** crawled
 2026-05-21 → 2026-05-24 from the GitHub REST and GraphQL APIs. Repositories were
 selected on the basis of *public-interest design intent* — civic engagement,
 government services, public participation, transparency, open data, or
@@ -22,17 +22,17 @@ manifest and selection rationale.
 
 | Property | Value |
 |---|---|
-| Repositories | 57 |
+| Repositories | 55 |
 | Organisations | 24 |
-| Primary languages | 17 |
-| Contributors | 659 (605 human, 54 bot — 8.2%) |
-| Total commits | 90,178 |
-| Stars / forks | 12,765 / 3,611 |
-| Repos with CI/CD | 48 / 57 |
-| Repos with OSI-approved license | 34 / 57 |
-| Median project age | 3.4 years (since first commit) |
-| Weekly-activity records | 15,346 (56 repos, 1,093 contributors) |
-| PR records | 37,220 |
+| Primary languages | 16 |
+| Contributors | 658 (604 human, 54 bot — 8.2%) |
+| Total commits | 89,977 |
+| Stars / forks | 12,762 / 3,611 |
+| Repos with CI/CD | 47 / 55 |
+| Repos with OSI-approved license | 34 / 55 |
+| Median project age | 3.5 years (since first commit) |
+| Weekly-activity records | 15,343 (55 repos, 1,092 contributors) |
+| PR records | 37,192 |
 
 The corpus deliberately spans a wide dynamic range: from single-developer,
 zero-star prototypes (`CivicTechWR/WRVotesPlaceholder`, `VoteIT/voteit_frontend`)
@@ -62,37 +62,37 @@ signed-rank), with Benjamini–Hochberg FDR control on the correlation family.
 
 ### 2.1 Concentration of effort is the dominant structural fact (Figure 1)
 
-Across the 56 repositories with computable concentration metrics, **bus factor is
+Across the 55 repositories with computable concentration metrics, **bus factor is
 strongly, negatively correlated with HHI** (humans only): Spearman ρ = **−0.757**,
 p = 1.5 × 10⁻¹¹. The relationship survives controlling for team size: the partial
 Spearman correlation of `bus_factor_no_bots` with `hhi_no_bots` controlling for
-`num_developers` is **−0.638** (classified "robust" in
+`num_developers` is **−0.642** (classified "robust" in
 `partial_correlations.csv`). Team size itself is the strongest single correlate
-of concentration (`num_developers` vs `hhi_no_bots`, ρ = −0.773, FDR-significant):
+of concentration (`num_developers` vs `hhi_no_bots`, ρ = −0.762, FDR-significant):
 larger teams spread effort, but most projects do not have larger teams.
 
 The corpus is overwhelmingly concentrated: **median bus factor is 1** and median
-HHI (no bots) is **5,374** (Figure 4) — i.e. the typical civic-tech project would
+HHI (no bots) is **5,330** (Figure 4) — i.e. the typical civic-tech project would
 lose its institutional knowledge if a single contributor left.
 
 ### 2.2 Effort concentration exceeds commit-count concentration (Figure 2)
 
 Counting commits understates how concentrated the *work* is. Comparing the Gini
 coefficient of lines-changed per contributor against the Gini of commits per
-contributor, the line-based Gini is **≥** the commit-based Gini in **41 of 56**
-repositories (mean gap +0.059). A contributor who makes few but very large
+contributor, the line-based Gini is **≥** the commit-based Gini in **47 of 55**
+repositories (mean gap +0.060). A contributor who makes few but very large
 commits (a lead architect, a vendored-dependency bump) concentrates effort more
 than a commit count reveals.
 
 ### 2.3 Scale grows with age; the bus factor does not (Figure 5)
 
-Splitting the corpus at its median age (3.4 years; 29 mature, 28 young), mature
-projects have dramatically more **developers** (median 15 vs 3.5, Mann–Whitney
-p < 0.001, large effect) and more **commits** (median 1,352 vs 189, p < 0.001,
+Splitting the corpus at its median age (3.5 years; 28 mature, 27 young), mature
+projects have dramatically more **developers** (median 15.5 vs 4, Mann–Whitney
+p < 0.001, large effect) and more **commits** (median 1,356 vs 194, p < 0.001,
 large effect), and they are significantly **less concentrated** (HHI no-bots
-4,374 vs 7,575, p = 0.008, medium effect) — effort does spread as projects age.
-Yet their **bus factor is not significantly different** from young projects
-(median 1 vs 1, p ≈ 0.07–0.09): the number of contributors who could leave before
+4,233 vs 7,575, p = 0.008, medium effect) — effort does spread as projects age.
+Yet their **bus factor barely moves** versus young projects
+(median 1.5 vs 1, p ≈ 0.05): the number of contributors who could leave before
 the project stalls does not improve. **Civic-tech projects accumulate scale and
 deconcentrate as they age without reducing the underlying single-maintainer
 risk.**
@@ -102,7 +102,7 @@ risk.**
 Resolving effort by week tells the same story more starkly. Weighted by active
 weeks, **89% of all active weeks had a single contributor responsible for ≥50% of
 the lines changed.** Many projects are 100% solo across their entire history
-(`ton-An/station_reach`, `fvialibre/heseia-sentence-bias-dataset`,
+(`ton-An/station_reach`, `oklabflensburg/open-school-map`,
 `digidemlab/decidim-census`, `codeforamerica/document-transfer-service`). Only a
 handful sustain genuinely distributed weekly effort — `civiform/civiform`
 (mean top-contributor share 50.6%), `codeforamerica/vita-min` (55.8%),
@@ -111,7 +111,7 @@ precisely the institutionally-backed, highest-activity projects.
 
 ### 2.5 Bots inflate concentration but not the bus factor
 
-54 of 659 contributors (8.2%) are automation accounts; in some projects they
+54 of 658 contributors (8.2%) are automation accounts; in some projects they
 dominate commit volume (`civiform/civiform` 56.8% bot commits). Removing bots
 substantially lowers measured HHI (e.g. `bikespace/bikespace` 5,511 → 2,560;
 `civic-dashboard/civic-dashboard-web` 5,368 → 2,032) but leaves the bus factor
@@ -154,15 +154,16 @@ with care.
 - **Issue cap.** Issue analytics are right-censored at 5,000 issues/repo.
 - **Bot detection is heuristic.** The `is_bot` flag is login-pattern based and
   will miss org-specific bots and may misclassify human accounts.
-- **Selection.** Civic-tech membership is a design-intent judgment;
-  `fvialibre/heseia-sentence-bias-dataset` is a borderline (NLP-fairness) member
-  and other reasonable definitions would include/exclude different projects.
+- **Selection.** Civic-tech membership is a design-intent judgment; other
+  reasonable definitions would include/exclude different projects. (Two
+  borderline/peripheral repos — `fvialibre/heseia-sentence-bias-dataset` and
+  `bikespace/parking-map-data` — were dropped from this n = 55 revision.)
 
 ---
 
 ## 4. Conclusion
 
-Across 57 civic-tech projects spanning five continents and 24 organisations, the
+Across 55 civic-tech projects spanning five continents and 24 organisations, the
 dominant structural fact is **concentration**: the median project has a bus factor
 of 1, effort is more concentrated than commit counts imply, and 89% of active
 weeks run through a single contributor. Crucially, this does **not** resolve with

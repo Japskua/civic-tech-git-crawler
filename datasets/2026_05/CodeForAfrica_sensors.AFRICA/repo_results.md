@@ -13,13 +13,15 @@
 | **Project age** | 8.4 years |
 | **Total commits (repo_metrics)** | 1,274 |
 | **Attributable contributors (CWA)** | 24 |
-| **Cloud / AI-ML signals** | yes / no |
+| **Cloud / traditional-ML signals** | yes / no |
+| **AI-assisted development** | no |
+| **Ships LLM product feature** | no |
 | **OSI-approved license** | yes |
 
 
 ## Main findings
 
-_Per-repository narrative findings are not bundled with this snapshot. See [`../analysis_n57.md`](../analysis_n57.md) for cross-cutting findings; the per-repository quantitative metrics are in the **Key metrics** table below._
+_Per-repository narrative findings are not bundled with this snapshot. See [`../analysis_n55.md`](../analysis_n55.md) for cross-cutting findings; the per-repository quantitative metrics are in the **Key metrics** table below._
 
 ## Key metrics
 
@@ -47,7 +49,7 @@ _Per-repository narrative findings are not bundled with this snapshot. See [`../
 
 ## Things to note
 
-- **Net-negative LOC trajectory.** Cumulative deletions (403,492) exceed cumulative additions (388,124) by 15,368 lines over the project's history — consistent with the maintenance-phase signal discussed in `../analysis_n57.md` §2.7.
+- **Net-negative LOC trajectory.** Cumulative deletions (403,492) exceed cumulative additions (388,124) by 15,368 lines over the project's history — a maintenance-phase signal (see [`../analysis_n55.md`](../analysis_n55.md)).
 
 ## Files in this folder
 
@@ -65,4 +67,4 @@ _Per-repository narrative findings are not bundled with this snapshot. See [`../
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n57.md`](../analysis_n57.md) — academic writeup of the n=57 corpus
+- [`../analysis_n55.md`](../analysis_n55.md) — academic writeup of the n=55 corpus

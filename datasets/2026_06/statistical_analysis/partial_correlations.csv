@@ -1,11 +1,11 @@
 var_a,var_b,control,n,rho_zero_order,p_zero_order,rho_partial,p_partial,rho_change,interpretation
-bus_factor_no_bots,hhi_no_bots,num_developers,55,-0.7871,0.0,-0.6822,0.0,0.1049,robust
+bus_factor_no_bots,hhi_no_bots,num_developers,54,-0.7886,0.0,-0.6869,0.0,0.1017,robust
 burstiness_cv,stale_issue_ratio,num_developers,33,0.1949,0.277066,0.1173,0.515644,0.0776,robust
-bus_factor_no_bots,health_percentage,num_developers,55,0.034,0.805223,-0.0449,0.74461,-0.0109,robust
+bus_factor_no_bots,health_percentage,num_developers,54,0.0165,0.905609,-0.0418,0.763895,-0.0253,robust
 core_contributor_count,network_density,num_developers,37,-0.7636,0.0,-0.7209,0.0,0.0427,robust
-bus_factor_no_bots,core_contributor_count,num_developers,55,0.686,0.0,0.5417,1.9e-05,0.1443,robust
-hhi_no_bots,health_percentage,num_developers,55,0.0052,0.970086,0.1634,0.23323,-0.1582,robust
-burstiness_cv,health_percentage,num_developers,55,-0.0825,0.549476,-0.0603,0.661635,0.0222,robust
-bus_factor_no_bots,burstiness_cv,num_developers,55,-0.09,0.513506,0.012,0.930842,0.078,robust
+bus_factor_no_bots,core_contributor_count,num_developers,54,0.6837,0.0,0.5433,2.2e-05,0.1404,robust
+hhi_no_bots,health_percentage,num_developers,54,0.0441,0.751393,0.176,0.202958,-0.1319,robust
+burstiness_cv,health_percentage,num_developers,54,-0.1121,0.419477,-0.0945,0.496543,0.0176,robust
+bus_factor_no_bots,burstiness_cv,num_developers,54,-0.1003,0.470454,0.0188,0.892431,0.0815,robust
 hhi_no_bots,stale_issue_ratio,num_developers,33,0.4742,0.005301,0.1384,0.442463,0.3358,confounded
 change_request_acceptance_ratio,median_pr_review_turnaround_hours,num_developers,37,-0.3198,0.05364,-0.3071,0.064442,0.0127,robust

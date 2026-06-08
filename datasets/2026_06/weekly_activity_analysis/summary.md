@@ -1,5 +1,5 @@
 # Weekly Activity Analysis — New Findings
-Derived from `output/contributor_weekly_activity.csv` (15,432 rows, 56 repos, 1,098 contributors).
+Derived from `output/contributor_weekly_activity.csv` (15,429 rows, 55 repos, 1,097 contributors).
 ## A. Weekly Elephant Factor (sustainability risk, time-resolved)
 For each *week* a repo had any code change, we compute the share of lines added+removed that came from the single busiest contributor. 'Elephant weeks' are weeks where ≥50% of the LOC moved through one person. 'Single-contributor weeks' are weeks where ≥99.9% came from one person (effectively solo).
 **Most elephant-dominated repos** (highest share of weeks dominated by one contributor):
@@ -53,10 +53,10 @@ Gini of `lines_changed` per contributor per repo. 0 = everyone contributed equal
 - `CodeForAfrica/Dominion.AFRICA`: Gini(lines) 0.57, 8 contributors, top1 share 35%
 - `CivicTechWR/go-train-group-pass`: Gini(lines) 0.57, 9 contributors, top1 share 38%
 - `CodeForAfrica/academy.AFRICA`: Gini(lines) 0.61, 5 contributors, top1 share 53%
-- `CodeForAfrica/openAFRICA`: Gini(lines) 0.63, 8 contributors, top1 share 46%
+- `codeforamerica/tax-benefits-backend`: Gini(lines) 0.63, 11 contributors, top1 share 54%
 
 **Lines-vs-commits Gini gap** (how much more unequal is effort than activity?):
-- Mean gap across 56 repos: +0.058
+- Mean gap across 55 repos: +0.059
 - Max gap (effort much more concentrated than commits): `CodeforLeipzig/weihnachtsmarktkarte` at +0.311
 - Min gap (commits more concentrated than effort): `codeforberlin/we-count` at -0.172
 

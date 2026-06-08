@@ -1,53 +1,30 @@
 repo_full_name,contributor_id,login,name,email,first_commit_date,last_commit_date,duration_days,total_commits,active_weeks,total_weeks_span,activity_ratio,status,departed_weeks_ago,avg_commits_per_active_week
-bikespace/bikespace,sonalranjit,sonalranjit,Sonal R,sonal.ranjit3@gmail.com,2019-02-19T23:46:08+00:00,2026-05-17T00:21:49+00:00,2643,98,51,377,0.1353,active,,1.92
-bikespace/bikespace,xinweny,xinweny,Yap Xin Wen,xinwenyap19@gmail.com,2024-10-15T23:06:44+00:00,2025-02-07T21:55:06+00:00,114,88,7,16,0.4375,departed,66,12.57
-bikespace/bikespace,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-11-22T18:40:25+00:00,2026-05-17T13:17:24+00:00,906,73,35,129,0.2713,active,,2.09
-bikespace/bikespace,tallcoleman,tallcoleman,Ben Coleman,ben.coleman@alumni.utoronto.ca,2023-12-10T01:51:05+00:00,2026-05-05T22:08:41+00:00,877,71,47,125,0.376,active,,1.51
-bikespace/bikespace,hulloanson,hulloanson,hulloanson,pm@hulloanson.com,2024-01-09T23:17:34+00:00,2024-10-02T00:35:56+00:00,266,26,9,38,0.2368,departed,85,2.89
-bikespace/bikespace,krhobeck,krhobeck,krhobeck,krhobeck@gmail.com,2025-09-20T19:02:39+00:00,2025-10-27T21:45:44+00:00,37,13,6,5,1.2,departed,29,2.17
-bikespace/bikespace,kevinluo201,kevinluo201,Kevin Luo,kevin.luo@telus.com,2023-04-08T02:55:01+00:00,2023-05-13T17:06:12+00:00,35,13,5,5,1.0,departed,157,2.6
-bikespace/bikespace,iainmcampbell,iainmcampbell,iain,hey@iainmc.ca,2025-05-02T14:58:09+00:00,2025-06-17T17:03:38+00:00,46,3,3,6,0.5,departed,48,1.0
-bikespace/bikespace,thomassth,thomassth,Thomas Kam,thomassth@users.noreply.github.com,2023-11-25T16:25:41+00:00,2023-12-12T03:43:09+00:00,16,2,2,2,1.0,departed,127,1.0
-bikespace/bikespace,harsha-mangena,harsha-mangena,harsha-mangena,44197358+harsha-mangena@users.noreply.github.com,2023-11-21T20:51:37+00:00,2023-11-28T02:24:13+00:00,6,2,2,1,2.0,departed,129,1.0
-bikespace/bikespace,whoisasey,whoisasey,atina,56001902+whoisasey@users.noreply.github.com,2023-10-11T16:14:04+00:00,2023-10-11T19:35:51+00:00,0,2,1,1,1.0,departed,136,2.0
-bikespace/bikespace,AlexGopal,AlexGopal,AlexGopal,127698347+AlexGopal@users.noreply.github.com,2025-12-23T15:35:29+00:00,2025-12-23T15:35:29+00:00,0,1,1,1,1.0,departed,21,1.0
-bikespace/bikespace,KangarooAlpha,KangarooAlpha,Omar Fayyaz,118497502+KangarooAlpha@users.noreply.github.com,2025-11-29T19:45:13+00:00,2025-11-29T19:45:13+00:00,0,1,1,1,1.0,departed,24,1.0
-bikespace/bikespace,bennygoldman,bennygoldman,Benny Goldman,goldmanb@gmail.com,2024-02-29T13:16:43+00:00,2024-02-29T13:16:43+00:00,0,1,1,1,1.0,departed,116,1.0
-bikespace/bikespace,mbechtel,mbechtel,Mitch Bechtel,mitch.bechtel@comandsolutions.com,2023-12-09T16:18:58+00:00,2023-12-09T16:18:58+00:00,0,1,1,1,1.0,departed,127,1.0
-choruslabs/chorus,MaanasArora,MaanasArora,Maanas Arora,maanasarora23@gmail.com,2024-11-27T11:29:20+00:00,2026-04-29T00:28:06+00:00,517,280,35,73,0.4795,active,,8.0
-choruslabs/chorus,thomassth,thomassth,Thomas Kam,thomassth@users.noreply.github.com,2025-06-12T07:47:42+00:00,2026-02-25T00:19:16+00:00,257,73,12,36,0.3333,active,,6.08
-choruslabs/chorus,NewJerseyStyle,NewJerseyStyle,David H.,22520563+NewJerseyStyle@users.noreply.github.com,2025-03-20T02:19:51+00:00,2025-03-20T02:55:24+00:00,0,7,1,1,1.0,departed,61,7.0
-choruslabs/chorus,cplkake,cplkake,Vinesh,42398320+cplkake@users.noreply.github.com,2025-08-09T06:09:03+00:00,2025-12-15T23:43:56+00:00,128,3,3,18,0.1667,departed,22,1.0
-choruslabs/chorus,nicobao,nicobao,Nicolas Gimenez,46368291+nicobao@users.noreply.github.com,2025-01-21T23:05:14+00:00,2025-01-21T23:06:34+00:00,0,3,1,1,1.0,departed,69,3.0
-choruslabs/chorus,amotaouakkil123,amotaouakkil123,Adam,74212024+amotaouakkil123@users.noreply.github.com,2025-09-16T04:13:45+00:00,2025-10-10T02:28:51+00:00,23,2,2,3,0.6667,departed,31,1.0
-choruslabs/chorus,dentropy,dentropy,Paul Mullins,8509074+dentropy@users.noreply.github.com,2026-04-09T22:50:51+00:00,2026-04-09T22:50:51+00:00,0,1,1,1,1.0,active,,1.0
-choruslabs/chorus,aryasadawrate19,aryasadawrate19,Arya Sadawrate,86820886+aryasadawrate19@users.noreply.github.com,2026-02-10T03:42:43+00:00,2026-02-10T03:42:43+00:00,0,1,1,1,1.0,departed,14,1.0
-choruslabs/chorus,victorfbrito,victorfbrito,Victor Brito,victor.brito@mail.usf.edu.br,2025-11-11T04:45:34+00:00,2025-11-11T04:45:34+00:00,0,1,1,1,1.0,departed,27,1.0
-choruslabs/chorus,Latte17,Latte17,Latte17,153994326+Latte17@users.noreply.github.com,2025-11-05T23:57:16+00:00,2025-11-05T23:57:16+00:00,0,1,1,1,1.0,departed,28,1.0
-choruslabs/chorus,aminechm,aminechm,Amine,117687927+aminechm@users.noreply.github.com,2025-10-12T11:53:25+00:00,2025-10-12T11:53:25+00:00,0,1,1,1,1.0,departed,31,1.0
-civic-dashboard/civic-dashboard-web,garobrik,garobrik,garo,3411715+garobrik@users.noreply.github.com,2024-10-31T15:50:24+00:00,2026-01-21T01:44:13+00:00,446,67,24,63,0.381,departed,17,2.79
-civic-dashboard/civic-dashboard-web,jeromegv,jeromegv,Jérôme Gagnon-Voyer,gagnonje@gmail.com,2025-03-18T16:33:44+00:00,2026-05-17T15:13:46+00:00,424,49,23,60,0.3833,active,,2.13
-civic-dashboard/civic-dashboard-web,17cliu,17cliu,Caroline Liu,17cliu@users.noreply.github.com,2025-05-24T16:08:36+00:00,2026-05-11T16:57:14+00:00,352,19,15,50,0.3,active,,1.27
-civic-dashboard/civic-dashboard-web,mattorchard,mattorchard,Matthew Orchard,23462213+mattorchard@users.noreply.github.com,2025-02-12T01:27:02+00:00,2026-03-14T13:42:19+00:00,395,18,13,56,0.2321,active,,1.38
-civic-dashboard/civic-dashboard-web,sarmilan,sarmilan,Milan Somasundaram,sarmilans@gmail.com,2025-01-21T23:41:52+00:00,2025-09-11T20:08:27+00:00,232,12,7,33,0.2121,departed,35,1.71
-civic-dashboard/civic-dashboard-web,melissaluc,melissaluc,Melissa Luc,melissa.ml.luc@gmail.com,2025-04-26T17:36:17+00:00,2025-08-24T15:13:20+00:00,119,6,6,17,0.3529,departed,38,1.0
-civic-dashboard/civic-dashboard-web,Andre053,Andre053,André,84808143+Andre053@users.noreply.github.com,2025-09-24T00:44:46+00:00,2025-12-05T23:00:16+00:00,72,4,4,10,0.4,departed,23,1.0
-civic-dashboard/civic-dashboard-web,pliakhov,pliakhov,Paul Liakhov,pauluniver@gmail.com,2025-09-24T00:40:08+00:00,2025-12-31T18:59:35+00:00,98,3,3,14,0.2143,departed,20,1.0
-civic-dashboard/civic-dashboard-web,KarishmaChanglani,KarishmaChanglani,Karishma Changlani,KarishmaChanglani@users.noreply.github.com,2025-10-02T16:26:41+00:00,2026-04-26T17:09:03+00:00,206,2,2,29,0.069,active,,1.0
-civic-dashboard/civic-dashboard-web,sergeikofman444,sergeikofman444,Sergei Kofman,52934469+sergeikofman444@users.noreply.github.com,2025-12-03T01:57:04+00:00,2026-03-14T16:02:39+00:00,101,2,2,14,0.1429,active,,1.0
-civic-dashboard/civic-dashboard-web,jiakamo,jiakamo,Giacomo,30966750+jiakamo@users.noreply.github.com,2026-01-22T01:05:07+00:00,2026-01-26T00:48:34+00:00,3,2,2,1,2.0,departed,16,1.0
-civic-dashboard/civic-dashboard-web,Khasir,Khasir,Khasir,12619339+Khasir@users.noreply.github.com,2025-10-03T14:57:15+00:00,2025-12-01T23:58:23+00:00,59,2,2,8,0.25,departed,24,1.0
-civic-dashboard/civic-dashboard-web,yaelboyd,yaelboyd,yaelboyd,yaelboyd@gmail.com,2026-05-13T15:30:33+00:00,2026-05-13T15:30:33+00:00,0,1,1,1,1.0,active,,1.0
-civic-dashboard/civic-dashboard-web,anjali-bhaheeratha,anjali-bhaheeratha,anjali-bhaheeratha,abhaheer@uwo.ca,2026-05-04T20:11:31+00:00,2026-05-04T20:11:31+00:00,0,1,1,1,1.0,active,,1.0
-civic-dashboard/civic-dashboard-web,khushidahi,khushidahi,khushidahi,33580090+khushidahi@users.noreply.github.com,2026-04-21T03:24:48+00:00,2026-04-21T03:24:48+00:00,0,1,1,1,1.0,active,,1.0
-civic-dashboard/civic-dashboard-web,mmythily,mmythily,mmythily,42842977+mmythily@users.noreply.github.com,2026-03-11T16:53:52+00:00,2026-03-11T16:53:52+00:00,0,1,1,1,1.0,active,,1.0
-civic-dashboard/civic-dashboard-web,QuintinAu,QuintinAu,QuintinAu,42358441+QuintinAu@users.noreply.github.com,2026-03-07T20:05:50+00:00,2026-03-07T20:05:50+00:00,0,1,1,1,1.0,active,,1.0
-civic-dashboard/civic-dashboard-web,gurpreet11307,gurpreet11307,gurpreet11307,47232740+gurpreet11307@users.noreply.github.com,2026-02-18T01:48:17+00:00,2026-02-18T01:48:17+00:00,0,1,1,1,1.0,departed,13,1.0
-civic-dashboard/civic-dashboard-web,hermanjustino,hermanjustino,Herman Justino,46625107+hermanjustino@users.noreply.github.com,2026-02-18T01:43:09+00:00,2026-02-18T01:43:09+00:00,0,1,1,1,1.0,departed,13,1.0
-civic-dashboard/civic-dashboard-web,oscarpinzon,oscarpinzon,Oscar Pinzon,oscar.eugenio.pinzon@gmail.com,2026-01-26T17:29:23+00:00,2026-01-26T17:29:23+00:00,0,1,1,1,1.0,departed,16,1.0
-civic-dashboard/civic-dashboard-web,mgormley964,mgormley964,Michael Gormley,michaelgormley555@gmail.com,2025-12-11T15:13:54+00:00,2025-12-11T15:13:54+00:00,0,1,1,1,1.0,departed,23,1.0
-civic-dashboard/civic-dashboard-web,luce.liu@mark43.com,,Luce Liu,luce.liu@mark43.com,2025-03-23T18:13:07+00:00,2025-03-23T18:13:07+00:00,0,1,1,1,1.0,departed,60,1.0
-civic-dashboard/civic-dashboard-web,jwlibre,jwlibre,Jeremy,jw.libre@hotmail.com,2025-03-18T21:03:02+00:00,2025-03-18T21:03:02+00:00,0,1,1,1,1.0,departed,61,1.0
+CivicTechWR/WRVotesPlaceholder,pnijjar,pnijjar,Paul Nijjar,pnijjar@alumni.uwaterloo.ca,2018-07-11T22:37:27+00:00,2026-02-04T22:54:35+00:00,2765,1365,47,395,0.119,departed,15,29.04
+CivicTechWR/WRVotesPlaceholder,pnijjar@vps03.kwlug.org,,pnijjar,pnijjar@vps03.kwlug.org,2022-08-30T08:08:47+00:00,2022-12-07T08:16:08+00:00,99,260,13,14,0.9286,departed,180,20.0
+CivicTechWR/WRVotesPlaceholder,KristinaTaylor,KristinaTaylor,Kristina Taylor,KristinaTaylor@users.noreply.github.com,2018-03-28T23:45:51+00:00,2019-10-09T02:15:00+00:00,559,136,21,79,0.2658,departed,345,6.48
+CivicTechWR/WRVotesPlaceholder,robo-pusher@example.com,,WRV Robo-updater,robo-pusher@example.com,2018-08-15T06:11:15+00:00,2018-12-07T07:37:03+00:00,114,122,17,16,1.0625,departed,388,7.18
+CivicTechWR/WRVotesPlaceholder,wrv@example.com,,WRV Auto-committer,wrv@example.com,2019-09-23T05:20:30+00:00,2019-11-11T05:01:02+00:00,48,104,8,6,1.3333,departed,340,13.0
+CivicTechWR/WRVotesPlaceholder,sharon.peishan.kennedy@gmail.com,,Sharon,sharon.peishan.kennedy@gmail.com,2018-08-09T00:09:38+00:00,2018-09-11T20:40:34+00:00,33,20,4,4,1.0,departed,401,5.0
+CivicTechWR/WRVotesPlaceholder,qedi-r,qedi-r,qedi-r,github@infornography.ca,2018-08-22T11:22:59+00:00,2018-10-15T10:01:40+00:00,53,17,6,7,0.8571,departed,396,2.83
+CivicTechWR/WRVotesPlaceholder,MadameDuJour,MadameDuJour,MadameDuJour,41972799+MadameDuJour@users.noreply.github.com,2018-07-31T21:25:43+00:00,2018-09-06T00:08:55+00:00,36,14,3,5,0.6,departed,402,4.67
+CivicTechWR/WRVotesPlaceholder,sharon@nomadiclabs.ca,,Sharon Kennedy,sharon@nomadiclabs.ca,2018-10-20T23:43:27+00:00,2018-11-03T00:49:02+00:00,13,13,3,1,3.0,departed,393,4.33
+CivicTechWR/WRVotesPlaceholder,Westacular,Westacular,Wes Campaigne,wes@tulip.io,2018-05-09T22:43:16+00:00,2018-06-06T22:42:04+00:00,27,13,2,3,0.6667,departed,415,6.5
+CivicTechWR/WRVotesPlaceholder,acant,acant,Andrew Sullivan Cant,mail@andrewsullivancant.ca,2018-08-09T00:02:53+00:00,2025-10-15T23:52:47+00:00,2624,11,5,374,0.0134,departed,31,2.2
+CivicTechWR/WRVotesPlaceholder,nifeoluyemi,nifeoluyemi,Nifemi Oluyemi,nifemioluyemi@yahoo.com,2018-10-08T03:44:43+00:00,2018-10-21T03:39:33+00:00,12,7,2,1,2.0,departed,395,3.5
+CivicTechWR/WRVotesPlaceholder,kingsc850@gmail.com,,Scott King,kingsc850@gmail.com,2019-10-01T17:14:52+00:00,2019-10-03T04:57:21+00:00,1,5,1,1,1.0,departed,346,5.0
+CivicTechWR/WRVotesPlaceholder,rutherfh@gmail.com,,Hayley Rutherford,rutherfh@gmail.com,2018-08-22T23:31:12+00:00,2018-08-27T02:06:51+00:00,4,5,2,1,2.0,departed,403,2.5
+CivicTechWR/WRVotesPlaceholder,s-kennedy,s-kennedy,Shay,shay@dreamsidedigital.com,2025-10-20T03:35:21+00:00,2025-10-20T04:02:53+00:00,0,4,1,1,1.0,departed,30,4.0
+CivicTechWR/WRVotesPlaceholder,BreakableHoodie,BreakableHoodie,Andre Levesque,0sniffs_scaled@icloud.com,2025-10-14T01:47:19+00:00,2025-10-14T02:00:56+00:00,0,4,1,1,1.0,departed,31,4.0
+CivicTechWR/WRVotesPlaceholder,skchuhan,skchuhan,sukhi chuhan,sukhpreetchuhan@gmail.com,2019-10-17T00:11:05+00:00,2019-10-24T01:59:43+00:00,7,4,2,1,2.0,departed,343,2.0
+CivicTechWR/WRVotesPlaceholder,ToddTurnbull,ToddTurnbull,Todd Turnbull,shingaling@gmail.com,2018-07-25T23:13:14+00:00,2019-10-02T23:02:37+00:00,433,4,3,61,0.0492,departed,346,1.33
+CivicTechWR/WRVotesPlaceholder,jeffwoods,jeffwoods,jeffwoods,jeff@tulipretail.ca,2018-06-06T22:16:00+00:00,2018-06-06T22:42:28+00:00,0,3,1,1,1.0,departed,415,3.0
+CivicTechWR/WRVotesPlaceholder,SyedAlbiz,SyedAlbiz,Syed Muhammad Hasan Albiz,albizsyed@gmail.com,2026-02-05T00:50:26+00:00,2026-02-05T00:50:26+00:00,0,1,1,1,1.0,departed,15,1.0
+CivicTechWR/WRVotesPlaceholder,kristina@Kristinas-MacBook-Pro.local,,Kristina Taylor,kristina@Kristinas-MacBook-Pro.local,2019-09-14T20:45:40+00:00,2019-09-14T20:45:40+00:00,0,1,1,1,1.0,departed,348,1.0
+CivicTechWR/WRVotesPlaceholder,mboos,mboos,Mike Boos,mike.boos@gmail.com,2018-10-12T01:41:40+00:00,2018-10-12T01:41:40+00:00,0,1,1,1,1.0,departed,396,1.0
+CivicTechWR/WRVotesPlaceholder,hjroaf,hjroaf,Hayley Rutherford,42351900+hjroaf@users.noreply.github.com,2018-10-10T01:35:37+00:00,2018-10-10T01:35:37+00:00,0,1,1,1,1.0,departed,397,1.0
+CivicTechWR/WRVotesPlaceholder,33005639+her0d0tus@users.noreply.github.com,,skoparde,33005639+her0d0tus@users.noreply.github.com,2018-08-23T00:54:05+00:00,2018-08-23T00:54:05+00:00,0,1,1,1,1.0,departed,404,1.0
+CivicTechWR/WRVotesPlaceholder,linsean@manulife.com,,Sean Lin,linsean@manulife.com,2018-07-25T22:57:50+00:00,2018-07-25T22:57:50+00:00,0,1,1,1,1.0,departed,408,1.0
+CivicTechWR/WRVotesPlaceholder,KejoBuchanan,KejoBuchanan,Kejo Buchanan,35035513+KejoBuchanan@users.noreply.github.com,2018-07-18T13:47:37+00:00,2018-07-18T13:47:37+00:00,0,1,1,1,1.0,departed,409,1.0
 CivicTechWR/accessible-housing-portal,emilyjablonski,emilyjablonski,Emily Jablonski,65367387+emilyjablonski@users.noreply.github.com,2021-02-08T09:26:10+00:00,2026-02-10T00:49:08+00:00,1827,538,148,261,0.567,departed,14,3.64
 CivicTechWR/accessible-housing-portal,github-actions@github.com,,github.context.workflow,github-actions@github.com,2021-10-21T18:28:12+00:00,2023-04-10T15:56:36+00:00,535,462,70,76,0.9211,departed,162,6.6
 CivicTechWR/accessible-housing-portal,seanmalbert,seanmalbert,Sean Albert,smabert@gmail.com,2021-05-10T12:55:07+00:00,2024-12-04T17:38:50+00:00,1304,431,61,186,0.328,departed,76,7.07
@@ -141,32 +118,191 @@ CivicTechWR/project-pech,ngrover1@conestogac.on.ca,,NipunGrover,ngrover1@conesto
 CivicTechWR/project-pech,vercel[bot],vercel[bot],vercel[bot],35613825+vercel[bot]@users.noreply.github.com,2025-12-15T16:42:13+00:00,2025-12-15T16:42:13+00:00,0,1,1,1,1.0,departed,22,1.0
 CivicTechWR/project-pech,BreakableHoodie,BreakableHoodie,Andre Levesque,0sniffs_scaled@icloud.com,2025-10-14T01:46:50+00:00,2025-10-14T01:46:50+00:00,0,1,1,1,1.0,departed,31,1.0
 CivicTechWR/project-pech,MarvelousChester,MarvelousChester,Karandeep Sandhu,90730377+MarvelousChester@users.noreply.github.com,2025-09-06T18:14:53+00:00,2025-09-06T18:14:53+00:00,0,1,1,1,1.0,departed,36,1.0
-CivicTechWR/WRVotesPlaceholder,pnijjar,pnijjar,Paul Nijjar,pnijjar@alumni.uwaterloo.ca,2018-07-11T22:37:27+00:00,2026-02-04T22:54:35+00:00,2765,1365,47,395,0.119,departed,15,29.04
-CivicTechWR/WRVotesPlaceholder,pnijjar@vps03.kwlug.org,,pnijjar,pnijjar@vps03.kwlug.org,2022-08-30T08:08:47+00:00,2022-12-07T08:16:08+00:00,99,260,13,14,0.9286,departed,180,20.0
-CivicTechWR/WRVotesPlaceholder,KristinaTaylor,KristinaTaylor,Kristina Taylor,KristinaTaylor@users.noreply.github.com,2018-03-28T23:45:51+00:00,2019-10-09T02:15:00+00:00,559,136,21,79,0.2658,departed,345,6.48
-CivicTechWR/WRVotesPlaceholder,robo-pusher@example.com,,WRV Robo-updater,robo-pusher@example.com,2018-08-15T06:11:15+00:00,2018-12-07T07:37:03+00:00,114,122,17,16,1.0625,departed,388,7.18
-CivicTechWR/WRVotesPlaceholder,wrv@example.com,,WRV Auto-committer,wrv@example.com,2019-09-23T05:20:30+00:00,2019-11-11T05:01:02+00:00,48,104,8,6,1.3333,departed,340,13.0
-CivicTechWR/WRVotesPlaceholder,sharon.peishan.kennedy@gmail.com,,Sharon,sharon.peishan.kennedy@gmail.com,2018-08-09T00:09:38+00:00,2018-09-11T20:40:34+00:00,33,20,4,4,1.0,departed,401,5.0
-CivicTechWR/WRVotesPlaceholder,qedi-r,qedi-r,qedi-r,github@infornography.ca,2018-08-22T11:22:59+00:00,2018-10-15T10:01:40+00:00,53,17,6,7,0.8571,departed,396,2.83
-CivicTechWR/WRVotesPlaceholder,MadameDuJour,MadameDuJour,MadameDuJour,41972799+MadameDuJour@users.noreply.github.com,2018-07-31T21:25:43+00:00,2018-09-06T00:08:55+00:00,36,14,3,5,0.6,departed,402,4.67
-CivicTechWR/WRVotesPlaceholder,sharon@nomadiclabs.ca,,Sharon Kennedy,sharon@nomadiclabs.ca,2018-10-20T23:43:27+00:00,2018-11-03T00:49:02+00:00,13,13,3,1,3.0,departed,393,4.33
-CivicTechWR/WRVotesPlaceholder,Westacular,Westacular,Wes Campaigne,wes@tulip.io,2018-05-09T22:43:16+00:00,2018-06-06T22:42:04+00:00,27,13,2,3,0.6667,departed,415,6.5
-CivicTechWR/WRVotesPlaceholder,acant,acant,Andrew Sullivan Cant,mail@andrewsullivancant.ca,2018-08-09T00:02:53+00:00,2025-10-15T23:52:47+00:00,2624,11,5,374,0.0134,departed,31,2.2
-CivicTechWR/WRVotesPlaceholder,nifeoluyemi,nifeoluyemi,Nifemi Oluyemi,nifemioluyemi@yahoo.com,2018-10-08T03:44:43+00:00,2018-10-21T03:39:33+00:00,12,7,2,1,2.0,departed,395,3.5
-CivicTechWR/WRVotesPlaceholder,kingsc850@gmail.com,,Scott King,kingsc850@gmail.com,2019-10-01T17:14:52+00:00,2019-10-03T04:57:21+00:00,1,5,1,1,1.0,departed,346,5.0
-CivicTechWR/WRVotesPlaceholder,rutherfh@gmail.com,,Hayley Rutherford,rutherfh@gmail.com,2018-08-22T23:31:12+00:00,2018-08-27T02:06:51+00:00,4,5,2,1,2.0,departed,403,2.5
-CivicTechWR/WRVotesPlaceholder,s-kennedy,s-kennedy,Shay,shay@dreamsidedigital.com,2025-10-20T03:35:21+00:00,2025-10-20T04:02:53+00:00,0,4,1,1,1.0,departed,30,4.0
-CivicTechWR/WRVotesPlaceholder,BreakableHoodie,BreakableHoodie,Andre Levesque,0sniffs_scaled@icloud.com,2025-10-14T01:47:19+00:00,2025-10-14T02:00:56+00:00,0,4,1,1,1.0,departed,31,4.0
-CivicTechWR/WRVotesPlaceholder,skchuhan,skchuhan,sukhi chuhan,sukhpreetchuhan@gmail.com,2019-10-17T00:11:05+00:00,2019-10-24T01:59:43+00:00,7,4,2,1,2.0,departed,343,2.0
-CivicTechWR/WRVotesPlaceholder,ToddTurnbull,ToddTurnbull,Todd Turnbull,shingaling@gmail.com,2018-07-25T23:13:14+00:00,2019-10-02T23:02:37+00:00,433,4,3,61,0.0492,departed,346,1.33
-CivicTechWR/WRVotesPlaceholder,jeffwoods,jeffwoods,jeffwoods,jeff@tulipretail.ca,2018-06-06T22:16:00+00:00,2018-06-06T22:42:28+00:00,0,3,1,1,1.0,departed,415,3.0
-CivicTechWR/WRVotesPlaceholder,SyedAlbiz,SyedAlbiz,Syed Muhammad Hasan Albiz,albizsyed@gmail.com,2026-02-05T00:50:26+00:00,2026-02-05T00:50:26+00:00,0,1,1,1,1.0,departed,15,1.0
-CivicTechWR/WRVotesPlaceholder,kristina@Kristinas-MacBook-Pro.local,,Kristina Taylor,kristina@Kristinas-MacBook-Pro.local,2019-09-14T20:45:40+00:00,2019-09-14T20:45:40+00:00,0,1,1,1,1.0,departed,348,1.0
-CivicTechWR/WRVotesPlaceholder,mboos,mboos,Mike Boos,mike.boos@gmail.com,2018-10-12T01:41:40+00:00,2018-10-12T01:41:40+00:00,0,1,1,1,1.0,departed,396,1.0
-CivicTechWR/WRVotesPlaceholder,hjroaf,hjroaf,Hayley Rutherford,42351900+hjroaf@users.noreply.github.com,2018-10-10T01:35:37+00:00,2018-10-10T01:35:37+00:00,0,1,1,1,1.0,departed,397,1.0
-CivicTechWR/WRVotesPlaceholder,33005639+her0d0tus@users.noreply.github.com,,skoparde,33005639+her0d0tus@users.noreply.github.com,2018-08-23T00:54:05+00:00,2018-08-23T00:54:05+00:00,0,1,1,1,1.0,departed,404,1.0
-CivicTechWR/WRVotesPlaceholder,linsean@manulife.com,,Sean Lin,linsean@manulife.com,2018-07-25T22:57:50+00:00,2018-07-25T22:57:50+00:00,0,1,1,1,1.0,departed,408,1.0
-CivicTechWR/WRVotesPlaceholder,KejoBuchanan,KejoBuchanan,Kejo Buchanan,35035513+KejoBuchanan@users.noreply.github.com,2018-07-18T13:47:37+00:00,2018-07-18T13:47:37+00:00,0,1,1,1,1.0,departed,409,1.0
+CodeForAfrica/Dominion.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2019-07-17T14:10:48+00:00,2025-09-17T08:44:36+00:00,2253,168,28,321,0.0872,departed,35,6.0
+CodeForAfrica/Dominion.AFRICA,KhadijaMahanga,KhadijaMahanga,Khadija Mahanga,khadijamahanga@y7mail.com,2019-08-02T09:40:24+00:00,2021-04-15T13:52:15+00:00,622,158,13,88,0.1477,departed,266,12.15
+CodeForAfrica/Dominion.AFRICA,karimkawambwa,karimkawambwa,karimkawambwa,4308339+karimkawambwa@users.noreply.github.com,2019-07-18T09:07:48+00:00,2020-02-06T07:44:58+00:00,202,125,14,28,0.5,departed,328,8.93
+CodeForAfrica/Dominion.AFRICA,DavidLemayian,DavidLemayian,David Lemayian,dlemayian@gmail.com,2019-08-09T08:55:27+00:00,2020-01-31T14:25:57+00:00,175,42,11,25,0.44,departed,328,3.82
+CodeForAfrica/Dominion.AFRICA,nerdlet,nerdlet,nerdlet,brndnyokabi@gmail.com,2019-08-22T08:26:52+00:00,2019-09-16T15:47:38+00:00,25,41,5,3,1.6667,departed,348,8.2
+CodeForAfrica/Dominion.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-08-27T07:40:01+00:00,2024-09-02T05:29:48+00:00,1832,29,24,261,0.092,departed,89,1.21
+CodeForAfrica/Dominion.AFRICA,esirK,esirK,Isaiah King'ori,isaiah.ngaruiya7@gmail.com,2022-05-13T02:55:59+00:00,2022-05-13T09:52:08+00:00,0,8,1,1,1.0,departed,209,8.0
+CodeForAfrica/Dominion.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2019-08-23T08:48:00+00:00,2019-09-16T09:20:04+00:00,24,3,3,3,1.0,departed,348,1.0
+CodeForAfrica/GenderGap.AFRICA,emmalewis,emmalewis,Emma Lewis,emmarachellewis@gmail.com,2017-09-22T14:34:59+00:00,2018-02-04T14:46:42+00:00,135,70,11,19,0.5789,departed,432,6.36
+CodeForAfrica/GenderGap.AFRICA,chaficnajjar,chaficnajjar,Chafic Najjar,chafic.najjar@gmail.com,2017-04-05T22:25:09+00:00,2017-06-29T23:45:29+00:00,85,48,9,12,0.75,departed,464,5.33
+CodeForAfrica/GenderGap.AFRICA,DavidLemayian,DavidLemayian,David Lemayian,877919+DavidLemayian@users.noreply.github.com,2017-03-21T14:49:03+00:00,2019-06-09T17:02:21+00:00,810,40,10,115,0.087,departed,362,4.0
+CodeForAfrica/GenderGap.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2020-12-11T07:39:36+00:00,2022-12-05T05:12:44+00:00,723,20,9,103,0.0874,departed,180,2.22
+CodeForAfrica/GenderGap.AFRICA,nerdlet,nerdlet,Brenda Nyokabi Bucha,brndnyokabi@gmail.com,2018-07-17T14:26:39+00:00,2022-02-18T11:50:15+00:00,1311,20,6,187,0.0321,departed,221,3.33
+CodeForAfrica/GenderGap.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-05-31T12:53:21+00:00,2022-12-03T09:25:23+00:00,1281,16,12,183,0.0656,departed,180,1.33
+CodeForAfrica/GenderGap.AFRICA,brndnyokabi@gamil.com,,nerdlet,brndnyokabi@gamil.com,2018-03-02T13:51:54+00:00,2018-03-19T11:16:28+00:00,16,15,3,2,1.5,departed,426,5.0
+CodeForAfrica/GenderGap.AFRICA,Kinjuriu,Kinjuriu,Stephane Njoki,69685769+Kinjuriu@users.noreply.github.com,2022-01-14T07:56:04+00:00,2023-09-04T07:46:40+00:00,597,11,4,85,0.0471,departed,141,2.75
+CodeForAfrica/GenderGap.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2022-01-14T13:56:46+00:00,2022-02-03T06:59:45+00:00,19,5,3,2,1.5,departed,224,1.67
+CodeForAfrica/GenderGap.AFRICA,robinkiplangat,robinkiplangat,Robin Kiplang'at,robyne.kiplangat@Gmail.com,2019-01-10T12:46:36+00:00,2020-02-19T07:38:16+00:00,404,4,3,57,0.0526,departed,326,1.33
+CodeForAfrica/GenderGap.AFRICA,elric-wamugu,elric-wamugu,Eric Wamugu,wamugu@gmail.com,2024-09-23T15:11:13+00:00,2025-09-01T23:22:13+00:00,343,2,2,49,0.0408,departed,37,1.0
+CodeForAfrica/GenderGap.AFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2023-09-05T11:42:05+00:00,2023-09-05T11:45:25+00:00,0,2,1,1,1.0,departed,141,2.0
+CodeForAfrica/GenderGap.AFRICA,mtuchi,mtuchi,Emmanuel Evance,emmanuel@irabu.co.tz,2018-07-19T12:02:28+00:00,2018-07-19T12:02:28+00:00,0,1,1,1,1.0,departed,409,1.0
+CodeForAfrica/PromiseTracker,kelvinkipruto,kelvinkipruto,Kipruto,43873157+kelvinkipruto@users.noreply.github.com,2025-08-12T11:13:07+00:00,2026-05-06T08:05:33+00:00,266,406,30,38,0.7895,active,,13.53
+CodeForAfrica/PromiseTracker,kevin@kevinkoech.com,,Kevin Koech,kevin@kevinkoech.com,2025-09-08T07:42:23+00:00,2025-10-27T10:42:41+00:00,49,24,6,7,0.8571,departed,29,4.0
+CodeForAfrica/PromiseTracker,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-09-03T09:59:07+00:00,2026-03-21T23:40:03+00:00,199,6,5,28,0.1786,active,,1.2
+CodeForAfrica/PromiseTracker,koechkevin,koechkevin,KEVIN KOECH,39160236+koechkevin@users.noreply.github.com,2025-09-03T06:46:11+00:00,2025-10-28T09:58:24+00:00,55,6,4,7,0.5714,departed,29,1.5
+CodeForAfrica/PromiseTracker,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2025-10-21T05:06:54+00:00,2026-03-23T06:07:43+00:00,153,3,3,21,0.1429,active,,1.0
+CodeForAfrica/academy.AFRICA,kelvinkipruto,kelvinkipruto,kelvin kipruto,43873157+kelvinkipruto@users.noreply.github.com,2023-10-12T14:55:49+00:00,2026-03-11T08:12:18+00:00,880,361,40,125,0.32,active,,9.03
+CodeForAfrica/academy.AFRICA,koechkevin,koechkevin,Kevin Koech,koechkevin92@gmail.com,2023-10-12T14:05:56+00:00,2025-08-04T07:22:50+00:00,661,310,48,94,0.5106,departed,41,6.46
+CodeForAfrica/academy.AFRICA,kevin@kevinkoech.com,,Kevin Koech,kevin@kevinkoech.com,2025-10-23T09:41:04+00:00,2026-03-18T07:53:13+00:00,145,27,7,20,0.35,active,,3.86
+CodeForAfrica/academy.AFRICA,kevinkoech@MacBook-Pro.local,,Kevin Koech,kevinkoech@MacBook-Pro.local,2024-12-06T07:50:42+00:00,2024-12-10T14:01:41+00:00,4,3,2,1,2.0,departed,75,1.5
+CodeForAfrica/academy.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2024-09-09T09:34:16+00:00,2024-09-09T09:34:16+00:00,0,1,1,1,1.0,departed,88,1.0
+CodeForAfrica/actNOW,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2021-04-19T13:49:32+00:00,2026-05-19T05:24:26+00:00,1855,1033,188,265,0.7094,active,,5.49
+CodeForAfrica/actNOW,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2021-06-08T05:30:12+00:00,2026-05-01T09:27:27+00:00,1788,764,174,255,0.6824,active,,4.39
+CodeForAfrica/actNOW,esirK,esirK,Isaiah King'ori,esirkings@gmail.com,2021-05-25T05:09:38+00:00,2022-03-25T10:50:36+00:00,304,158,13,43,0.3023,departed,216,12.15
+CodeForAfrica/actNOW,pre-commit-ci[bot],pre-commit-ci[bot],pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,2021-04-26T17:26:25+00:00,2026-05-18T21:58:06+00:00,1848,118,101,264,0.3826,active,,1.17
+CodeForAfrica/actNOW,KhadijaMahanga,KhadijaMahanga,Khadija Mahanga,khadijamahanga@y7mail.com,2021-06-15T12:55:37+00:00,2021-06-18T12:50:23+00:00,2,42,1,1,1.0,departed,256,42.0
+CodeForAfrica/openAFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2023-03-03T12:43:53+00:00,2025-07-15T11:52:22+00:00,864,59,21,123,0.1707,departed,44,2.81
+CodeForAfrica/openAFRICA,DavidLemayian,DavidLemayian,David Lemayian,dlemayian@gmail.com,2017-08-30T14:06:00+00:00,2020-01-31T13:28:19+00:00,883,57,16,126,0.127,departed,328,3.56
+CodeForAfrica/openAFRICA,phillipahereza,phillipahereza,Phillip Ahereza,pahereza@gmail.com,2018-02-16T07:39:38+00:00,2019-03-26T06:41:01+00:00,402,15,10,57,0.1754,departed,373,1.5
+CodeForAfrica/openAFRICA,esirK,esirK,esir,esirkings@gmail.com,2022-09-26T12:57:46+00:00,2022-11-07T12:16:02+00:00,41,8,3,5,0.6,departed,184,2.67
+CodeForAfrica/openAFRICA,mercy.muchai@andela.com,,Mercy-Muchai,mercy.muchai@andela.com,2017-09-05T07:26:57+00:00,2017-09-26T11:53:50+00:00,21,8,3,3,1.0,departed,451,2.67
+CodeForAfrica/openAFRICA,Arame93,Arame93,Arame Thiam,60295234+Arame93@users.noreply.github.com,2025-10-16T10:19:04+00:00,2025-10-16T10:27:31+00:00,0,4,1,1,1.0,departed,31,4.0
+CodeForAfrica/openAFRICA,=,,=xavierfrank4,=,2023-08-03T12:25:50+00:00,2023-08-07T13:43:01+00:00,4,2,2,1,2.0,departed,145,1.0
+CodeForAfrica/openAFRICA,WNjihia,WNjihia,WNjihia,dorisn172@gmail.com,2017-09-28T10:41:03+00:00,2017-09-28T10:41:03+00:00,0,1,1,1,1.0,departed,451,1.0
+CodeForAfrica/outbreak.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2020-03-19T05:12:00+00:00,2025-10-10T09:11:50+00:00,2031,582,45,290,0.1552,departed,31,12.93
+CodeForAfrica/outbreak.AFRICA,KhadijaMahanga,KhadijaMahanga,Khadija Mahanga,khadijamahanga@y7mail.com,2020-04-08T15:27:01+00:00,2021-08-25T09:50:57+00:00,503,418,19,71,0.2676,departed,247,22.0
+CodeForAfrica/outbreak.AFRICA,nerdlet,nerdlet,nerdlet,brndnyokabi@gmail.com,2020-03-19T08:29:17+00:00,2020-06-09T12:33:43+00:00,82,236,13,11,1.1818,departed,310,18.15
+CodeForAfrica/outbreak.AFRICA,TriciaGovindasamy,TriciaGovindasamy,TriciaGovindasamy,tricia@codeforafrica.org,2020-07-13T10:40:55+00:00,2020-07-13T11:41:31+00:00,0,27,1,1,1.0,departed,305,27.0
+CodeForAfrica/outbreak.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2020-03-19T10:25:51+00:00,2020-06-09T12:44:59+00:00,82,25,8,11,0.7273,departed,310,3.12
+CodeForAfrica/outbreak.AFRICA,KobbyMmo,KobbyMmo,Obed Amoasi,obedamoasi@gmail.com,2020-08-30T21:09:23+00:00,2021-09-01T06:13:56+00:00,366,18,5,52,0.0962,departed,246,3.6
+CodeForAfrica/outbreak.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2021-08-03T22:24:14+00:00,2023-11-16T18:39:46+00:00,834,17,17,119,0.1429,departed,131,1.0
+CodeForAfrica/outbreak.AFRICA,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2021-03-03T15:18:30+00:00,2021-06-09T02:29:08+00:00,97,9,7,13,0.5385,departed,258,1.29
+CodeForAfrica/outbreak.AFRICA,karimkawambwa,karimkawambwa,karimkawambwa,4308339+karimkawambwa@users.noreply.github.com,2020-03-23T17:25:20+00:00,2020-04-08T15:41:28+00:00,15,9,3,2,1.5,departed,319,3.0
+CodeForAfrica/outbreak.AFRICA,ascii-dev,ascii-dev,Samuel Afolaranmi,sammysgame.dev@gmail.com,2020-04-22T09:21:44+00:00,2020-04-27T08:36:13+00:00,4,6,2,1,2.0,departed,316,3.0
+CodeForAfrica/outbreak.AFRICA,gertie-sheshe,gertie-sheshe,gertie-sheshe,gertrude.nyenyeshi@gmail.com,2021-02-17T05:18:44+00:00,2021-02-17T06:52:48+00:00,0,3,1,1,1.0,departed,274,3.0
+CodeForAfrica/outbreak.AFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2023-07-03T06:58:32+00:00,2023-07-03T07:21:35+00:00,0,2,1,1,1.0,departed,150,2.0
+CodeForAfrica/sensors.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2018-10-03T10:48:37+00:00,2025-09-17T15:48:45+00:00,2541,487,71,363,0.1956,departed,35,6.86
+CodeForAfrica/sensors.AFRICA,nerdlet,nerdlet,Brenda Nyokabi Bucha,brndnyokabi@gmail.com,2018-03-31T17:34:18+00:00,2022-02-11T08:04:53+00:00,1412,460,47,201,0.2338,departed,222,9.79
+CodeForAfrica/sensors.AFRICA,DavidLemayian,DavidLemayian,David Lemayian,dlemayian@gmail.com,2018-03-23T08:27:36+00:00,2019-10-14T08:04:00+00:00,569,81,19,81,0.2346,departed,344,4.26
+CodeForAfrica/sensors.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2021-08-12T04:23:22+00:00,2023-11-16T19:38:30+00:00,826,33,22,118,0.1864,departed,131,1.5
+CodeForAfrica/sensors.AFRICA,kelvinkipruto,kelvinkipruto,Kipruto,43873157+kelvinkipruto@users.noreply.github.com,2022-12-05T09:27:11+00:00,2023-07-14T08:18:55+00:00,220,29,3,31,0.0968,departed,148,9.67
+CodeForAfrica/sensors.AFRICA,KhadijaMahanga,KhadijaMahanga,KhadijaMahanga,khadijamahanga@y7mail.com,2018-10-04T12:24:52+00:00,2018-11-13T14:54:43+00:00,40,27,6,5,1.2,departed,392,4.5
+CodeForAfrica/sensors.AFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2024-10-23T13:17:19+00:00,2024-11-27T05:54:31+00:00,34,19,5,4,1.25,departed,77,3.8
+CodeForAfrica/sensors.AFRICA,brndnyokabi@gamil.com,,nerdlet,brndnyokabi@gamil.com,2018-03-31T17:32:45+00:00,2018-04-17T14:50:40+00:00,16,19,3,2,1.5,departed,422,6.33
+CodeForAfrica/sensors.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2018-08-10T12:09:36+00:00,2022-02-11T13:02:53+00:00,1281,17,13,183,0.071,departed,222,1.31
+CodeForAfrica/sensors.AFRICA,phillipahereza,phillipahereza,Phillip Ahereza,pahereza@gmail.com,2018-04-23T10:25:04+00:00,2018-04-26T03:03:26+00:00,2,17,1,1,1.0,departed,421,17.0
+CodeForAfrica/sensors.AFRICA,karimkawambwa,karimkawambwa,Karim Kawambwa,4308339+karimkawambwa@users.noreply.github.com,2019-03-04T08:02:26+00:00,2020-02-21T08:58:31+00:00,354,15,5,50,0.1,departed,325,3.0
+CodeForAfrica/sensors.AFRICA,esirK,esirK,Isaiah King'ori,isaiah.ngaruiya7@gmail.com,2022-05-12T13:13:27+00:00,2022-05-13T06:57:52+00:00,0,12,1,1,1.0,departed,209,12.0
+CodeForAfrica/sensors.AFRICA,khadijam@saratoga.co.za,,khadija,khadijam@saratoga.co.za,2018-10-15T13:58:16+00:00,2018-10-18T09:37:27+00:00,2,11,1,1,1.0,departed,396,11.0
+CodeForAfrica/sensors.AFRICA,KobbyMmo,KobbyMmo,Obed Amoasi,obedamoasi@gmail.com,2020-11-04T23:58:06+00:00,2022-01-27T11:19:36+00:00,448,7,2,64,0.0312,departed,225,3.5
+CodeForAfrica/sensors.AFRICA,gideonmaina,gideonmaina,Giddie,gideon@codeforafrica.org,2022-12-06T10:13:18+00:00,2026-05-18T12:18:11+00:00,1259,6,5,179,0.0279,active,,1.2
+CodeForAfrica/sensors.AFRICA,m453h,m453h,Michael Hudson Nkotagu,mnkotagu@gmail.com,2024-11-06T06:05:55+00:00,2024-11-26T12:28:32+00:00,20,5,2,2,1.0,departed,77,2.5
+CodeForAfrica/sensors.AFRICA,codeforafrica@Codes-MacBook-Pro.local,,Code for Africa,codeforafrica@Codes-MacBook-Pro.local,2022-08-12T14:26:47+00:00,2023-09-05T12:50:38+00:00,388,5,3,55,0.0545,departed,141,1.67
+CodeForAfrica/sensors.AFRICA,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2020-11-06T05:34:34+00:00,2021-06-16T02:28:34+00:00,221,5,5,31,0.1613,departed,257,1.0
+CodeForAfrica/sensors.AFRICA,usmanbiu,usmanbiu,usmanbiu,69766740+usmanbiu@users.noreply.github.com,2023-07-11T14:13:16+00:00,2024-08-02T12:20:12+00:00,387,4,4,55,0.0727,departed,93,1.0
+CodeForAfrica/sensors.AFRICA,koechkevin,koechkevin,KEVIN KOECH,koechkevin92@gmail.com,2022-12-13T08:31:23+00:00,2022-12-14T06:26:30+00:00,0,4,1,1,1.0,departed,179,4.0
+CodeForAfrica/sensors.AFRICA,mtuchi,mtuchi,mtuchi,mtuchidev@gmail.com,2018-10-15T12:54:09+00:00,2020-03-13T18:48:57+00:00,515,4,3,73,0.0411,departed,322,1.33
+CodeForAfrica/sensors.AFRICA,chegejames,chegejames,chege james,chegejames3@gmail.com,2019-07-09T10:20:38+00:00,2020-02-16T02:24:30+00:00,221,3,3,31,0.0968,departed,326,1.0
+CodeForAfrica/sensors.AFRICA,david@codeforafrica.org,,David Lemayian,david@codeforafrica.org,2018-05-15T07:29:16+00:00,2018-05-15T07:40:30+00:00,0,3,1,1,1.0,departed,418,3.0
+CodeForAfrica/sensors.AFRICA,snyk-bot,snyk-bot,Snyk bot,snyk-bot@snyk.io,2019-05-20T12:17:25+00:00,2019-05-20T12:17:25+00:00,0,1,1,1,1.0,departed,365,1.0
+CodeForAfrica/ui,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2019-09-10T08:46:28+00:00,2026-05-13T08:40:38+00:00,2436,3366,132,348,0.3793,active,,25.5
+CodeForAfrica/ui,kelvinkipruto,kelvinkipruto,Kipruto,43873157+kelvinkipruto@users.noreply.github.com,2022-07-07T05:17:49+00:00,2026-04-24T08:56:02+00:00,1387,2616,127,198,0.6414,active,,20.6
+CodeForAfrica/ui,koechkevin,koechkevin,KEVIN KOECH,39160236+koechkevin@users.noreply.github.com,2023-01-10T14:10:30+00:00,2026-04-20T09:51:43+00:00,1195,1673,125,170,0.7353,active,,13.38
+CodeForAfrica/ui,nerdlet,nerdlet,Brenda Nyokabi Bucha,brndnyokabi@gmail.com,2019-09-13T08:32:00+00:00,2022-07-13T14:14:20+00:00,1034,1018,17,147,0.1156,departed,201,59.88
+CodeForAfrica/ui,esirK,esirK,Isaiah King'ori,esirkings@gmail.com,2022-05-27T06:43:46+00:00,2022-09-16T07:21:03+00:00,112,401,15,16,0.9375,departed,191,26.73
+CodeForAfrica/ui,KobbyMmo,KobbyMmo,Obed Amoasi,obedamoasi@gmail.com,2022-03-09T18:18:21+00:00,2022-07-13T14:14:38+00:00,125,398,3,17,0.1765,departed,201,132.67
+CodeForAfrica/ui,m453h,m453h,Michael Hudson Nkotagu,m453h@users.noreply.github.com,2024-06-04T10:35:38+00:00,2025-05-08T09:17:59+00:00,337,381,31,48,0.6458,departed,54,12.29
+CodeForAfrica/ui,gertie-sheshe,gertie-sheshe,gertie-sheshe,gertrude.nyenyeshi@gmail.com,2022-03-10T09:30:13+00:00,2022-07-13T14:14:38+00:00,125,327,16,17,0.9412,departed,201,20.44
+CodeForAfrica/ui,kevin@kevinkoech.com,,Kevin Koech,kevin@kevinkoech.com,2025-09-12T08:33:36+00:00,2026-04-17T13:20:54+00:00,217,194,24,31,0.7742,active,,8.08
+CodeForAfrica/ui,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2022-03-21T14:07:53+00:00,2022-07-13T14:14:05+00:00,114,113,12,16,0.75,departed,201,9.42
+CodeForAfrica/ui,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2022-07-13T10:19:27+00:00,2022-07-13T14:03:06+00:00,0,110,1,1,1.0,departed,201,110.0
+CodeForAfrica/ui,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2022-07-13T10:04:22+00:00,2026-03-21T23:47:59+00:00,1347,107,23,192,0.1198,active,,4.65
+CodeForAfrica/ui,karimkawambwa,karimkawambwa,karimkawambwa,4308339+karimkawambwa@users.noreply.github.com,2019-09-10T09:32:34+00:00,2022-07-13T10:02:38+00:00,1037,49,3,148,0.0203,departed,201,16.33
+CodeForAfrica/ui,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2022-11-15T06:44:48+00:00,2024-08-08T14:51:04+00:00,632,45,11,90,0.1222,departed,93,4.09
+CodeForAfrica/ui,kevinkoech@MacBook-Pro.local,,Kevin Koech,kevinkoech@MacBook-Pro.local,2024-12-04T10:52:45+00:00,2025-02-04T13:47:57+00:00,62,38,7,8,0.875,departed,67,5.43
+CodeForAfrica/ui,VinneyJ,VinneyJ,VinneyJ,vincentjayden49@gmail.com,2024-05-06T09:31:15+00:00,2024-10-17T06:29:51+00:00,163,33,4,23,0.1739,departed,83,8.25
+CodeForAfrica/ui,DavidLemayian,DavidLemayian,David Lemayian,877919+DavidLemayian@users.noreply.github.com,2022-07-13T09:49:38+00:00,2022-07-13T09:53:37+00:00,0,27,1,1,1.0,departed,201,27.0
+CodeForAfrica/ui,KhadijaMahanga,KhadijaMahanga,khadija,khadijamahanga@y7mail.com,2022-07-13T13:38:43+00:00,2022-07-13T13:44:00+00:00,0,22,1,1,1.0,departed,201,22.0
+CodeForAfrica/ui,muma.bwalya@codeforafrica.org,,Muma Bwalya,muma.bwalya@codeforafrica.org,2024-07-19T10:26:11+00:00,2024-08-21T06:56:48+00:00,32,20,6,4,1.5,departed,91,3.33
+CodeForAfrica/ui,saminegash,saminegash,Samuel Negash Hailu,smlnegash@gmail.com,2023-08-17T04:28:40+00:00,2023-09-07T09:55:14+00:00,21,14,3,3,1.0,departed,141,4.67
+CodeForAfrica/ui,kelvinkipruto@CODEs-MacBook-Pro.local,,Kelvin Kipruto,kelvinkipruto@CODEs-MacBook-Pro.local,2022-11-10T10:26:38+00:00,2022-11-14T10:59:38+00:00,4,10,2,1,2.0,departed,183,5.0
+CodeForAfrica/ui,github-actions[bot],github-actions[bot],claude[bot],41898282+claude[bot]@users.noreply.github.com,2022-08-29T12:18:37+00:00,2026-04-24T11:52:24+00:00,1333,6,4,190,0.0211,active,,1.5
+CodeForAfrica/ui,DavidTheProgrammer,DavidTheProgrammer,Code Is Art,18518167+DavidTheProgrammer@users.noreply.github.com,2024-08-21T06:35:03+00:00,2024-08-21T09:37:41+00:00,0,6,1,1,1.0,departed,91,6.0
+CodeForAfrica/ui,obed@codeforafrica.org,,Obed Amoasi,obed@codeforafrica.org,2022-07-13T13:18:32+00:00,2022-07-13T13:18:34+00:00,0,6,1,1,1.0,departed,201,6.0
+CodeForAfrica/ui,xnbchd,xnbchd,kelvin kipruto,18241449+xnbchd@users.noreply.github.com,2025-12-04T05:24:04+00:00,2026-01-07T09:43:15+00:00,34,4,2,4,0.5,departed,19,2.0
+CodeforLeipzig/leipziggiesst,ff6347,ff6347,ff6347,fabianmoronzirfas@protonmail.ch,2020-05-05T07:27:37+00:00,2021-05-08T20:53:34+00:00,368,372,26,52,0.5,departed,262,14.31
+CodeforLeipzig/leipziggiesst,joergreichert,joergreichert,Jörg Reichert,joergreichert@users.noreply.github.com,2021-05-08T20:39:06+00:00,2026-03-05T08:06:40+00:00,1761,288,90,251,0.3586,active,,3.2
+CodeforLeipzig/leipziggiesst,vogelino,vogelino,Lucas Vogel,vogelino@users.noreply.github.com,2021-01-25T12:39:08+00:00,2021-05-04T07:40:31+00:00,98,233,9,14,0.6429,departed,263,25.89
+CodeforLeipzig/leipziggiesst,fdnklg,fdnklg,fdnklg,fabian.dinklage@me.com,2019-08-05T19:46:41+00:00,2020-05-13T15:22:54+00:00,281,195,17,40,0.425,departed,314,11.47
+CodeforLeipzig/leipziggiesst,dnsos,dnsos,Dennis Ostendorf,15640196+dnsos@users.noreply.github.com,2020-05-04T11:17:05+00:00,2021-05-03T14:51:22+00:00,364,94,9,52,0.1731,departed,263,10.44
+CodeforLeipzig/leipziggiesst,moron-zirfas@technologiestiftung-berlin.de,,Fabian Morón Zirfas,moron-zirfas@technologiestiftung-berlin.de,2020-05-06T07:40:32+00:00,2020-09-14T08:13:48+00:00,131,61,17,18,0.9444,departed,296,3.59
+CodeforLeipzig/leipziggiesst,roboter@tsb-berlin.de,,tsboter,roboter@tsb-berlin.de,2020-08-24T16:04:51+00:00,2021-05-02T04:05:22+00:00,250,32,28,35,0.8,departed,263,1.14
+CodeforLeipzig/leipziggiesst,julizet,julizet,Julia Zet,52455010+julizet@users.noreply.github.com,2020-07-02T08:30:51+00:00,2021-02-15T15:24:24+00:00,228,23,9,32,0.2812,departed,274,2.56
+CodeforLeipzig/leipziggiesst,lucasoeth,lucasoeth,lucasoeth,43838158+lucasoeth@users.noreply.github.com,2021-04-26T11:32:38+00:00,2021-04-30T07:12:56+00:00,3,20,1,1,1.0,departed,264,20.0
+CodeforLeipzig/leipziggiesst,sebastian-meier,sebastian-meier,Sebastian Meier,contact@sebastianmeier.eu,2020-05-04T14:19:48+00:00,2020-05-23T06:19:00+00:00,18,11,2,2,1.0,departed,313,5.5
+CodeforLeipzig/leipziggiesst,renovate-bot,renovate-bot,Renovate Bot,bot@renovateapp.com,2021-02-14T23:47:14+00:00,2021-03-08T00:35:52+00:00,21,9,4,3,1.3333,departed,271,2.25
+CodeforLeipzig/leipziggiesst,bnjmnsbl,bnjmnsbl,Benjamin Seibel,benjamin.seibel@gmx.de,2020-03-09T13:54:16+00:00,2020-05-18T20:39:23+00:00,70,9,4,10,0.4,departed,313,2.25
+CodeforLeipzig/leipziggiesst,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2020-04-28T15:48:34+00:00,2020-12-12T09:41:15+00:00,227,5,5,32,0.1562,departed,284,1.0
+CodeforLeipzig/leipziggiesst,Lisa-Stubert,Lisa-Stubert,Lisa-Stubert,61182572+Lisa-Stubert@users.noreply.github.com,2021-01-26T17:23:34+00:00,2021-02-02T16:33:56+00:00,6,3,2,1,2.0,departed,276,1.5
+CodeforLeipzig/leipziggiesst,georghans,georghans,g hans,gehans@outlook.de,2022-11-11T10:05:20+00:00,2022-11-11T10:05:20+00:00,0,1,1,1,1.0,departed,184,1.0
+CodeforLeipzig/leipziggiesst,NucsuM,NucsuM,Robert Schmidt,nucsum@mailbox.org,2022-06-10T19:44:47+00:00,2022-06-10T19:44:47+00:00,0,1,1,1,1.0,departed,206,1.0
+CodeforLeipzig/leipziggiesst,maximilianpalm,maximilianpalm,maximilianpalm,github@npalm.de,2020-07-18T13:33:22+00:00,2020-07-18T13:33:22+00:00,0,1,1,1,1.0,departed,305,1.0
+CodeforLeipzig/leipziggiesst,donni106,donni106,Daniel Molnar,dm@tpwd.de,2020-06-29T20:44:31+00:00,2020-06-29T20:44:31+00:00,0,1,1,1,1.0,departed,307,1.0
+CodeforLeipzig/weihnachtsmarktkarte,joergreichert,joergreichert,Jörg Reichert,joergreichert@users.noreply.github.com,2022-12-01T16:29:54+00:00,2025-12-17T18:46:37+00:00,1112,182,15,158,0.0949,departed,22,12.13
+CodeforLeipzig/weihnachtsmarktkarte,hanshack,hanshack,Hans Hack,hanshack@users.noreply.github.com,2022-11-10T16:52:48+00:00,2022-12-01T11:04:40+00:00,20,105,4,2,2.0,departed,181,26.25
+CodeforLeipzig/weihnachtsmarktkarte,Lisa-Stubert,Lisa-Stubert,Lisa-Stubert,61182572+Lisa-Stubert@users.noreply.github.com,2022-11-19T11:03:10+00:00,2022-11-26T09:17:07+00:00,6,80,2,1,2.0,departed,182,40.0
+CodeforLeipzig/weihnachtsmarktkarte,KlemensM,KlemensM,Klemens,98896505+KlemensM@users.noreply.github.com,2022-11-09T13:56:18+00:00,2022-11-29T15:39:56+00:00,20,24,4,2,2.0,departed,181,6.0
+CodeforLeipzig/weihnachtsmarktkarte,ester-t-s,ester-t-s,Ester,91192024+ester-t-s@users.noreply.github.com,2022-11-09T12:12:08+00:00,2022-11-21T08:11:28+00:00,11,24,3,1,3.0,departed,182,8.0
+CodeforLeipzig/weihnachtsmarktkarte,renovate[bot],renovate[bot],renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2024-11-16T14:30:27+00:00,2025-12-03T17:50:08+00:00,382,13,3,54,0.0556,departed,24,4.33
+CodeforLeipzig/weihnachtsmarktkarte,annameide,annameide,anna,46717848+annameide@users.noreply.github.com,2022-11-16T11:42:12+00:00,2022-11-24T09:38:00+00:00,7,13,2,1,2.0,departed,182,6.5
+CodeforLeipzig/weihnachtsmarktkarte,allcontributors[bot],allcontributors[bot],allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,2022-11-09T12:25:54+00:00,2022-11-09T13:16:56+00:00,0,12,1,1,1.0,departed,184,12.0
+CodeforLeipzig/weihnachtsmarktkarte,dnsos,dnsos,Dennis Ostendorf,15640196+dnsos@users.noreply.github.com,2022-11-09T15:32:01+00:00,2022-11-09T15:32:01+00:00,0,1,1,1,1.0,departed,184,1.0
+VoteIT/voteit_frontend,johan@radkompaniet.se,,Johan Schiff,johan@radkompaniet.se,2020-11-09T10:55:47+00:00,2023-09-15T14:17:45+00:00,1040,1000,104,148,0.7027,departed,140,9.62
+VoteIT/voteit_frontend,schyffel,schyffel,Johan Schiff,johan@betahaus.net,2022-05-09T09:03:13+00:00,2026-05-20T11:37:14+00:00,1472,883,74,210,0.3524,active,,11.93
+VoteIT/voteit_frontend,robinharms,robinharms,Robin Harms Oredsson,robin@betahaus.net,2020-12-08T22:54:58+00:00,2024-03-11T14:56:24+00:00,1188,67,36,169,0.213,departed,114,1.86
+VoteIT/voteit_frontend,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2022-01-15T07:19:59+00:00,2025-11-15T11:01:46+00:00,1400,9,7,200,0.035,departed,27,1.29
+bikespace/bikespace,sonalranjit,sonalranjit,Sonal R,sonal.ranjit3@gmail.com,2019-02-19T23:46:08+00:00,2026-05-17T00:21:49+00:00,2643,98,51,377,0.1353,active,,1.92
+bikespace/bikespace,xinweny,xinweny,Yap Xin Wen,xinwenyap19@gmail.com,2024-10-15T23:06:44+00:00,2025-02-07T21:55:06+00:00,114,88,7,16,0.4375,departed,66,12.57
+bikespace/bikespace,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-11-22T18:40:25+00:00,2026-05-17T13:17:24+00:00,906,73,35,129,0.2713,active,,2.09
+bikespace/bikespace,tallcoleman,tallcoleman,Ben Coleman,ben.coleman@alumni.utoronto.ca,2023-12-10T01:51:05+00:00,2026-05-05T22:08:41+00:00,877,71,47,125,0.376,active,,1.51
+bikespace/bikespace,hulloanson,hulloanson,hulloanson,pm@hulloanson.com,2024-01-09T23:17:34+00:00,2024-10-02T00:35:56+00:00,266,26,9,38,0.2368,departed,85,2.89
+bikespace/bikespace,krhobeck,krhobeck,krhobeck,krhobeck@gmail.com,2025-09-20T19:02:39+00:00,2025-10-27T21:45:44+00:00,37,13,6,5,1.2,departed,29,2.17
+bikespace/bikespace,kevinluo201,kevinluo201,Kevin Luo,kevin.luo@telus.com,2023-04-08T02:55:01+00:00,2023-05-13T17:06:12+00:00,35,13,5,5,1.0,departed,157,2.6
+bikespace/bikespace,iainmcampbell,iainmcampbell,iain,hey@iainmc.ca,2025-05-02T14:58:09+00:00,2025-06-17T17:03:38+00:00,46,3,3,6,0.5,departed,48,1.0
+bikespace/bikespace,thomassth,thomassth,Thomas Kam,thomassth@users.noreply.github.com,2023-11-25T16:25:41+00:00,2023-12-12T03:43:09+00:00,16,2,2,2,1.0,departed,127,1.0
+bikespace/bikespace,harsha-mangena,harsha-mangena,harsha-mangena,44197358+harsha-mangena@users.noreply.github.com,2023-11-21T20:51:37+00:00,2023-11-28T02:24:13+00:00,6,2,2,1,2.0,departed,129,1.0
+bikespace/bikespace,whoisasey,whoisasey,atina,56001902+whoisasey@users.noreply.github.com,2023-10-11T16:14:04+00:00,2023-10-11T19:35:51+00:00,0,2,1,1,1.0,departed,136,2.0
+bikespace/bikespace,AlexGopal,AlexGopal,AlexGopal,127698347+AlexGopal@users.noreply.github.com,2025-12-23T15:35:29+00:00,2025-12-23T15:35:29+00:00,0,1,1,1,1.0,departed,21,1.0
+bikespace/bikespace,KangarooAlpha,KangarooAlpha,Omar Fayyaz,118497502+KangarooAlpha@users.noreply.github.com,2025-11-29T19:45:13+00:00,2025-11-29T19:45:13+00:00,0,1,1,1,1.0,departed,24,1.0
+bikespace/bikespace,bennygoldman,bennygoldman,Benny Goldman,goldmanb@gmail.com,2024-02-29T13:16:43+00:00,2024-02-29T13:16:43+00:00,0,1,1,1,1.0,departed,116,1.0
+bikespace/bikespace,mbechtel,mbechtel,Mitch Bechtel,mitch.bechtel@comandsolutions.com,2023-12-09T16:18:58+00:00,2023-12-09T16:18:58+00:00,0,1,1,1,1.0,departed,127,1.0
+choruslabs/chorus,MaanasArora,MaanasArora,Maanas Arora,maanasarora23@gmail.com,2024-11-27T11:29:20+00:00,2026-04-29T00:28:06+00:00,517,280,35,73,0.4795,active,,8.0
+choruslabs/chorus,thomassth,thomassth,Thomas Kam,thomassth@users.noreply.github.com,2025-06-12T07:47:42+00:00,2026-02-25T00:19:16+00:00,257,73,12,36,0.3333,active,,6.08
+choruslabs/chorus,NewJerseyStyle,NewJerseyStyle,David H.,22520563+NewJerseyStyle@users.noreply.github.com,2025-03-20T02:19:51+00:00,2025-03-20T02:55:24+00:00,0,7,1,1,1.0,departed,61,7.0
+choruslabs/chorus,cplkake,cplkake,Vinesh,42398320+cplkake@users.noreply.github.com,2025-08-09T06:09:03+00:00,2025-12-15T23:43:56+00:00,128,3,3,18,0.1667,departed,22,1.0
+choruslabs/chorus,nicobao,nicobao,Nicolas Gimenez,46368291+nicobao@users.noreply.github.com,2025-01-21T23:05:14+00:00,2025-01-21T23:06:34+00:00,0,3,1,1,1.0,departed,69,3.0
+choruslabs/chorus,amotaouakkil123,amotaouakkil123,Adam,74212024+amotaouakkil123@users.noreply.github.com,2025-09-16T04:13:45+00:00,2025-10-10T02:28:51+00:00,23,2,2,3,0.6667,departed,31,1.0
+choruslabs/chorus,dentropy,dentropy,Paul Mullins,8509074+dentropy@users.noreply.github.com,2026-04-09T22:50:51+00:00,2026-04-09T22:50:51+00:00,0,1,1,1,1.0,active,,1.0
+choruslabs/chorus,aryasadawrate19,aryasadawrate19,Arya Sadawrate,86820886+aryasadawrate19@users.noreply.github.com,2026-02-10T03:42:43+00:00,2026-02-10T03:42:43+00:00,0,1,1,1,1.0,departed,14,1.0
+choruslabs/chorus,victorfbrito,victorfbrito,Victor Brito,victor.brito@mail.usf.edu.br,2025-11-11T04:45:34+00:00,2025-11-11T04:45:34+00:00,0,1,1,1,1.0,departed,27,1.0
+choruslabs/chorus,Latte17,Latte17,Latte17,153994326+Latte17@users.noreply.github.com,2025-11-05T23:57:16+00:00,2025-11-05T23:57:16+00:00,0,1,1,1,1.0,departed,28,1.0
+choruslabs/chorus,aminechm,aminechm,Amine,117687927+aminechm@users.noreply.github.com,2025-10-12T11:53:25+00:00,2025-10-12T11:53:25+00:00,0,1,1,1,1.0,departed,31,1.0
+civic-dashboard/civic-dashboard-web,garobrik,garobrik,garo,3411715+garobrik@users.noreply.github.com,2024-10-31T15:50:24+00:00,2026-01-21T01:44:13+00:00,446,67,24,63,0.381,departed,17,2.79
+civic-dashboard/civic-dashboard-web,jeromegv,jeromegv,Jérôme Gagnon-Voyer,gagnonje@gmail.com,2025-03-18T16:33:44+00:00,2026-05-17T15:13:46+00:00,424,49,23,60,0.3833,active,,2.13
+civic-dashboard/civic-dashboard-web,17cliu,17cliu,Caroline Liu,17cliu@users.noreply.github.com,2025-05-24T16:08:36+00:00,2026-05-11T16:57:14+00:00,352,19,15,50,0.3,active,,1.27
+civic-dashboard/civic-dashboard-web,mattorchard,mattorchard,Matthew Orchard,23462213+mattorchard@users.noreply.github.com,2025-02-12T01:27:02+00:00,2026-03-14T13:42:19+00:00,395,18,13,56,0.2321,active,,1.38
+civic-dashboard/civic-dashboard-web,sarmilan,sarmilan,Milan Somasundaram,sarmilans@gmail.com,2025-01-21T23:41:52+00:00,2025-09-11T20:08:27+00:00,232,12,7,33,0.2121,departed,35,1.71
+civic-dashboard/civic-dashboard-web,melissaluc,melissaluc,Melissa Luc,melissa.ml.luc@gmail.com,2025-04-26T17:36:17+00:00,2025-08-24T15:13:20+00:00,119,6,6,17,0.3529,departed,38,1.0
+civic-dashboard/civic-dashboard-web,Andre053,Andre053,André,84808143+Andre053@users.noreply.github.com,2025-09-24T00:44:46+00:00,2025-12-05T23:00:16+00:00,72,4,4,10,0.4,departed,23,1.0
+civic-dashboard/civic-dashboard-web,pliakhov,pliakhov,Paul Liakhov,pauluniver@gmail.com,2025-09-24T00:40:08+00:00,2025-12-31T18:59:35+00:00,98,3,3,14,0.2143,departed,20,1.0
+civic-dashboard/civic-dashboard-web,KarishmaChanglani,KarishmaChanglani,Karishma Changlani,KarishmaChanglani@users.noreply.github.com,2025-10-02T16:26:41+00:00,2026-04-26T17:09:03+00:00,206,2,2,29,0.069,active,,1.0
+civic-dashboard/civic-dashboard-web,sergeikofman444,sergeikofman444,Sergei Kofman,52934469+sergeikofman444@users.noreply.github.com,2025-12-03T01:57:04+00:00,2026-03-14T16:02:39+00:00,101,2,2,14,0.1429,active,,1.0
+civic-dashboard/civic-dashboard-web,jiakamo,jiakamo,Giacomo,30966750+jiakamo@users.noreply.github.com,2026-01-22T01:05:07+00:00,2026-01-26T00:48:34+00:00,3,2,2,1,2.0,departed,16,1.0
+civic-dashboard/civic-dashboard-web,Khasir,Khasir,Khasir,12619339+Khasir@users.noreply.github.com,2025-10-03T14:57:15+00:00,2025-12-01T23:58:23+00:00,59,2,2,8,0.25,departed,24,1.0
+civic-dashboard/civic-dashboard-web,yaelboyd,yaelboyd,yaelboyd,yaelboyd@gmail.com,2026-05-13T15:30:33+00:00,2026-05-13T15:30:33+00:00,0,1,1,1,1.0,active,,1.0
+civic-dashboard/civic-dashboard-web,anjali-bhaheeratha,anjali-bhaheeratha,anjali-bhaheeratha,abhaheer@uwo.ca,2026-05-04T20:11:31+00:00,2026-05-04T20:11:31+00:00,0,1,1,1,1.0,active,,1.0
+civic-dashboard/civic-dashboard-web,khushidahi,khushidahi,khushidahi,33580090+khushidahi@users.noreply.github.com,2026-04-21T03:24:48+00:00,2026-04-21T03:24:48+00:00,0,1,1,1,1.0,active,,1.0
+civic-dashboard/civic-dashboard-web,mmythily,mmythily,mmythily,42842977+mmythily@users.noreply.github.com,2026-03-11T16:53:52+00:00,2026-03-11T16:53:52+00:00,0,1,1,1,1.0,active,,1.0
+civic-dashboard/civic-dashboard-web,QuintinAu,QuintinAu,QuintinAu,42358441+QuintinAu@users.noreply.github.com,2026-03-07T20:05:50+00:00,2026-03-07T20:05:50+00:00,0,1,1,1,1.0,active,,1.0
+civic-dashboard/civic-dashboard-web,gurpreet11307,gurpreet11307,gurpreet11307,47232740+gurpreet11307@users.noreply.github.com,2026-02-18T01:48:17+00:00,2026-02-18T01:48:17+00:00,0,1,1,1,1.0,departed,13,1.0
+civic-dashboard/civic-dashboard-web,hermanjustino,hermanjustino,Herman Justino,46625107+hermanjustino@users.noreply.github.com,2026-02-18T01:43:09+00:00,2026-02-18T01:43:09+00:00,0,1,1,1,1.0,departed,13,1.0
+civic-dashboard/civic-dashboard-web,oscarpinzon,oscarpinzon,Oscar Pinzon,oscar.eugenio.pinzon@gmail.com,2026-01-26T17:29:23+00:00,2026-01-26T17:29:23+00:00,0,1,1,1,1.0,departed,16,1.0
+civic-dashboard/civic-dashboard-web,mgormley964,mgormley964,Michael Gormley,michaelgormley555@gmail.com,2025-12-11T15:13:54+00:00,2025-12-11T15:13:54+00:00,0,1,1,1,1.0,departed,23,1.0
+civic-dashboard/civic-dashboard-web,luce.liu@mark43.com,,Luce Liu,luce.liu@mark43.com,2025-03-23T18:13:07+00:00,2025-03-23T18:13:07+00:00,0,1,1,1,1.0,departed,60,1.0
+civic-dashboard/civic-dashboard-web,jwlibre,jwlibre,Jeremy,jw.libre@hotmail.com,2025-03-18T21:03:02+00:00,2025-03-18T21:03:02+00:00,0,1,1,1,1.0,departed,61,1.0
 civiform/civiform,renovate[bot],renovate[bot],renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2022-03-24T18:09:34+00:00,2026-05-20T14:50:51+00:00,1517,2700,193,216,0.8935,active,,13.99
 civiform/civiform,gwendolyngoetz,gwendolyngoetz,Gwendolyn Goetz,gwendolyngoetz@users.noreply.github.com,2022-03-18T17:41:38+00:00,2026-05-19T23:23:44+00:00,1523,586,154,217,0.7097,active,,3.81
 civiform/civiform,bion,bion,Bion Johnson,bion@users.noreply.github.com,2021-01-08T00:50:29+00:00,2024-12-02T17:58:23+00:00,1424,276,107,203,0.5271,departed,76,2.58
@@ -264,6 +400,9 @@ civiform/civiform,soham4abc,soham4abc,Soham Banerjee,63705023+soham4abc@users.no
 civiform/civiform,Chris-Boe,Chris-Boe,Chris Boe,cboe15@gmail.com,2021-03-13T19:42:46+00:00,2021-03-13T19:42:46+00:00,0,1,1,1,1.0,departed,270,1.0
 civiform/civiform,fripi89,fripi89,Fripi89,pit.friedrich@outlook.de,2021-03-13T18:11:11+00:00,2021-03-13T18:11:11+00:00,0,1,1,1,1.0,departed,270,1.0
 civiform/civiform,danzicr@miamioh.edu,,Caroline Danzi,danzicr@miamioh.edu,2021-01-26T20:34:50+00:00,2021-01-26T20:34:50+00:00,0,1,1,1,1.0,departed,277,1.0
+code-for-magdeburg/StadtratWatch-web,jens.winter-huebenthal@bridgefield.de,,Jens Winter-Huebenthal,jens.winter-huebenthal@bridgefield.de,2023-11-01T17:42:52+00:00,2026-05-17T20:41:10+00:00,928,244,53,132,0.4015,active,,4.6
+code-for-magdeburg/StadtratWatch-web,JensWinter,JensWinter,Jens Winter-Hübenthal,jenswh@proton.me,2023-11-02T19:30:02+00:00,2026-05-21T19:57:47+00:00,931,144,62,133,0.4662,active,,2.32
+code-for-magdeburg/StadtratWatch-web,Ra-Na,Ra-Na,rana is spanish for frog,gluege@boerde.de,2025-09-07T17:29:12+00:00,2025-09-07T17:29:12+00:00,0,1,1,1,1.0,departed,36,1.0
 codeforamerica/asap_pdf,lkacenja,lkacenja,Leo Kacenjar,lkacenja@gmail.com,2025-03-03T22:04:31+00:00,2026-04-07T20:57:07+00:00,399,309,33,57,0.5789,active,,9.36
 codeforamerica/asap_pdf,xdotcommer,xdotcommer,Michael Cowden,michael.cowden@gmail.com,2025-01-31T21:38:58+00:00,2025-03-25T19:27:55+00:00,52,161,8,7,1.1429,departed,60,20.12
 codeforamerica/asap_pdf,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-02-11T20:58:17+00:00,2026-01-16T20:28:21+00:00,338,103,20,48,0.4167,departed,17,5.15
@@ -389,111 +528,22 @@ codeforamerica/vita-min,itrujillopriego,itrujillopriego,itrujillopriego,14205030
 codeforamerica/vita-min,abibbs-cfa,abibbs-cfa,Anthony Bibbs,abibbs@codeforamerica.org,2023-05-11T16:28:54+00:00,2023-05-11T16:28:54+00:00,0,1,1,1,1.0,departed,158,1.0
 codeforamerica/vita-min,miketlawrence,miketlawrence,Mike Lawrence,miketlawrence@users.noreply.github.com,2021-07-15T15:03:46+00:00,2021-07-15T15:03:46+00:00,0,1,1,1,1.0,departed,253,1.0
 codeforamerica/vita-min,alindeman,alindeman,Andy Lindeman,andy@lindeman.io,2021-04-12T19:10:35+00:00,2021-04-12T19:10:35+00:00,0,1,1,1,1.0,departed,266,1.0
-CodeForAfrica/academy.AFRICA,kelvinkipruto,kelvinkipruto,kelvin kipruto,43873157+kelvinkipruto@users.noreply.github.com,2023-10-12T14:55:49+00:00,2026-03-11T08:12:18+00:00,880,361,40,125,0.32,active,,9.03
-CodeForAfrica/academy.AFRICA,koechkevin,koechkevin,Kevin Koech,koechkevin92@gmail.com,2023-10-12T14:05:56+00:00,2025-08-04T07:22:50+00:00,661,310,48,94,0.5106,departed,41,6.46
-CodeForAfrica/academy.AFRICA,kevin@kevinkoech.com,,Kevin Koech,kevin@kevinkoech.com,2025-10-23T09:41:04+00:00,2026-03-18T07:53:13+00:00,145,27,7,20,0.35,active,,3.86
-CodeForAfrica/academy.AFRICA,kevinkoech@MacBook-Pro.local,,Kevin Koech,kevinkoech@MacBook-Pro.local,2024-12-06T07:50:42+00:00,2024-12-10T14:01:41+00:00,4,3,2,1,2.0,departed,75,1.5
-CodeForAfrica/academy.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2024-09-09T09:34:16+00:00,2024-09-09T09:34:16+00:00,0,1,1,1,1.0,departed,88,1.0
-CodeForAfrica/actNOW,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2021-04-19T13:49:32+00:00,2026-05-19T05:24:26+00:00,1855,1033,188,265,0.7094,active,,5.49
-CodeForAfrica/actNOW,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2021-06-08T05:30:12+00:00,2026-05-01T09:27:27+00:00,1788,764,174,255,0.6824,active,,4.39
-CodeForAfrica/actNOW,esirK,esirK,Isaiah King'ori,esirkings@gmail.com,2021-05-25T05:09:38+00:00,2022-03-25T10:50:36+00:00,304,158,13,43,0.3023,departed,216,12.15
-CodeForAfrica/actNOW,pre-commit-ci[bot],pre-commit-ci[bot],pre-commit-ci[bot],66853113+pre-commit-ci[bot]@users.noreply.github.com,2021-04-26T17:26:25+00:00,2026-05-18T21:58:06+00:00,1848,118,101,264,0.3826,active,,1.17
-CodeForAfrica/actNOW,KhadijaMahanga,KhadijaMahanga,Khadija Mahanga,khadijamahanga@y7mail.com,2021-06-15T12:55:37+00:00,2021-06-18T12:50:23+00:00,2,42,1,1,1.0,departed,256,42.0
-CodeForAfrica/Dominion.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2019-07-17T14:10:48+00:00,2025-09-17T08:44:36+00:00,2253,168,28,321,0.0872,departed,35,6.0
-CodeForAfrica/Dominion.AFRICA,KhadijaMahanga,KhadijaMahanga,Khadija Mahanga,khadijamahanga@y7mail.com,2019-08-02T09:40:24+00:00,2021-04-15T13:52:15+00:00,622,158,13,88,0.1477,departed,266,12.15
-CodeForAfrica/Dominion.AFRICA,karimkawambwa,karimkawambwa,karimkawambwa,4308339+karimkawambwa@users.noreply.github.com,2019-07-18T09:07:48+00:00,2020-02-06T07:44:58+00:00,202,125,14,28,0.5,departed,328,8.93
-CodeForAfrica/Dominion.AFRICA,DavidLemayian,DavidLemayian,David Lemayian,dlemayian@gmail.com,2019-08-09T08:55:27+00:00,2020-01-31T14:25:57+00:00,175,42,11,25,0.44,departed,328,3.82
-CodeForAfrica/Dominion.AFRICA,nerdlet,nerdlet,nerdlet,brndnyokabi@gmail.com,2019-08-22T08:26:52+00:00,2019-09-16T15:47:38+00:00,25,41,5,3,1.6667,departed,348,8.2
-CodeForAfrica/Dominion.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-08-27T07:40:01+00:00,2024-09-02T05:29:48+00:00,1832,29,24,261,0.092,departed,89,1.21
-CodeForAfrica/Dominion.AFRICA,esirK,esirK,Isaiah King'ori,isaiah.ngaruiya7@gmail.com,2022-05-13T02:55:59+00:00,2022-05-13T09:52:08+00:00,0,8,1,1,1.0,departed,209,8.0
-CodeForAfrica/Dominion.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2019-08-23T08:48:00+00:00,2019-09-16T09:20:04+00:00,24,3,3,3,1.0,departed,348,1.0
-CodeForAfrica/GenderGap.AFRICA,emmalewis,emmalewis,Emma Lewis,emmarachellewis@gmail.com,2017-09-22T14:34:59+00:00,2018-02-04T14:46:42+00:00,135,70,11,19,0.5789,departed,432,6.36
-CodeForAfrica/GenderGap.AFRICA,chaficnajjar,chaficnajjar,Chafic Najjar,chafic.najjar@gmail.com,2017-04-05T22:25:09+00:00,2017-06-29T23:45:29+00:00,85,48,9,12,0.75,departed,464,5.33
-CodeForAfrica/GenderGap.AFRICA,DavidLemayian,DavidLemayian,David Lemayian,877919+DavidLemayian@users.noreply.github.com,2017-03-21T14:49:03+00:00,2019-06-09T17:02:21+00:00,810,40,10,115,0.087,departed,362,4.0
-CodeForAfrica/GenderGap.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2020-12-11T07:39:36+00:00,2022-12-05T05:12:44+00:00,723,20,9,103,0.0874,departed,180,2.22
-CodeForAfrica/GenderGap.AFRICA,nerdlet,nerdlet,Brenda Nyokabi Bucha,brndnyokabi@gmail.com,2018-07-17T14:26:39+00:00,2022-02-18T11:50:15+00:00,1311,20,6,187,0.0321,departed,221,3.33
-CodeForAfrica/GenderGap.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-05-31T12:53:21+00:00,2022-12-03T09:25:23+00:00,1281,16,12,183,0.0656,departed,180,1.33
-CodeForAfrica/GenderGap.AFRICA,brndnyokabi@gamil.com,,nerdlet,brndnyokabi@gamil.com,2018-03-02T13:51:54+00:00,2018-03-19T11:16:28+00:00,16,15,3,2,1.5,departed,426,5.0
-CodeForAfrica/GenderGap.AFRICA,Kinjuriu,Kinjuriu,Stephane Njoki,69685769+Kinjuriu@users.noreply.github.com,2022-01-14T07:56:04+00:00,2023-09-04T07:46:40+00:00,597,11,4,85,0.0471,departed,141,2.75
-CodeForAfrica/GenderGap.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2022-01-14T13:56:46+00:00,2022-02-03T06:59:45+00:00,19,5,3,2,1.5,departed,224,1.67
-CodeForAfrica/GenderGap.AFRICA,robinkiplangat,robinkiplangat,Robin Kiplang'at,robyne.kiplangat@Gmail.com,2019-01-10T12:46:36+00:00,2020-02-19T07:38:16+00:00,404,4,3,57,0.0526,departed,326,1.33
-CodeForAfrica/GenderGap.AFRICA,elric-wamugu,elric-wamugu,Eric Wamugu,wamugu@gmail.com,2024-09-23T15:11:13+00:00,2025-09-01T23:22:13+00:00,343,2,2,49,0.0408,departed,37,1.0
-CodeForAfrica/GenderGap.AFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2023-09-05T11:42:05+00:00,2023-09-05T11:45:25+00:00,0,2,1,1,1.0,departed,141,2.0
-CodeForAfrica/GenderGap.AFRICA,mtuchi,mtuchi,Emmanuel Evance,emmanuel@irabu.co.tz,2018-07-19T12:02:28+00:00,2018-07-19T12:02:28+00:00,0,1,1,1,1.0,departed,409,1.0
-CodeForAfrica/openAFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2023-03-03T12:43:53+00:00,2025-07-15T11:52:22+00:00,864,59,21,123,0.1707,departed,44,2.81
-CodeForAfrica/openAFRICA,DavidLemayian,DavidLemayian,David Lemayian,dlemayian@gmail.com,2017-08-30T14:06:00+00:00,2020-01-31T13:28:19+00:00,883,57,16,126,0.127,departed,328,3.56
-CodeForAfrica/openAFRICA,phillipahereza,phillipahereza,Phillip Ahereza,pahereza@gmail.com,2018-02-16T07:39:38+00:00,2019-03-26T06:41:01+00:00,402,15,10,57,0.1754,departed,373,1.5
-CodeForAfrica/openAFRICA,esirK,esirK,esir,esirkings@gmail.com,2022-09-26T12:57:46+00:00,2022-11-07T12:16:02+00:00,41,8,3,5,0.6,departed,184,2.67
-CodeForAfrica/openAFRICA,mercy.muchai@andela.com,,Mercy-Muchai,mercy.muchai@andela.com,2017-09-05T07:26:57+00:00,2017-09-26T11:53:50+00:00,21,8,3,3,1.0,departed,451,2.67
-CodeForAfrica/openAFRICA,Arame93,Arame93,Arame Thiam,60295234+Arame93@users.noreply.github.com,2025-10-16T10:19:04+00:00,2025-10-16T10:27:31+00:00,0,4,1,1,1.0,departed,31,4.0
-CodeForAfrica/openAFRICA,=,,=xavierfrank4,=,2023-08-03T12:25:50+00:00,2023-08-07T13:43:01+00:00,4,2,2,1,2.0,departed,145,1.0
-CodeForAfrica/openAFRICA,WNjihia,WNjihia,WNjihia,dorisn172@gmail.com,2017-09-28T10:41:03+00:00,2017-09-28T10:41:03+00:00,0,1,1,1,1.0,departed,451,1.0
-CodeForAfrica/outbreak.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2020-03-19T05:12:00+00:00,2025-10-10T09:11:50+00:00,2031,582,45,290,0.1552,departed,31,12.93
-CodeForAfrica/outbreak.AFRICA,KhadijaMahanga,KhadijaMahanga,Khadija Mahanga,khadijamahanga@y7mail.com,2020-04-08T15:27:01+00:00,2021-08-25T09:50:57+00:00,503,418,19,71,0.2676,departed,247,22.0
-CodeForAfrica/outbreak.AFRICA,nerdlet,nerdlet,nerdlet,brndnyokabi@gmail.com,2020-03-19T08:29:17+00:00,2020-06-09T12:33:43+00:00,82,236,13,11,1.1818,departed,310,18.15
-CodeForAfrica/outbreak.AFRICA,TriciaGovindasamy,TriciaGovindasamy,TriciaGovindasamy,tricia@codeforafrica.org,2020-07-13T10:40:55+00:00,2020-07-13T11:41:31+00:00,0,27,1,1,1.0,departed,305,27.0
-CodeForAfrica/outbreak.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2020-03-19T10:25:51+00:00,2020-06-09T12:44:59+00:00,82,25,8,11,0.7273,departed,310,3.12
-CodeForAfrica/outbreak.AFRICA,KobbyMmo,KobbyMmo,Obed Amoasi,obedamoasi@gmail.com,2020-08-30T21:09:23+00:00,2021-09-01T06:13:56+00:00,366,18,5,52,0.0962,departed,246,3.6
-CodeForAfrica/outbreak.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2021-08-03T22:24:14+00:00,2023-11-16T18:39:46+00:00,834,17,17,119,0.1429,departed,131,1.0
-CodeForAfrica/outbreak.AFRICA,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2021-03-03T15:18:30+00:00,2021-06-09T02:29:08+00:00,97,9,7,13,0.5385,departed,258,1.29
-CodeForAfrica/outbreak.AFRICA,karimkawambwa,karimkawambwa,karimkawambwa,4308339+karimkawambwa@users.noreply.github.com,2020-03-23T17:25:20+00:00,2020-04-08T15:41:28+00:00,15,9,3,2,1.5,departed,319,3.0
-CodeForAfrica/outbreak.AFRICA,ascii-dev,ascii-dev,Samuel Afolaranmi,sammysgame.dev@gmail.com,2020-04-22T09:21:44+00:00,2020-04-27T08:36:13+00:00,4,6,2,1,2.0,departed,316,3.0
-CodeForAfrica/outbreak.AFRICA,gertie-sheshe,gertie-sheshe,gertie-sheshe,gertrude.nyenyeshi@gmail.com,2021-02-17T05:18:44+00:00,2021-02-17T06:52:48+00:00,0,3,1,1,1.0,departed,274,3.0
-CodeForAfrica/outbreak.AFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2023-07-03T06:58:32+00:00,2023-07-03T07:21:35+00:00,0,2,1,1,1.0,departed,150,2.0
-CodeForAfrica/PromiseTracker,kelvinkipruto,kelvinkipruto,Kipruto,43873157+kelvinkipruto@users.noreply.github.com,2025-08-12T11:13:07+00:00,2026-05-06T08:05:33+00:00,266,406,30,38,0.7895,active,,13.53
-CodeForAfrica/PromiseTracker,kevin@kevinkoech.com,,Kevin Koech,kevin@kevinkoech.com,2025-09-08T07:42:23+00:00,2025-10-27T10:42:41+00:00,49,24,6,7,0.8571,departed,29,4.0
-CodeForAfrica/PromiseTracker,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-09-03T09:59:07+00:00,2026-03-21T23:40:03+00:00,199,6,5,28,0.1786,active,,1.2
-CodeForAfrica/PromiseTracker,koechkevin,koechkevin,KEVIN KOECH,39160236+koechkevin@users.noreply.github.com,2025-09-03T06:46:11+00:00,2025-10-28T09:58:24+00:00,55,6,4,7,0.5714,departed,29,1.5
-CodeForAfrica/PromiseTracker,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2025-10-21T05:06:54+00:00,2026-03-23T06:07:43+00:00,153,3,3,21,0.1429,active,,1.0
-CodeForAfrica/sensors.AFRICA,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2018-10-03T10:48:37+00:00,2025-09-17T15:48:45+00:00,2541,487,71,363,0.1956,departed,35,6.86
-CodeForAfrica/sensors.AFRICA,nerdlet,nerdlet,Brenda Nyokabi Bucha,brndnyokabi@gmail.com,2018-03-31T17:34:18+00:00,2022-02-11T08:04:53+00:00,1412,460,47,201,0.2338,departed,222,9.79
-CodeForAfrica/sensors.AFRICA,DavidLemayian,DavidLemayian,David Lemayian,dlemayian@gmail.com,2018-03-23T08:27:36+00:00,2019-10-14T08:04:00+00:00,569,81,19,81,0.2346,departed,344,4.26
-CodeForAfrica/sensors.AFRICA,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2021-08-12T04:23:22+00:00,2023-11-16T19:38:30+00:00,826,33,22,118,0.1864,departed,131,1.5
-CodeForAfrica/sensors.AFRICA,kelvinkipruto,kelvinkipruto,Kipruto,43873157+kelvinkipruto@users.noreply.github.com,2022-12-05T09:27:11+00:00,2023-07-14T08:18:55+00:00,220,29,3,31,0.0968,departed,148,9.67
-CodeForAfrica/sensors.AFRICA,KhadijaMahanga,KhadijaMahanga,KhadijaMahanga,khadijamahanga@y7mail.com,2018-10-04T12:24:52+00:00,2018-11-13T14:54:43+00:00,40,27,6,5,1.2,departed,392,4.5
-CodeForAfrica/sensors.AFRICA,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2024-10-23T13:17:19+00:00,2024-11-27T05:54:31+00:00,34,19,5,4,1.25,departed,77,3.8
-CodeForAfrica/sensors.AFRICA,brndnyokabi@gamil.com,,nerdlet,brndnyokabi@gamil.com,2018-03-31T17:32:45+00:00,2018-04-17T14:50:40+00:00,16,19,3,2,1.5,departed,422,6.33
-CodeForAfrica/sensors.AFRICA,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2018-08-10T12:09:36+00:00,2022-02-11T13:02:53+00:00,1281,17,13,183,0.071,departed,222,1.31
-CodeForAfrica/sensors.AFRICA,phillipahereza,phillipahereza,Phillip Ahereza,pahereza@gmail.com,2018-04-23T10:25:04+00:00,2018-04-26T03:03:26+00:00,2,17,1,1,1.0,departed,421,17.0
-CodeForAfrica/sensors.AFRICA,karimkawambwa,karimkawambwa,Karim Kawambwa,4308339+karimkawambwa@users.noreply.github.com,2019-03-04T08:02:26+00:00,2020-02-21T08:58:31+00:00,354,15,5,50,0.1,departed,325,3.0
-CodeForAfrica/sensors.AFRICA,esirK,esirK,Isaiah King'ori,isaiah.ngaruiya7@gmail.com,2022-05-12T13:13:27+00:00,2022-05-13T06:57:52+00:00,0,12,1,1,1.0,departed,209,12.0
-CodeForAfrica/sensors.AFRICA,khadijam@saratoga.co.za,,khadija,khadijam@saratoga.co.za,2018-10-15T13:58:16+00:00,2018-10-18T09:37:27+00:00,2,11,1,1,1.0,departed,396,11.0
-CodeForAfrica/sensors.AFRICA,KobbyMmo,KobbyMmo,Obed Amoasi,obedamoasi@gmail.com,2020-11-04T23:58:06+00:00,2022-01-27T11:19:36+00:00,448,7,2,64,0.0312,departed,225,3.5
-CodeForAfrica/sensors.AFRICA,gideonmaina,gideonmaina,Giddie,gideon@codeforafrica.org,2022-12-06T10:13:18+00:00,2026-05-18T12:18:11+00:00,1259,6,5,179,0.0279,active,,1.2
-CodeForAfrica/sensors.AFRICA,m453h,m453h,Michael Hudson Nkotagu,mnkotagu@gmail.com,2024-11-06T06:05:55+00:00,2024-11-26T12:28:32+00:00,20,5,2,2,1.0,departed,77,2.5
-CodeForAfrica/sensors.AFRICA,codeforafrica@Codes-MacBook-Pro.local,,Code for Africa,codeforafrica@Codes-MacBook-Pro.local,2022-08-12T14:26:47+00:00,2023-09-05T12:50:38+00:00,388,5,3,55,0.0545,departed,141,1.67
-CodeForAfrica/sensors.AFRICA,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2020-11-06T05:34:34+00:00,2021-06-16T02:28:34+00:00,221,5,5,31,0.1613,departed,257,1.0
-CodeForAfrica/sensors.AFRICA,usmanbiu,usmanbiu,usmanbiu,69766740+usmanbiu@users.noreply.github.com,2023-07-11T14:13:16+00:00,2024-08-02T12:20:12+00:00,387,4,4,55,0.0727,departed,93,1.0
-CodeForAfrica/sensors.AFRICA,koechkevin,koechkevin,KEVIN KOECH,koechkevin92@gmail.com,2022-12-13T08:31:23+00:00,2022-12-14T06:26:30+00:00,0,4,1,1,1.0,departed,179,4.0
-CodeForAfrica/sensors.AFRICA,mtuchi,mtuchi,mtuchi,mtuchidev@gmail.com,2018-10-15T12:54:09+00:00,2020-03-13T18:48:57+00:00,515,4,3,73,0.0411,departed,322,1.33
-CodeForAfrica/sensors.AFRICA,chegejames,chegejames,chege james,chegejames3@gmail.com,2019-07-09T10:20:38+00:00,2020-02-16T02:24:30+00:00,221,3,3,31,0.0968,departed,326,1.0
-CodeForAfrica/sensors.AFRICA,david@codeforafrica.org,,David Lemayian,david@codeforafrica.org,2018-05-15T07:29:16+00:00,2018-05-15T07:40:30+00:00,0,3,1,1,1.0,departed,418,3.0
-CodeForAfrica/sensors.AFRICA,snyk-bot,snyk-bot,Snyk bot,snyk-bot@snyk.io,2019-05-20T12:17:25+00:00,2019-05-20T12:17:25+00:00,0,1,1,1,1.0,departed,365,1.0
-CodeForAfrica/ui,kilemensi,kilemensi,Clemence Kyara,kilemensi@users.noreply.github.com,2019-09-10T08:46:28+00:00,2026-05-13T08:40:38+00:00,2436,3366,132,348,0.3793,active,,25.5
-CodeForAfrica/ui,kelvinkipruto,kelvinkipruto,Kipruto,43873157+kelvinkipruto@users.noreply.github.com,2022-07-07T05:17:49+00:00,2026-04-24T08:56:02+00:00,1387,2616,127,198,0.6414,active,,20.6
-CodeForAfrica/ui,koechkevin,koechkevin,KEVIN KOECH,39160236+koechkevin@users.noreply.github.com,2023-01-10T14:10:30+00:00,2026-04-20T09:51:43+00:00,1195,1673,125,170,0.7353,active,,13.38
-CodeForAfrica/ui,nerdlet,nerdlet,Brenda Nyokabi Bucha,brndnyokabi@gmail.com,2019-09-13T08:32:00+00:00,2022-07-13T14:14:20+00:00,1034,1018,17,147,0.1156,departed,201,59.88
-CodeForAfrica/ui,esirK,esirK,Isaiah King'ori,esirkings@gmail.com,2022-05-27T06:43:46+00:00,2022-09-16T07:21:03+00:00,112,401,15,16,0.9375,departed,191,26.73
-CodeForAfrica/ui,KobbyMmo,KobbyMmo,Obed Amoasi,obedamoasi@gmail.com,2022-03-09T18:18:21+00:00,2022-07-13T14:14:38+00:00,125,398,3,17,0.1765,departed,201,132.67
-CodeForAfrica/ui,m453h,m453h,Michael Hudson Nkotagu,m453h@users.noreply.github.com,2024-06-04T10:35:38+00:00,2025-05-08T09:17:59+00:00,337,381,31,48,0.6458,departed,54,12.29
-CodeForAfrica/ui,gertie-sheshe,gertie-sheshe,gertie-sheshe,gertrude.nyenyeshi@gmail.com,2022-03-10T09:30:13+00:00,2022-07-13T14:14:38+00:00,125,327,16,17,0.9412,departed,201,20.44
-CodeForAfrica/ui,kevin@kevinkoech.com,,Kevin Koech,kevin@kevinkoech.com,2025-09-12T08:33:36+00:00,2026-04-17T13:20:54+00:00,217,194,24,31,0.7742,active,,8.08
-CodeForAfrica/ui,nyokabi@codeforafrica.org,,Brenda Nyokabi Bucha,nyokabi@codeforafrica.org,2022-03-21T14:07:53+00:00,2022-07-13T14:14:05+00:00,114,113,12,16,0.75,departed,201,9.42
-CodeForAfrica/ui,dependabot-preview[bot],dependabot-preview[bot],dependabot-preview[bot],27856297+dependabot-preview[bot]@users.noreply.github.com,2022-07-13T10:19:27+00:00,2022-07-13T14:03:06+00:00,0,110,1,1,1.0,departed,201,110.0
-CodeForAfrica/ui,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2022-07-13T10:04:22+00:00,2026-03-21T23:47:59+00:00,1347,107,23,192,0.1198,active,,4.65
-CodeForAfrica/ui,karimkawambwa,karimkawambwa,karimkawambwa,4308339+karimkawambwa@users.noreply.github.com,2019-09-10T09:32:34+00:00,2022-07-13T10:02:38+00:00,1037,49,3,148,0.0203,departed,201,16.33
-CodeForAfrica/ui,thepsalmist,thepsalmist,Xavier Frankline Odhiambo,49587182+thepsalmist@users.noreply.github.com,2022-11-15T06:44:48+00:00,2024-08-08T14:51:04+00:00,632,45,11,90,0.1222,departed,93,4.09
-CodeForAfrica/ui,kevinkoech@MacBook-Pro.local,,Kevin Koech,kevinkoech@MacBook-Pro.local,2024-12-04T10:52:45+00:00,2025-02-04T13:47:57+00:00,62,38,7,8,0.875,departed,67,5.43
-CodeForAfrica/ui,VinneyJ,VinneyJ,VinneyJ,vincentjayden49@gmail.com,2024-05-06T09:31:15+00:00,2024-10-17T06:29:51+00:00,163,33,4,23,0.1739,departed,83,8.25
-CodeForAfrica/ui,DavidLemayian,DavidLemayian,David Lemayian,877919+DavidLemayian@users.noreply.github.com,2022-07-13T09:49:38+00:00,2022-07-13T09:53:37+00:00,0,27,1,1,1.0,departed,201,27.0
-CodeForAfrica/ui,KhadijaMahanga,KhadijaMahanga,khadija,khadijamahanga@y7mail.com,2022-07-13T13:38:43+00:00,2022-07-13T13:44:00+00:00,0,22,1,1,1.0,departed,201,22.0
-CodeForAfrica/ui,muma.bwalya@codeforafrica.org,,Muma Bwalya,muma.bwalya@codeforafrica.org,2024-07-19T10:26:11+00:00,2024-08-21T06:56:48+00:00,32,20,6,4,1.5,departed,91,3.33
-CodeForAfrica/ui,saminegash,saminegash,Samuel Negash Hailu,smlnegash@gmail.com,2023-08-17T04:28:40+00:00,2023-09-07T09:55:14+00:00,21,14,3,3,1.0,departed,141,4.67
-CodeForAfrica/ui,kelvinkipruto@CODEs-MacBook-Pro.local,,Kelvin Kipruto,kelvinkipruto@CODEs-MacBook-Pro.local,2022-11-10T10:26:38+00:00,2022-11-14T10:59:38+00:00,4,10,2,1,2.0,departed,183,5.0
-CodeForAfrica/ui,github-actions[bot],github-actions[bot],claude[bot],41898282+claude[bot]@users.noreply.github.com,2022-08-29T12:18:37+00:00,2026-04-24T11:52:24+00:00,1333,6,4,190,0.0211,active,,1.5
-CodeForAfrica/ui,DavidTheProgrammer,DavidTheProgrammer,Code Is Art,18518167+DavidTheProgrammer@users.noreply.github.com,2024-08-21T06:35:03+00:00,2024-08-21T09:37:41+00:00,0,6,1,1,1.0,departed,91,6.0
-CodeForAfrica/ui,obed@codeforafrica.org,,Obed Amoasi,obed@codeforafrica.org,2022-07-13T13:18:32+00:00,2022-07-13T13:18:34+00:00,0,6,1,1,1.0,departed,201,6.0
-CodeForAfrica/ui,xnbchd,xnbchd,kelvin kipruto,18241449+xnbchd@users.noreply.github.com,2025-12-04T05:24:04+00:00,2026-01-07T09:43:15+00:00,34,4,2,4,0.5,departed,19,2.0
+codeforberlin/we-count,elklaassen,elklaassen,elklaassen,egbert.l.klaassen@gmail.com,2025-01-07T08:39:16+00:00,2026-05-22T17:06:56+00:00,500,272,45,71,0.6338,active,,6.04
+codeforberlin/we-count,behrisch,behrisch,Michael Behrisch,oss@behrisch.de,2021-11-30T07:44:00+00:00,2026-04-26T06:37:33+00:00,1607,252,42,229,0.1834,active,,6.0
+codeforberlin/we-count,PaulineHartwig,PaulineHartwig,PaulineHartwig,80676652+PaulineHartwig@users.noreply.github.com,2021-11-30T10:51:01+00:00,2022-02-20T15:28:07+00:00,82,11,5,11,0.4545,departed,221,2.2
+codeforberlin/we-count,kshitij10496,kshitij10496,Kshitij Saraogi,kshitij.saraogi@gmail.com,2025-01-16T15:58:39+00:00,2025-01-16T15:58:39+00:00,0,3,1,1,1.0,departed,70,3.0
+codeforbielefeld/baumbie,andreascansee,andreascansee,andreascansee,46423055+andreascansee@users.noreply.github.com,2024-04-10T18:30:15+00:00,2025-07-19T21:01:42+00:00,465,162,20,66,0.303,departed,43,8.1
+codeforbielefeld/baumbie,HelenBielawa,HelenBielawa,Helen Bielawa,helen.bielawa@web.de,2024-01-31T21:07:32+00:00,2026-04-23T19:47:38+00:00,812,44,24,116,0.2069,active,,1.83
+codeforbielefeld/baumbie,barooney,barooney,Daniel Baron,daniel@barooney.com,2024-01-31T22:49:16+00:00,2025-09-26T13:44:58+00:00,603,33,20,86,0.2326,departed,34,1.65
+codeforbielefeld/baumbie,ViliaZ,ViliaZ,Vilia,96189880+ViliaZ@users.noreply.github.com,2024-08-07T20:26:55+00:00,2026-05-07T17:54:15+00:00,637,13,8,91,0.0879,active,,1.62
+codeforbielefeld/baumbie,jjob-saydo,jjob-saydo,Jean Saydo,J.Saydo@jobware.de,2024-03-20T19:10:05+00:00,2024-05-15T19:55:53+00:00,56,9,3,8,0.375,departed,105,3.0
+codeforbielefeld/baumbie,amirvba,amirvba,amir,17755208+amirvba@users.noreply.github.com,2025-03-13T04:42:36+00:00,2025-03-13T04:42:36+00:00,0,1,1,1,1.0,departed,62,1.0
+codeforbielefeld/baumbie,ViliaDT,ViliaDT,ViliaDT,vilia.zeisig@deinetorte.de,2025-02-06T20:48:44+00:00,2025-02-06T20:48:44+00:00,0,1,1,1,1.0,departed,67,1.0
+codeforbielefeld/losdb,marcelotto,marcelotto,Marcel Otto,marcelotto@gmx.de,2020-09-21T20:20:50+00:00,2025-07-28T14:21:42+00:00,1770,27,9,252,0.0357,departed,42,3.0
+codeforbielefeld/losdb,HelenBielawa,HelenBielawa,HelenBielawa,37307570+HelenBielawa@users.noreply.github.com,2021-05-12T15:53:02+00:00,2021-05-12T15:53:02+00:00,0,1,1,1,1.0,departed,262,1.0
+codeforcologne/Denkmal-4D-Koeln,OpenDEM,OpenDEM,OpenDEM,contact@opendemdata.info,2024-05-31T15:50:58+00:00,2026-03-15T09:54:07+00:00,652,23,11,93,0.1183,active,,2.09
+codeforcologne/Denkmal-4D-Koeln,ErtanOz,ErtanOz,ErtanOz,67025766+ErtanOz@users.noreply.github.com,2024-06-01T22:59:09+00:00,2026-01-14T20:12:09+00:00,591,14,6,84,0.0714,departed,18,2.33
+codeforcologne/Denkmal-4D-Koeln,gorkemkurban,gorkemkurban,Görkem Kurban,gorkem46591@hotmail.com,2024-06-12T20:23:10+00:00,2024-11-18T21:58:54+00:00,159,2,2,22,0.0909,departed,78,1.0
 codeforjapan/BirdXplorer,yu23ki14,yu23ki14,Yuki Kawabe,yuki_021423@yahoo.co.jp,2023-10-18T07:12:05+00:00,2026-03-12T09:34:57+00:00,876,239,48,125,0.384,active,,4.98
 codeforjapan/BirdXplorer,ayuki-joto,ayuki-joto,ayuki,19406594+ayuki-joto@users.noreply.github.com,2024-07-18T08:49:31+00:00,2026-05-08T04:35:12+00:00,658,209,31,94,0.3298,active,,6.74
 codeforjapan/BirdXplorer,osoken,osoken,osoken,osoken@osoekawalab.com,2023-09-24T01:43:12+00:00,2025-02-22T07:36:10+00:00,517,161,25,73,0.3425,departed,64,6.44
@@ -520,24 +570,6 @@ codeforjapan/decidim-cfj,jacoyutorius,jacoyutorius,jacoyutorius,jacoyutorius@gma
 codeforjapan/decidim-cfj,kimihito,kimihito,kimihito,tatsurotamashiro@gmail.com,2020-10-27T20:43:52+00:00,2020-10-27T20:43:52+00:00,0,1,1,1,1.0,departed,290,1.0
 codeforjapan/decidim-cfj,doyaaaaaken,doyaaaaaken,doyaaaaaken,kenta.koyama.biz@gmail.com,2020-10-20T14:47:32+00:00,2020-10-20T14:47:32+00:00,0,1,1,1,1.0,departed,291,1.0
 codeforjapan/decidim-cfj,taro@georepublic.co.jp,,Taro Matsuzawa,taro@georepublic.co.jp,2020-10-19T07:26:41+00:00,2020-10-19T07:26:41+00:00,0,1,1,1,1.0,departed,291,1.0
-g0v/tw-rental-house-data,ddio,ddio,ddio,ddioibb@gmail.com,2018-05-14T13:50:38+00:00,2026-05-03T09:05:04+00:00,2910,369,90,415,0.2169,active,,4.1
-g0v/tw-rental-house-data,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-11-02T00:13:15+00:00,2020-01-12T04:41:52+00:00,71,5,2,10,0.2,departed,331,2.5
-g0v/tw-rental-house-data,tim5ji6,tim5ji6,Eating卓,32831064+tim5ji6@users.noreply.github.com,2020-11-13T03:40:32+00:00,2021-02-19T07:53:00+00:00,98,2,2,14,0.1429,departed,274,1.0
-g0v/tw-rental-house-data,yellowsoar,yellowsoar,yellowsoar,yellowsoar@gmail.com,2019-06-13T13:19:30+00:00,2019-06-13T13:19:50+00:00,0,2,1,1,1.0,departed,362,2.0
-g0v/tw-rental-house-data,TedLin1993,TedLin1993,Ted,xup6y3ru04@gmail.com,2025-05-14T15:26:34+00:00,2025-05-14T15:26:34+00:00,0,1,1,1,1.0,departed,53,1.0
-g0v/tw-rental-house-data,Lee-W,Lee-W,Wei Lee,weilee.rx@gmail.com,2024-09-12T05:34:33+00:00,2024-09-12T05:34:33+00:00,0,1,1,1,1.0,departed,88,1.0
-g0v/tw-rental-house-data,tan-i-ham,tan-i-ham,Yi-Han Chen,hannah51125@gmail.com,2024-01-12T08:48:49+00:00,2024-01-12T08:48:49+00:00,0,1,1,1,1.0,departed,123,1.0
-g0v/tw-rental-house-data,chunyenHuang,chunyenHuang,John Huang,little78926@gmail.com,2020-04-25T00:43:07+00:00,2020-04-25T00:43:07+00:00,0,1,1,1,1.0,departed,317,1.0
-g0v/tw-rental-house-data,eala,eala,eala,eala0113@gmail.com,2020-01-11T08:21:32+00:00,2020-01-11T08:21:32+00:00,0,1,1,1,1.0,departed,332,1.0
-codeforbielefeld/baumbie,andreascansee,andreascansee,andreascansee,46423055+andreascansee@users.noreply.github.com,2024-04-10T18:30:15+00:00,2025-07-19T21:01:42+00:00,465,162,20,66,0.303,departed,43,8.1
-codeforbielefeld/baumbie,HelenBielawa,HelenBielawa,Helen Bielawa,helen.bielawa@web.de,2024-01-31T21:07:32+00:00,2026-04-23T19:47:38+00:00,812,44,24,116,0.2069,active,,1.83
-codeforbielefeld/baumbie,barooney,barooney,Daniel Baron,daniel@barooney.com,2024-01-31T22:49:16+00:00,2025-09-26T13:44:58+00:00,603,33,20,86,0.2326,departed,34,1.65
-codeforbielefeld/baumbie,ViliaZ,ViliaZ,Vilia,96189880+ViliaZ@users.noreply.github.com,2024-08-07T20:26:55+00:00,2026-05-07T17:54:15+00:00,637,13,8,91,0.0879,active,,1.62
-codeforbielefeld/baumbie,jjob-saydo,jjob-saydo,Jean Saydo,J.Saydo@jobware.de,2024-03-20T19:10:05+00:00,2024-05-15T19:55:53+00:00,56,9,3,8,0.375,departed,105,3.0
-codeforbielefeld/baumbie,amirvba,amirvba,amir,17755208+amirvba@users.noreply.github.com,2025-03-13T04:42:36+00:00,2025-03-13T04:42:36+00:00,0,1,1,1,1.0,departed,62,1.0
-codeforbielefeld/baumbie,ViliaDT,ViliaDT,ViliaDT,vilia.zeisig@deinetorte.de,2025-02-06T20:48:44+00:00,2025-02-06T20:48:44+00:00,0,1,1,1,1.0,departed,67,1.0
-codeforbielefeld/losdb,marcelotto,marcelotto,Marcel Otto,marcelotto@gmx.de,2020-09-21T20:20:50+00:00,2025-07-28T14:21:42+00:00,1770,27,9,252,0.0357,departed,42,3.0
-codeforbielefeld/losdb,HelenBielawa,HelenBielawa,HelenBielawa,37307570+HelenBielawa@users.noreply.github.com,2021-05-12T15:53:02+00:00,2021-05-12T15:53:02+00:00,0,1,1,1,1.0,departed,262,1.0
 codeformuenster/klimawatch,silberzwiebel,silberzwiebel,kartoffelsalat,silberzwiebel@users.noreply.github.com,2019-10-31T16:54:01+00:00,2026-04-10T20:20:23+00:00,2353,150,36,336,0.1071,active,,4.17
 codeformuenster/klimawatch,ubergesundheit,ubergesundheit,Gerald Pape,ubergesundheit@users.noreply.github.com,2019-11-01T15:11:37+00:00,2021-02-15T14:24:29+00:00,471,30,4,67,0.0597,departed,274,7.5
 codeformuenster/klimawatch,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2020-03-17T21:02:47+00:00,2024-12-19T21:03:01+00:00,1738,29,13,248,0.0524,departed,74,2.23
@@ -554,87 +586,174 @@ codeformuenster/klimawatch,chk1,chk1,Christoph Kisfeld,spam@b-web.org,2021-10-28
 codeformuenster/klimawatch,mwunderlich,mwunderlich,Martin Wunderlich,martin@wunderlich.com,2020-09-08T20:42:47+00:00,2020-09-08T20:42:47+00:00,0,1,1,1,1.0,departed,297,1.0
 codeformuenster/klimawatch,ccauet,ccauet,Christophe Cauet,ccauet@users.noreply.github.com,2020-02-12T09:18:10+00:00,2020-02-12T09:18:10+00:00,0,1,1,1,1.0,departed,327,1.0
 codeformuenster/klimawatch,MTRNord,MTRNord,Marcel,MTRNord@users.noreply.github.com,2019-11-26T11:41:41+00:00,2019-11-26T11:41:41+00:00,0,1,1,1,1.0,departed,338,1.0
-codeforberlin/we-count,elklaassen,elklaassen,elklaassen,egbert.l.klaassen@gmail.com,2025-01-07T08:39:16+00:00,2026-05-22T17:06:56+00:00,500,272,45,71,0.6338,active,,6.04
-codeforberlin/we-count,behrisch,behrisch,Michael Behrisch,oss@behrisch.de,2021-11-30T07:44:00+00:00,2026-04-26T06:37:33+00:00,1607,252,42,229,0.1834,active,,6.0
-codeforberlin/we-count,PaulineHartwig,PaulineHartwig,PaulineHartwig,80676652+PaulineHartwig@users.noreply.github.com,2021-11-30T10:51:01+00:00,2022-02-20T15:28:07+00:00,82,11,5,11,0.4545,departed,221,2.2
-codeforberlin/we-count,kshitij10496,kshitij10496,Kshitij Saraogi,kshitij.saraogi@gmail.com,2025-01-16T15:58:39+00:00,2025-01-16T15:58:39+00:00,0,3,1,1,1.0,departed,70,3.0
-openlegaldata/oldp,malteos,malteos,malteos,github@i.mieo.de,2018-05-07T10:18:50+00:00,2026-05-20T17:17:46+00:00,2935,350,64,419,0.1527,active,,5.47
-openlegaldata/oldp,github-actions[bot],github-actions[bot],github-actions[bot],github-actions[bot]@users.noreply.github.com,2026-02-13T12:39:55+00:00,2026-05-20T17:18:40+00:00,96,21,10,13,0.7692,active,,2.1
-openlegaldata/oldp,langhabel,langhabel,langhabel,langhabel@users.noreply.github.com,2018-11-24T21:42:28+00:00,2019-03-26T14:04:43+00:00,121,15,7,17,0.4118,departed,373,2.14
-openlegaldata/oldp,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-11-01T17:25:06+00:00,2021-02-05T07:32:30+00:00,461,9,7,65,0.1077,departed,276,1.29
-openlegaldata/oldp,ms@mieo.de,,Malte,ms@mieo.de,2018-09-05T14:52:29+00:00,2019-02-12T08:19:59+00:00,159,6,4,22,0.1818,departed,379,1.5
-openlegaldata/oldp,github@uli-staerk.de,,Uli Stärk,github@uli-staerk.de,2019-09-20T13:55:01+00:00,2019-09-23T10:27:07+00:00,2,4,2,1,2.0,departed,347,2.0
-openlegaldata/oldp,malteosbot,malteosbot,malteosbot,malteosbot@fiq.de,2026-03-26T08:07:50+00:00,2026-03-26T08:46:32+00:00,0,3,1,1,1.0,active,,3.0
-openlegaldata/oldp,snyk-bot,snyk-bot,snyk-bot,snyk-bot@snyk.io,2020-05-01T07:27:19+00:00,2021-02-04T07:27:13+00:00,278,3,2,39,0.0513,departed,276,1.5
-openlegaldata/oldp,timgrein,timgrein,Tim Grein,tim@4greins.de,2026-03-16T09:01:15+00:00,2026-03-16T09:51:12+00:00,0,2,1,1,1.0,active,,2.0
-openlegaldata/oldp,ms@openlegaldata.io,,malteos,ms@openlegaldata.io,2023-02-16T10:49:32+00:00,2023-02-16T10:56:11+00:00,0,2,1,1,1.0,departed,170,2.0
-openlegaldata/oldp,langhabel@campus.tu-berlin.de,,Jonas Langhabel,langhabel@campus.tu-berlin.de,2018-09-02T14:52:18+00:00,2018-11-10T23:40:31+00:00,69,2,2,9,0.2222,departed,392,1.0
-openlegaldata/oldp,lithu810,lithu810,lithu810,lithuyasuresh30@outlook.com,2025-07-15T15:22:35+00:00,2025-07-15T15:22:35+00:00,0,1,1,1,1.0,departed,44,1.0
-openlegaldata/oldp,snyk-test@snyk.io,,snyk-test,snyk-test@snyk.io,2019-08-23T07:27:12+00:00,2019-08-23T07:27:12+00:00,0,1,1,1,1.0,departed,352,1.0
-openlegaldata/oldp,t-blume,t-blume,Till Blume,till_blume@gmx.de,2018-11-20T16:31:01+00:00,2018-11-20T16:31:01+00:00,0,1,1,1,1.0,departed,391,1.0
-openlegaldata/oldp,ImgBotApp,ImgBotApp,ImgBotApp,ImgBotHelp@gmail.com,2018-06-23T19:42:43+00:00,2018-06-23T19:42:43+00:00,0,1,1,1,1.0,departed,412,1.0
-oklabflensburg/open-emergency-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2025-06-01T15:47:39+00:00,2026-04-11T09:07:23+00:00,313,9,3,44,0.0682,active,,3.0
-oklabflensburg/oddfl,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-01-30T23:32:53+00:00,2026-02-09T10:08:27+00:00,740,96,11,105,0.1048,departed,14,8.73
-oklabflensburg/oddfl,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2026-02-01T15:39:04+00:00,2026-02-08T18:03:32+00:00,7,9,2,1,2.0,departed,14,4.5
-oklabflensburg/oddfl,midzer,midzer,midzer,midzer@gmail.com,2024-02-15T02:27:13+00:00,2024-02-17T23:40:05+00:00,2,6,1,1,1.0,departed,117,6.0
-oklabflensburg/open-parcel-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-10-31T12:06:25+00:00,2025-09-20T16:35:06+00:00,324,26,7,46,0.1522,departed,34,3.71
-oklabflensburg/open-parcel-map,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-12-13T16:31:15+00:00,2024-12-13T16:31:15+00:00,0,1,1,1,1.0,departed,75,1.0
-oklabflensburg/open-biotope-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-10-08T15:31:28+00:00,2026-04-05T13:41:36+00:00,543,62,8,77,0.1039,active,,7.75
-oklabflensburg/open-school-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-01-05T17:42:55+00:00,2026-04-12T16:35:17+00:00,827,123,21,118,0.178,active,,5.86
-oklabflensburg/open-school-map,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2026-03-13T10:07:10+00:00,2026-03-13T10:07:10+00:00,0,1,1,1,1.0,active,,1.0
-oklabflensburg/open-data-api,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2023-08-30T12:33:36+00:00,2026-04-12T16:56:24+00:00,956,262,38,136,0.2794,active,,6.89
-oklabflensburg/open-data-api,sonnenteich,sonnenteich,sonnenteich,59643794+sonnenteich@users.noreply.github.com,2025-07-03T20:19:59+00:00,2025-07-08T19:20:06+00:00,4,5,2,1,2.0,departed,45,2.5
-oklabflensburg/open-data-api,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2023-10-06T11:37:11+00:00,2025-06-19T16:41:49+00:00,622,3,3,88,0.0341,departed,48,1.0
-oklabflensburg/open-data-api,Philzen,Philzen,Philzen,philzen@riseup.net,2025-05-14T17:33:02+00:00,2025-05-14T17:52:43+00:00,0,2,1,1,1.0,departed,53,2.0
-oklabflensburg/open-recycling-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2023-07-25T07:59:43+00:00,2026-04-05T14:05:14+00:00,985,36,10,140,0.0714,active,,3.6
-oklabflensburg/open-trees-map,p3t3r67x0,p3t3r67x0,Open Data Coder,7386680+p3t3r67x0@users.noreply.github.com,2023-04-28T07:08:46+00:00,2026-03-24T07:43:04+00:00,1061,82,23,151,0.1523,active,,3.57
-oklabflensburg/open-trees-map,Pfannkuchensack,Pfannkuchensack,Alexander Eichhorn,alex@eichhorn.dev,2023-05-16T11:49:48+00:00,2023-06-09T12:52:46+00:00,24,8,2,3,0.6667,departed,154,4.0
-oklabflensburg/open-trees-map,SteffensKunst,SteffensKunst,Programmierlauch,130170534+Programmierlauch@users.noreply.github.com,2023-05-10T19:17:46+00:00,2023-05-18T09:24:01+00:00,7,5,2,1,2.0,departed,157,2.5
-oklabflensburg/open-trees-map,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2023-05-01T14:30:16+00:00,2025-06-04T17:02:50+00:00,765,3,3,109,0.0275,departed,50,1.0
-oklabflensburg/open-trees-map,dbo-monomorph,dbo-monomorph,monomorph,github@monomorph.de,2023-06-07T19:08:18+00:00,2023-06-07T19:08:18+00:00,0,1,1,1,1.0,departed,154,1.0
-oklabflensburg/open-monuments-map,p3t3r67x0,p3t3r67x0,Open Data Coder,7386680+p3t3r67x0@users.noreply.github.com,2023-02-22T14:47:49+00:00,2026-02-10T09:09:32+00:00,1083,283,75,154,0.487,departed,14,3.77
-oklabflensburg/open-monuments-map,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-10-05T10:05:49+00:00,2025-10-08T11:33:48+00:00,734,5,5,104,0.0481,departed,32,1.0
-oklabflensburg/open-monuments-map,Copilot,Copilot,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,2025-10-08T11:44:28+00:00,2025-10-08T11:49:59+00:00,0,2,1,1,1.0,departed,32,2.0
-oklabflensburg/open-monuments-map,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2023-09-25T19:18:32+00:00,2023-09-25T19:19:09+00:00,0,2,1,1,1.0,departed,138,2.0
-codeforcologne/Denkmal-4D-Koeln,OpenDEM,OpenDEM,OpenDEM,contact@opendemdata.info,2024-05-31T15:50:58+00:00,2026-03-15T09:54:07+00:00,652,23,11,93,0.1183,active,,2.09
-codeforcologne/Denkmal-4D-Koeln,ErtanOz,ErtanOz,ErtanOz,67025766+ErtanOz@users.noreply.github.com,2024-06-01T22:59:09+00:00,2026-01-14T20:12:09+00:00,591,14,6,84,0.0714,departed,18,2.33
-codeforcologne/Denkmal-4D-Koeln,gorkemkurban,gorkemkurban,Görkem Kurban,gorkem46591@hotmail.com,2024-06-12T20:23:10+00:00,2024-11-18T21:58:54+00:00,159,2,2,22,0.0909,departed,78,1.0
-CodeforLeipzig/weihnachtsmarktkarte,joergreichert,joergreichert,Jörg Reichert,joergreichert@users.noreply.github.com,2022-12-01T16:29:54+00:00,2025-12-17T18:46:37+00:00,1112,182,15,158,0.0949,departed,22,12.13
-CodeforLeipzig/weihnachtsmarktkarte,hanshack,hanshack,Hans Hack,hanshack@users.noreply.github.com,2022-11-10T16:52:48+00:00,2022-12-01T11:04:40+00:00,20,105,4,2,2.0,departed,181,26.25
-CodeforLeipzig/weihnachtsmarktkarte,Lisa-Stubert,Lisa-Stubert,Lisa-Stubert,61182572+Lisa-Stubert@users.noreply.github.com,2022-11-19T11:03:10+00:00,2022-11-26T09:17:07+00:00,6,80,2,1,2.0,departed,182,40.0
-CodeforLeipzig/weihnachtsmarktkarte,KlemensM,KlemensM,Klemens,98896505+KlemensM@users.noreply.github.com,2022-11-09T13:56:18+00:00,2022-11-29T15:39:56+00:00,20,24,4,2,2.0,departed,181,6.0
-CodeforLeipzig/weihnachtsmarktkarte,ester-t-s,ester-t-s,Ester,91192024+ester-t-s@users.noreply.github.com,2022-11-09T12:12:08+00:00,2022-11-21T08:11:28+00:00,11,24,3,1,3.0,departed,182,8.0
-CodeforLeipzig/weihnachtsmarktkarte,renovate[bot],renovate[bot],renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2024-11-16T14:30:27+00:00,2025-12-03T17:50:08+00:00,382,13,3,54,0.0556,departed,24,4.33
-CodeforLeipzig/weihnachtsmarktkarte,annameide,annameide,anna,46717848+annameide@users.noreply.github.com,2022-11-16T11:42:12+00:00,2022-11-24T09:38:00+00:00,7,13,2,1,2.0,departed,182,6.5
-CodeforLeipzig/weihnachtsmarktkarte,allcontributors[bot],allcontributors[bot],allcontributors[bot],46447321+allcontributors[bot]@users.noreply.github.com,2022-11-09T12:25:54+00:00,2022-11-09T13:16:56+00:00,0,12,1,1,1.0,departed,184,12.0
-CodeforLeipzig/weihnachtsmarktkarte,dnsos,dnsos,Dennis Ostendorf,15640196+dnsos@users.noreply.github.com,2022-11-09T15:32:01+00:00,2022-11-09T15:32:01+00:00,0,1,1,1,1.0,departed,184,1.0
-CodeforLeipzig/leipziggiesst,ff6347,ff6347,ff6347,fabianmoronzirfas@protonmail.ch,2020-05-05T07:27:37+00:00,2021-05-08T20:53:34+00:00,368,372,26,52,0.5,departed,262,14.31
-CodeforLeipzig/leipziggiesst,joergreichert,joergreichert,Jörg Reichert,joergreichert@users.noreply.github.com,2021-05-08T20:39:06+00:00,2026-03-05T08:06:40+00:00,1761,288,90,251,0.3586,active,,3.2
-CodeforLeipzig/leipziggiesst,vogelino,vogelino,Lucas Vogel,vogelino@users.noreply.github.com,2021-01-25T12:39:08+00:00,2021-05-04T07:40:31+00:00,98,233,9,14,0.6429,departed,263,25.89
-CodeforLeipzig/leipziggiesst,fdnklg,fdnklg,fdnklg,fabian.dinklage@me.com,2019-08-05T19:46:41+00:00,2020-05-13T15:22:54+00:00,281,195,17,40,0.425,departed,314,11.47
-CodeforLeipzig/leipziggiesst,dnsos,dnsos,Dennis Ostendorf,15640196+dnsos@users.noreply.github.com,2020-05-04T11:17:05+00:00,2021-05-03T14:51:22+00:00,364,94,9,52,0.1731,departed,263,10.44
-CodeforLeipzig/leipziggiesst,moron-zirfas@technologiestiftung-berlin.de,,Fabian Morón Zirfas,moron-zirfas@technologiestiftung-berlin.de,2020-05-06T07:40:32+00:00,2020-09-14T08:13:48+00:00,131,61,17,18,0.9444,departed,296,3.59
-CodeforLeipzig/leipziggiesst,roboter@tsb-berlin.de,,tsboter,roboter@tsb-berlin.de,2020-08-24T16:04:51+00:00,2021-05-02T04:05:22+00:00,250,32,28,35,0.8,departed,263,1.14
-CodeforLeipzig/leipziggiesst,julizet,julizet,Julia Zet,52455010+julizet@users.noreply.github.com,2020-07-02T08:30:51+00:00,2021-02-15T15:24:24+00:00,228,23,9,32,0.2812,departed,274,2.56
-CodeforLeipzig/leipziggiesst,lucasoeth,lucasoeth,lucasoeth,43838158+lucasoeth@users.noreply.github.com,2021-04-26T11:32:38+00:00,2021-04-30T07:12:56+00:00,3,20,1,1,1.0,departed,264,20.0
-CodeforLeipzig/leipziggiesst,sebastian-meier,sebastian-meier,Sebastian Meier,contact@sebastianmeier.eu,2020-05-04T14:19:48+00:00,2020-05-23T06:19:00+00:00,18,11,2,2,1.0,departed,313,5.5
-CodeforLeipzig/leipziggiesst,renovate-bot,renovate-bot,Renovate Bot,bot@renovateapp.com,2021-02-14T23:47:14+00:00,2021-03-08T00:35:52+00:00,21,9,4,3,1.3333,departed,271,2.25
-CodeforLeipzig/leipziggiesst,bnjmnsbl,bnjmnsbl,Benjamin Seibel,benjamin.seibel@gmx.de,2020-03-09T13:54:16+00:00,2020-05-18T20:39:23+00:00,70,9,4,10,0.4,departed,313,2.25
-CodeforLeipzig/leipziggiesst,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2020-04-28T15:48:34+00:00,2020-12-12T09:41:15+00:00,227,5,5,32,0.1562,departed,284,1.0
-CodeforLeipzig/leipziggiesst,Lisa-Stubert,Lisa-Stubert,Lisa-Stubert,61182572+Lisa-Stubert@users.noreply.github.com,2021-01-26T17:23:34+00:00,2021-02-02T16:33:56+00:00,6,3,2,1,2.0,departed,276,1.5
-CodeforLeipzig/leipziggiesst,georghans,georghans,g hans,gehans@outlook.de,2022-11-11T10:05:20+00:00,2022-11-11T10:05:20+00:00,0,1,1,1,1.0,departed,184,1.0
-CodeforLeipzig/leipziggiesst,NucsuM,NucsuM,Robert Schmidt,nucsum@mailbox.org,2022-06-10T19:44:47+00:00,2022-06-10T19:44:47+00:00,0,1,1,1,1.0,departed,206,1.0
-CodeforLeipzig/leipziggiesst,maximilianpalm,maximilianpalm,maximilianpalm,github@npalm.de,2020-07-18T13:33:22+00:00,2020-07-18T13:33:22+00:00,0,1,1,1,1.0,departed,305,1.0
-CodeforLeipzig/leipziggiesst,donni106,donni106,Daniel Molnar,dm@tpwd.de,2020-06-29T20:44:31+00:00,2020-06-29T20:44:31+00:00,0,1,1,1,1.0,departed,307,1.0
-code-for-magdeburg/StadtratWatch-web,jens.winter-huebenthal@bridgefield.de,,Jens Winter-Huebenthal,jens.winter-huebenthal@bridgefield.de,2023-11-01T17:42:52+00:00,2026-05-17T20:41:10+00:00,928,244,53,132,0.4015,active,,4.6
-code-for-magdeburg/StadtratWatch-web,JensWinter,JensWinter,Jens Winter-Hübenthal,jenswh@proton.me,2023-11-02T19:30:02+00:00,2026-05-21T19:57:47+00:00,931,144,62,133,0.4662,active,,2.32
-code-for-magdeburg/StadtratWatch-web,Ra-Na,Ra-Na,rana is spanish for frog,gluege@boerde.de,2025-09-07T17:29:12+00:00,2025-09-07T17:29:12+00:00,0,1,1,1,1.0,departed,36,1.0
-VoteIT/voteit_frontend,johan@radkompaniet.se,,Johan Schiff,johan@radkompaniet.se,2020-11-09T10:55:47+00:00,2023-09-15T14:17:45+00:00,1040,1000,104,148,0.7027,departed,140,9.62
-VoteIT/voteit_frontend,schyffel,schyffel,Johan Schiff,johan@betahaus.net,2022-05-09T09:03:13+00:00,2026-05-20T11:37:14+00:00,1472,883,74,210,0.3524,active,,11.93
-VoteIT/voteit_frontend,robinharms,robinharms,Robin Harms Oredsson,robin@betahaus.net,2020-12-08T22:54:58+00:00,2024-03-11T14:56:24+00:00,1188,67,36,169,0.213,departed,114,1.86
-VoteIT/voteit_frontend,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2022-01-15T07:19:59+00:00,2025-11-15T11:01:46+00:00,1400,9,7,200,0.035,departed,27,1.29
 digidemlab/decidim-census,PierreMesure,PierreMesure,Pierre Mesure (Github Actions),pierre@mesu.re,2021-07-05T08:27:36+00:00,2026-05-23T05:10:30+00:00,1782,1472,217,254,0.8543,active,,6.78
 digidemlab/decidim-census,simonaszilinskas,simonaszilinskas,Simonas,zilinskassimonas@gmail.com,2022-11-29T14:11:06+00:00,2022-11-29T14:11:06+00:00,0,1,1,1,1.0,departed,181,1.0
+g0v/tw-rental-house-data,ddio,ddio,ddio,ddioibb@gmail.com,2018-05-14T13:50:38+00:00,2026-05-03T09:05:04+00:00,2910,369,90,415,0.2169,active,,4.1
+g0v/tw-rental-house-data,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-11-02T00:13:15+00:00,2020-01-12T04:41:52+00:00,71,5,2,10,0.2,departed,331,2.5
+g0v/tw-rental-house-data,tim5ji6,tim5ji6,Eating卓,32831064+tim5ji6@users.noreply.github.com,2020-11-13T03:40:32+00:00,2021-02-19T07:53:00+00:00,98,2,2,14,0.1429,departed,274,1.0
+g0v/tw-rental-house-data,yellowsoar,yellowsoar,yellowsoar,yellowsoar@gmail.com,2019-06-13T13:19:30+00:00,2019-06-13T13:19:50+00:00,0,2,1,1,1.0,departed,362,2.0
+g0v/tw-rental-house-data,TedLin1993,TedLin1993,Ted,xup6y3ru04@gmail.com,2025-05-14T15:26:34+00:00,2025-05-14T15:26:34+00:00,0,1,1,1,1.0,departed,53,1.0
+g0v/tw-rental-house-data,Lee-W,Lee-W,Wei Lee,weilee.rx@gmail.com,2024-09-12T05:34:33+00:00,2024-09-12T05:34:33+00:00,0,1,1,1,1.0,departed,88,1.0
+g0v/tw-rental-house-data,tan-i-ham,tan-i-ham,Yi-Han Chen,hannah51125@gmail.com,2024-01-12T08:48:49+00:00,2024-01-12T08:48:49+00:00,0,1,1,1,1.0,departed,123,1.0
+g0v/tw-rental-house-data,chunyenHuang,chunyenHuang,John Huang,little78926@gmail.com,2020-04-25T00:43:07+00:00,2020-04-25T00:43:07+00:00,0,1,1,1,1.0,departed,317,1.0
+g0v/tw-rental-house-data,eala,eala,eala,eala0113@gmail.com,2020-01-11T08:21:32+00:00,2020-01-11T08:21:32+00:00,0,1,1,1,1.0,departed,332,1.0
+iiab/iiab,holta,holta,A Holt,holta@users.noreply.github.com,2017-05-28T14:28:40+00:00,2026-05-24T00:44:30+00:00,3282,10579,428,468,0.9145,active,,24.72
+iiab/iiab,jvonau,jvonau,Jerry Vonau,jvonau3@gmail.com,2017-06-19T23:26:02+00:00,2026-05-13T22:02:02+00:00,3249,1568,161,464,0.347,active,,9.74
+iiab/iiab,georgejhunt,georgejhunt,George Hunt,georgejhunt@gmail.com,2017-05-27T18:09:50+00:00,2022-07-07T22:51:29+00:00,1867,736,91,266,0.3421,departed,202,8.09
+iiab/iiab,Ark74,Ark74,Ark74,ark@switnet.org,2025-05-13T15:47:26+00:00,2026-05-24T00:31:56+00:00,375,311,25,53,0.4717,active,,12.44
+iiab/iiab,tim-moody,tim-moody,Tim Moody,tim@timmoody.com,2017-05-30T17:23:47+00:00,2026-04-24T13:58:34+00:00,3250,288,77,464,0.1659,active,,3.74
+iiab/iiab,orblivion,orblivion,Daniel Krol,orblivion@gmail.com,2025-10-17T18:00:22+00:00,2026-05-14T20:13:44+00:00,209,245,27,29,0.931,active,,9.07
+iiab/iiab,chapmanjacobd,chapmanjacobd,Jacob Chapman,7908073+chapmanjacobd@users.noreply.github.com,2025-09-30T18:17:28+00:00,2026-04-15T12:57:03+00:00,196,197,12,28,0.4286,active,,16.42
+iiab/iiab,m-anish,m-anish,Anish Mangal,m-anish@users.noreply.github.com,2018-06-29T06:41:10+00:00,2021-07-19T07:47:29+00:00,1116,148,11,159,0.0692,departed,252,13.45
+iiab/iiab,veeara282,veeara282,Aidan Fitzgerald,acf67@cornell.edu,2018-10-09T16:19:30+00:00,2019-09-06T17:59:56+00:00,332,132,14,47,0.2979,departed,350,9.43
+iiab/iiab,arky,arky,Arky,hitmanarky@gmail.com,2017-10-01T09:45:11+00:00,2019-01-30T15:56:40+00:00,486,80,16,69,0.2319,departed,381,5.0
+iiab/iiab,avni,avni,root,avni@users.noreply.github.com,2024-12-28T20:59:56+00:00,2025-09-30T03:54:17+00:00,275,70,16,39,0.4103,departed,33,4.38
+iiab/iiab,root@box.lan,,root,root@box.lan,2018-04-03T16:50:10+00:00,2025-03-19T06:22:04+00:00,2541,64,17,363,0.0468,departed,61,3.76
+iiab/iiab,Akatama,Akatama,Akatama,jimmyl@pacbell.net,2025-03-06T20:53:56+00:00,2026-03-14T04:15:11+00:00,372,51,12,53,0.2264,active,,4.25
+iiab/iiab,cwivagg,cwivagg,cwivagg,cwivagg@gmail.com,2022-04-30T11:07:09+00:00,2023-01-07T13:27:56+00:00,252,41,15,36,0.4167,departed,176,2.73
+iiab/iiab,mitra42,mitra42,Mitra Ardron,mitra@mitra.biz,2019-04-22T09:00:26+00:00,2019-10-16T06:03:38+00:00,176,37,7,25,0.28,departed,344,5.29
+iiab/iiab,deldesir,deldesir,deldesir,blondel.md@gmail.com,2021-04-28T15:28:33+00:00,2025-05-15T20:41:32+00:00,1478,29,7,211,0.0332,departed,53,4.14
+iiab/iiab,neomatrixcode,neomatrixcode,neomatrixcode,josuecevedo@gmail.com,2023-05-16T02:53:35+00:00,2023-06-08T18:27:31+00:00,23,14,4,3,1.3333,departed,154,3.5
+iiab/iiab,jvonau3.gmail.com,,Jerry Vonau,jvonau3.gmail.com,2022-04-25T17:22:01+00:00,2022-04-28T18:40:16+00:00,3,14,1,1,1.0,departed,212,14.0
+iiab/iiab,lemueldsouza,lemueldsouza,lemueldsouza,lemueldsouza@users.noreply.github.com,2021-07-13T04:32:18+00:00,2021-08-18T08:52:48+00:00,36,12,4,5,0.8,departed,248,3.0
+iiab/iiab,EMG70,EMG70,EMG70,52469992+EMG70@users.noreply.github.com,2023-04-10T14:14:02+00:00,2023-04-10T16:36:47+00:00,0,10,1,1,1.0,departed,162,10.0
+iiab/iiab,dahagag,dahagag,Mohamad Abuelhagag,mohammed.abuelhagag@gmail.com,2022-06-30T13:34:34+00:00,2026-02-05T19:31:13+00:00,1316,9,3,188,0.016,departed,15,3.0
+iiab/iiab,you@example.com,,root,you@example.com,2020-11-02T20:29:32+00:00,2021-11-26T20:12:46+00:00,388,9,5,55,0.0909,departed,234,1.8
+iiab/iiab,axl4@cornell.edu,,Angela Liu,axl4@cornell.edu,2018-11-03T06:27:44+00:00,2018-11-03T06:35:17+00:00,0,9,1,1,1.0,departed,394,9.0
+iiab/iiab,albert@einstein.edu,,root,albert@einstein.edu,2022-07-11T14:47:01+00:00,2025-01-27T02:26:16+00:00,930,6,4,132,0.0303,departed,68,1.5
+iiab/iiab,hal@haleisen.com,,Hal Eisen,hal@haleisen.com,2025-08-21T20:01:40+00:00,2025-08-30T01:19:09+00:00,8,5,2,1,2.0,departed,38,2.5
+iiab/iiab,root@deb10-srv,,root,root@deb10-srv,2020-10-28T21:57:55+00:00,2020-10-29T00:57:57+00:00,0,4,1,1,1.0,departed,290,4.0
+iiab/iiab,c-w,c-w,Clemens Wolff,clemens@ascoderu.ca,2018-11-12T14:30:25+00:00,2020-04-29T15:30:23+00:00,534,4,4,76,0.0526,departed,316,1.0
+iiab/iiab,rgangela99,rgangela99,rgangela99,rgangela99@gmail.com,2018-11-03T06:27:44+00:00,2018-11-03T06:36:29+00:00,0,4,1,1,1.0,departed,394,4.0
+iiab/iiab,aidan-fitz@users.noreply.github.com,,Aidan Fitzgerald,aidan-fitz@users.noreply.github.com,2018-10-17T18:32:06+00:00,2019-03-02T08:28:09+00:00,135,3,3,19,0.1579,departed,377,1.0
+iiab/iiab,icebox827,icebox827,icebox827,icebox827@gmail.com,2021-11-11T15:23:07+00:00,2021-11-22T15:34:20+00:00,11,2,2,1,2.0,departed,234,1.0
+iiab/iiab,adamsclafani,adamsclafani,Adam Sclafani,adam.sclafani15@gmail.com,2020-09-09T13:51:28+00:00,2020-09-09T13:51:28+00:00,0,2,1,1,1.0,departed,297,2.0
+iiab/iiab,peckjon,peckjon,Jon Peck,peckjon@gmail.com,2025-03-08T20:30:41+00:00,2025-03-08T20:30:41+00:00,0,1,1,1,1.0,departed,63,1.0
+iiab/iiab,avni-teacher,avni-teacher,Avni Khatri,avni@avni.net,2022-07-20T04:12:23+00:00,2022-07-20T04:12:23+00:00,0,1,1,1,1.0,departed,200,1.0
+iiab/iiab,root@raspberrypi,,root,root@raspberrypi,2022-01-07T16:16:57+00:00,2022-01-07T16:16:57+00:00,0,1,1,1,1.0,departed,228,1.0
+iiab/iiab,hermanounapuu@gmail.com,,Herman Õunapuu,hermanounapuu@gmail.com,2021-06-30T04:40:55+00:00,2021-06-30T04:40:55+00:00,0,1,1,1,1.0,departed,255,1.0
+iiab/iiab,vagrant@box.lan,,Vagrant Default User,vagrant@box.lan,2020-09-09T13:51:28+00:00,2020-09-09T13:51:28+00:00,0,1,1,1,1.0,departed,297,1.0
+iiab/iiab,joshua@localhost.localdomain,,Joshua Dennis,joshua@localhost.localdomain,2020-05-12T21:47:02+00:00,2020-05-12T21:47:02+00:00,0,1,1,1,1.0,departed,314,1.0
+iiab/iiab,floydianslips,floydianslips,Joshua Dennis,nomore2pick@gmail.com,2020-04-26T21:54:58+00:00,2020-04-26T21:54:58+00:00,0,1,1,1,1.0,departed,316,1.0
+iiab/iiab,Daniel-Mietchen,Daniel-Mietchen,Daniel Mietchen,daniel.mietchen@googlemail.com,2019-11-02T15:44:06+00:00,2019-11-02T15:44:06+00:00,0,1,1,1,1.0,departed,342,1.0
+iiab/iiab,anishmg@edu,,Anish Mangal,anishmg@edu,2019-02-11T13:27:27+00:00,2019-02-11T13:27:27+00:00,0,1,1,1,1.0,departed,379,1.0
+iiab/iiab,root@DESKTOP-83MTAKL.localdomain,,root,root@DESKTOP-83MTAKL.localdomain,2018-09-06T14:45:13+00:00,2018-09-06T14:45:13+00:00,0,1,1,1,1.0,departed,402,1.0
+iiab/iiab,jvonau@gmail3.com,,Jerry Vonau,jvonau@gmail3.com,2017-11-07T03:22:30+00:00,2017-11-07T03:22:30+00:00,0,1,1,1,1.0,departed,445,1.0
+meshtastic/Meshtastic-Android,jamesarich,jamesarich,James Rich,2199651+jamesarich@users.noreply.github.com,2024-07-02T01:17:05+00:00,2026-05-23T22:34:06+00:00,690,1775,80,98,0.8163,active,,22.19
+meshtastic/Meshtastic-Android,andrekir,andrekir,Andre K,andrekir@pm.me,2021-07-28T02:42:54+00:00,2025-03-17T23:13:27+00:00,1328,1681,164,189,0.8677,departed,61,10.25
+meshtastic/Meshtastic-Android,geeksville,geeksville,Kevin Hester,kevinh@geeksville.com,2020-01-20T23:53:22+00:00,2021-11-17T20:39:34+00:00,666,1216,71,95,0.7474,departed,235,17.13
+meshtastic/Meshtastic-Android,renovate[bot],renovate[bot],renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-08-28T01:06:56+00:00,2026-05-23T02:07:07+00:00,999,937,114,142,0.8028,active,,8.22
+meshtastic/Meshtastic-Android,github-actions[bot],github-actions[bot],github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,2025-04-30T21:59:25+00:00,2026-05-23T22:39:02+00:00,388,166,21,55,0.3818,active,,7.9
+meshtastic/Meshtastic-Android,PWRxPSYCHO,PWRxPSYCHO,PWRxPSYCHO,pwrxpsycho@gmail.com,2022-01-29T02:40:05+00:00,2022-10-27T13:26:28+00:00,271,157,14,38,0.3684,departed,186,11.21
+meshtastic/Meshtastic-Android,poliver,poliver,Phil Oliver,3497406+poliver@users.noreply.github.com,2025-08-14T19:34:13+00:00,2025-12-16T22:09:49+00:00,124,138,14,17,0.8235,departed,22,9.86
+meshtastic/Meshtastic-Android,DaneEvans,DaneEvans,Dane Evans,dane@goneepic.com,2025-06-15T10:51:32+00:00,2025-12-27T12:37:48+00:00,195,110,22,27,0.8148,departed,21,5.0
+meshtastic/Meshtastic-Android,mc-hamster,mc-hamster,Jm Casler,jm@casler.org,2021-11-28T18:27:11+00:00,2022-05-22T00:10:20+00:00,174,94,22,24,0.9167,departed,209,4.27
+meshtastic/Meshtastic-Android,mdecourcy,mdecourcy,Mac DeCourcy,49794076+mdecourcy@users.noreply.github.com,2025-11-09T16:54:21+00:00,2026-01-24T16:41:17+00:00,75,40,12,10,1.2,departed,17,3.33
+meshtastic/Meshtastic-Android,vfurman-gh,vfurman-gh,Vadim Furman,vfurman@gmail.com,2021-01-26T01:30:21+00:00,2021-04-14T00:50:34+00:00,77,33,7,11,0.6364,departed,266,4.71
+meshtastic/Meshtastic-Android,lgoix,lgoix,Lgx,ludovic.goix@gmail.com,2020-06-11T01:50:34+00:00,2020-10-13T14:28:51+00:00,124,30,10,17,0.5882,departed,292,3.0
+meshtastic/Meshtastic-Android,Robert-0410,Robert-0410,Robert-0410,62630290+Robert-0410@users.noreply.github.com,2024-07-02T12:53:37+00:00,2025-09-05T13:14:32+00:00,430,29,26,61,0.4262,departed,37,1.12
+meshtastic/Meshtastic-Android,mcumings,mcumings,Mike Cumings,mcumings@scummer.org,2022-02-04T02:15:06+00:00,2024-02-15T11:47:00+00:00,741,23,12,105,0.1143,departed,118,1.92
+meshtastic/Meshtastic-Android,jsoberg,jsoberg,Joshua Soberg,soberg.dev@pm.me,2025-02-16T04:25:35+00:00,2025-08-10T21:50:02+00:00,175,19,10,25,0.4,departed,40,1.9
+meshtastic/Meshtastic-Android,daviscodesbugs,daviscodesbugs,Davis,daviscodesbugs@gmail.com,2024-02-07T21:09:53+00:00,2024-04-06T11:36:01+00:00,58,16,7,8,0.875,departed,111,2.29
+meshtastic/Meshtastic-Android,Douile,Douile,Tom,25043847+Douile@users.noreply.github.com,2022-08-09T14:26:52+00:00,2022-08-23T10:44:34+00:00,13,13,3,1,3.0,departed,195,4.33
+meshtastic/Meshtastic-Android,wkawecki,wkawecki,wkawecki,wojtec@gmail.com,2022-03-28T07:06:53+00:00,2022-04-22T13:03:04+00:00,25,13,4,3,1.3333,departed,213,3.25
+meshtastic/Meshtastic-Android,RCGV1,RCGV1,Benjamin Faershtein,119711889+RCGV1@users.noreply.github.com,2024-03-31T19:42:33+00:00,2025-11-26T14:25:55+00:00,604,12,8,86,0.093,departed,25,1.5
+meshtastic/Meshtastic-Android,jeremiah-k,jeremiah-k,Jeremiah K,17190268+jeremiah-k@users.noreply.github.com,2025-06-13T11:34:44+00:00,2025-07-02T18:59:31+00:00,19,11,4,2,2.0,departed,46,2.75
+meshtastic/Meshtastic-Android,lkosson,lkosson,Łukasz Kosson,git@lukasz.kosson.net,2025-06-06T20:41:25+00:00,2025-07-03T11:26:59+00:00,26,10,4,3,1.3333,departed,46,2.5
+meshtastic/Meshtastic-Android,legendgroupv2,legendgroupv2,legendgroupv2,73121875+legendgroupv2@users.noreply.github.com,2022-08-10T16:12:49+00:00,2022-08-30T09:45:54+00:00,19,10,4,2,2.0,departed,194,2.5
+meshtastic/Meshtastic-Android,thebentern,thebentern,Ben Meadors,benmmeadors@gmail.com,2022-12-03T21:53:20+00:00,2026-05-14T12:50:01+00:00,1257,8,6,179,0.0335,active,,1.33
+meshtastic/Meshtastic-Android,Kealper,Kealper,Ken Piper,kealper@ivystone.net,2025-02-16T04:07:49+00:00,2026-02-25T13:14:22+00:00,374,8,6,53,0.1132,active,,1.33
+meshtastic/Meshtastic-Android,b8b8,b8b8,b8b8,156552149+b8b8@users.noreply.github.com,2025-09-06T23:35:05+00:00,2026-02-04T01:46:28+00:00,150,8,8,21,0.381,departed,15,1.0
+meshtastic/Meshtastic-Android,sachaw,sachaw,Sacha Weatherstone,sachaw100@hotmail.com,2021-07-09T04:04:53+00:00,2023-01-11T12:17:22+00:00,551,6,2,78,0.0256,departed,175,3.0
+meshtastic/Meshtastic-Android,slavino,slavino,Slavomir Hustaty,slavomir.hustaty@gmail.com,2020-06-23T13:24:28+00:00,2022-01-05T17:48:47+00:00,561,6,3,80,0.0375,departed,228,2.0
+meshtastic/Meshtastic-Android,vidplace7,vidplace7,Austin,vidplace7@gmail.com,2026-05-11T12:32:34+00:00,2026-05-13T01:04:52+00:00,1,5,1,1,1.0,active,,5.0
+meshtastic/Meshtastic-Android,Copilot,Copilot,Copilot,198982749+Copilot@users.noreply.github.com,2025-08-16T00:34:05+00:00,2026-05-11T22:22:13+00:00,268,5,5,38,0.1316,active,,1.0
+meshtastic/Meshtastic-Android,barbabarros,barbabarros,Pedro,40841971+barbabarros@users.noreply.github.com,2025-07-22T01:52:30+00:00,2025-07-27T14:13:25+00:00,5,5,1,1,1.0,departed,42,5.0
+meshtastic/Meshtastic-Android,jp-bennett,jp-bennett,Jonathan Bennett,jbennett@incomsystems.biz,2023-07-06T21:26:38+00:00,2024-04-09T10:18:38+00:00,277,5,5,39,0.1282,departed,110,1.0
+meshtastic/Meshtastic-Android,goga@knopka.com,,goga,goga@knopka.com,2021-03-15T18:46:53+00:00,2021-03-18T06:11:37+00:00,2,5,1,1,1.0,departed,270,5.0
+meshtastic/Meshtastic-Android,KenVanHoeylandt,KenVanHoeylandt,Ken Van Hoeylandt,git@kenvanhoeylandt.net,2020-09-17T17:49:50+00:00,2020-10-01T20:20:19+00:00,14,4,2,2,1.0,departed,294,2.0
+meshtastic/Meshtastic-Android,rcarteraz,rcarteraz,rcarteraz,robert.l.carter2@gmail.com,2023-03-06T23:34:13+00:00,2025-06-17T21:56:15+00:00,833,3,3,119,0.0252,departed,48,1.0
+meshtastic/Meshtastic-Android,todd2982,todd2982,todd2982,1664712+todd2982@users.noreply.github.com,2025-03-21T21:16:54+00:00,2025-03-24T01:26:28+00:00,2,3,2,1,2.0,departed,60,1.5
+meshtastic/Meshtastic-Android,djholt,djholt,DJ Holt,dj@holt.dj,2024-09-16T12:16:06+00:00,2024-09-29T10:28:58+00:00,12,3,2,1,2.0,departed,85,1.5
+meshtastic/Meshtastic-Android,paulmandal,paulmandal,Paul Mandal,paul.mandal@gmail.com,2020-09-26T01:43:20+00:00,2021-02-28T05:36:06+00:00,155,3,2,22,0.0909,departed,272,1.5
+meshtastic/Meshtastic-Android,gkelly,gkelly,Garret Kelly,gkelly@gkel.ly,2020-08-11T01:20:55+00:00,2020-08-11T13:51:45+00:00,0,3,1,1,1.0,departed,301,3.0
+meshtastic/Meshtastic-Android,esev,esev,Eric Severance,esev@esev.com,2025-12-31T12:46:59+00:00,2026-01-19T20:22:32+00:00,19,2,2,2,1.0,departed,17,1.0
+meshtastic/Meshtastic-Android,emp3r0r7,emp3r0r7,emp3r0r7,118127968+emp3r0r7@users.noreply.github.com,2025-05-26T12:09:56+00:00,2025-12-18T14:25:18+00:00,206,2,2,29,0.069,departed,22,1.0
+meshtastic/Meshtastic-Android,Jord-JD,Jord-JD,Jord,650645+DivineOmega@users.noreply.github.com,2025-12-16T16:53:28+00:00,2025-12-18T14:14:03+00:00,1,2,1,1,1.0,departed,22,2.0
+meshtastic/Meshtastic-Android,1nv,1nv,Eugene Selifonov,invisible2k@mail.ru,2025-12-16T15:56:30+00:00,2025-12-17T13:52:46+00:00,0,2,1,1,1.0,departed,22,2.0
+meshtastic/Meshtastic-Android,twaddington,twaddington,Tristan Waddington,tristan.waddington@gmail.com,2025-07-29T01:10:02+00:00,2025-07-29T18:00:08+00:00,0,2,1,1,1.0,departed,42,2.0
+meshtastic/Meshtastic-Android,AddisonTustin,AddisonTustin,AddisonTustin,addisontustin@gmail.com,2024-06-13T10:20:52+00:00,2024-07-28T11:50:54+00:00,45,2,2,6,0.3333,departed,94,1.0
+meshtastic/Meshtastic-Android,prokrypt,prokrypt,prokrypt,prokrypt@edited.us,2024-03-13T23:40:29+00:00,2024-04-21T11:46:19+00:00,38,2,2,5,0.4,departed,108,1.0
+meshtastic/Meshtastic-Android,DayleDrinkwater,DayleDrinkwater,Dayle Drinkwater,daylecdrinkwater@gmail.com,2024-04-21T11:14:35+00:00,2024-04-21T11:45:37+00:00,0,2,1,1,1.0,departed,108,2.0
+meshtastic/Meshtastic-Android,majbthrd,majbthrd,Peter Lawrence,12226419+majbthrd@users.noreply.github.com,2022-07-09T03:11:21+00:00,2022-07-23T02:24:41+00:00,13,2,2,1,2.0,departed,200,1.0
+meshtastic/Meshtastic-Android,mkinney,mkinney,mkinney,mike.kinney@gmail.com,2022-01-20T17:55:43+00:00,2022-01-20T18:20:20+00:00,0,2,1,1,1.0,departed,226,2.0
+meshtastic/Meshtastic-Android,hpsaturn,hpsaturn,Antonio Vanegas,hpsaturn@gmail.com,2021-02-19T16:04:48+00:00,2021-02-19T17:43:50+00:00,0,2,1,1,1.0,departed,274,2.0
+meshtastic/Meshtastic-Android,tgunter@gmail.com,,Gunter Tim,tgunter@gmail.com,2020-09-17T07:37:51+00:00,2020-09-27T05:21:39+00:00,9,2,2,1,2.0,departed,295,1.0
+meshtastic/Meshtastic-Android,eriktheV-king,eriktheV-king,eriktheV-king,35270248+eriktheV-king@users.noreply.github.com,2020-07-21T12:54:24+00:00,2020-07-21T13:20:22+00:00,0,2,1,1,1.0,departed,304,2.0
+meshtastic/Meshtastic-Android,somenice,somenice,Andrew Smith,andrewinwhistler@gmail.com,2026-05-02T11:29:47+00:00,2026-05-02T11:29:47+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,elagin,elagin,Pavel,elagin.pasha@gmail.com,2026-04-29T15:22:40+00:00,2026-04-29T15:22:40+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,riddlemd,riddlemd,Michael Riddle,riddlemd@gmail.com,2026-04-28T02:37:22+00:00,2026-04-28T02:37:22+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,zt64,zt64,Nick,31907977+zt64@users.noreply.github.com,2026-04-23T09:47:34+00:00,2026-04-23T09:47:34+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,jdogg172,jdogg172,jdogg172,jd.roberson@gmail.com,2026-04-22T20:54:53+00:00,2026-04-22T20:54:53+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,Klavionik,Klavionik,Roman Vlasenko,klavionik@gmail.com,2026-03-30T20:34:54+00:00,2026-03-30T20:34:54+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,theKorzh,theKorzh,Dmitry,diman@korzh.pro,2026-03-22T15:55:58+00:00,2026-03-22T15:55:58+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,VictorioBerra,VictorioBerra,Victorio Berra,2934507+VictorioBerra@users.noreply.github.com,2026-03-18T15:39:59+00:00,2026-03-18T15:39:59+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,skobkin,skobkin,Alexey Skobkin,skobkin@proton.me,2026-03-16T14:03:17+00:00,2026-03-16T14:03:17+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,alecperkins,alecperkins,Alec Perkins,99231+alecperkins@users.noreply.github.com,2026-02-26T23:31:37+00:00,2026-02-26T23:31:37+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,ujade,ujade,Jade,42078529+ujade@users.noreply.github.com,2026-02-25T17:31:52+00:00,2026-02-25T17:31:52+00:00,0,1,1,1,1.0,active,,1.0
+meshtastic/Meshtastic-Android,nreisbeck,nreisbeck,nreisbeck,10735102+nreisbeck@users.noreply.github.com,2026-02-21T03:01:45+00:00,2026-02-21T03:01:45+00:00,0,1,1,1,1.0,departed,13,1.0
+meshtastic/Meshtastic-Android,LuigiVampa92,LuigiVampa92,Pavel Vasiliev,9579364+LuigiVampa92@users.noreply.github.com,2026-02-07T18:49:35+00:00,2026-02-07T18:49:35+00:00,0,1,1,1,1.0,departed,15,1.0
+meshtastic/Meshtastic-Android,bobidle,bobidle,Bob Idle,102661087+bobidle@users.noreply.github.com,2026-02-01T21:16:02+00:00,2026-02-01T21:16:02+00:00,0,1,1,1,1.0,departed,15,1.0
+meshtastic/Meshtastic-Android,Korb,Korb,Korb,Korb@users.noreply.github.com,2026-01-31T15:44:29+00:00,2026-01-31T15:44:29+00:00,0,1,1,1,1.0,departed,16,1.0
+meshtastic/Meshtastic-Android,lohwasser,lohwasser,lowi,75674438+lohwasser@users.noreply.github.com,2026-01-13T12:34:35+00:00,2026-01-13T12:34:35+00:00,0,1,1,1,1.0,departed,18,1.0
+meshtastic/Meshtastic-Android,romansl,romansl,Roman Leukin,leukinrs@gmail.com,2025-12-31T13:25:15+00:00,2025-12-31T13:25:15+00:00,0,1,1,1,1.0,departed,20,1.0
+meshtastic/Meshtastic-Android,RaspberryProgramming,RaspberryProgramming,Camerin Figueroa,figueroa0609@protonmail.com,2025-12-27T13:02:16+00:00,2025-12-27T13:02:16+00:00,0,1,1,1,1.0,departed,21,1.0
+meshtastic/Meshtastic-Android,texaskst,texaskst,Texas,antonlakida@gmail.com,2025-12-15T20:53:35+00:00,2025-12-15T20:53:35+00:00,0,1,1,1,1.0,departed,22,1.0
+meshtastic/Meshtastic-Android,jakevis,jakevis,Jake Vis,github@jv.ag,2025-12-12T18:51:34+00:00,2025-12-12T18:51:34+00:00,0,1,1,1,1.0,departed,23,1.0
+meshtastic/Meshtastic-Android,weebl2000,weebl2000,Wessel,wessel@weebl.me,2025-12-08T20:26:54+00:00,2025-12-08T20:26:54+00:00,0,1,1,1,1.0,departed,23,1.0
+meshtastic/Meshtastic-Android,Tema-man,Tema-man,Artemii Vishnevskii,temaa.mann@gmail.com,2025-10-30T21:54:52+00:00,2025-10-30T21:54:52+00:00,0,1,1,1,1.0,departed,29,1.0
+meshtastic/Meshtastic-Android,NeimadTL,NeimadTL,neimadTL,damientalbot26@gmail.com,2025-10-29T00:17:31+00:00,2025-10-29T00:17:31+00:00,0,1,1,1,1.0,departed,29,1.0
+meshtastic/Meshtastic-Android,suteny0r,suteny0r,Steve Bliss,suteny0r@users.noreply.github.com,2025-10-22T20:20:28+00:00,2025-10-22T20:20:28+00:00,0,1,1,1,1.0,departed,30,1.0
+meshtastic/Meshtastic-Android,ChrisDeardeuff,ChrisDeardeuff,ChrisDeardeuff,45649149+ChrisDeardeuff@users.noreply.github.com,2025-10-15T20:04:18+00:00,2025-10-15T20:04:18+00:00,0,1,1,1,1.0,departed,31,1.0
+meshtastic/Meshtastic-Android,SebRut,SebRut,Sebastian Rutofski,SebRut@users.noreply.github.com,2025-10-12T17:10:26+00:00,2025-10-12T17:10:26+00:00,0,1,1,1,1.0,departed,31,1.0
+meshtastic/Meshtastic-Android,Wreos,Wreos,Aleksandr Lozhkovoi,lozhkovoi@gmail.com,2025-08-13T06:55:13+00:00,2025-08-13T06:55:13+00:00,0,1,1,1,1.0,departed,40,1.0
+meshtastic/Meshtastic-Android,noktoborus,noktoborus,Nikolay Minaev,noktoborus@gmail.com,2025-07-29T14:56:14+00:00,2025-07-29T14:56:14+00:00,0,1,1,1,1.0,departed,42,1.0
+meshtastic/Meshtastic-Android,Justin-Mann,Justin-Mann,Justin E. Mann,Justin-Mann@users.noreply.github.com,2025-07-12T13:52:06+00:00,2025-07-12T13:52:06+00:00,0,1,1,1,1.0,departed,45,1.0
+meshtastic/Meshtastic-Android,slush0,slush0,Slush,marek@palatinus.cz,2025-05-19T11:30:23+00:00,2025-05-19T11:30:23+00:00,0,1,1,1,1.0,departed,52,1.0
+meshtastic/Meshtastic-Android,crowdin-bot,crowdin-bot,Crowdin Bot,support+bot@crowdin.com,2025-04-29T18:00:55+00:00,2025-04-29T18:00:55+00:00,0,1,1,1,1.0,departed,55,1.0
+meshtastic/Meshtastic-Android,niccellular,niccellular,niccellular,79813408+niccellular@users.noreply.github.com,2025-03-22T01:51:52+00:00,2025-03-22T01:51:52+00:00,0,1,1,1,1.0,departed,61,1.0
+meshtastic/Meshtastic-Android,AndrewReitz,AndrewReitz,Andrew Reitz,aj.reitz@gmail.com,2025-03-19T00:36:14+00:00,2025-03-19T00:36:14+00:00,0,1,1,1,1.0,departed,61,1.0
+meshtastic/Meshtastic-Android,tavdog,tavdog,Tavis,github@tavis.la,2024-12-18T11:14:16+00:00,2024-12-18T11:14:16+00:00,0,1,1,1,1.0,departed,74,1.0
+meshtastic/Meshtastic-Android,draen,draen,draen,draen94@gmail.com,2024-11-30T17:19:01+00:00,2024-11-30T17:19:01+00:00,0,1,1,1,1.0,departed,77,1.0
+meshtastic/Meshtastic-Android,remi-espie,remi-espie,Espié.R,60436978+remi-espie@users.noreply.github.com,2024-11-30T17:12:08+00:00,2024-11-30T17:12:08+00:00,0,1,1,1,1.0,departed,77,1.0
+meshtastic/Meshtastic-Android,fifieldt,fifieldt,Tom Fifield,tom@tomfifield.net,2024-11-25T22:57:10+00:00,2024-11-25T22:57:10+00:00,0,1,1,1,1.0,departed,77,1.0
+meshtastic/Meshtastic-Android,seuros,seuros,Abdelkader Boudih,terminale@gmail.com,2024-11-13T10:21:22+00:00,2024-11-13T10:21:22+00:00,0,1,1,1,1.0,departed,79,1.0
+meshtastic/Meshtastic-Android,MrLinusMeow,MrLinusMeow,MrLinusMeow,66890270+MrLinusMeow@users.noreply.github.com,2024-10-29T16:36:39+00:00,2024-10-29T16:36:39+00:00,0,1,1,1,1.0,departed,81,1.0
+meshtastic/Meshtastic-Android,lpereira,lpereira,L. Pereira,l@tia.mat.br,2024-10-26T08:55:21+00:00,2024-10-26T08:55:21+00:00,0,1,1,1,1.0,departed,82,1.0
+meshtastic/Meshtastic-Android,matthewbogner,matthewbogner,Matthew Bogner,matt@ibogner.net,2024-10-13T11:23:55+00:00,2024-10-13T11:23:55+00:00,0,1,1,1,1.0,departed,83,1.0
+meshtastic/Meshtastic-Android,danwelch3,danwelch3,danwelch3,danwelch3@gmail.com,2024-10-05T11:59:35+00:00,2024-10-05T11:59:35+00:00,0,1,1,1,1.0,departed,85,1.0
+meshtastic/Meshtastic-Android,james.rich@shiftdsm.com,,James Rich,james.rich@shiftdsm.com,2024-08-18T09:54:39+00:00,2024-08-18T09:54:39+00:00,0,1,1,1,1.0,departed,91,1.0
+meshtastic/Meshtastic-Android,aminhusni,aminhusni,Amin Husni,aminhusni@users.noreply.github.com,2024-01-10T09:09:53+00:00,2024-01-10T09:09:53+00:00,0,1,1,1,1.0,departed,123,1.0
+meshtastic/Meshtastic-Android,noffeperfekt,noffeperfekt,kristofer,kristofer@ravneberg.co,2023-12-01T09:02:26+00:00,2023-12-01T09:02:26+00:00,0,1,1,1,1.0,departed,129,1.0
+meshtastic/Meshtastic-Android,caveman99,caveman99,Thomas Göttgens,tgoettgens@gmail.com,2023-11-18T09:03:19+00:00,2023-11-18T09:03:19+00:00,0,1,1,1,1.0,departed,131,1.0
+meshtastic/Meshtastic-Android,tobymurray,tobymurray,Toby Murray,toby.murray@protonmail.com,2023-08-12T10:35:15+00:00,2023-08-12T10:35:15+00:00,0,1,1,1,1.0,departed,145,1.0
+meshtastic/Meshtastic-Android,Nanich87,Nanich87,Nanko Geshkov,Nanich87@users.noreply.github.com,2023-06-18T20:21:03+00:00,2023-06-18T20:21:03+00:00,0,1,1,1,1.0,departed,152,1.0
+meshtastic/Meshtastic-Android,hdngr,hdngr,Huston Hedinger,1875033+hdngr@users.noreply.github.com,2023-05-30T21:43:54+00:00,2023-05-30T21:43:54+00:00,0,1,1,1,1.0,departed,155,1.0
+meshtastic/Meshtastic-Android,GMart,GMart,Garrett M,garrett.atoms@Gmail.com,2023-04-03T21:35:43+00:00,2023-04-03T21:35:43+00:00,0,1,1,1,1.0,departed,163,1.0
+meshtastic/Meshtastic-Android,mertrois,mertrois,la mer,lukerl@gmail.com,2022-12-13T00:30:35+00:00,2022-12-13T00:30:35+00:00,0,1,1,1,1.0,departed,179,1.0
+meshtastic/Meshtastic-Android,Krezalis,Krezalis,Krezalis,krezalis@gmail.com,2022-12-03T21:52:21+00:00,2022-12-03T21:52:21+00:00,0,1,1,1,1.0,departed,181,1.0
+meshtastic/Meshtastic-Android,unknown,,srichs,unknown,2021-09-07T04:43:33+00:00,2021-09-07T04:43:33+00:00,0,1,1,1,1.0,departed,245,1.0
+meshtastic/Meshtastic-Android,attila@qualisoft.hu,,attila@qualisoft,attila@qualisoft.hu,2021-07-21T12:41:31+00:00,2021-07-21T12:41:31+00:00,0,1,1,1,1.0,departed,252,1.0
+meshtastic/Meshtastic-Android,rkuksa,rkuksa,rkuksa,rkuksa@users.noreply.github.com,2021-07-20T02:19:15+00:00,2021-07-20T02:19:15+00:00,0,1,1,1,1.0,departed,252,1.0
+meshtastic/Meshtastic-Android,email@merhaut.cz,,Zbynek Merhaut,email@merhaut.cz,2021-04-11T10:10:17+00:00,2021-04-11T10:10:17+00:00,0,1,1,1,1.0,departed,266,1.0
+meshtastic/Meshtastic-Android,danielnemenyi,danielnemenyi,Daniel Nemenyi,daniel.nemenyi@kcl.ac.uk,2021-03-22T09:14:29+00:00,2021-03-22T09:14:29+00:00,0,1,1,1,1.0,departed,269,1.0
+meshtastic/Meshtastic-Android,comgram,comgram,comgram,comgram@gmail.com,2020-09-21T07:30:53+00:00,2020-09-21T07:30:53+00:00,0,1,1,1,1.0,departed,295,1.0
+meshtastic/Meshtastic-Android,smack815,smack815,smack815,smack815@gmail.com,2020-09-14T00:44:29+00:00,2020-09-14T00:44:29+00:00,0,1,1,1,1.0,departed,296,1.0
+meshtastic/Meshtastic-Android,rubenpt@tutanota.com,,RR,rubenpt@tutanota.com,2020-08-22T18:03:16+00:00,2020-08-22T18:03:16+00:00,0,1,1,1,1.0,departed,300,1.0
+meshtastic/Meshtastic-Android,zjwhitehead,zjwhitehead,Zach Whitehead,zjwhitehead@users.noreply.github.com,2020-07-16T23:40:11+00:00,2020-07-16T23:40:11+00:00,0,1,1,1,1.0,departed,305,1.0
+meshtastic/Meshtastic-Android,tuxphone,tuxphone,tuxphone,67556506+tuxphone@users.noreply.github.com,2020-06-28T18:47:41+00:00,2020-06-28T18:47:41+00:00,0,1,1,1,1.0,departed,307,1.0
+meshtastic/Meshtastic-Android,tomasbrincil,tomasbrincil,Tomas B. / OK1BT,me@tomasbrincil.cz,2020-06-15T11:13:06+00:00,2020-06-15T11:13:06+00:00,0,1,1,1,1.0,departed,309,1.0
+meshtastic/Meshtastic-Android,Konradrundfunk,Konradrundfunk,KonradRundfunk,33392939+Konradrundfunk@users.noreply.github.com,2020-05-20T07:28:50+00:00,2020-05-20T07:28:50+00:00,0,1,1,1,1.0,departed,313,1.0
 meshtastic/firmware,geeksville,geeksville,geeksville,kevinh@geeksville.com,2020-02-01T16:30:53+00:00,2024-08-28T18:32:29+00:00,1670,2160,91,238,0.3824,departed,90,23.74
 meshtastic/firmware,thebentern,thebentern,Ben Meadors,benmmeadors@gmail.com,2021-07-01T21:57:50+00:00,2026-05-22T19:53:52+00:00,1785,2001,221,255,0.8667,active,,9.05
 meshtastic/firmware,caveman99,caveman99,Thomas Göttgens,tgoettgens@gmail.com,2021-12-27T20:25:08+00:00,2026-05-19T07:53:45+00:00,1603,1831,145,229,0.6332,active,,12.63
@@ -1073,121 +1192,6 @@ meshtastic/firmware,rradar,rradar,rradar,34582688+rradar@users.noreply.github.co
 meshtastic/firmware,kalon33@giroll.org,,Nicolas Derive,kalon33@giroll.org,2020-05-22T10:53:54+00:00,2020-05-22T10:53:54+00:00,0,1,1,1,1.0,departed,313,1.0
 meshtastic/firmware,Nodeswitch,Nodeswitch,astro-arphid,nodeswitch@gmail.com,2020-03-12T06:05:11+00:00,2020-03-12T06:05:11+00:00,0,1,1,1,1.0,departed,323,1.0
 meshtastic/firmware,gitter-badger,gitter-badger,The Gitter Badger,badger@gitter.im,2020-02-14T13:53:22+00:00,2020-02-14T13:53:22+00:00,0,1,1,1,1.0,departed,327,1.0
-meshtastic/Meshtastic-Android,jamesarich,jamesarich,James Rich,2199651+jamesarich@users.noreply.github.com,2024-07-02T01:17:05+00:00,2026-05-23T22:34:06+00:00,690,1775,80,98,0.8163,active,,22.19
-meshtastic/Meshtastic-Android,andrekir,andrekir,Andre K,andrekir@pm.me,2021-07-28T02:42:54+00:00,2025-03-17T23:13:27+00:00,1328,1681,164,189,0.8677,departed,61,10.25
-meshtastic/Meshtastic-Android,geeksville,geeksville,Kevin Hester,kevinh@geeksville.com,2020-01-20T23:53:22+00:00,2021-11-17T20:39:34+00:00,666,1216,71,95,0.7474,departed,235,17.13
-meshtastic/Meshtastic-Android,renovate[bot],renovate[bot],renovate[bot],29139614+renovate[bot]@users.noreply.github.com,2023-08-28T01:06:56+00:00,2026-05-23T02:07:07+00:00,999,937,114,142,0.8028,active,,8.22
-meshtastic/Meshtastic-Android,github-actions[bot],github-actions[bot],github-actions[bot],41898282+github-actions[bot]@users.noreply.github.com,2025-04-30T21:59:25+00:00,2026-05-23T22:39:02+00:00,388,166,21,55,0.3818,active,,7.9
-meshtastic/Meshtastic-Android,PWRxPSYCHO,PWRxPSYCHO,PWRxPSYCHO,pwrxpsycho@gmail.com,2022-01-29T02:40:05+00:00,2022-10-27T13:26:28+00:00,271,157,14,38,0.3684,departed,186,11.21
-meshtastic/Meshtastic-Android,poliver,poliver,Phil Oliver,3497406+poliver@users.noreply.github.com,2025-08-14T19:34:13+00:00,2025-12-16T22:09:49+00:00,124,138,14,17,0.8235,departed,22,9.86
-meshtastic/Meshtastic-Android,DaneEvans,DaneEvans,Dane Evans,dane@goneepic.com,2025-06-15T10:51:32+00:00,2025-12-27T12:37:48+00:00,195,110,22,27,0.8148,departed,21,5.0
-meshtastic/Meshtastic-Android,mc-hamster,mc-hamster,Jm Casler,jm@casler.org,2021-11-28T18:27:11+00:00,2022-05-22T00:10:20+00:00,174,94,22,24,0.9167,departed,209,4.27
-meshtastic/Meshtastic-Android,mdecourcy,mdecourcy,Mac DeCourcy,49794076+mdecourcy@users.noreply.github.com,2025-11-09T16:54:21+00:00,2026-01-24T16:41:17+00:00,75,40,12,10,1.2,departed,17,3.33
-meshtastic/Meshtastic-Android,vfurman-gh,vfurman-gh,Vadim Furman,vfurman@gmail.com,2021-01-26T01:30:21+00:00,2021-04-14T00:50:34+00:00,77,33,7,11,0.6364,departed,266,4.71
-meshtastic/Meshtastic-Android,lgoix,lgoix,Lgx,ludovic.goix@gmail.com,2020-06-11T01:50:34+00:00,2020-10-13T14:28:51+00:00,124,30,10,17,0.5882,departed,292,3.0
-meshtastic/Meshtastic-Android,Robert-0410,Robert-0410,Robert-0410,62630290+Robert-0410@users.noreply.github.com,2024-07-02T12:53:37+00:00,2025-09-05T13:14:32+00:00,430,29,26,61,0.4262,departed,37,1.12
-meshtastic/Meshtastic-Android,mcumings,mcumings,Mike Cumings,mcumings@scummer.org,2022-02-04T02:15:06+00:00,2024-02-15T11:47:00+00:00,741,23,12,105,0.1143,departed,118,1.92
-meshtastic/Meshtastic-Android,jsoberg,jsoberg,Joshua Soberg,soberg.dev@pm.me,2025-02-16T04:25:35+00:00,2025-08-10T21:50:02+00:00,175,19,10,25,0.4,departed,40,1.9
-meshtastic/Meshtastic-Android,daviscodesbugs,daviscodesbugs,Davis,daviscodesbugs@gmail.com,2024-02-07T21:09:53+00:00,2024-04-06T11:36:01+00:00,58,16,7,8,0.875,departed,111,2.29
-meshtastic/Meshtastic-Android,Douile,Douile,Tom,25043847+Douile@users.noreply.github.com,2022-08-09T14:26:52+00:00,2022-08-23T10:44:34+00:00,13,13,3,1,3.0,departed,195,4.33
-meshtastic/Meshtastic-Android,wkawecki,wkawecki,wkawecki,wojtec@gmail.com,2022-03-28T07:06:53+00:00,2022-04-22T13:03:04+00:00,25,13,4,3,1.3333,departed,213,3.25
-meshtastic/Meshtastic-Android,RCGV1,RCGV1,Benjamin Faershtein,119711889+RCGV1@users.noreply.github.com,2024-03-31T19:42:33+00:00,2025-11-26T14:25:55+00:00,604,12,8,86,0.093,departed,25,1.5
-meshtastic/Meshtastic-Android,jeremiah-k,jeremiah-k,Jeremiah K,17190268+jeremiah-k@users.noreply.github.com,2025-06-13T11:34:44+00:00,2025-07-02T18:59:31+00:00,19,11,4,2,2.0,departed,46,2.75
-meshtastic/Meshtastic-Android,lkosson,lkosson,Łukasz Kosson,git@lukasz.kosson.net,2025-06-06T20:41:25+00:00,2025-07-03T11:26:59+00:00,26,10,4,3,1.3333,departed,46,2.5
-meshtastic/Meshtastic-Android,legendgroupv2,legendgroupv2,legendgroupv2,73121875+legendgroupv2@users.noreply.github.com,2022-08-10T16:12:49+00:00,2022-08-30T09:45:54+00:00,19,10,4,2,2.0,departed,194,2.5
-meshtastic/Meshtastic-Android,thebentern,thebentern,Ben Meadors,benmmeadors@gmail.com,2022-12-03T21:53:20+00:00,2026-05-14T12:50:01+00:00,1257,8,6,179,0.0335,active,,1.33
-meshtastic/Meshtastic-Android,Kealper,Kealper,Ken Piper,kealper@ivystone.net,2025-02-16T04:07:49+00:00,2026-02-25T13:14:22+00:00,374,8,6,53,0.1132,active,,1.33
-meshtastic/Meshtastic-Android,b8b8,b8b8,b8b8,156552149+b8b8@users.noreply.github.com,2025-09-06T23:35:05+00:00,2026-02-04T01:46:28+00:00,150,8,8,21,0.381,departed,15,1.0
-meshtastic/Meshtastic-Android,sachaw,sachaw,Sacha Weatherstone,sachaw100@hotmail.com,2021-07-09T04:04:53+00:00,2023-01-11T12:17:22+00:00,551,6,2,78,0.0256,departed,175,3.0
-meshtastic/Meshtastic-Android,slavino,slavino,Slavomir Hustaty,slavomir.hustaty@gmail.com,2020-06-23T13:24:28+00:00,2022-01-05T17:48:47+00:00,561,6,3,80,0.0375,departed,228,2.0
-meshtastic/Meshtastic-Android,vidplace7,vidplace7,Austin,vidplace7@gmail.com,2026-05-11T12:32:34+00:00,2026-05-13T01:04:52+00:00,1,5,1,1,1.0,active,,5.0
-meshtastic/Meshtastic-Android,Copilot,Copilot,Copilot,198982749+Copilot@users.noreply.github.com,2025-08-16T00:34:05+00:00,2026-05-11T22:22:13+00:00,268,5,5,38,0.1316,active,,1.0
-meshtastic/Meshtastic-Android,barbabarros,barbabarros,Pedro,40841971+barbabarros@users.noreply.github.com,2025-07-22T01:52:30+00:00,2025-07-27T14:13:25+00:00,5,5,1,1,1.0,departed,42,5.0
-meshtastic/Meshtastic-Android,jp-bennett,jp-bennett,Jonathan Bennett,jbennett@incomsystems.biz,2023-07-06T21:26:38+00:00,2024-04-09T10:18:38+00:00,277,5,5,39,0.1282,departed,110,1.0
-meshtastic/Meshtastic-Android,goga@knopka.com,,goga,goga@knopka.com,2021-03-15T18:46:53+00:00,2021-03-18T06:11:37+00:00,2,5,1,1,1.0,departed,270,5.0
-meshtastic/Meshtastic-Android,KenVanHoeylandt,KenVanHoeylandt,Ken Van Hoeylandt,git@kenvanhoeylandt.net,2020-09-17T17:49:50+00:00,2020-10-01T20:20:19+00:00,14,4,2,2,1.0,departed,294,2.0
-meshtastic/Meshtastic-Android,rcarteraz,rcarteraz,rcarteraz,robert.l.carter2@gmail.com,2023-03-06T23:34:13+00:00,2025-06-17T21:56:15+00:00,833,3,3,119,0.0252,departed,48,1.0
-meshtastic/Meshtastic-Android,todd2982,todd2982,todd2982,1664712+todd2982@users.noreply.github.com,2025-03-21T21:16:54+00:00,2025-03-24T01:26:28+00:00,2,3,2,1,2.0,departed,60,1.5
-meshtastic/Meshtastic-Android,djholt,djholt,DJ Holt,dj@holt.dj,2024-09-16T12:16:06+00:00,2024-09-29T10:28:58+00:00,12,3,2,1,2.0,departed,85,1.5
-meshtastic/Meshtastic-Android,paulmandal,paulmandal,Paul Mandal,paul.mandal@gmail.com,2020-09-26T01:43:20+00:00,2021-02-28T05:36:06+00:00,155,3,2,22,0.0909,departed,272,1.5
-meshtastic/Meshtastic-Android,gkelly,gkelly,Garret Kelly,gkelly@gkel.ly,2020-08-11T01:20:55+00:00,2020-08-11T13:51:45+00:00,0,3,1,1,1.0,departed,301,3.0
-meshtastic/Meshtastic-Android,esev,esev,Eric Severance,esev@esev.com,2025-12-31T12:46:59+00:00,2026-01-19T20:22:32+00:00,19,2,2,2,1.0,departed,17,1.0
-meshtastic/Meshtastic-Android,emp3r0r7,emp3r0r7,emp3r0r7,118127968+emp3r0r7@users.noreply.github.com,2025-05-26T12:09:56+00:00,2025-12-18T14:25:18+00:00,206,2,2,29,0.069,departed,22,1.0
-meshtastic/Meshtastic-Android,Jord-JD,Jord-JD,Jord,650645+DivineOmega@users.noreply.github.com,2025-12-16T16:53:28+00:00,2025-12-18T14:14:03+00:00,1,2,1,1,1.0,departed,22,2.0
-meshtastic/Meshtastic-Android,1nv,1nv,Eugene Selifonov,invisible2k@mail.ru,2025-12-16T15:56:30+00:00,2025-12-17T13:52:46+00:00,0,2,1,1,1.0,departed,22,2.0
-meshtastic/Meshtastic-Android,twaddington,twaddington,Tristan Waddington,tristan.waddington@gmail.com,2025-07-29T01:10:02+00:00,2025-07-29T18:00:08+00:00,0,2,1,1,1.0,departed,42,2.0
-meshtastic/Meshtastic-Android,AddisonTustin,AddisonTustin,AddisonTustin,addisontustin@gmail.com,2024-06-13T10:20:52+00:00,2024-07-28T11:50:54+00:00,45,2,2,6,0.3333,departed,94,1.0
-meshtastic/Meshtastic-Android,prokrypt,prokrypt,prokrypt,prokrypt@edited.us,2024-03-13T23:40:29+00:00,2024-04-21T11:46:19+00:00,38,2,2,5,0.4,departed,108,1.0
-meshtastic/Meshtastic-Android,DayleDrinkwater,DayleDrinkwater,Dayle Drinkwater,daylecdrinkwater@gmail.com,2024-04-21T11:14:35+00:00,2024-04-21T11:45:37+00:00,0,2,1,1,1.0,departed,108,2.0
-meshtastic/Meshtastic-Android,majbthrd,majbthrd,Peter Lawrence,12226419+majbthrd@users.noreply.github.com,2022-07-09T03:11:21+00:00,2022-07-23T02:24:41+00:00,13,2,2,1,2.0,departed,200,1.0
-meshtastic/Meshtastic-Android,mkinney,mkinney,mkinney,mike.kinney@gmail.com,2022-01-20T17:55:43+00:00,2022-01-20T18:20:20+00:00,0,2,1,1,1.0,departed,226,2.0
-meshtastic/Meshtastic-Android,hpsaturn,hpsaturn,Antonio Vanegas,hpsaturn@gmail.com,2021-02-19T16:04:48+00:00,2021-02-19T17:43:50+00:00,0,2,1,1,1.0,departed,274,2.0
-meshtastic/Meshtastic-Android,tgunter@gmail.com,,Gunter Tim,tgunter@gmail.com,2020-09-17T07:37:51+00:00,2020-09-27T05:21:39+00:00,9,2,2,1,2.0,departed,295,1.0
-meshtastic/Meshtastic-Android,eriktheV-king,eriktheV-king,eriktheV-king,35270248+eriktheV-king@users.noreply.github.com,2020-07-21T12:54:24+00:00,2020-07-21T13:20:22+00:00,0,2,1,1,1.0,departed,304,2.0
-meshtastic/Meshtastic-Android,somenice,somenice,Andrew Smith,andrewinwhistler@gmail.com,2026-05-02T11:29:47+00:00,2026-05-02T11:29:47+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,elagin,elagin,Pavel,elagin.pasha@gmail.com,2026-04-29T15:22:40+00:00,2026-04-29T15:22:40+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,riddlemd,riddlemd,Michael Riddle,riddlemd@gmail.com,2026-04-28T02:37:22+00:00,2026-04-28T02:37:22+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,zt64,zt64,Nick,31907977+zt64@users.noreply.github.com,2026-04-23T09:47:34+00:00,2026-04-23T09:47:34+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,jdogg172,jdogg172,jdogg172,jd.roberson@gmail.com,2026-04-22T20:54:53+00:00,2026-04-22T20:54:53+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,Klavionik,Klavionik,Roman Vlasenko,klavionik@gmail.com,2026-03-30T20:34:54+00:00,2026-03-30T20:34:54+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,theKorzh,theKorzh,Dmitry,diman@korzh.pro,2026-03-22T15:55:58+00:00,2026-03-22T15:55:58+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,VictorioBerra,VictorioBerra,Victorio Berra,2934507+VictorioBerra@users.noreply.github.com,2026-03-18T15:39:59+00:00,2026-03-18T15:39:59+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,skobkin,skobkin,Alexey Skobkin,skobkin@proton.me,2026-03-16T14:03:17+00:00,2026-03-16T14:03:17+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,alecperkins,alecperkins,Alec Perkins,99231+alecperkins@users.noreply.github.com,2026-02-26T23:31:37+00:00,2026-02-26T23:31:37+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,ujade,ujade,Jade,42078529+ujade@users.noreply.github.com,2026-02-25T17:31:52+00:00,2026-02-25T17:31:52+00:00,0,1,1,1,1.0,active,,1.0
-meshtastic/Meshtastic-Android,nreisbeck,nreisbeck,nreisbeck,10735102+nreisbeck@users.noreply.github.com,2026-02-21T03:01:45+00:00,2026-02-21T03:01:45+00:00,0,1,1,1,1.0,departed,13,1.0
-meshtastic/Meshtastic-Android,LuigiVampa92,LuigiVampa92,Pavel Vasiliev,9579364+LuigiVampa92@users.noreply.github.com,2026-02-07T18:49:35+00:00,2026-02-07T18:49:35+00:00,0,1,1,1,1.0,departed,15,1.0
-meshtastic/Meshtastic-Android,bobidle,bobidle,Bob Idle,102661087+bobidle@users.noreply.github.com,2026-02-01T21:16:02+00:00,2026-02-01T21:16:02+00:00,0,1,1,1,1.0,departed,15,1.0
-meshtastic/Meshtastic-Android,Korb,Korb,Korb,Korb@users.noreply.github.com,2026-01-31T15:44:29+00:00,2026-01-31T15:44:29+00:00,0,1,1,1,1.0,departed,16,1.0
-meshtastic/Meshtastic-Android,lohwasser,lohwasser,lowi,75674438+lohwasser@users.noreply.github.com,2026-01-13T12:34:35+00:00,2026-01-13T12:34:35+00:00,0,1,1,1,1.0,departed,18,1.0
-meshtastic/Meshtastic-Android,romansl,romansl,Roman Leukin,leukinrs@gmail.com,2025-12-31T13:25:15+00:00,2025-12-31T13:25:15+00:00,0,1,1,1,1.0,departed,20,1.0
-meshtastic/Meshtastic-Android,RaspberryProgramming,RaspberryProgramming,Camerin Figueroa,figueroa0609@protonmail.com,2025-12-27T13:02:16+00:00,2025-12-27T13:02:16+00:00,0,1,1,1,1.0,departed,21,1.0
-meshtastic/Meshtastic-Android,texaskst,texaskst,Texas,antonlakida@gmail.com,2025-12-15T20:53:35+00:00,2025-12-15T20:53:35+00:00,0,1,1,1,1.0,departed,22,1.0
-meshtastic/Meshtastic-Android,jakevis,jakevis,Jake Vis,github@jv.ag,2025-12-12T18:51:34+00:00,2025-12-12T18:51:34+00:00,0,1,1,1,1.0,departed,23,1.0
-meshtastic/Meshtastic-Android,weebl2000,weebl2000,Wessel,wessel@weebl.me,2025-12-08T20:26:54+00:00,2025-12-08T20:26:54+00:00,0,1,1,1,1.0,departed,23,1.0
-meshtastic/Meshtastic-Android,Tema-man,Tema-man,Artemii Vishnevskii,temaa.mann@gmail.com,2025-10-30T21:54:52+00:00,2025-10-30T21:54:52+00:00,0,1,1,1,1.0,departed,29,1.0
-meshtastic/Meshtastic-Android,NeimadTL,NeimadTL,neimadTL,damientalbot26@gmail.com,2025-10-29T00:17:31+00:00,2025-10-29T00:17:31+00:00,0,1,1,1,1.0,departed,29,1.0
-meshtastic/Meshtastic-Android,suteny0r,suteny0r,Steve Bliss,suteny0r@users.noreply.github.com,2025-10-22T20:20:28+00:00,2025-10-22T20:20:28+00:00,0,1,1,1,1.0,departed,30,1.0
-meshtastic/Meshtastic-Android,ChrisDeardeuff,ChrisDeardeuff,ChrisDeardeuff,45649149+ChrisDeardeuff@users.noreply.github.com,2025-10-15T20:04:18+00:00,2025-10-15T20:04:18+00:00,0,1,1,1,1.0,departed,31,1.0
-meshtastic/Meshtastic-Android,SebRut,SebRut,Sebastian Rutofski,SebRut@users.noreply.github.com,2025-10-12T17:10:26+00:00,2025-10-12T17:10:26+00:00,0,1,1,1,1.0,departed,31,1.0
-meshtastic/Meshtastic-Android,Wreos,Wreos,Aleksandr Lozhkovoi,lozhkovoi@gmail.com,2025-08-13T06:55:13+00:00,2025-08-13T06:55:13+00:00,0,1,1,1,1.0,departed,40,1.0
-meshtastic/Meshtastic-Android,noktoborus,noktoborus,Nikolay Minaev,noktoborus@gmail.com,2025-07-29T14:56:14+00:00,2025-07-29T14:56:14+00:00,0,1,1,1,1.0,departed,42,1.0
-meshtastic/Meshtastic-Android,Justin-Mann,Justin-Mann,Justin E. Mann,Justin-Mann@users.noreply.github.com,2025-07-12T13:52:06+00:00,2025-07-12T13:52:06+00:00,0,1,1,1,1.0,departed,45,1.0
-meshtastic/Meshtastic-Android,slush0,slush0,Slush,marek@palatinus.cz,2025-05-19T11:30:23+00:00,2025-05-19T11:30:23+00:00,0,1,1,1,1.0,departed,52,1.0
-meshtastic/Meshtastic-Android,crowdin-bot,crowdin-bot,Crowdin Bot,support+bot@crowdin.com,2025-04-29T18:00:55+00:00,2025-04-29T18:00:55+00:00,0,1,1,1,1.0,departed,55,1.0
-meshtastic/Meshtastic-Android,niccellular,niccellular,niccellular,79813408+niccellular@users.noreply.github.com,2025-03-22T01:51:52+00:00,2025-03-22T01:51:52+00:00,0,1,1,1,1.0,departed,61,1.0
-meshtastic/Meshtastic-Android,AndrewReitz,AndrewReitz,Andrew Reitz,aj.reitz@gmail.com,2025-03-19T00:36:14+00:00,2025-03-19T00:36:14+00:00,0,1,1,1,1.0,departed,61,1.0
-meshtastic/Meshtastic-Android,tavdog,tavdog,Tavis,github@tavis.la,2024-12-18T11:14:16+00:00,2024-12-18T11:14:16+00:00,0,1,1,1,1.0,departed,74,1.0
-meshtastic/Meshtastic-Android,draen,draen,draen,draen94@gmail.com,2024-11-30T17:19:01+00:00,2024-11-30T17:19:01+00:00,0,1,1,1,1.0,departed,77,1.0
-meshtastic/Meshtastic-Android,remi-espie,remi-espie,Espié.R,60436978+remi-espie@users.noreply.github.com,2024-11-30T17:12:08+00:00,2024-11-30T17:12:08+00:00,0,1,1,1,1.0,departed,77,1.0
-meshtastic/Meshtastic-Android,fifieldt,fifieldt,Tom Fifield,tom@tomfifield.net,2024-11-25T22:57:10+00:00,2024-11-25T22:57:10+00:00,0,1,1,1,1.0,departed,77,1.0
-meshtastic/Meshtastic-Android,seuros,seuros,Abdelkader Boudih,terminale@gmail.com,2024-11-13T10:21:22+00:00,2024-11-13T10:21:22+00:00,0,1,1,1,1.0,departed,79,1.0
-meshtastic/Meshtastic-Android,MrLinusMeow,MrLinusMeow,MrLinusMeow,66890270+MrLinusMeow@users.noreply.github.com,2024-10-29T16:36:39+00:00,2024-10-29T16:36:39+00:00,0,1,1,1,1.0,departed,81,1.0
-meshtastic/Meshtastic-Android,lpereira,lpereira,L. Pereira,l@tia.mat.br,2024-10-26T08:55:21+00:00,2024-10-26T08:55:21+00:00,0,1,1,1,1.0,departed,82,1.0
-meshtastic/Meshtastic-Android,matthewbogner,matthewbogner,Matthew Bogner,matt@ibogner.net,2024-10-13T11:23:55+00:00,2024-10-13T11:23:55+00:00,0,1,1,1,1.0,departed,83,1.0
-meshtastic/Meshtastic-Android,danwelch3,danwelch3,danwelch3,danwelch3@gmail.com,2024-10-05T11:59:35+00:00,2024-10-05T11:59:35+00:00,0,1,1,1,1.0,departed,85,1.0
-meshtastic/Meshtastic-Android,james.rich@shiftdsm.com,,James Rich,james.rich@shiftdsm.com,2024-08-18T09:54:39+00:00,2024-08-18T09:54:39+00:00,0,1,1,1,1.0,departed,91,1.0
-meshtastic/Meshtastic-Android,aminhusni,aminhusni,Amin Husni,aminhusni@users.noreply.github.com,2024-01-10T09:09:53+00:00,2024-01-10T09:09:53+00:00,0,1,1,1,1.0,departed,123,1.0
-meshtastic/Meshtastic-Android,noffeperfekt,noffeperfekt,kristofer,kristofer@ravneberg.co,2023-12-01T09:02:26+00:00,2023-12-01T09:02:26+00:00,0,1,1,1,1.0,departed,129,1.0
-meshtastic/Meshtastic-Android,caveman99,caveman99,Thomas Göttgens,tgoettgens@gmail.com,2023-11-18T09:03:19+00:00,2023-11-18T09:03:19+00:00,0,1,1,1,1.0,departed,131,1.0
-meshtastic/Meshtastic-Android,tobymurray,tobymurray,Toby Murray,toby.murray@protonmail.com,2023-08-12T10:35:15+00:00,2023-08-12T10:35:15+00:00,0,1,1,1,1.0,departed,145,1.0
-meshtastic/Meshtastic-Android,Nanich87,Nanich87,Nanko Geshkov,Nanich87@users.noreply.github.com,2023-06-18T20:21:03+00:00,2023-06-18T20:21:03+00:00,0,1,1,1,1.0,departed,152,1.0
-meshtastic/Meshtastic-Android,hdngr,hdngr,Huston Hedinger,1875033+hdngr@users.noreply.github.com,2023-05-30T21:43:54+00:00,2023-05-30T21:43:54+00:00,0,1,1,1,1.0,departed,155,1.0
-meshtastic/Meshtastic-Android,GMart,GMart,Garrett M,garrett.atoms@Gmail.com,2023-04-03T21:35:43+00:00,2023-04-03T21:35:43+00:00,0,1,1,1,1.0,departed,163,1.0
-meshtastic/Meshtastic-Android,mertrois,mertrois,la mer,lukerl@gmail.com,2022-12-13T00:30:35+00:00,2022-12-13T00:30:35+00:00,0,1,1,1,1.0,departed,179,1.0
-meshtastic/Meshtastic-Android,Krezalis,Krezalis,Krezalis,krezalis@gmail.com,2022-12-03T21:52:21+00:00,2022-12-03T21:52:21+00:00,0,1,1,1,1.0,departed,181,1.0
-meshtastic/Meshtastic-Android,unknown,,srichs,unknown,2021-09-07T04:43:33+00:00,2021-09-07T04:43:33+00:00,0,1,1,1,1.0,departed,245,1.0
-meshtastic/Meshtastic-Android,attila@qualisoft.hu,,attila@qualisoft,attila@qualisoft.hu,2021-07-21T12:41:31+00:00,2021-07-21T12:41:31+00:00,0,1,1,1,1.0,departed,252,1.0
-meshtastic/Meshtastic-Android,rkuksa,rkuksa,rkuksa,rkuksa@users.noreply.github.com,2021-07-20T02:19:15+00:00,2021-07-20T02:19:15+00:00,0,1,1,1,1.0,departed,252,1.0
-meshtastic/Meshtastic-Android,email@merhaut.cz,,Zbynek Merhaut,email@merhaut.cz,2021-04-11T10:10:17+00:00,2021-04-11T10:10:17+00:00,0,1,1,1,1.0,departed,266,1.0
-meshtastic/Meshtastic-Android,danielnemenyi,danielnemenyi,Daniel Nemenyi,daniel.nemenyi@kcl.ac.uk,2021-03-22T09:14:29+00:00,2021-03-22T09:14:29+00:00,0,1,1,1,1.0,departed,269,1.0
-meshtastic/Meshtastic-Android,comgram,comgram,comgram,comgram@gmail.com,2020-09-21T07:30:53+00:00,2020-09-21T07:30:53+00:00,0,1,1,1,1.0,departed,295,1.0
-meshtastic/Meshtastic-Android,smack815,smack815,smack815,smack815@gmail.com,2020-09-14T00:44:29+00:00,2020-09-14T00:44:29+00:00,0,1,1,1,1.0,departed,296,1.0
-meshtastic/Meshtastic-Android,rubenpt@tutanota.com,,RR,rubenpt@tutanota.com,2020-08-22T18:03:16+00:00,2020-08-22T18:03:16+00:00,0,1,1,1,1.0,departed,300,1.0
-meshtastic/Meshtastic-Android,zjwhitehead,zjwhitehead,Zach Whitehead,zjwhitehead@users.noreply.github.com,2020-07-16T23:40:11+00:00,2020-07-16T23:40:11+00:00,0,1,1,1,1.0,departed,305,1.0
-meshtastic/Meshtastic-Android,tuxphone,tuxphone,tuxphone,67556506+tuxphone@users.noreply.github.com,2020-06-28T18:47:41+00:00,2020-06-28T18:47:41+00:00,0,1,1,1,1.0,departed,307,1.0
-meshtastic/Meshtastic-Android,tomasbrincil,tomasbrincil,Tomas B. / OK1BT,me@tomasbrincil.cz,2020-06-15T11:13:06+00:00,2020-06-15T11:13:06+00:00,0,1,1,1,1.0,departed,309,1.0
-meshtastic/Meshtastic-Android,Konradrundfunk,Konradrundfunk,KonradRundfunk,33392939+Konradrundfunk@users.noreply.github.com,2020-05-20T07:28:50+00:00,2020-05-20T07:28:50+00:00,0,1,1,1,1.0,departed,313,1.0
 meshtastic/web,sachaw,sachaw,Sacha Weatherstone,sachaw100@hotmail.com,2021-04-05T23:29:12+00:00,2025-03-01T08:12:56+00:00,1425,430,86,203,0.4236,departed,64,5.0
 meshtastic/web,danditomaso,danditomaso,Dan Ditomaso,dan.ditomaso@gmail.com,2024-12-29T01:21:40+00:00,2026-03-17T01:25:38+00:00,443,425,51,63,0.8095,active,,8.33
 meshtastic/web,Hunter275,Hunter275,Hunter Thornsberry,hunter@hunterthornsberry.com,2024-06-04T03:41:21+00:00,2025-07-24T01:30:44+00:00,414,233,32,59,0.5424,departed,43,7.28
@@ -1263,52 +1267,47 @@ meshtastic/web,zierke,zierke,zierke,89523378+zierke@users.noreply.github.com,202
 meshtastic/web,GMart,GMart,Garrett M,garrett.atoms@Gmail.com,2023-01-02T08:40:02+00:00,2023-01-02T08:40:02+00:00,0,1,1,1,1.0,departed,176,1.0
 meshtastic/web,osmanovv,osmanovv,Vladislav Osmanov,7123463+osmanovv@users.noreply.github.com,2021-08-14T18:58:05+00:00,2021-08-14T18:58:05+00:00,0,1,1,1,1.0,departed,249,1.0
 meshtastic/web,luandro,luandro,luandro,luandro@gmail.com,2021-04-12T23:40:56+00:00,2021-04-12T23:40:56+00:00,0,1,1,1,1.0,departed,266,1.0
-iiab/iiab,holta,holta,A Holt,holta@users.noreply.github.com,2017-05-28T14:28:40+00:00,2026-05-24T00:44:30+00:00,3282,10579,428,468,0.9145,active,,24.72
-iiab/iiab,jvonau,jvonau,Jerry Vonau,jvonau3@gmail.com,2017-06-19T23:26:02+00:00,2026-05-13T22:02:02+00:00,3249,1568,161,464,0.347,active,,9.74
-iiab/iiab,georgejhunt,georgejhunt,George Hunt,georgejhunt@gmail.com,2017-05-27T18:09:50+00:00,2022-07-07T22:51:29+00:00,1867,736,91,266,0.3421,departed,202,8.09
-iiab/iiab,Ark74,Ark74,Ark74,ark@switnet.org,2025-05-13T15:47:26+00:00,2026-05-24T00:31:56+00:00,375,311,25,53,0.4717,active,,12.44
-iiab/iiab,tim-moody,tim-moody,Tim Moody,tim@timmoody.com,2017-05-30T17:23:47+00:00,2026-04-24T13:58:34+00:00,3250,288,77,464,0.1659,active,,3.74
-iiab/iiab,orblivion,orblivion,Daniel Krol,orblivion@gmail.com,2025-10-17T18:00:22+00:00,2026-05-14T20:13:44+00:00,209,245,27,29,0.931,active,,9.07
-iiab/iiab,chapmanjacobd,chapmanjacobd,Jacob Chapman,7908073+chapmanjacobd@users.noreply.github.com,2025-09-30T18:17:28+00:00,2026-04-15T12:57:03+00:00,196,197,12,28,0.4286,active,,16.42
-iiab/iiab,m-anish,m-anish,Anish Mangal,m-anish@users.noreply.github.com,2018-06-29T06:41:10+00:00,2021-07-19T07:47:29+00:00,1116,148,11,159,0.0692,departed,252,13.45
-iiab/iiab,veeara282,veeara282,Aidan Fitzgerald,acf67@cornell.edu,2018-10-09T16:19:30+00:00,2019-09-06T17:59:56+00:00,332,132,14,47,0.2979,departed,350,9.43
-iiab/iiab,arky,arky,Arky,hitmanarky@gmail.com,2017-10-01T09:45:11+00:00,2019-01-30T15:56:40+00:00,486,80,16,69,0.2319,departed,381,5.0
-iiab/iiab,avni,avni,root,avni@users.noreply.github.com,2024-12-28T20:59:56+00:00,2025-09-30T03:54:17+00:00,275,70,16,39,0.4103,departed,33,4.38
-iiab/iiab,root@box.lan,,root,root@box.lan,2018-04-03T16:50:10+00:00,2025-03-19T06:22:04+00:00,2541,64,17,363,0.0468,departed,61,3.76
-iiab/iiab,Akatama,Akatama,Akatama,jimmyl@pacbell.net,2025-03-06T20:53:56+00:00,2026-03-14T04:15:11+00:00,372,51,12,53,0.2264,active,,4.25
-iiab/iiab,cwivagg,cwivagg,cwivagg,cwivagg@gmail.com,2022-04-30T11:07:09+00:00,2023-01-07T13:27:56+00:00,252,41,15,36,0.4167,departed,176,2.73
-iiab/iiab,mitra42,mitra42,Mitra Ardron,mitra@mitra.biz,2019-04-22T09:00:26+00:00,2019-10-16T06:03:38+00:00,176,37,7,25,0.28,departed,344,5.29
-iiab/iiab,deldesir,deldesir,deldesir,blondel.md@gmail.com,2021-04-28T15:28:33+00:00,2025-05-15T20:41:32+00:00,1478,29,7,211,0.0332,departed,53,4.14
-iiab/iiab,neomatrixcode,neomatrixcode,neomatrixcode,josuecevedo@gmail.com,2023-05-16T02:53:35+00:00,2023-06-08T18:27:31+00:00,23,14,4,3,1.3333,departed,154,3.5
-iiab/iiab,jvonau3.gmail.com,,Jerry Vonau,jvonau3.gmail.com,2022-04-25T17:22:01+00:00,2022-04-28T18:40:16+00:00,3,14,1,1,1.0,departed,212,14.0
-iiab/iiab,lemueldsouza,lemueldsouza,lemueldsouza,lemueldsouza@users.noreply.github.com,2021-07-13T04:32:18+00:00,2021-08-18T08:52:48+00:00,36,12,4,5,0.8,departed,248,3.0
-iiab/iiab,EMG70,EMG70,EMG70,52469992+EMG70@users.noreply.github.com,2023-04-10T14:14:02+00:00,2023-04-10T16:36:47+00:00,0,10,1,1,1.0,departed,162,10.0
-iiab/iiab,dahagag,dahagag,Mohamad Abuelhagag,mohammed.abuelhagag@gmail.com,2022-06-30T13:34:34+00:00,2026-02-05T19:31:13+00:00,1316,9,3,188,0.016,departed,15,3.0
-iiab/iiab,you@example.com,,root,you@example.com,2020-11-02T20:29:32+00:00,2021-11-26T20:12:46+00:00,388,9,5,55,0.0909,departed,234,1.8
-iiab/iiab,axl4@cornell.edu,,Angela Liu,axl4@cornell.edu,2018-11-03T06:27:44+00:00,2018-11-03T06:35:17+00:00,0,9,1,1,1.0,departed,394,9.0
-iiab/iiab,albert@einstein.edu,,root,albert@einstein.edu,2022-07-11T14:47:01+00:00,2025-01-27T02:26:16+00:00,930,6,4,132,0.0303,departed,68,1.5
-iiab/iiab,hal@haleisen.com,,Hal Eisen,hal@haleisen.com,2025-08-21T20:01:40+00:00,2025-08-30T01:19:09+00:00,8,5,2,1,2.0,departed,38,2.5
-iiab/iiab,root@deb10-srv,,root,root@deb10-srv,2020-10-28T21:57:55+00:00,2020-10-29T00:57:57+00:00,0,4,1,1,1.0,departed,290,4.0
-iiab/iiab,c-w,c-w,Clemens Wolff,clemens@ascoderu.ca,2018-11-12T14:30:25+00:00,2020-04-29T15:30:23+00:00,534,4,4,76,0.0526,departed,316,1.0
-iiab/iiab,rgangela99,rgangela99,rgangela99,rgangela99@gmail.com,2018-11-03T06:27:44+00:00,2018-11-03T06:36:29+00:00,0,4,1,1,1.0,departed,394,4.0
-iiab/iiab,aidan-fitz@users.noreply.github.com,,Aidan Fitzgerald,aidan-fitz@users.noreply.github.com,2018-10-17T18:32:06+00:00,2019-03-02T08:28:09+00:00,135,3,3,19,0.1579,departed,377,1.0
-iiab/iiab,icebox827,icebox827,icebox827,icebox827@gmail.com,2021-11-11T15:23:07+00:00,2021-11-22T15:34:20+00:00,11,2,2,1,2.0,departed,234,1.0
-iiab/iiab,adamsclafani,adamsclafani,Adam Sclafani,adam.sclafani15@gmail.com,2020-09-09T13:51:28+00:00,2020-09-09T13:51:28+00:00,0,2,1,1,1.0,departed,297,2.0
-iiab/iiab,peckjon,peckjon,Jon Peck,peckjon@gmail.com,2025-03-08T20:30:41+00:00,2025-03-08T20:30:41+00:00,0,1,1,1,1.0,departed,63,1.0
-iiab/iiab,avni-teacher,avni-teacher,Avni Khatri,avni@avni.net,2022-07-20T04:12:23+00:00,2022-07-20T04:12:23+00:00,0,1,1,1,1.0,departed,200,1.0
-iiab/iiab,root@raspberrypi,,root,root@raspberrypi,2022-01-07T16:16:57+00:00,2022-01-07T16:16:57+00:00,0,1,1,1,1.0,departed,228,1.0
-iiab/iiab,hermanounapuu@gmail.com,,Herman Õunapuu,hermanounapuu@gmail.com,2021-06-30T04:40:55+00:00,2021-06-30T04:40:55+00:00,0,1,1,1,1.0,departed,255,1.0
-iiab/iiab,vagrant@box.lan,,Vagrant Default User,vagrant@box.lan,2020-09-09T13:51:28+00:00,2020-09-09T13:51:28+00:00,0,1,1,1,1.0,departed,297,1.0
-iiab/iiab,joshua@localhost.localdomain,,Joshua Dennis,joshua@localhost.localdomain,2020-05-12T21:47:02+00:00,2020-05-12T21:47:02+00:00,0,1,1,1,1.0,departed,314,1.0
-iiab/iiab,floydianslips,floydianslips,Joshua Dennis,nomore2pick@gmail.com,2020-04-26T21:54:58+00:00,2020-04-26T21:54:58+00:00,0,1,1,1,1.0,departed,316,1.0
-iiab/iiab,Daniel-Mietchen,Daniel-Mietchen,Daniel Mietchen,daniel.mietchen@googlemail.com,2019-11-02T15:44:06+00:00,2019-11-02T15:44:06+00:00,0,1,1,1,1.0,departed,342,1.0
-iiab/iiab,anishmg@edu,,Anish Mangal,anishmg@edu,2019-02-11T13:27:27+00:00,2019-02-11T13:27:27+00:00,0,1,1,1,1.0,departed,379,1.0
-iiab/iiab,root@DESKTOP-83MTAKL.localdomain,,root,root@DESKTOP-83MTAKL.localdomain,2018-09-06T14:45:13+00:00,2018-09-06T14:45:13+00:00,0,1,1,1,1.0,departed,402,1.0
-iiab/iiab,jvonau@gmail3.com,,Jerry Vonau,jvonau@gmail3.com,2017-11-07T03:22:30+00:00,2017-11-07T03:22:30+00:00,0,1,1,1,1.0,departed,445,1.0
 mysociety/ceuk-marking,struan,struan,Struan Donald,struan@exo.org.uk,2022-12-19T16:21:51+00:00,2026-05-20T13:28:33+00:00,1247,614,105,178,0.5899,active,,5.85
 mysociety/ceuk-marking,zarino,zarino,Zarino Zappia,mail@zarino.co.uk,2023-01-20T16:00:55+00:00,2024-11-21T13:46:27+00:00,670,26,10,95,0.1053,departed,78,2.6
 mysociety/ceuk-marking,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-02-06T12:21:25+00:00,2026-03-03T16:33:53+00:00,1121,24,19,160,0.1187,active,,1.26
 mysociety/ceuk-marking,alexander-griffen,alexander-griffen,Alexander Griffen,alexander@mysociety.org,2023-06-01T12:49:06+00:00,2023-06-08T14:43:44+00:00,7,7,2,1,2.0,departed,154,3.5
 mysociety/ceuk-marking,sagepe,sagepe,Sam Pearson,sam@sgp.me.uk,2026-03-03T08:41:35+00:00,2026-03-04T14:57:02+00:00,1,5,1,1,1.0,active,,5.0
+oklabflensburg/oddfl,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-01-30T23:32:53+00:00,2026-02-09T10:08:27+00:00,740,96,11,105,0.1048,departed,14,8.73
+oklabflensburg/oddfl,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2026-02-01T15:39:04+00:00,2026-02-08T18:03:32+00:00,7,9,2,1,2.0,departed,14,4.5
+oklabflensburg/oddfl,midzer,midzer,midzer,midzer@gmail.com,2024-02-15T02:27:13+00:00,2024-02-17T23:40:05+00:00,2,6,1,1,1.0,departed,117,6.0
+oklabflensburg/open-biotope-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-10-08T15:31:28+00:00,2026-04-05T13:41:36+00:00,543,62,8,77,0.1039,active,,7.75
+oklabflensburg/open-data-api,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2023-08-30T12:33:36+00:00,2026-04-12T16:56:24+00:00,956,262,38,136,0.2794,active,,6.89
+oklabflensburg/open-data-api,sonnenteich,sonnenteich,sonnenteich,59643794+sonnenteich@users.noreply.github.com,2025-07-03T20:19:59+00:00,2025-07-08T19:20:06+00:00,4,5,2,1,2.0,departed,45,2.5
+oklabflensburg/open-data-api,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2023-10-06T11:37:11+00:00,2025-06-19T16:41:49+00:00,622,3,3,88,0.0341,departed,48,1.0
+oklabflensburg/open-data-api,Philzen,Philzen,Philzen,philzen@riseup.net,2025-05-14T17:33:02+00:00,2025-05-14T17:52:43+00:00,0,2,1,1,1.0,departed,53,2.0
+oklabflensburg/open-emergency-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2025-06-01T15:47:39+00:00,2026-04-11T09:07:23+00:00,313,9,3,44,0.0682,active,,3.0
+oklabflensburg/open-monuments-map,p3t3r67x0,p3t3r67x0,Open Data Coder,7386680+p3t3r67x0@users.noreply.github.com,2023-02-22T14:47:49+00:00,2026-02-10T09:09:32+00:00,1083,283,75,154,0.487,departed,14,3.77
+oklabflensburg/open-monuments-map,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-10-05T10:05:49+00:00,2025-10-08T11:33:48+00:00,734,5,5,104,0.0481,departed,32,1.0
+oklabflensburg/open-monuments-map,Copilot,Copilot,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,2025-10-08T11:44:28+00:00,2025-10-08T11:49:59+00:00,0,2,1,1,1.0,departed,32,2.0
+oklabflensburg/open-monuments-map,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2023-09-25T19:18:32+00:00,2023-09-25T19:19:09+00:00,0,2,1,1,1.0,departed,138,2.0
+oklabflensburg/open-parcel-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-10-31T12:06:25+00:00,2025-09-20T16:35:06+00:00,324,26,7,46,0.1522,departed,34,3.71
+oklabflensburg/open-parcel-map,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-12-13T16:31:15+00:00,2024-12-13T16:31:15+00:00,0,1,1,1,1.0,departed,75,1.0
+oklabflensburg/open-recycling-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2023-07-25T07:59:43+00:00,2026-04-05T14:05:14+00:00,985,36,10,140,0.0714,active,,3.6
+oklabflensburg/open-school-map,p3t3r67x0,p3t3r67x0,Aurelius Wendelken,webtobesocial@gmail.com,2024-01-05T17:42:55+00:00,2026-04-12T16:35:17+00:00,827,123,21,118,0.178,active,,5.86
+oklabflensburg/open-school-map,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2026-03-13T10:07:10+00:00,2026-03-13T10:07:10+00:00,0,1,1,1,1.0,active,,1.0
+oklabflensburg/open-trees-map,p3t3r67x0,p3t3r67x0,Open Data Coder,7386680+p3t3r67x0@users.noreply.github.com,2023-04-28T07:08:46+00:00,2026-03-24T07:43:04+00:00,1061,82,23,151,0.1523,active,,3.57
+oklabflensburg/open-trees-map,Pfannkuchensack,Pfannkuchensack,Alexander Eichhorn,alex@eichhorn.dev,2023-05-16T11:49:48+00:00,2023-06-09T12:52:46+00:00,24,8,2,3,0.6667,departed,154,4.0
+oklabflensburg/open-trees-map,SteffensKunst,SteffensKunst,Programmierlauch,130170534+Programmierlauch@users.noreply.github.com,2023-05-10T19:17:46+00:00,2023-05-18T09:24:01+00:00,7,5,2,1,2.0,departed,157,2.5
+oklabflensburg/open-trees-map,roaldchristesen,roaldchristesen,Roald Christesen,roald@grain.one,2023-05-01T14:30:16+00:00,2025-06-04T17:02:50+00:00,765,3,3,109,0.0275,departed,50,1.0
+oklabflensburg/open-trees-map,dbo-monomorph,dbo-monomorph,monomorph,github@monomorph.de,2023-06-07T19:08:18+00:00,2023-06-07T19:08:18+00:00,0,1,1,1,1.0,departed,154,1.0
+openlegaldata/oldp,malteos,malteos,malteos,github@i.mieo.de,2018-05-07T10:18:50+00:00,2026-05-20T17:17:46+00:00,2935,350,64,419,0.1527,active,,5.47
+openlegaldata/oldp,github-actions[bot],github-actions[bot],github-actions[bot],github-actions[bot]@users.noreply.github.com,2026-02-13T12:39:55+00:00,2026-05-20T17:18:40+00:00,96,21,10,13,0.7692,active,,2.1
+openlegaldata/oldp,langhabel,langhabel,langhabel,langhabel@users.noreply.github.com,2018-11-24T21:42:28+00:00,2019-03-26T14:04:43+00:00,121,15,7,17,0.4118,departed,373,2.14
+openlegaldata/oldp,dependabot[bot],dependabot[bot],dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2019-11-01T17:25:06+00:00,2021-02-05T07:32:30+00:00,461,9,7,65,0.1077,departed,276,1.29
+openlegaldata/oldp,ms@mieo.de,,Malte,ms@mieo.de,2018-09-05T14:52:29+00:00,2019-02-12T08:19:59+00:00,159,6,4,22,0.1818,departed,379,1.5
+openlegaldata/oldp,github@uli-staerk.de,,Uli Stärk,github@uli-staerk.de,2019-09-20T13:55:01+00:00,2019-09-23T10:27:07+00:00,2,4,2,1,2.0,departed,347,2.0
+openlegaldata/oldp,malteosbot,malteosbot,malteosbot,malteosbot@fiq.de,2026-03-26T08:07:50+00:00,2026-03-26T08:46:32+00:00,0,3,1,1,1.0,active,,3.0
+openlegaldata/oldp,snyk-bot,snyk-bot,snyk-bot,snyk-bot@snyk.io,2020-05-01T07:27:19+00:00,2021-02-04T07:27:13+00:00,278,3,2,39,0.0513,departed,276,1.5
+openlegaldata/oldp,timgrein,timgrein,Tim Grein,tim@4greins.de,2026-03-16T09:01:15+00:00,2026-03-16T09:51:12+00:00,0,2,1,1,1.0,active,,2.0
+openlegaldata/oldp,ms@openlegaldata.io,,malteos,ms@openlegaldata.io,2023-02-16T10:49:32+00:00,2023-02-16T10:56:11+00:00,0,2,1,1,1.0,departed,170,2.0
+openlegaldata/oldp,langhabel@campus.tu-berlin.de,,Jonas Langhabel,langhabel@campus.tu-berlin.de,2018-09-02T14:52:18+00:00,2018-11-10T23:40:31+00:00,69,2,2,9,0.2222,departed,392,1.0
+openlegaldata/oldp,lithu810,lithu810,lithu810,lithuyasuresh30@outlook.com,2025-07-15T15:22:35+00:00,2025-07-15T15:22:35+00:00,0,1,1,1,1.0,departed,44,1.0
+openlegaldata/oldp,snyk-test@snyk.io,,snyk-test,snyk-test@snyk.io,2019-08-23T07:27:12+00:00,2019-08-23T07:27:12+00:00,0,1,1,1,1.0,departed,352,1.0
+openlegaldata/oldp,t-blume,t-blume,Till Blume,till_blume@gmx.de,2018-11-20T16:31:01+00:00,2018-11-20T16:31:01+00:00,0,1,1,1,1.0,departed,391,1.0
+openlegaldata/oldp,ImgBotApp,ImgBotApp,ImgBotApp,ImgBotHelp@gmail.com,2018-06-23T19:42:43+00:00,2018-06-23T19:42:43+00:00,0,1,1,1,1.0,departed,412,1.0
 ton-An/station_reach,ton-An,ton-An,Anton,anton@antons-webfabrik.eu,2025-08-26T14:55:16+00:00,2026-05-11T09:46:09+00:00,257,272,14,36,0.3889,active,,19.43
-fvialibre/heseia-sentence-bias-dataset,guidoivetta,guidoivetta,Guido Ivetta,guidoivetta@mi.unc.edu.ar,2025-05-20T19:55:17+00:00,2025-09-11T22:00:12+00:00,114,9,3,16,0.1875,departed,36,3.0

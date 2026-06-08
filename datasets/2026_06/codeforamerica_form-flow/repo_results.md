@@ -21,7 +21,7 @@
 
 ## Main findings
 
-_Per-repository narrative findings are not bundled with this snapshot. See [`../analysis_n56.md`](../analysis_n56.md) for cross-cutting findings; the per-repository quantitative metrics are in the **Key metrics** table below._
+_Per-repository narrative findings are not bundled with this snapshot. See [`../analysis_n55.md`](../analysis_n55.md) for cross-cutting findings; the per-repository quantitative metrics are in the **Key metrics** table below._
 
 ## Key metrics
 
@@ -66,4 +66,4 @@ _Per-repository narrative findings are not bundled with this snapshot. See [`../
 ## See also
 
 - [`../README.md`](../README.md) — full dataset overview and reproduction instructions
-- [`../analysis_n56.md`](../analysis_n56.md) — academic writeup of the n=56 corpus
+- [`../analysis_n55.md`](../analysis_n55.md) — academic writeup of the n=55 corpus

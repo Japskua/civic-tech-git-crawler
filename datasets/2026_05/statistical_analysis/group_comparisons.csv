@@ -1,20 +1,20 @@
 comparison,metric,group_a_n,group_b_n,group_a_median,group_b_median,U_statistic,p_value,cliffs_delta,effect_magnitude
-CI/CD vs No CI/CD,bus_factor,47,9,1.0,1.0,278.0,0.0838,0.3144,small
-CI/CD vs No CI/CD,bus_factor_no_bots,47,9,1.0,1.0,282.0,0.0699,0.3333,medium
-CI/CD vs No CI/CD,stale_issue_ratio,32,3,0.8984,0.8,49.0,0.976,0.0208,negligible
-CI/CD vs No CI/CD,health_percentage,48,9,50.0,37.0,262.0,0.3099,0.213,small
-CI/CD vs No CI/CD,num_developers,48,9,9.0,2.0,348.5,0.0038,0.6134,large
-CI/CD vs No CI/CD,total_commits,48,9,433.0,154.0,349.5,0.0036,0.6181,large
-Cloud vs No Cloud,total_commits,29,28,676.0,223.0,607.0,0.0014,0.4951,large
-Cloud vs No Cloud,num_developers,29,28,11.0,4.0,598.0,0.0022,0.4729,medium
-Cloud vs No Cloud,bus_factor_no_bots,29,27,2.0,1.0,584.0,0.0003,0.4917,large
-Cloud vs No Cloud,health_percentage,29,28,50.0,50.0,375.0,0.6196,-0.0764,negligible
-Cloud vs No Cloud,hhi_no_bots,29,27,4091.5,9113.0,234.0,0.0098,-0.4023,medium
-AI/ML vs No AI/ML,num_developers,6,51,11.0,6.0,177.0,0.5402,0.1569,small
-AI/ML vs No AI/ML,bus_factor_no_bots,5,51,1.0,1.0,132.5,0.8807,0.0392,negligible
-AI/ML vs No AI/ML,health_percentage,6,51,37.0,50.0,83.5,0.0673,-0.4542,medium
-OSI License vs No License,health_percentage,34,23,50.0,50.0,414.0,0.709,0.0588,negligible
-OSI License vs No License,num_developers,34,23,11.0,4.0,597.5,0.0008,0.5281,large
-OSI License vs No License,bus_factor_no_bots,34,22,1.5,1.0,495.5,0.0185,0.3249,small
-OSI License vs No License,stars,34,23,10.0,2.0,631.5,0.0001,0.6151,large
-OSI License vs No License,forks,34,23,5.5,1.0,586.5,0.0013,0.5,large
+CI/CD vs No CI/CD,bus_factor,47,8,1.0,1.0,245.0,0.115,0.3032,small
+CI/CD vs No CI/CD,bus_factor_no_bots,47,8,1.0,1.0,248.5,0.098,0.3218,small
+CI/CD vs No CI/CD,stale_issue_ratio,31,3,0.8987,0.8,49.0,0.9012,0.0538,negligible
+CI/CD vs No CI/CD,health_percentage,47,8,50.0,39.5,216.0,0.5023,0.1489,small
+CI/CD vs No CI/CD,num_developers,47,8,9.0,3.0,298.5,0.0085,0.5878,large
+CI/CD vs No CI/CD,total_commits,47,8,445.0,170.0,296.5,0.0099,0.5771,large
+Cloud vs No Cloud,total_commits,29,26,676.0,258.5,552.0,0.0033,0.4642,medium
+Cloud vs No Cloud,num_developers,29,26,11.0,4.0,542.0,0.0055,0.4377,medium
+Cloud vs No Cloud,bus_factor_no_bots,29,26,2.0,1.0,560.5,0.0004,0.4867,large
+Cloud vs No Cloud,health_percentage,29,26,50.0,56.0,320.0,0.3304,-0.1512,small
+Cloud vs No Cloud,hhi_no_bots,29,26,4091.5,8343.95,233.0,0.0153,-0.382,medium
+AI/ML vs No AI/ML,num_developers,5,50,15.0,6.5,162.5,0.2777,0.3,small
+AI/ML vs No AI/ML,bus_factor_no_bots,5,50,1.0,1.0,129.0,0.9058,0.032,negligible
+AI/ML vs No AI/ML,health_percentage,5,50,37.0,50.0,74.5,0.1347,-0.404,medium
+OSI License vs No License,health_percentage,34,21,50.0,62.0,350.5,0.9154,-0.0182,negligible
+OSI License vs No License,num_developers,34,21,11.0,4.0,533.5,0.0022,0.4944,large
+OSI License vs No License,bus_factor_no_bots,34,21,1.5,1.0,470.0,0.0244,0.3165,small
+OSI License vs No License,stars,34,21,10.0,2.0,573.0,0.0002,0.605,large
+OSI License vs No License,forks,34,21,5.5,1.0,525.5,0.0032,0.472,medium

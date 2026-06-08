@@ -3,9 +3,9 @@ message: >-
   If you use this dataset, please cite both the dataset and the tool that
   produced it (see CITATION.cff at the repository root).
 type: dataset
-title: "Civic-Tech Corpus — 2026-05 Refresh (n = 57)"
+title: "Civic-Tech Corpus — 2026-05 Refresh (n = 55)"
 abstract: >-
-  A curated corpus of 57 open-source civic-technology repositories from 24
+  A curated corpus of 55 open-source civic-technology repositories from 24
   organisations across five continents (North America, Africa, Japan, Taiwan,
   Europe), crawled 2026-05-21 to 2026-05-24. Each repository carries
   repository-level metrics, per-(repository, contributor) commit counts with a

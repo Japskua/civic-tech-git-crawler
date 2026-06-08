@@ -1,6 +1,6 @@
 {
-  "title": "Civic-Tech Corpus — 2026-05 Refresh (n = 57)",
-  "description": "A curated corpus of 57 open-source civic-technology repositories from 24 organisations across five continents (North America, Africa, Japan, Taiwan, Europe), crawled 2026-05-21 to 2026-05-24. Includes repository, contributor, temporal, and CHAOSS metrics; full-history weekly snapshots and per-(contributor, ISO-week) activity (commits + lines added/removed); 45+ CHAOSS metrics including bus factor, elephant factor, HHI, and burstiness; issue analytics; statistical analyses; weekly-activity analyses; synthesis figures; and per-repository folders. Companion to the paper 'Sustainability Is Not Emergent: Contributor Concentration Across 57 Open-Source Civic-Technology Projects.'",
+  "title": "Civic-Tech Corpus — 2026-05 Refresh (n = 55)",
+  "description": "A curated corpus of 55 open-source civic-technology repositories from 24 organisations across five continents (North America, Africa, Japan, Taiwan, Europe), crawled 2026-05-21 to 2026-05-24. Includes repository, contributor, temporal, and CHAOSS metrics; full-history weekly snapshots and per-(contributor, ISO-week) activity (commits + lines added/removed); 45+ CHAOSS metrics including bus factor, elephant factor, HHI, and burstiness; issue analytics; statistical analyses; weekly-activity analyses; synthesis figures; and per-repository folders. Companion to the paper 'Sustainability Is Not Emergent: Contributor Concentration Across 57 Open-Source Civic-Technology Projects.'",
   "upload_type": "dataset",
   "access_right": "open",
   "license": "cc-by-4.0",
