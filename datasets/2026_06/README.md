@@ -227,6 +227,19 @@ leaving **n = 55**.
   (the At-a-glance table now includes **AI-assisted development** and **Ships LLM
   product feature** rows)
 
+### Corpus provenance (pre-crawl selection)
+
+- `civic_tech_candidate_projects.csv` — the raw candidate list the corpus was
+  selected from: **120 projects evaluated → 55 marked `Final Selected = Yes`**
+  (an exact match for this snapshot's roster), with selection-signal columns
+  (`Final Selected`, `"Contact Us"`, `Formal Feedback`) and point-in-time repo
+  stats. These are *selection-time* figures, independent of the crawler's
+  measurements.
+- `civic_tech_candidate_projects.gnumeric` — the original file verbatim. It was
+  supplied with a `.csv` name but is actually a gzipped [Gnumeric](http://www.gnumeric.org/)
+  workbook; the `.csv` above was recovered by parsing its XML cell grid (no
+  values altered).
+
 ---
 
 ## Reproducing this dataset
