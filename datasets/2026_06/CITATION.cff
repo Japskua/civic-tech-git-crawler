@@ -3,17 +3,23 @@ message: >-
   If you use this dataset, please cite both the dataset and the tool that
   produced it (see CITATION.cff at the repository root).
 type: dataset
-title: "Civic-Tech Corpus — 2026-05 Refresh (n = 55)"
+title: "Civic-Tech Corpus — 2026-06 Refresh (n = 55, with AI-usage detection)"
 abstract: >-
   A curated corpus of 55 open-source civic-technology repositories from 24
   organisations across five continents (North America, Africa, Japan, Taiwan,
-  Europe), crawled 2026-05-21 to 2026-05-24. Each repository carries
+  Europe), re-crawled 2026-06-03 to 2026-06-04. It extends the 2026-05 refresh
+  with an AI-usage detection layer that distinguishes three phenomena:
+  traditional/classical ML, LLMs shipped as a product feature, and LLM coding
+  tools used to build the software (detected from agent config files, commit
+  co-author trailers, AI agent-bot commits/PRs, CI agents, and review bots),
+  each with first-appearance dating. Each repository also carries
   repository-level metrics, per-(repository, contributor) commit counts with a
   heuristic bot flag, PR and tag/release cadence, full-history weekly snapshots,
   per-(contributor, ISO-week) activity (commits + lines added/removed), 45+
-  CHAOSS metrics including bus factor, elephant factor, HHI, and burstiness,
-  and issue analytics. Companion analyses (statistical_analysis/,
-  weekly_activity_analysis/) and synthesis figures are included.
+  CHAOSS metrics including bus factor, elephant factor, HHI, and burstiness, and
+  issue analytics. Companion analyses (statistical_analysis/,
+  weekly_activity_analysis/, ai_usage_analysis/), figures, per-repository
+  folders, and the pre-crawl candidate-selection list are included.
 authors:
   - family-names: Parkkila
     given-names: Janne
@@ -32,11 +38,11 @@ authors:
     given-names: Antti
     affiliation: "LUT University"
     # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
-date-released: "2026-05-24"
-version: "2026.05"
+date-released: "2026-06-04"
+version: "2026.06"
 license: CC-BY-4.0
 repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
-url: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05"
+url: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_06"
 keywords:
   - civic-technology
   - open-source-sustainability
@@ -44,14 +50,14 @@ keywords:
   - CHAOSS
   - software-engineering
   - GitHub
+  - AI-assisted-development
+  - large-language-models
+  - generative-AI
   - dataset
-doi: "10.5281/zenodo.20493288"
+# doi: "10.5281/zenodo.XXXXXXXX"   # add the Zenodo version DOI after deposit
 identifiers:
-  - type: doi
-    value: "10.5281/zenodo.20493288"
-    description: "Concept DOI for the dataset on Zenodo (always resolves to the latest version)"
   - type: url
-    value: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_05"
+    value: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_06"
     description: "Source location of this dataset in the project repository"
 references:
   - type: software

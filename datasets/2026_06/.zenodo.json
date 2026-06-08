@@ -1,0 +1,48 @@
+{
+  "title": "Civic-Tech Corpus — 2026-06 Refresh (n = 55, with AI-usage detection)",
+  "description": "A curated corpus of 55 open-source civic-technology repositories from 24 organisations across five continents (North America, Africa, Japan, Taiwan, Europe), re-crawled 2026-06-03 to 2026-06-04. Extends the 2026-05 refresh with an AI-usage detection layer that distinguishes traditional/classical ML, LLMs shipped as a product feature, and LLM coding tools used to build the software (agent config files, commit co-author trailers, AI agent-bot commits/PRs, CI agents, review bots) with first-appearance dating. Also includes repository, contributor, temporal, and CHAOSS metrics; full-history weekly snapshots and per-(contributor, ISO-week) activity (commits + lines added/removed); 45+ CHAOSS metrics including bus factor, elephant factor, HHI, and burstiness; issue analytics; statistical, weekly-activity, and AI-usage analyses; figures; per-repository folders; and the pre-crawl candidate-selection list.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "2026.06",
+  "publication_date": "2026-06-04",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Parkkila, Janne",
+      "affiliation": "LUT University"
+    },
+    {
+      "name": "Tran, Duc Thinh",
+      "affiliation": "IMT Atlantique"
+    },
+    {
+      "name": "Olshanskaia, Viktoriia",
+      "affiliation": "LUT University"
+    },
+    {
+      "name": "Knutas, Antti",
+      "affiliation": "LUT University"
+    }
+  ],
+  "keywords": [
+    "civic-technology",
+    "open-source-sustainability",
+    "mining-software-repositories",
+    "CHAOSS",
+    "software-engineering",
+    "GitHub",
+    "AI-assisted-development",
+    "large-language-models",
+    "generative-AI",
+    "contributor-dynamics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Japskua/civic-tech-git-crawler",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}

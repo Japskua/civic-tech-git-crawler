@@ -1658,7 +1658,7 @@ readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
 ```bibtex
 @dataset{civic_tech_corpus_2026_05,
   title     = {Civic-Tech Corpus — 2026-05},
-  author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia},
+  author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia and Knutas, Antti},
   year      = {2026},
   publisher = {Zenodo},
   version   = {2026.05},
