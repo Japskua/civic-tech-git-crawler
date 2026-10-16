@@ -9,13 +9,13 @@ folder; see `statistical_analysis/`, `weekly_activity_analysis/`, and
 
 ## 1. Dataset
 
-55 open-source civic-technology projects across 24 organisations and seven
+55 open-source civic-technology projects across 23 organisations and seven
 regions (US, Canada, Africa, Japan, Taiwan, Germany, UK/Sweden). Projects are
 selected on *design intent* — civic engagement, government services,
 participation, transparency, open data, or democratic process — not on whether
 their only use is civic. The roster is identical to 2026-05, enabling
-month-over-month comparison. Aggregate: 90,669 commits, 661 contributors (607
-human, 54 bot), median project age 3.5 years, 17 primary languages.
+month-over-month comparison. Aggregate: 90,468 commits, 660 contributors (606
+human, 54 bot), median project age 3.5 years, 16 primary languages.
 
 ### 1.1 Methodology
 
@@ -42,7 +42,7 @@ n = 55 these are **exploratory**; AI-usage comparisons in particular are
 
 Across the corpus, contributor effort is dominated by a small number of people.
 Team size correlates strongly and negatively with organisational concentration
-(`num_developers` vs `hhi_no_bots`, ρ = −0.76, FDR-significant), and the busiest
+(`num_developers` vs `hhi_no_bots`, ρ = −0.75, FDR-significant), and the busiest
 contributor dominates most *weeks*: many repositories are 100% solo across their
 entire active history (e.g. `ton-An/station_reach`,
 `oklabflensburg/open-school-map`, several Code-for-America services).

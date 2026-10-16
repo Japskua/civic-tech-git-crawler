@@ -12,7 +12,7 @@ The corpus is **55 open-source civic-technology repositories** crawled
 2026-05-21 → 2026-05-24 from the GitHub REST and GraphQL APIs. Repositories were
 selected on the basis of *public-interest design intent* — civic engagement,
 government services, public participation, transparency, open data, or
-democratic process — and span 24 organisations across North America (Code for
+democratic process — and span 23 organisations across North America (Code for
 America, CivicTechWR/Toronto), Africa (Code for Africa), Japan (Code for Japan),
 Taiwan (g0v), and a large German "Code for"/OK-Lab cluster (Bielefeld, Münster,
 Berlin, Flensburg, Cologne, Leipzig, Magdeburg, OpenLegalData), plus
@@ -23,7 +23,7 @@ manifest and selection rationale.
 | Property | Value |
 |---|---|
 | Repositories | 55 |
-| Organisations | 24 |
+| Organisations | 23 |
 | Primary languages | 16 |
 | Contributors | 658 (604 human, 54 bot — 8.2%) |
 | Total commits | 89,977 |
@@ -64,7 +64,7 @@ signed-rank), with Benjamini–Hochberg FDR control on the correlation family.
 
 Across the 55 repositories with computable concentration metrics, **bus factor is
 strongly, negatively correlated with HHI** (humans only): Spearman ρ = **−0.757**,
-p = 1.5 × 10⁻¹¹. The relationship survives controlling for team size: the partial
+p = 2.3 × 10⁻¹¹. The relationship survives controlling for team size: the partial
 Spearman correlation of `bus_factor_no_bots` with `hhi_no_bots` controlling for
 `num_developers` is **−0.642** (classified "robust" in
 `partial_correlations.csv`). Team size itself is the strongest single correlate
@@ -149,8 +149,9 @@ with care.
   be misrepresented.
 - **Stats-endpoint fallback.** For repositories where GitHub's `/stats` endpoints
   never returned (HTTP 202), burstiness is computed from a separately-collected
-  GraphQL weekly snapshot; coverage is therefore partial (burstiness available for
-  34 repos).
+  GraphQL weekly snapshot, so burstiness is available for all 55 repos. The
+  burstiness–stale-issue test (§2.6) is limited to the 34 repos with a computable
+  stale-issue ratio.
 - **Issue cap.** Issue analytics are right-censored at 5,000 issues/repo.
 - **Bot detection is heuristic.** The `is_bot` flag is login-pattern based and
   will miss org-specific bots and may misclassify human accounts.
@@ -163,7 +164,7 @@ with care.
 
 ## 4. Conclusion
 
-Across 55 civic-tech projects spanning five continents and 24 organisations, the
+Across 55 civic-tech projects spanning four continents and 23 organisations, the
 dominant structural fact is **concentration**: the median project has a bus factor
 of 1, effort is more concentrated than commit counts imply, and 89% of active
 weeks run through a single contributor. Crucially, this does **not** resolve with
