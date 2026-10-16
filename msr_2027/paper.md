@@ -38,7 +38,9 @@ The tool has been in continuous use since February 2026. It produced the 55-repo
 
 `civic-tech-crawler` is a ~4,500-line Python 3.13 package organised into three layers (Fig. 1): a thin **CLI/orchestrator** that reads a YAML configuration; a set of **collectors** that each produce a typed dataclass over the GitHub REST and GraphQL APIs; and a pair of **exporters** that serialise the in-memory dataset to CSV (one row per repository, contributor, issue, PR, tag, weekly snapshot, etc.) and JSON (a single hierarchical document). Intermediate per-repository results are cached on disk immediately after each successful crawl so that long-running crawls survive crashes and can resume where they left off.
 
-> **Fig. 1.** Architecture: CLI → orchestrator → eight collectors (`repo_metrics`, `person_metrics`, `temporal_metrics`, `commit_history`, `chaoss_metrics`, `issue_analytics`, `detection`, **`ai_usage`**) → per-repo cache → CSV / JSON exporters.
+![Fig. 1 — civic-tech-crawler architecture](figures/fig1_architecture.png)
+
+**Fig. 1.** Architecture: CLI → orchestrator → eight collectors (`repo_metrics`, `person_metrics`, `temporal_metrics`, `commit_history`, `chaoss_metrics`, `issue_analytics`, `detection`, **`ai_usage`**) → per-repo cache → CSV / JSON exporters. The `ai_usage` collector (highlighted) is the main new contribution of the current release; all other collectors existed in the version used to produce the companion GoodIT '26 dataset.
 
 ### 2.1 Collector modularity
 
@@ -125,7 +127,19 @@ Bot-detection patterns, cloud/AI-ML detection keywords, and per-collector flags 
 
 A single crawl writes a structured bundle of CSVs plus a hierarchical JSON document. Key files include `repo_metrics.csv` (one row per repository), `person_metrics.csv` (one row per repo-contributor pair with a bot flag), `chaoss_summary.csv` (bus factor, elephant factor, HHI with and without bots, core/periphery, network density), `temporal_summary.csv` (PR review turnaround, deployment frequency, lead time, change failure rate), `weekly_snapshots.csv`, `contributor_lifecycles.csv`, `issue_records.csv`, `pull_requests.csv`, `tags.csv`, `cross_project_overlap.csv`, and — new in the current release — `ai_usage.csv`, `ai_signals.csv`, plus the `ai_usage_analysis/` directory.
 
-> **Fig. 2.** Excerpt from `ai_signals.csv` for `codeforjapan/BirdXplorer`, showing dev-group signals (52 Claude Code co-author trailers, 15 Devin-authored commits, 7 Devin-opened PRs, an `AGENTS.md` config file) and a datable first-appearance for each — the information that lets a researcher reconstruct per-project AI-adoption trajectories.
+**Table I.** Excerpt from `ai_signals.csv` for `codeforjapan/BirdXplorer`, showing the per-signal evidence rows the detector emits. Mixed-tool, multi-source adoption (Claude Code + Devin + Roo across file, commit, PR, and workflow sources), with a datable first-appearance where the source permits — the structure a researcher needs to reconstruct per-project AI-adoption trajectories.
+
+| Tool | Source | Evidence | Count | First seen |
+|---|---|---|---:|---|
+| claude_code | file | `CLAUDE.md` | 1 | 2025-04-28 |
+| claude_code | file | `dir:.claude` | 1 | — |
+| claude_code | commit_trailer | `Co-Authored-By: Claude` | **52** | 2026-01-13 |
+| claude_code | commit_author | agent-authored commit | 1 | 2026-01-13 |
+| claude_code | pr_body | referenced in PR body | 1 | 2025-06-11 |
+| claude_code | workflow | `.github/workflows/claude.yml` | 1 | — |
+| devin | commit_author | agent-authored commit | **14** | 2025-04-28 |
+| devin | pr_author | `devin-ai-integration[bot]` | **7** | — |
+| roo | file | `dir:.roo` | 1 | — |
 
 ---
 

@@ -43,7 +43,8 @@ That paper reports **empirical findings** derived from `civic-tech-crawler`. Thi
 - [ ] Verify co-author approval on title, author order, and content
 - [ ] Convert `paper.md` to IEEEtran LaTeX
 - [ ] Confirm fits 4 pages main text + 1 page references
-- [ ] Render Fig. 1 (architecture diagram) and Fig. 2 (AI-usage signal flow)
+- [x] Render Fig. 1 (architecture diagram) — source `figures/fig1_architecture.py`, output `figures/fig1_architecture.pdf` / `.png`
+- [x] Draft Table I (BirdXplorer `ai_signals` excerpt, 9 rows) in paper.md
 - [ ] Fill in proper BibTeX for all `[key]` references
 - [ ] Confirm Zenodo DOI 10.5281/zenodo.20497015 is still the current record
 - [ ] Add ORCID iDs for all authors
