@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   so the tool repository stays small. Snapshots there are frozen with git tags
   that match their Zenodo versions. History up to tag `1.2` still contains
   the data, so the Zenodo record's link to that tag keeps working.
+- `paper_draft.md` and `scripts/paper_figures.py`: the draft was superseded by
+  the published GoodIT '26 paper (10.1145/3794786.3830780). Both remain in
+  history.
 
 ### Changed
 - `config.example.yaml` now writes to `./output` instead of `./datasets/2026_05`.

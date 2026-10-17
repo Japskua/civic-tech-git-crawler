@@ -1581,13 +1581,11 @@ civic_tech_git_crawler/
 ├── pyproject.toml                  # Dependencies and project metadata
 ├── config.example.yaml             # Example configuration
 ├── config.yaml                     # Your configuration (gitignored)
-├── paper_draft.md                  # Research paper draft (n=57, 2026-05 corpus)
 ├── scripts/
 │   ├── run_with_respawn.sh             # Resumable, auto-respawning crawl wrapper
 │   ├── visualize.py                    # Visualization script (6 chart types)
 │   ├── statistical_analysis.py         # Statistical testing (12 analysis types)
 │   ├── weekly_activity_analysis.py     # Weekly elephant factor, churn ratio, effort Gini
-│   ├── paper_figures.py                # Paper-ready figures
 │   ├── recompute_burstiness.py         # Burstiness backfill from weekly_snapshots
 │   └── build_repo_folders.py           # Per-repo folder + repo_results.md builder
 ├── src/

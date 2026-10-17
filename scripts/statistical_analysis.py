@@ -188,7 +188,6 @@ def compute_correlations(
 
     # Compute project age in years from the first commit (how long the project
     # has existed as code), measured to the crawl date for reproducibility.
-    # This matches scripts/paper_figures.py so figures and statistics agree.
     if "first_commit_date" in merged.columns:
         merged["age_years"] = (
             pd.Timestamp("2026-05-24", tz="UTC")
@@ -466,7 +465,7 @@ def compute_maturity_analysis(
     if "first_commit_date" not in merged.columns:
         return pd.DataFrame()
 
-    # Age = years since first commit, to the crawl date (matches paper_figures.py).
+    # Age = years since first commit, to the crawl date.
     merged["age_years"] = (
         pd.Timestamp("2026-05-24", tz="UTC")
         - pd.to_datetime(merged["first_commit_date"], utc=True)

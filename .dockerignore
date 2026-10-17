@@ -32,7 +32,6 @@ config.yaml
 
 # Docs / paper / community files not needed at runtime
 docs/history
-paper_draft.md
 
 # Dockerfile itself (avoid self-inclusion)
 Dockerfile
