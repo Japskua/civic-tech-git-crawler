@@ -14,7 +14,7 @@ It does NOT re-run the crawler — no API calls. Re-run build_repo_folders.py
 afterwards to refresh the per-repo repo_results.md tables.
 
 Usage:
-    uv run python scripts/recompute_osi.py [snapshot-dir]   (default: datasets/2026_05)
+    uv run python scripts/recompute_osi.py [snapshot-dir]   (default: output)
 """
 
 from __future__ import annotations
@@ -69,7 +69,7 @@ def _rewrite_json_items(items: list[dict]) -> int:
 
 
 def main() -> int:
-    snap = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "datasets" / "2026_05"
+    snap = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "output"
     if not snap.exists():
         print(f"ERROR: snapshot not found: {snap}", file=sys.stderr)
         return 1

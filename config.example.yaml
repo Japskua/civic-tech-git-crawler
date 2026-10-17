@@ -9,7 +9,7 @@ github:
 # (Code for Japan), Taiwan (g0v), and a large German "Code for"/OK-Lab cluster
 # (Bielefeld, Münster, Berlin, Flensburg, Cologne, Leipzig, Magdeburg,
 # OpenLegalData), plus participation/deliberation tools (Decidim, VoteIT,
-# DigiDemLab). See datasets/2026_05/README.md for the manifest and rationale.
+# DigiDemLab). Manifest and rationale: https://github.com/Japskua/civic-tech-corpus
 #
 # Note: 3 entries are forks (CivicTechWR/connectedkw,
 # CodeforLeipzig/weihnachtsmarktkarte, CodeforLeipzig/leipziggiesst) — their
@@ -81,7 +81,7 @@ repositories:
   - "ton-An/station_reach"
 
 output:
-  directory: "./datasets/2026_05"
+  directory: "./output"
 
 detection:
   cloud_keywords:

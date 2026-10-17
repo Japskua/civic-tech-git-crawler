@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+- `datasets/` moved to its own repository, [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus),
+  so the tool repository stays small. Snapshots there are frozen with git tags
+  that match their Zenodo versions. History up to tag `1.2` still contains
+  the data, so the Zenodo record's link to that tag keeps working.
+
+### Changed
+- `config.example.yaml` now writes to `./output` instead of `./datasets/2026_05`.
+
 ### Added
 - Open-source publication packaging: `LICENSE.txt` (MIT), `CITATION.cff`,
   `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `CHANGELOG.md`,
