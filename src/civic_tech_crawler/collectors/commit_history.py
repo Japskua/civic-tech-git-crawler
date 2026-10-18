@@ -77,7 +77,10 @@ def collect_commit_history(
     ai_authored = 0
     ai_coauthor_tool_counts: dict[str, int] = defaultdict(int)
     ai_author_tool_counts: dict[str, int] = defaultdict(int)
-    ai_tool_first_dates: dict[str, datetime] = {}
+    # Earliest date per tool, kept separately per signal kind so that a
+    # commit_author signal is not dated by an earlier co-author trailer.
+    ai_coauthor_tool_first_dates: dict[str, datetime] = {}
+    ai_author_tool_first_dates: dict[str, datetime] = {}
 
     commit_count = 0
     for rec in client.iter_commits_graphql(slug):
@@ -97,12 +100,10 @@ def collect_commit_history(
             ai_authored += 1
         for tool in co_tools:
             ai_coauthor_tool_counts[tool] += 1
+            _keep_earliest(ai_coauthor_tool_first_dates, tool, author_date)
         for tool in auth_tools:
             ai_author_tool_counts[tool] += 1
-        for tool in co_tools | auth_tools:
-            prev = ai_tool_first_dates.get(tool)
-            if prev is None or author_date < prev:
-                ai_tool_first_dates[tool] = author_date
+            _keep_earliest(ai_author_tool_first_dates, tool, author_date)
 
         # Determine contributor ID: prefer GitHub login, fall back to email
         contributor_id = login if login else author_email
@@ -131,6 +132,11 @@ def collect_commit_history(
         bucket["deletions"] += rec.deletions
 
     logger.info("%s: iterated %d commits via GraphQL", slug, commit_count)
+
+    # Combined earliest date across both kinds (backward-compatible field).
+    ai_tool_first_dates = dict(ai_coauthor_tool_first_dates)
+    for tool, dt in ai_author_tool_first_dates.items():
+        _keep_earliest(ai_tool_first_dates, tool, dt)
 
     if not week_commits:
         return _empty_result(slug)
@@ -261,10 +267,21 @@ def collect_commit_history(
         ai_authored_commit_count=ai_authored,
         ai_coauthor_tool_counts=dict(ai_coauthor_tool_counts),
         ai_author_tool_counts=dict(ai_author_tool_counts),
-        ai_commit_tool_first_dates={
-            tool: dt.isoformat() for tool, dt in ai_tool_first_dates.items()
-        },
+        ai_commit_tool_first_dates=_iso_dates(ai_tool_first_dates),
+        ai_coauthor_tool_first_dates=_iso_dates(ai_coauthor_tool_first_dates),
+        ai_author_tool_first_dates=_iso_dates(ai_author_tool_first_dates),
     )
+
+
+def _keep_earliest(first_dates: dict[str, datetime], tool: str, dt: datetime) -> None:
+    """Record *dt* for *tool* if it is earlier than the date already stored."""
+    prev = first_dates.get(tool)
+    if prev is None or dt < prev:
+        first_dates[tool] = dt
+
+
+def _iso_dates(first_dates: dict[str, datetime]) -> dict[str, str]:
+    return {tool: dt.isoformat() for tool, dt in first_dates.items()}
 
 
 def _empty_result(slug: str) -> CommitHistoryMetrics:

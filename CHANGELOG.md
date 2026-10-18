@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- AI-usage `pr_body` signals now credit a tool only when it is named on the
+  same line as the `Co-authored-by:` / "generated with" marker (the rule
+  commit trailers already used). Previously any mention anywhere in the body
+  counted, so a Claude Code PR that mentioned a database "server-side cursor"
+  was also credited to Cursor.
+- AI-usage `commit_author` signals are now dated by the earliest agent-authored
+  commit, not by the earliest commit signal of any kind for that tool.
+  `CommitHistoryMetrics` gains `ai_coauthor_tool_first_dates` and
+  `ai_author_tool_first_dates`; `ai_commit_tool_first_dates` keeps the
+  combined earliest date.
+- Both fixes postdate the 2026-06 crawl: that dataset's `ai_signals.csv` (in
+  civic-tech-corpus) still has the `pr_body:cursor` false positive and the
+  shared commit dates.
+
 ### Removed
 - `datasets/` moved to its own repository, [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus),
   so the tool repository stays small. Snapshots there are frozen with git tags

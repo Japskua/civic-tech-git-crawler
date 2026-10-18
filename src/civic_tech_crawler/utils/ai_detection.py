@@ -198,6 +198,35 @@ def match_agent_bot(
     return None
 
 
+def _is_trailer_line(line: str) -> bool:
+    """True if a stripped, lowercased line is a co-author / "generated with" marker."""
+    return (
+        line.startswith("co-authored-by:")
+        or "generated with" in line
+        or "🤖 generated" in line
+    )
+
+
+def match_trailer_tools(text: str | None, dev_kw: dict) -> set[str]:
+    """Return the tools named on a co-author / "generated with" marker line of *text*.
+
+    A tool's needle must appear on the *same line* as the marker, so a body
+    that says "🤖 Generated with Claude Code" elsewhere does not also credit
+    Cursor for a "server-side cursor" mentioned in prose. Shared by the commit
+    message scan and the PR body scan.
+    """
+    tools: set[str] = set()
+    trailer_tools = dev_kw.get("trailer_tools", {})
+    for raw_line in (text or "").splitlines():
+        line = raw_line.strip().lower()
+        if not line or not _is_trailer_line(line):
+            continue
+        for needle, tool in trailer_tools.items():
+            if needle.lower() in line:
+                tools.add(tool)
+    return tools
+
+
 def detect_ai_in_commit(
     message: str | None,
     author_login: str | None,
@@ -215,18 +244,8 @@ def detect_ai_in_commit(
     Trailer matching is restricted to trailer-shaped lines to avoid false
     positives from projects that merely *mention* an AI tool in prose.
     """
-    coauthor_tools: set[str] = set()
+    coauthor_tools = match_trailer_tools(message, dev_kw)
     author_tools: set[str] = set()
-
-    trailer_tools = dev_kw.get("trailer_tools", {})
-    for raw_line in (message or "").splitlines():
-        line = raw_line.strip().lower()
-        if not line:
-            continue
-        if line.startswith("co-authored-by:") or "generated with" in line or "🤖 generated" in line:
-            for needle, tool in trailer_tools.items():
-                if needle in line:
-                    coauthor_tools.add(tool)
 
     tool = match_agent_bot(author_login, author_email, dev_kw)
     if tool:

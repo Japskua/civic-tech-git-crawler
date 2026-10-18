@@ -762,7 +762,7 @@ Beyond classical ML, the crawler detects how (and whether) **AI/LLMs** are invol
 - **Agent config files** — `CLAUDE.md`, `AGENTS.md`, `.cursorrules`, `.github/copilot-instructions.md`, `.windsurfrules`, `.aider.conf.yml`, `GEMINI.md`, `.clinerules`, `.claude/`, `.cursor/rules/`, `soul.md`, … (first-appearance dated via the oldest commit touching the path)
 - **Commit co-author trailers** — `Co-authored-by: Claude`, `🤖 Generated with Claude Code`, `Co-authored-by: Copilot`, etc. (matched only inside trailer-shaped lines to avoid prose false positives)
 - **AI agent commit/PR authors** — bot logins such as `copilot-swe-agent[bot]`, `devin-ai-integration[bot]`, `cursoragent`, `google-labs-jules[bot]`
-- **PR body markers** and **review-bot comments** — scanned on the ≤200 most-recent PRs (`coderabbitai[bot]`, `sourcery-ai[bot]`, …)
+- **PR body markers** and **review-bot comments** — scanned on the ≤200 most-recent PRs (`coderabbitai[bot]`, `sourcery-ai[bot]`, …); body markers use the same trailer-line rule as commits, so the tool must be named on the `Co-authored-by:` / "generated with" line itself
 - **CI workflows** — `.github/workflows/*` referencing `anthropics/claude-code-action`, CodeRabbit, Copilot, Cursor, …
 
 All vocabulary (tool labels, bot logins, file names, dependencies, topics) is config-driven under `detection.ai_dev_keywords` / `detection.product_llm_keywords` in `config.yaml` (full block in `config.example.yaml`); the built-in defaults live in [`utils/ai_detection.py`](src/civic_tech_crawler/utils/ai_detection.py). Commit scanning piggybacks the existing commit-history walk, so it adds **zero** extra API calls.

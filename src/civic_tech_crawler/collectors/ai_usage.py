@@ -31,6 +31,7 @@ from civic_tech_crawler.utils.ai_detection import (
     DEFAULT_AI_DEV_KEYWORDS,
     DEFAULT_PRODUCT_LLM_KEYWORDS,
     match_agent_bot,
+    match_trailer_tools,
 )
 from civic_tech_crawler.utils.deps import extract_dependencies
 
@@ -220,13 +221,16 @@ def _detect_commits(
     """Lift the AI-commit tallies computed during the commit-history walk."""
     if commit_history is None:
         return
-    first_dates = commit_history.ai_commit_tool_first_dates or {}
+    # Each signal kind is dated by its own earliest commit, so commit_author is
+    # not back-dated to an earlier co-author trailer for the same tool.
+    coauthor_dates = commit_history.ai_coauthor_tool_first_dates or {}
+    author_dates = commit_history.ai_author_tool_first_dates or {}
     for tool, count in (commit_history.ai_coauthor_tool_counts or {}).items():
         signals.append(
             AISignal(
                 group="dev", tool=tool, source="commit_trailer",
                 evidence=f"commit_trailer:{tool}", count=count,
-                first_seen=_parse_iso(first_dates.get(tool)),
+                first_seen=_parse_iso(coauthor_dates.get(tool)),
             )
         )
     for tool, count in (commit_history.ai_author_tool_counts or {}).items():
@@ -234,7 +238,7 @@ def _detect_commits(
             AISignal(
                 group="dev", tool=tool, source="commit_author",
                 evidence=f"commit_author:{tool}", count=count,
-                first_seen=_parse_iso(first_dates.get(tool)),
+                first_seen=_parse_iso(author_dates.get(tool)),
             )
         )
 
@@ -272,7 +276,6 @@ def _detect_prs(
     review_logins = {
         k.lower(): v for k, v in dev_kw.get("review_bot_logins", {}).items()
     }
-    trailer_tools = dev_kw.get("trailer_tools", {})
     body_marker_tools: dict[str, datetime | None] = {}
     review_first_seen: dict[str, datetime | None] = {}
     try:
@@ -283,12 +286,12 @@ def _detect_prs(
 
     for pr in recent:
         created = _parse_iso(pr.get("created_at"))
-        body = (pr.get("body") or "").lower()
-        for needle, tool in trailer_tools.items():
-            if needle in body and ("generated with" in body or "co-authored-by" in body):
-                prev = body_marker_tools.get(tool, "missing")
-                if prev == "missing" or (created and (prev is None or created < prev)):
-                    body_marker_tools[tool] = created
+        # Same line-level rule as commit trailers: the tool must be named on
+        # the marker line itself, not merely anywhere in the body.
+        for tool in match_trailer_tools(pr.get("body"), dev_kw):
+            prev = body_marker_tools.get(tool, "missing")
+            if prev == "missing" or (created and (prev is None or created < prev)):
+                body_marker_tools[tool] = created
         for login in pr.get("participant_logins", []):
             lo = (login or "").lower()
             tool = review_logins.get(lo)

@@ -265,6 +265,8 @@ def _dict_to_commit_history_metrics(d: dict | None) -> CommitHistoryMetrics | No
         ai_coauthor_tool_counts=d.get("ai_coauthor_tool_counts", {}),
         ai_author_tool_counts=d.get("ai_author_tool_counts", {}),
         ai_commit_tool_first_dates=d.get("ai_commit_tool_first_dates", {}),
+        ai_coauthor_tool_first_dates=d.get("ai_coauthor_tool_first_dates", {}),
+        ai_author_tool_first_dates=d.get("ai_author_tool_first_dates", {}),
     )
 
 
