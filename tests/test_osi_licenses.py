@@ -12,7 +12,7 @@ from civic_tech_crawler.utils.osi_licenses import is_osi_approved
 
 
 # Deprecated SPDX short identifiers as emitted by the GitHub Licenses API.
-# These are the exact values observed in datasets/2026_05/repo_metrics.csv that
+# These are the exact values observed in civic-tech-corpus 2026_05/repo_metrics.csv that
 # were previously (incorrectly) flagged non-OSI.
 GITHUB_SHORT_FORMS = ["GPL-2.0", "GPL-3.0", "AGPL-3.0", "LGPL-2.1", "LGPL-3.0"]
 

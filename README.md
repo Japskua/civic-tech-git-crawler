@@ -48,14 +48,14 @@ uv sync
 # 3. Set your GitHub token
 export GITHUB_TOKEN="ghp_your_token_here"
 
-# 4. Crawl the canonical civic-tech corpus (57 repos — long-running)
+# 4. Crawl the example civic-tech corpus (55 repos — long-running)
 uv run civic-tech-crawler --config config.example.yaml
 
-# 5. Find results in ./datasets/2026_05/
-ls datasets/2026_05/
+# 5. Find results in ./output/
+ls output/
 ```
 
-> A full 57-repo crawl takes several hours and is best run through the
+> A full 55-repo crawl takes several hours and is best run through the
 > resumable, auto-respawning wrapper — see
 > [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery). To try
 > the tool quickly, copy `config.example.yaml` to `config.yaml` and trim the
@@ -76,16 +76,16 @@ docker build -t civic-tech-crawler .
 docker run --rm \
     -e GITHUB_TOKEN="$(gh auth token)" \
     -v "$PWD/config.yaml:/config/config.yaml:ro" \
-    -v "$PWD/datasets/2026_05:/output" \
+    -v "$PWD/output:/output" \
     civic-tech-crawler
 
 # 3. Or — long, multi-hour crawl via the auto-respawning wrapper
 docker run --rm \
     -e GITHUB_TOKEN="$(gh auth token)" \
     -v "$PWD/config.yaml:/config/config.yaml:ro" \
-    -v "$PWD/datasets/2026_05:/output" \
+    -v "$PWD/output:/output" \
     --entrypoint /app/scripts/run_with_respawn.sh \
-    civic-tech-crawler /config/config.yaml /output 57
+    civic-tech-crawler /config/config.yaml /output 55
 
 # 4. Inspect the CLI without mounting anything
 docker run --rm civic-tech-crawler --help
@@ -184,9 +184,9 @@ github:
   rate_limit_buffer: 100 # Pause when this many API calls remain
 
 # Repositories to crawl (owner/repo format).
-# config.example.yaml ships with the full canonical 57-repo civic-tech
-# corpus (2026-05 refresh). See datasets/2026_05/README.md for the manifest
-# and selection rationale.
+# config.example.yaml ships with the 55-repo civic-tech corpus roster. The
+# manifest and selection rationale are in the civic-tech-corpus repository:
+# https://github.com/Japskua/civic-tech-corpus
 repositories:
   - "DemocracyClub/UK-Polling-Stations"
   - "mastodon/mastodon"
@@ -195,7 +195,7 @@ repositories:
 
 # Output settings
 output:
-  directory: "./datasets/2026_05" # Where to write CSV and JSON files
+  directory: "./output" # Where to write CSV and JSON files
 
 # Technology detection keywords (fully customizable)
 detection:
@@ -341,7 +341,7 @@ uv run python -m civic_tech_crawler --config config.yaml
 
 All output files are written to the output directory (default: `./output/`). Both CSV and JSON formats are produced automatically.
 
-> **Want to see what the output looks like?** Browse the [`datasets/2026_05/`](datasets/2026_05/) directory — the canonical **n=57 civic-tech corpus**. After the analysis pass it is organised one folder per repository, so you can navigate to any single project's metrics, plots, and findings in one click — see [Dataset](#dataset) below.
+> **Want to see what the output looks like?** Browse the [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus) repository, which holds complete crawl snapshots produced by this tool. After the analysis pass each snapshot is organised one folder per repository, so you can navigate to any single project's metrics, plots, and findings in one click — see [Dataset](#dataset) below.
 
 ### CSV files
 
@@ -434,29 +434,23 @@ All output files are written to the output directory (default: `./output/`). Bot
 
 ## Dataset
 
-The canonical dataset lives in [`datasets/2026_05/`](datasets/2026_05/) — the
-**n=57 civic-tech corpus** (2026-05 refresh). It supersedes all earlier
-exploratory and example runs, which have been removed from the repository. Its
-[`README.md`](datasets/2026_05/README.md) holds the full repository manifest
-(grouped by community/region), the selection rationale, the data-quality caveats
-(forks, placeholder repos, scale outliers), the methodology, and the output-file
-index.
-
-|                   |                                                                          |
-| ----------------- | ------------------------------------------------------------------------ |
-| **Location**      | [`datasets/2026_05/`](datasets/2026_05/)                                 |
-| **Repositories**  | 57                                                                       |
-| **Organisations** | 24 (US, Canada, Africa, Japan, Taiwan, Germany, UK)                      |
-| **Schema**        | identical to every prior run, so any `scripts/` analysis works unchanged |
+Crawl snapshots produced with this tool live in a separate repository,
+[**civic-tech-corpus**](https://github.com/Japskua/civic-tech-corpus), and are archived on Zenodo (concept DOI
+[10.5281/zenodo.20493287](https://doi.org/10.5281/zenodo.20493287), which always
+resolves to the latest version). Keeping data out of this repository keeps the
+tool small and lets each snapshot be versioned and frozen on its own. The corpus
+README lists every snapshot with the crawler version that produced it, its DOI,
+and the papers that use it; each snapshot's own `README.md` holds the repository
+manifest, selection rationale, data-quality caveats, and methodology.
 
 After the analysis pass, the dataset is organised so each repository has its own
 folder containing everything needed to understand that one project at a glance:
 
 ```
-datasets/2026_05/
+<snapshot>/
 ├── README.md                   ← manifest, selection rationale, methodology, file index
-├── analysis_n57.md             ← academic writeup: headline findings, methodology, threats to validity
-├── <owner>_<repo>/             ← one folder per repository (38 total)
+├── analysis_nNN.md             ← academic writeup: headline findings, methodology, threats to validity
+├── <owner>_<repo>/             ← one folder per repository
 │   ├── repo_results.md         ← at-a-glance metadata + main finding + caveats
 │   ├── data.json               ← full crawler output for this repo
 │   └── *.png                   ← growth / lifecycle / contributors / weekly activity / issue trend plots
@@ -481,22 +475,22 @@ Each repository's `repo_results.md` contains:
 ```bash
 export GITHUB_TOKEN=$(gh auth token)
 
-# Full crawl with auto-respawn (resumable; writes to datasets/2026_05/)
+# Full crawl with auto-respawn (resumable; writes to output/)
 setsid nohup env GITHUB_TOKEN="$GITHUB_TOKEN" \
-    scripts/run_with_respawn.sh config.yaml datasets/2026_05 57 \
+    scripts/run_with_respawn.sh config.yaml output 55 \
     > crawl.log 2>&1 < /dev/null & disown
 
 # Analysis pass
-uv run python scripts/statistical_analysis.py datasets/2026_05/
-uv run python scripts/weekly_activity_analysis.py datasets/2026_05/
-uv run python scripts/visualize.py --output-dir datasets/2026_05
+uv run python scripts/statistical_analysis.py output/
+uv run python scripts/weekly_activity_analysis.py output/
+uv run python scripts/visualize.py --output-dir output
 
 # (Optional — only for older crawler versions with sparse burstiness coverage;
 # the current crawler self-heals.)
-uv run python scripts/recompute_burstiness.py datasets/2026_05/
+uv run python scripts/recompute_burstiness.py output/
 
 # Build the per-repo folders + repo_results.md files
-uv run python scripts/build_repo_folders.py datasets/2026_05/
+uv run python scripts/build_repo_folders.py output/
 ```
 
 `scripts/run_with_respawn.sh` automatically relaunches the crawler if the process gets externally killed (e.g. by sandbox timeouts), and exits cleanly only when all 57 per-repo cache files are present **and** `full_results.json` has been written. `scripts/build_repo_folders.py` is idempotent — it only moves files that haven't been moved yet, and rewrites the markdown each run from the latest CSVs.
@@ -1523,18 +1517,18 @@ print(sig_mat[["metric", "mature_median", "young_median",
 ### Example 14: End-to-end research workflow
 
 ```bash
-# 1. Crawl repositories (config.yaml writes to datasets/2026_05/)
+# 1. Crawl repositories (config.yaml writes to output/)
 GITHUB_TOKEN=$(gh auth token) uv run civic-tech-crawler --config config.yaml
 
 # 2. Run statistical analysis
-uv run python scripts/statistical_analysis.py datasets/2026_05/
+uv run python scripts/statistical_analysis.py output/
 
 # 3. Generate visualisations
-uv run python scripts/visualize.py --output-dir datasets/2026_05
+uv run python scripts/visualize.py --output-dir output
 
-# 4. datasets/ is version-controlled, so results are committed in place
-#    (no copy step needed). Build the per-repo folders for browsing:
-uv run python scripts/build_repo_folders.py datasets/2026_05/
+# 4. Build the per-repo folders for browsing. To publish the snapshot, copy
+#    output/ into a new YYYY_MM/ folder in the civic-tech-corpus repository:
+uv run python scripts/build_repo_folders.py output/
 
 # Results are now ready for inclusion in a research paper
 ```
@@ -1587,13 +1581,11 @@ civic_tech_git_crawler/
 ├── pyproject.toml                  # Dependencies and project metadata
 ├── config.example.yaml             # Example configuration
 ├── config.yaml                     # Your configuration (gitignored)
-├── paper_draft.md                  # Research paper draft (n=57, 2026-05 corpus)
 ├── scripts/
 │   ├── run_with_respawn.sh             # Resumable, auto-respawning crawl wrapper
 │   ├── visualize.py                    # Visualization script (6 chart types)
 │   ├── statistical_analysis.py         # Statistical testing (12 analysis types)
 │   ├── weekly_activity_analysis.py     # Weekly elephant factor, churn ratio, effort Gini
-│   ├── paper_figures.py                # Paper-ready figures
 │   ├── recompute_burstiness.py         # Burstiness backfill from weekly_snapshots
 │   └── build_repo_folders.py           # Per-repo folder + repo_results.md builder
 ├── src/
@@ -1620,13 +1612,6 @@ civic_tech_git_crawler/
 │           ├── rate_limiter.py     # API rate limit monitoring
 │           ├── retry.py            # 202 retry + backoff logic
 │           └── osi_licenses.py     # OSI-approved SPDX license list
-├── datasets/
-│   └── 2026_05/                    # Canonical n=57 civic-tech corpus (version-controlled)
-│       ├── README.md               # Manifest, selection rationale, methodology, file index
-│       ├── *.csv                   # 14 crawl data CSVs
-│       ├── <owner>_<repo>/         # One folder per repo (data.json, repo_results.md, plots)
-│       ├── statistical_analysis/   # Statistical analysis CSVs
-│       └── weekly_activity_analysis/ # Weekly analysis CSVs + summary.md
 └── output/                         # Generated output (gitignored)
     ├── plots/                      # Generated visualizations
     └── statistical_analysis/       # Generated statistical analysis
@@ -1636,10 +1621,10 @@ civic_tech_git_crawler/
 
 ## Citing This Tool and the Dataset
 
-If you use this tool or the bundled dataset in academic research, please cite
-both — the **tool** itself and the **2026-05 dataset** it produced. Machine-
-readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
-[`datasets/2026_05/CITATION.cff`](datasets/2026_05/CITATION.cff) (dataset).
+If you use this tool or a dataset produced with it in academic research, please
+cite both the **tool** and the **dataset version** you used. Machine-readable
+metadata is in [`CITATION.cff`](CITATION.cff) (tool) and in the
+[civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus) repository (datasets).
 
 **Tool:**
 
@@ -1653,23 +1638,22 @@ readable metadata is in [`CITATION.cff`](CITATION.cff) (tool) and
 }
 ```
 
-**Dataset (n = 57, 2026-05):**
+**Dataset (2026-06 snapshot, n = 55):**
 
 ```bibtex
-@dataset{civic_tech_corpus_2026_05,
-  title     = {Civic-Tech Corpus — 2026-05},
+@dataset{civic_tech_corpus_2026_06,
+  title     = {Civic-Tech Corpus 06/2026},
   author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia and Knutas, Antti},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2026.05},
-  doi       = {10.5281/zenodo.20493287}
+  version   = {1.0},
+  doi       = {10.5281/zenodo.20497015}
 }
 ```
 
-The dataset is archived on Zenodo:
-[**doi.org/10.5281/zenodo.20493287**](https://doi.org/10.5281/zenodo.20493287).
-The source files also live in this repository at
-[`datasets/2026_05/`](datasets/2026_05/).
+Cite the version DOI above for reproducibility. The concept DOI
+[10.5281/zenodo.20493287](https://doi.org/10.5281/zenodo.20493287) always
+resolves to the latest version. Source files: [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus).
 
 ### Related frameworks and standards
 
@@ -1682,8 +1666,8 @@ The source files also live in this repository at
 ## License
 
 - **Source code:** MIT — see [`LICENSE.txt`](LICENSE.txt).
-- **Bundled dataset** (`datasets/2026_05/`): Creative Commons Attribution 4.0
-  International (CC-BY-4.0) — see [`datasets/2026_05/LICENSE`](datasets/2026_05/LICENSE).
+- **Datasets:** not part of this repository; each snapshot in
+  [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus) declares its own licence.
 
 ## Community
 
