@@ -34,6 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `config.example.yaml` now writes to `./output` instead of `./datasets/2026_05`.
 
 ### Added
+- `config.quickstart.yaml`: a two-repository configuration for a first run
+  (about 20 minutes, mostly waiting on GitHub's `/stats/*` endpoints).
 - Open-source publication packaging: `LICENSE.txt` (MIT), `CITATION.cff`,
   `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `CHANGELOG.md`,
   `.github/` issue and PR templates, GitHub Actions CI workflow, `Dockerfile`.

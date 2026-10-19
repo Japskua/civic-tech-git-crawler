@@ -48,18 +48,24 @@ uv sync
 # 3. Set your GitHub token
 export GITHUB_TOKEN="ghp_your_token_here"
 
-# 4. Crawl the example civic-tech corpus (55 repos — long-running)
-uv run civic-tech-crawler --config config.example.yaml
+# 4. Try it on two small repositories (about 20 minutes)
+uv run civic-tech-crawler --config config.quickstart.yaml
 
-# 5. Find results in ./output/
-ls output/
+# 5. Find results in ./output/quickstart/
+ls output/quickstart/
 ```
 
-> A full 55-repo crawl takes several hours and is best run through the
-> resumable, auto-respawning wrapper — see
-> [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery). To try
-> the tool quickly, copy `config.example.yaml` to `config.yaml` and trim the
-> `repositories:` list to one or two entries first.
+`config.quickstart.yaml` crawls one repository with AI-assisted development
+(`CivicTechWR/go-train-group-pass`) and one without
+(`oklabflensburg/open-school-map`). Most of the ~20 minutes is spent waiting
+for GitHub's asynchronous `/stats/*` endpoints, which often keep answering
+"still computing" (HTTP 202); when they do, the crawler derives the same
+weekly activity from the commit history instead.
+
+> The full 55-repository corpus in `config.example.yaml` takes many hours (about
+> 17 for the 2026-06 crawl) and is best run through the resumable,
+> auto-respawning wrapper — see
+> [Incremental Runs & Crash Recovery](#incremental-runs--crash-recovery).
 
 ### Run with Docker
 
