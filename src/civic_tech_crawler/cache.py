@@ -265,6 +265,8 @@ def _dict_to_commit_history_metrics(d: dict | None) -> CommitHistoryMetrics | No
         ai_coauthor_tool_counts=d.get("ai_coauthor_tool_counts", {}),
         ai_author_tool_counts=d.get("ai_author_tool_counts", {}),
         ai_commit_tool_first_dates=d.get("ai_commit_tool_first_dates", {}),
+        ai_coauthor_tool_first_dates=d.get("ai_coauthor_tool_first_dates", {}),
+        ai_author_tool_first_dates=d.get("ai_author_tool_first_dates", {}),
     )
 
 
@@ -361,11 +363,39 @@ def _dict_to_repository_data(d: dict) -> RepositoryData:
 
 # --- Public API ---
 
+# Bump when a collector change makes older cache entries inconsistent with
+# freshly crawled ones. Entries written before versioning count as 1.
+CACHE_VERSION = 2
+
+
+def _cache_version(raw: dict) -> int:
+    try:
+        return int(raw.get("_cache_version", 1))
+    except (TypeError, ValueError):
+        return 1
+
 
 def is_cached(slug: str, output_dir: str) -> bool:
-    """Check if a cached result exists for the given repository slug."""
+    """True if a cache entry exists for *slug* and was written by this crawler version.
+
+    Entries from an older version are treated as missing, so a resumed crawl
+    re-fetches them instead of mixing old and new detection rules.
+    """
     path = Path(output_dir) / _slug_to_filename(slug)
-    return path.exists()
+    if not path.exists():
+        return False
+    try:
+        with open(path) as f:
+            version = _cache_version(json.load(f))
+    except (OSError, json.JSONDecodeError):
+        return False
+    if version < CACHE_VERSION:
+        logger.info(
+            "Cache for %s is from an older crawler (v%d < v%d); re-crawling",
+            slug, version, CACHE_VERSION,
+        )
+        return False
+    return True
 
 
 def save_repo_cache(data: RepositoryData, output_dir: str) -> None:
@@ -376,6 +406,7 @@ def save_repo_cache(data: RepositoryData, output_dir: str) -> None:
     filepath = out / filename
 
     payload = dataclasses.asdict(data)
+    payload["_cache_version"] = CACHE_VERSION
     with open(filepath, "w") as f:
         json.dump(payload, f, indent=2, cls=_DateTimeEncoder)
     logger.info("Cached %s → %s", data.repo_metrics.full_name, filename)
@@ -402,6 +433,7 @@ def load_all_cached(output_dir: str) -> list[RepositoryData]:
         return []
 
     results: list[RepositoryData] = []
+    stale = 0
     for filepath in sorted(out.glob("*_data.json")):
         if filepath.name == "full_results.json":
             continue
@@ -409,6 +441,14 @@ def load_all_cached(output_dir: str) -> list[RepositoryData]:
             with open(filepath) as f:
                 raw = json.load(f)
             results.append(_dict_to_repository_data(raw))
+            stale += _cache_version(raw) < CACHE_VERSION
         except (json.JSONDecodeError, KeyError, TypeError) as e:
             logger.warning("Skipping corrupt cache file %s: %s", filepath.name, e)
+    if stale:
+        logger.warning(
+            "%d of %d cached repositories were written by an older crawler; the "
+            "export mixes their results with current ones. Re-crawl with --force "
+            "for a consistent dataset.",
+            stale, len(results),
+        )
     return results

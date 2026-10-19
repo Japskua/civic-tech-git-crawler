@@ -6,6 +6,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- AI co-author and "generated with" detection, used for both commit messages
+  and PR bodies, is anchored instead of matching tool names anywhere on a line.
+  A `Co-authored-by:` line credits a tool when its e-mail is a known AI address
+  (new `coauthor_emails` vocabulary) or when the identity is automated (a
+  `[bot]` address or no e-mail) and the name starts with the tool's name. A
+  "Generated with/by/using" line credits only the tool named directly after the
+  phrase. Template lines that list tools, human co-authors named Claude, Devin,
+  or Jules, and words such as "precursor" no longer count, and a PR that
+  mentions a database "server-side cursor" is no longer credited to Cursor.
+  Lines without a colon, with quote or bullet prefixes, or with the marker
+  split across two lines are still recognised.
+- AI-usage `commit_author` and `commit_trailer` signals are each dated by
+  their own earliest commit, using the authored date, which survives rebases
+  and squash merges. The commit query now fetches `authoredDate`.
+  `CommitHistoryMetrics` gains `ai_coauthor_tool_first_dates` and
+  `ai_author_tool_first_dates`; `ai_commit_tool_first_dates` keeps the
+  combined earliest date and serves as a fallback for older cache entries.
+- AI signals are emitted in a stable order, so re-crawls of the same data
+  produce identical files.
+- Cache entries carry a version. A crawl re-fetches repositories cached by an
+  older crawler instead of mixing old and new detection rules, and
+  `--export-only` warns when it combines entries from different versions.
+- These fixes postdate the 2026-06 crawl: that dataset's `ai_signals.csv` (in
+  civic-tech-corpus) was produced by release 1.2.
+
 ### Removed
 - `datasets/` moved to its own repository, [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus),
   so the tool repository stays small. Snapshots there are frozen with git tags

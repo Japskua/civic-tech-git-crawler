@@ -268,9 +268,13 @@ class CommitHistoryMetrics:
     ai_authored_commit_count: int = 0  # commits authored by an AI agent bot
     ai_coauthor_tool_counts: dict[str, int] = field(default_factory=dict)
     ai_author_tool_counts: dict[str, int] = field(default_factory=dict)
-    ai_commit_tool_first_dates: dict[str, str] = field(
-        default_factory=dict
-    )  # tool -> ISO date of earliest AI-attributed commit
+    # tool -> ISO date of earliest AI-attributed commit of either kind. Kept for
+    # backward compatibility; use the per-kind dicts below for signal dating.
+    ai_commit_tool_first_dates: dict[str, str] = field(default_factory=dict)
+    # tool -> ISO date of earliest commit with that tool in a co-author trailer
+    ai_coauthor_tool_first_dates: dict[str, str] = field(default_factory=dict)
+    # tool -> ISO date of earliest commit authored by that tool's agent bot
+    ai_author_tool_first_dates: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass

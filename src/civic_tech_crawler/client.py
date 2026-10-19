@@ -60,6 +60,7 @@ class CommitRecord:
     author_name: str
     author_login: str | None
     message: str = ""
+    authored_date: datetime | None = None
 
 
 class GitHubClient:
@@ -572,6 +573,7 @@ class GitHubClient:
                       additions
                       deletions
                       committedDate
+                      authoredDate
                       message
                       author {
                         email
@@ -618,6 +620,13 @@ class GitHubClient:
                     committed_date = None
                 if committed_date is None:
                     continue
+                authored_raw = node.get("authoredDate")
+                try:
+                    authored_date = datetime.fromisoformat(
+                        authored_raw.replace("Z", "+00:00")
+                    ) if authored_raw else None
+                except (AttributeError, ValueError):
+                    authored_date = None
                 author = node.get("author") or {}
                 user = author.get("user") or {}
                 yield CommitRecord(
@@ -629,6 +638,7 @@ class GitHubClient:
                     author_name=author.get("name") or "",
                     author_login=user.get("login"),
                     message=node.get("message") or "",
+                    authored_date=authored_date,
                 )
             page_info = history.get("pageInfo") or {}
             if not page_info.get("hasNextPage"):

@@ -30,7 +30,9 @@ from civic_tech_crawler.models import (
 from civic_tech_crawler.utils.ai_detection import (
     DEFAULT_AI_DEV_KEYWORDS,
     DEFAULT_PRODUCT_LLM_KEYWORDS,
+    keep_earliest,
     match_agent_bot,
+    match_trailer_tools,
 )
 from civic_tech_crawler.utils.deps import extract_dependencies
 
@@ -220,21 +222,27 @@ def _detect_commits(
     """Lift the AI-commit tallies computed during the commit-history walk."""
     if commit_history is None:
         return
-    first_dates = commit_history.ai_commit_tool_first_dates or {}
-    for tool, count in (commit_history.ai_coauthor_tool_counts or {}).items():
+    # Each signal kind is dated by its own earliest commit, so commit_author is
+    # not back-dated to an earlier co-author trailer for the same tool. Cache
+    # entries written before the per-kind dates existed only carry the
+    # combined date, which is better than none.
+    combined_dates = commit_history.ai_commit_tool_first_dates or {}
+    coauthor_dates = commit_history.ai_coauthor_tool_first_dates or combined_dates
+    author_dates = commit_history.ai_author_tool_first_dates or combined_dates
+    for tool, count in sorted((commit_history.ai_coauthor_tool_counts or {}).items()):
         signals.append(
             AISignal(
                 group="dev", tool=tool, source="commit_trailer",
                 evidence=f"commit_trailer:{tool}", count=count,
-                first_seen=_parse_iso(first_dates.get(tool)),
+                first_seen=_parse_iso(coauthor_dates.get(tool)),
             )
         )
-    for tool, count in (commit_history.ai_author_tool_counts or {}).items():
+    for tool, count in sorted((commit_history.ai_author_tool_counts or {}).items()):
         signals.append(
             AISignal(
                 group="dev", tool=tool, source="commit_author",
                 evidence=f"commit_author:{tool}", count=count,
-                first_seen=_parse_iso(first_dates.get(tool)),
+                first_seen=_parse_iso(author_dates.get(tool)),
             )
         )
 
@@ -272,7 +280,6 @@ def _detect_prs(
     review_logins = {
         k.lower(): v for k, v in dev_kw.get("review_bot_logins", {}).items()
     }
-    trailer_tools = dev_kw.get("trailer_tools", {})
     body_marker_tools: dict[str, datetime | None] = {}
     review_first_seen: dict[str, datetime | None] = {}
     try:
@@ -283,12 +290,10 @@ def _detect_prs(
 
     for pr in recent:
         created = _parse_iso(pr.get("created_at"))
-        body = (pr.get("body") or "").lower()
-        for needle, tool in trailer_tools.items():
-            if needle in body and ("generated with" in body or "co-authored-by" in body):
-                prev = body_marker_tools.get(tool, "missing")
-                if prev == "missing" or (created and (prev is None or created < prev)):
-                    body_marker_tools[tool] = created
+        # Same rule as commit trailers: a tool counts only when a co-author
+        # line or a "Generated with" marker names it, not for prose mentions.
+        for tool in sorted(match_trailer_tools(pr.get("body"), dev_kw)):
+            keep_earliest(body_marker_tools, tool, created)
         for login in pr.get("participant_logins", []):
             lo = (login or "").lower()
             tool = review_logins.get(lo)
@@ -298,9 +303,7 @@ def _detect_prs(
                 )
             if tool:
                 review_bot_tools.add(tool)
-                prev = review_first_seen.get(tool, "missing")
-                if prev == "missing" or (created and (prev is None or created < prev)):
-                    review_first_seen[tool] = created
+                keep_earliest(review_first_seen, tool, created)
 
     for tool, first_seen in body_marker_tools.items():
         signals.append(

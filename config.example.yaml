@@ -190,6 +190,17 @@ detection:
       sweep-ai[bot]: sweep
       claude[bot]: claude_code
       claude-bot: claude_code
+    # Co-authored-by: e-mail substring -> tool. Without a match here, a
+    # co-author line counts only for automated identities ([bot] address or no
+    # e-mail) whose name starts with a trailer_tools name.
+    coauthor_emails:
+      noreply@anthropic.com: claude_code
+      "+copilot@users.noreply.github.com": github_copilot
+      copilot@github.com: github_copilot
+      devin-ai-integration[bot]: devin
+      google-labs-jules[bot]: jules
+      cursoragent@cursor.com: cursor
+      noreply@aider.chat: aider
     agent_bot_emails:
       noreply@anthropic.com: claude_code
     review_bot_logins:
