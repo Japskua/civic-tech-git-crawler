@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3] — 2026-10-19
+
 ### Fixed
 - AI co-author and "generated with" detection, used for both commit messages
   and PR bodies, is anchored instead of matching tool names anywhere on a line.
@@ -47,6 +49,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `config.quickstart.yaml`: a two-repository configuration for a first run
   (about 20 minutes, mostly waiting on GitHub's `/stats/*` endpoints).
+- `CITATION.cff` lists all four authors (Parkkila, Olshanskaia, Tran, Knutas)
+  with ORCIDs where available, so Zenodo archives releases with full credit.
+
+## [1.0] to [1.2] — 2026-06-01 to 2026-06-08
+
+Changes released across 1.0, 1.1, and 1.2; they were not recorded per release.
+
+### Added
 - Open-source publication packaging: `LICENSE.txt` (MIT), `CITATION.cff`,
   `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `CHANGELOG.md`,
   `.github/` issue and PR templates, GitHub Actions CI workflow, `Dockerfile`.

@@ -1636,11 +1636,12 @@ metadata is in [`CITATION.cff`](CITATION.cff) (tool) and in the
 
 ```bibtex
 @software{civic_tech_crawler,
-  title  = {Civic Tech Git Crawler: GitHub Repository Metrics for Open Source Research},
-  author = {Parkkila, Janne},
-  year   = {2026},
-  url    = {https://github.com/Japskua/civic-tech-git-crawler},
-  note   = {Implements CHAOSS framework metrics for civic technology research}
+  title   = {civic-tech-crawler},
+  author  = {Parkkila, Janne and Olshanskaia, Viktoriia and Tran, Duc Thinh and Knutas, Antti},
+  year    = {2026},
+  version = {1.3},
+  url     = {https://github.com/Japskua/civic-tech-git-crawler},
+  note    = {Implements CHAOSS framework metrics for civic technology research}
 }
 ```
 
