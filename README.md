@@ -441,9 +441,8 @@ All output files are written to the output directory (default: `./output/`). Bot
 ## Dataset
 
 Crawl snapshots produced with this tool live in a separate repository,
-[**civic-tech-corpus**](https://github.com/Japskua/civic-tech-corpus), and are archived on Zenodo (concept DOI
-[10.5281/zenodo.20493287](https://doi.org/10.5281/zenodo.20493287), which always
-resolves to the latest version). Keeping data out of this repository keeps the
+[**civic-tech-corpus**](https://github.com/Japskua/civic-tech-corpus), and are archived on Zenodo; the 2026-06 snapshot is
+[10.5281/zenodo.20497015](https://doi.org/10.5281/zenodo.20497015). Keeping data out of this repository keeps the
 tool small and lets each snapshot be versioned and frozen on its own. The corpus
 README lists every snapshot with the crawler version that produced it, its DOI,
 and the papers that use it; each snapshot's own `README.md` holds the repository
@@ -1640,6 +1639,7 @@ metadata is in [`CITATION.cff`](CITATION.cff) (tool) and in the
   author  = {Parkkila, Janne and Olshanskaia, Viktoriia and Tran, Duc Thinh and Knutas, Antti},
   year    = {2026},
   version = {1.3},
+  doi     = {10.5281/zenodo.20588456},
   url     = {https://github.com/Japskua/civic-tech-git-crawler},
   note    = {Implements CHAOSS framework metrics for civic technology research}
 }
@@ -1658,9 +1658,9 @@ metadata is in [`CITATION.cff`](CITATION.cff) (tool) and in the
 }
 ```
 
-Cite the version DOI above for reproducibility. The concept DOI
-[10.5281/zenodo.20493287](https://doi.org/10.5281/zenodo.20493287) always
-resolves to the latest version. Source files: [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus).
+Cite the version DOIs above. Do not use Zenodo concept DOI 10.5281/zenodo.20493287
+for the dataset: it groups the dataset with the software releases and resolves to
+the latest software release. Source files: [civic-tech-corpus](https://github.com/Japskua/civic-tech-corpus).
 
 ### Related frameworks and standards
 
