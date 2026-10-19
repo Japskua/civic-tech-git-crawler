@@ -21,6 +21,7 @@ from civic_tech_crawler.models import (
 from civic_tech_crawler.utils.ai_detection import (
     DEFAULT_AI_DEV_KEYWORDS,
     detect_ai_in_commit,
+    keep_earliest,
 )
 
 logger = logging.getLogger(__name__)
@@ -85,7 +86,10 @@ def collect_commit_history(
     commit_count = 0
     for rec in client.iter_commits_graphql(slug):
         commit_count += 1
-        author_date = rec.committed_date
+        commit_date = rec.committed_date
+        # AI first-appearance dates use the authored date, which survives
+        # rebases and squash merges; weekly activity keeps the commit date.
+        ai_date = rec.authored_date or commit_date
         author_email = rec.author_email or "unknown"
         author_name = rec.author_name or ""
         login = rec.author_login
@@ -100,10 +104,10 @@ def collect_commit_history(
             ai_authored += 1
         for tool in co_tools:
             ai_coauthor_tool_counts[tool] += 1
-            _keep_earliest(ai_coauthor_tool_first_dates, tool, author_date)
+            keep_earliest(ai_coauthor_tool_first_dates, tool, ai_date)
         for tool in auth_tools:
             ai_author_tool_counts[tool] += 1
-            _keep_earliest(ai_author_tool_first_dates, tool, author_date)
+            keep_earliest(ai_author_tool_first_dates, tool, ai_date)
 
         # Determine contributor ID: prefer GitHub login, fall back to email
         contributor_id = login if login else author_email
@@ -119,10 +123,10 @@ def collect_commit_history(
             contributor_info[contributor_id]["login"] = login
 
         # Record commit date for this contributor
-        contributor_commits[contributor_id].append(author_date)
+        contributor_commits[contributor_id].append(commit_date)
 
         # Weekly aggregation
-        week = _iso_week_start(author_date)
+        week = _iso_week_start(commit_date)
         week_commits[week] += 1
         week_contributors[week].add(contributor_id)
 
@@ -136,7 +140,7 @@ def collect_commit_history(
     # Combined earliest date across both kinds (backward-compatible field).
     ai_tool_first_dates = dict(ai_coauthor_tool_first_dates)
     for tool, dt in ai_author_tool_first_dates.items():
-        _keep_earliest(ai_tool_first_dates, tool, dt)
+        keep_earliest(ai_tool_first_dates, tool, dt)
 
     if not week_commits:
         return _empty_result(slug)
@@ -272,12 +276,6 @@ def collect_commit_history(
         ai_author_tool_first_dates=_iso_dates(ai_author_tool_first_dates),
     )
 
-
-def _keep_earliest(first_dates: dict[str, datetime], tool: str, dt: datetime) -> None:
-    """Record *dt* for *tool* if it is earlier than the date already stored."""
-    prev = first_dates.get(tool)
-    if prev is None or dt < prev:
-        first_dates[tool] = dt
 
 
 def _iso_dates(first_dates: dict[str, datetime]) -> dict[str, str]:
