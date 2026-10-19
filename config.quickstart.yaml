@@ -1,0 +1,18 @@
+# Quick-start configuration: two small civic-tech repositories, so a first run
+# finishes in minutes instead of the hours a full corpus crawl takes.
+#
+#   uv run civic-tech-crawler --config config.quickstart.yaml
+#
+# - CivicTechWR/go-train-group-pass shows the AI-usage layer at work (AI
+#   co-authored commits and agent-opened pull requests).
+# - oklabflensburg/open-school-map is a small project with no AI signals.
+#
+# All detection vocabularies use the built-in defaults; see config.example.yaml
+# for the full set of options.
+
+repositories:
+  - "CivicTechWR/go-train-group-pass"
+  - "oklabflensburg/open-school-map"
+
+output:
+  directory: "./output/quickstart"
