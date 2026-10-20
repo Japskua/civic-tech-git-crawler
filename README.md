@@ -39,8 +39,8 @@ The tool implements metrics from the [CHAOSS](https://chaoss.community/) (Commun
 
 ```bash
 # 1. Clone and enter the project
-git clone <repository-url>
-cd civic_tech_git_crawler
+git clone https://github.com/Japskua/civic-tech-git-crawler.git
+cd civic-tech-git-crawler
 
 # 2. Install dependencies (requires uv: https://docs.astral.sh/uv/)
 uv sync
@@ -112,8 +112,8 @@ The image is verified on every CI run (see `.github/workflows/ci.yml`).
 ### Install
 
 ```bash
-git clone <repository-url>
-cd civic_tech_git_crawler
+git clone https://github.com/Japskua/civic-tech-git-crawler.git
+cd civic-tech-git-crawler
 uv sync
 ```
 
@@ -1582,7 +1582,7 @@ detection:
 ### Project structure
 
 ```
-civic_tech_git_crawler/
+civic-tech-git-crawler/
 ├── pyproject.toml                  # Dependencies and project metadata
 ├── config.example.yaml             # Example configuration
 ├── config.yaml                     # Your configuration (gitignored)

@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Documentation
+- README: the Quick Start and Install steps clone
+  `https://github.com/Japskua/civic-tech-git-crawler.git` and `cd` into
+  `civic-tech-git-crawler`. They had a `<repository-url>` placeholder and the
+  wrong directory name (`civic_tech_git_crawler`).
+- `config.example.yaml`: the header said "2026-05 refresh (n = 57)"; the list
+  holds the 55 repositories of the 2026-06 snapshot, and the header now says so.
+
 ## [1.3] — 2026-10-19
 
 ### Fixed
