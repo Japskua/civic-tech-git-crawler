@@ -442,7 +442,10 @@ All output files are written to the output directory (default: `./output/`). Bot
 
 Crawl snapshots produced with this tool live in a separate repository,
 [**civic-tech-corpus**](https://github.com/Japskua/civic-tech-corpus), and are archived on Zenodo; the 2026-06 snapshot is
-[10.5281/zenodo.20497015](https://doi.org/10.5281/zenodo.20497015). Keeping data out of this repository keeps the
+[10.5281/zenodo.20497015](https://doi.org/10.5281/zenodo.20497015) (version 1.0). That version was produced by
+[release 1.2](https://github.com/Japskua/civic-tech-git-crawler/tree/1.2) and is the dataset used in Olshanskaia et
+al., GoodIT '26 ([10.1145/3794786.3830780](https://doi.org/10.1145/3794786.3830780)); later releases do not change
+it. Keeping data out of this repository keeps the
 tool small and lets each snapshot be versioned and frozen on its own. The corpus
 README lists every snapshot with the crawler version that produced it, its DOI,
 and the papers that use it; each snapshot's own `README.md` holds the repository
@@ -1641,8 +1644,8 @@ metadata is in [`CITATION.cff`](CITATION.cff) (tool) and in the
   title   = {civic-tech-crawler},
   author  = {Parkkila, Janne and Olshanskaia, Viktoriia and Tran, Duc Thinh and Knutas, Antti},
   year    = {2026},
-  version = {1.3},
-  doi     = {10.5281/zenodo.20588456},
+  version = {1.3.1},
+  doi     = {10.5281/zenodo.23493613},
   url     = {https://github.com/Japskua/civic-tech-git-crawler},
   note    = {Implements CHAOSS framework metrics for civic technology research}
 }
