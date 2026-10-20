@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.1] — 2026-10-20
+
+### Fixed
+- A cached repository is re-crawled when the current run needs a collector that
+  was skipped (`--skip-*`) when the entry was written. Before, a partial result
+  from a quick test run was reused by later full crawls as if it were complete;
+  in the 2026-06 corpus this left `codeforjapan/BirdXplorer` without CHAOSS,
+  core-periphery, and issue data. Cache entries now record their skipped
+  collectors. For entries written before this release, a collector whose output
+  is empty counts as skipped.
+- Every cache hit is logged by name (`Loaded owner/repo from cache`); before, it
+  showed only in the progress bar.
+
 ### Documentation
 - README: the Quick Start and Install steps clone
   `https://github.com/Japskua/civic-tech-git-crawler.git` and `cd` into
