@@ -1641,8 +1641,8 @@ metadata is in [`CITATION.cff`](CITATION.cff) (tool) and in the
   title   = {civic-tech-crawler},
   author  = {Parkkila, Janne and Olshanskaia, Viktoriia and Tran, Duc Thinh and Knutas, Antti},
   year    = {2026},
-  version = {1.3},
-  doi     = {10.5281/zenodo.20588456},
+  version = {1.3.1},
+  doi     = {10.5281/zenodo.23493613},
   url     = {https://github.com/Japskua/civic-tech-git-crawler},
   note    = {Implements CHAOSS framework metrics for civic technology research}
 }
