@@ -8,6 +8,7 @@ from rich.logging import RichHandler
 from rich.progress import BarColumn, Progress, SpinnerColumn, TextColumn, TimeElapsedColumn
 
 from civic_tech_crawler.cache import (
+    SKIPPABLE_COLLECTORS,
     is_cached,
     load_all_cached,
     load_repo_cache,
@@ -293,9 +294,12 @@ def main() -> None:
     # crawl (skip cache hits). Lets the per-repo stats builds proceed in
     # parallel server-side while we do our sequential collection work, so most
     # repos return 200 by the time chaoss_metrics needs them.
+    skipped = [c for c in SKIPPABLE_COLLECTORS if getattr(config, f"skip_{c}")]
+    needed = [c for c in SKIPPABLE_COLLECTORS if c not in skipped]
+
     repos_to_warm = [
         s for s in config.repositories
-        if args.force or not is_cached(s, output_dir)
+        if args.force or not is_cached(s, output_dir, needed)
     ]
     if repos_to_warm:
         client.warm_stats_endpoints(repos_to_warm)
@@ -317,9 +321,10 @@ def main() -> None:
         )
         for slug in config.repositories:
             # Check cache first (unless --force)
-            if not args.force and is_cached(slug, output_dir):
+            if not args.force and is_cached(slug, output_dir, needed):
                 cached_data = load_repo_cache(slug, output_dir)
                 if cached_data is not None:
+                    logger.info("Loaded %s from cache", slug)
                     progress.update(
                         overall,
                         description=f"[dim]{slug}[/dim] - loaded from cache",
@@ -333,7 +338,7 @@ def main() -> None:
             try:
                 repo_data = crawl_repository(client, slug, config, progress, overall)
                 # Persist immediately (crash protection)
-                save_repo_cache(repo_data, output_dir)
+                save_repo_cache(repo_data, output_dir, skipped=skipped)
                 all_data.append(repo_data)
                 crawled_count += 1
             except Exception as e:

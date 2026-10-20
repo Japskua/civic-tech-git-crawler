@@ -925,7 +925,9 @@ The tool supports **incremental crawling**, meaning you can run it in parts acro
 
 ### How it works
 
-After each repository is successfully crawled, its data is immediately saved as a per-repo JSON file (`{Owner}_{Repo}_data.json`) in the output directory. On subsequent runs, the tool checks for these files and skips already-crawled repositories.
+After each repository is successfully crawled, its data is immediately saved as a per-repo JSON file (`{Owner}_{Repo}_data.json`) in the output directory. On subsequent runs, the tool checks for these files and skips already-crawled repositories. Each reuse is logged (`Loaded owner/repo from cache`).
+
+A cache entry also records which collectors were skipped with `--skip-*` flags. If a later run needs one of those collectors, it re-crawls that repository instead of reusing a partial result. A quick test run with `--skip-chaoss` therefore cannot leave a repository without CHAOSS metrics in a later full crawl. Entries written before release 1.3.1 do not carry this record; for them, a collector whose output is empty counts as skipped.
 
 At export time, all per-repo cache files in the output directory are loaded and merged into the aggregated CSV and JSON output files — even repos crawled in previous sessions.
 
@@ -938,6 +940,7 @@ At export time, all per-repo cache files in the output directory are loaded and 
 | Second run with 5 _new_ repos | Crawls only the 5 new repos. Export merges all 15 repos into CSV/JSON.                |
 | Crash at repo #6 of 10        | Repos 1–5 are already saved to disk. Re-run loads 1–5 from cache, crawls 6–10.        |
 | `--force` with 10 repos       | Re-crawls all 10 regardless of cache, overwrites cache files                          |
+| Earlier run used `--skip-chaoss` | A run that computes CHAOSS re-crawls those repos; a run that also skips CHAOSS reuses them |
 | `--export-only`               | No crawling. Rebuilds CSV/JSON from all cached per-repo files in the output directory |
 
 ### Example: Multi-session workflow

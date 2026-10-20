@@ -8,6 +8,7 @@ re-crawling, saving API calls and enabling resume after interruptions.
 import dataclasses
 import json
 import logging
+from collections.abc import Iterable
 from datetime import datetime
 from pathlib import Path
 
@@ -368,6 +369,19 @@ def _dict_to_repository_data(d: dict) -> RepositoryData:
 CACHE_VERSION = 2
 
 
+# Collectors a run can switch off with --skip-*, and the RepositoryData field
+# each one fills. Detection writes into repo_metrics, so a skipped detection
+# step cannot be recognised from the data alone.
+SKIPPABLE_COLLECTORS: dict[str, str | None] = {
+    "detection": None,
+    "temporal": "temporal_metrics",
+    "commit_history": "commit_history",
+    "chaoss": "chaoss_metrics",
+    "issue_analytics": "issue_analytics",
+    "ai_usage": "ai_usage_metrics",
+}
+
+
 def _cache_version(raw: dict) -> int:
     try:
         return int(raw.get("_cache_version", 1))
@@ -375,31 +389,62 @@ def _cache_version(raw: dict) -> int:
         return 1
 
 
-def is_cached(slug: str, output_dir: str) -> bool:
-    """True if a cache entry exists for *slug* and was written by this crawler version.
+def _skipped_collectors(raw: dict) -> set[str]:
+    """Collectors that were skipped when this cache entry was written.
 
-    Entries from an older version are treated as missing, so a resumed crawl
-    re-fetches them instead of mixing old and new detection rules.
+    Entries written before release 1.3.1 do not record this. For them, a
+    collector whose field is empty is treated as skipped.
+    """
+    if "_skipped_collectors" in raw:
+        return set(raw["_skipped_collectors"])
+    return {
+        name for name, field_name in SKIPPABLE_COLLECTORS.items()
+        if field_name and raw.get(field_name) is None
+    }
+
+
+def is_cached(slug: str, output_dir: str, needed: Iterable[str] = ()) -> bool:
+    """True if a usable cache entry exists for *slug*.
+
+    An entry is unusable, and the repository is re-crawled, when it was written
+    by an older crawler version (so old and new detection rules do not mix) or
+    when it lacks a collector in *needed* because that collector was skipped
+    when the entry was written (so a test run with --skip-* flags cannot leave
+    gaps in a later full crawl).
     """
     path = Path(output_dir) / _slug_to_filename(slug)
     if not path.exists():
         return False
     try:
         with open(path) as f:
-            version = _cache_version(json.load(f))
+            raw = json.load(f)
     except (OSError, json.JSONDecodeError):
         return False
+    version = _cache_version(raw)
     if version < CACHE_VERSION:
         logger.info(
             "Cache for %s is from an older crawler (v%d < v%d); re-crawling",
             slug, version, CACHE_VERSION,
         )
         return False
+    missing = set(needed) & _skipped_collectors(raw)
+    if missing:
+        logger.info(
+            "Cache for %s lacks %s (skipped when it was crawled); re-crawling",
+            slug, ", ".join(sorted(missing)),
+        )
+        return False
     return True
 
 
-def save_repo_cache(data: RepositoryData, output_dir: str) -> None:
-    """Save a single repository's data as a JSON cache file."""
+def save_repo_cache(
+    data: RepositoryData, output_dir: str, skipped: Iterable[str] = ()
+) -> None:
+    """Save a single repository's data as a JSON cache file.
+
+    *skipped* names the collectors this run skipped; they are recorded so a
+    later run that needs them re-crawls the repository (see is_cached).
+    """
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
     filename = _slug_to_filename(data.repo_metrics.full_name)
@@ -407,6 +452,7 @@ def save_repo_cache(data: RepositoryData, output_dir: str) -> None:
 
     payload = dataclasses.asdict(data)
     payload["_cache_version"] = CACHE_VERSION
+    payload["_skipped_collectors"] = sorted(skipped)
     with open(filepath, "w") as f:
         json.dump(payload, f, indent=2, cls=_DateTimeEncoder)
     logger.info("Cached %s → %s", data.repo_metrics.full_name, filename)
